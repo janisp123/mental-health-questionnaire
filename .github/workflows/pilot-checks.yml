@@ -5,6 +5,7 @@ on:
     branches: [develop]
     paths:
       - 'src/pilot/**'
+      - 'src/modules/**'
       - 'tools/build_pilot.py'
       - 'tools/verify_project_index.py'
       - 'tests/pilot/**'
@@ -29,6 +30,8 @@ jobs:
         run: python tools/verify_project_index.py
       - name: Verify modular pilot data and offline packaging
         run: python tests/pilot/test_build.py
+      - name: Compare active questions and choices against frozen v16
+        run: python tests/pilot/test_source_fidelity.py
       - name: Check shared JavaScript syntax
         run: |
           node --check src/pilot/core/app.js

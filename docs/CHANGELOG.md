@@ -6,7 +6,7 @@
 
 ## 2026-11-05 · SOURCE-FIDELITY-AND-SECTION-21 · IN_PROGRESS
 
-Plan: verify active modules against frozen v16 by ID and exact codes, demonstrate rejection of swapped labels, inspect section 21 dependencies, import its three existing locales, verify in offline Chromium and checkpoint the artifact. First action: collect and verify source blobs and compare pilot field coverage.
+Plan: verify active modules against frozen v16 by ID and exact codes, demonstrate rejection of swapped labels, inspect section 21 dependencies, import its three existing locales, verify in offline Chromium and checkpoint the artifact. Checkpoint: 41 active questions passed exact v16 logic and LV/EN/RU text comparisons locally. Deliberately swapping English labels B/C at M02_01 failed at the expected ID, locale and field. The gate runs in pilot CI. Section 21 has 19 questions (orders 387–405), no opening overlap or condition parents, and an incompatible A/E pair at M21_06 requiring generic runtime enforcement. Next: import and verify the end-to-end browser journey.
 
 ## 2026-11-05 · PILOT-GENERIC-MODULE-AUDIT · TASK_DONE
 
