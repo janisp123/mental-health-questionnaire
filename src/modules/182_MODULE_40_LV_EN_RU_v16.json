@@ -1,0 +1,481 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 40,
+  "count": 6,
+  "entries": [
+    {
+      "order": 662,
+      "lv": {
+        "id": "M40_01",
+        "title": "Vai atkārtoti ir grūti kontrolēt seksuālu uzvedību, lai gan tā rada būtiskas nevēlamas sekas?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 40,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Is it repeatedly difficult to control sexual behavior, even though it causes significant unwanted consequences?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Трудно ли постоянно контролировать сексуальное поведение, даже если оно приводит к значительным нежелательным последствиям?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 663,
+      "lv": {
+        "id": "M40_02",
+        "title": "Kādas sekas tā rada?",
+        "profile": "CUSTOM-v11",
+        "multi": true,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M40_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Tiek atstāti novārtā pienākumi vai miegs",
+          "B": "Attiecību grūtības",
+          "C": "Finansiāli zaudējumi",
+          "D": "Veselības vai drošības riski",
+          "E": "Galvenokārt kauns vai neatbilstība maniem uzskatiem",
+          "F": "Citas sekas",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "GH",
+        "incompatible": [],
+        "section": 40,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "What consequences does it have?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Neglecting responsibilities or sleep",
+          "B": "Relationship difficulties",
+          "C": "Financial losses",
+          "D": "Health or safety risks",
+          "E": "Mainly shame or inconsistency with my beliefs",
+          "F": "Other consequences",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Какие последствия это влечет за собой?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Пренебрежение обязанностями или сном",
+          "B": "Трудности в отношениях",
+          "C": "Финансовые потери",
+          "D": "Риски для здоровья или безопасности",
+          "E": "В основном это чувство стыда или несоответствие моим убеждениям.",
+          "F": "Другие последствия",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 664,
+      "lv": {
+        "id": "M40_03",
+        "title": "Vai esat vairākkārt centies/-usies samazināt šo uzvedību, bet tas nav izdevies?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M40_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 40,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you tried repeatedly to reduce this behavior but failed?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Вы неоднократно пытались уменьшить такое поведение, но безуспешно?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 665,
+      "lv": {
+        "id": "M40_04",
+        "title": "Cik ilgi turpinās kontroles grūtības?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M40_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Mazāk nekā mēnesi",
+          "B": "1–5 mēnešus",
+          "C": "6–11 mēnešus",
+          "D": "1–2 gadus",
+          "E": "Ilgāk nekā 2 gadus",
+          "F": "Neattiecas uz mani",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 40,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How long will the control difficulties last?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Less than a month",
+          "B": "1–5 months",
+          "C": "6–11 months",
+          "D": "1–2 years",
+          "E": "More than 2 years",
+          "F": "Does not apply to me",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как долго продлятся проблемы с управлением?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Менее месяца",
+          "B": "1–5 месяцев",
+          "C": "6–11 месяцев",
+          "D": "1–2 года",
+          "E": "Более 2 лет",
+          "F": "Ко мне это не относится",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 666,
+      "lv": {
+        "id": "M40_05",
+        "title": "Vai tās parādās tikai izteikti paaugstinātas enerģijas periodos vai vielu ietekmē?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M40_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Tikai paaugstinātas enerģijas periodos",
+          "B": "Tikai vielu ietekmē",
+          "C": "Arī citos apstākļos",
+          "D": "Nezinu",
+          "E": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 40,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "uncertain",
+          "E": "refused"
+        }
+      },
+      "en": {
+        "title": "Do they only appear during periods of markedly increased energy or under the influence of substances?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Only during periods of increased energy",
+          "B": "Only under the influence of substances",
+          "C": "Also in other circumstances",
+          "D": "I don't know",
+          "E": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Они появляются только в периоды заметного повышения энергии или под воздействием каких-либо веществ?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Только в периоды повышенной энергии",
+          "B": "Только под воздействием веществ.",
+          "C": "Также и при других обстоятельствах",
+          "D": "Я не знаю",
+          "E": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 667,
+      "lv": {
+        "id": "M40_06",
+        "title": "Vai vēlaties šo tēmu pārrunāt ar ārstu privāti?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M40_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 40,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Would you like to discuss this topic with your doctor privately?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Хотели бы вы обсудить этот вопрос со своим врачом в частном порядке?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}
