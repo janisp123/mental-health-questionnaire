@@ -17,7 +17,11 @@
 
 **Next batch:** verify optional topic guidance, section jumping and omitted/hidden report statuses. Manifest and file index now point to active pilot sources. Remaining parity and device limitations are listed in docs/PILOT_ARCHITECTURE.md. Run 42062907339 at 0ac0dd3 passed the smoke journey but the expanded test found two valid section controls and stopped on an ambiguous selector. Target the toolbar control and verify again.
 
-**Safety review:** traverse all eleven opening safety items even when previously answered, restore the review queue from a pilot backup, and show saved timestamps on flagged answers. Require confirmation before replacing a session containing saved answers. Browser verification pending.
+**Safety review:** traverse all eleven opening safety items even when previously answered, restore the review queue from a pilot backup, and show saved timestamps on flagged answers. Require confirmation before replacing a session containing saved answers. CI run 42063169851 passed at d2456a4a2394cb9ae57cc1f2cd9b75c08398422d. Confirmed the toolbar fix, safety review sequence, third-module registration, guided selection, conditional parent edit, section jump, omitted/hidden exports and restoration.
+
+**Source comparison:** verified all 41 IDs and original order, LV/EN/RU prompt/choice/time/help text, multiple-choice/exclusive/incompatible settings, conditions, type, maximum choices and answer statuses against the frozen source modules. Zero differences in those fields.
+
+**Final browser batch:** exercise real section 02 multiple-choice combinations, exclusive options, save/back/edit, and doctor-copy payload at phone width and offline. Native Android and legacy v16 migration remain separate acceptance items.
 
 ## 2026-11-05 · PROGRESS-UPDATES-RULE · TASK_DONE
 

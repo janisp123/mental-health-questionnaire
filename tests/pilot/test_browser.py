@@ -19,7 +19,7 @@ with tempfile.TemporaryDirectory() as temp:
     path.write_text(make_html(),encoding="utf-8")
     with sync_playwright() as p:
         browser=p.chromium.launch(headless=True,args=["--no-sandbox"])
-        page=browser.new_page(accept_downloads=True)
+        page=browser.new_page(accept_downloads=True, viewport={"width":393,"height":851}, is_mobile=True, has_touch=True, offline=True)
         errors=[]
         page.on("pageerror",lambda err: errors.append(str(err)))
         requests=[]
@@ -85,12 +85,35 @@ with tempfile.TemporaryDirectory() as temp:
                 page.click('[data-act="confirm"]')
             else: raise AssertionError("Unexpected screen during opening")
         assert "M02_01" in page.locator(".question").inner_text()
+        # Traverse the actual mood section and edit its multiple-choice item.
+        for number in range(1,19):
+            assert f"M02_{number:02}" in page.locator(".question").inner_text()
+            page.locator('input[name="answer"]').first.check()
+            page.click('[data-act="save"]')
+        assert "M02_19" in page.locator(".question").inner_text()
+        page.locator('input[value="A"]').check()
+        page.locator('input[value="B"]').check()
+        page.locator('input[value="K"]').check()
+        assert page.locator('input[name="answer"]:checked').count()==1
+        page.locator('input[value="A"]').check()
+        page.locator('input[value="B"]').check()
+        page.click('[data-act="save"]')
+        page.click('[data-act="previous"]')
+        assert page.locator('input[value="A"]').is_checked() and page.locator('input[value="B"]').is_checked()
+        page.locator('input[value="J"]').check()
+        page.click('[data-act="save"]')
         assert page.locator('[data-act="skipSection"]').count()==1
         page.once("dialog",lambda d:d.accept())
         page.click('[data-act="skipSection"]')
         assert page.locator('[data-act="doctor"]').count()==1
         page.click('[data-act="doctor"]')
         assert page.locator("#reportText").count()==1
+        # Capture the clipboard boundary without relying on host permission prompts.
+        page.evaluate("""Object.defineProperty(navigator, 'clipboard', {configurable:true,
+                      value:{writeText:async text=>{window.copiedForTest=text}}})""")
+        page.click('[data-act="copyDoctor"]')
+        page.wait_for_function("typeof window.copiedForTest === 'string'")
+        assert page.evaluate("window.copiedForTest")==page.locator("#reportText").input_value()
         assert page.locator('[data-act="downloadReport"]').count()==1
         page.emulate_media(media="print")
         assert page.locator(".print-report").is_visible()
