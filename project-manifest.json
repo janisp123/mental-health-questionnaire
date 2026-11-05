@@ -1,0 +1,32 @@
+{
+  "schema": "questionnaire-source-manifest-v1",
+  "status": "SCAFFOLD_ONLY_NOT_MIGRATED",
+  "repository": "janisp123/mental-health-questionnaire",
+  "visibility": "public",
+  "development_branch": "develop",
+  "release_branch": "main",
+  "baseline": {
+    "lv": "v16",
+    "section_count": 48,
+    "question_count": 712,
+    "languages": [
+      "lv",
+      "en",
+      "ru"
+    ],
+    "en_ru_status": "DRAFT_NOT_RELEASED"
+  },
+  "source_of_truth": "Google Drive public changelog until verified handoff",
+  "module_files": [],
+  "dependencies": {
+    "engine": "NOT_IMPORTED",
+    "translations": "NOT_VERIFIED",
+    "documentation": "NOT_IMPORTED",
+    "release_ci": "NOT_ACTIVE"
+  },
+  "releases": {
+    "published_git_commit": null,
+    "release_candidate": null
+  },
+  "notes": "Scaffold placeholders only. Never treat empty modules or pending tests as a verified release."
+}
