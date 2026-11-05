@@ -1,0 +1,95 @@
+{
+  "task": "ENRU-V16-RELEASE",
+  "date": "2026-11-05",
+  "status": "IN_PROGRESS",
+  "stage1": "DONE",
+  "stage2": "PENDING",
+  "last_verified": "Source inventory and legacy/sheet mapping created; source HTML untouched.",
+  "next_action": "Generate keyed EN/RU catalogs and draft HTML, resolve 8 missing phrases and flagged mistranslations; test generated outputs.",
+  "published_unchanged": true,
+  "source_hashes": {
+    "162_Sagatavosanas_vizitei_LV_v16.html": {
+      "bytes": 924807,
+      "sha256": "1edd2e3248789b8bf41671f4910ad087624f8703ae01461a45122c96a6d8791b"
+    },
+    "163_README_LV_v16.md": {
+      "bytes": 14583,
+      "sha256": "48629c928be071c37a92c91c5c58a832ebb1c1e38337aabd5c1d92aa66f69a48"
+    },
+    "147_Informacija_LV_v14.pdf": {
+      "bytes": 55051,
+      "sha256": "e43340f2a3d2d2e288138b3d36ea3a788a985df89d74fff6c5cee3f2ced8e591"
+    },
+    "118_Questionnaire_English_FULL_v9.html": {
+      "bytes": 413454,
+      "sha256": "4c737d133b5e869b5657f9b41a305e0f8cf4096cc19f8de6ea2184bf2cf025c4"
+    },
+    "119_Questionnaire_Russian_FULL_v9.html": {
+      "bytes": 597855,
+      "sha256": "04c1d7908c26747976cb3a91ac2049a418848450e0464fb56f3414b2ebc338b7"
+    },
+    "120_Questionnaire_Latvian_EXTENDED_v9.html": {
+      "bytes": 478500,
+      "sha256": "8e3fb7a9917062e99fbba1d3fd2231e1225b786741c77ee3ff418ff237bb259e"
+    },
+    "121_Questionnaire_English_EXTENDED_v9.html": {
+      "bytes": 464036,
+      "sha256": "5024561c9184a3b3540b1f3070871766fc4527b4e2c58622a13399b9a4d7f661"
+    },
+    "122_Questionnaire_Russian_EXTENDED_v9.html": {
+      "bytes": 673190,
+      "sha256": "57f74f4e4f7a9fa381d503f37537758852766e73b39cd34b14bb8711c642702b"
+    },
+    "129_English info.pdf": {
+      "bytes": 48561,
+      "sha256": "92bf23f4f25d39ce03ca0aa26fe787d02799fc7b5bf8162cd20820d8296694ee"
+    },
+    "131_Russian info.pdf": {
+      "bytes": 57026,
+      "sha256": "72f801d767181986b9e96134aeb372c9c06459469fd9007bb50ec8eb247a3549"
+    },
+    "165_Translation_plan_EN_RU_v16.md": {
+      "bytes": 6263,
+      "sha256": "b2e2db7aa819571cf76da7c4a28937f22ab1b5269209637f9206ebbbc4edba73"
+    },
+    "Temporary translation workspace — questionnaire text only.csv": {
+      "bytes": 333359,
+      "sha256": "00ebfc8dcab2a2548a884c4c78c90de745bb7823f6b7adc0feb62e92bdb9ca3c"
+    }
+  },
+  "bank_count": 712,
+  "section_count": 48,
+  "translated_spreadsheet_rows": 1202,
+  "recovered_phrase_count_per_language": 1793,
+  "untranslated_bank_phrases": {
+    "Cik ilgi saņēmāt pēdējo šādu palīdzību? ": [
+      "M01_24.title"
+    ],
+    "1–2": [
+      "M15_15.choices.C"
+    ],
+    "3–4": [
+      "M15_15.choices.D"
+    ],
+    "5–6": [
+      "M15_15.choices.E"
+    ],
+    "7–9": [
+      "M15_15.choices.F"
+    ],
+    "2–5": [
+      "M18_23.choices.C"
+    ],
+    "1": [
+      "M20_13.choices.C"
+    ],
+    "2–3": [
+      "M20_13.choices.D"
+    ]
+  },
+  "file_ids": {
+    "changelog": "1rfJWIhSogO-vxiabkZWgE0zmFMuk6MBd",
+    "lv_html": "1PSvcqjbnuVOL-LFLDM12wCYnSG9lsVLw",
+    "translation_sheet": "1RAxLzMo4Tt0DFDeRicdFa4aWIf8wTGbXslMA-MAUXOE"
+  }
+}
