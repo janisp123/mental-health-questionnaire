@@ -1,3 +1,0 @@
-GitHub connector permission smoke test v2.
-Create, read, and edit verified.
-No questionnaire data.
