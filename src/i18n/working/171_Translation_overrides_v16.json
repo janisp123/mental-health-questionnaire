@@ -1,0 +1,73 @@
+{
+  "source": "LV v16",
+  "manual_draft_unreviewed": {
+    "Cik ilgi saņēmāt pēdējo šādu palīdzību? ": {
+      "en": "For how long did you receive the most recent course of this help?",
+      "ru": "Как долго вы получали эту помощь в последний раз?"
+    },
+    "Pēdējais palīdzības kurss.": {
+      "en": "The most recent course of help.",
+      "ru": "Последний курс оказания помощи."
+    },
+    "Miegs": {
+      "en": "Sleep",
+      "ru": "Сон"
+    },
+    "Sāpes vai fiziskā veselība": {
+      "en": "Pain or physical health",
+      "ru": "Боль или физическое здоровье"
+    },
+    "Ja tika konstatēts trūkums, vai veicat pasākumus tā novēršanai?": {
+      "en": "If a deficiency was found, are you taking steps to address it?",
+      "ru": "Если был выявлен дефицит, принимаете ли вы меры для его устранения?"
+    },
+    "Vai jums ir veiktas asins analīzes, lai pārbaudītu vitamīnu vai minerālvielu trūkumu?": {
+      "en": "Have you had blood tests to check for vitamin or mineral deficiencies?",
+      "ru": "Сдавали ли вы анализы крови, чтобы проверить наличие дефицита витаминов или минералов?"
+    },
+    "Pašreizējās un būtiskas agrāk lietotas zāles. Norādiet faktisko lietošanu; tas nav ārstēšanas ieteikums.": {
+      "en": "Current and significant previously used medicines. Record how they were actually taken; this is not treatment advice.",
+      "ru": "Текущие и ранее применявшиеся значимые лекарства. Укажите фактический приём; это не рекомендация по лечению."
+    },
+    "Kādas zāles lietojat pašlaik vai esat lietojis/-usi agrāk, par kurām vēlaties informēt psihiatru?": {
+      "en": "Which medicines do you currently take or have taken previously that you would like your psychiatrist to know about?",
+      "ru": "Какие лекарства вы принимаете сейчас или принимали ранее и о которых хотели бы сообщить психиатру?"
+    },
+    "Vai kādreiz esat lietojis/-usi zāles citādi, nekā norādīts, piemēram, lielākā devā vai lai mainītu pašsajūtu?": {
+      "en": "Have you ever taken medicines differently from the instructions, for example at a higher dose or to change how you feel?",
+      "ru": "Принимали ли вы когда-либо лекарства не по инструкции, например в большей дозе или чтобы изменить своё самочувствие?"
+    },
+    "Vai pašlaik lietojat kādas zāles, tostarp recepšu, bezrecepšu vai pēc vajadzības lietojamas zāles?": {
+      "en": "Are you currently taking any medicines, including prescription, over-the-counter or as-needed medicines?",
+      "ru": "Принимаете ли вы сейчас какие-либо лекарства, в том числе рецептурные, безрецептурные или по мере необходимости?"
+    },
+    "1–2": {
+      "en": "1–2",
+      "ru": "1–2"
+    },
+    "3–4": {
+      "en": "3–4",
+      "ru": "3–4"
+    },
+    "5–6": {
+      "en": "5–6",
+      "ru": "5–6"
+    },
+    "7–9": {
+      "en": "7–9",
+      "ru": "7–9"
+    },
+    "2–5": {
+      "en": "2–5",
+      "ru": "2–5"
+    },
+    "1": {
+      "en": "1",
+      "ru": "1"
+    },
+    "2–3": {
+      "en": "2–3",
+      "ru": "2–3"
+    }
+  }
+}
