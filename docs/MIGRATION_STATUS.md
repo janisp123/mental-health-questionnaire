@@ -1,6 +1,8 @@
+
+> **Status notes below are historical checkpoints. For the latest actions, read [the active GitHub changelog](CHANGELOG.md).**
 # GitHub migration status — staging checkpoints only
 
-**Authority:** the Google Drive `166_CHANGELOG_LV.md` remains authoritative until a verified handoff. This is a staging record; do not use it to override Drive's incomplete EN/RU task.
+**CURRENT TRACKING AUTHORITY (2026-11-05):** [`docs/CHANGELOG.md`](CHANGELOG.md) on GitHub `develop` is the single active log for future work. The archived Google Drive changelog is read-only historical evidence. GitHub source migration is still BLOCKED (0/48), so Drive source files remain immutable references until verified Git import. This page is a migration reference, not another active changelog.
 
 ## 2026-11-05 — GITHUB-SCAFFOLD — TASK_DONE
 
