@@ -4,7 +4,7 @@
   "repository": "janisp123/mental-health-questionnaire",
   "development_branch": "develop",
   "distribution_branch": "main",
-  "status": "SOURCE_MIGRATED_VERIFIED__UNIFIED_APP_NOT_BUILT__EN_RU_DRAFT",
+  "status": "SOURCE_MIGRATED_VERIFIED__MODULAR_PILOT_IN_DEVELOPMENT__EN_RU_DRAFT",
   "single_source_of_truth": "This manifest on GitHub develop; revise this index when active source paths or release status change.",
   "active_changelog": "docs/CHANGELOG.md",
   "release_distribution": {
@@ -35,8 +35,8 @@
     },
     "application": {
       "current_reference_html": "reference/baseline/html/162_Sagatavosanas_vizitei_LV_v16.html",
-      "status": "FROZEN_BASELINE__ENGINE_EXTRACTION_PENDING",
-      "note": "Engine/UI/report code still embedded in original standalone HTML; src/core, src/reports and src/information are planned, not populated."
+      "status": "FROZEN_V16_BEHAVIORAL_REFERENCE",
+      "note": "Use this file to compare behavior. Edit pilot sources under src/pilot/."
     },
     "english": {
       "html": "reference/baseline/html/172_Questionnaire_EN_v16_DRAFT_NOT_RELEASED.html",
@@ -63,6 +63,24 @@
     "archive": {
       "old_drive_changelog": "docs/drive-original/166_CHANGELOG_LV.md",
       "old_versions_dir": "reference/history/"
+    },
+    "pilot": {
+      "status": "PROTOTYPE_NOT_RELEASED",
+      "languages": [
+        "lv",
+        "en",
+        "ru"
+      ],
+      "registry": "src/pilot/modules/registry.json",
+      "module_source_pattern": "src/pilot/modules/{id}/{logic,lv,en,ru}.json",
+      "core": "src/pilot/core/",
+      "reports": "src/pilot/reports/",
+      "interface": "src/pilot/i18n/",
+      "builder": "tools/build_pilot.py",
+      "tests": "tests/pilot/",
+      "ci": ".github/workflows/pilot-checks.yml",
+      "architecture": "docs/PILOT_ARCHITECTURE.md",
+      "artifact": "PILOT_offline_LV_EN_RU_v0.1_NOT_RELEASED"
     }
   },
   "import_validation": {

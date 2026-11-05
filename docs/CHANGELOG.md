@@ -2,7 +2,7 @@
 
 **Active task log:** This file on GitHub `develop`, effective 2026-11-05.
 **Development edits:** GitHub only, after the relevant sources have been imported and verified.
-**Google Drive:** distribution of Latvian public files only. Existing Drive archives are read-only source references until migration is complete; do not update its old changelog for routine work.
+**Google Drive:** distribution of Latvian public files only. Existing Drive archives are read-only source references following the completed migration; do not update its old changelog for routine work.
 
 ## 2026-11-05 · PILOT-GENERIC-MODULE-AUDIT · IN_PROGRESS
 
@@ -13,7 +13,9 @@
 
 **Implementation checkpoint:** Registry drives selection, progress, report section lines, skip continuation and recovery. Module locale files own their titles. Existing structural checks and JS syntax pass locally. Verified registry implementation on develop at 9ddc7d87681e4313ca7a497e685e65ad2a179b78. Added a disposable third-module + locale-edit Chromium test with cumulative tenth-save check and cross-build restore. CI run 42062287500 passed at f996d9ce739125d81bdf297f0311144ccdbb8c59, including the new browser regression.
 
-**Next batch:** match opening safety prompts, flag incomplete safety coverage, validate restored choices, preserve status precedence, and print the full report. Structural checks and JavaScript syntax pass. Browser verification pending.
+**Next batch:** match opening safety prompts, flag incomplete safety coverage, validate restored choices, preserve status precedence, and print the full report. Structural checks and JavaScript syntax pass. Verified A4 PDF and opening safety behavior at b06f42271a2fd7905dbb6d08f69b6f1aa8f58eb7 in run 42062504929.
+
+**Next batch:** verify optional topic guidance, section jumping and omitted/hidden report statuses. Manifest and file index now point to active pilot sources. Remaining parity and device limitations are listed in docs/PILOT_ARCHITECTURE.md.
 
 ## 2026-11-05 · PROGRESS-UPDATES-RULE · TASK_DONE
 
@@ -27,7 +29,7 @@ Added `AGENTS.md` to require brief user-visible updates approximately every minu
 
 **Workflow:** checkpoint each independently verifiable part; extract original 20 opening questions by original global order 0-19 from six source modules and section 02 by original section number; split logic/text, ensure IDs/codes/branch conditions remain stable; implement shared UI and all existing controls, localized LV/EN/RU interface, offline output; run structural and functionality checks without asserting unperformed clinical review. Add an extensible module registry where more sections can be activated without changing the engine.
 
-**Current:** task registered. Source migration verified; no prototype source yet.
+**At registration:** source migration verified, before the pilot was built. See PILOT-GENERIC-MODULE-AUDIT above for current progress.
 **Next:** create independent per-module per-language source and registry; verify ID and answer-code equality.
 
 ## 2026-11-05 · GITHUB-FULL-SOURCE-IMPORT-AND-LV-DISTRIBUTION-NAME · TASK_DONE
@@ -38,7 +40,7 @@ Added `AGENTS.md` to require brief user-visible updates approximately every minu
 
 **Steps:** (1) inventory Git and ZIP/Drive sources; (2) rename Drive folder and verify; (3) attempt approved source import on `develop`, verify full source list/checksums; (4) create or update manifest/index with active versions, archived versions and exact Git paths; (5) document any blocked operation and a reproducible one-time manual import path; (6) read back GitHub changes, close `TASK_DONE` only if fully satisfied, otherwise `BLOCKED`.
 
-**Known issue:** previous Google Drive -> public GitHub imports failed with connector safety checks; GitHub still has 0/48 modules. Recovery ZIP `190_GITHUB_MIGRATION_READY_MANUAL_UPLOAD.zip` exists locally, 79 Drive-origin reference/source files. Current original documents and completed Latvian HTML are on Drive; development work log is here.
+**Historical obstacle (resolved):** previous Google Drive -> public GitHub imports failed with connector safety checks; GitHub held 0/48 modules at that point. Recovery ZIP `190_GITHUB_MIGRATION_READY_MANUAL_UPLOAD.zip` exists locally, 79 Drive-origin reference/source files. Current original documents and completed Latvian HTML are on Drive; development work log is here.
 
 **Verified checkpoint:** Google Drive distribution folder renamed and read back (2 Latvian files). All 79 of 79 Drive-origin development files imported on GitHub `develop` at commit `24d25c992cd866daf0589e16b4c4a1a9b8b7d63f`. Remote and local Git file hash inventories match, with 48 modules present. This validates transfer integrity only, not any release. **Final verification:** 79/79 source/reference files committed on `develop`, with matching local and remote Git file hashes and 48/48 original modules, v16 712-question baseline. Established `project-manifest.json` (79 paths, exact Git SHA1 and byte sizes, version/status roles), `docs/FILE_INDEX.md` (human navigation), and `tools/verify_project_index.py` (local checkout checker). Updated and read back README, migration plan/status, import checklist and integrity script. The verification script was saved and read back; it has not been executed against a local fresh Git checkout in this session. Git `main` untouched. Drive public folder renamed in Latvian, unchanged two LV distribution files. Source transfer task complete; all EN/RU language review, new unified app build, release CI and browser/clinical tests remain separate pending tasks.
 
@@ -53,12 +55,12 @@ Added `AGENTS.md` to require brief user-visible updates approximately every minu
 2. Update conflicting repository instructions and migration status.
 3. Read back from GitHub and mark `TASK_DONE` only if all intended documentation is verified.
 
-**Current verified state:** GitHub contains repository scaffolding but **0/48 questionnaire modules**. Direct transfer from Drive to GitHub was blocked. Existing ZIP import package is ready for manual upload; GitHub source is not yet authoritative.
+**At the time of this historical entry:** GitHub contained repository scaffolding but **0/48 questionnaire modules**. Direct transfer from Drive to GitHub was blocked. Existing ZIP import package is ready for manual upload; GitHub source is not yet authoritative.
 **Next:** revise repository instructions, verify, then close task.
 
-## Carried-forward pending work
+## Historical pending list from before the verified import
 
-- **GITHUB-SOURCE-MIGRATION — BLOCKED:** 48/48 multilingual source modules, HTML reference baselines, translation catalogs, QA tools and archival materials remain on Drive. The verified ZIP package `190_GITHUB_MIGRATION_READY_MANUAL_UPLOAD.zip` must be extracted and manually uploaded on `develop`, then checked against hashes and counts. Do not claim GitHub holds code until file readback.
+- **GITHUB-SOURCE-MIGRATION — subsequently completed (24d25c9):** 48/48 multilingual source modules, HTML reference baselines, translation catalogs, QA tools and archival materials remain on Drive. The verified ZIP package `190_GITHUB_MIGRATION_READY_MANUAL_UPLOAD.zip` must be extracted and manually uploaded on `develop`, then checked against hashes and counts. Do not claim GitHub holds code until file readback.
 - **ENRU-V16-RELEASE — IN_PROGRESS:** EN/RU are drafts and require linguistic, functional and safety checks; never publish as ready.
 - **RELEASE-GATE-POLICY — PARTIALLY IMPLEMENTED:** documented fail-closed policy and evidence checker exist, but GitHub Actions and enforced branch protection are not yet installed. Syntax passes alone cannot authorize release.
 - **LV public distribution:** Google Drive main folder currently contains exactly `162_Sagatavosanas_vizitei_LV_v16.html` and `163_README_LV_v16.md`. Development changes must not silently modify those releases.

@@ -87,6 +87,8 @@
     "noSection": "No additional section selected; you may finish after the opening questions.",
     "backToAnswers": "Back to answers",
     "warningSensitive": "If an answer concerns immediate safety, seek help now. Completing this questionnaire is not a substitute for emergency support.",
-    "safetyPending": "Some opening safety questions still need an answer."
+    "safetyPending": "Some opening safety questions still need an answer.",
+    "guideIntro": "Choose the topics you want to discuss.",
+    "jump": "Go to section"
   }
 }

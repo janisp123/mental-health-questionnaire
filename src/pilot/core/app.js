@@ -57,13 +57,14 @@ function renderStart(){
  return '<section class="card"><p>'+label("intro")+'</p><p class="warning">'+label("reviewNote")+'</p><p>'+label("noAuto")+'</p>'+btn("start","start","primary")+ '<div class="actions">'+btn("all","chooseAll")+btn("choose","chooseOwn")+btn("guide","chooseGuide")+'</div></section>';
 }
 function renderSelector(){
+ const guide=state.screen==="guide";
  const rows=data.groups.map(g=>{
-  const count=countGroup(g.id), title=esc(g.titles[state.lang]), progress=count.done+'/'+count.total;
+  const count=countGroup(g.id), title=esc((guide&&!g.required?g.concerns:g.titles)[state.lang]), progress=count.done+'/'+count.total;
   if(g.required)return '<p><strong>'+title+'</strong> — '+progress+'</p>';
   const checked=state.sectionDraft.includes(g.id);
-  return '<label class="choice module-choice"><input type="checkbox" data-module="'+esc(g.id)+'" id="optional'+esc(g.id)+'"'+(checked?' checked':'')+'> <span><strong>'+title+'</strong><small>'+progress+' · '+label(checked?'selected':'notSelected')+'</small></span></label>';
+  return '<label class="choice module-choice"><input type="checkbox" data-module="'+esc(g.id)+'" id="optional'+esc(g.id)+'"'+(checked?' checked':'')+'> <span><strong>'+title+'</strong><small>'+progress+' · '+label(checked?'selected':'notSelected')+'</small></span></label>'+(!guide&&state.selected.includes(g.id)&&!active().some(q=>groups.get(q.module).required&&!state.answers[q.id])?btn('jump', 'jump', '', 'data-jump="'+esc(g.id)+'"'):'');
  });
- return '<section class="card"><h2>'+label("selector")+'</h2><p>'+label("selectIntro")+'</p>'+rows.join("")+
+ return '<section class="card"><h2>'+label("selector")+'</h2><p>'+label(guide?"guideIntro":"selectIntro")+'</p>'+rows.join("")+
  '<div class="actions">'+btn("all","chooseAll")+btn("clear","clearSections")+'</div>'+btn("confirm","confirmSections","primary")+btn("cancel","cancel")+'</section>';
 }
 function storedDraft(q){
@@ -111,10 +112,16 @@ function renderResults(){
  '<div class="actions">'+btn("doctor","specialist","primary-inline")+btn("ai","ai")+btn("downloadTxt","txt")+btn("reference","reference")+'</div>'+
  '<div class="actions">'+btn("back","back")+btn("reviewSafety","reviewSafety")+btn("new","new")+'</div></section>';
 }
+function codedReport(){
+ const applicable=new Set(active().map(q=>q.id));
+ const availability=q=>!groups.get(q.module).required&&!state.selected.includes(q.module)
+   ?"omitted":!applicable.has(q.id)?"hidden":null;
+ return report.codedText(all,state.answers,state.selected,state.lang,ui(),availability);
+}
 function renderReport(){
  const q=active(),u=ui(),doctor=state.reportView!=="ai";
  const heading=doctor?u.doctorHeading:u.coded;
- const result=doctor?report.doctorText(q,state.answers,state.selected,state.lang,u,data.groups):report.codedText(q,state.answers,state.selected,state.lang,u);
+ const result=doctor?report.doctorText(q,state.answers,state.selected,state.lang,u,data.groups):codedReport();
  return '<section class="card report"><h2>'+esc(heading)+'</h2><p>'+label("doctorDisclaimer")+'</p><textarea id="reportText" readonly rows="17">'+esc(result)+'</textarea><pre class="print-report">'+esc(result)+'</pre>'+
  '<div class="actions">'+btn(doctor?"copyDoctor":"copyAI",doctor?"copyDoctor":"copyAI","primary-inline")+
  btn("doctor","specialist")+btn("ai","ai")+btn("print","print")+btn("downloadReport","downloadReport")+btn("downloadTxt","txt")+btn("reference","reference")+'</div>'+
@@ -123,7 +130,7 @@ function renderReport(){
 function render(){
  document.documentElement.lang=state.lang;
  document.title=ui().project;
- const body=state.screen==="start"?renderStart():state.screen==="selector"?renderSelector():state.screen==="question"?renderQuestion():state.screen==="report"?renderReport():renderResults();
+ const body=state.screen==="start"?renderStart():(state.screen==="selector"||state.screen==="guide")?renderSelector():state.screen==="question"?renderQuestion():state.screen==="report"?renderReport():renderResults();
  app.innerHTML='<main>'+header()+toolbar()+(state.notice?'<p role="status" class="notice">'+esc(state.notice)+'</p>':"")+body+footer()+'</main>';
 }
 function setQuestion(id){state.currentId=id;state.draft=null;state.screen="question";state.notice="";render();}
@@ -258,9 +265,9 @@ async function copyText(text){
 function action(key){
  const q=active(),u=ui();
  if(key==="start"){start();return;}
- if(key==="all"){if(state.screen==="selector"){state.sectionDraft=[...optionalIds];render();}else showSections([...optionalIds]);return;}
+ if(key==="all"){if(state.screen==="selector"||state.screen==="guide"){state.sectionDraft=[...optionalIds];render();}else showSections([...optionalIds]);return;}
  if(key==="choose"){showSections([]);return;}
- if(key==="guide"){showSections([...optionalIds]);return;}
+ if(key==="guide"){state.sectionDraft=[...state.selected];state.screen="guide";render();return;}
  if(key==="clear"){state.sectionDraft=[];render();return;}
  if(key==="confirm"){confirmSections();return;}
  if(key==="cancel"){state.screen=state.currentId?"question":"start";render();return;}
@@ -289,11 +296,17 @@ function action(key){
    window.print();return;
  }
  if(key==="copyDoctor"||key==="copyAI"){
-   const text=key==="copyDoctor"?report.doctorText(q,state.answers,state.selected,state.lang,u,data.groups):report.codedText(q,state.answers,state.selected,state.lang,u);
+   const text=key==="copyDoctor"?report.doctorText(q,state.answers,state.selected,state.lang,u,data.groups):codedReport();
    copyText(text);return;
  }
 }
-app.addEventListener("click",e=>{const el=e.target.closest("[data-act]");if(el){e.preventDefault();action(el.getAttribute("data-act"));}});
+app.addEventListener("click",e=>{const el=e.target.closest("[data-act]");if(el){e.preventDefault();
+ if(el.dataset.jump){
+  const choices=active().filter(q=>q.module===el.dataset.jump);
+  const next=choices.find(q=>!state.answers[q.id])||choices[0];
+  if(next)setQuestion(next.id);
+ }else action(el.getAttribute("data-act"));
+}});
 app.addEventListener("change",e=>{
  if(e.target.id==="language"){state.lang=e.target.value;state.notice="";render();return;}
  if(e.target.hasAttribute("data-module")){

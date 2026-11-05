@@ -14,7 +14,8 @@
 |---|---|---|
 | Questions in LV/EN/RU | `src/modules/182_MODULE_01_LV_EN_RU_v16.json` through `182_MODULE_48_LV_EN_RU_v16.json` | 48 sections, 712 questions, language fields per module; LV reference, EN/RU **unreviewed drafts** |
 | Module source index | `tests/fixtures/181_MODULE_INDEX_v16.json` | Frozen initial module SHA256, count and order; do not confuse with the current overall manifest |
-| Existing working application | `reference/baseline/html/162_Sagatavosanas_vizitei_LV_v16.html` | Exact frozen LV v16 single-file browser reference; **not** yet split into a new app engine |
+| Editable pilot | `src/pilot/modules/registry.json`, `src/pilot/core/`, `src/pilot/reports/` | Current offline prototype. See [architecture](PILOT_ARCHITECTURE.md). |
+| Existing working application | `reference/baseline/html/162_Sagatavosanas_vizitei_LV_v16.html` | Exact frozen LV v16 single-file browser reference; behavioral comparison source for the developing pilot |
 | English app snapshot | `reference/baseline/html/172_Questionnaire_EN_v16_DRAFT_NOT_RELEASED.html` | Reference draft only, **not a release** |
 | Russian app snapshot | `reference/baseline/html/172_Questionnaire_RU_v16_DRAFT_NOT_RELEASED.html` | Reference draft only, **not a release** |
 | Working language resources | `src/i18n/working/` | EN/RU catalogs, memory, overrides and one CSV snapshot of the prior Google Sheet |
@@ -36,7 +37,7 @@
 - `docs/`: active GitHub changelog, instructions, migration record and release policy.
 - `tests/fixtures/`: imported module index and past EN/RU draft build report; *not* evidence of current full test passes.
 - `tools/`: existing original build helpers and new verification tools.
-- `.github/workflows/`: automated CI to be added and tested (not active).
+- `.github/workflows/`: active develop-branch pilot workflow, including headless Chromium.
 - `main` branch is **not** the active source tree; `develop` holds the import.
 
 ## Distribution — separate from development
@@ -52,4 +53,4 @@ Google Drive's [Latvian public folder](https://drive.google.com/drive/folders/1B
 5. Git history tracks previous versions; we do not create endless numbered duplicates in the active source folders.
 6. Validate imports with `python tools/verify_project_index.py`. This is source integrity, not a user-interface, translation or clinical release approval.
 
-**Next development task:** extract the shared application code and reports from the frozen LV HTML into `src/core`, `src/reports`, `src/information`; build one multilingual offline HTML; complete translation and release testing.
+**Editable prototype:** [Pilot architecture and remaining verification](PILOT_ARCHITECTURE.md). Use the pilot registry and module locale files for development.

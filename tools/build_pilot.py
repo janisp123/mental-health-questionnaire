@@ -71,7 +71,8 @@ def build_bundle():
             raise ValueError("Missing section title: " + key)
         if len(questions) != group["question_count"]:
             raise ValueError("Question count mismatch: " + key)
-        groups.append({"id": key, "titles": titles, "required": bool(group["required"]), "questions": questions})
+        groups.append({"id": key, "titles": titles,
+                       "concerns": {lang: local[lang].get("concern", titles[lang]) for lang in LANGS}, "required": bool(group["required"]), "questions": questions})
     by_id = {q["id"]: q for group in groups for q in group["questions"]}
     for group in groups:
         for q in group["questions"]:

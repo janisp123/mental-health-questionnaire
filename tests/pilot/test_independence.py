@@ -38,12 +38,14 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     question = {"id": "TEST21", "order": 10000, "choiceCodes": ["A","B"], "multi": False}
     module = modules / "21"
     module.mkdir()
-    write(module / "logic.json", {"group":"21","questions":[question]})
-    registry["groups"].append({"id":"21","required":False,"question_count":1})
+    follow = {**question, "id":"TEST21_F", "order":10001, "context":{"id":"TEST21","showValues":["A"]}}
+    write(module / "logic.json", {"group":"21","questions":[question,follow]})
+    registry["groups"].append({"id":"21","required":False,"question_count":2})
     write(modules / "registry.json", registry)
     for lang in build.LANGS:
         write(module / (lang + ".json"), {"module":"21","lang":lang,"title":"Test 21 "+lang,
-              "questions":{"TEST21":{"title":"Original "+lang,"choices":{"A":"A","B":"B"}}}})
+              "questions":{"TEST21":{"title":"Original "+lang,"choices":{"A":"A","B":"B"}},
+                           "TEST21_F":{"title":"Conditional "+lang,"choices":{"A":"A","B":"B"}}}})
     assert all((source/p).read_bytes()==v for p,v in before.items() if p!=Path("modules/registry.json"))
     old = build_page(temp, "before.html")
     baseline = snapshot(source)
@@ -63,6 +65,9 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
 
     page.goto(old)
     page.select_option("#language","en")
+    click("guide")
+    assert not page.locator("#optional02").is_checked()
+    assert page.get_by_text("Low mood, loss of interest or changes in mood").is_visible()
     click("all")
     assert page.locator("#optional21").is_checked()
     click("confirm")
@@ -85,6 +90,10 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     page.once("dialog",lambda d:d.accept())
     click("skipSection")
     assert page.locator(".question h2").inner_text() == "Original en"
+    page.locator('input[value="A"]').check()
+    click("save")
+    assert page.locator(".question h2").inner_text()=="Conditional en"
+    click("previous")
     page.locator('input[value="B"]').check()
     click("save")
     with page.expect_download() as recovery:
@@ -106,11 +115,25 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     restored = json.loads(recovery.value.path().read_text())
     assert restored["answers"] == previous["answers"]
     assert restored["selected"] == previous["selected"] == ["02","21"]
+    click("sections")
+    page.locator('[data-jump="21"]').click()
+    assert page.locator(".question h2").inner_text() == "Edited English question"
     click("results")
     click("doctor")
     assert "Test 21 en: 1/1" in page.locator("#reportText").input_value()
     click("ai")
-    assert "TEST21" in page.locator("#reportText").input_value()
+    report=page.locator("#reportText").input_value()
+    answers=json.loads(report[report.index("{"):report.index("DECODING KEY")])["answers"]
+    assert next(a for a in answers if a["id"]=="TEST21_F")["status"]=="hidden"
+    click("sections")
+    page.locator("#optional21").uncheck()
+    click("confirm")
+    click("results")
+    click("ai")
+    coded=page.locator("#reportText").input_value()
+    records=json.loads(coded[coded.index("{"):coded.index("DECODING KEY")].strip())["answers"]
+    record=next(row for row in records if row["id"]=="TEST21")
+    assert record["status"]=="omitted" and record["codes"]==[]
     assert not errors, errors
     browser.close()
 print("PASS: registry-only addition, isolated English edit, skip continuation and recovery across builds")
