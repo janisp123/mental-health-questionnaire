@@ -53,7 +53,7 @@ function doctorHtml(questions,answers,selected,locale,ui) {
  const text=doctorText(questions,answers,selected,locale,ui);
  return '<!doctype html><html lang="'+esc(locale)+'"><head><meta charset="utf-8"><title>'+esc(ui.doctorHeading)+'</title><style>@page{size:A4;margin:13mm}body{font:12pt/1.4 Arial,sans-serif;white-space:pre-wrap;color:#17202a;margin:0 auto;max-width:180mm}h1{font-size:18pt}pre{white-space:pre-wrap;font:inherit}small{font-size:9pt}</style></head><body><h1>'+esc(ui.doctorHeading)+'</h1><pre>'+esc(text)+'</pre></body></html>';
 }
-function codedText(questions,answers,locale,ui) {
+function codedText(questions,answers,selected,locale,ui) {
  const list=questions.map(q=>{
    const r=answers[q.id]; const base={id:q.id,module:q.module,order:q.order};
    if(!r)return {...base,status:"unanswered",codes:[]};
