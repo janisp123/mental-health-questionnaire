@@ -89,6 +89,7 @@
     "warningSensitive": "Ja kāda no šīm atbildēm attiecas uz pašreizējo drošību, sazinieties ar palīdzību nekavējoties. Jautājumu aizpildīšana neaizstāj palīdzības saņemšanu.",
     "safetyPending": "Sākuma drošības jautājumi vēl nav pabeigti.",
     "guideIntro": "Izvēlieties jautājumus, kurus vēlaties pārrunāt.",
-    "jump": "Pāriet uz sadaļu"
+    "jump": "Pāriet uz sadaļu",
+    "replaceSession": "Aizstāt pašreizējo sesiju ar šo turpināšanas failu?"
   }
 }

@@ -106,6 +106,16 @@ with tempfile.TemporaryDirectory() as temp:
         with page.expect_download() as result:
             page.click('[data-act="downloadTxt"]')
         assert result.value.suggested_filename.endswith(".txt")
+        # Revisiting safety must traverse every item, including ones already answered.
+        page.click('[data-act="reviewSafety"]')
+        seen=[]
+        for _ in range(11):
+            assert page.locator('[data-act="skip"]').count()==0
+            seen.append(page.locator(".question .muted").first.inner_text().split(" · ")[-1])
+            page.locator('input[name="answer"]').first.check()
+            page.click('[data-act="save"]')
+        assert len(set(seen)) == 11 and seen[0] == "M06_01" and seen[-1]=="M06_13"
+        assert page.locator("#reportText").is_visible()
         assert not errors,"Javascript errors: "+repr(errors)
         assert not requests,"Runtime network requests: "+repr(requests)
         browser.close()

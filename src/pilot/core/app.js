@@ -150,6 +150,19 @@ function choiceStatus(q,codes){
  const statuses=codes.map(c=>q.answerStatus?.[c]);
  return statuses.includes("refused")?"refused":statuses.includes("uncertain")?"uncertain":"answered";
 }
+function advanceAfterSave(){
+ if(state.reviewQueue?.[0]===state.currentId){
+  state.reviewQueue.shift();
+  if(state.reviewQueue.length){setQuestion(state.reviewQueue[0]);return;}
+  const previous=state.reviewReturn;
+  state.reviewQueue=null;state.reviewReturn=null;
+  if(previous?.screen==="question"&&active().some(q=>q.id===previous.id)){
+   setQuestion(previous.id);return;
+  }
+  state.currentId=previous?.id||null;state.screen=previous?.screen||"results";state.draft=null;render();return;
+ }
+ advance();
+}
 function save(){
  const q=current();if(!q)return;
  let rec={savedAt:new Date().toISOString()};
@@ -163,7 +176,7 @@ function save(){
    rec.kind="choice";rec.codes=codes;rec.status=choiceStatus(q,codes);
  }
  state.answers[q.id]=rec;state.savedCount++;
- advance();
+ advanceAfterSave();
  if(state.savedCount%10===0){
    downloadBackup();
    state.notice=ui().saved10;render();
@@ -217,7 +230,7 @@ function downloadFile(name,contents,mime){
  const href=URL.createObjectURL(blob),link=document.createElement("a");link.href=href;link.download=name;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(href),1500);
 }
 function downloadBackup(){
- const payload={schema:"mental-pilot-recovery-v1",version:data.version,lang:state.lang,selected:[...state.selected],sectionConfirmed:state.sectionConfirmed,currentId:state.currentId,answers:state.answers,savedCount:state.savedCount,exportedAt:new Date().toISOString()};
+ const payload={schema:"mental-pilot-recovery-v1",version:data.version,lang:state.lang,selected:[...state.selected],sectionConfirmed:state.sectionConfirmed,currentId:state.currentId,answers:state.answers,savedCount:state.savedCount,reviewQueue:state.reviewQueue||null,reviewReturn:state.reviewReturn||null,exportedAt:new Date().toISOString()};
  downloadFile("anketa-pilot-recovery.json",JSON.stringify(payload,null,2),"application/json");
 }
 function restore(file){
@@ -240,10 +253,18 @@ function restore(file){
     }else if(rec.kind==="skip"&&!isSafety(q))a[id]={kind:"skip",status:"skipped",savedAt:rec.savedAt||""};
     else throw Error("Unknown record");
    }
+   const queue=x.reviewQueue;
+   if(queue!=null&&(!Array.isArray(queue)||new Set(queue).size!==queue.length||
+     queue.some(id=>!byId[id]||!isSafety(byId[id]))))throw Error("Invalid review sequence");
+   if(Object.keys(state.answers).length&&!window.confirm(ui().replaceSession))return;
+   state.reviewQueue=queue?.length?[...queue]:null;
+   state.reviewReturn=state.reviewQueue&&["question","report","results"].includes(x.reviewReturn?.screen)
+     ?{screen:x.reviewReturn.screen,id:x.reviewReturn.id}:null;
    state.answers=a;state.selected=Array.isArray(x.selected)?optionalIds.filter(id=>x.selected.includes(id)):[];state.sectionConfirmed=!!x.sectionConfirmed;
    state.savedCount=Number.isInteger(x.savedCount)&&x.savedCount>=0?x.savedCount:Object.keys(a).length;
    if(["lv","en","ru"].includes(x.lang))state.lang=x.lang;
    state.currentId=typeof x.currentId==="string"&&byId[x.currentId]?x.currentId:null;
+   if(state.reviewQueue)state.currentId=state.reviewQueue[0];
    if(!active().some(q=>q.id===state.currentId))state.currentId=active().find(q=>!state.answers[q.id])?.id||null;
    state.screen=state.currentId?"question":"start";state.draft=null;state.notice=ui().restoreOK;render();
   }catch(err){state.notice=ui().restoreError;render();}
@@ -281,7 +302,11 @@ function action(key){
  if(key==="doctor"||key==="ai"){state.reportView=key==="doctor"?"doctor":"ai";state.screen="report";render();return;}
  if(key==="resultScreen"){state.screen="results";render();return;}
  if(key==="back"){state.screen=state.currentId?"question":"start";render();return;}
- if(key==="reviewSafety"){const safety=active().filter(isSafety);const next=safety.find(q=>!state.answers[q.id])||safety[0];if(next)setQuestion(next.id);return;}
+ if(key==="reviewSafety"){const safety=active().filter(isSafety);if(safety.length){
+   state.reviewQueue=safety.map(q=>q.id);
+   state.reviewReturn={screen:state.screen,id:state.currentId};
+   setQuestion(state.reviewQueue[0]);
+  }return;}
  if(key==="new"){
    if(window.confirm(u.newConfirm)){
      const lang=state.lang;state={lang,screen:"start",currentId:null,answers:{},selected:[],sectionDraft:[],sectionConfirmed:false,savedCount:0,notice:"",reportView:"doctor",draft:null};render();

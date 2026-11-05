@@ -115,7 +115,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     restored = json.loads(recovery.value.path().read_text())
     assert restored["answers"] == previous["answers"]
     assert restored["selected"] == previous["selected"] == ["02","21"]
-    click("sections")
+    page.locator('nav [data-act="sections"]').click()
     page.locator('[data-jump="21"]').click()
     assert page.locator(".question h2").inner_text() == "Edited English question"
     click("results")
@@ -125,7 +125,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     report=page.locator("#reportText").input_value()
     answers=json.loads(report[report.index("{"):report.index("DECODING KEY")])["answers"]
     assert next(a for a in answers if a["id"]=="TEST21_F")["status"]=="hidden"
-    click("sections")
+    page.locator('nav [data-act="sections"]').click()
     page.locator("#optional21").uncheck()
     click("confirm")
     click("results")

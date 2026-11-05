@@ -43,7 +43,7 @@ function doctorText(questions,answers,selected,locale,ui,groups) {
     }),
     "",""+ui.attention+":"];
   if(!marked.length)lines.push(ui.noneFlagged);
-  for(const q of marked)lines.push("• "+q.id+" — "+q.translations[locale].title+": "+readable(q,answers[q.id],locale,ui));
+  for(const q of marked)lines.push("• "+q.id+" — "+q.translations[locale].title+": "+readable(q,answers[q.id],locale,ui)+(answers[q.id].savedAt?" ("+answers[q.id].savedAt+")":""));
   lines.push("",""+ui.warningSensitive,"",ui.help);
   return lines.filter(x=>x!==undefined).join("\n");
 }

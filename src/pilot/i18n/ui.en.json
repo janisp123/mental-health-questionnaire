@@ -89,6 +89,7 @@
     "warningSensitive": "If an answer concerns immediate safety, seek help now. Completing this questionnaire is not a substitute for emergency support.",
     "safetyPending": "Some opening safety questions still need an answer.",
     "guideIntro": "Choose the topics you want to discuss.",
-    "jump": "Go to section"
+    "jump": "Go to section",
+    "replaceSession": "Replace the current session with this recovery file?"
   }
 }
