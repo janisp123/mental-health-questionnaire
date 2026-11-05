@@ -1,0 +1,252 @@
+{
+  "schema": "pilot-module-locale-v1",
+  "module": "02",
+  "lang": "en",
+  "source_version": "LV-v16",
+  "status": "DRAFT_NOT_RELEASED",
+  "questions": {
+    "M02_01": {
+      "title": "Little interest or pleasure in doing things",
+      "time": "Over the past 2 weeks.",
+      "choices": {
+        "A": "Not at all",
+        "B": "Several days",
+        "C": "More than half the days",
+        "D": "Nearly every day"
+      }
+    },
+    "M02_02": {
+      "title": "Feeling down, depressed, or hopeless",
+      "time": "Over the past 2 weeks.",
+      "choices": {
+        "A": "Not at all",
+        "B": "Several days",
+        "C": "More than half the days",
+        "D": "Nearly every day"
+      }
+    },
+    "M02_03": {
+      "title": "Trouble falling or staying asleep, or sleeping too much",
+      "time": "Over the past 2 weeks.",
+      "choices": {
+        "A": "Not at all",
+        "B": "Several days",
+        "C": "More than half the days",
+        "D": "Nearly every day"
+      }
+    },
+    "M02_04": {
+      "title": "Feeling tired or having little energy",
+      "time": "Over the past 2 weeks.",
+      "choices": {
+        "A": "Not at all",
+        "B": "Several days",
+        "C": "More than half the days",
+        "D": "Nearly every day"
+      }
+    },
+    "M02_05": {
+      "title": "Poor appetite or overeating",
+      "time": "Over the past 2 weeks.",
+      "choices": {
+        "A": "Not at all",
+        "B": "Several days",
+        "C": "More than half the days",
+        "D": "Nearly every day"
+      }
+    },
+    "M02_06": {
+      "title": "Feeling bad about yourself - or that you are a failure or have let yourself or your family down",
+      "time": "Over the past 2 weeks.",
+      "choices": {
+        "A": "Not at all",
+        "B": "Several days",
+        "C": "More than half the days",
+        "D": "Nearly every day"
+      }
+    },
+    "M02_07": {
+      "title": "Trouble concentrating on things, such as reading the newspaper or watching television",
+      "time": "Over the past 2 weeks.",
+      "choices": {
+        "A": "Not at all",
+        "B": "Several days",
+        "C": "More than half the days",
+        "D": "Nearly every day"
+      }
+    },
+    "M02_08": {
+      "title": "Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual",
+      "time": "Over the past 2 weeks.",
+      "choices": {
+        "A": "Not at all",
+        "B": "Several days",
+        "C": "More than half the days",
+        "D": "Nearly every day"
+      }
+    },
+    "M02_09": {
+      "title": "Thoughts that you would be better off dead or of hurting yourself in some way",
+      "time": "Over the past 2 weeks.",
+      "choices": {
+        "A": "Not at all",
+        "B": "Several days",
+        "C": "More than half the days",
+        "D": "Nearly every day"
+      }
+    },
+    "M02_10": {
+      "title": "Over the past 14 days, how much have the difficulties above interfered with work, household responsibilities or relationships?",
+      "time": "The past 14 days.",
+      "choices": {
+        "A": "Not at all",
+        "B": "A little",
+        "C": "Moderately",
+        "D": "Severely",
+        "E": "Very severely",
+        "F": "Does not apply to me",
+        "G": "Difficult to say",
+        "H": "Prefer not to answer."
+      }
+    },
+    "M02_11": {
+      "title": "Have periods of this kind of low mood occurred several times in your life?",
+      "time": "At any time in life.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "I don't want to answer.",
+        "E": "Not applicable to me."
+      }
+    },
+    "M02_12": {
+      "title": "How long did the most recent episode of low mood or loss of pleasure last, or how long has it lasted so far?",
+      "time": "The total duration of the most recent episode described.",
+      "choices": {
+        "A": "I have not had an episode like this",
+        "B": "Less than 2 weeks",
+        "C": "From 2 weeks to less than 1 month",
+        "D": "From 1 month to less than 3 months",
+        "E": "From 3 months to less than 6 months",
+        "F": "From 6 months to less than 1 year",
+        "G": "1 year or longer",
+        "H": "Variable; I cannot give a single duration",
+        "I": "Difficult to say",
+        "J": "Prefer not to answer."
+      }
+    },
+    "M02_13": {
+      "title": "Over the past 14 days, did loss of pleasure persist even in situations you used to enjoy?",
+      "time": "The past 14 days.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "I don't want to answer.",
+        "E": "Not applicable to me."
+      }
+    },
+    "M02_14": {
+      "title": "On how many days in the past 28 days did you feel emotionally empty?",
+      "time": "The past 28 days.",
+      "choices": {
+        "A": "On no days",
+        "B": "On 1-3 days",
+        "C": "On 4-10 days",
+        "D": "On 11-20 days",
+        "E": "On 21-28 days",
+        "F": "Difficult to say",
+        "G": "Prefer not to answer."
+      }
+    },
+    "M02_15": {
+      "title": "How much were you distressed by thoughts that life lacks meaning or purpose?",
+      "time": "The past 14 days.",
+      "choices": {
+        "A": "Not at all",
+        "B": "A little",
+        "C": "Moderately",
+        "D": "Severely",
+        "E": "Extremely",
+        "F": "I don't know",
+        "G": "I don't want to answer."
+      }
+    },
+    "M02_16": {
+      "title": "How did your mood usually differ in the morning and evening?",
+      "time": "Over the past 2 weeks.",
+      "choices": {
+        "A": "Worse in the morning, better in the evening",
+        "B": "Better in the morning, worse in the evening",
+        "C": "Changed significantly, but without a unified pattern",
+        "D": "Was relatively similar throughout the day",
+        "E": "Difficult to say",
+        "F": "I don't want to answer."
+      }
+    },
+    "M02_17": {
+      "title": "How pronounced was the mood difference between morning and evening?",
+      "time": "Over the past 2 weeks.",
+      "choices": {
+        "A": "There was no difference.",
+        "B": "Small",
+        "C": "Medium",
+        "D": "Expressed",
+        "E": "Very pronounced",
+        "F": "Difficult to say",
+        "G": "I don't want to answer."
+      }
+    },
+    "M02_18": {
+      "title": "On how many days did you notice such mood changes throughout the day?",
+      "time": "Over the past 2 weeks.",
+      "choices": {
+        "A": "None",
+        "B": "On 1-3 days",
+        "C": "In 4–7 days",
+        "D": "In 8–11 days",
+        "E": "In 12–14 days",
+        "F": "Difficult to say",
+        "G": "I don't want to answer."
+      }
+    },
+    "M02_19": {
+      "title": "What do you think caused your mood changes throughout the day?",
+      "time": "Over the past 2 weeks.",
+      "choices": {
+        "A": "Sleep quality or wakefulness",
+        "B": "Pain or physical discomfort",
+        "C": "Time of medication use",
+        "D": "For meals",
+        "E": "Work or care responsibilities",
+        "F": "Interaction with people",
+        "G": "Caffeine, alcohol, or other substances",
+        "H": "The change was for no reason I could understand.",
+        "I": "There are no such changes.",
+        "J": "I don't know",
+        "K": "I don't want to answer."
+      }
+    },
+    "M02_20": {
+      "title": "Has the depression or loss of joy been present most days for at least two years, even between more severe episodes?",
+      "time": "At any time in life.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I do not know / difficult to say",
+        "D": "I don't want to answer."
+      }
+    },
+    "M02_21": {
+      "title": "Have severe mood difficulties recurred at the same time of year for at least two years?",
+      "time": "Recent years.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I do not know / difficult to say",
+        "D": "I don't want to answer."
+      }
+    }
+  }
+}
