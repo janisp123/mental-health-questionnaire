@@ -23,3 +23,7 @@ Goal: verify GitHub writes and create public, development-only project structure
 
 ### Safe continuation
 Read this status and `docs/MIGRATION_PLAN.md`, then inspect the Git branch SHA and Drive changelog. Do not assume that the latest GitHub status is the current Drive task status, that any English/Russian translation is approved, or that a working user questionnaire exists in GitHub.
+
+## 2026-11-05 — GITHUB-SOURCE-MIGRATION — IN_PROGRESS
+
+Drive inventory verified. Public source migration attempted on develop; initial batch was blocked by connector safety checks before a branch commit. Previous Git branch head is unchanged. No questionnaire module is committed yet. Drive originals remain authoritative. Continue with source-only validation and record actual committed files before closing.
