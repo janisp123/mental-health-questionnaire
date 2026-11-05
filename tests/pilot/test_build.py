@@ -42,6 +42,6 @@ stored=json.loads(blob.group(1))
 assert stored == bundle
 assert stored["release_status"]["en"] == "DRAFT_NOT_RELEASED"
 assert stored["release_status"]["ru"] == "DRAFT_NOT_RELEASED"
-print("PASS structural: 20 opening + 21 depression, 3 languages, no runtime network imports")
+print(f"PASS structural: {len(questions)} questions, 3 languages, no runtime network imports")
 print("NOT tested: clinical wording, user-interface behavior or real Android Chrome.")
 

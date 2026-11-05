@@ -1,0 +1,510 @@
+{
+  "schema": "pilot-module-logic-v1",
+  "group": "21",
+  "reference": "LV-v16",
+  "source_modules": [
+    21
+  ],
+  "questions": [
+    {
+      "order": 387,
+      "id": "M21_01",
+      "profile": "P05",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused",
+        "E": "answered"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "originModule": 21
+    },
+    {
+      "order": 388,
+      "id": "M21_02",
+      "profile": "P05",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused",
+        "E": "answered"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "originModule": 21
+    },
+    {
+      "order": 389,
+      "id": "M21_03",
+      "profile": "P05",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused",
+        "E": "answered"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "originModule": 21
+    },
+    {
+      "order": 390,
+      "id": "M21_04",
+      "profile": "P05",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused",
+        "E": "answered"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "originModule": 21
+    },
+    {
+      "order": 391,
+      "id": "M21_05",
+      "profile": "P05",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused",
+        "E": "answered"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "originModule": 21
+    },
+    {
+      "order": 392,
+      "id": "M21_06",
+      "profile": "P54",
+      "multi": true,
+      "context": null,
+      "exclusive": "FGH",
+      "incompatible": [
+        [
+          "A",
+          "E"
+        ]
+      ],
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "answered",
+        "E": "answered",
+        "F": "answered",
+        "G": "uncertain",
+        "H": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "originModule": 21
+    },
+    {
+      "order": 393,
+      "id": "M21_07",
+      "profile": "P05",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused",
+        "E": "answered"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "originModule": 21
+    },
+    {
+      "order": 394,
+      "id": "M21_08",
+      "profile": "P05",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused",
+        "E": "answered"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "originModule": 21
+    },
+    {
+      "order": 395,
+      "id": "M21_09",
+      "profile": "P05",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused",
+        "E": "answered"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "originModule": 21
+    },
+    {
+      "order": 396,
+      "id": "M21_10",
+      "profile": "P05",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused",
+        "E": "answered"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "originModule": 21
+    },
+    {
+      "order": 397,
+      "id": "M21_11",
+      "profile": "P05",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused",
+        "E": "answered"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "originModule": 21
+    },
+    {
+      "order": 398,
+      "id": "M21_12",
+      "profile": "P07",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "answered",
+        "D": "answered",
+        "E": "answered",
+        "F": "answered",
+        "G": "uncertain",
+        "H": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "originModule": 21
+    },
+    {
+      "order": 399,
+      "id": "M21_13",
+      "profile": "P18",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "answered",
+        "D": "answered",
+        "E": "answered",
+        "F": "answered",
+        "G": "uncertain",
+        "H": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "originModule": 21
+    },
+    {
+      "order": 400,
+      "id": "M21_14",
+      "profile": "CUSTOM-CONTEXT-ADDITION-1",
+      "multi": true,
+      "exclusive": "AFG",
+      "incompatible": [],
+      "context": null,
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "answered",
+        "D": "answered",
+        "E": "answered",
+        "F": "uncertain",
+        "G": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "originModule": 21
+    },
+    {
+      "order": 401,
+      "id": "M21_15",
+      "profile": "CUSTOM-CONTEXT-ADDITION-1",
+      "multi": false,
+      "exclusive": "",
+      "incompatible": [],
+      "context": null,
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 21,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B"
+      ]
+    },
+    {
+      "order": 402,
+      "id": "M21_16",
+      "profile": "CUSTOM12",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 21
+    },
+    {
+      "order": 403,
+      "id": "M21_17",
+      "profile": "CUSTOM12",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 21
+    },
+    {
+      "order": 404,
+      "id": "M21_18",
+      "profile": "CUSTOM12",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 21
+    },
+    {
+      "order": 405,
+      "id": "M21_19",
+      "profile": "CUSTOM12",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 21,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "answered",
+        "D": "answered",
+        "E": "uncertain",
+        "F": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "originModule": 21
+    }
+  ]
+}

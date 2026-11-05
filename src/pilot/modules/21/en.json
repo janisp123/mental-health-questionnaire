@@ -1,0 +1,226 @@
+{
+  "schema": "pilot-module-locale-v1",
+  "lang": "en",
+  "source_version": "LV-v16",
+  "status": "DRAFT_NOT_RELEASED",
+  "module": "21",
+  "title": "21 · Unusual experiences",
+  "questions": {
+    "M21_01": {
+      "title": "Have you heard voices that other people could not hear and that had no clear external source?",
+      "time": "At any time in life.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "I don't want to answer.",
+        "E": "Not applicable to me."
+      }
+    },
+    "M21_02": {
+      "title": "Have you seen something that other people could not see?",
+      "time": "At any time in life.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "I don't want to answer.",
+        "E": "Not applicable to me."
+      }
+    },
+    "M21_03": {
+      "title": "Have you ever had a persistent belief that someone was trying to harm you, whose basis you would like to discuss with a doctor?",
+      "time": "At any time in life.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "I don't want to answer.",
+        "E": "Not applicable to me."
+      }
+    },
+    "M21_04": {
+      "title": "Have you ever felt that an external force was influencing or controlling your thoughts?",
+      "time": "At any time in life.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "I don't want to answer.",
+        "E": "Not applicable to me."
+      }
+    },
+    "M21_05": {
+      "title": "Have these experiences ever frightened you or interfered with your ability to act?",
+      "time": "At any time in life.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "I don't want to answer.",
+        "E": "Not applicable to me."
+      }
+    },
+    "M21_06": {
+      "title": "In what circumstances have the unusual perceptions or beliefs above occurred? Select all that apply.",
+      "time": "At any time in life.",
+      "choices": {
+        "A": "Only while falling asleep or waking",
+        "B": "After significant lack of sleep",
+        "C": "During substance use or withdrawal",
+        "E": "Also while fully awake without the circumstances above",
+        "F": "I have not had these experiences",
+        "G": "I don't remember / I don't know",
+        "H": "Prefer not to answer."
+      }
+    },
+    "M21_07": {
+      "title": "Do you sometimes feel detached from your body or the world around you?",
+      "time": "At any time in life.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "I don't want to answer.",
+        "E": "Not applicable to me."
+      }
+    },
+    "M21_08": {
+      "title": "Have you ever had periods while awake when you later could not remember what you had done?",
+      "time": "At any time in life.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "I don't want to answer.",
+        "E": "Not applicable to me."
+      }
+    },
+    "M21_09": {
+      "title": "Immediately after waking, do you sometimes find it difficult to distinguish a dream from being awake?",
+      "time": "At any time in life.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "I don't want to answer.",
+        "E": "Not applicable to me."
+      }
+    },
+    "M21_10": {
+      "title": "Have others expressed concern about sudden changes in your thinking?",
+      "time": "At any time in life.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "I don't want to answer.",
+        "E": "Not applicable to me."
+      }
+    },
+    "M21_11": {
+      "title": "Have you ever sought emergency help for symptoms like these?",
+      "time": "At any time in life.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "I don't want to answer.",
+        "E": "Not applicable to me."
+      }
+    },
+    "M21_12": {
+      "title": "How much do unusual perceptions or memory gaps affect your daily life?",
+      "time": "The past 28 days.",
+      "choices": {
+        "A": "Not at all",
+        "B": "A little",
+        "C": "Moderately",
+        "D": "Severely",
+        "E": "Very severely",
+        "F": "Does not apply to me",
+        "G": "Difficult to say",
+        "H": "Prefer not to answer."
+      }
+    },
+    "M21_13": {
+      "title": "When did you last have the unusual perceptions or beliefs you have described in this section?",
+      "time": "Time since the most recent unusual experience described.",
+      "choices": {
+        "A": "Within the past 24 hours",
+        "B": "More than 24 hours ago, but less than 1 month ago",
+        "C": "More than 1 month but not more than 1 year ago",
+        "D": "More than 1 year ago, but no more than 5 years ago",
+        "E": "More than 5 years ago",
+        "F": "This has not happened",
+        "G": "I don't remember / I don't know",
+        "H": "Prefer not to answer."
+      }
+    },
+    "M21_14": {
+      "title": "Which of these experiences have occurred in the past 14 days? Select all that apply.",
+      "time": "The past 14 days. Actual abuse or discrimination must not automatically be interpreted as a delusional belief.",
+      "choices": {
+        "A": "None",
+        "B": "Voices without a clear external source that others do not hear",
+        "C": "Seeing things others do not see",
+        "D": "A persistent belief about being threatened whose basis you wish to discuss",
+        "E": "Feeling an external force controls your thoughts",
+        "F": "I don't know",
+        "G": "I don't want to answer."
+      }
+    },
+    "M21_15": {
+      "title": "Do you currently need help resisting voices or unusual experiences urging actions that could endanger you or other people?",
+      "time": "Currently.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know",
+        "D": "I don't want to answer."
+      }
+    },
+    "M21_16": {
+      "title": "Have others noticed that your speech has become difficult to follow or your thoughts often break off?",
+      "time": "The last 3 months.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I do not know / difficult to say",
+        "D": "I don't want to answer."
+      }
+    },
+    "M21_17": {
+      "title": "Do you talk or show much less emotion than you usually do?",
+      "time": "The last 3 months.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I do not know / difficult to say",
+        "D": "I don't want to answer."
+      }
+    },
+    "M21_18": {
+      "title": "Is it significantly more difficult than before to start activities even though you would like to do them?",
+      "time": "The last 3 months.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I do not know / difficult to say",
+        "D": "I don't want to answer."
+      }
+    },
+    "M21_19": {
+      "title": "When do unusual perceptions or experiences of belief arise in relation to mood?",
+      "time": "At any time in life.",
+      "choices": {
+        "A": "Only in a severely depressed period",
+        "B": "Only during periods of markedly increased energy",
+        "C": "Also outside such periods",
+        "D": "No such experiences",
+        "E": "I don't know",
+        "F": "I don't want to answer."
+      }
+    }
+  }
+}

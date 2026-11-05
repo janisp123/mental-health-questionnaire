@@ -37,14 +37,14 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     registry = build.read_json(modules / "registry.json")
     # A single synthetic question keeps this test independent of future clinical edits.
     question = {"id": "TEST21", "order": 10000, "choiceCodes": ["A","B"], "multi": False}
-    module = modules / "21"
+    module = modules / "fixture"
     module.mkdir()
     follow = {**question, "id":"TEST21_F", "order":10001, "context":{"id":"TEST21","showValues":["A"]}}
-    write(module / "logic.json", {"group":"21","questions":[question,follow]})
-    registry["groups"].append({"id":"21","required":False,"question_count":2})
+    write(module / "logic.json", {"group":"fixture","questions":[question,follow]})
+    registry["groups"].append({"id":"fixture","required":False,"question_count":2})
     write(modules / "registry.json", registry)
     for lang in build.LANGS:
-        write(module / (lang + ".json"), {"module":"21","lang":lang,"title":"Test 21 "+lang,
+        write(module / (lang + ".json"), {"module":"fixture","lang":lang,"title":"Test fixture "+lang,
               "questions":{"TEST21":{"title":"Original "+lang,"choices":{"A":"A","B":"B"}},
                            "TEST21_F":{"title":"Conditional "+lang,"choices":{"A":"A","B":"B"}}}})
     assert all((source/p).read_bytes()==v for p,v in before.items() if p!=Path("modules/registry.json"))
@@ -70,7 +70,8 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert not page.locator("#optional02").is_checked()
     assert page.get_by_text("Low mood, loss of interest or changes in mood").is_visible()
     click("all")
-    assert page.locator("#optional21").is_checked()
+    page.locator("#optional21").uncheck()
+    assert page.locator("#optionalfixture").is_checked()
     click("confirm")
     # Complete the opening using the normal controls. Verify the tenth-save file.
     saved = 0
@@ -115,9 +116,9 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
         click("backup")
     restored = json.loads(recovery.value.path().read_text())
     assert restored["answers"] == previous["answers"]
-    assert restored["selected"] == previous["selected"] == ["02","21"]
+    assert restored["selected"] == previous["selected"] == ["02","fixture"]
     page.locator('nav [data-act="sections"]').click()
-    page.locator('[data-jump="21"]').click()
+    page.locator('[data-jump="fixture"]').click()
     assert page.locator(".question h2").inner_text() == "Edited English question"
     # A backup needing an unregistered section must never replace a valid session.
     invalid=temp/"unavailable.json"
@@ -127,13 +128,13 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert page.locator('input[value="B"]').is_checked()
     click("results")
     click("doctor")
-    assert "Test 21 en: 1/1" in page.locator("#reportText").input_value()
+    assert "Test fixture en: 1/1" in page.locator("#reportText").input_value()
     click("ai")
     report=page.locator("#reportText").input_value()
     answers=json.loads(report[report.index("{"):report.index("DECODING KEY")])["answers"]
     assert next(a for a in answers if a["id"]=="TEST21_F")["status"]=="hidden"
     page.locator('nav [data-act="sections"]').click()
-    page.locator("#optional21").uncheck()
+    page.locator("#optionalfixture").uncheck()
     click("confirm")
     click("results")
     click("ai")

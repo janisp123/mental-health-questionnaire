@@ -92,6 +92,7 @@
     "jump": "Pāriet uz sadaļu",
     "replaceSession": "Aizstāt pašreizējo sesiju ar šo turpināšanas failu?",
     "visitSummary": "Persona un vizītes iemesls",
-    "safetySummary": "Pašreizējā drošība: saglabātās atbildes un to laiks"
+    "safetySummary": "Pašreizējā drošība: saglabātās atbildes un to laiks",
+    "incompatibleAnswers": "Šīs atbildes nevar izvēlēties kopā:"
   }
 }

@@ -1,6 +1,6 @@
 # Editing the offline pilot
 
-The editable pilot on develop has the required 20-question opening and optional 21-question mood section. LV v16 is the frozen behavioral reference. The EN/RU text is an unreviewed draft. The artifact is a development build.
+The editable pilot on develop has the required 20-question opening and two optional sections: 02 (21 mood questions) and 21 (19 unusual-experience questions). LV v16 is the frozen behavioral reference. The EN/RU text is an unreviewed draft. The artifact is a development build.
 
 ## Change one translation
 
@@ -12,13 +12,13 @@ Create `src/pilot/modules/{id}/{logic,lv,en,ru}.json`. Copy the shape of section
 
 ## Build and check
 
-Run `python tools/build_pilot.py` for a standalone HTML file. Run `python tests/pilot/test_build.py` for data and packaging checks. With Playwright Chromium installed, run `python tests/pilot/test_browser.py` and `python tests/pilot/test_independence.py`. CI runs these against local file URLs and verifies the frozen source inventory. The independence test builds a temporary extra section, changes one English prompt, restores previous answers and compares untouched source bytes. It never registers the fixture in the real pilot.
+Run `python tools/build_pilot.py` for a standalone HTML file. Run `python tests/pilot/test_build.py` for data and packaging checks. Run `python tests/pilot/test_source_fidelity.py` to compare every registered question with frozen v16 and prove that swapped labels fail. An intentional wording change needs an independently reviewed, ID/locale/field-specific exception before this gate can pass; never update the frozen bank to make an edit pass. With Playwright Chromium installed, run `python tests/pilot/test_browser.py` , `python tests/pilot/test_independence.py` and `python tests/pilot/test_section21.py`. CI runs these against local file URLs and verifies the frozen source inventory. The independence test builds a temporary extra section, changes one English prompt, restores previous answers and compares untouched source bytes. It never registers the fixture in the real pilot.
 
 ## Behavioral comparison with LV v16
 
 | Workflow | Evidence or remaining difference |
 |---|---|
-| Module registration and translation isolation | Verified by a real Chromium journey with temporary section 21. Checkbox selection, skip-to-next, titles, report counts and cross-build recovery use the registry. |
+| Module registration and translation isolation | Verified by a real Chromium journey with a temporary test module. Checkbox selection, skip-to-next, titles, report counts and cross-build recovery use the registry. |
 | Opening, manual save, language switch, results | Chromium exercises entry, unsaved edits, backing up, starting another respondent, restoring and traversing the opening. |
 | Safety | Opening safety items cannot be individually skipped. Incomplete results disclose missing safety answers. Immediate-help and discussion hints follow pilot question metadata. Review safety traverses the opening safety items, can resume from a pilot backup and returns to the previous screen. Flagged answers include their saved timestamps. Full v16 legacy review behavior still needs comparison. |
 | Conditions and status | The pilot data include little branching. Recheck original condition/exclusion rules when importing a module. Omitted and conditionally hidden answers must remain distinct from unanswered items. |

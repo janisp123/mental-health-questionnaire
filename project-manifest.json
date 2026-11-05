@@ -80,7 +80,14 @@
       "tests": "tests/pilot/",
       "ci": ".github/workflows/pilot-checks.yml",
       "architecture": "docs/PILOT_ARCHITECTURE.md",
-      "artifact": "PILOT_offline_LV_EN_RU_v0.1_NOT_RELEASED"
+      "artifact": "PILOT_offline_LV_EN_RU_v0.1_NOT_RELEASED",
+      "active_sections": [
+        "opening",
+        "02",
+        "21"
+      ],
+      "question_count": 60,
+      "source_fidelity_check": "tests/pilot/test_source_fidelity.py"
     }
   },
   "import_validation": {

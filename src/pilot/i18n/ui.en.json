@@ -92,6 +92,7 @@
     "jump": "Go to section",
     "replaceSession": "Replace the current session with this recovery file?",
     "visitSummary": "Person and reason for the visit",
-    "safetySummary": "Current safety: answers and when they were saved"
+    "safetySummary": "Current safety: answers and when they were saved",
+    "incompatibleAnswers": "These answers cannot be selected together:"
   }
 }

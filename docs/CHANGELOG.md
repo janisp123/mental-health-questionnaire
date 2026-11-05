@@ -6,7 +6,9 @@
 
 ## 2026-11-05 · SOURCE-FIDELITY-AND-SECTION-21 · IN_PROGRESS
 
-Plan: verify active modules against frozen v16 by ID and exact codes, demonstrate rejection of swapped labels, inspect section 21 dependencies, import its three existing locales, verify in offline Chromium and checkpoint the artifact. Checkpoint: 41 active questions passed exact v16 logic and LV/EN/RU text comparisons locally. Deliberately swapping English labels B/C at M02_01 failed at the expected ID, locale and field. The gate runs in pilot CI. Section 21 has 19 questions (orders 387–405), no opening overlap or condition parents, and an incompatible A/E pair at M21_06 requiring generic runtime enforcement. Next: import and verify the end-to-end browser journey.
+Plan: verify active modules against frozen v16 by ID and exact codes, demonstrate rejection of swapped labels, inspect section 21 dependencies, import its three existing locales, verify in offline Chromium and checkpoint the artifact. Checkpoint: 41 active questions passed exact v16 logic and LV/EN/RU text comparisons locally. Deliberately swapping English labels B/C at M02_01 failed at the expected ID, locale and field. The gate runs in pilot CI. Section 21 has 19 questions (orders 387–405), no opening overlap or condition parents, and an incompatible A/E pair at M21_06 requiring generic runtime enforcement. Source gate committed at c7e0f37804c93013fb44bff9e776b205012e6594.
+
+Imported real section 21 directly from v16 in its three languages. All 60 questions passed the structural and independent fidelity checks locally. Runtime now rejects incompatible selections on both save and restore. M21_15 retains the v16 immediate-help trigger B. Browser test exercises all 19 items, reports and recovery. Await CI.
 
 ## 2026-11-05 · PILOT-GENERIC-MODULE-AUDIT · TASK_DONE
 

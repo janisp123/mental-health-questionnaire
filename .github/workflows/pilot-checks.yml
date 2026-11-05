@@ -51,6 +51,8 @@ jobs:
         run: python tests/pilot/test_browser.py
       - name: Test module and translation independence offline
         run: python tests/pilot/test_independence.py
+      - name: Check real section 21 from answering to exported reports
+        run: python tests/pilot/test_section21.py
       - name: Upload offline prototype (test artifact, NOT a release)
         if: success()
         uses: actions/upload-artifact@v4

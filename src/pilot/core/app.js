@@ -163,6 +163,9 @@ function advanceAfterSave(){
  }
  advance();
 }
+function incompatiblePair(q,codes){
+ return (q.incompatible||[]).find(([a,b])=>codes.includes(a)&&codes.includes(b));
+}
 function save(){
  const q=current();if(!q)return;
  let rec={savedAt:new Date().toISOString()};
@@ -173,6 +176,8 @@ function save(){
    const codes=(state.draft?.codes||[]).filter(key=>q.choiceCodes.includes(key));
    if(!codes.length){state.notice=ui().chooseAnswer;render();return;}
    if(q.maxChoices&&codes.length>q.maxChoices){state.notice=ui().maxChoices+" "+q.maxChoices;render();return;}
+   const pair=incompatiblePair(q,codes);
+   if(pair){state.notice=ui().incompatibleAnswers+" "+pair.join(" + ");render();return;}
    rec.kind="choice";rec.codes=codes;rec.status=choiceStatus(q,codes);
  }
  state.answers[q.id]=rec;state.savedCount++;
@@ -246,6 +251,7 @@ function restore(file){
     if(rec.kind==="choice"){
       if(q.type==="shortText"||!Array.isArray(rec.codes)||!rec.codes.length||new Set(rec.codes).size!==rec.codes.length||!rec.codes.every(code=>q.choiceCodes.includes(code)))throw Error("Unknown choice");
       if((!q.multi&&rec.codes.length!==1)||(q.maxChoices&&rec.codes.length>q.maxChoices)||(rec.codes.length>1&&rec.codes.some(c=>q.exclusive?.includes(c))))throw Error("Invalid single answer");
+      if(incompatiblePair(q,rec.codes))throw Error("Incompatible answers");
       a[id]={kind:"choice",codes:[...rec.codes],status:choiceStatus(q,rec.codes),savedAt:rec.savedAt||""};
     }else if(rec.kind==="text"){
       if(q.type!=="shortText"||typeof rec.value!=="string")throw Error("Invalid text");
