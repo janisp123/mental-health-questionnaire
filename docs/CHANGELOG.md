@@ -4,6 +4,13 @@
 **Development edits:** GitHub only, after the relevant sources have been imported and verified.
 **Google Drive:** distribution of Latvian public files only. Existing Drive archives are read-only source references until migration is complete; do not update its old changelog for routine work.
 
+## 2026-11-05 · PILOT-GENERIC-MODULE-AUDIT · IN_PROGRESS
+
+**Goal:** audit the existing pilot against LV v16; remove module-specific engine/build assumptions; verify translation independence and additional-module registration; document remaining parity gaps and active source pointers.
+**Plan:** inspect sources and successful CI evidence; checkpoint findings; make targeted generic changes; run structural and browser regressions; update architecture/index/manifest and verified status. Preserve original IDs, codes, conditions and recovery semantics. No release, Drive edits or main changes.
+**Current:** read repository operating rules, file index, manifest and changelog. Confirmed documentation is stale; implementation not yet audited.
+**Next:** inspect pilot core, reports, registry, builder, tests and workflow run 42057715895.
+
 ## 2026-11-05 · PROGRESS-UPDATES-RULE · TASK_DONE
 
 Added `AGENTS.md` to require brief user-visible updates approximately every minute during active multi-step tasks (more frequently when practical), actual progress details, immediate blocker notices, and durable changelog checkpoints after verified batches. This is a workflow instruction rather than a guaranteed timer or background process. The active two-section pilot remains `IN_PROGRESS`.
