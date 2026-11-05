@@ -1,0 +1,1609 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 31,
+  "count": 20,
+  "entries": [
+    {
+      "order": 13,
+      "lv": {
+        "id": "M31_09",
+        "title": "Vai šobrīd ir apdraudēta bērna vai citas aprūpējamas personas fiziskā drošība?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 31,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Is the physical safety of a child or another person in your care currently at risk?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Находится ли сейчас под угрозой физическая безопасность ребёнка или другого человека на вашем попечении?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 14,
+      "lv": {
+        "id": "M31_10",
+        "title": "Vai šobrīd mājās piedzīvojat draudus vai vardarbību?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 31,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Are you currently experiencing threats or violence at home?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Испытываете ли вы сейчас угрозы или насилие дома?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 550,
+      "lv": {
+        "id": "M31_01",
+        "title": "Vai pašlaik regulāri rūpējaties par bērnu vai par pieaugušo, kuram vajadzīga palīdzība ikdienā?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 31,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        },
+        "help": "Iekļaujiet arī bērna ikdienas aprūpi bez slimības vai invaliditātes. Atbildiet par savu pieredzi; citu cilvēku vārdus nenorādiet."
+      },
+      "en": {
+        "title": "Do you currently regularly care for a child or an adult who needs help with everyday life?",
+        "time": "Currently.",
+        "help": "Also include daily care of the child without illness or disability. Answer about your own experience; do not use other people's names.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "В настоящее время вы регулярно ухаживаете за ребенком или взрослым, нуждающимся в помощи в повседневной жизни?",
+        "time": "В настоящее время.",
+        "help": "Также укажите, как осуществляется ежедневный уход за ребенком, если он не болен и не имеет инвалидности. Расскажите о своем собственном опыте; не используйте имена других людей.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 551,
+      "lv": {
+        "id": "M31_02",
+        "title": "Cik daudz papildu palīdzības kopumā nepieciešams personai, kuru jūs galvenokārt aprūpējat?",
+        "profile": "P67",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M31_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Papildu palīdzība nav vajadzīga",
+          "B": "Neliela periodiska palīdzība",
+          "C": "Regulāra palīdzība daļā ikdienas darbību",
+          "D": "Ikdienas aprūpe daudzās darbībās",
+          "E": "Pastāvīga uzraudzība vai ļoti intensīva aprūpe",
+          "F": "Grūti novērtēt",
+          "G": "Neattiecas uz mani",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 31,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "answered",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "Overall, how much additional help does the person you mainly care for need?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No additional help is needed",
+          "B": "A little help from time to time",
+          "C": "Regular help with some daily activities",
+          "D": "Daily care with many activities",
+          "E": "Constant supervision or very intensive care",
+          "F": "Difficult to assess",
+          "G": "Does not apply to me",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Сколько дополнительной помощи в целом нужно человеку, за которым вы преимущественно ухаживаете?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Дополнительная помощь не нужна",
+          "B": "Небольшая периодическая помощь",
+          "C": "Регулярная помощь в части повседневных действий",
+          "D": "Ежедневный уход во многих действиях",
+          "E": "Постоянный присмотр или очень интенсивный уход",
+          "F": "Трудно оценить",
+          "G": "Ко мне это не относится",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 552,
+      "lv": {
+        "id": "M31_03",
+        "title": "Vai pēdējo 28 dienu laikā aprūpes dēļ bija grūti strādāt vai apmeklēt savas ārsta vizītes?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M31_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 31,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Over the past 28 days, did caring responsibilities make it difficult to work or attend your own medical appointments?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Мешали ли обязанности по уходу за последние 28 дней работать или посещать собственные приёмы у врачей?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 553,
+      "lv": {
+        "id": "M31_04",
+        "title": "Vai aprūpes pienākumu dēļ pastāvīgi trūkst miega?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M31_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 31,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do caring responsibilities leave you persistently short of sleep?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Испытываете ли вы постоянную нехватку сна из-за обязанностей по уходу?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 554,
+      "lv": {
+        "id": "M31_05",
+        "title": "Vai jums ir regulāra praktiska palīdzība aprūpē?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M31_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 31,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you receive regular practical help with care?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Получаете ли вы регулярную практическую помощь в уходе?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 555,
+      "lv": {
+        "id": "M31_06",
+        "title": "Vai aprūpes dēļ jūtaties emocionāli iztukšots/-a?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M31_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 31,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you feel emotionally drained because of caring responsibilities?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Чувствуете ли вы эмоциональную опустошённость из-за ухода за другим человеком?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 556,
+      "lv": {
+        "id": "M31_07",
+        "title": "Vai aprūpes pienākumu dēļ nevarat atpūsties vai veltīt laiku sev?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M31_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 31,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do caring responsibilities prevent you from resting or having time for yourself?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Мешают ли обязанности по уходу отдыхать или уделять время себе?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 557,
+      "lv": {
+        "id": "M31_08",
+        "title": "Vai aprūpes pienākumu dēļ esat jutis/-usi, ka vairs nespējat turpināt aprūpi bez papildu palīdzības?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M31_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 31,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you felt that you are no longer able to continue caring without additional help due to your care responsibilities?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Вы чувствуете, что больше не можете продолжать уход за больным без дополнительной помощи из-за своих обязанностей по уходу?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 558,
+      "lv": {
+        "id": "M31_11",
+        "title": "Vai jums ir cilvēks, kas var pārņemt aprūpi ārkārtas situācijā?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M31_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 31,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Is there someone who can take over caring responsibilities in an emergency?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Есть ли человек, который может взять на себя уход в экстренной ситуации?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 559,
+      "lv": {
+        "id": "M31_12",
+        "title": "Kāda veida atbalstu pašlaik vēlaties apspriest? Var izvēlēties vairākas atbildes.",
+        "profile": "P68",
+        "multi": true,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M31_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Praktiska palīdzība aprūpē",
+          "B": "Atelpas vai aizvietojoša aprūpe",
+          "C": "Sociāla vai finansiāla palīdzība",
+          "D": "Emocionāls atbalsts",
+          "E": "Cits atbalsts",
+          "F": "Pašlaik atbalstu nevēlos",
+          "G": "Nezinu, kāds atbalsts pieejams",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "FGH",
+        "incompatible": [],
+        "section": 31,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "What kinds of support would you currently like to discuss? Select all that apply.",
+        "time": "Currently.",
+        "choices": {
+          "A": "Practical help with care",
+          "B": "Respite or replacement care",
+          "C": "Social or financial support",
+          "D": "Emotional support",
+          "E": "Other support",
+          "F": "I do not currently want support",
+          "G": "I do not know what support is available",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Какую поддержку вы сейчас хотели бы обсудить? Можно выбрать несколько ответов.",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Практическая помощь в уходе",
+          "B": "Временная подмена в уходе или помощь для передышки",
+          "C": "Социальная или финансовая помощь",
+          "D": "Эмоциональная поддержка",
+          "E": "Другая поддержка",
+          "F": "Сейчас поддержки не хочу",
+          "G": "Не знаю, какая поддержка доступна",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 560,
+      "lv": {
+        "id": "M31_13",
+        "title": "Cik ļoti aprūpes un ģimenes drošības apstākļi ietekmē jūsu veselību?",
+        "profile": "P07",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 31,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much do caring responsibilities and family safety circumstances affect your health?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько обязанности по уходу и ситуация с безопасностью в семье влияют на ваше здоровье?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 561,
+      "lv": {
+        "id": "M31_14",
+        "title": "Vai aprūpes pienākumi ir radījuši sajūtu, ka esat iesprostots/-a un jums nav izvēles?",
+        "profile": "CUSTOM14",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M31_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 31,
+        "help": "Pārslodze pati par sevi nenozīmē vēlmi kādam kaitēt. Varat atteikties atbildēt.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have your caregiving responsibilities left you feeling trapped and without a choice?",
+        "time": "The past 28 days.",
+        "help": "Overload does not in itself mean a desire to harm someone. You can refuse to respond.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Ваши обязанности по уходу за близкими оставили вас в ловушке, лишив возможности выбора?",
+        "time": "Последние 28 дней.",
+        "help": "Перегрузка сама по себе не означает желания причинить кому-либо вред. Вы можете отказаться отвечать.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 562,
+      "lv": {
+        "id": "M31_15",
+        "title": "Vai jūsu aprūpē esošam cilvēkam ir palikusi nenodrošināta nepieciešama aprūpe?",
+        "profile": "CUSTOM14",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M31_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 31,
+        "help": "Piemēram, ēdiens, higiēna, droša uzraudzība vai nepieciešamā veselības aprūpe. Tas var notikt dažādu iemeslu dēļ; nākamie jautājumi tos precizē.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Has a person in your care been left without necessary care?",
+        "time": "The past 28 days.",
+        "help": "For example, food, hygiene, safe supervision or necessary health care. This can happen for a variety of reasons; the following questions clarify these.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Был ли человек, находящийся под вашей опекой, оставлен без необходимого ухода?",
+        "time": "Последние 28 дней.",
+        "help": "Например, питание, гигиена, безопасный надзор или необходимое медицинское обслуживание. Это может происходить по разным причинам; следующие вопросы помогут прояснить ситуацию.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 563,
+      "lv": {
+        "id": "M31_16",
+        "title": "Kāda nepieciešamā aprūpe palika nenodrošināta?",
+        "profile": "CUSTOM14",
+        "multi": true,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M31_15",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Ēdiens vai dzēriens",
+          "B": "Higiēna vai piemērots apģērbs",
+          "C": "Droša uzraudzība vai palīdzība pārvietoties",
+          "D": "Nepieciešamā veselības aprūpe",
+          "E": "Cita vajadzība",
+          "F": "Nezinu / grūti pateikt",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "FG",
+        "incompatible": [],
+        "section": 31,
+        "help": "",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "What necessary care was left unprovided?",
+        "time": "The past 28 days.",
+        "help": "",
+        "choices": {
+          "A": "Food or drink",
+          "B": "Hygiene or appropriate clothing",
+          "C": "Safe supervision or assistance with movement",
+          "D": "Necessary healthcare",
+          "E": "Other need",
+          "F": "I do not know / difficult to say",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Какой необходимый уход остался без внимания?",
+        "time": "Последние 28 дней.",
+        "help": "",
+        "choices": {
+          "A": "Еда или напитки",
+          "B": "Гигиена или соответствующая одежда",
+          "C": "Безопасный присмотр или помощь при передвижении.",
+          "D": "Необходимое медицинское обслуживание",
+          "E": "Другие потребности",
+          "F": "Не знаю / трудно сказать",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 564,
+      "lv": {
+        "id": "M31_17",
+        "title": "Kas veicināja to, ka nepieciešamā aprūpe netika nodrošināta?",
+        "profile": "CUSTOM14",
+        "multi": true,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M31_15",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Izsīkums vai miega trūkums",
+          "B": "Mana fiziskā vai psihiskā veselība",
+          "C": "Naudas, mājokļa vai pakalpojumu nepieejamība",
+          "D": "Nebija cilvēka, kas palīdzētu",
+          "E": "Nezināju, kā rīkoties",
+          "F": "Aprūpējamais cilvēks atteicās no palīdzības",
+          "G": "Apzināti nesniedzu aprūpi, lai sodītu vai piespiestu",
+          "H": "Cits iemesls",
+          "I": "Nezinu / grūti pateikt",
+          "J": "Nevēlos atbildēt"
+        },
+        "exclusive": "IJ",
+        "incompatible": [],
+        "section": 31,
+        "help": "",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "uncertain",
+          "J": "refused"
+        }
+      },
+      "en": {
+        "title": "What contributed to the fact that the necessary care was not provided?",
+        "time": "The past 28 days.",
+        "help": "",
+        "choices": {
+          "A": "Exhaustion or lack of sleep",
+          "B": "My physical or mental health",
+          "C": "Lack of access to money, housing or services",
+          "D": "There was no one to help.",
+          "E": "I didn't know what to do.",
+          "F": "The person in care refused help.",
+          "G": "I deliberately withheld care to punish or coerce",
+          "H": "Other reason",
+          "I": "I do not know / difficult to say",
+          "J": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Что способствовало тому, что необходимая медицинская помощь не была оказана?",
+        "time": "Последние 28 дней.",
+        "help": "",
+        "choices": {
+          "A": "Истощение или недостаток сна",
+          "B": "Моё физическое или психическое здоровье",
+          "C": "Отсутствие доступа к деньгам, жилью или услугам.",
+          "D": "Помочь было некому.",
+          "E": "Я не знала, что делать.",
+          "F": "Человек, находящийся под опекой, отказался от помощи.",
+          "G": "Я намеренно воздерживался от наказания или принуждения.",
+          "H": "Другая причина",
+          "I": "Не знаю / трудно сказать",
+          "J": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 565,
+      "lv": {
+        "id": "M31_18",
+        "title": "Vai pašlaik kādam jūsu aprūpē esošam cilvēkam trūkst nepieciešamās aprūpes un ir vajadzīga palīdzība tās nodrošināšanai?",
+        "profile": "CUSTOM14",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M31_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 31,
+        "help": "",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Is someone in your care currently lacking the necessary care and needs help to provide it?",
+        "time": "Currently.",
+        "help": "",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Есть ли среди тех, кто находится под вашей опекой, кто в настоящее время не получает необходимого ухода и нуждается в помощи для его обеспечения?",
+        "time": "В настоящее время.",
+        "help": "",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 566,
+      "lv": {
+        "id": "M31_19",
+        "title": "Vai, domājot par tuva cilvēka smagu slimību vai ciešanām, esat piedzīvojis/-usi kādu no tālāk minētajām domām?",
+        "profile": "CUSTOM14",
+        "multi": true,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Vēlos, lai ciešanas beigtos, nedomājot par nāvi",
+          "B": "Esmu vēlējies/-usies, lai cilvēks nomirtu un ciešanas beigtos",
+          "C": "Esmu domājis/-usi pats/-i izraisīt šī cilvēka nāvi",
+          "D": "Nekas no minētā / šāda situācija nav bijusi",
+          "E": "Nezinu / grūti pateikt",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "DEF",
+        "incompatible": [],
+        "section": 31,
+        "help": "Doma, vēlēšanās un nodoms rīkoties nav viens un tas pats. Šis jautājums neattiecas uz saskaņotu medicīnisku simptomu mazināšanu. Nav jāapraksta kaitējuma veids.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you experienced any of the following thoughts when thinking about a loved one's serious illness or suffering?",
+        "time": "The past 28 days.",
+        "help": "Thought, desire and intention to act are not the same thing. This question does not concern coordinated medical relief of symptoms. It is not necessary to describe the type of harm.",
+        "choices": {
+          "A": "I wish for the suffering to end, without thinking about death.",
+          "B": "I have wished for the person to die and for the suffering to end.",
+          "C": "I have considered causing this person's death myself.",
+          "D": "None of the above / such a situation has not occurred",
+          "E": "I do not know / difficult to say",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Возникали ли у вас какие-либо из следующих мыслей, когда вы думали о серьезной болезни или страданиях близкого человека?",
+        "time": "Последние 28 дней.",
+        "help": "Мысль, желание и намерение действовать — это не одно и то же. Этот вопрос не касается скоординированного медицинского облегчения симптомов. Нет необходимости описывать тип причиненного вреда.",
+        "choices": {
+          "A": "Я желаю, чтобы страдания прекратились, не думая о смерти.",
+          "B": "Я желал, чтобы этот человек умер и чтобы его страдания прекратились.",
+          "C": "Я подумывал о том, чтобы самому стать причиной смерти этого человека.",
+          "D": "Ничего из вышеперечисленного / подобная ситуация не имела место.",
+          "E": "Не знаю / трудно сказать",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 567,
+      "lv": {
+        "id": "M31_20",
+        "title": "Ja domājāt pats/-i izraisīt cilvēka nāvi, kā jūs izjutāt šo domu?",
+        "profile": "CUSTOM14",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M31_19",
+          "showValues": [
+            "C"
+          ],
+          "hideValues": []
+        },
+        "choices": {
+          "A": "Tā bija nevēlama un pretrunā tam, ko vēlos",
+          "B": "Dažkārt vēlējos tā rīkoties",
+          "C": "Pieredze bija mainīga vai jaukta",
+          "D": "Šādas domas nebija",
+          "E": "Nezinu / grūti pateikt",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 31,
+        "help": "Vērtējiet domu pieredzi, nevis savu raksturu. Pašreizējo nodomu un gatavošanos precizē atsevišķi jautājumi.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "If you thought about causing someone's death yourself, how did you feel about that thought?",
+        "time": "The past 28 days.",
+        "help": "Evaluate the thought experience, not your character. Current intention and preparation are clarified by individual questions.",
+        "choices": {
+          "A": "It was unwanted and contrary to what I want.",
+          "B": "Sometimes I wanted to do that.",
+          "C": "The experience was variable or mixed",
+          "D": "There were no such thoughts.",
+          "E": "I do not know / difficult to say",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Если бы вы задумались о том, чтобы самим стать причиной чьей-либо смерти, какие чувства у вас возникли бы при этой мысли?",
+        "time": "Последние 28 дней.",
+        "help": "Оценивайте мыслительный процесс, а не свой характер. Текущие намерения и подготовка уточняются с помощью отдельных вопросов.",
+        "choices": {
+          "A": "Это было нежелательно и противоречило моим желаниям.",
+          "B": "Иногда мне хотелось это сделать.",
+          "C": "Впечатления были неоднозначными или смешанными.",
+          "D": "Таких мыслей не было.",
+          "E": "Не знаю / трудно сказать",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

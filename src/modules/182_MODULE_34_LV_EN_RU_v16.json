@@ -1,0 +1,1116 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 34,
+  "count": 12,
+  "entries": [
+    {
+      "order": 620,
+      "lv": {
+        "id": "M34_01",
+        "title": "Vai vēlaties aizpildīt neobligāto sadaļu par dzimumidentitāti, ārējo spiedienu un pašsajūtu?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē, izlaist šo sadaļu",
+          "B": "Jā",
+          "C": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "help": "Dzimumidentitāte vai LGBT piederība pati par sevi nav psihiska slimība. Šī sadaļa ir brīvprātīga; katru jautājumu var izlaist.",
+        "section": 34,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "refused"
+        }
+      },
+      "en": {
+        "title": "Would you like to complete the optional section on gender identity, external pressure, and self-perception?",
+        "time": "Currently.",
+        "help": "Gender identity or LGBT identity is not a mental illness in itself. This section is optional; you can skip any question.",
+        "choices": {
+          "A": "No, skip this section",
+          "B": "Yes",
+          "C": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Хотите пройти дополнительный раздел, посвященный гендерной идентичности, внешнему давлению и самовосприятию?",
+        "time": "В настоящее время.",
+        "help": "Гендерная идентичность или идентичность ЛГБТ сами по себе не являются психическим заболеванием. Этот раздел необязателен; вы можете пропустить любой вопрос.",
+        "choices": {
+          "A": "Нет, пропустите этот раздел.",
+          "B": "Да",
+          "C": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 621,
+      "lv": {
+        "id": "M34_02",
+        "title": "Vai jutāt spiedienu pieņemt, slēpt, noraidīt vai mainīt savu dzimumidentitāti vai dzimuma izpausmi?",
+        "profile": "CUSTOM-v11",
+        "multi": true,
+        "time": "Jebkurā dzīves laikā.",
+        "context": {
+          "id": "M34_01",
+          "hideValues": [
+            "A",
+            "C"
+          ]
+        },
+        "choices": {
+          "A": "Pieņemt identitāti vai izpausmi, kuru pats/-i nevēlējos",
+          "B": "Slēpt vai noraidīt savu identitāti vai izpausmi",
+          "C": "Mainīt savu identitāti vai izpausmi",
+          "D": "Nav bijis šāda spiediena",
+          "E": "Nezinu",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "DEF",
+        "incompatible": [],
+        "section": 34,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "Did you feel pressured to accept, hide, reject, or change your gender identity or gender expression?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "Adopting an identity or expression that I did not want myself to have",
+          "B": "Hide or deny one's identity or expression",
+          "C": "Change your identity or expression",
+          "D": "There was no such pressure",
+          "E": "I don't know",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Вы чувствовали давление, заставляющее вас принять, скрыть, отвергнуть или изменить свою гендерную идентичность или гендерное самовыражение?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Принятие идентичности или самовыражения, которого я не хотел бы иметь.",
+          "B": "Скрывать или отрицать свою личность или самовыражение.",
+          "C": "Измените свою личность или самовыражение.",
+          "D": "Такого давления не было.",
+          "E": "Я не знаю",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 622,
+      "lv": {
+        "id": "M34_03",
+        "title": "No kurienes, jūsuprāt, nāca šis spiediens?",
+        "profile": "CUSTOM-v11",
+        "multi": true,
+        "time": "Jebkurā dzīves laikā.",
+        "context": {
+          "id": "M34_01",
+          "hideValues": [
+            "A",
+            "C"
+          ]
+        },
+        "choices": {
+          "A": "Vecāki vai citi ģimenes locekļi",
+          "B": "Partneris",
+          "C": "Draugi vai vienaudži",
+          "D": "Kopiena vai reliģiska vide",
+          "E": "Veselības aprūpes vai citi speciālisti",
+          "F": "Mediji vai sociālie mediji",
+          "G": "Cits avots",
+          "H": "Nav bijis šāda spiediena",
+          "I": "Nezinu",
+          "J": "Nevēlos atbildēt"
+        },
+        "exclusive": "HIJ",
+        "incompatible": [],
+        "section": 34,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "uncertain",
+          "J": "refused"
+        }
+      },
+      "en": {
+        "title": "Where do you think this pressure came from?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "Parents or other family members",
+          "B": "Partner",
+          "C": "Friends or peers",
+          "D": "Community or religious environment",
+          "E": "Healthcare or other professionals",
+          "F": "Media or social media",
+          "G": "Another source",
+          "H": "There was no such pressure",
+          "I": "I don't know",
+          "J": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как вы думаете, откуда взялось это давление?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Родители или другие члены семьи",
+          "B": "Партнер",
+          "C": "Друзья или коллеги",
+          "D": "Общинная или религиозная среда",
+          "E": "Медицинские или другие специалисты",
+          "F": "СМИ или социальные сети",
+          "G": "Другой источник",
+          "H": "Такого давления не было.",
+          "I": "Я не знаю",
+          "J": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 623,
+      "lv": {
+        "id": "M34_04",
+        "title": "Kādas ar dzimuma izpausmi vai pāreju saistītas pārmaiņas esat veicis/-usi?",
+        "profile": "CUSTOM-v11",
+        "multi": true,
+        "time": "Jebkurā dzīves laikā.",
+        "context": {
+          "id": "M34_01",
+          "hideValues": [
+            "A",
+            "C"
+          ]
+        },
+        "choices": {
+          "A": "Vārda vai uzrunas maiņa",
+          "B": "Apģērba, izskata vai sociālās lomas maiņa",
+          "C": "Dokumentu maiņa",
+          "D": "Hormonu terapija",
+          "E": "Ķirurģiska ārstēšana",
+          "F": "Pārmaiņu pārtraukšana vai atgriešanās pie iepriekšējās izpausmes",
+          "G": "Citas pārmaiņas",
+          "H": "Nav šādu pārmaiņu",
+          "I": "Nezinu",
+          "J": "Nevēlos atbildēt"
+        },
+        "exclusive": "HIJ",
+        "incompatible": [],
+        "section": 34,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "uncertain",
+          "J": "refused"
+        }
+      },
+      "en": {
+        "title": "What gender expression or transition-related changes have you made?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "Change of name or address",
+          "B": "Change in clothing, appearance, or social role",
+          "C": "Change of documents",
+          "D": "Hormone therapy",
+          "E": "Surgical treatment",
+          "F": "Stopping the change or returning to the previous manifestation",
+          "G": "Other changes",
+          "H": "There are no such changes.",
+          "I": "I don't know",
+          "J": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Какие изменения, связанные с гендерной идентичностью или трансгендерным переходом, вы внесли?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Изменение имени или адреса",
+          "B": "Изменение в одежде, внешности или социальной роли.",
+          "C": "Изменение документов",
+          "D": "Гормональная терапия",
+          "E": "Хирургическое лечение",
+          "F": "Прекращение изменений или возвращение к предыдущему проявлению",
+          "G": "Другие изменения",
+          "H": "Никаких подобных изменений не произошло.",
+          "I": "Я не знаю",
+          "J": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 624,
+      "lv": {
+        "id": "M34_05",
+        "title": "Cik lielā mērā šīs pārmaiņas bija jūsu paša/-as brīva izvēle?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Aprakstīto pārmaiņu laikā.",
+        "context": {
+          "id": "M34_01",
+          "hideValues": [
+            "A",
+            "C"
+          ]
+        },
+        "choices": {
+          "A": "Pilnībā mana izvēle",
+          "B": "Pārsvarā mana izvēle",
+          "C": "Jaukta pieredze: mana vēlme un citu spiediens",
+          "D": "Pārsvarā citu spiediena dēļ",
+          "E": "Neattiecas uz mani",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 34,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "To what extent were these changes your own free choice?",
+        "time": "During the described changes.",
+        "choices": {
+          "A": "Totally my choice",
+          "B": "Mostly my choice",
+          "C": "Mixed experience: my desire and the pressure of others",
+          "D": "Mostly due to pressure from others",
+          "E": "Does not apply to me",
+          "F": "Difficult to say",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "В какой степени эти изменения были вашим собственным свободным выбором?",
+        "time": "В ходе описанных изменений.",
+        "choices": {
+          "A": "Это исключительно мой выбор.",
+          "B": "В основном мой выбор",
+          "C": "Смешанные чувства: мое желание и давление окружающих.",
+          "D": "В основном из-за давления со стороны окружающих.",
+          "E": "Ко мне это не относится",
+          "F": "Трудно сказать",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 625,
+      "lv": {
+        "id": "M34_06",
+        "title": "Kā mainījās jūsu pašsajūta pēc vārda, uzrunas, izskata vai sociālās lomas maiņas?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pēc sociālām pārmaiņām.",
+        "context": {
+          "id": "M34_01",
+          "hideValues": [
+            "A",
+            "C"
+          ]
+        },
+        "choices": {
+          "A": "Ievērojami uzlabojās",
+          "B": "Nedaudz uzlabojās",
+          "C": "Būtiski nemainījās",
+          "D": "Nedaudz pasliktinājās",
+          "E": "Ievērojami pasliktinājās",
+          "F": "Jaukti vai dažādos laikos atšķirīgi",
+          "G": "Neattiecas uz mani",
+          "H": "Grūti pateikt",
+          "I": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 34,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "uncertain",
+          "I": "refused"
+        }
+      },
+      "en": {
+        "title": "How did your feelings change after changing your name, address, appearance, or social role?",
+        "time": "After social changes.",
+        "choices": {
+          "A": "Significantly improved",
+          "B": "Slightly improved",
+          "C": "Did not change significantly",
+          "D": "Slightly worse",
+          "E": "Significantly worsened",
+          "F": "Mixed or different at different times",
+          "G": "Does not apply to me",
+          "H": "Difficult to say",
+          "I": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как изменились ваши чувства после смены имени, адреса, внешности или социальной роли?",
+        "time": "После социальных изменений.",
+        "choices": {
+          "A": "Значительно улучшено",
+          "B": "Немного улучшено",
+          "C": "Значительных изменений не произошло.",
+          "D": "Немного хуже",
+          "E": "Значительно ухудшилось",
+          "F": "Смешанные или разные в разное время",
+          "G": "Ко мне это не относится",
+          "H": "Трудно сказать",
+          "I": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 626,
+      "lv": {
+        "id": "M34_07",
+        "title": "Kā mainījās jūsu pašsajūta pēc hormonu terapijas?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pēc hormonu terapijas sākšanas.",
+        "context": {
+          "id": "M34_01",
+          "hideValues": [
+            "A",
+            "C"
+          ]
+        },
+        "choices": {
+          "A": "Ievērojami uzlabojās",
+          "B": "Nedaudz uzlabojās",
+          "C": "Būtiski nemainījās",
+          "D": "Nedaudz pasliktinājās",
+          "E": "Ievērojami pasliktinājās",
+          "F": "Jaukti vai dažādos laikos atšķirīgi",
+          "G": "Neattiecas uz mani",
+          "H": "Grūti pateikt",
+          "I": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 34,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "uncertain",
+          "I": "refused"
+        }
+      },
+      "en": {
+        "title": "How did your feelings change after hormone therapy?",
+        "time": "After starting hormone therapy.",
+        "choices": {
+          "A": "Significantly improved",
+          "B": "Slightly improved",
+          "C": "Did not change significantly",
+          "D": "Slightly worse",
+          "E": "Significantly worsened",
+          "F": "Mixed or different at different times",
+          "G": "Does not apply to me",
+          "H": "Difficult to say",
+          "I": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как изменилось ваше самочувствие после гормональной терапии?",
+        "time": "После начала гормональной терапии.",
+        "choices": {
+          "A": "Значительно улучшено",
+          "B": "Немного улучшено",
+          "C": "Значительных изменений не произошло.",
+          "D": "Немного хуже",
+          "E": "Значительно ухудшилось",
+          "F": "Смешанные или разные в разное время",
+          "G": "Ко мне это не относится",
+          "H": "Трудно сказать",
+          "I": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 627,
+      "lv": {
+        "id": "M34_08",
+        "title": "Kā mainījās jūsu pašsajūta pēc ķirurģiskas ārstēšanas?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pēc ķirurģiskas ārstēšanas.",
+        "context": {
+          "id": "M34_01",
+          "hideValues": [
+            "A",
+            "C"
+          ]
+        },
+        "choices": {
+          "A": "Ievērojami uzlabojās",
+          "B": "Nedaudz uzlabojās",
+          "C": "Būtiski nemainījās",
+          "D": "Nedaudz pasliktinājās",
+          "E": "Ievērojami pasliktinājās",
+          "F": "Jaukti vai dažādos laikos atšķirīgi",
+          "G": "Neattiecas uz mani",
+          "H": "Grūti pateikt",
+          "I": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 34,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "uncertain",
+          "I": "refused"
+        }
+      },
+      "en": {
+        "title": "How did your feeling change after surgical treatment?",
+        "time": "After surgical treatment.",
+        "choices": {
+          "A": "Significantly improved",
+          "B": "Slightly improved",
+          "C": "Did not change significantly",
+          "D": "Slightly worse",
+          "E": "Significantly worsened",
+          "F": "Mixed or different at different times",
+          "G": "Does not apply to me",
+          "H": "Difficult to say",
+          "I": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как изменилось ваше самочувствие после хирургического лечения?",
+        "time": "После хирургического лечения.",
+        "choices": {
+          "A": "Значительно улучшено",
+          "B": "Немного улучшено",
+          "C": "Значительных изменений не произошло.",
+          "D": "Немного хуже",
+          "E": "Значительно ухудшилось",
+          "F": "Смешанные или разные в разное время",
+          "G": "Ко мне это не относится",
+          "H": "Трудно сказать",
+          "I": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 628,
+      "lv": {
+        "id": "M34_09",
+        "title": "Kā mainījās jūsu pašsajūta pēc pārmaiņu pārtraukšanas vai atgriešanās pie iepriekšējās izpausmes?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pēc pārmaiņu pārtraukšanas.",
+        "context": {
+          "id": "M34_01",
+          "hideValues": [
+            "A",
+            "C"
+          ]
+        },
+        "choices": {
+          "A": "Ievērojami uzlabojās",
+          "B": "Nedaudz uzlabojās",
+          "C": "Būtiski nemainījās",
+          "D": "Nedaudz pasliktinājās",
+          "E": "Ievērojami pasliktinājās",
+          "F": "Jaukti vai dažādos laikos atšķirīgi",
+          "G": "Neattiecas uz mani",
+          "H": "Grūti pateikt",
+          "I": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 34,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "uncertain",
+          "I": "refused"
+        }
+      },
+      "en": {
+        "title": "How did your feelings change after stopping the changes or returning to your previous expression?",
+        "time": "After the change is stopped.",
+        "choices": {
+          "A": "Significantly improved",
+          "B": "Slightly improved",
+          "C": "Did not change significantly",
+          "D": "Slightly worse",
+          "E": "Significantly worsened",
+          "F": "Mixed or different at different times",
+          "G": "Does not apply to me",
+          "H": "Difficult to say",
+          "I": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как изменились ваши чувства после прекращения изменений или возвращения к прежнему способу их выражения?",
+        "time": "После прекращения изменений.",
+        "choices": {
+          "A": "Значительно улучшено",
+          "B": "Немного улучшено",
+          "C": "Значительных изменений не произошло.",
+          "D": "Немного хуже",
+          "E": "Значительно ухудшилось",
+          "F": "Смешанные или разные в разное время",
+          "G": "Ко мне это не относится",
+          "H": "Трудно сказать",
+          "I": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 629,
+      "lv": {
+        "id": "M34_10",
+        "title": "Kad notika pārmaiņas, kuras pašlaik visvairāk vēlaties pārrunāt?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M34_01",
+          "hideValues": [
+            "A",
+            "C"
+          ]
+        },
+        "choices": {
+          "A": "Pēdējā mēneša laikā (ieskaitot)",
+          "B": "Pirms vairāk nekā 1 mēneša, bet ne vairāk kā 6 mēnešiem",
+          "C": "Pirms vairāk nekā 6 mēnešiem, bet ne vairāk kā 1 gada",
+          "D": "Pirms vairāk nekā 1 gada, bet ne vairāk kā 5 gadiem",
+          "E": "Pirms vairāk nekā 5 gadiem",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 34,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "When did the change that you most want to discuss happen?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Within the last month (inclusive)",
+          "B": "More than 1 month ago, but not more than 6 months ago",
+          "C": "More than 6 months but not more than 1 year ago",
+          "D": "More than 1 year ago, but no more than 5 years ago",
+          "E": "More than 5 years ago",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда произошли изменения, которые вы больше всего хотите обсудить?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "В течение последнего месяца (включительно)",
+          "B": "Более месяца назад, но не более шести месяцев назад",
+          "C": "Более 6 месяцев, но не более 1 года назад",
+          "D": "Более года назад, но не более 5 лет назад",
+          "E": "Более 5 лет назад",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 630,
+      "lv": {
+        "id": "M34_11",
+        "title": "Kas vēl tajā laikā varēja ietekmēt jūsu pašsajūtu?",
+        "profile": "CUSTOM-v11",
+        "multi": true,
+        "time": "Aprakstīto pārmaiņu laikā.",
+        "context": {
+          "id": "M34_01",
+          "hideValues": [
+            "A",
+            "C"
+          ]
+        },
+        "choices": {
+          "A": "Atbalsts vai pieņemšana",
+          "B": "Noraidījums, diskriminācija vai konflikti",
+          "C": "Ārstēšanas ieguvumi vai blakusparādības",
+          "D": "Citas veselības grūtības vai zāles",
+          "E": "Darba, mājokļa vai finansiālas pārmaiņas",
+          "F": "Citi apstākļi",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "GH",
+        "incompatible": [],
+        "section": 34,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "What else could have affected your feelings at that time?",
+        "time": "During the described changes.",
+        "choices": {
+          "A": "Support or acceptance",
+          "B": "Rejection, discrimination or conflict",
+          "C": "Benefits or side effects of treatment",
+          "D": "Other health problems or medications",
+          "E": "Job, housing, or financial changes",
+          "F": "Other circumstances",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Что ещё могло повлиять на ваши чувства в тот момент?",
+        "time": "В ходе описанных изменений.",
+        "choices": {
+          "A": "Поддержка или принятие",
+          "B": "Отказ, дискриминация или конфликт",
+          "C": "Преимущества или побочные эффекты лечения",
+          "D": "Другие проблемы со здоровьем или принимаемые лекарства",
+          "E": "Изменения в работе, жилье или финансовом положении",
+          "F": "Другие обстоятельства",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 631,
+      "lv": {
+        "id": "M34_12",
+        "title": "Vai pašlaik vēlaties atbalstu vai privātu sarunu ar ārstu par šo tēmu?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M34_01",
+          "hideValues": [
+            "A",
+            "C"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 34,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you currently want support or a private conversation with a doctor about this topic?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Вам сейчас нужна поддержка или личная беседа с врачом по этому вопросу?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

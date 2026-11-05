@@ -1,0 +1,820 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 33,
+  "count": 10,
+  "entries": [
+    {
+      "order": 0,
+      "lv": {
+        "id": "M33_01",
+        "title": "Vārds (nav obligāts)",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "type": "shortText",
+        "help": "Vārdu un uzvārdu norādiet tikai tad, ja plānojat rezultātus nodot speciālistam. Ja anketu aizpildāt tikai sev, šos laukus varat atstāt tukšus. Atbildes netiek automātiski nosūtītas projekta autoram vai speciālistam; saglabājot tās, dati var palikt jūsu ierīcē un lejupielādētajos failos.",
+        "section": 33,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Name (optional)",
+        "time": "Currently.",
+        "help": "Please provide your first and last name only if you plan to share your results with a specialist. If you are completing the questionnaire only for yourself, you can leave these fields blank. Responses are not automatically sent to the project author or specialist; if you save them, the data may remain on your device and in downloaded files.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Имя (необязательно)",
+        "time": "В настоящее время.",
+        "help": "Пожалуйста, указывайте только ваше имя и фамилию, если вы планируете поделиться результатами со специалистом. Если вы заполняете анкету только для себя, вы можете оставить эти поля пустыми. Ответы не отправляются автоматически автору проекта или специалисту; если вы сохраните их, данные могут остаться на вашем устройстве и в загруженных файлах.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 1,
+      "lv": {
+        "id": "M33_02",
+        "title": "Uzvārds (nav obligāts)",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "type": "shortText",
+        "help": "Vārdu un uzvārdu norādiet tikai tad, ja plānojat rezultātus nodot speciālistam. Ja anketu aizpildāt tikai sev, šos laukus varat atstāt tukšus. Atbildes netiek automātiski nosūtītas projekta autoram vai speciālistam; saglabājot tās, dati var palikt jūsu ierīcē un lejupielādētajos failos.",
+        "section": 33,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Last name (optional)",
+        "time": "Currently.",
+        "help": "Please provide your first and last name only if you plan to share your results with a specialist. If you are completing the questionnaire only for yourself, you can leave these fields blank. Responses are not automatically sent to the project author or specialist; if you save them, the data may remain on your device and in downloaded files.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Фамилия (необязательно)",
+        "time": "В настоящее время.",
+        "help": "Пожалуйста, указывайте только ваше имя и фамилию, если вы планируете поделиться результатами со специалистом. Если вы заполняете анкету только для себя, вы можете оставить эти поля пустыми. Ответы не отправляются автоматически автору проекта или специалисту; если вы сохраните их, данные могут остаться на вашем устройстве и в загруженных файлах.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 2,
+      "lv": {
+        "id": "M32_02",
+        "title": "Kādai vecuma grupai piederat?",
+        "profile": "P02",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "18–24",
+          "B": "25–34",
+          "C": "35–44",
+          "D": "45–54",
+          "E": "55–64",
+          "F": "65 vai vairāk",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 33,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "Which age group are you in?",
+        "time": "Currently.",
+        "choices": {
+          "A": "18-24",
+          "B": "25-34",
+          "C": "35-44",
+          "D": "45-54",
+          "E": "55-64",
+          "F": "65 or older",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "К какой возрастной группе вы относитесь?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "18-24",
+          "B": "25-34",
+          "C": "35-44",
+          "D": "45-54",
+          "E": "55-64",
+          "F": "65 лет или старше",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 3,
+      "lv": {
+        "id": "M33_04",
+        "title": "Kā raksturojat savu dzimumidentitāti?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Vīrietis",
+          "B": "Sieviete",
+          "C": "Nebināra identitāte",
+          "D": "Cits raksturojums",
+          "E": "Neesmu pārliecināts/-a",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 33,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "How would you describe your gender identity?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Man",
+          "B": "Woman",
+          "C": "Non-binary identity",
+          "D": "Other characteristics",
+          "E": "I'm not sure.",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как бы вы описали свою гендерную идентичность?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Мужчина",
+          "B": "Женщина",
+          "C": "Небинарная идентичность",
+          "D": "Другие характеристики",
+          "E": "Я не уверен.",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 4,
+      "lv": {
+        "id": "M33_09",
+        "title": "Kā aizpildāt anketu?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Patstāvīgi",
+          "B": "Ar cita cilvēka palīdzību, atbildes izvēlos pats/-i",
+          "C": "Cits cilvēks atbild manā vietā",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 33,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "How do you fill out the questionnaire?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Independently",
+          "B": "With the help of another person, I choose the answers myself/themselves",
+          "C": "Another person answers for me.",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как заполнить анкету?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Независимо",
+          "B": "С помощью другого человека я сам/сама выбираю ответы.",
+          "C": "За меня ответит другой человек.",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 16,
+      "lv": {
+        "id": "M33_06",
+        "title": "Kāds ir jūsu galvenais iemesls šīs anketas aizpildīšanai?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Vēlos saņemt palīdzību pašreizējām grūtībām",
+          "B": "Gatavojos speciālista konsultācijai",
+          "C": "Vēlos labāk izprast savu pašsajūtu",
+          "D": "Aizpildu ziņkārības dēļ",
+          "E": "Anketu ieteica speciālists vai cits cilvēks",
+          "F": "Cits iemesls / grūti pateikt",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 33,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "What is your main reason for completing this questionnaire?",
+        "time": "Currently.",
+        "choices": {
+          "A": "I would like to receive help with current difficulties.",
+          "B": "Preparing for a specialist consultation",
+          "C": "I want to better understand how I feel.",
+          "D": "I'm filling it out of curiosity.",
+          "E": "The questionnaire was recommended by a specialist or other person",
+          "F": "Other reason / hard to say",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Какова ваша основная причина заполнения этой анкеты?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Я хотел бы получить помощь в связи с текущими трудностями.",
+          "B": "Подготовка к консультации у специалиста",
+          "C": "Я хочу лучше понять свои чувства.",
+          "D": "Я заполняю его из любопытства.",
+          "E": "Анкета была рекомендована специалистом или другим лицом.",
+          "F": "Другая причина / сложно сказать",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 17,
+      "lv": {
+        "id": "M33_07",
+        "title": "Kāpēc izvēlējāties aizpildīt anketu tieši tagad?",
+        "profile": "CUSTOM-v11",
+        "multi": true,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Grūtības sākušās nesen",
+          "B": "Iepriekšējās grūtības pastiprinājušās vai atgriezušās",
+          "C": "Grūtības turpinās ilgi; vēlos beidzot tās pārrunāt",
+          "D": "Tās sākušas vairāk traucēt ikdienai",
+          "E": "Noticis nozīmīgs dzīves notikums",
+          "F": "Kāds paudis bažas par manu pašsajūtu vai uzvedību",
+          "G": "Vēlos pārskatīt pašreizējo ārstēšanu",
+          "H": "Tagad ir iespēja vai gatavība meklēt palīdzību",
+          "I": "Nav īpaša iemesla; vēlos pārbaudīt savu pašsajūtu",
+          "J": "Cits iemesls / grūti pateikt",
+          "K": "Nevēlos atbildēt"
+        },
+        "exclusive": "IK",
+        "incompatible": [],
+        "section": 33,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "answered",
+          "J": "uncertain",
+          "K": "refused"
+        }
+      },
+      "en": {
+        "title": "Why did you choose to fill out the questionnaire right now?",
+        "time": "Currently.",
+        "choices": {
+          "A": "The difficulties began recently.",
+          "B": "Previous difficulties have worsened or returned",
+          "C": "The difficulties have been going on for a long time; I want to finally discuss them.",
+          "D": "They have started to interfere more with everyday life",
+          "E": "A significant life event has occurred",
+          "F": "Someone has expressed concern about my feelings or behavior.",
+          "G": "I would like to review my current treatment.",
+          "H": "Now is the time or willingness to seek help",
+          "I": "No particular reason; I want to check how I'm feeling.",
+          "J": "Other reason / hard to say",
+          "K": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Почему вы решили заполнить анкету именно сейчас?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Трудности начались совсем недавно.",
+          "B": "Предыдущие трудности усугубились или возобновились.",
+          "C": "Трудности существуют уже давно; я хочу наконец обсудить их.",
+          "D": "Они стали все больше вмешиваться в повседневную жизнь.",
+          "E": "Произошло важное событие в жизни.",
+          "F": "Кто-то выразил обеспокоенность по поводу моих чувств или поведения.",
+          "G": "Я хотел(а) бы пересмотреть свое текущее лечение.",
+          "H": "Сейчас самое время или есть желание обратиться за помощью.",
+          "I": "Особой причины нет; я хочу проверить, как я себя чувствую.",
+          "J": "Другая причина / сложно сказать",
+          "K": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 18,
+      "lv": {
+        "id": "M33_08",
+        "title": "Vai, jūsuprāt, speciālists pašlaik varētu jums palīdzēt ar kādām grūtībām?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Jā",
+          "B": "Iespējams, bet neesmu pārliecināts/-a",
+          "C": "Nedomāju, ka palīdzētu, lai gan grūtības ir",
+          "D": "Pašlaik nejūtu vajadzību pēc palīdzības",
+          "E": "Grūti pateikt",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 33,
+        "answerStatus": {
+          "A": "answered",
+          "B": "uncertain",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you think a specialist could help you with any difficulties you are currently experiencing?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Yes",
+          "B": "Possibly, but I'm not sure.",
+          "C": "I don't think it would help, although the difficulties are",
+          "D": "I don't feel the need for help right now.",
+          "E": "Difficult to say",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как вы думаете, может ли специалист помочь вам справиться с трудностями, которые вы сейчас испытываете?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Да",
+          "B": "Возможно, но я не уверен.",
+          "C": "Я не думаю, что это поможет, хотя трудности и существуют.",
+          "D": "В данный момент я не чувствую необходимости в помощи.",
+          "E": "Трудно сказать",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 618,
+      "lv": {
+        "id": "M33_05",
+        "title": "Kā raksturojat savu seksuālo orientāciju?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Heteroseksuāla",
+          "B": "Homoseksuāla",
+          "C": "Biseksuāla vai panseksuāla",
+          "D": "Aseksuāla",
+          "E": "Cits raksturojums",
+          "F": "Neesmu pārliecināts/-a",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "help": "Atbilde nav obligāta. Seksuālā orientācija un dzimumidentitāte ir atšķirīgi jēdzieni.",
+        "section": 33,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How would you describe your sexual orientation?",
+        "time": "Currently.",
+        "help": "The answer is optional. Sexual orientation and gender identity are different concepts.",
+        "choices": {
+          "A": "Heterosexual",
+          "B": "Homosexual",
+          "C": "Bisexual or pansexual",
+          "D": "Asexual",
+          "E": "Other characteristics",
+          "F": "I'm not sure.",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как бы вы описали свою сексуальную ориентацию?",
+        "time": "В настоящее время.",
+        "help": "Ответ необязателен. Сексуальная ориентация и гендерная идентичность — это разные понятия.",
+        "choices": {
+          "A": "Гетеросексуальный",
+          "B": "гомосексуал",
+          "C": "Бисексуал или пансексуал",
+          "D": "Асексуал",
+          "E": "Другие характеристики",
+          "F": "Я не уверен.",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 619,
+      "lv": {
+        "id": "M33_10",
+        "title": "Kāds saziņas atbalsts vizītē būtu noderīgs?",
+        "profile": "CUSTOM-v11",
+        "multi": true,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Vienkāršāks skaidrojums",
+          "B": "Vairāk laika atbildēm",
+          "C": "Rakstiska saziņa",
+          "D": "Tulks vai cita sarunas valoda",
+          "E": "Atbalsta cilvēka klātbūtne",
+          "F": "Dzirdes, redzes vai cits pielāgojums",
+          "G": "Nav vajadzīgs",
+          "H": "Nezinu",
+          "I": "Nevēlos atbildēt"
+        },
+        "exclusive": "GHI",
+        "incompatible": [],
+        "section": 33,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "uncertain",
+          "I": "refused"
+        }
+      },
+      "en": {
+        "title": "What communication support would be useful during the visit?",
+        "time": "Currently.",
+        "choices": {
+          "A": "A simpler explanation",
+          "B": "More time for answers",
+          "C": "Written communication",
+          "D": "Interpreter or other language of conversation",
+          "E": "The presence of a supportive person",
+          "F": "Hearing, vision or other adaptation",
+          "G": "Not needed",
+          "H": "I don't know",
+          "I": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Какие средства коммуникации были бы полезны во время визита?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Более простое объяснение",
+          "B": "Больше времени для ответов",
+          "C": "Письменная коммуникация",
+          "D": "Переводчик или другой язык общения",
+          "E": "Присутствие человека, оказывающего поддержку.",
+          "F": "Слух, зрение или другие приспособления",
+          "G": "Не требуется",
+          "H": "Я не знаю",
+          "I": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,441 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 37,
+  "count": 5,
+  "entries": [
+    {
+      "order": 644,
+      "lv": {
+        "id": "M37_01",
+        "title": "Vai bažas par izskatu aizņem daudz laika vai rada būtiskas ciešanas?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 37,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Does worrying about appearance take up a lot of time or cause significant distress?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Беспокойство по поводу внешности отнимает много времени или вызывает значительный стресс?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 645,
+      "lv": {
+        "id": "M37_02",
+        "title": "Par ko galvenokārt uztraucaties?",
+        "profile": "CUSTOM-v11",
+        "multi": true,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M37_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Seju vai ādu",
+          "B": "Matiem",
+          "C": "Kādu ķermeņa daļu",
+          "D": "Muskuļotību vai ķermeņa uzbūvi",
+          "E": "Svaru vai ķermeņa formu",
+          "F": "Citu izskata īpatnību",
+          "G": "Nevēlos norādīt"
+        },
+        "exclusive": "G",
+        "incompatible": [],
+        "section": 37,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "What are you mainly worried about?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Face or skin",
+          "B": "For hair",
+          "C": "What part of the body?",
+          "D": "Muscularity or body composition",
+          "E": "Weight or body shape",
+          "F": "Other appearance features",
+          "G": "I don't want to specify"
+        }
+      },
+      "ru": {
+        "title": "Что вас больше всего беспокоит?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Лицо или кожа",
+          "B": "Для волос",
+          "C": "Какую часть тела?",
+          "D": "Мышечная масса или состав тела",
+          "E": "Вес или форма тела",
+          "F": "Другие особенности внешнего вида",
+          "G": "Я не хочу уточнять."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 646,
+      "lv": {
+        "id": "M37_03",
+        "title": "Cik laika dienā parasti aizņem šīs bažas?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M37_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Mazāk nekā 30 minūtes",
+          "B": "30–59 minūtes",
+          "C": "1–3 stundas",
+          "D": "Vairāk nekā 3 stundas",
+          "E": "Nezinu",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 37,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "How much time per day do these worries usually take up?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Less than 30 minutes",
+          "B": "30–59 minutes",
+          "C": "1–3 hours",
+          "D": "More than 3 hours",
+          "E": "I don't know",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сколько времени в день обычно занимают эти переживания?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Менее 30 минут",
+          "B": "30–59 минут",
+          "C": "1–3 часа",
+          "D": "Более 3 часов",
+          "E": "Я не знаю",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 647,
+      "lv": {
+        "id": "M37_04",
+        "title": "Ko darāt šo bažu dēļ?",
+        "profile": "CUSTOM-v11",
+        "multi": true,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M37_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Atkārtoti pārbaudu izskatu",
+          "B": "Izvairos no spoguļiem vai fotogrāfijām",
+          "C": "Slēpju izskata īpatnību",
+          "D": "Salīdzinu sevi ar citiem",
+          "E": "Atkārtoti meklēju apliecinājumu vai kosmētisku palīdzību",
+          "F": "Izvairos no cilvēkiem",
+          "G": "Neviens no minētajiem",
+          "H": "Nezinu",
+          "I": "Nevēlos atbildēt"
+        },
+        "exclusive": "GHI",
+        "incompatible": [],
+        "section": 37,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "uncertain",
+          "I": "refused"
+        }
+      },
+      "en": {
+        "title": "What are you doing about these concerns?",
+        "time": "Currently.",
+        "choices": {
+          "A": "I double-check my appearance.",
+          "B": "I avoid mirrors or photographs.",
+          "C": "Features of the appearance of skis",
+          "D": "I compare myself to others.",
+          "E": "I repeatedly seek confirmation or cosmetic help",
+          "F": "I avoid people.",
+          "G": "None of the above",
+          "H": "I don't know",
+          "I": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Что вы предпринимаете в связи с этими опасениями?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Я ещё раз проверяю свой внешний вид.",
+          "B": "Я избегаю зеркал и фотографий.",
+          "C": "Особенности внешнего вида лыж",
+          "D": "Я сравниваю себя с другими.",
+          "E": "Я неоднократно обращаюсь за подтверждением или косметической помощью.",
+          "F": "Я избегаю людей.",
+          "G": "Ничего из перечисленного",
+          "H": "Я не знаю",
+          "I": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 648,
+      "lv": {
+        "id": "M37_05",
+        "title": "Cik ļoti šīs bažas traucē darbam, mācībām vai attiecībām?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M37_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 37,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much do these concerns interfere with your work, studies, or relationships?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько эти проблемы мешают вашей работе, учебе или личным отношениям?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}
