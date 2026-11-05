@@ -4,6 +4,10 @@
 **Development edits:** GitHub only, after the relevant sources have been imported and verified.
 **Google Drive:** distribution of Latvian public files only. Existing Drive archives are read-only source references following the completed migration; do not update its old changelog for routine work.
 
+## 2026-11-05 · SOURCE-FIDELITY-AND-SECTION-21 · IN_PROGRESS
+
+Plan: verify active modules against frozen v16 by ID and exact codes, demonstrate rejection of swapped labels, inspect section 21 dependencies, import its three existing locales, verify in offline Chromium and checkpoint the artifact. First action: collect and verify source blobs and compare pilot field coverage.
+
 ## 2026-11-05 · PILOT-GENERIC-MODULE-AUDIT · TASK_DONE
 
 **Goal:** audit the existing pilot against LV v16; remove module-specific engine/build assumptions; verify translation independence and additional-module registration; document remaining parity gaps and active source pointers.
