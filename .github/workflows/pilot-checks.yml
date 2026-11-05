@@ -35,10 +35,15 @@ jobs:
           node --check src/pilot/reports/reports.js
       - name: Build prototype single HTML
         run: python tools/build_pilot.py
-      - name: Install headless Chromium for actual controls
+      - name: Prepare browser for offline journeys
         run: |
-          python -m pip install --upgrade pip playwright
-          python -m playwright install --with-deps chromium
+          python -m pip install playwright
+          if command -v google-chrome >/dev/null; then
+            google-chrome --version
+            echo "PILOT_BROWSER=$(command -v google-chrome)" >> "$GITHUB_ENV"
+          else
+            python -m playwright install --with-deps chromium
+          fi
       - name: Run real offline browser smoke journey
         run: python tests/pilot/test_browser.py
       - name: Test module and translation independence offline

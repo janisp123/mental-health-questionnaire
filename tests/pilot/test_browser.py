@@ -4,6 +4,7 @@
 Requires: pip install playwright; python -m playwright install chromium
 Runs against a file:// URL. No remote site, tracker or analytics are needed.
 """
+import os
 from pathlib import Path
 import tempfile
 import sys
@@ -18,7 +19,7 @@ with tempfile.TemporaryDirectory() as temp:
     path=Path(temp)/"prototype.html"
     path.write_text(make_html(),encoding="utf-8")
     with sync_playwright() as p:
-        browser=p.chromium.launch(headless=True,args=["--no-sandbox"])
+        browser=p.chromium.launch(executable_path=os.getenv("PILOT_BROWSER"),headless=True,args=["--no-sandbox"])
         page=browser.new_page(accept_downloads=True, viewport={"width":393,"height":851}, is_mobile=True, has_touch=True, offline=True)
         errors=[]
         page.on("pageerror",lambda err: errors.append(str(err)))

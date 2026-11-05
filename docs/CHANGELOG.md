@@ -25,7 +25,9 @@
 
 **Recovery guard:** reject backups referencing unavailable selected sections before replacing the current answers. If a backup points beyond an incomplete required opening, resume the opening first. A Chromium regression checks that a rejected backup preserves the current session.
 
-**Clinician summary:** include opening visit context and priorities, each safety answer and its original saved time, and uncertain/refused counts. Test the representative completed report for one A4 page. Long responses may continue onto further pages to retain their text.
+**Clinician summary:** include opening visit context and priorities, each safety answer and its original saved time, and uncertain/refused counts. Test the representative completed report for one A4 page. Long responses may continue onto further pages to retain their text. Recovery guard passed on f23aafc in run 42063533966.
+
+**CI runtime:** use installed Chrome when the runner provides it and fall back to installing Playwright Chromium if absent. This avoids downloading a second browser on supported runners. Repeat the full PDF and offline browser suites.
 
 ## 2026-11-05 · PROGRESS-UPDATES-RULE · TASK_DONE
 

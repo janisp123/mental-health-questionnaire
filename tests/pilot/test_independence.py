@@ -3,6 +3,7 @@ import json
 import shutil
 import sys
 import tempfile
+import os
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
@@ -56,7 +57,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     new = build_page(temp, "after.html")
     assert {p for p,v in baseline.items() if (source/p).read_bytes()!=v} == {locale.relative_to(source)}
 
-    browser = pw.chromium.launch()
+    browser = pw.chromium.launch(executable_path=os.getenv("PILOT_BROWSER"))
     page = browser.new_page(accept_downloads=True, offline=True)
     errors = []
     page.on("pageerror", lambda err: errors.append(str(err)))
