@@ -1,0 +1,1247 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 24,
+  "count": 17,
+  "entries": [
+    {
+      "order": 442,
+      "lv": {
+        "id": "M24_01",
+        "title": "Cik bieži jūsu emocijas strauji mainās dažu stundu laikā?",
+        "profile": "P27",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 24,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often do your emotions change rapidly within a few hours?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто ваши эмоции резко меняются в течение нескольких часов?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 443,
+      "lv": {
+        "id": "M24_02",
+        "title": "Cik bieži neliela kritika izraisa ļoti spēcīgu emocionālu reakciju?",
+        "profile": "P27",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 24,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often does minor criticism trigger a very strong emotional reaction?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто незначительная критика вызывает очень сильную эмоциональную реакцию?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 444,
+      "lv": {
+        "id": "M24_03",
+        "title": "Vai pēdējo 12 mēnešu laikā atkārtoti bija izteiktas bailes, ka tuvi cilvēki jūs pametīs?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 24,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Over the past 12 months, have you repeatedly experienced an intense fear that people close to you will leave you?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Возникал ли за последние 12 месяцев повторяющийся сильный страх, что близкие вас оставят?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 445,
+      "lv": {
+        "id": "M24_04",
+        "title": "Vai attiecības mēdz ātri mainīties no ļoti tuvām uz ļoti konfliktējošām?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 24,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do your relationships sometimes change quickly from very close to highly conflictual?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Бывает ли, что отношения быстро меняются от очень близких к очень конфликтным?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 446,
+      "lv": {
+        "id": "M24_05",
+        "title": "Vai jums ilgstoši ir grūti saprast savu identitāti vai dzīves mērķus?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 24,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you had longstanding difficulty understanding who you are or what your life goals are?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Трудно ли вам на протяжении длительного времени понять, кто вы и каковы ваши жизненные цели?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 447,
+      "lv": {
+        "id": "M24_06",
+        "title": "Vai emociju pārplūduma laikā rīkojaties impulsīvi?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 24,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you act impulsively when overwhelmed by emotions?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Действуете ли вы импульсивно, когда эмоции переполняют?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 448,
+      "lv": {
+        "id": "M24_07",
+        "title": "Vai mēdzat just ilgstošu iekšēju tukšumu?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 24,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you experience prolonged feelings of inner emptiness?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Бывает ли у вас длительное чувство внутренней пустоты?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 449,
+      "lv": {
+        "id": "M24_08",
+        "title": "Vai pēc konfliktiem nepieciešams ilgs laiks, lai atgūtu emocionālu līdzsvaru?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 24,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "After conflicts, does it take you a long time to regain emotional balance?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Нужно ли вам много времени после конфликтов, чтобы восстановить эмоциональное равновесие?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 450,
+      "lv": {
+        "id": "M24_09",
+        "title": "Vai līdzīgi emocionālu reakciju vai attiecību modeļi bija jau līdz 25 gadu vecumam?",
+        "profile": "P57",
+        "multi": false,
+        "time": "Vecums līdzīgu ilgstošu modeļu sākumā.",
+        "context": null,
+        "choices": {
+          "A": "Jā, jau līdz 18 gadu vecumam",
+          "B": "Jā, pirmoreiz 18–24 gadu vecumā",
+          "C": "Nē, sākās 25 gadu vecumā vai vēlāk",
+          "D": "Šādu grūtību nav",
+          "E": "Neatceros / grūti pateikt",
+          "F": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 24,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "Were similar patterns of emotional reactions or relationships already present before age 25?",
+        "time": "Your age when similar longstanding patterns began.",
+        "choices": {
+          "A": "Yes, before age 18",
+          "B": "Yes, first at age 18-24",
+          "C": "No, they began at age 25 or later",
+          "D": "There are no such difficulties.",
+          "E": "I do not remember / difficult to say",
+          "F": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Были ли похожие особенности эмоциональных реакций или отношений уже до 25 лет?",
+        "time": "Возраст начала похожих длительных особенностей.",
+        "choices": {
+          "A": "Да, уже до 18 лет",
+          "B": "Да, впервые в возрасте 18-24 лет",
+          "C": "Нет, начались в возрасте 25 лет или позже",
+          "D": "Таких трудностей нет.",
+          "E": "Не помню / трудно сказать",
+          "F": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 451,
+      "lv": {
+        "id": "M24_10",
+        "title": "Kā šie emocionālo reakciju modeļi mainās laikā?",
+        "profile": "P58",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Šādu grūtību nav",
+          "B": "Parādās tikai atsevišķos atšķirīgos periodos",
+          "C": "Atkārtojas dažādās situācijās arī ārpus šādiem periodiem",
+          "D": "Gan ilgstošs modelis, gan atsevišķi pasliktinājumi",
+          "E": "Grūti pateikt",
+          "F": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 24,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "How do these patterns of emotional reactions change over time?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "There are no such difficulties.",
+          "B": "They occur only during separate, distinct periods",
+          "C": "They recur in different situations even outside such periods",
+          "D": "Both a longstanding pattern and separate periods of worsening",
+          "E": "Difficult to say",
+          "F": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как меняются со временем эти особенности эмоциональных реакций?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Таких трудностей нет.",
+          "B": "Возникают только в отдельные, отличающиеся от обычного периоды",
+          "C": "Повторяются в разных ситуациях и вне таких периодов",
+          "D": "Есть и длительная закономерность, и отдельные ухудшения",
+          "E": "Трудно сказать",
+          "F": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 452,
+      "lv": {
+        "id": "M24_11",
+        "title": "Vai jums ir grūti pieņemt nenoteiktību vai pārmaiņas attiecībās?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 24,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you find it difficult to accept uncertainty or changes in relationships?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Трудно ли вам принимать неопределённость или изменения в отношениях?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 453,
+      "lv": {
+        "id": "M24_12",
+        "title": "Cik ļoti šie modeļi apgrūtina darbu, tuvību vai ikdienu?",
+        "profile": "P07",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 24,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much do these patterns interfere with work, intimacy or daily life?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько эти особенности затрудняют работу, близкие отношения или повседневную жизнь?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 454,
+      "lv": {
+        "id": "M24_13",
+        "title": "Vai stingri noteikumi vai prasība visu izdarīt nevainojami ilgstoši traucē pabeigt darbus vai sadarboties?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Vairāki gadi, dažādās dzīves situācijās.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 24,
+        "help": "Personības diagnozi nenosaka pēc atsevišķas atbildes. Jāņem vērā dzīves apstākļi, attīstība un pašreizējā veselība.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do strict rules or the requirement to do everything perfectly prevent you from completing tasks or collaborating for a long time?",
+        "time": "Several years, in different life situations.",
+        "help": "A personality diagnosis is not determined by a single answer. Living conditions, development, and current health must be taken into account.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Строгие правила или требование делать все идеально мешают вам завершать задачи или долгосрочно сотрудничать?",
+        "time": "Несколько лет, в разных жизненных ситуациях.",
+        "help": "Диагноз личности не может быть поставлен на основании одного ответа. Необходимо учитывать условия жизни, развитие личности и текущее состояние здоровья.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 455,
+      "lv": {
+        "id": "M24_14",
+        "title": "Vai ilgstoši izvairāties no tuvām attiecībām vai izjūtat izteiktu atsvešinātību, kas jums rada grūtības?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Vairāki gadi, dažādās dzīves situācijās.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 24,
+        "help": "Personības diagnozi nenosaka pēc atsevišķas atbildes. Jāņem vērā dzīves apstākļi, attīstība un pašreizējā veselība.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you avoid close relationships for long periods of time or experience a strong sense of alienation that causes you difficulty?",
+        "time": "Several years, in different life situations.",
+        "help": "A personality diagnosis is not determined by a single answer. Living conditions, development, and current health must be taken into account.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Вы избегаете близких отношений в течение длительного времени или испытываете сильное чувство отчуждения, которое доставляет вам трудности?",
+        "time": "Несколько лет, в разных жизненных ситуациях.",
+        "help": "Диагноз личности не может быть поставлен на основании одного ответа. Необходимо учитывать условия жизни, развитие личности и текущее состояние здоровья.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 456,
+      "lv": {
+        "id": "M24_15",
+        "title": "Vai atkārtoti ir grūti ņemt vērā citu cilvēku vajadzības vai savas rīcības ietekmi uz viņiem?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Vairāki gadi, dažādās dzīves situācijās.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 24,
+        "help": "Personības diagnozi nenosaka pēc atsevišķas atbildes. Jāņem vērā dzīves apstākļi, attīstība un pašreizējā veselība.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you repeatedly find it difficult to consider the needs of other people or the impact of your actions on them?",
+        "time": "Several years, in different life situations.",
+        "help": "A personality diagnosis is not determined by a single answer. Living conditions, development, and current health must be taken into account.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Вам часто бывает трудно учитывать потребности других людей или влияние ваших действий на них?",
+        "time": "Несколько лет, в разных жизненных ситуациях.",
+        "help": "Диагноз личности не может быть поставлен на основании одного ответа. Необходимо учитывать условия жизни, развитие личности и текущее состояние здоровья.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 457,
+      "lv": {
+        "id": "M24_16",
+        "title": "Vai ilgstoši ir grūti noteikt un īstenot savus mērķus bez citu cilvēku vadības?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Vairāki gadi, dažādās dzīves situācijās.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 24,
+        "help": "Personības diagnozi nenosaka pēc atsevišķas atbildes. Jāņem vērā dzīves apstākļi, attīstība un pašreizējā veselība.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Is it difficult to set and achieve your goals without the guidance of other people for a long time?",
+        "time": "Several years, in different life situations.",
+        "help": "A personality diagnosis is not determined by a single answer. Living conditions, development, and current health must be taken into account.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сложно ли ставить и достигать цели без помощи других людей в течение длительного времени?",
+        "time": "Несколько лет, в разных жизненных ситуациях.",
+        "help": "Диагноз личности не может быть поставлен на основании одного ответа. Необходимо учитывать условия жизни, развитие личности и текущее состояние здоровья.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 458,
+      "lv": {
+        "id": "M24_17",
+        "title": "Vai šie ilgstošie modeļi saglabājas arī laikā, kad nav izteiktas depresijas, paaugstinātas enerģijas vai vielu ietekmes?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Vairāki gadi.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 24,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do these long-term patterns persist even when there is no pronounced depression, increased energy, or substance effects?",
+        "time": "Several years.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сохраняются ли эти долгосрочные закономерности даже при отсутствии выраженной депрессии, повышения энергии или воздействия психоактивных веществ?",
+        "time": "Несколько лет.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

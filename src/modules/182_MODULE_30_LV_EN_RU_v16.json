@@ -1,0 +1,1914 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 30,
+  "count": 26,
+  "entries": [
+    {
+      "order": 524,
+      "lv": {
+        "id": "M30_01",
+        "title": "Vai pēdējo 3 mēnešu laikā atmiņa pasliktinājusies salīdzinājumā ar jums ierasto?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Over the past 3 months, has your memory become worse than is usual for you?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Ухудшилась ли память за последние 3 месяца по сравнению с вашим обычным состоянием?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 525,
+      "lv": {
+        "id": "M30_02",
+        "title": "Vai mēdzat aizmirst nesen notikušas sarunas vai notikumus?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you forget recent conversations or events?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Забываете ли вы недавние разговоры или события?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 526,
+      "lv": {
+        "id": "M30_03",
+        "title": "Vai esat apmaldījies/-usies agrāk labi zināmā vietā?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you become lost in a place you previously knew well?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Случалось ли вам теряться в ранее хорошо знакомом месте?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 527,
+      "lv": {
+        "id": "M30_04",
+        "title": "Vai dzīves laikā bijusi samaņas zaudēšana vai epizode, kuras laikā nesapratāt apkārt notiekošo?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you ever lost consciousness or had an episode when you were unaware of what was happening around you?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Были ли когда-либо потеря сознания или эпизод, во время которого вы не понимали происходящее вокруг?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 528,
+      "lv": {
+        "id": "M30_05",
+        "title": "Kāda ir jūsu pieredze ar epilepsijas lēkmēm vai līdzīgām epizodēm?",
+        "profile": "P66",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Ārsts ir diagnosticējis epilepsiju",
+          "B": "Bijusi viena vai vairākas aizdomīgas epizodes; diagnoze nav noteikta",
+          "C": "Šādu epizožu nav bijis",
+          "D": "Nezinu / grūti pateikt",
+          "E": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "uncertain",
+          "E": "refused"
+        }
+      },
+      "en": {
+        "title": "What is your experience of epileptic seizures or similar episodes?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "A doctor has diagnosed epilepsy",
+          "B": "One or more possible episodes; no diagnosis has been made",
+          "C": "I have not had these episodes",
+          "D": "I do not know / difficult to say",
+          "E": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Каков ваш опыт эпилептических приступов или похожих эпизодов?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Врач диагностировал эпилепсию",
+          "B": "Был один или несколько подозрительных эпизодов; диагноз не установлен",
+          "C": "Таких эпизодов не было",
+          "D": "Не знаю / трудно сказать",
+          "E": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 529,
+      "lv": {
+        "id": "M30_06",
+        "title": "Vai esat guvis/-usi galvas traumu ar samaņas zudumu?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you had a head injury involving loss of consciousness?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Была ли у вас травма головы с потерей сознания?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 530,
+      "lv": {
+        "id": "M30_07",
+        "title": "Vai dzīves laikā ir bijušas stipras galvassāpes kopā ar redzes, runas, jušanas vai kustību pārmaiņām?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you ever had a severe headache together with changes in vision, speech, sensation or movement?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Были ли когда-либо сильные головные боли вместе с изменениями зрения, речи, чувствительности или движений?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 531,
+      "lv": {
+        "id": "M30_08",
+        "title": "Vai pēdējo 3 mēnešu laikā no jauna parādījās vai pasliktinājās redzes, runas vai kustību koordinācijas traucējumi?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Over the past 3 months, have problems with vision, speech or coordination newly appeared or worsened?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Появились ли впервые или усилились за последние 3 месяца нарушения зрения, речи или координации движений?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 532,
+      "lv": {
+        "id": "M30_09",
+        "title": "Vai dzīves laikā atmiņas pārrāvumi sākās pēc smaga stresa vai notikuma?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have memory gaps ever begun after severe stress or a distressing event?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Начинались ли когда-либо провалы памяти после сильного стресса или тяжёлого события?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 533,
+      "lv": {
+        "id": "M30_10",
+        "title": "Vai atmiņas grūtības parādās, kad neesat pietiekami izgulējies/-usies?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do memory difficulties occur when you have not had enough sleep?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Возникают ли трудности с памятью, когда вы недостаточно спали?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 534,
+      "lv": {
+        "id": "M30_11",
+        "title": "Vai citi cilvēki pamana atmiņas vai orientācijas pasliktināšanos?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do other people notice worsening memory or orientation?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Замечают ли другие люди ухудшение памяти или ориентировки?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 535,
+      "lv": {
+        "id": "M30_12",
+        "title": "Cik ļoti atmiņas un neiroloģiskās grūtības ietekmē ikdienu?",
+        "profile": "P07",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much do memory and neurological difficulties affect everyday life?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько трудности с памятью и неврологические проблемы влияют на повседневную жизнь?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 536,
+      "lv": {
+        "id": "M30_13",
+        "title": "Vai šobrīd vai tikko pēkšņi radās jauns sejas vai rokas vājums, runas traucējums vai izteikts redzes zudums?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pašlaik vai tikko pēkšņi sākušies jauni simptomi.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Right now, or just now, have you suddenly developed new weakness of the face or an arm, difficulty speaking or marked loss of vision?",
+        "time": "New symptoms starting suddenly right now or just now.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Возникли ли сейчас или только что внезапно новая слабость лица или руки, нарушение речи либо выраженная потеря зрения?",
+        "time": "Новые симптомы, внезапно возникшие сейчас или только что.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 537,
+      "lv": {
+        "id": "M30_14",
+        "title": "Cik bieži bija grūti atcerēties pazīstamu cilvēku vārdus?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējās 28 dienās.",
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often did you have difficulty recalling the names of people you know?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вам было трудно вспомнить имена знакомых людей?",
+        "time": "За последние 28 дней.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 538,
+      "lv": {
+        "id": "M30_15",
+        "title": "Cik bieži aizmirsāt, kur nolikāt ikdienas priekšmetus?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējās 28 dienās.",
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often did you forget where you put everyday objects?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вы забывали, куда положили повседневные вещи?",
+        "time": "За последние 28 дней.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 539,
+      "lv": {
+        "id": "M30_16",
+        "title": "Kad rodas atmiņas vai koncentrēšanās grūtības? Izvēlieties visu atbilstošo.",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": true,
+        "time": "Pēdējās 28 dienās.",
+        "choices": {
+          "A": "Šādu grūtību nav",
+          "B": "Stresa laikā",
+          "C": "Sāpju laikā",
+          "D": "Nogurumā / pēc slikta miega",
+          "E": "Arī mierā un pēc atpūtas",
+          "F": "Nav skaidras sakarības",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "AGH",
+        "incompatible": [],
+        "context": null,
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "When do your memory or concentration difficulties occur? Select all that apply.",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "There are no such difficulties.",
+          "B": "During stress",
+          "C": "During pain",
+          "D": "When tired / after poor sleep",
+          "E": "Also when calm and rested",
+          "F": "No clear pattern",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда возникают трудности с памятью или концентрацией? Выберите всё подходящее.",
+        "time": "За последние 28 дней.",
+        "choices": {
+          "A": "Таких трудностей нет.",
+          "B": "При стрессе",
+          "C": "При боли",
+          "D": "При усталости / после плохого сна",
+          "E": "Также в спокойном и отдохнувшем состоянии",
+          "F": "Чёткой закономерности нет",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 540,
+      "lv": {
+        "id": "M30_17",
+        "title": "Vai bijušas grūtības ar kādu no šīm roku darbībām? Izvēlieties visu atbilstošo.",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": true,
+        "time": "Pēdējās 28 dienās. Jaunas vai pieaugošas roku kustību grūtības jāizvērtē ārstam. Pēkšņa vājuma, runas vai redzes izmaiņu gadījumā meklējiet neatliekamo palīdzību (112 vai vietējais ārkārtas numurs); negaidiet anketas pabeigšanu.",
+        "choices": {
+          "A": "Nav",
+          "B": "Noturēt priekšmetus, neizlaižot tos no rokām",
+          "C": "Aizpogāt pogas / lietot rāvējslēdzējus",
+          "D": "Rakstīšana",
+          "E": "Satveršana vai trauku atvēršana",
+          "F": "Citas smalkas roku kustības",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "AGH",
+        "incompatible": [],
+        "context": null,
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you had difficulty with any of these hand activities? Select all that apply.",
+        "time": "The past 28 days. New or increasing hand clumsiness deserves medical assessment. Sudden weakness, speech or vision changes require emergency help (112 or your local emergency number); do not wait to finish.",
+        "choices": {
+          "A": "None",
+          "B": "Holding objects without dropping them",
+          "C": "Fastening buttons / using zips",
+          "D": "Writing",
+          "E": "Gripping or opening containers",
+          "F": "Other fine hand movements",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Были ли трудности с какими-либо из следующих действий руками? Выберите всё подходящее.",
+        "time": "За последние 28 дней. Новые или нарастающие трудности с движениями рук требуют осмотра врача. При внезапной слабости, изменениях речи или зрения нужна экстренная помощь (112 или местный экстренный номер); не ждите завершения анкеты.",
+        "choices": {
+          "A": "Нет",
+          "B": "Удерживать предметы, не роняя их",
+          "C": "Застёгивать пуговицы / пользоваться молниями",
+          "D": "Письмо",
+          "E": "Захват предметов или открывание ёмкостей",
+          "F": "Другие мелкие движения рук",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 541,
+      "lv": {
+        "id": "M30_18",
+        "title": "Kuru roku skar šīs grūtības?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējās 28 dienās.",
+        "choices": {
+          "A": "Nevienu / grūtību nav",
+          "B": "Tikai kreiso",
+          "C": "Tikai labo",
+          "D": "Abas",
+          "E": "Mainīgi / nezinu",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "Which hand is affected by these difficulties?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Neither / no difficulty",
+          "B": "Left only",
+          "C": "Right only",
+          "D": "Both",
+          "E": "Variable / don't know",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Какую руку затрагивают эти трудности?",
+        "time": "За последние 28 дней.",
+        "choices": {
+          "A": "Ни одну / трудностей нет",
+          "B": "Только левую",
+          "C": "Только правую",
+          "D": "Обе",
+          "E": "Переменная / не знаю",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 542,
+      "lv": {
+        "id": "M30_19",
+        "title": "Vai grūtības ar roku darbībām bija kopā ar kādu no šīm pazīmēm? Izvēlieties visu atbilstošo.",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": true,
+        "time": "Pēdējās 28 dienās.",
+        "choices": {
+          "A": "Nav pavadošu pazīmju / roku grūtību nav",
+          "B": "Vājums",
+          "C": "Nejutīgums / tirpšana",
+          "D": "Kakla sāpes",
+          "E": "Līdzsvara / gaitas izmaiņas",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "AFG",
+        "incompatible": [],
+        "context": null,
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "Have hand difficulties occurred with any of the following? Select all that apply.",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No accompanying symptoms / no hand difficulty",
+          "B": "Weakness",
+          "C": "Numbness / tingling",
+          "D": "Neck pain",
+          "E": "Balance / walking changes",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сопровождались ли трудности с руками чем-либо из следующего? Выберите всё подходящее.",
+        "time": "За последние 28 дней.",
+        "choices": {
+          "A": "Нет сопутствующих симптомов / трудностей с руками нет",
+          "B": "Слабость",
+          "C": "Онемение / покалывание",
+          "D": "Боль в шее",
+          "E": "Изменения равновесия / ходьбы",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 543,
+      "lv": {
+        "id": "M30_20",
+        "title": "Kad sākās pašreizējās grūtības ar roku darbībām?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pašreizējo roku darbību grūtību sākums neatkarīgi no tā, cik sen tās sākušās.",
+        "choices": {
+          "A": "Šādu roku darbību grūtību nav",
+          "B": "Pēdējās 24 stundās",
+          "C": "Pirms vairāk nekā 24 stundām, bet ne vairāk kā 1 mēneša",
+          "D": "Pirms vairāk nekā 1 mēneša, bet ne vairāk kā 3 mēnešiem",
+          "E": "Pirms vairāk nekā 3 mēnešiem",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "When did your current hand difficulties begin?",
+        "time": "Onset of the current hand difficulties, however long ago they began.",
+        "choices": {
+          "A": "No hand difficulty",
+          "B": "Within the past 24 hours",
+          "C": "More than 24 hours ago, but less than 1 month ago",
+          "D": "More than 1 month ago, but no more than 3 months ago",
+          "E": "More than 3 months ago",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда начались нынешние трудности с руками?",
+        "time": "Начало нынешних трудностей с руками, независимо от того, как давно они начались.",
+        "choices": {
+          "A": "Трудностей с руками нет",
+          "B": "За последние 24 часа",
+          "C": "Более 24 часов назад, но менее месяца назад",
+          "D": "Более месяца, но не более 3 месяцев назад",
+          "E": "Более 3 месяцев назад",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 544,
+      "lv": {
+        "id": "M30_21",
+        "title": "Kā sākās un attīstījās pašreizējās grūtības ar roku darbībām? Izvēlieties visu atbilstošo.",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": true,
+        "time": "Pašreizējo roku darbību grūtību sākums un pārmaiņas pēdējās 28 dienās.",
+        "choices": {
+          "A": "Roku grūtību nav",
+          "B": "Pēkšņs sākums",
+          "C": "Pakāpenisks sākums",
+          "D": "Pasliktinās",
+          "E": "Nemainīgas",
+          "F": "Uzlabojas",
+          "G": "Parādās un pāriet",
+          "H": "Nezinu",
+          "I": "Nevēlos atbildēt"
+        },
+        "exclusive": "AHI",
+        "incompatible": [
+          [
+            "B",
+            "C"
+          ],
+          [
+            "D",
+            "E"
+          ],
+          [
+            "D",
+            "F"
+          ],
+          [
+            "E",
+            "F"
+          ]
+        ],
+        "context": null,
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "uncertain",
+          "I": "refused"
+        }
+      },
+      "en": {
+        "title": "How did your hand difficulties begin and develop? Select all that apply.",
+        "time": "How the current hand difficulties began, and their course over the past 28 days.",
+        "choices": {
+          "A": "No hand difficulty",
+          "B": "Sudden onset",
+          "C": "Gradual onset",
+          "D": "Getting worse",
+          "E": "Stable",
+          "F": "Improving",
+          "G": "Comes and goes",
+          "H": "I don't know",
+          "I": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как начались и развивались трудности с руками? Выберите всё подходящее.",
+        "time": "Как начались нынешние трудности с руками и как они менялись за последние 28 дней.",
+        "choices": {
+          "A": "Трудностей с руками нет",
+          "B": "Внезапное начало",
+          "C": "Постепенное начало",
+          "D": "Ухудшаются",
+          "E": "Без изменений",
+          "F": "Улучшаются",
+          "G": "Появляются и проходят",
+          "H": "Я не знаю",
+          "I": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 545,
+      "lv": {
+        "id": "M30_22",
+        "title": "Vai atmiņas, koncentrēšanās vai roku darbību grūtības ietekmējušas drošību darbā vai ikdienas uzdevumos?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējās 28 dienās.",
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have memory, concentration or hand difficulties affected safety at work or during daily tasks?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Влияли ли трудности с памятью, концентрацией или руками на безопасность на работе или в повседневных делах?",
+        "time": "За последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 546,
+      "lv": {
+        "id": "M30_23",
+        "title": "Cik bieži bija grūti atrast zināmu ikdienas vārdu, ne tikai atcerēties cilvēka vārdu?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējās 28 dienās.",
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often did you struggle to find an everyday word you knew, beyond recalling a person’s name?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вам было трудно подобрать знакомое повседневное слово, помимо имени человека?",
+        "time": "За последние 28 дней.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 547,
+      "lv": {
+        "id": "M30_24",
+        "title": "Vai pašlaik dažu stundu vai dienu laikā pēkšņi radies apjukums vai grūtības noturēt uzmanību, kas dienas laikā mainās?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pašlaik / pēdējās dienās.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 30,
+        "help": "Ja cilvēks pats nevar atbildēt, atbildi drīkst sniegt palīgs, norādot to pamatinformācijā. Negaidiet anketas pabeigšanu, ja vajadzīga palīdzība.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you recently experienced sudden confusion or difficulty concentrating over a few hours or days that changes throughout the day?",
+        "time": "Currently / in the last few days.",
+        "help": "If the person cannot answer themselves, an assistant may provide the answer, indicating this in the basic information. Do not wait until the questionnaire is completed if you need help.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "В последнее время вы испытываете внезапную спутанность сознания или трудности с концентрацией внимания в течение нескольких часов или дней, которые меняются в течение дня?",
+        "time": "В настоящее время / в последние несколько дней.",
+        "help": "Если человек не может ответить самостоятельно, помощник может предоставить ответ, указав это в основной информации. Не ждите завершения заполнения анкеты, если вам нужна помощь.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 548,
+      "lv": {
+        "id": "M30_25",
+        "title": "Vai pašlaik cilvēks pēkšņi gandrīz nekustas vai nerunā, ilgstoši sastingst vai nespēj uzņemt šķidrumu?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pašlaik / pēdējās dienās.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 30,
+        "help": "Šis nav katatonijas tests. Pēkšņas izmaiņas jāizvērtē medicīniski.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Is the person suddenly unable to move or speak, remains frozen for long periods of time, or is unable to take in fluids?",
+        "time": "Currently / in the last few days.",
+        "help": "This is not a test for catatonia. Sudden changes should be evaluated medically.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Человек внезапно теряет способность двигаться или говорить, замирает на длительное время или не может принимать жидкость?",
+        "time": "В настоящее время / в последние несколько дней.",
+        "help": "Это не тест на кататонию. Внезапные изменения требуют медицинского обследования.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 549,
+      "lv": {
+        "id": "M30_26",
+        "title": "Vai pakāpenisku atmiņas vai domāšanas pārmaiņu dēļ vajadzīga lielāka palīdzība ar zālēm, rēķiniem, ēdiena gatavošanu vai ceļa atrašanu?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 30,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you need more help with medications, bills, cooking, or finding your way around because of gradual changes in memory or thinking?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Вам требуется дополнительная помощь с приемом лекарств, оплатой счетов, приготовлением пищи или ориентированием на местности из-за постепенных изменений в памяти или мышлении?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}
