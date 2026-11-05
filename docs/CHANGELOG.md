@@ -4,10 +4,14 @@
 **Development edits:** GitHub only, after the relevant sources have been imported and verified.
 **Google Drive:** distribution of Latvian public files only. Existing Drive archives are read-only source references following the completed migration; do not update its old changelog for routine work.
 
-## 2026-11-05 · PILOT-GENERIC-MODULE-AUDIT · IN_PROGRESS
+## 2026-11-05 · PILOT-GENERIC-MODULE-AUDIT · TASK_DONE
 
 **Goal:** audit the existing pilot against LV v16; remove module-specific engine/build assumptions; verify translation independence and additional-module registration; document remaining parity gaps and active source pointers.
 **Plan:** inspect sources and successful CI evidence; checkpoint findings; make targeted generic changes; run structural and browser regressions; update architecture/index/manifest and verified status. Preserve original IDs, codes, conditions and recovery semantics. No release, Drive edits or main changes.
+**Final verified checkpoint:** All pilot checks passed at b7a627b9e86ce97cf079fe272e5de59efe5b22b6 in [run 42064471277](https://github.com/janisp123/mental-health-questionnaire/actions/runs/42064471277). The third-module fixture, English-only edit, cross-build backup, safety review, conditional status, real mood multi-select, print PDF page count and copy payload all passed. The distributable test HTML is the workflow artifact. The production registry still enables only opening and section 02.
+
+**Broader pilot status: PARTIAL.** See PILOT_ARCHITECTURE.md for scope. Next: check the artifact on Android Chrome (local opening, automatic recovery download, restore, clipboard and print), compare legacy v16 recovery and clinician-report requirements, then complete professional wording checks before any release. Full v16 backups cannot be loaded into this two-section pilot. EN/RU remain drafts.
+
 **At registration:** the implementation had not yet been audited. See verified checkpoints below.
 **Audit checkpoint:** Verified CI run 42057715895 passed on 231f537 (browser smoke + structure). Found fixed section counts and section-specific selector, reports and restore. LV v16 skip-section continues to the next eligible section. Pilot previously finished immediately.
 
