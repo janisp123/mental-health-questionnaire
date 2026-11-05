@@ -23,7 +23,7 @@ with tempfile.TemporaryDirectory() as temp:
         errors=[]
         page.on("pageerror",lambda err: errors.append(str(err)))
         requests=[]
-        page.on("request",lambda request:requests.append(request.url))
+        page.on("request",lambda request:requests.append(request.url) if request.url.startswith(("https://", "http://")) else None)
         page.goto(path.as_uri())
         assert "Sagatavošanās" in page.locator("h1").inner_text()
         assert page.locator('[data-act="start"]').count()==1
