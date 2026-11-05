@@ -1,6 +1,6 @@
 # Migration acceptance checklist
 
-**Status: NOT MIGRATED.** Source of truth remains Google Drive.
+**Status: NOT MIGRATED.** Active task log is GitHub [`docs/CHANGELOG.md`](CHANGELOG.md); frozen source/reference files remain in the Drive archive until verified Git import. Main Drive folder distributes LV only.
 
 - [x] Public GitHub repository reachable with write permissions
 - [x] Isolated `develop` branch created
