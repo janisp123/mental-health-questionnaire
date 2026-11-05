@@ -14,8 +14,7 @@
 
 **Known issue:** previous Google Drive -> public GitHub imports failed with connector safety checks; GitHub still has 0/48 modules. Recovery ZIP `190_GITHUB_MIGRATION_READY_MANUAL_UPLOAD.zip` exists locally, 79 Drive-origin reference/source files. Current original documents and completed Latvian HTML are on Drive; development work log is here.
 
-**Last verified:** task registered on `develop` before modifications.
-**Next:** rename distribution folder, check ZIP and GitHub status.
+**Verified checkpoint:** Google Drive distribution folder renamed and read back (2 Latvian files). All 79 of 79 Drive-origin development files imported on GitHub `develop` at commit `24d25c992cd866daf0589e16b4c4a1a9b8b7d63f`. Remote and local Git file hash inventories match, with 48 modules present. This validates transfer integrity only, not any release. **Next:** add current version index, update project instructions, final readback.
 
 ## 2026-11-05 · GITHUB-CHANGELOG-HANDOFF · TASK_DONE
 
