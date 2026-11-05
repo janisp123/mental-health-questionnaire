@@ -4,6 +4,19 @@
 **Development edits:** GitHub only, after the relevant sources have been imported and verified.
 **Google Drive:** distribution of Latvian public files only. Existing Drive archives are read-only source references until migration is complete; do not update its old changelog for routine work.
 
+## 2026-11-05 · GITHUB-FULL-SOURCE-IMPORT-AND-LV-DISTRIBUTION-NAME · IN_PROGRESS
+
+**Goal:** import all relevant Google Drive project source/reference files to GitHub `develop`, organize under clearly separated source, test, document, translation and immutable reference/history folders, establish a stable CURRENT file/version index so future work needs no Drive reads; rename the public Latvian Google Drive distribution folder for Latvian-language outreach.
+
+**Boundaries:** preserve existing Drive files; rename the distribution FOLDER only. Do not modify GitHub `main`, publish unreviewed EN/RU, claim complete source migration without 48/48 files and SHA256 readback, or accidentally publish real user answers or private communication. Existing archived Drive source is read-only pending verified Git migration.
+
+**Steps:** (1) inventory Git and ZIP/Drive sources; (2) rename Drive folder and verify; (3) attempt approved source import on `develop`, verify full source list/checksums; (4) create or update manifest/index with active versions, archived versions and exact Git paths; (5) document any blocked operation and a reproducible one-time manual import path; (6) read back GitHub changes, close `TASK_DONE` only if fully satisfied, otherwise `BLOCKED`.
+
+**Known issue:** previous Google Drive -> public GitHub imports failed with connector safety checks; GitHub still has 0/48 modules. Recovery ZIP `190_GITHUB_MIGRATION_READY_MANUAL_UPLOAD.zip` exists locally, 79 Drive-origin reference/source files. Current original documents and completed Latvian HTML are on Drive; development work log is here.
+
+**Last verified:** task registered on `develop` before modifications.
+**Next:** rename distribution folder, check ZIP and GitHub status.
+
 ## 2026-11-05 · GITHUB-CHANGELOG-HANDOFF · TASK_DONE
 
 **Goal:** switch ongoing task tracking to GitHub, without pretending that the questionnaire source migration is complete.
