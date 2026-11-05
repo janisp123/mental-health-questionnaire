@@ -71,7 +71,8 @@
         "B": "Jā",
         "C": "Nezinu / neesmu pārliecināts/-a",
         "D": "Nevēlos atbildēt."
-      }
+      },
+      "summaryLabel": "Pašnāvības domas"
     },
     "M06_02": {
       "title": "Vai šobrīd jums ir nodoms izdarīt pašnāvību?",
@@ -81,7 +82,8 @@
         "B": "Jā",
         "C": "Nezinu / neesmu pārliecināts/-a",
         "D": "Nevēlos atbildēt."
-      }
+      },
+      "summaryLabel": "Nodoms izdarīt pašnāvību"
     },
     "M06_02P": {
       "title": "Vai šobrīd jums ir konkrēts plāns, kā izdarīt pašnāvību?",
@@ -91,7 +93,8 @@
         "B": "Jā",
         "C": "Nezinu / neesmu pārliecināts/-a",
         "D": "Nevēlos atbildēt."
-      }
+      },
+      "summaryLabel": "Konkrēts pašnāvības plāns"
     },
     "M06_23": {
       "title": "Vai pašlaik izjūtat vēlmi kaitēt sev neatkarīgi no tā, vai vēlaties nomirt?",
@@ -101,7 +104,8 @@
         "B": "Jā",
         "C": "Nezinu",
         "D": "Nevēlos atbildēt"
-      }
+      },
+      "summaryLabel": "Vēlme kaitēt sev"
     },
     "M06_03": {
       "title": "Vai pašlaik spējat parūpēties par savu drošību?",
@@ -111,7 +115,8 @@
         "B": "Jā",
         "C": "Nezinu / neesmu pārliecināts/-a",
         "D": "Nevēlos atbildēt."
-      }
+      },
+      "summaryLabel": "Spēj parūpēties par savu drošību"
     },
     "M06_10": {
       "title": "Vai šobrīd ir nodoms nodarīt fizisku kaitējumu citam cilvēkam?",
@@ -121,7 +126,8 @@
         "B": "Jā",
         "C": "Nezinu / neesmu pārliecināts/-a",
         "D": "Nevēlos atbildēt."
-      }
+      },
+      "summaryLabel": "Nodoms fiziski kaitēt citam"
     },
     "M18_20": {
       "title": "Vai pašlaik gatavojaties fiziski kaitēt citam cilvēkam? Detaļas anketā nav jānorāda.",
@@ -131,7 +137,8 @@
         "B": "Jā",
         "C": "Nezinu / neesmu pārliecināts/-a",
         "D": "Nevēlos atbildēt"
-      }
+      },
+      "summaryLabel": "Gatavošanās fiziski kaitēt citam"
     },
     "M06_11": {
       "title": "Vai mājās šobrīd jūtaties fiziski droši?",
@@ -141,7 +148,8 @@
         "B": "Jā",
         "C": "Nezinu / neesmu pārliecināts/-a",
         "D": "Nevēlos atbildēt."
-      }
+      },
+      "summaryLabel": "Mājās jūtas fiziski droši"
     },
     "M31_09": {
       "title": "Vai šobrīd ir apdraudēta bērna vai citas aprūpējamas personas fiziskā drošība?",
@@ -151,7 +159,8 @@
         "B": "Jā",
         "C": "Nezinu / neesmu pārliecināts/-a",
         "D": "Nevēlos atbildēt."
-      }
+      },
+      "summaryLabel": "Bērna/aprūpējamā fiziskā drošība apdraudēta"
     },
     "M31_10": {
       "title": "Vai šobrīd mājās piedzīvojat draudus vai vardarbību?",
@@ -161,7 +170,8 @@
         "B": "Jā",
         "C": "Nezinu / neesmu pārliecināts/-a",
         "D": "Nevēlos atbildēt."
-      }
+      },
+      "summaryLabel": "Pašlaik mājās piedzīvo draudus/vardarbību"
     },
     "M06_13": {
       "title": "Vai jums vajadzīga tūlītēja palīdzība, lai saglabātu drošību?",
@@ -171,7 +181,8 @@
         "B": "Jā",
         "C": "Nezinu / neesmu pārliecināts/-a",
         "D": "Nevēlos atbildēt."
-      }
+      },
+      "summaryLabel": "Vajadzīga tūlītēja palīdzība drošībai"
     },
     "M33_06": {
       "title": "Kāds ir jūsu galvenais iemesls šīs anketas aizpildīšanai?",

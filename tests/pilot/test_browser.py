@@ -118,7 +118,12 @@ with tempfile.TemporaryDirectory() as temp:
         page.emulate_media(media="print")
         assert page.locator(".print-report").is_visible()
         assert page.locator(".print-report").inner_text() == page.locator("#reportText").input_value()
-        assert page.pdf(prefer_css_page_size=True).startswith(b"%PDF")
+        pdf=page.pdf(prefer_css_page_size=True)
+        assert pdf.startswith(b"%PDF")
+        import re
+        assert len(re.findall(rb"/Type /Page\b",pdf))==1, "Expected a one-page clinician summary for the test case"
+        assert "Current safety" in page.locator(".print-report").inner_text()
+        assert "FAKE_TEST_NAME" in page.locator(".print-report").inner_text()
         page.emulate_media(media="screen")
         with page.expect_download() as exported:
             page.click('[data-act="downloadReport"]')

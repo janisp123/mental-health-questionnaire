@@ -29,12 +29,20 @@ function flags(questions,answers) {
 }
 function doctorText(questions,answers,selected,locale,ui,groups) {
   const v=counters(questions,answers);
-  const name=["M33_01","M33_02"].map(id=>answers[id]?.kind==="text"?answers[id].value:"").filter(Boolean).join(" ");
+  const required=new Set(groups.filter(g=>g.required).map(g=>g.id));
+  const opening=questions.filter(q=>required.has(q.module));
+  function entry(q){
+    const rec=answers[q.id],t=q.translations[locale];
+    const timestamp=q.safetyRequired&&rec?.savedAt?" · "+rec.savedAt:"";
+    return (t.summaryLabel||t.title)+": "+readable(q,rec,locale,ui)+timestamp;
+  }
   const marked=flags(questions,answers);
   const lines=[ui.doctorHeading,"",ui.doctorDisclaimer,
-    name ? name : "",
+    "",ui.visitSummary,...opening.filter(q=>!q.safetyRequired).map(entry),
+    "",ui.safetySummary,...opening.filter(q=>q.safetyRequired).map(entry),"",
     questions.some(q=>q.safetyRequired && !answers[q.id]) ? ui.safetyPending : "",
     ui.countDone+": "+v.answered+" · "+ui.countSkip+": "+v.skipped+" · "+ui.countOpen+": "+v.unanswered,
+    ui.uncertain+": "+v.uncertain+" · "+ui.refused+": "+v.refused,
     ...groups.map(g=>{
       const section=questions.filter(q=>q.module===g.id);
       const progress=g.required||selected.includes(g.id)
@@ -43,7 +51,7 @@ function doctorText(questions,answers,selected,locale,ui,groups) {
     }),
     "",""+ui.attention+":"];
   if(!marked.length)lines.push(ui.noneFlagged);
-  for(const q of marked)lines.push("• "+q.id+" — "+q.translations[locale].title+": "+readable(q,answers[q.id],locale,ui)+(answers[q.id].savedAt?" ("+answers[q.id].savedAt+")":""));
+  for(const q of marked)lines.push("• "+q.id+" — "+(q.translations[locale].summaryLabel||q.translations[locale].title)+(q.safetyRequired?"":": "+readable(q,answers[q.id],locale,ui)));
   lines.push("",""+ui.warningSensitive,"",ui.help);
   return lines.filter(x=>x!==undefined).join("\n");
 }

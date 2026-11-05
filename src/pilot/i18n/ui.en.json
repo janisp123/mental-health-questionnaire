@@ -90,6 +90,8 @@
     "safetyPending": "Some opening safety questions still need an answer.",
     "guideIntro": "Choose the topics you want to discuss.",
     "jump": "Go to section",
-    "replaceSession": "Replace the current session with this recovery file?"
+    "replaceSession": "Replace the current session with this recovery file?",
+    "visitSummary": "Person and reason for the visit",
+    "safetySummary": "Current safety: answers and when they were saved"
   }
 }

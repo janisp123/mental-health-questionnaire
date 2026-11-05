@@ -21,9 +21,11 @@
 
 **Source comparison:** verified all 41 IDs and original order, LV/EN/RU prompt/choice/time/help text, multiple-choice/exclusive/incompatible settings, conditions, type, maximum choices and answer statuses against the frozen source modules. Zero differences in those fields.
 
-**Final browser batch:** exercise real section 02 multiple-choice combinations, exclusive options, save/back/edit, and doctor-copy payload at phone width and offline. Native Android and legacy v16 migration remain separate acceptance items.
+**Final browser batch:** exercise real section 02 multiple-choice combinations, exclusive options, save/back/edit, and doctor-copy payload at phone width and offline. Mobile-width offline run 42063375002 passed at a3e4582042aa670e16bbac5c312f6ef4e62ad57e. Native Android and legacy v16 migration remain separate acceptance items.
 
 **Recovery guard:** reject backups referencing unavailable selected sections before replacing the current answers. If a backup points beyond an incomplete required opening, resume the opening first. A Chromium regression checks that a rejected backup preserves the current session.
+
+**Clinician summary:** include opening visit context and priorities, each safety answer and its original saved time, and uncertain/refused counts. Test the representative completed report for one A4 page. Long responses may continue onto further pages to retain their text.
 
 ## 2026-11-05 · PROGRESS-UPDATES-RULE · TASK_DONE
 

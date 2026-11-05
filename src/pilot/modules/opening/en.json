@@ -71,7 +71,8 @@
         "B": "Yes",
         "C": "I don't know / I'm not sure",
         "D": "Prefer not to answer."
-      }
+      },
+      "summaryLabel": "Suicidal thoughts"
     },
     "M06_02": {
       "title": "Do you currently intend to die by suicide?",
@@ -81,7 +82,8 @@
         "B": "Yes",
         "C": "I don't know / I'm not sure",
         "D": "Prefer not to answer."
-      }
+      },
+      "summaryLabel": "Intention to commit suicide"
     },
     "M06_02P": {
       "title": "Do you currently have a specific plan for suicide?",
@@ -91,7 +93,8 @@
         "B": "Yes",
         "C": "I don't know / I'm not sure",
         "D": "Prefer not to answer."
-      }
+      },
+      "summaryLabel": "A specific suicide plan"
     },
     "M06_23": {
       "title": "Do you have an urge to harm yourself right now, whether or not you want to die?",
@@ -101,7 +104,8 @@
         "B": "Yes",
         "C": "I don't know",
         "D": "I don't want to answer."
-      }
+      },
+      "summaryLabel": "Desire to harm oneself"
     },
     "M06_03": {
       "title": "Are you currently able to keep yourself safe?",
@@ -111,7 +115,8 @@
         "B": "Yes",
         "C": "I don't know / I'm not sure",
         "D": "Prefer not to answer."
-      }
+      },
+      "summaryLabel": "Able to take care of your own safety"
     },
     "M06_10": {
       "title": "Do you currently intend to physically harm another person?",
@@ -121,7 +126,8 @@
         "B": "Yes",
         "C": "I don't know / I'm not sure",
         "D": "Prefer not to answer."
-      }
+      },
+      "summaryLabel": "Intent to physically harm another"
     },
     "M18_20": {
       "title": "Are you currently preparing to physically harm another person? Do not give operational details in the questionnaire.",
@@ -131,7 +137,8 @@
         "B": "Yes",
         "C": "I don't know / I'm not sure",
         "D": "I don't want to answer."
-      }
+      },
+      "summaryLabel": "Preparing to physically harm another"
     },
     "M06_11": {
       "title": "Do you currently feel physically safe at home?",
@@ -141,7 +148,8 @@
         "B": "Yes",
         "C": "I don't know / I'm not sure",
         "D": "Prefer not to answer."
-      }
+      },
+      "summaryLabel": "Feel physically safe at home"
     },
     "M31_09": {
       "title": "Is the physical safety of a child or another person in your care currently at risk?",
@@ -151,7 +159,8 @@
         "B": "Yes",
         "C": "I don't know / I'm not sure",
         "D": "Prefer not to answer."
-      }
+      },
+      "summaryLabel": "Child/caregiver's physical safety is at risk"
     },
     "M31_10": {
       "title": "Are you currently experiencing threats or violence at home?",
@@ -161,7 +170,8 @@
         "B": "Yes",
         "C": "I don't know / I'm not sure",
         "D": "Prefer not to answer."
-      }
+      },
+      "summaryLabel": "Currently experiencing threats/violence at home"
     },
     "M06_13": {
       "title": "Do you need immediate help to stay safe?",
@@ -171,7 +181,8 @@
         "B": "Yes",
         "C": "I don't know / I'm not sure",
         "D": "Prefer not to answer."
-      }
+      },
+      "summaryLabel": "Immediate security assistance needed"
     },
     "M33_06": {
       "title": "What is your main reason for completing this questionnaire?",

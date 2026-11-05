@@ -90,6 +90,8 @@
     "safetyPending": "Sākuma drošības jautājumi vēl nav pabeigti.",
     "guideIntro": "Izvēlieties jautājumus, kurus vēlaties pārrunāt.",
     "jump": "Pāriet uz sadaļu",
-    "replaceSession": "Aizstāt pašreizējo sesiju ar šo turpināšanas failu?"
+    "replaceSession": "Aizstāt pašreizējo sesiju ar šo turpināšanas failu?",
+    "visitSummary": "Persona un vizītes iemesls",
+    "safetySummary": "Pašreizējā drošība: saglabātās atbildes un to laiks"
   }
 }
