@@ -1,0 +1,1493 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 19,
+  "count": 19,
+  "entries": [
+    {
+      "order": 352,
+      "lv": {
+        "id": "M19_01",
+        "title": "Cik bieži jūtaties vientuļš/-a pat citu cilvēku klātbūtnē?",
+        "profile": "P17",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nevienā dienā",
+          "B": "1–3 dienās",
+          "C": "4–10 dienās",
+          "D": "11–20 dienās",
+          "E": "21–28 dienās",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often do you feel lonely even when other people are around?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "On no days",
+          "B": "On 1-3 days",
+          "C": "On 4-10 days",
+          "D": "On 11-20 days",
+          "E": "On 21-28 days",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вы чувствуете одиночество даже в присутствии других людей?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Ни в один из дней",
+          "B": "В течение 1-3 дней",
+          "C": "В течение 4-10 дней",
+          "D": "В течение 11-20 дней",
+          "E": "В течение 21-28 дней",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 353,
+      "lv": {
+        "id": "M19_02",
+        "title": "Vai jums ir vismaz viens cilvēks, ar kuru varat runāt par grūtībām?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you have at least one person you can talk to about difficulties?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Есть ли у вас хотя бы один человек, с которым можно поговорить о трудностях?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 354,
+      "lv": {
+        "id": "M19_03",
+        "title": "Vai pēdējo 28 dienu laikā izvairījāties no sociāliem kontaktiem, lai gan pats/-i vēlējāties kontaktēties?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Over the past 28 days, did you avoid social contact even though you wanted to connect with people?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Избегали ли вы за последние 28 дней общения, хотя сами хотели общаться?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 355,
+      "lv": {
+        "id": "M19_04",
+        "title": "Vai partnerattiecībās pastāv ilgstoši neatrisināti konflikti?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Are there longstanding unresolved conflicts in your relationship with your partner?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Есть ли в отношениях с партнёром длительные неразрешённые конфликты?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 356,
+      "lv": {
+        "id": "M19_05",
+        "title": "Vai jūtaties emocionāli nesaprasts/-a mājās?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you feel emotionally misunderstood at home?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Чувствуете ли вы, что дома не понимают ваших чувств?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 357,
+      "lv": {
+        "id": "M19_06",
+        "title": "Vai ir grūti uzticēties tuviem cilvēkiem?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you find it difficult to trust people close to you?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Трудно ли вам доверять близким людям?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 358,
+      "lv": {
+        "id": "M19_07",
+        "title": "Vai kāds pret jūsu gribu ierobežo jūsu kontaktus, pieeju naudai vai pārvietošanos?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Does anyone restrict your contacts, access to money or freedom of movement against your wishes?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Ограничивает ли кто-либо против вашей воли общение, доступ к деньгам или передвижение?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 359,
+      "lv": {
+        "id": "M19_08",
+        "title": "Ko esat piedzīvojis/-usi no pašreizēja vai agrāka partnera vai ģimenes locekļa? Izvēlieties visu atbilstošo.",
+        "profile": "CUSTOM-ABUSE-TYPES-1",
+        "multi": true,
+        "time": "Jebkurā dzīves laikā. Atbildiet tikai tad, ja ir droši un privāti. Varat izlaist. Saglabātos failus var redzēt citi ierīces lietotāji; anketa neizsauc palīdzību.",
+        "context": null,
+        "choices": {
+          "A": "Nevienu no minētajiem",
+          "B": "Pazemošanu, iebiedēšanu vai emocionālu vardarbību",
+          "C": "Fizisku vardarbību",
+          "D": "Seksuālu piespiešanu vai nevēlamu seksuālu kontaktu",
+          "E": "Naudas vai pamatvajadzību ierobežošanu kontroles nolūkā",
+          "F": "Izolēšanu vai pārvietošanās kontroli",
+          "G": "Vajāšanu vai digitālu uzraudzību bez piekrišanas",
+          "H": "Draudus jums, bērniem, tuviniekiem vai dzīvniekiem",
+          "I": "Citu kaitējošu uzvedību, ko vēlaties pārrunāt",
+          "J": "Nezinu",
+          "K": "Nevēlos atbildēt"
+        },
+        "exclusive": "AJK",
+        "incompatible": [],
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "answered",
+          "J": "uncertain",
+          "K": "refused"
+        }
+      },
+      "en": {
+        "title": "Which of the following have you experienced from a current or former partner or family member? Select all that apply.",
+        "time": "At any time in your life. Answer only when safe and private. You may skip. Other device users may see saved files; the questionnaire does not summon help.",
+        "choices": {
+          "A": "None of these",
+          "B": "Humiliation, intimidation or emotional abuse",
+          "C": "Physical violence",
+          "D": "Sexual coercion or unwanted sexual contact",
+          "E": "Controlling access to money or basic needs",
+          "F": "Isolation or controlling movement",
+          "G": "Stalking or digital monitoring without consent",
+          "H": "Threats against you, children, loved ones or animals",
+          "I": "Other harmful behaviour you wish to discuss",
+          "J": "I don't know",
+          "K": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "С чем из следующего вы сталкивались со стороны нынешнего или бывшего партнёра либо члена семьи? Выберите всё подходящее.",
+        "time": "За всю жизнь. Отвечайте только в безопасной и приватной обстановке. Можно пропустить. Сохранённые файлы могут видеть другие пользователи устройства; анкета не вызывает помощь.",
+        "choices": {
+          "A": "Ничего из перечисленного",
+          "B": "Унижение, запугивание или эмоциональное насилие",
+          "C": "Физическое насилие",
+          "D": "Сексуальное принуждение или нежелательный сексуальный контакт",
+          "E": "Ограничение доступа к деньгам или базовым потребностям ради контроля",
+          "F": "Изоляцию или контроль передвижения",
+          "G": "Преследование или цифровое наблюдение без согласия",
+          "H": "Угрозы вам, детям, близким или животным",
+          "I": "Другое вредящее поведение, которое хотите обсудить",
+          "J": "Я не знаю",
+          "K": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 360,
+      "lv": {
+        "id": "M19_09",
+        "title": "Vai jums bieži šķiet, ka jāslēpj savas emocijas?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you often feel you have to hide your emotions?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Часто ли вам кажется, что нужно скрывать свои эмоции?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 361,
+      "lv": {
+        "id": "M19_10",
+        "title": "Vai pašreizējās attiecības dod stabilu emocionālu atbalstu?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Does your current relationship provide stable emotional support?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Дают ли нынешние отношения устойчивую эмоциональную поддержку?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 362,
+      "lv": {
+        "id": "M19_11",
+        "title": "Vai pēdējā gada laikā pieaudzis sociālais noslēgtums?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you become more socially withdrawn over the past year?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Усилилась ли ваша социальная замкнутость за последний год?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 363,
+      "lv": {
+        "id": "M19_12",
+        "title": "Cik ļoti attiecību problēmas ietekmē pašsajūtu?",
+        "profile": "P07",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much do relationship problems affect how you feel?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько проблемы в отношениях влияют на ваше самочувствие?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 364,
+      "lv": {
+        "id": "M19_13",
+        "title": "Kad pēdējo reizi piedzīvojāt iepriekš minēto kaitējošo uzvedību no partnera vai ģimenes locekļa?",
+        "choices": {
+          "A": "Pašlaik tā turpinās",
+          "B": "Pēdējā mēneša laikā, bet pašlaik neturpinās",
+          "C": "Pirms vairāk nekā 1 mēneša, bet ne vairāk kā 1 gada",
+          "D": "Pirms vairāk nekā 1 gada",
+          "E": "Tas nav noticis",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-CONTEXT-ADDITION-1",
+        "multi": false,
+        "time": "Pašlaik. Atbildiet tikai tad, ja ir droši un privāti. Varat izlaist. Saglabātos failus var redzēt citi ierīces lietotāji; anketa neizsauc palīdzību.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": {
+          "id": "M19_08",
+          "hideValues": [
+            "A",
+            "K"
+          ]
+        },
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "When did you most recently experience the harmful behaviour described above from a partner or family member?",
+        "time": "Right now. Answer only when safe and private. You may skip. Other device users may see saved files; the questionnaire does not summon help.",
+        "choices": {
+          "A": "It is ongoing now",
+          "B": "Within the past month, but not ongoing now",
+          "C": "More than 1 month but not more than 1 year ago",
+          "D": "More than 1 year ago",
+          "E": "This has not happened",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда вы в последний раз сталкивались с описанным выше вредящим поведением партнёра или члена семьи?",
+        "time": "Прямо сейчас. Отвечайте только в безопасной и приватной обстановке. Можно пропустить. Сохранённые файлы могут видеть другие пользователи устройства; анкета не вызывает помощь.",
+        "choices": {
+          "A": "Продолжается сейчас",
+          "B": "В последний месяц, но сейчас не продолжается",
+          "C": "Более месяца, но не более года назад",
+          "D": "Более года назад",
+          "E": "Такого не было",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 365,
+      "lv": {
+        "id": "M19_14",
+        "title": "Vai baidāties no partnera vai ģimenes locekļa reakcijas, ja nepiekritīsiet, atteiksieties vai aiziesiet?",
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu",
+          "D": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-CONTEXT-ADDITION-1",
+        "multi": false,
+        "time": "Pašlaik. Atbildiet tikai tad, ja ir droši un privāti. Varat izlaist. Saglabātos failus var redzēt citi ierīces lietotāji; anketa neizsauc palīdzību.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Are you afraid of a partner’s or family member’s reaction if you disagree, refuse or leave?",
+        "time": "Right now. Answer only when safe and private. You may skip. Other device users may see saved files; the questionnaire does not summon help.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Боитесь ли вы реакции партнёра или члена семьи, если не согласитесь, откажетесь или уйдёте?",
+        "time": "Прямо сейчас. Отвечайте только в безопасной и приватной обстановке. Можно пропустить. Сохранённые файлы могут видеть другие пользователи устройства; анкета не вызывает помощь.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 366,
+      "lv": {
+        "id": "M19_15",
+        "title": "Vai vajadzības gadījumā varat droši un privāti sazināties ar uzticamu cilvēku vai profesionālu palīdzības sniedzēju?",
+        "choices": {
+          "A": "Jā",
+          "B": "Nē",
+          "C": "Nav vajadzības pēc šādas palīdzības",
+          "D": "Nezinu",
+          "E": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-CONTEXT-ADDITION-1",
+        "multi": false,
+        "time": "Pašlaik. Atbildiet tikai tad, ja ir droši un privāti. Varat izlaist. Saglabātos failus var redzēt citi ierīces lietotāji; anketa neizsauc palīdzību.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "uncertain",
+          "E": "refused"
+        }
+      },
+      "en": {
+        "title": "If needed, can you safely and privately contact someone you trust or a professional support service?",
+        "time": "Right now. Answer only when safe and private. You may skip. Other device users may see saved files; the questionnaire does not summon help.",
+        "choices": {
+          "A": "Yes",
+          "B": "No",
+          "C": "I do not need this support",
+          "D": "I don't know",
+          "E": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Можете ли вы при необходимости безопасно и конфиденциально связаться с человеком, которому доверяете, или профессиональной службой помощи?",
+        "time": "Прямо сейчас. Отвечайте только в безопасной и приватной обстановке. Можно пропустить. Сохранённые файлы могут видеть другие пользователи устройства; анкета не вызывает помощь.",
+        "choices": {
+          "A": "Да",
+          "B": "Нет",
+          "C": "Такая помощь не нужна",
+          "D": "Я не знаю",
+          "E": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 367,
+      "lv": {
+        "id": "M19_16",
+        "title": "Vai esat piedzīvojis/-usi netaisnīgu attieksmi vai izslēgšanu, kas, jūsuprāt, saistīta ar kādu no šīm pazīmēm? Izvēlieties visu atbilstošo.",
+        "choices": {
+          "A": "Neesmu piedzīvojis/-usi šādu attieksmi",
+          "B": "Ādas krāsu, etnisko izcelsmi vai tautību",
+          "C": "Valodu, akcentu vai migrācijas izcelsmi",
+          "D": "Reliģiju vai pārliecību",
+          "E": "Dzimumu, dzimtes identitāti vai seksuālo orientāciju",
+          "F": "Vecumu",
+          "G": "Invaliditāti, fizisko vai psihisko veselību",
+          "H": "Sociālo vai ekonomisko stāvokli",
+          "I": "Citu vai piedēvētu pazīmi",
+          "J": "Nezinu",
+          "K": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-CONTEXT-ADDITION-1",
+        "multi": true,
+        "time": "Jebkurā dzīves laikā. Tas ir jūsu skatījums, nevis juridisks vai diagnostisks vērtējums. Varat izlaist; personas nav jāidentificē.",
+        "exclusive": "AJK",
+        "incompatible": [],
+        "context": null,
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "answered",
+          "J": "uncertain",
+          "K": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you experienced unfair treatment or exclusion that you believe was related to any of the following? Select all that apply.",
+        "time": "At any time in your life. This is your perspective, not a legal or diagnostic finding. You may skip; do not identify anyone.",
+        "choices": {
+          "A": "I have not experienced this",
+          "B": "Skin colour, ethnicity or nationality",
+          "C": "Language, accent or migration background",
+          "D": "Religion or beliefs",
+          "E": "Sex, gender identity or sexual orientation",
+          "F": "Age",
+          "G": "Disability, physical or mental health",
+          "H": "Social or economic circumstances",
+          "I": "Another or assumed characteristic",
+          "J": "I don't know",
+          "K": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сталкивались ли вы с несправедливым обращением или исключением, которые, по вашему мнению, были связаны с чем-либо из следующего? Выберите всё подходящее.",
+        "time": "За всю жизнь. Это ваша точка зрения, а не юридическое или диагностическое заключение. Можно пропустить; имена не нужны.",
+        "choices": {
+          "A": "Не сталкивался/не сталкивалась с этим",
+          "B": "Цветом кожи, этническим происхождением или национальностью",
+          "C": "Языком, акцентом или миграционным происхождением",
+          "D": "Религией или убеждениями",
+          "E": "Полом, гендерной идентичностью или сексуальной ориентацией",
+          "F": "Возрастом",
+          "G": "Инвалидностью, физическим или психическим здоровьем",
+          "H": "Социальным или экономическим положением",
+          "I": "Другим или приписанным признаком",
+          "J": "Я не знаю",
+          "K": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 368,
+      "lv": {
+        "id": "M19_17",
+        "title": "Kad pēdējo reizi piedzīvojāt šādu netaisnīgu attieksmi?",
+        "choices": {
+          "A": "Pašlaik tā turpinās",
+          "B": "Pēdējā mēneša laikā, bet pašlaik neturpinās",
+          "C": "Pirms vairāk nekā 1 mēneša, bet ne vairāk kā 1 gada",
+          "D": "Pirms vairāk nekā 1 gada",
+          "E": "Tas nav noticis",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-CONTEXT-ADDITION-1",
+        "multi": false,
+        "time": "Pašlaik.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": {
+          "id": "M19_16",
+          "hideValues": [
+            "A",
+            "K"
+          ]
+        },
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "When did you most recently experience this unfair treatment?",
+        "time": "Currently.",
+        "choices": {
+          "A": "It is ongoing now",
+          "B": "Within the past month, but not ongoing now",
+          "C": "More than 1 month but not more than 1 year ago",
+          "D": "More than 1 year ago",
+          "E": "This has not happened",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда вы в последний раз сталкивались с таким несправедливым обращением?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Продолжается сейчас",
+          "B": "В последний месяц, но сейчас не продолжается",
+          "C": "Более месяца, но не более года назад",
+          "D": "Более года назад",
+          "E": "Такого не было",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 369,
+      "lv": {
+        "id": "M19_18",
+        "title": "Cik lielā mērā šī pieredze vai atmiņas par to ietekmējušas jūsu pašsajūtu, miegu, attiecības vai palīdzības meklēšanu?",
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Mēreni",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-CONTEXT-ADDITION-1",
+        "multi": false,
+        "time": "Pēdējās 28 dienās.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": {
+          "id": "M19_16",
+          "hideValues": [
+            "A",
+            "K"
+          ]
+        },
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much has this experience, or memories of it, affected your wellbeing, sleep, relationships or seeking help?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько этот опыт или воспоминания о нём повлияли на ваше самочувствие, сон, отношения или обращение за помощью?",
+        "time": "За последние 28 дней.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 370,
+      "lv": {
+        "id": "M19_19",
+        "title": "Vai pret kādu izturējāties netaisnīgi vai viņu izslēdzāt viņa ādas krāsas, etniskās izcelsmes vai citas personiskas vai grupas pazīmes dēļ?",
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu",
+          "D": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-CONTEXT-ADDITION-1",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši. Tas ir jūsu skatījums, nevis juridisks vai diagnostisks vērtējums. Varat izlaist; personas nav jāidentificē.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 19,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you treated someone unfairly or excluded them because of their skin colour, ethnicity or another personal or group characteristic?",
+        "time": "The past 12 months. This is your perspective, not a legal or diagnostic finding. You may skip; do not identify anyone.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Обращались ли вы с кем-либо несправедливо или исключали его/её из-за цвета кожи, этнического происхождения или другого личного либо группового признака?",
+        "time": "За последние 12 месяцев. Это ваша точка зрения, а не юридическое или диагностическое заключение. Можно пропустить; имена не нужны.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

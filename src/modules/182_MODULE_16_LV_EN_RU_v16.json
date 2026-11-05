@@ -1,0 +1,1070 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 16,
+  "count": 14,
+  "entries": [
+    {
+      "order": 291,
+      "lv": {
+        "id": "M16_01",
+        "title": "Cik stundas dienā pēdējo 28 dienu laikā vidēji izmantojāt ekrānus brīvajā laikā, neskaitot darbu un mācības?",
+        "profile": "P49",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Vairāk nekā 0, bet mazāk nekā 1 stundu",
+          "C": "No 1 līdz mazāk nekā 3 stundām",
+          "D": "No 3 līdz mazāk nekā 5 stundām",
+          "E": "No 5 līdz mazāk nekā 7 stundām",
+          "F": "7 stundas vai vairāk",
+          "G": "Nezinu / ļoti mainīgi",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 16,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "Over the past 28 days, how many hours per day on average did you spend on screens in your free time, excluding work and study?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Not at all",
+          "B": "More than 0 but less than 1 hour",
+          "C": "From 1 to less than 3 hours",
+          "D": "From 3 to less than 5 hours",
+          "E": "From 5 to less than 7 hours",
+          "F": "7 hours or more",
+          "G": "I do not know / highly variable",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Сколько часов в день в среднем за последние 28 дней вы проводили перед экраном в свободное время, не считая работы и учёбы?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Больше 0, но менее 1 часа",
+          "C": "От 1 до менее 3 часов",
+          "D": "От 3 до менее 5 часов",
+          "E": "От 5 до менее 7 часов",
+          "F": "7 часов или больше",
+          "G": "Не знаю / очень по-разному",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 292,
+      "lv": {
+        "id": "M16_02",
+        "title": "Vai mēdzat lietot sociālos medijus ilgāk, nekā plānojāt?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 16,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you use social media for longer than you intended?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Пользуетесь ли вы социальными сетями дольше, чем планировали?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 293,
+      "lv": {
+        "id": "M16_03",
+        "title": "Vai nespēja piekļūt telefonam izraisa izteiktu nemieru?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 16,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Does being unable to access your phone cause marked restlessness?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Вызывает ли невозможность воспользоваться телефоном выраженное беспокойство?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 294,
+      "lv": {
+        "id": "M16_04",
+        "title": "Vai telefonam, spēlēm vai internetam mēdzat atvēlēt laiku uz miega rēķina?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 16,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you spend time on your phone, games or the internet at the expense of sleep?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Тратите ли вы время на телефон, игры или интернет за счёт сна?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 295,
+      "lv": {
+        "id": "M16_05",
+        "title": "Vai video spēļu dēļ esat atlikis/-usi svarīgus pienākumus?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 16,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you put off important responsibilities because of video games?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Откладывали ли вы важные обязанности из-за видеоигр?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 296,
+      "lv": {
+        "id": "M16_06",
+        "title": "Cik ilgi kopumā digitālie paradumi radījuši jums traucējumus vai grūtības kontrolēt lietošanu?",
+        "profile": "P45",
+        "multi": false,
+        "time": "Kopējais laiks, kurā digitālie paradumi radījuši grūtības; nevis parastas lietošanas gadi.",
+        "context": null,
+        "choices": {
+          "A": "Šādi paradumi nav radījuši grūtības",
+          "B": "Mazāk nekā 1 gadu",
+          "C": "No 1 gada līdz mazāk nekā 4 gadiem",
+          "D": "No 4 gadiem līdz mazāk nekā 10 gadiem",
+          "E": "No 10 gadiem līdz mazāk nekā 20 gadiem",
+          "F": "20 gadus vai ilgāk",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 16,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "For how long overall have your digital habits caused difficulties or problems controlling your use?",
+        "time": "The total time digital habits have caused difficulties, not the years of ordinary use.",
+        "choices": {
+          "A": "These habits have not caused difficulties",
+          "B": "Less than 1 year",
+          "C": "From 1 year to less than 4 years",
+          "D": "From 4 years to less than 10 years",
+          "E": "From 10 years to less than 20 years",
+          "F": "20 years or longer",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как долго в целом цифровые привычки вызывают у вас проблемы или трудности с контролем использования?",
+        "time": "Общее время, в течение которого цифровые привычки создавали трудности, а не годы обычного использования.",
+        "choices": {
+          "A": "Эти привычки не вызывали трудностей",
+          "B": "Менее 1 года",
+          "C": "От 1 года до менее 4 лет",
+          "D": "От 4 лет до менее 10 лет",
+          "E": "От 10 лет до менее 20 лет",
+          "F": "20 лет или дольше",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 297,
+      "lv": {
+        "id": "M16_07",
+        "title": "Vai esat mēģinājis/-usi samazināt ekrānlaiku, bet tas neizdevās?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 16,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you tried to reduce screen time but been unable to?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Пытались ли вы сократить время перед экраном, но безуспешно?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 298,
+      "lv": {
+        "id": "M16_08",
+        "title": "Vai spēļu vai sociālo mediju ierobežošana rada aizkaitināmību?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 16,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Does limiting gaming or social media cause irritability?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Вызывает ли ограничение игр или социальных сетей раздражительность?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 299,
+      "lv": {
+        "id": "M16_09",
+        "title": "Vai interneta lietošana izraisa konfliktus ģimenē?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 16,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Does internet use cause conflict within your family?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Вызывает ли использование интернета конфликты в семье?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 300,
+      "lv": {
+        "id": "M16_10",
+        "title": "Vai pēdējo 28 dienu laikā erotiska satura lietošanu bija grūti kontrolēt un tā traucēja jūsu pienākumiem vai labsajūtai?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 16,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Over the past 28 days, was viewing erotic content difficult to control and did it interfere with your responsibilities or wellbeing?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "За последние 28 дней было ли трудно контролировать просмотр эротического контента и мешал ли он вашим обязанностям или благополучию?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 301,
+      "lv": {
+        "id": "M16_11",
+        "title": "Vai pēdējo 28 dienu laikā digitālās nodarbes regulāri aizstāja citas aktivitātes, kuras pats/-i vēlējāties turpināt?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 16,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Over the past 28 days, did digital activities regularly replace other activities you wanted to continue?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "За последние 28 дней вытесняли ли цифровые занятия регулярно другие занятия, которые вы сами хотели продолжать?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 302,
+      "lv": {
+        "id": "M16_12",
+        "title": "Cik ļoti digitālie paradumi traucē ikdienas pienākumiem?",
+        "profile": "P07",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 16,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much do digital habits interfere with your daily responsibilities?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько цифровые привычки мешают повседневным обязанностям?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 303,
+      "lv": {
+        "id": "M16_13",
+        "title": "Kura digitālā nodarbe visvairāk saistīta ar kontroles grūtībām?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Videospēles",
+          "B": "Sociālie tīkli",
+          "C": "Video vai straumēšana",
+          "D": "Ziņu vai informācijas meklēšana",
+          "E": "Vairākas vienlīdz",
+          "F": "Cita nodarbe",
+          "G": "Kontroles grūtību nav",
+          "H": "Nezinu",
+          "I": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 16,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "uncertain",
+          "I": "refused"
+        }
+      },
+      "en": {
+        "title": "Which digital activity is most associated with control difficulties?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Video games",
+          "B": "Social networks",
+          "C": "Video or streaming",
+          "D": "Searching for news or information",
+          "E": "Several equally",
+          "F": "Other occupation",
+          "G": "No control difficulties",
+          "H": "I don't know",
+          "I": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Какой вид цифровой деятельности чаще всего вызывает трудности с управлением?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Видеоигры",
+          "B": "Социальные сети",
+          "C": "Видео или потоковое вещание",
+          "D": "Поиск новостей или информации",
+          "E": "Несколько равных",
+          "F": "Другая профессия",
+          "G": "Нет проблем с управлением.",
+          "H": "Я не знаю",
+          "I": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 304,
+      "lv": {
+        "id": "M16_14",
+        "title": "Vai tieši spēlēšana turpinājās, lai gan tās dēļ atkārtoti cieta miegs, pienākumi vai attiecības?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 16,
+        "help": "Spēlēšanas ilgums viens pats nenosaka traucējumu.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Was it the gaming that continued even though it repeatedly interfered with sleep, responsibilities, or relationships?",
+        "time": "Last 12 months.",
+        "help": "Duration of play alone does not determine a disorder.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Возможно, дело в том, что игры продолжались, несмотря на то, что неоднократно мешали сну, выполнению обязанностей или отношениям?",
+        "time": "Последние 12 месяцев.",
+        "help": "Продолжительность игры сама по себе не является определяющим фактором наличия расстройства.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

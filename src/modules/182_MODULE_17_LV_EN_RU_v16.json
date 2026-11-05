@@ -1,0 +1,919 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 17,
+  "count": 12,
+  "entries": [
+    {
+      "order": 305,
+      "lv": {
+        "id": "M17_01",
+        "title": "Vai pēdējā gadā esat impulsīvi iegādājies/-usies lietas, kuras vēlāk nožēlojāt?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 17,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "In the past year, have you made impulsive purchases that you later regretted?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Покупали ли вы за последний год что-либо импульсивно, а затем жалели об этом?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 306,
+      "lv": {
+        "id": "M17_02",
+        "title": "Cik bieži iepirkšanās ir veids, kā uzlabot garastāvokli?",
+        "profile": "P17",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nevienā dienā",
+          "B": "1–3 dienās",
+          "C": "4–10 dienās",
+          "D": "11–20 dienās",
+          "E": "21–28 dienās",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 17,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often do you shop as a way to improve your mood?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "On no days",
+          "B": "On 1-3 days",
+          "C": "On 4-10 days",
+          "D": "On 11-20 days",
+          "E": "On 21-28 days",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто покупки служат способом улучшить настроение?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Ни в один из дней",
+          "B": "В течение 1-3 дней",
+          "C": "В течение 4-10 дней",
+          "D": "В течение 11-20 дней",
+          "E": "В течение 21-28 дней",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 307,
+      "lv": {
+        "id": "M17_03",
+        "title": "Vai neplānoti tēriņi ir radījuši parādus vai ģimenes konfliktus?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 17,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have unplanned expenses caused debt or family conflict?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Приводили ли незапланированные траты к долгам или семейным конфликтам?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 308,
+      "lv": {
+        "id": "M17_04",
+        "title": "Vai dzīves laikā esat spēlējis/-usi azartspēles vai piedalījies/-usies derībās?",
+        "profile": "P50",
+        "multi": false,
+        "time": "Dzīves laikā un atsevišķi pēdējo 12 mēnešu laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē, nekad",
+          "B": "Jā, bet ne pēdējo 12 mēnešu laikā",
+          "C": "Jā, arī pēdējo 12 mēnešu laikā",
+          "D": "Nezinu / neesmu pārliecināts/-a",
+          "E": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 17,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "uncertain",
+          "E": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you ever gambled or placed bets?",
+        "time": "Over your lifetime and, separately, in the past 12 months.",
+        "choices": {
+          "A": "No, never",
+          "B": "Yes, but not in the past 12 months",
+          "C": "Yes, including in the past 12 months",
+          "D": "I don't know / I'm not sure",
+          "E": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Участвовали ли вы когда-либо в азартных играх или делали ставки?",
+        "time": "За всю жизнь и отдельно за последние 12 месяцев.",
+        "choices": {
+          "A": "Нет, никогда",
+          "B": "Да, но не за последние 12 месяцев",
+          "C": "Да, в том числе за последние 12 месяцев",
+          "D": "Я не знаю / Я не уверен",
+          "E": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 309,
+      "lv": {
+        "id": "M17_05",
+        "title": "Cik ilgi spēlējat vai agrāk spēlējāt azartspēles?",
+        "profile": "P45",
+        "multi": false,
+        "time": "Kopējais dzīves laikā pavadītais azartspēļu periods.",
+        "context": {
+          "id": "M17_04",
+          "hideValues": [
+            "A",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nekad neesmu spēlējis/-usi azartspēles",
+          "B": "Mazāk nekā 1 gadu",
+          "C": "No 1 gada līdz mazāk nekā 4 gadiem",
+          "D": "No 4 gadiem līdz mazāk nekā 10 gadiem",
+          "E": "No 10 gadiem līdz mazāk nekā 20 gadiem",
+          "F": "20 gadus vai ilgāk",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 17,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "For how long have you gambled, or did you gamble in the past?",
+        "time": "The total period of gambling during your lifetime.",
+        "choices": {
+          "A": "I have never gambled",
+          "B": "Less than 1 year",
+          "C": "From 1 year to less than 4 years",
+          "D": "From 4 years to less than 10 years",
+          "E": "From 10 years to less than 20 years",
+          "F": "20 years or longer",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как долго вы играете или раньше играли в азартные игры?",
+        "time": "Общая продолжительность участия в азартных играх за всю жизнь.",
+        "choices": {
+          "A": "Никогда не участвовал(а) в азартных играх",
+          "B": "Менее 1 года",
+          "C": "От 1 года до менее 4 лет",
+          "D": "От 4 лет до менее 10 лет",
+          "E": "От 10 лет до менее 20 лет",
+          "F": "20 лет или дольше",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 310,
+      "lv": {
+        "id": "M17_06",
+        "title": "Vai pēdējo 12 mēnešu laikā bija grūti pārtraukt azartspēles vai kontrolēt likmes?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": {
+          "id": "M17_04",
+          "hideValues": [
+            "A",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 17,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Over the past 12 months, was it difficult to stop gambling or control your bets?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "За последние 12 месяцев было ли трудно прекратить азартные игры или контролировать ставки?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 311,
+      "lv": {
+        "id": "M17_07",
+        "title": "Vai pēdējo 12 mēnešu laikā mēģinājāt atgūt zaudēto naudu ar jaunām likmēm?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": {
+          "id": "M17_04",
+          "hideValues": [
+            "A",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 17,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Over the past 12 months, did you try to win back lost money by placing more bets?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Пытались ли вы за последние 12 месяцев отыграть потерянные деньги новыми ставками?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 312,
+      "lv": {
+        "id": "M17_08",
+        "title": "Vai pēdējo 12 mēnešu laikā slēpāt no citiem neplānotu tēriņu vai azartspēļu apjomu?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 17,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Over the past 12 months, did you hide the extent of unplanned spending or gambling from others?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Скрывали ли вы за последние 12 месяцев от других объём незапланированных трат или азартных игр?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 313,
+      "lv": {
+        "id": "M17_09",
+        "title": "Vai dzīves laikā neierasti lieli tēriņi sakrita ar skaidri atšķirīgu paaugstinātas enerģijas periodu?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 17,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have unusually large expenses ever coincided with a clearly distinct period of increased energy?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Совпадали ли когда-либо необычно большие траты с явно отличавшимся от обычного периодом повышенной энергии?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 314,
+      "lv": {
+        "id": "M17_10",
+        "title": "Vai esat aizņēmies/-usies naudu azartspēļu vai impulsīvu pirkumu dēļ?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 17,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you borrowed money because of gambling or impulsive purchases?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Занимали ли вы деньги из-за азартных игр или импульсивных покупок?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 315,
+      "lv": {
+        "id": "M17_11",
+        "title": "Cik ļoti tērēšanas vai azartspēļu paradumi ietekmē jūsu dzīvi?",
+        "profile": "P07",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 17,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much do spending or gambling habits affect your life?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько привычки, связанные с тратами или азартными играми, влияют на вашу жизнь?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 316,
+      "lv": {
+        "id": "M17_12",
+        "title": "Vai par šīm grūtībām esat lūdzis/-usi palīdzību?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 17,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you asked for help with these difficulties?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Обращались ли вы за помощью по поводу этих трудностей?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    }
+  ]
+}
