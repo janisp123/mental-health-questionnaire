@@ -101,7 +101,7 @@ function renderResults(){
 function renderReport(){
  const q=active(),u=ui(),doctor=state.reportView!=="ai";
  const heading=doctor?u.doctorHeading:u.coded;
- const result=doctor?report.doctorText(q,state.answers,state.selected,state.lang,u):report.codedText(q,state.answers,state.lang,u);
+ const result=doctor?report.doctorText(q,state.answers,state.selected,state.lang,u):report.codedText(q,state.answers,state.selected,state.lang,u);
  return '<section class="card report"><h2>'+esc(heading)+'</h2><p>'+label("doctorDisclaimer")+'</p><textarea id="reportText" readonly rows="17">'+esc(result)+'</textarea>'+
  '<div class="actions">'+btn(doctor?"copyDoctor":"copyAI",doctor?"copyDoctor":"copyAI","primary-inline")+
  btn("doctor","specialist")+btn("ai","ai")+btn("print","print")+btn("downloadReport","downloadReport")+btn("downloadTxt","txt")+btn("reference","reference")+'</div>'+
@@ -268,7 +268,7 @@ function action(key){
    window.print();return;
  }
  if(key==="copyDoctor"||key==="copyAI"){
-   const text=key==="copyDoctor"?report.doctorText(q,state.answers,state.selected,state.lang,u):report.codedText(q,state.answers,state.lang,u);
+   const text=key==="copyDoctor"?report.doctorText(q,state.answers,state.selected,state.lang,u):report.codedText(q,state.answers,state.selected,state.lang,u);
    copyText(text);return;
  }
 }
