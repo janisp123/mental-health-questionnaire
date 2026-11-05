@@ -4,7 +4,7 @@
 **Development edits:** GitHub only, after the relevant sources have been imported and verified.
 **Google Drive:** distribution of Latvian public files only. Existing Drive archives are read-only source references until migration is complete; do not update its old changelog for routine work.
 
-## 2026-11-05 · GITHUB-CHANGELOG-HANDOFF · IN_PROGRESS
+## 2026-11-05 · GITHUB-CHANGELOG-HANDOFF · TASK_DONE
 
 **Goal:** switch ongoing task tracking to GitHub, without pretending that the questionnaire source migration is complete.
 
