@@ -14,7 +14,7 @@
 |---|---|---|
 | Questions in LV/EN/RU | `src/modules/182_MODULE_01_LV_EN_RU_v16.json` through `182_MODULE_48_LV_EN_RU_v16.json` | 48 sections, 712 questions, language fields per module; LV reference, EN/RU **unreviewed drafts** |
 | Module source index | `tests/fixtures/181_MODULE_INDEX_v16.json` | Frozen initial module SHA256, count and order; do not confuse with the current overall manifest |
-| Editable pilot | `src/pilot/modules/registry.json`, `src/pilot/core/`, `src/pilot/reports/` | Current offline prototype. See [architecture](PILOT_ARCHITECTURE.md). |
+| Editable pilot | `src/pilot/modules/registry.json`, `src/pilot/core/`, `src/pilot/reports/` | 60 active questions: 20 opening, 21 mood (02), 19 unusual experiences (21). Source fidelity: `tests/pilot/test_source_fidelity.py`. See [architecture](PILOT_ARCHITECTURE.md). |
 | Existing working application | `reference/baseline/html/162_Sagatavosanas_vizitei_LV_v16.html` | Exact frozen LV v16 single-file browser reference; behavioral comparison source for the developing pilot |
 | English app snapshot | `reference/baseline/html/172_Questionnaire_EN_v16_DRAFT_NOT_RELEASED.html` | Reference draft only, **not a release** |
 | Russian app snapshot | `reference/baseline/html/172_Questionnaire_RU_v16_DRAFT_NOT_RELEASED.html` | Reference draft only, **not a release** |

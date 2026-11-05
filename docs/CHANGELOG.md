@@ -4,11 +4,11 @@
 **Development edits:** GitHub only, after the relevant sources have been imported and verified.
 **Google Drive:** distribution of Latvian public files only. Existing Drive archives are read-only source references following the completed migration; do not update its old changelog for routine work.
 
-## 2026-11-05 · SOURCE-FIDELITY-AND-SECTION-21 · IN_PROGRESS
+## 2026-11-05 · SOURCE-FIDELITY-AND-SECTION-21 · TASK_DONE
 
 Plan: verify active modules against frozen v16 by ID and exact codes, demonstrate rejection of swapped labels, inspect section 21 dependencies, import its three existing locales, verify in offline Chromium and checkpoint the artifact. Checkpoint: 41 active questions passed exact v16 logic and LV/EN/RU text comparisons locally. Deliberately swapping English labels B/C at M02_01 failed at the expected ID, locale and field. The gate runs in pilot CI. Section 21 has 19 questions (orders 387–405), no opening overlap or condition parents, and an incompatible A/E pair at M21_06 requiring generic runtime enforcement. Source gate committed at c7e0f37804c93013fb44bff9e776b205012e6594.
 
-Imported real section 21 directly from v16 in its three languages. All 60 questions passed the structural and independent fidelity checks locally. Runtime now rejects incompatible selections on both save and restore. M21_15 retains the v16 immediate-help trigger B. Browser test exercises all 19 items, reports and recovery. Await CI.
+Imported real section 21 directly from v16 in its three languages. All 60 questions passed the structural and independent fidelity checks locally. Runtime now rejects incompatible selections on both save and restore. M21_15 retains the v16 immediate-help trigger B. Browser test exercises all 19 items, reports and recovery. Verified commit 5c851b0d1d7a273dabc7ed3563db68c42a449cd2 in [passing run 42067275015](https://github.com/janisp123/mental-health-questionnaire/actions/runs/42067275015). All three browser suites passed. The workflow uploaded artifact 13433203221. Built HTML SHA256 95019a68bda97bdc1f15d9d8e6dcb5d0f67bf6e76e6a24847d253369fbe24055 matches the local build. Next device check: open the 60-question pilot in Android Chrome and test downloading/restoring a backup.
 
 ## 2026-11-05 · PILOT-GENERIC-MODULE-AUDIT · TASK_DONE
 
