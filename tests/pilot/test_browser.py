@@ -37,6 +37,7 @@ with tempfile.TemporaryDirectory() as temp:
         page.locator("#shortText").fill("FAKE_TEST_NAME")
         # Editing an answer without Save & Next must not commit it.
         page.click('[data-act="results"]')
+        assert page.get_by_text("Some opening safety questions still need an answer.").is_visible()
         page.click('[data-act="ai"]')
         assert "free_text_redacted" not in page.locator("#reportText").input_value()
         page.click('[data-act="resultScreen"]')
@@ -70,6 +71,10 @@ with tempfile.TemporaryDirectory() as temp:
             if page.locator(".question").count():
                 here=page.locator(".question").inner_text()
                 if "M02_01" in here: break
+                if "M06_01" in here:
+                    assert page.locator('[data-act="skip"]').count()==0
+                    page.locator('input[value="B"]').check()
+                    assert "112" in page.locator("#safetyHint").inner_text()
                 if page.locator("#shortText").count():
                     page.locator("#shortText").fill("")
                 else:
@@ -87,6 +92,14 @@ with tempfile.TemporaryDirectory() as temp:
         page.click('[data-act="doctor"]')
         assert page.locator("#reportText").count()==1
         assert page.locator('[data-act="downloadReport"]').count()==1
+        page.emulate_media(media="print")
+        assert page.locator(".print-report").is_visible()
+        assert page.locator(".print-report").inner_text() == page.locator("#reportText").input_value()
+        assert page.pdf(prefer_css_page_size=True).startswith(b"%PDF")
+        page.emulate_media(media="screen")
+        with page.expect_download() as exported:
+            page.click('[data-act="downloadReport"]')
+        assert "<!doctype html>" in exported.value.path().read_text()
         with page.expect_download() as result:
             page.click('[data-act="reference"]')
         assert result.value.suggested_filename.endswith(".md")
@@ -98,3 +111,4 @@ with tempfile.TemporaryDirectory() as temp:
         browser.close()
 print("PASS browser: offline, language switching, manual saving, backups, redacted AI, optional section and exports")
 print("This is a smoke test, not clinical, translation or full release certification.")
+

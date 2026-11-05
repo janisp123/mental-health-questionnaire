@@ -72,11 +72,14 @@ def build_bundle():
         if len(questions) != group["question_count"]:
             raise ValueError("Question count mismatch: " + key)
         groups.append({"id": key, "titles": titles, "required": bool(group["required"]), "questions": questions})
+    by_id = {q["id"]: q for group in groups for q in group["questions"]}
     for group in groups:
         for q in group["questions"]:
             context = q.get("context")
             if context and context.get("id") not in ids:
                 raise ValueError("Unresolved condition " + q["id"])
+            if context and by_id[context["id"]]["order"] >= q["order"]:
+                raise ValueError("Condition must reference an earlier question: " + q["id"])
     return {"schema": "offline-questionnaire-pilot-v1", "version": registry["app_version"],
             "baseline": registry["baseline"], "ui": ui, "groups": groups,
             "release_status": {"lv": "PROTOTYPE", "en": "DRAFT_NOT_RELEASED", "ru": "DRAFT_NOT_RELEASED"}}

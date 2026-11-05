@@ -211,7 +211,12 @@
         "C",
         "D"
       ],
-      "originModule": 2
+      "originModule": 2,
+      "discussCodes": [
+        "B",
+        "C",
+        "D"
+      ]
     },
     {
       "order": 52,

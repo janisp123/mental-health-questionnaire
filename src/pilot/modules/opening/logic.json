@@ -158,7 +158,15 @@
         "C",
         "D"
       ],
-      "originModule": 6
+      "originModule": 6,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
     },
     {
       "order": 6,
@@ -181,7 +189,15 @@
         "C",
         "D"
       ],
-      "originModule": 6
+      "originModule": 6,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
     },
     {
       "order": 7,
@@ -204,7 +220,15 @@
         "C",
         "D"
       ],
-      "originModule": 6
+      "originModule": 6,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
     },
     {
       "order": 8,
@@ -227,7 +251,15 @@
         "C",
         "D"
       ],
-      "originModule": 6
+      "originModule": 6,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
     },
     {
       "order": 9,
@@ -250,7 +282,15 @@
         "C",
         "D"
       ],
-      "originModule": 6
+      "originModule": 6,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "A"
+      ],
+      "discussCodes": [
+        "A",
+        "C"
+      ]
     },
     {
       "order": 10,
@@ -273,7 +313,15 @@
         "C",
         "D"
       ],
-      "originModule": 6
+      "originModule": 6,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
     },
     {
       "order": 11,
@@ -296,7 +344,15 @@
         "C",
         "D"
       ],
-      "originModule": 18
+      "originModule": 18,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
     },
     {
       "order": 12,
@@ -319,7 +375,15 @@
         "C",
         "D"
       ],
-      "originModule": 6
+      "originModule": 6,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "A"
+      ],
+      "discussCodes": [
+        "A",
+        "C"
+      ]
     },
     {
       "order": 13,
@@ -342,7 +406,15 @@
         "C",
         "D"
       ],
-      "originModule": 31
+      "originModule": 31,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
     },
     {
       "order": 14,
@@ -365,7 +437,15 @@
         "C",
         "D"
       ],
-      "originModule": 31
+      "originModule": 31,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
     },
     {
       "order": 15,
@@ -388,7 +468,15 @@
         "C",
         "D"
       ],
-      "originModule": 6
+      "originModule": 6,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
     },
     {
       "order": 16,

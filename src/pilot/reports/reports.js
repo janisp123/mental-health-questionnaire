@@ -24,15 +24,8 @@ function counters(questions,answers) {
   }); return r;
 }
 function flags(questions,answers) {
-  const sensitive = new Set(["M06_01","M06_02","M06_02P","M06_23","M06_10","M18_20","M31_09","M31_10","M06_13"]);
-  return questions.filter(q => {
-    const r=answers[q.id]; if (!r||r.kind!=="choice")return false;
-    const c=r.codes||[];
-    if (sensitive.has(q.id)) return c.includes("B") || c.includes("C");
-    if (q.id==="M06_03" || q.id==="M06_11") return c.includes("A") || c.includes("C");
-    if (q.id==="M02_09") return c.some(x=>["B","C","D"].includes(x));
-    return false;
-  });
+  return questions.filter(q=>answers[q.id]?.codes?.some(code=>q.discussCodes?.includes(code)));
+
 }
 function doctorText(questions,answers,selected,locale,ui,groups) {
   const v=counters(questions,answers);
@@ -40,6 +33,7 @@ function doctorText(questions,answers,selected,locale,ui,groups) {
   const marked=flags(questions,answers);
   const lines=[ui.doctorHeading,"",ui.doctorDisclaimer,
     name ? name : "",
+    questions.some(q=>q.safetyRequired && !answers[q.id]) ? ui.safetyPending : "",
     ui.countDone+": "+v.answered+" · "+ui.countSkip+": "+v.skipped+" · "+ui.countOpen+": "+v.unanswered,
     ...groups.map(g=>{
       const section=questions.filter(q=>q.module===g.id);

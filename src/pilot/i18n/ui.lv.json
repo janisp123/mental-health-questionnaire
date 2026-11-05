@@ -86,6 +86,7 @@
     "available": "Pieejamās sadaļas",
     "noSection": "Nav izvēlēta papildu sadaļa; var pabeigt pēc sākuma jautājumiem.",
     "backToAnswers": "Atgriezties pie atbildēm",
-    "warningSensitive": "Ja kāda no šīm atbildēm attiecas uz pašreizējo drošību, sazinieties ar palīdzību nekavējoties. Jautājumu aizpildīšana neaizstāj palīdzības saņemšanu."
+    "warningSensitive": "Ja kāda no šīm atbildēm attiecas uz pašreizējo drošību, sazinieties ar palīdzību nekavējoties. Jautājumu aizpildīšana neaizstāj palīdzības saņemšanu.",
+    "safetyPending": "Sākuma drošības jautājumi vēl nav pabeigti."
   }
 }

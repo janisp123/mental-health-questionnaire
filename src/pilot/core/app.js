@@ -18,12 +18,12 @@ function ui(){return data.ui[state.lang];}
 function esc(s){return report.esc(s);}
 function label(key){return esc(ui()[key]||key);}
 function btn(act,key,cls,extra){return '<button type="button" data-act="'+act+'" class="'+(cls||"")+'" '+(extra||"")+'>'+label(key)+'</button>';}
-function isSafety(q){return q.module==="opening" && q.order>=5 && q.order<=15;}
+function isSafety(q){return !!q.safetyRequired;}
 function canSkip(q){return !isSafety(q);}
-function copyObject(x){return JSON.parse(JSON.stringify(x));}
-function normalizeCode(a){return a?.kind==="choice"?(a.codes||[]):[];}
 function questionVisible(q){
  const c=q.context;if(!c || !c.id)return true;
+ const parent=byId[c.id];
+ if(!parent || !questionVisible(parent) || (!groups.get(parent.module).required && !state.selected.includes(parent.module)))return false;
  const a=state.answers[c.id];
  if(!a || a.kind!=="choice")return !Array.isArray(c.showValues);
  const chosen=new Set(a.codes||[]);
@@ -72,6 +72,11 @@ function storedDraft(q){
  if(r?.kind==="text")return {value:r.value||""};
  return {codes:[],value:""};
 }
+function safetyText(q,codes){
+ if(codes.some(code=>q.urgentCodes?.includes(code)))return ui().help;
+ if(codes.some(code=>q.discussCodes?.includes(code)))return ui().attention;
+ return "";
+}
 function renderQuestion(){
  const q=current(),u=ui();
  if(!q){state.screen="results";return renderResults();}
@@ -92,7 +97,7 @@ function renderQuestion(){
     return '<label class="choice"><input type="'+kind+'" name="answer" value="'+esc(key)+'"'+(checked?" checked":"")+'> <span><b>'+esc(key)+'</b> '+esc(t.choices[key]||key)+'</span></label>';
   }).join("")+'</fieldset>';
  }
- return '<section class="card question"><div class="muted">'+esc(group)+' · '+(idx+1)+'/'+queue.length+' · '+esc(q.id)+'</div><h2>'+esc(t.title)+'</h2>'+time+help+options+
+ return '<section class="card question"><div class="muted">'+esc(group)+' · '+(idx+1)+'/'+queue.length+' · '+esc(q.id)+'</div><h2>'+esc(t.title)+'</h2>'+time+help+options+'<p id="safetyHint" role="alert" class="warning"'+(safetyText(q,state.draft.codes||[])?'':' hidden')+'>'+esc(safetyText(q,state.draft.codes||[]))+'</p>'+
  '<p class="muted">'+label("saveWarning")+'</p>'+btn("save","next","primary")+
  '<div class="actions">'+(canSkip(q)?btn("skip","skipQuestion"):"")+btn("previous","prev")+(!groups.get(q.module).required?btn("skipSection","skipSection"):"")+btn("sections","editSections")+btn("end","skipRest")+'</div></section>';
 }
@@ -101,7 +106,7 @@ function renderResults(){
  const stats='<div class="stats"><span>'+label("countDone")+' <b>'+v.answered+'</b></span><span>'+label("countSkip")+' <b>'+v.skipped+'</b></span><span>'+label("countOpen")+' <b>'+v.unanswered+'</b></span></div>';
  const selected=data.groups.map(g=>'<p>'+esc(g.titles[state.lang])+' · '+(g.required||state.selected.includes(g.id)?label("selected"):label("notSelected"))+'</p>').join("");
  const flag=report.flags(qs,state.answers).length;
- return '<section class="card"><h2>'+label("results")+'</h2>'+stats+selected+'<p>'+label("doctorDisclaimer")+'</p>'+
+ return '<section class="card"><h2>'+label("results")+'</h2>'+stats+selected+(qs.some(q=>isSafety(q)&&!state.answers[q.id])?'<p class="warning">'+label("safetyPending")+'</p>':"")+'<p>'+label("doctorDisclaimer")+'</p>'+
  (flag?'<p class="warning">'+label("attention")+': '+flag+'. '+label("warningSensitive")+'</p>':'<p>'+label("noneFlagged")+'</p>')+
  '<div class="actions">'+btn("doctor","specialist","primary-inline")+btn("ai","ai")+btn("downloadTxt","txt")+btn("reference","reference")+'</div>'+
  '<div class="actions">'+btn("back","back")+btn("reviewSafety","reviewSafety")+btn("new","new")+'</div></section>';
@@ -110,7 +115,7 @@ function renderReport(){
  const q=active(),u=ui(),doctor=state.reportView!=="ai";
  const heading=doctor?u.doctorHeading:u.coded;
  const result=doctor?report.doctorText(q,state.answers,state.selected,state.lang,u,data.groups):report.codedText(q,state.answers,state.selected,state.lang,u);
- return '<section class="card report"><h2>'+esc(heading)+'</h2><p>'+label("doctorDisclaimer")+'</p><textarea id="reportText" readonly rows="17">'+esc(result)+'</textarea>'+
+ return '<section class="card report"><h2>'+esc(heading)+'</h2><p>'+label("doctorDisclaimer")+'</p><textarea id="reportText" readonly rows="17">'+esc(result)+'</textarea><pre class="print-report">'+esc(result)+'</pre>'+
  '<div class="actions">'+btn(doctor?"copyDoctor":"copyAI",doctor?"copyDoctor":"copyAI","primary-inline")+
  btn("doctor","specialist")+btn("ai","ai")+btn("print","print")+btn("downloadReport","downloadReport")+btn("downloadTxt","txt")+btn("reference","reference")+'</div>'+
  '<div class="actions">'+btn("resultScreen","backToAnswers")+btn("reviewSafety","reviewSafety")+'</div></section>';
@@ -134,16 +139,21 @@ function advance(){
  state.screen="results";state.draft=null;state.notice="";render();
 }
 function start(){const q=active().find(x=>!state.answers[x.id]);if(q)setQuestion(q.id);else {state.screen=state.sectionConfirmed?"results":"selector";render();}}
+function choiceStatus(q,codes){
+ const statuses=codes.map(c=>q.answerStatus?.[c]);
+ return statuses.includes("refused")?"refused":statuses.includes("uncertain")?"uncertain":"answered";
+}
 function save(){
  const q=current();if(!q)return;
  let rec={savedAt:new Date().toISOString()};
  if(q.type==="shortText"){
    rec.kind="text";rec.value=document.getElementById("shortText")?.value.trim().slice(0,200)||"";rec.status="answered";
+   if(!rec.value){skip();return;}
  } else {
    const codes=(state.draft?.codes||[]).filter(key=>q.choiceCodes.includes(key));
    if(!codes.length){state.notice=ui().chooseAnswer;render();return;}
    if(q.maxChoices&&codes.length>q.maxChoices){state.notice=ui().maxChoices+" "+q.maxChoices;render();return;}
-   rec.kind="choice";rec.codes=codes;rec.status=codes.length===1?(q.answerStatus?.[codes[0]]||"answered"):"answered";
+   rec.kind="choice";rec.codes=codes;rec.status=choiceStatus(q,codes);
  }
  state.answers[q.id]=rec;state.savedCount++;
  advance();
@@ -188,6 +198,8 @@ function setDraft(ev){
   if(q.maxChoices&&codes.length>q.maxChoices){state.notice=ui().maxChoices+" "+q.maxChoices;codes=codes.filter(c=>c!==inp.value);}
  }
  state.draft={forId:q.id,codes};
+ const hint=document.getElementById("safetyHint");
+ hint.textContent=safetyText(q,codes);hint.hidden=!hint.textContent;
  if(q.multi){
   app.querySelectorAll('input[name="answer"]').forEach(el=>el.checked=codes.includes(el.value));
   const message=app.querySelector('[role="status"]');if(message)message.textContent=state.notice;
@@ -212,13 +224,13 @@ function restore(file){
    for(const [id,rec] of Object.entries(x.answers)){
     const q=byId[id];if(!q||!rec||typeof rec!=="object")throw Error("Invalid record");
     if(rec.kind==="choice"){
-      if(!Array.isArray(rec.codes)||!rec.codes.every(code=>q.choiceCodes.includes(code)))throw Error("Unknown choice");
-      if(!q.multi&&rec.codes.length!==1)throw Error("Invalid single answer");
-      a[id]={kind:"choice",codes:[...rec.codes],status:rec.status||"answered",savedAt:rec.savedAt||""};
+      if(q.type==="shortText"||!Array.isArray(rec.codes)||!rec.codes.length||new Set(rec.codes).size!==rec.codes.length||!rec.codes.every(code=>q.choiceCodes.includes(code)))throw Error("Unknown choice");
+      if((!q.multi&&rec.codes.length!==1)||(q.maxChoices&&rec.codes.length>q.maxChoices)||(rec.codes.length>1&&rec.codes.some(c=>q.exclusive?.includes(c))))throw Error("Invalid single answer");
+      a[id]={kind:"choice",codes:[...rec.codes],status:choiceStatus(q,rec.codes),savedAt:rec.savedAt||""};
     }else if(rec.kind==="text"){
       if(q.type!=="shortText"||typeof rec.value!=="string")throw Error("Invalid text");
       a[id]={kind:"text",value:rec.value.slice(0,200),status:"answered",savedAt:rec.savedAt||""};
-    }else if(rec.kind==="skip")a[id]={kind:"skip",status:"skipped",savedAt:rec.savedAt||""};
+    }else if(rec.kind==="skip"&&!isSafety(q))a[id]={kind:"skip",status:"skipped",savedAt:rec.savedAt||""};
     else throw Error("Unknown record");
    }
    state.answers=a;state.selected=Array.isArray(x.selected)?optionalIds.filter(id=>x.selected.includes(id)):[];state.sectionConfirmed=!!x.sectionConfirmed;
@@ -262,7 +274,7 @@ function action(key){
  if(key==="doctor"||key==="ai"){state.reportView=key==="doctor"?"doctor":"ai";state.screen="report";render();return;}
  if(key==="resultScreen"){state.screen="results";render();return;}
  if(key==="back"){state.screen=state.currentId?"question":"start";render();return;}
- if(key==="reviewSafety"){setQuestion("M06_01");return;}
+ if(key==="reviewSafety"){const safety=active().filter(isSafety);const next=safety.find(q=>!state.answers[q.id])||safety[0];if(next)setQuestion(next.id);return;}
  if(key==="new"){
    if(window.confirm(u.newConfirm)){
      const lang=state.lang;state={lang,screen:"start",currentId:null,answers:{},selected:[],sectionDraft:[],sectionConfirmed:false,savedCount:0,notice:"",reportView:"doctor",draft:null};render();
