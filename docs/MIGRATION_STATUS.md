@@ -1,8 +1,20 @@
+# Migration status — VERIFIED COMPLETE (2026-11-05)
 
-> **Status notes below are historical checkpoints. For the latest actions, read [the active GitHub changelog](CHANGELOG.md).**
-# GitHub migration status — staging checkpoints only
+**GitHub source import:** 79/79 original development/reference files committed to `develop` with matching source Git blob SHA1 hashes; 48/48 multilingual modules present, 712 questions in LV/EN/RU question-bank baselines. Source snapshot commit: `24d25c992cd866daf0589e16b4c4a1a9b8b7d63f`. An earlier blocked attempt was resolved through the working connector; it is HISTORY, not the present state.
 
-**CURRENT TRACKING AUTHORITY (2026-11-05):** [`docs/CHANGELOG.md`](CHANGELOG.md) on GitHub `develop` is the single active log for future work. The archived Google Drive changelog is read-only historical evidence. GitHub source migration is still BLOCKED (0/48), so Drive source files remain immutable references until verified Git import. This page is a migration reference, not another active changelog.
+**Current file/version authority:** [`project-manifest.json`](../project-manifest.json) and [`docs/FILE_INDEX.md`](FILE_INDEX.md). **Only active changelog:** [`docs/CHANGELOG.md`](CHANGELOG.md). The original Drive changelog lives at `docs/drive-original/166_CHANGELOG_LV.md` as read-only prior history.
+
+**Distribution:** Google Drive contains exactly 2 Latvian v16 files in [the renamed Latvian folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb). EN/RU remain DRAFT_NOT_RELEASED.
+
+**Next task:** extract shared application engine, build multilingual single offline HTML, finish complete EN/RU translation and release testing. Those phases are NOT completed by file transfer.
+
+---
+
+## Previous interrupted migration attempts — historical record only
+
+# Original staging checkpoints (outdated)
+
+**Historical note (superseded 2026-11-05):** [`docs/CHANGELOG.md`](CHANGELOG.md) on GitHub `develop` is the single active log for future work. The archived Google Drive changelog is read-only historical evidence. GitHub source migration is still BLOCKED (0/48), so Drive source files remain immutable references until verified Git import. This page is a migration reference, not another active changelog.
 
 ## 2026-11-05 — GITHUB-SCAFFOLD — TASK_DONE
 
