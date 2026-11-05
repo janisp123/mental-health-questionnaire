@@ -60,9 +60,7 @@ with tempfile.TemporaryDirectory() as temp:
         assert '"status": "free_text_redacted"' in coded
         assert "FAKE_TEST_NAME" not in coded
         page.click('[data-act="resultScreen"]')
-        page.click('[data-act="new"]')
         page.once("dialog",lambda d:d.accept())
-        # New click preceded by dialog handler for deterministic order.
         page.click('[data-act="new"]')
         page.locator("#restore").set_input_files(str(backup_path))
         page.wait_for_timeout(250)
