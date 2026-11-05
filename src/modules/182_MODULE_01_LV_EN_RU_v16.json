@@ -1,0 +1,1930 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 1,
+  "count": 23,
+  "entries": [
+    {
+      "order": 20,
+      "lv": {
+        "id": "M01_01",
+        "title": "Vai pie psihiatra esat vērsies/-usies iepriekš?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you seen a psychiatrist before?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Обращались ли вы раньше к психиатру?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 21,
+      "lv": {
+        "id": "M01_02",
+        "title": "Vai jums iepriekš ir noteikta psihiatriska diagnoze?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you previously received a psychiatric diagnosis?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Ставили ли вам ранее психиатрический диагноз?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 22,
+      "lv": {
+        "id": "M01_03",
+        "title": "Cik gadu jums bija, kad pirmoreiz sākās psihiskās veselības grūtības, kas būtiski traucēja ikdienu?",
+        "profile": "P11",
+        "multi": false,
+        "time": "Vecums pirmo norādīto grūtību sākumā.",
+        "context": null,
+        "choices": {
+          "A": "0–5 gadu vecumā",
+          "B": "6–11 gadu vecumā",
+          "C": "12–17 gadu vecumā",
+          "D": "18–29 gadu vecumā",
+          "E": "30–44 gadu vecumā",
+          "F": "45–64 gadu vecumā",
+          "G": "65 gadu vecumā vai vēlāk",
+          "H": "Tas nav noticis",
+          "I": "Neatceros / nezinu",
+          "J": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "uncertain",
+          "J": "refused"
+        }
+      },
+      "en": {
+        "title": "How old were you when mental health difficulties first began to significantly interfere with everyday life?",
+        "time": "Your age when the difficulties described first began.",
+        "choices": {
+          "A": "Age 0-5",
+          "B": "Age 6-11",
+          "C": "Age 12-17",
+          "D": "Age 18-29",
+          "E": "Age 30-44",
+          "F": "Age 45-64",
+          "G": "Age 65 or older",
+          "H": "This has not happened",
+          "I": "I don't remember / I don't know",
+          "J": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Сколько вам было лет, когда трудности с психическим здоровьем впервые стали существенно мешать повседневной жизни?",
+        "time": "Возраст начала указанных трудностей.",
+        "choices": {
+          "A": "В возрасте 0-5 лет",
+          "B": "В возрасте 6-11 лет",
+          "C": "В возрасте 12-17 лет",
+          "D": "В возрасте 18-29 лет",
+          "E": "В возрасте 30-44 лет",
+          "F": "В возрасте 45-64 лет",
+          "G": "В возрасте 65 лет или старше",
+          "H": "Такого не было",
+          "I": "Я не помню / Я не знаю",
+          "J": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 23,
+      "lv": {
+        "id": "M01_04",
+        "title": "Kā dzīves laikā parasti noritējušas jūsu psihiskās veselības grūtības?",
+        "profile": "P19",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Līdz šim nav bijis šādu grūtību",
+          "B": "Viena epizode ar uzlabojumu pēc tās",
+          "C": "Vairākas atsevišķas epizodes ar uzlabojumu starplaikos",
+          "D": "Gandrīz nepārtraukti simptomi",
+          "E": "Gandrīz nepārtraukti simptomi ar atsevišķiem pasliktinājumiem",
+          "F": "Cits vai neskaidrs modelis",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "What has been the usual course of your mental health difficulties over your lifetime?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "I have not had these difficulties",
+          "B": "One episode, followed by improvement",
+          "C": "Several separate episodes with improvement in between",
+          "D": "Almost continuous symptoms",
+          "E": "Almost continuous symptoms with periods of worsening",
+          "F": "Another or unclear pattern",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как обычно протекали ваши трудности с психическим здоровьем на протяжении жизни?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Таких трудностей не было",
+          "B": "Один эпизод с последующим улучшением",
+          "C": "Несколько отдельных эпизодов с улучшением между ними",
+          "D": "Почти постоянные симптомы",
+          "E": "Почти постоянные симптомы с периодами ухудшения",
+          "F": "Другой или неясный характер течения",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 24,
+      "lv": {
+        "id": "M01_05",
+        "title": "Vai dzīves laikā ir bijis vismaz mēnesi ilgs periods, kad pēc grūtību sākuma jutāties ievērojami labāk?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Since these difficulties began, have you had a period of at least one month when you felt significantly better?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "После начала этих трудностей был ли период продолжительностью не менее месяца, когда вы чувствовали себя значительно лучше?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 25,
+      "lv": {
+        "id": "M01_06",
+        "title": "Vai kādreiz saņēmāt neatliekamu psihiatrisku palīdzību?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you ever received emergency psychiatric care?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Получали ли вы когда-либо экстренную психиатрическую помощь?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 26,
+      "lv": {
+        "id": "M01_07",
+        "title": "Vai psihiskās veselības dēļ esat ārstējies/-usies slimnīcā?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you been admitted to hospital for mental health reasons?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Лечились ли вы в стационаре в связи с психическим состоянием?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 27,
+      "lv": {
+        "id": "M01_08",
+        "title": "Vai dzīves laikā bijis emocionālu grūtību periods, kurā nespējāt veikt ierastos ikdienas pienākumus?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you ever had a period of emotional difficulties when you were unable to carry out your usual daily responsibilities?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Был ли в вашей жизни период эмоциональных трудностей, когда вы не могли выполнять обычные повседневные обязанности?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 28,
+      "lv": {
+        "id": "M01_09",
+        "title": "Kad pēdējoreiz bija šāds periods, kurā nespējāt veikt ierastos pienākumus?",
+        "profile": "P18",
+        "multi": false,
+        "time": "Laiks kopš pēdējā norādītā funkcionēšanas pasliktinājuma.",
+        "context": {
+          "id": "M01_08",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Pēdējo 24 stundu laikā",
+          "B": "Pirms vairāk nekā 24 stundām, bet ne vairāk kā 1 mēneša",
+          "C": "Pirms vairāk nekā 1 mēneša, bet ne vairāk kā 1 gada",
+          "D": "Pirms vairāk nekā 1 gada, bet ne vairāk kā 5 gadiem",
+          "E": "Pirms vairāk nekā 5 gadiem",
+          "F": "Tas nav noticis",
+          "G": "Neatceros / nezinu",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "When was the most recent period when you were unable to carry out your usual responsibilities?",
+        "time": "Time since the most recent decline in daily functioning described.",
+        "choices": {
+          "A": "Within the past 24 hours",
+          "B": "More than 24 hours ago, but less than 1 month ago",
+          "C": "More than 1 month but not more than 1 year ago",
+          "D": "More than 1 year ago, but no more than 5 years ago",
+          "E": "More than 5 years ago",
+          "F": "This has not happened",
+          "G": "I don't remember / I don't know",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда в последний раз был такой период, когда вы не могли выполнять обычные обязанности?",
+        "time": "Время с последнего указанного ухудшения способности выполнять повседневные дела.",
+        "choices": {
+          "A": "В течение последних 24 часов",
+          "B": "Более 24 часов назад, но менее месяца назад",
+          "C": "Более месяца, но не более года назад",
+          "D": "Более года назад, но не более 5 лет назад",
+          "E": "Более 5 лет назад",
+          "F": "Такого не было",
+          "G": "Я не помню / Я не знаю",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 29,
+      "lv": {
+        "id": "M01_10",
+        "title": "Vai psihiskās veselības grūtības pirmoreiz sākās pēc smaga dzīves notikuma?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Did your mental health difficulties first begin after a major distressing life event?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Возникли ли ваши трудности с психическим здоровьем впервые после тяжёлого жизненного события?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 30,
+      "lv": {
+        "id": "M01_12",
+        "title": "Vai pēdējo 3 mēnešu laikā kāds tuvs cilvēks ir pamanījis pārmaiņas jūsu uzvedībā vai pašsajūtā?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "In the past 3 months, has someone close to you noticed changes in your behaviour or how you feel?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Замечал ли кто-то из близких изменения в вашем поведении или самочувствии за последние 3 месяца?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 31,
+      "lv": {
+        "id": "M01_13",
+        "title": "Cik noderīgs kopumā bija agrāk saņemts atbalsts bez zālēm, piemēram, psiholoģiska konsultēšana vai psihoterapija?",
+        "profile": "P20",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Neesmu saņēmis/-usi šādu atbalstu",
+          "B": "Izteikts uzlabojums",
+          "C": "Neliels uzlabojums",
+          "D": "Nebija pamanāmu pārmaiņu",
+          "E": "Pašsajūta pasliktinājās",
+          "F": "Dažādiem atbalsta veidiem bija atšķirīgi rezultāti",
+          "G": "Neatceros / grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "Overall, how helpful was previous non-medicine support such as counselling or psychotherapy?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "I have not received this kind of support",
+          "B": "Marked improvement",
+          "C": "Slight improvement",
+          "D": "No noticeable change",
+          "E": "I felt worse",
+          "F": "Different forms of support had different outcomes",
+          "G": "I do not remember / difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько в целом помогла прежняя немедикаментозная помощь, например консультирование или психотерапия?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Такую помощь не получал(а)",
+          "B": "Выраженное улучшение",
+          "C": "Небольшое улучшение",
+          "D": "Заметных изменений не было",
+          "E": "Самочувствие ухудшилось",
+          "F": "Разные виды помощи давали разные результаты",
+          "G": "Не помню / трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 32,
+      "lv": {
+        "id": "M01_15",
+        "title": "Vai bijušas grūtības piekļūt speciālistam vai regulāri saņemt ārstēšanu?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you had difficulty accessing a specialist or receiving treatment regularly?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Были ли у вас трудности с доступом к специалисту или регулярным получением лечения?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 33,
+      "lv": {
+        "id": "M01_16",
+        "title": "Kādi ārsta diagnosticēti fiziskās veselības stāvokļi pašlaik jāņem vērā? Var izvēlēties vairākas atbildes.",
+        "profile": "P69",
+        "multi": true,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Sirds vai asinsrites slimība",
+          "B": "Elpošanas vai miega elpošanas slimība",
+          "C": "Vairogdziedzera vai cita hormonāla slimība",
+          "D": "Diabēts vai cita vielmaiņas slimība",
+          "E": "Neiroloģiska slimība",
+          "F": "Stāvoklis, kas saistīts ar ilgstošām sāpēm vai kustību grūtībām",
+          "G": "Cita fiziska slimība",
+          "H": "Nav zināmu šādu slimību",
+          "I": "Nezinu",
+          "J": "Nevēlos atbildēt."
+        },
+        "exclusive": "HIJ",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "uncertain",
+          "J": "refused"
+        }
+      },
+      "en": {
+        "title": "Which doctor-diagnosed physical health conditions currently need to be taken into account? Select all that apply.",
+        "time": "Currently.",
+        "choices": {
+          "A": "Heart or circulatory disease",
+          "B": "Respiratory disease or sleep-related breathing disorder",
+          "C": "Thyroid or another hormonal disorder",
+          "D": "Diabetes or another metabolic disorder",
+          "E": "Neurological disease",
+          "F": "A condition involving persistent pain or movement difficulties",
+          "G": "Another physical illness",
+          "H": "No known conditions of this kind",
+          "I": "I don't know",
+          "J": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Какие физические заболевания, диагностированные врачом, сейчас важно учитывать? Можно выбрать несколько ответов.",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Заболевание сердца или системы кровообращения",
+          "B": "Заболевание дыхательной системы или нарушение дыхания во сне",
+          "C": "Заболевание щитовидной железы или другое гормональное заболевание",
+          "D": "Диабет или другое нарушение обмена веществ",
+          "E": "Неврологическое заболевание",
+          "F": "Заболевание, связанное с длительной болью или нарушением движений",
+          "G": "Другое физическое заболевание",
+          "H": "Такие заболевания мне не известны",
+          "I": "Я не знаю",
+          "J": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 34,
+      "lv": {
+        "id": "M01_17",
+        "title": "Kādas diagnozes vai iespējamās diagnozes speciālists jums ir minējis?",
+        "profile": "CUSTOM-v11",
+        "multi": true,
+        "time": "Jebkurā dzīves laikā. Norādiet speciālista teikto, nevis pašdiagnozi.",
+        "context": null,
+        "choices": {
+          "A": "Depresija",
+          "B": "Trauksmes vai panikas traucējumi",
+          "C": "Bipolāri traucējumi",
+          "D": "Psihotiski traucējumi",
+          "E": "PTSS vai citi ar traumu saistīti traucējumi",
+          "F": "UDHS",
+          "G": "Autiskā spektra traucējumi",
+          "H": "Obsesīvi kompulsīvi traucējumi",
+          "I": "Ēšanas traucējumi",
+          "J": "Vielu lietošanas vai atkarības traucējumi",
+          "K": "Personības traucējumi",
+          "L": "Cita diagnoze",
+          "M": "Nav šādas diagnozes",
+          "N": "Nezinu",
+          "O": "Nevēlos atbildēt"
+        },
+        "exclusive": "MNO",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "answered",
+          "J": "answered",
+          "K": "answered",
+          "L": "answered",
+          "M": "answered",
+          "N": "uncertain",
+          "O": "refused"
+        }
+      },
+      "en": {
+        "title": "What diagnoses or possible diagnoses has the specialist mentioned to you?",
+        "time": "At any time in your life. Refer to what a specialist says, not self-diagnosis.",
+        "choices": {
+          "A": "Depression",
+          "B": "Anxiety or panic disorder",
+          "C": "Bipolar disorder",
+          "D": "Psychotic disorders",
+          "E": "PTSD or other trauma-related disorders",
+          "F": "ADHD",
+          "G": "Autistic spectrum disorders",
+          "H": "Obsessive compulsive disorder",
+          "I": "Eating disorders",
+          "J": "Substance use or addiction disorders",
+          "K": "Personality disorders",
+          "L": "Other diagnosis",
+          "M": "There is no such diagnosis.",
+          "N": "I don't know",
+          "O": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Какие диагнозы или возможные диагнозы вам назвал специалист?",
+        "time": "В любой момент вашей жизни. Обращайтесь к мнению специалиста, а не занимайтесь самодиагностикой.",
+        "choices": {
+          "A": "Депрессия",
+          "B": "Тревожное или паническое расстройство",
+          "C": "Биполярное расстройство",
+          "D": "Психотические расстройства",
+          "E": "Посттравматическое стрессовое расстройство или другие расстройства, связанные с травмой",
+          "F": "СДВГ",
+          "G": "Расстройства аутистического спектра",
+          "H": "Обсессивно-компульсивное расстройство",
+          "I": "Расстройства пищевого поведения",
+          "J": "Расстройства, связанные с употреблением психоактивных веществ или зависимостью.",
+          "K": "Расстройства личности",
+          "L": "Другие диагнозы",
+          "M": "Такого диагноза не существует.",
+          "N": "Я не знаю",
+          "O": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed",
+          "choices.L": "sheet_unreviewed",
+          "choices.M": "sheet_unreviewed",
+          "choices.N": "sheet_unreviewed",
+          "choices.O": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed",
+          "choices.L": "sheet_unreviewed",
+          "choices.M": "sheet_unreviewed",
+          "choices.N": "sheet_unreviewed",
+          "choices.O": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 35,
+      "lv": {
+        "id": "M01_18",
+        "title": "Kāds ir šo diagnožu statuss?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Speciālista noteikta diagnoze",
+          "B": "Tikai aizdomas vai izmeklēšana",
+          "C": "Vēlāk pārskatīta vai atcelta diagnoze",
+          "D": "Dažādām diagnozēm atšķirīgs statuss; jāprecizē vizītē",
+          "E": "Neattiecas uz mani",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "What is the status of these diagnoses?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Diagnosis determined by a specialist",
+          "B": "Only suspicion or investigation",
+          "C": "Later revised or cancelled diagnosis",
+          "D": "Different diagnoses have different status; to be clarified at the visit",
+          "E": "Does not apply to me",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Каков статус этих диагнозов?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Диагноз установлен специалистом.",
+          "B": "Только подозрение или расследование",
+          "C": "Впоследствии диагноз был пересмотрен или отменен.",
+          "D": "Разные диагнозы имеют разный статус; это будет уточнено во время визита.",
+          "E": "Ко мне это не относится",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 36,
+      "lv": {
+        "id": "M01_19",
+        "title": "Kad pēdējo reizi speciālists noteica vai pārskatīja diagnozi?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Pēdējā mēneša laikā (ieskaitot)",
+          "B": "Pirms vairāk nekā 1 mēneša, bet ne vairāk kā 1 gada",
+          "C": "Pirms vairāk nekā 1 gada, bet ne vairāk kā 5 gadiem",
+          "D": "Pirms vairāk nekā 5 gadiem",
+          "E": "Neattiecas uz mani",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "When was the last time a specialist made or reviewed the diagnosis?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Within the last month (inclusive)",
+          "B": "More than 1 month but not more than 1 year ago",
+          "C": "More than 1 year ago, but no more than 5 years ago",
+          "D": "More than 5 years ago",
+          "E": "Does not apply to me",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда в последний раз специалист ставил или пересматривал диагноз?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "В течение последнего месяца (включительно)",
+          "B": "Более месяца, но не более года назад",
+          "C": "Более года назад, но не более 5 лет назад",
+          "D": "Более 5 лет назад",
+          "E": "Ко мне это не относится",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 37,
+      "lv": {
+        "id": "M01_20",
+        "title": "Kā sākās pašreizējā būtiskākā grūtība?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Pēkšņi, stundās vai dienās",
+          "B": "Pakāpeniski, nedēļās vai mēnešos",
+          "C": "Pastāv kopš bērnības",
+          "D": "Atgriezās pēc uzlabojuma",
+          "E": "Neattiecas uz mani",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How did the current major difficulty begin?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Suddenly, within hours or days",
+          "B": "Gradually, over weeks or months",
+          "C": "Has been around since childhood",
+          "D": "Returned after improvement",
+          "E": "Does not apply to me",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как возникли нынешние серьезные трудности?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Внезапно, в течение нескольких часов или дней",
+          "B": "Постепенно, в течение недель или месяцев.",
+          "C": "Существует с детства.",
+          "D": "Возвращено после улучшения",
+          "E": "Ко мне это не относится",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 38,
+      "lv": {
+        "id": "M01_21",
+        "title": "Kura grūtību grupa sākās pirmā?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašreizējā pasliktinājuma sākumā.",
+        "context": null,
+        "choices": {
+          "A": "Garastāvoklis",
+          "B": "Trauksme vai bailes",
+          "C": "Miegs vai nogurums",
+          "D": "Uzmanība vai atmiņa",
+          "E": "Sāpes vai fiziskā veselība",
+          "F": "Vielu lietošana",
+          "G": "Ar smagu notikumu saistītas grūtības",
+          "H": "Vairākas reizē",
+          "I": "Cita grūtība",
+          "J": "Neattiecas uz mani",
+          "K": "Nezinu",
+          "L": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "answered",
+          "J": "answered",
+          "K": "uncertain",
+          "L": "refused"
+        }
+      },
+      "en": {
+        "title": "Which difficulty group started first?",
+        "time": "At the beginning of the current deterioration.",
+        "choices": {
+          "A": "Mood",
+          "B": "Anxiety or fear",
+          "C": "Sleepiness or fatigue",
+          "D": "Attention or memory",
+          "E": "Pain or physical health",
+          "F": "Substance use",
+          "G": "Difficulties related to a severe event",
+          "H": "Several at once",
+          "I": "Another difficulty",
+          "J": "Does not apply to me",
+          "K": "I don't know",
+          "L": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Какая группа по уровню сложности начала первой?",
+        "time": "В начале нынешнего ухудшения ситуации.",
+        "choices": {
+          "A": "Настроение",
+          "B": "Тревога или страх",
+          "C": "Сонливость или усталость",
+          "D": "Внимание или память",
+          "E": "Боль или физическое здоровье",
+          "F": "Употребление психоактивных веществ",
+          "G": "Трудности, связанные с серьезным событием.",
+          "H": "Несколько сразу",
+          "I": "Ещё одна трудность",
+          "J": "Ко мне это не относится",
+          "K": "Я не знаю",
+          "L": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact",
+          "choices.E": "manual_draft",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed",
+          "choices.L": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact",
+          "choices.E": "manual_draft",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed",
+          "choices.L": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 39,
+      "lv": {
+        "id": "M01_22",
+        "title": "Kā pašreizējā pašsajūta atšķiras no jums ierastās?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Gandrīz neatšķiras",
+          "B": "Nedaudz pasliktinājusies",
+          "C": "Būtiski pasliktinājusies",
+          "D": "Uzlabojusies",
+          "E": "Mainīga",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How is your current state of well-being different from what you usually feel?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Almost no difference",
+          "B": "Slightly worse",
+          "C": "Significantly worsened",
+          "D": "Improved",
+          "E": "Variable",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Чем ваше нынешнее самочувствие отличается от того, что вы обычно чувствуете?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Практически никакой разницы",
+          "B": "Немного хуже",
+          "C": "Значительно ухудшилось",
+          "D": "Улучшено",
+          "E": "Переменная",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 40,
+      "lv": {
+        "id": "M01_23",
+        "title": "Kādu profesionālu palīdzību bez zālēm esat saņēmis/-usi?",
+        "profile": "CUSTOM-v11",
+        "multi": true,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Individuāla psihoterapija",
+          "B": "Grupu terapija",
+          "C": "Psihologa konsultācijas",
+          "D": "Pāru vai ģimenes terapija",
+          "E": "Rehabilitācija vai sociāls atbalsts",
+          "F": "Cits veids",
+          "G": "Nav saņemta",
+          "H": "Nezinu",
+          "I": "Nevēlos atbildēt"
+        },
+        "exclusive": "GHI",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "uncertain",
+          "I": "refused"
+        }
+      },
+      "en": {
+        "title": "What professional help have you received other than medication?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "Individual psychotherapy",
+          "B": "Group therapy",
+          "C": "Psychologist consultations",
+          "D": "Couples or family therapy",
+          "E": "Rehabilitation or social support",
+          "F": "Another way",
+          "G": "Not received",
+          "H": "I don't know",
+          "I": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Какую профессиональную помощь вы получили помимо медикаментозного лечения?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Индивидуальная психотерапия",
+          "B": "Групповая терапия",
+          "C": "Консультации психолога",
+          "D": "Семейная или супружеская терапия",
+          "E": "Реабилитация или социальная поддержка",
+          "F": "Другой способ",
+          "G": "Не получено",
+          "H": "Я не знаю",
+          "I": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 41,
+      "lv": {
+        "id": "M01_24",
+        "title": "Cik ilgi saņēmāt pēdējo šādu palīdzību? ",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pēdējais palīdzības kurss.",
+        "context": null,
+        "choices": {
+          "A": "Mazāk nekā mēnesi",
+          "B": "1–5 mēnešus",
+          "C": "6–11 mēnešus",
+          "D": "1–2 gadus",
+          "E": "Ilgāk nekā 2 gadus",
+          "F": "Neattiecas uz mani",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "For how long did you receive the most recent course of this help?",
+        "time": "The most recent course of help.",
+        "choices": {
+          "A": "Less than a month",
+          "B": "1–5 months",
+          "C": "6–11 months",
+          "D": "1–2 years",
+          "E": "More than 2 years",
+          "F": "Does not apply to me",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как долго вы получали эту помощь в последний раз?",
+        "time": "Последний курс оказания помощи.",
+        "choices": {
+          "A": "Менее месяца",
+          "B": "1–5 месяцев",
+          "C": "6–11 месяцев",
+          "D": "1–2 года",
+          "E": "Более 2 лет",
+          "F": "Ко мне это не относится",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "manual_draft",
+          "time": "manual_draft",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "manual_draft",
+          "time": "manual_draft",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 42,
+      "lv": {
+        "id": "M01_25",
+        "title": "Kāpēc pēdējais palīdzības kurss beidzās?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Kurss pabeigts pēc vienošanās",
+          "B": "Kļuva labāk",
+          "C": "Nebija pietiekama ieguvuma",
+          "D": "Kļuva sliktāk vai bija nepatīkama pieredze",
+          "E": "Izmaksu, laika vai pieejamības dēļ",
+          "F": "Palīdzība vēl turpinās",
+          "G": "Cits iemesls",
+          "H": "Neattiecas uz mani",
+          "I": "Nezinu",
+          "J": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 1,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "uncertain",
+          "J": "refused"
+        }
+      },
+      "en": {
+        "title": "Why did the last aid course end?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Course completed by agreement",
+          "B": "It got better.",
+          "C": "There was not enough benefit",
+          "D": "It got worse or was an unpleasant experience",
+          "E": "Due to cost, time or availability",
+          "F": "Help is still ongoing",
+          "G": "Other reason",
+          "H": "Does not apply to me",
+          "I": "I don't know",
+          "J": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Почему завершился последний курс оказания первой помощи?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Курс завершается по соглашению.",
+          "B": "Стало лучше.",
+          "C": "Преимущества были недостаточны.",
+          "D": "Ситуация ухудшилась или стала неприятным опытом.",
+          "E": "Из-за стоимости, времени или доступности",
+          "F": "Помощь по-прежнему оказывается.",
+          "G": "Другая причина",
+          "H": "Ко мне это не относится",
+          "I": "Я не знаю",
+          "J": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}
