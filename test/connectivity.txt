@@ -1,0 +1,3 @@
+GitHub connector permission smoke test v1.
+Temporary development branch file.
+No questionnaire data.
