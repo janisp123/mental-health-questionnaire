@@ -11,15 +11,16 @@ module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 bundle = module.build_bundle()
 assert bundle["schema"] == "offline-questionnaire-pilot-v1"
-assert [g["id"] for g in bundle["groups"]] == ["opening", "02"]
-assert [len(g["questions"]) for g in bundle["groups"]] == [20, 21]
-questions = [q for group in bundle["groups"] for q in group["questions"]]
-assert len({q["id"] for q in questions}) == len(questions) == 41
-assert sorted(q["order"] for q in questions[:20]) == list(range(20))
-assert sorted(q["order"] for q in questions[20:]) == list(range(43, 64))
-assert questions[0]["id"] == "M33_01"
-assert questions[5]["id"] == "M06_01"
-assert questions[-1]["id"] == "M02_21"
+groups = {g["id"]: g for g in bundle["groups"]}
+opening = groups["opening"]["questions"]
+mood = groups["02"]["questions"]
+questions = [q for group in groups.values() for q in group["questions"]]
+assert len({q["id"] for q in questions}) == len(questions)
+assert [q["order"] for q in opening] == list(range(20))
+assert [q["order"] for q in mood] == list(range(43, 64))
+assert opening[0]["id"] == "M33_01"
+assert opening[5]["id"] == "M06_01"
+assert mood[-1]["id"] == "M02_21"
 assert all(set(q["translations"]) == {"lv","en","ru"} for q in questions)
 for q in questions:
     codes=set(q["choiceCodes"])
@@ -38,8 +39,9 @@ assert "navigator.sendBeacon" not in html and "fetch(" not in html and "XMLHttpR
 blob=re.search(r'<script id="pilot-data" type="application/json">(.*?)</script>',html,re.S)
 assert blob, "Embedded data missing"
 stored=json.loads(blob.group(1))
-assert len(stored["groups"][0]["questions"])==20 and len(stored["groups"][1]["questions"])==21
+assert stored == bundle
 assert stored["release_status"]["en"] == "DRAFT_NOT_RELEASED"
 assert stored["release_status"]["ru"] == "DRAFT_NOT_RELEASED"
 print("PASS structural: 20 opening + 21 depression, 3 languages, no runtime network imports")
 print("NOT tested: clinical wording, user-interface behavior or real Android Chrome.")
+

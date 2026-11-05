@@ -41,6 +41,8 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Run real offline browser smoke journey
         run: python tests/pilot/test_browser.py
+      - name: Test module and translation independence offline
+        run: python tests/pilot/test_independence.py
       - name: Upload offline prototype (test artifact, NOT a release)
         if: success()
         uses: actions/upload-artifact@v4
@@ -48,3 +50,4 @@ jobs:
           name: PILOT_offline_LV_EN_RU_v0.1_NOT_RELEASED
           path: dist/PILOT_offline_LV_EN_RU_v0.1_NOT_RELEASED.html
           retention-days: 14
+

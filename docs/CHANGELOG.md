@@ -11,7 +11,7 @@
 **Current:** read repository operating rules, file index, manifest and changelog. Confirmed documentation is stale; implementation not yet audited.
 **Audit checkpoint:** Verified CI run 42057715895 passed on 231f537 (browser smoke + structure). Found fixed section counts and section-specific selector, reports and restore. LV v16 skip-section continues to the next eligible section. Pilot previously finished immediately.
 
-**Implementation checkpoint:** Registry drives selection, progress, report section lines, skip continuation and recovery. Module locale files own their titles. Existing structural checks and JS syntax pass locally. Next: exercise a third module and isolated English edit through Chromium.
+**Implementation checkpoint:** Registry drives selection, progress, report section lines, skip continuation and recovery. Module locale files own their titles. Existing structural checks and JS syntax pass locally. Verified registry implementation on develop at 9ddc7d87681e4313ca7a497e685e65ad2a179b78. Added a disposable third-module + locale-edit Chromium test with cumulative tenth-save check and cross-build restore. CI verification pending.
 
 ## 2026-11-05 · PROGRESS-UPDATES-RULE · TASK_DONE
 
