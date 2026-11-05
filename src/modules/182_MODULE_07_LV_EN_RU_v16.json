@@ -1,0 +1,1073 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 7,
+  "count": 13,
+  "entries": [
+    {
+      "order": 122,
+      "lv": {
+        "id": "M07_01",
+        "title": "Cik bieži ir grūti koncentrēties uz uzdevumu līdz tā pabeigšanai?",
+        "profile": "P27",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 7,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often do you find it difficult to stay focused on a task until it is finished?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вам трудно сохранять внимание на задании до его завершения?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 123,
+      "lv": {
+        "id": "M07_02",
+        "title": "Cik bieži pieļaujat kļūdas neuzmanības dēļ?",
+        "profile": "P27",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 7,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often do you make mistakes because of inattention?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вы допускаете ошибки по невнимательности?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 124,
+      "lv": {
+        "id": "M07_03",
+        "title": "Cik bieži atliekat darbus, kam vajadzīga ilgstoša piepūle?",
+        "profile": "P27",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 7,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often do you put off tasks that require sustained effort?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вы откладываете дела, требующие длительных усилий?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 125,
+      "lv": {
+        "id": "M07_04",
+        "title": "Cik bieži ir grūti plānot vairākus secīgus darbus?",
+        "profile": "P27",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 7,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often do you find it difficult to plan a sequence of several tasks?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вам трудно спланировать несколько последовательных дел?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 126,
+      "lv": {
+        "id": "M07_05",
+        "title": "Cik bieži aizmirstat norunas vai svarīgus ikdienas pienākumus?",
+        "profile": "P27",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 7,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often do you forget appointments or important daily responsibilities?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вы забываете о договорённостях или важных повседневных обязанностях?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 127,
+      "lv": {
+        "id": "M07_06",
+        "title": "Cik bieži pazaudējat nepieciešamus priekšmetus?",
+        "profile": "P27",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 7,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often do you lose things you need?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вы теряете необходимые вещи?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 128,
+      "lv": {
+        "id": "M07_07",
+        "title": "Cik bieži skaņas vai apkārtējie notikumi novērš jūsu uzmanību?",
+        "profile": "P27",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 7,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often are you distracted by sounds or things happening around you?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вас отвлекают звуки или происходящее вокруг?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 129,
+      "lv": {
+        "id": "M07_08",
+        "title": "Cik bieži ir grūti mierīgi nosēdēt, kad tas nepieciešams?",
+        "profile": "P27",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 7,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often do you find it difficult to sit still when you need to?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вам трудно спокойно сидеть, когда это необходимо?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 130,
+      "lv": {
+        "id": "M07_09",
+        "title": "Cik bieži pārtraucat citu cilvēku sarunu vai darbību?",
+        "profile": "P27",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 7,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often do you interrupt other people's conversations or activities?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вы прерываете разговоры или занятия других людей?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 131,
+      "lv": {
+        "id": "M07_10",
+        "title": "Cik bieži rīkojaties pirms pārdomājat sekas?",
+        "profile": "P27",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 7,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often do you act before thinking through the consequences?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вы действуете, не обдумав последствия?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 132,
+      "lv": {
+        "id": "M07_11",
+        "title": "Vai līdzīgas uzmanības, aktivitātes vai impulsu kontroles grūtības bija jau pirms 12 gadu vecuma?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pirms 12 gadu vecuma.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 7,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Were similar difficulties with attention, activity or impulse control already present before age 12?",
+        "time": "Before age 12.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Были ли похожие трудности с вниманием, активностью или контролем импульсов уже до 12 лет?",
+        "time": "До 12 лет.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю / Я не уверен",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 133,
+      "lv": {
+        "id": "M07_12",
+        "title": "Kur pēdējo 6 mēnešu laikā parādījās šīs grūtības? Var izvēlēties vairākas atbildes.",
+        "profile": "P28",
+        "multi": true,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Mājās",
+          "B": "Darbā vai mācībās",
+          "C": "Sociālās attiecībās vai brīvajā laikā",
+          "D": "Citā vidē",
+          "E": "Nevienā vidē",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "EFG",
+        "incompatible": [],
+        "section": 7,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "In which settings have these difficulties occurred over the past 6 months? Select all that apply.",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "At home",
+          "B": "At work or in education",
+          "C": "In social relationships or leisure activities",
+          "D": "In another setting",
+          "E": "In none of these settings",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Где проявлялись эти трудности за последние 6 месяцев? Можно выбрать несколько ответов.",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Дома",
+          "B": "На работе или учёбе",
+          "C": "В общении или в свободное время",
+          "D": "В другой обстановке",
+          "E": "Ни в какой обстановке",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 134,
+      "lv": {
+        "id": "M07_13",
+        "title": "Cik lielā mērā šīs grūtības traucē jūsu ikdienas pienākumiem?",
+        "profile": "P07",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 7,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "To what extent do these difficulties interfere with your daily responsibilities?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько эти трудности мешают выполнению повседневных обязанностей?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    }
+  ]
+}
