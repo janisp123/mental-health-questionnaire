@@ -24,6 +24,13 @@ Goal: verify GitHub writes and create public, development-only project structure
 ### Safe continuation
 Read this status and `docs/MIGRATION_PLAN.md`, then inspect the Git branch SHA and Drive changelog. Do not assume that the latest GitHub status is the current Drive task status, that any English/Russian translation is approved, or that a working user questionnaire exists in GitHub.
 
-## 2026-11-05 — GITHUB-SOURCE-MIGRATION — IN_PROGRESS
+## 2026-11-05 — GITHUB-SOURCE-MIGRATION — BLOCKED
 
-Drive inventory verified. Public source migration attempted on develop; initial batch was blocked by connector safety checks before a branch commit. Previous Git branch head is unchanged. No questionnaire module is committed yet. Drive originals remain authoritative. Continue with source-only validation and record actual committed files before closing.
+- Drive source inventory verified: 48 separate LV/EN/RU module files, current 3 original HTML files, source tooling, translation catalogs and documentation.
+- GitHub connector rejected direct migration operations to this PUBLIC repo with a generic safety-check block. It also rejected copying a small development document. **Zero of 48 questionnaire modules are committed to GitHub.** Do not mistake an uncommitted Git blob for an imported file.
+- Google Drive source is unchanged and remains authoritative. The Drive changelog is authoritative until an explicit verified handoff.
+- Recovery: complete local ZIP prepared named `190_GITHUB_MIGRATION_READY_MANUAL_UPLOAD.zip`, with **79 original source/reference files**, import instructions, per-file Drive ID and SHA256 manifest, and `tools/verify_drive_bundle.py`.
+- Validation: all 48 source module SHA256 values match the Drive module index; all 712 questions are structurally complete; reconstructed LV/EN/RU question BANKs exactly equal their original HTML; ZIP integrity and local import validator passed. This does not establish translation accuracy, clinical validation or browser functionality.
+- ZIP SHA256: `e7c77000356bcbcbcda9008150562decf3924a10321c5e28fab2d2e7eaf1dd8e`.
+- Privacy check: only known deliberately published creator contact email was found in included text; manually review before publishing because this is a PUBLIC repository and scans are not guarantees.
+- **Next action:** repository owner imports the unzipped bundle into a local checkout on **develop** (e.g. via GitHub Desktop); push; then run `python tools/verify_drive_bundle.py`. After 48/48 module readback and validation, record source-of-truth handoff. Keep `main` and current Drive files untouched. No license/clinical approval inferred.
