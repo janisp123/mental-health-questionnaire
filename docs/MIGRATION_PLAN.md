@@ -1,11 +1,11 @@
 # Controlled migration from Google Drive to GitHub
 
-**2026-11-05 status:** scaffold completed; full source import BLOCKED (0/48 GitHub modules). **Active changelog: [`docs/CHANGELOG.md`](CHANGELOG.md).** Repository visibility is **PUBLIC** by owner's choice. Do not commit personal information or real completed tests.
+**2026-11-05 status:** source import **VERIFIED COMPLETE**: 79 original Drive source/reference files, all 48 modules. Next phases (shared engine, localization, QA) remain pending. **Active changelog: [`docs/CHANGELOG.md`](CHANGELOG.md).** Repository visibility is **PUBLIC** by owner's choice. Do not commit personal information or real completed tests.
 
 ## Verified reference locations (read-only during migration)
 - [Public Drive main folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb): only the Latvian v16 HTML and Latvian README; EN/RU drafts moved into Drive development archive.
 - [Drive development archive](https://drive.google.com/drive/folders/1GxGJBMYRMz0WbjBlYx_XVtXmlSdFvGQy): project working files.
-- [48 multilingual modules](https://drive.google.com/drive/folders/14r888FSYwahZEulnjeA__kSgkdd2qTvj): original 712 LV question entries plus EN/RU draft strings.
+- Imported source modules live in [GitHub `src/modules/`](../src/modules/); the Drive folder of 48 modules is now historical backup only.
 - `181_MODULE_INDEX_v16.json`: reference module hashes; `183_MODULE_TOOLS_v16.py`: current baseline rebuild helper; `184_MODULE_WORKFLOW_v16.md`: working procedure.
 - `166_CHANGELOG_LV.md` in the Drive archive is read-only past history; all new tasks are recorded in GitHub `docs/CHANGELOG.md`. The questionnaire source files remain read-only Drive references pending a verified Git import.
 
@@ -29,11 +29,11 @@
 - No secrets, API tokens, email archives or private collaborator messages.
 - Main branch is not an editable workbench. Protect it with required status checks and approvals when GitHub settings permit.
 - Actual GitHub Actions workflows and branch protections are NOT yet installed; written policies alone do not technically enforce the gate.
-- The existing Drive source stays intact until migration success is verified.
+- The original Drive archive is retained as immutable backup; ongoing edits belong exclusively to GitHub develop and new approved releases are mirrored to the LV distribution folder.
 - No license chosen yet. Contributions and permissions need a separate deliberate policy.
 
 ## Efficient work across interrupted sessions
-- Read `docs/MIGRATION_STATUS.md` first; once migrated, the single authoritative changelog.
+- Read `docs/FILE_INDEX.md` and `project-manifest.json` for current paths, then `docs/CHANGELOG.md` for the next task; this migration plan is historical.
 - Work on the relevant one of 48 modules, not the whole file corpus, for a narrow change.
 - Keep stable IDs, branching semantics and answer statuses unless a formal migration is tested.
 - Save a verified commit and checkpoint after each batch.
