@@ -5,7 +5,7 @@ const embedded=document.getElementById("pilot-data");
 const data=JSON.parse(embedded.textContent);
 const groups=new Map(data.groups.map(g=>[g.id,g]));
 const optionalIds=data.groups.filter(g=>!g.required).map(g=>g.id);
-const byId={};
+const byId=Object.create(null);
 const all=[];
 for(const group of data.groups){
  for(const q of group.questions){if(byId[q.id])throw Error("Duplicate question: "+q.id);byId[q.id]=q;all.push(q);}
@@ -253,6 +253,8 @@ function restore(file){
     }else if(rec.kind==="skip"&&!isSafety(q))a[id]={kind:"skip",status:"skipped",savedAt:rec.savedAt||""};
     else throw Error("Unknown record");
    }
+   if(x.selected!=null&&(!Array.isArray(x.selected)||x.selected.some(id=>!optionalIds.includes(id))))
+     throw Error("Recovery file requires an unavailable section");
    const queue=x.reviewQueue;
    if(queue!=null&&(!Array.isArray(queue)||new Set(queue).size!==queue.length||
      queue.some(id=>!byId[id]||!isSafety(byId[id]))))throw Error("Invalid review sequence");
@@ -265,6 +267,9 @@ function restore(file){
    if(["lv","en","ru"].includes(x.lang))state.lang=x.lang;
    state.currentId=typeof x.currentId==="string"&&byId[x.currentId]?x.currentId:null;
    if(state.reviewQueue)state.currentId=state.reviewQueue[0];
+   const pending=active().find(q=>groups.get(q.module).required&&!state.answers[q.id]);
+   if(pending&&state.currentId&&!groups.get(byId[state.currentId].module).required)
+     state.currentId=pending.id;
    if(!active().some(q=>q.id===state.currentId))state.currentId=active().find(q=>!state.answers[q.id])?.id||null;
    state.screen=state.currentId?"question":"start";state.draft=null;state.notice=ui().restoreOK;render();
   }catch(err){state.notice=ui().restoreError;render();}

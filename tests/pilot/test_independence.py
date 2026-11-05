@@ -118,6 +118,12 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     page.locator('nav [data-act="sections"]').click()
     page.locator('[data-jump="21"]').click()
     assert page.locator(".question h2").inner_text() == "Edited English question"
+    # A backup needing an unregistered section must never replace a valid session.
+    invalid=temp/"unavailable.json"
+    write(invalid,{**previous,"selected":["99"]})
+    page.locator("#restore").set_input_files(invalid)
+    page.get_by_text("Cannot load this file. Check its format and version.").wait_for()
+    assert page.locator('input[value="B"]').is_checked()
     click("results")
     click("doctor")
     assert "Test 21 en: 1/1" in page.locator("#reportText").input_value()

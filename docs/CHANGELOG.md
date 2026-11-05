@@ -8,7 +8,7 @@
 
 **Goal:** audit the existing pilot against LV v16; remove module-specific engine/build assumptions; verify translation independence and additional-module registration; document remaining parity gaps and active source pointers.
 **Plan:** inspect sources and successful CI evidence; checkpoint findings; make targeted generic changes; run structural and browser regressions; update architecture/index/manifest and verified status. Preserve original IDs, codes, conditions and recovery semantics. No release, Drive edits or main changes.
-**Current:** read repository operating rules, file index, manifest and changelog. Confirmed documentation is stale; implementation not yet audited.
+**At registration:** the implementation had not yet been audited. See verified checkpoints below.
 **Audit checkpoint:** Verified CI run 42057715895 passed on 231f537 (browser smoke + structure). Found fixed section counts and section-specific selector, reports and restore. LV v16 skip-section continues to the next eligible section. Pilot previously finished immediately.
 
 **Implementation checkpoint:** Registry drives selection, progress, report section lines, skip continuation and recovery. Module locale files own their titles. Existing structural checks and JS syntax pass locally. Verified registry implementation on develop at 9ddc7d87681e4313ca7a497e685e65ad2a179b78. Added a disposable third-module + locale-edit Chromium test with cumulative tenth-save check and cross-build restore. CI run 42062287500 passed at f996d9ce739125d81bdf297f0311144ccdbb8c59, including the new browser regression.
@@ -22,6 +22,8 @@
 **Source comparison:** verified all 41 IDs and original order, LV/EN/RU prompt/choice/time/help text, multiple-choice/exclusive/incompatible settings, conditions, type, maximum choices and answer statuses against the frozen source modules. Zero differences in those fields.
 
 **Final browser batch:** exercise real section 02 multiple-choice combinations, exclusive options, save/back/edit, and doctor-copy payload at phone width and offline. Native Android and legacy v16 migration remain separate acceptance items.
+
+**Recovery guard:** reject backups referencing unavailable selected sections before replacing the current answers. If a backup points beyond an incomplete required opening, resume the opening first. A Chromium regression checks that a rejected backup preserves the current session.
 
 ## 2026-11-05 · PROGRESS-UPDATES-RULE · TASK_DONE
 
