@@ -30,9 +30,13 @@ def build_bundle():
         assert catalog["lang"] == lang
         ui[lang] = catalog["strings"]
     groups = []
+    group_ids = set()
     ids, orders = set(), set()
     for group in registry["groups"]:
         key = group["id"]
+        if not isinstance(key, str) or not key.isalnum() or key in group_ids:
+            raise ValueError(f"Invalid or duplicate module ID: {key}")
+        group_ids.add(key)
         folder = SOURCE / "modules" / key
         logic = read_json(folder / "logic.json")
         if logic["group"] != key:
@@ -62,16 +66,17 @@ def build_bundle():
         for lang in LANGS:
             if set(local[lang]["questions"]) != {q["id"] for q in questions}:
                 raise ValueError("Missing/extra translation IDs: " + key + "/" + lang)
+        titles = {lang: local[lang]["title"] for lang in LANGS}
+        if not all(isinstance(t, str) and t.strip() for t in titles.values()):
+            raise ValueError("Missing section title: " + key)
         if len(questions) != group["question_count"]:
             raise ValueError("Question count mismatch: " + key)
-        groups.append({"id": key, "required": bool(group["required"]), "questions": questions})
+        groups.append({"id": key, "titles": titles, "required": bool(group["required"]), "questions": questions})
     for group in groups:
         for q in group["questions"]:
             context = q.get("context")
             if context and context.get("id") not in ids:
                 raise ValueError("Unresolved condition " + q["id"])
-    if len(groups) != 2 or len(ids) != 41:
-        raise ValueError("Pilot must contain exactly 20 opening and 21 optional questions")
     return {"schema": "offline-questionnaire-pilot-v1", "version": registry["app_version"],
             "baseline": registry["baseline"], "ui": ui, "groups": groups,
             "release_status": {"lv": "PROTOTYPE", "en": "DRAFT_NOT_RELEASED", "ru": "DRAFT_NOT_RELEASED"}}
@@ -108,9 +113,10 @@ def main():
     args.output.write_bytes(output)
     print("PILOT BUILT:", args.output)
     print("SHA256:", hashlib.sha256(output).hexdigest())
-    print("Questions: 41; groups: opening 20, section 02 21; languages: lv en ru")
+    print("Languages:", ", ".join(LANGS))
     print("PROTOTYPE ONLY: browser, translation, and clinical approval NOT implied.")
 
 
 if __name__ == "__main__":
     main()
+

@@ -3,7 +3,7 @@
   "lang": "lv",
   "strings": {
     "project": "Sagatavošanās vizītei pie psihiskās veselības speciālista",
-    "pilot": "Divu sadaļu izmēģinājuma versija · LV v16 jautājumi · nav klīniski validēta",
+    "pilot": "Prototips · pamats: latviešu v16 versija · klīniskā validitāte nav apstiprināta",
     "intro": "Šī bezmaksas anketa palīdz apkopot informāciju pirms vizītes. Tā nenosaka diagnozi un neaizstāj speciālista izvērtējumu. Atbildes netiek nosūtītas nevienam un paliek šajā pārlūkā līdz lejupielādējat vai kopīgojat rezultātus. Saglabājiet turpināšanas failu.",
     "reviewNote": "Angļu un krievu teksti šajā izmēģinājuma versijā ir nepārbaudīti melnraksti.",
     "privacy": "Privātums: šis fails darbojas bez interneta, bez analītikas vai datu pārsūtīšanas. Dati ir tikai atvērtajā sesijā un jūsu lejupielādētajos failos.",
@@ -12,8 +12,6 @@
     "chooseOwn": "Izvēlēties pašam / ārsta norādes",
     "chooseGuide": "Palīdzēt izvēlēties",
     "selectIntro": "Izvēlieties papildu sadaļas. Sākuma jautājumi ir obligātajā plūsmā neatkarīgi no izvēles.",
-    "section02": "02 · Nomāktība un garastāvoklis",
-    "opening": "Sākuma jautājumi un drošība",
     "selector": "Sadaļu izvēle un progress",
     "confirmSections": "Saglabāt sadaļu izvēli un turpināt",
     "clearSections": "Noņemt visas atzīmes",

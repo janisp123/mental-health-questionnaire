@@ -9,7 +9,9 @@
 **Goal:** audit the existing pilot against LV v16; remove module-specific engine/build assumptions; verify translation independence and additional-module registration; document remaining parity gaps and active source pointers.
 **Plan:** inspect sources and successful CI evidence; checkpoint findings; make targeted generic changes; run structural and browser regressions; update architecture/index/manifest and verified status. Preserve original IDs, codes, conditions and recovery semantics. No release, Drive edits or main changes.
 **Current:** read repository operating rules, file index, manifest and changelog. Confirmed documentation is stale; implementation not yet audited.
-**Next:** inspect pilot core, reports, registry, builder, tests and workflow run 42057715895.
+**Audit checkpoint:** Verified CI run 42057715895 passed on 231f537 (browser smoke + structure). Found fixed section counts and section-specific selector, reports and restore. LV v16 skip-section continues to the next eligible section. Pilot previously finished immediately.
+
+**Implementation checkpoint:** Registry drives selection, progress, report section lines, skip continuation and recovery. Module locale files own their titles. Existing structural checks and JS syntax pass locally. Next: exercise a third module and isolated English edit through Chromium.
 
 ## 2026-11-05 · PROGRESS-UPDATES-RULE · TASK_DONE
 

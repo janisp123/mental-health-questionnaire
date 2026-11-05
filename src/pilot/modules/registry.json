@@ -2,32 +2,16 @@
   "schema": "pilot-active-registry-v1",
   "app_version": "0.1.0-prototype",
   "baseline": "LV-v16",
-  "module_ids": [
-    "opening",
-    "02"
-  ],
   "groups": [
     {
       "id": "opening",
       "required": true,
-      "question_count": 20,
-      "logic": "modules/opening/logic.json",
-      "languages": {
-        "lv": "modules/opening/lv.json",
-        "en": "modules/opening/en.json",
-        "ru": "modules/opening/ru.json"
-      }
+      "question_count": 20
     },
     {
       "id": "02",
       "required": false,
-      "question_count": 21,
-      "logic": "modules/02/logic.json",
-      "languages": {
-        "lv": "modules/02/lv.json",
-        "en": "modules/02/en.json",
-        "ru": "modules/02/ru.json"
-      }
+      "question_count": 21
     }
   ],
   "future_module_rule": "To add a module, create logic.json + lv.json/en.json/ru.json under its own folder and add one registry entry. Never edit core engine or other module translations."

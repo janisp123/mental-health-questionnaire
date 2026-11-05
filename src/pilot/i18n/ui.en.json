@@ -3,7 +3,7 @@
   "lang": "en",
   "strings": {
     "project": "Preparing for a mental health professional appointment",
-    "pilot": "Two-section prototype · LV v16 reference · not clinically validated",
+    "pilot": "Prototype · LV v16 reference · not clinically validated",
     "intro": "This free questionnaire helps organize information before an appointment. It does not diagnose anything or replace a clinician's assessment. Responses are not automatically sent anywhere. They remain in this browser session unless you download or share them. Save a recovery file.",
     "reviewNote": "English and Russian text in this prototype remains unreviewed draft translation.",
     "privacy": "Privacy: this file works entirely offline, with no analytics or automatic transmission. Responses exist only in this session and files you choose to download.",
@@ -12,8 +12,6 @@
     "chooseOwn": "Choose myself / clinician instructions",
     "chooseGuide": "Help me choose",
     "selectIntro": "Select optional sections. The opening and safety questions are always included.",
-    "section02": "02 · Depression and mood",
-    "opening": "Opening questions and safety",
     "selector": "Sections and progress",
     "confirmSections": "Save section selection and continue",
     "clearSections": "Clear all selections",

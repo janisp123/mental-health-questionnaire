@@ -34,23 +34,27 @@ function flags(questions,answers) {
     return false;
   });
 }
-function doctorText(questions,answers,selected,locale,ui) {
+function doctorText(questions,answers,selected,locale,ui,groups) {
   const v=counters(questions,answers);
   const name=["M33_01","M33_02"].map(id=>answers[id]?.kind==="text"?answers[id].value:"").filter(Boolean).join(" ");
   const marked=flags(questions,answers);
   const lines=[ui.doctorHeading,"",ui.doctorDisclaimer,
     name ? name : "",
     ui.countDone+": "+v.answered+" · "+ui.countSkip+": "+v.skipped+" · "+ui.countOpen+": "+v.unanswered,
-    ui.opening+": "+questions.filter(q=>q.module==="opening"&&answers[q.id]).length+"/20",
-    ui.section02+": "+questions.filter(q=>q.module==="02"&&answers[q.id]).length+"/"+questions.filter(q=>q.module==="02").length,
+    ...groups.map(g=>{
+      const section=questions.filter(q=>q.module===g.id);
+      const progress=g.required||selected.includes(g.id)
+        ? section.filter(q=>answers[q.id]).length+"/"+section.length : ui.notSelected;
+      return g.titles[locale]+": "+progress;
+    }),
     "",""+ui.attention+":"];
   if(!marked.length)lines.push(ui.noneFlagged);
   for(const q of marked)lines.push("• "+q.id+" — "+q.translations[locale].title+": "+readable(q,answers[q.id],locale,ui));
   lines.push("",""+ui.warningSensitive,"",ui.help);
   return lines.filter(x=>x!==undefined).join("\n");
 }
-function doctorHtml(questions,answers,selected,locale,ui) {
- const text=doctorText(questions,answers,selected,locale,ui);
+function doctorHtml(questions,answers,selected,locale,ui,groups) {
+ const text=doctorText(questions,answers,selected,locale,ui,groups);
  return '<!doctype html><html lang="'+esc(locale)+'"><head><meta charset="utf-8"><title>'+esc(ui.doctorHeading)+'</title><style>@page{size:A4;margin:13mm}body{font:12pt/1.4 Arial,sans-serif;white-space:pre-wrap;color:#17202a;margin:0 auto;max-width:180mm}h1{font-size:18pt}pre{white-space:pre-wrap;font:inherit}small{font-size:9pt}</style></head><body><h1>'+esc(ui.doctorHeading)+'</h1><pre>'+esc(text)+'</pre></body></html>';
 }
 function codedText(questions,answers,selected,locale,ui) {
