@@ -1,0 +1,50 @@
+name: Offline Pilot Checks
+
+on:
+  push:
+    branches: [develop]
+    paths:
+      - 'src/pilot/**'
+      - 'tools/build_pilot.py'
+      - 'tools/verify_project_index.py'
+      - 'tests/pilot/**'
+      - 'project-manifest.json'
+      - 'dist/PILOT_offline_LV_EN_RU_v0.1_NOT_RELEASED.html'
+      - '.github/workflows/pilot-checks.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  structural-and-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify imported original files and modules
+        run: python tools/verify_project_index.py
+      - name: Verify modular pilot data and offline packaging
+        run: python tests/pilot/test_build.py
+      - name: Check shared JavaScript syntax
+        run: |
+          node --check src/pilot/core/app.js
+          node --check src/pilot/reports/reports.js
+      - name: Build prototype single HTML
+        run: python tools/build_pilot.py
+      - name: Install headless Chromium for actual controls
+        run: |
+          python -m pip install --upgrade pip playwright
+          python -m playwright install --with-deps chromium
+      - name: Run real offline browser smoke journey
+        run: python tests/pilot/test_browser.py
+      - name: Upload offline prototype (test artifact, NOT a release)
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: PILOT_offline_LV_EN_RU_v0.1_NOT_RELEASED
+          path: dist/PILOT_offline_LV_EN_RU_v0.1_NOT_RELEASED.html
+          retention-days: 14
