@@ -1,0 +1,30 @@
+[
+  {
+    "language": "EN",
+    "file": "172_Questionnaire_EN_v16_DRAFT_NOT_RELEASED.html",
+    "bytes": 919159,
+    "sha256": "17f48788643c906ea32825eec5b87653c31f1500db4967ee97fa595397500482",
+    "bank_questions": 712,
+    "dom_missing": [
+      "DRAFT / NOT RELEASED. Translation has not undergone independent clinical or language review."
+    ],
+    "untranslated_med_or_constant": [],
+    "other_js_literal_hits": 123,
+    "source_js_length": 866559,
+    "draft_js_length": 894508
+  },
+  {
+    "language": "RU",
+    "file": "172_Questionnaire_RU_v16_DRAFT_NOT_RELEASED.html",
+    "bytes": 1219524,
+    "sha256": "579c9516a36823897d436e8896ee41e6569b5a908e74628e2fc72aff60c2f550",
+    "bank_questions": 712,
+    "dom_missing": [
+      "ЧЕРНОВИК / НЕ ОПУБЛИКОВАН. Перевод не прошёл независимую клиническую и языковую проверку."
+    ],
+    "untranslated_med_or_constant": [],
+    "other_js_literal_hits": 123,
+    "source_js_length": 866559,
+    "draft_js_length": 898288
+  }
+]
