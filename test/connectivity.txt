@@ -1,3 +1,3 @@
-GitHub connector permission smoke test v1.
-Temporary development branch file.
+GitHub connector permission smoke test v2.
+Create, read, and edit verified.
 No questionnaire data.
