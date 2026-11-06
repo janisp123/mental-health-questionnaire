@@ -75,6 +75,46 @@ def adapt_source_entry(entry):
     return q
 
 
+def build_source_groups():
+    """Build optional engine groups directly from the immutable 48-module bank."""
+    titles = load_module_titles()
+    files = sorted((ROOT / "src" / "modules").glob("182_MODULE_*_LV_EN_RU_v16.json"))
+    if len(files) != 48:
+        raise ValueError(f"Expected 48 original module files; found {len(files)}")
+    groups = {}
+    ids, orders = set(), set()
+    for expected_section, path in enumerate(files, 1):
+        module = read_json(path)
+        section = module.get("section")
+        if (module.get("schema") != "question-module-bundle-v1" or section != expected_section
+                or module.get("count") != len(module.get("entries", []))):
+            raise ValueError("Invalid source module: " + path.name)
+        for lang in LANGS:
+            if module["published_status"].get(lang) not in ("v16", "draft-not-reviewed"):
+                raise ValueError("Unknown source language status: " + lang)
+        for entry in module["entries"]:
+            q = adapt_source_entry(entry)
+            if q["id"] in ids or q["order"] in orders:
+                raise ValueError("Duplicate full-bank ID/order: " + q["id"])
+            ids.add(q["id"]);orders.add(q["order"])
+            key = q["module"]
+            if key not in groups:
+                group_titles = {lang: titles[lang][key] for lang in LANGS}
+                groups[key] = {"id": key, "titles": group_titles, "concerns": group_titles,
+                               "required": False, "questions": []}
+            groups[key]["questions"].append(q)
+    by_id = {q["id"]: q for group in groups.values() for q in group["questions"]}
+    for group in groups.values():
+        for q in group["questions"]:
+            context = q.get("context")
+            if context and (context["id"] not in by_id or by_id[context["id"]]["order"] >= q["order"]):
+                raise ValueError("Invalid source condition: " + q["id"])
+    expected_groups = {f"{number:02d}" for number in range(1, 49)}
+    if set(groups) != expected_groups or len(ids) != 712:
+        raise ValueError(f"Full-bank count/group mismatch: {len(groups)} groups, {len(ids)} questions")
+    return [groups[key] for key in sorted(groups)]
+
+
 def contains_weight_key(value):
     if isinstance(value, dict):
         return any("weight" in key.lower() or contains_weight_key(item)
