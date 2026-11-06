@@ -23,6 +23,43 @@ def read_json(path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def adapt_source_entry(entry):
+    """Map one frozen LV/EN/RU module entry to the pilot engine's question shape."""
+    lv = entry["lv"]
+    section = lv["section"]
+    q = {
+        "id": lv["id"],
+        "order": entry["order"],
+        "module": str(section).zfill(2),
+        "originModule": section,
+        "section": section,
+        "profile": lv["profile"],
+        "multi": lv["multi"],
+        "context": lv["context"],
+        "choiceCodes": list(lv["choices"]),
+        "exclusive": lv["exclusive"],
+        "incompatible": lv["incompatible"],
+        "answerStatus": lv["answerStatus"],
+        "type": lv.get("type", "choice"),
+        "translations": {},
+    }
+    if "maxChoices" in lv:
+        q["maxChoices"] = lv["maxChoices"]
+    if "help" in lv:
+        q["help"] = lv["help"]
+    for lang in LANGS:
+        source = lv if lang == "lv" else entry[lang]
+        translation = {
+            "title": source["title"],
+            "time": source["time"],
+            "choices": source["choices"],
+        }
+        if "help" in source:
+            translation["help"] = source["help"]
+        q["translations"][lang] = translation
+    return q
+
+
 def contains_weight_key(value):
     if isinstance(value, dict):
         return any("weight" in key.lower() or contains_weight_key(item)
