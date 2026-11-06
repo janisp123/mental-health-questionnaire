@@ -16,9 +16,17 @@ These rules apply to future development work in this repository, particularly lo
 ## Development safety and source of truth
 
 - Work on `develop`, not `main`, unless an approved release is being published.
-- Read `docs/FILE_INDEX.md`, `project-manifest.json`, and `docs/CHANGELOG.md` before significant edits.
+- Before significant edits, inspect the relevant parts of `docs/FILE_INDEX.md`, `project-manifest.json`, and the active entry at the end of `docs/CHANGELOG.md`. Do not load or print those whole files by default.
 - Work on one module and language at a time wherever possible. Preserve original IDs, answer codes, validation logic and backup compatibility.
 - Do not silently modify the public Google Drive Latvian release, the frozen v16 reference baselines, or the original Drive archive.
 - Never publish questionnaire responses or identifiable patient information to this public repository.
 - EN and RU translations remain drafts until human review and release-gate requirements are satisfied.
 - Do not claim an untested feature, translation or release passed verification.
+
+## Keep each work session focused
+
+- Read the active changelog checkpoint with `tail` or a narrow line range. Search older history with `rg` only when the current task depends on it. Preserve the existing task ID and exact next action in handoffs.
+- Query only the relevant `current_versions` fields from `project-manifest.json`; avoid printing the full imported-file hash inventory. Run `tools/verify_project_index.py` when source/index integrity is affected or specifically required.
+- Start with the focused test for the files being changed. Run the full local suite only when shared runtime behavior or source data requires it; use the GitHub workflow for the full cross-project regression pass.
+- For CI, inspect run status and failed step summaries first. Fetch logs for the failing step when available; fetch complete job logs only if the failure cannot be diagnosed from that step.
+- Avoid repeating successful checks after documentation-only edits. Record the exact commit, verification performed, any unverified areas, and one next action in the changelog.

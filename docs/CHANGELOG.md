@@ -352,3 +352,11 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **CI regression and fix:** run `42220255836` passed the new full-bank test and default browser smoke, then exposed an extensibility check: adding a pilot module and its report topic made the fixed 48-topic map reject the appended topic. Added a focused fixture to the full-bank test, and changed validation to require the exact 48 source modules once while allowing additional registered pilot topics. The focused full-bank/extension test, layout test, default bundle test and diff check PASS locally.
 - **Verified checkpoint:** Task 5m is DONE. Implementation commit `0b825f33a8e5c85397e0c40f5b69f73bf8e7c2b2`; compatibility fix `7284e4a9f7d2b716703f9619d298a9fdf20c1051`. Remote branch readback confirmed both. [CI run 42220636242](https://github.com/janisp123/mental-health-questionnaire/actions/runs/42220636242) passed all source, bundle, report, syntax and pilot browser checks, including the extensibility journey. The optional full-bank HTML embeds all 712 questions in 48 groups; the default pilot remains 60. No distribution artifact was changed. This verifies packaging and existing pilot behavior, not full-bank runtime behavior.
 - **Next action (overall goal still IN_PROGRESS):** Task 5n — run offline-browser behavior checks against the 712-question build, covering group selection, question types, conditional branches, recovery and clinician reports; fix any full-bank-only issues. Keep the default artifact unchanged until that runtime audit passes.
+
+### 2026-11-06 · WORKFLOW-CONTEXT-LOAD-REDUCTION · IN_PROGRESS
+
+**Goal:** reduce Work chat loading and tool-output overhead while keeping the project's resumable checkpoints and verification intact.
+- **Starting commit:** `cb2ede2ecb6faf5b2cab04f1e72c24e86501edc8` on `develop`.
+- **Scope:** revise `AGENTS.md` to require targeted changelog/manifest/index reads, focused tests before full checks, and CI step summaries before full logs. No questionnaire or CI behavior changes.
+- **Plan:** add concise context-use rules; verify the wording and diff; checkpoint to `develop`.
+- **Next action:** edit and read back `AGENTS.md`, then record the completed checkpoint.
