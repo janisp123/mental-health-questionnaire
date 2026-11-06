@@ -10,6 +10,7 @@
 **Goal:** make current project status unambiguous, separate runtime tests by behavior, and split shared runtime logic only along independently testable boundaries. Preserve the 48-module bank and single-file offline build.
 
 **Baseline:** `d250271a83dfcb17799fdbf66f26bf416488722a` on `develop`; it matches the GitHub branch. Checklist commit: `5ef185a`.
+**Latest verified implementation commit:** `873438f622b0a4a58731a8553756716f47359cfc`. GitHub `develop` is `42f658cae02ff3a94a2e1de21058ab49e5604b9e`; implementation trees match exactly.
 
 **Verified baseline:** component workflow 42247708071 and full offline Chromium workflow 42247707973 passed at code commit `4d6ff92002b1b3a686954eaf95743b0d61c5f398`. Source integrity confirmed 48 modules/712 IDs; no physical Android check was run.
 
@@ -18,10 +19,10 @@
 1. [DONE] Audit current source, test, and branch state.
 2. [DONE] Replace pilot-first status with this active handoff and archive the previous chronology.
 3. [DONE] Split runtime browser checks into focused synthetic-data cases; answer, feedback, and recovery browser cases passed CI.
-4. [IN_PROGRESS] Extract query/model, answer-flow, and recovery behavior into tested modules.
-5. [IN_PROGRESS] Add a focused browser layout check for CSS changes.
-6. [IN_PROGRESS] Update architecture, file index, manifest, and CI routing as needed.
-7. [TODO] Run the relevant GitHub checks and one full integration run after structural work.
+4. [DONE] Extract query/model, answer-flow, and recovery behavior into tested modules.
+5. [DONE] Add a focused browser layout check for CSS changes.
+6. [DONE] Update architecture, file index, manifest, and CI routing as needed.
+7. [DONE] Run focused checks and the full integration workflow after structural work.
 8. [BLOCKED] Physical Android testing and human language/clinical review require a device or reviewers.
 
 **Guardrails:** keep source questions, IDs, codes, conditions, and frozen references unchanged; preserve recovery compatibility; keep script and style order explicit in `src/app/build.json`; add no runtime dependencies. Work in small verified commits.
@@ -50,6 +51,13 @@
 **Checkpoint 4 — recovery, flow, and layout boundaries:** extracted recovery validation/normalization to `src/app/core/recovery.js` and queue/back/next transitions to `src/app/core/answer-flow.js`, each with direct Node tests. Added a small synthetic browser layout check for mobile/desktop overflow, fixed Skip placement, and the question-feedback flag's accessible label. Removed the accidental duplicate workflow and extended the repository's original app-component workflow instead.
 
 **Files:** src/app/core/recovery.js, src/app/core/answer-flow.js, src/app/core/app.js, src/app/build.json, tests/app/test_recovery.js, tests/app/test_answer_flow.js, tests/app/test_runtime_layout.py, .github/workflows/app-component-checks.yml, .github/workflows/questionnaire-checks.yml, docs/FILE_INDEX.md, docs/QUESTIONNAIRE_ARCHITECTURE.md, docs/CHANGELOG.md.
-**Checks:** model, recovery, and answer-flow pure tests plus app/component checks PASS. First full workflow run 42253582892 failed at an audit that assumed medication recovery code stayed in `app.js`; update that audit to follow the new module boundary and rerun full CI. Focused browser and layout tests also await the rerun.
-**Commit:** pending.
-**Next action:** check recovery/answer-flow browser integration in CI; extract event wiring only if it remains a clean, independently testable boundary; then verify the complete build and 48-module journey.
+**Checks:** model, recovery, and answer-flow pure tests plus app/component checks PASS. First full workflow run 42253582892 failed because the source audit expected medication recovery validation in `app.js`; the audit now checks `recovery.js`.
+**Commit:** b240504; source-audit correction: 873438f.
+**Next action:** rerun the complete source/build/report/offline Chromium workflow after the audit correction.
+
+**Checkpoint 5 — integration verified:** full workflow 42253832767 passed on GitHub, including source integrity, all 48 modules/712 IDs, report/build checks, and the offline Chromium journey. Focused workflow 42253582837 passed on the same code tree, including pure model/flow/recovery tests and synthetic answer, feedback, recovery, and layout browser checks. The local tree matches GitHub `develop`.
+
+**Files:** docs/CHANGELOG.md.
+**Checks:** full workflow 42253832767 PASS; focused workflow 42253582837 PASS; local/remote Git tree match PASS; working tree clean at checkpoint.
+**Commit:** 873438f locally; GitHub `develop` 42f658c.
+**Next action:** hands-on Android Chrome check and human review of LV interface wording, EN/RU drafts, and clinical content; those need a device and human reviewers.
