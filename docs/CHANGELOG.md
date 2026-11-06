@@ -234,12 +234,22 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Unverified/pending:** GitHub Actions for this commit, native Android Chrome, EN/RU human-language review, professional review, and full 712-question browser behavior.
 - **Next action:** Task 5c — design a read-only adapter that maps the immutable source-bank question schema into the existing engine bundle and prove exact ID/code/text/condition fidelity on the first small module batch without changing the active 60-question pilot.
 
-### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 8 (IN_PROGRESS)
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 8
 
 **Task 5c — direct source-bank adapter, first batch.**
 - **Starting commit:** `a1bce9901ff42ec684dd3d4c1a1cef3ca6a3fc73` on `develop`.
 - **Technical choice:** adapt the immutable `src/modules/182_MODULE_XX_LV_EN_RU_v16.json` data at build time. Do not copy the 712 question records into a second active source tree. Preserve the existing pilot builder/mode for current regression coverage while testing the adapter separately.
-- **Scope:** convert one small batch (modules 01–04) into the engine's question/group shape; retain source IDs, order, codes, wording, statuses, type, conditions and localized choices. No registry activation, app UI change, or frozen-source edit in this step.
-- **Tests planned:** exact round-trip field comparisons for those modules, unique IDs/orders, and condition-parent references; existing pilot remains at 60 questions.
-- **Files planned:** build-time adapter, focused source-adapter test, changelog.
-- **Next action:** inspect the four source module structures and implement a read-only conversion with assertions against the originals; then run unit/source-integrity checks and checkpoint before expanding the batch.
+- **Implementation commit:** `e87760abe9971c916678d34b0eeb37fafc727d1c` on `develop` (remote branch readback confirmed).
+- **Files:** `tools/build_pilot.py`, `tests/pilot/test_source_adapter.py`, `.github/workflows/pilot-checks.yml`, this changelog.
+- **Completed:** added a small pure adapter for one source entry. It maps the original ID/order/section/profile/type, conditions, choices/codes, statuses, limits and all three localized titles/time periods/choices/help into the existing engine shape. It does not duplicate or modify the source bank, activate modules or alter the current pilot.
+- **Checks:** test-first adapter test failed before the converter existed, then passed for all 68 questions in modules 01–04. Exact source comparisons, unique IDs/orders, translated text, earlier condition parents, current 60-question pilot builder, full-bank audit, 79-file source hash verifier, source fidelity/layout/report tests and JavaScript syntax all passed. GitHub Actions has not yet been observed for this commit.
+- **Remaining:** this is a build adapter only; no additional source questions are active. Full group titles and report ordering for all 48 modules still need a source-grounded solution before full activation.
+- **Next action:** Task 5d — extend the adapter fidelity batch to modules 05–08, recording any source variations without changing the active pilot.
+
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 9 (IN_PROGRESS)
+
+**Task 5d — source-adapter batch 2.**
+- **Starting commit:** `e87760abe9971c916678d34b0eeb37fafc727d1c` on `develop`.
+- **Scope:** extend the source adapter fidelity check from modules 01–04 to 01–08 (modules 05–08 are the new batch), covering any multi-choice, text-entry, or condition variations present there. Keep the active 60-question pilot and frozen files unchanged.
+- **Files expected:** `tests/pilot/test_source_adapter.py`, this changelog.
+- **Next action:** inspect the new module types and condition shapes, update the batch assertion, run source-adapter and integrity tests, then checkpoint before adding the following batch.
