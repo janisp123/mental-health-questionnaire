@@ -18,4 +18,4 @@ Desktop Chromium checks pass in GitHub Actions. Native Android testing, human re
 
 Professionals can help by reviewing question wording, navigation, report usefulness, and privacy behavior. Do not submit real patient information. Contact: janis.paegle.email@gmail.com.
 
-The project is non-commercial. No general license has been selected; obtain permission before including externally copyrighted contributions. The historical Google Drive release and `main` branch are not changed or published during development on `develop`.
+The project is non-commercial. No general license has been selected; obtain permission before including externally copyrighted contributions. The professional-review candidate is in [this Google Drive folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb). The frozen v16 files remain in `reference/baseline/`; the older Drive copies were removed from the shared folder. This candidate is not a final or clinically validated release.
