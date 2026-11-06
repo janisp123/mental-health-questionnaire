@@ -9,6 +9,8 @@
   ],
   "scripts": [
     "core/model.js",
+    "core/recovery.js",
+    "core/answer-flow.js",
     "reports/reports.js",
     "screens/start.js",
     "screens/section-selector.js",

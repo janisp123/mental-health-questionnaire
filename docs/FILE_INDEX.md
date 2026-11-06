@@ -16,7 +16,7 @@
 | Module source index | `tests/fixtures/181_MODULE_INDEX_v16.json` | Frozen initial module SHA256, count and order; do not confuse with the current overall manifest |
 | Full question bank | `src/modules/182_MODULE_01_LV_EN_RU_v16.json` through `182_MODULE_48_LV_EN_RU_v16.json` | Canonical question/answer content and translations, separate from application design and runtime. |
 | Application screens and design | `src/app/screens/`, `src/app/styles/`, `src/app/i18n/` | Small independent page templates, role-based styles and interface labels. Edit these without opening question files. |
-| Shared application runtime and reports | `src/app/core/`, `src/app/reports/` | Shared state, navigation, recovery, event handling, and report generation. Runtime consumes embedded data and does not read question files separately. |
+| Shared application runtime and reports | `src/app/core/`, `src/app/reports/` | `model.js` handles lookup/visibility/progress; `answer-flow.js` handles navigation transitions; `recovery.js` validates recovery files; `app.js` coordinates page state and events. Runtime consumes embedded data and does not read question files separately. |
 | App source order | `src/app/build.json` | Explicit ordered list of stylesheet and script inputs assembled into the single offline HTML. |
 | Questionnaire presentation config | `src/questionnaire/layout.json`, `src/questionnaire/presentation.json`, `src/questionnaire/i18n/` | Module navigation/report order, answer-specific report rules and frozen module titles; separate from design and original question content. |
 | Full offline application build | `tools/build_questionnaire.py`, `src/app/`, `src/questionnaire/` | `python tools/build_questionnaire.py` builds the complete 712-question questionnaire as one offline HTML file. See [architecture](QUESTIONNAIRE_ARCHITECTURE.md). |
@@ -40,7 +40,7 @@
 - `src/questionnaire/`: module order, report presentation rules and source-grounded module titles.
 - `archive/pilot/`: retired 60-question prototype source, tests and notes; not a build input or active CI suite.
 - `tests/full_bank/`: source, build, report and full-runtime checks for the 48-module questionnaire.
-- `tests/app/`: focused screen-rendering, source-assembly and synthetic-runtime checks; no full question bank is loaded.
+- `tests/app/`: focused screen-rendering, source-assembly, pure runtime-rule, synthetic browser, and layout checks; no full question bank is loaded.
 - `reference/baseline/html/`, `reference/baseline/readme/`, `reference/baseline/information/`: immutable v16 reference snapshots.
 - `reference/history/`: legacy v9/v14 references; never assume newest.
 - `docs/drive-original/`: immutable former Drive development directions, indexes, and prior changelog, preserved for traceability; some old wording points to Drive because these are historical snapshots.

@@ -10,6 +10,7 @@ on:
       - 'tools/build_questionnaire.py'
       - 'tools/verify_project_index.py'
       - 'project-manifest.json'
+      - 'docs/QUESTIONNAIRE_ARCHITECTURE.md'
       - '.github/workflows/questionnaire-checks.yml'
   workflow_dispatch:
 

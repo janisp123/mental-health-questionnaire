@@ -4,6 +4,7 @@
 const embedded=document.getElementById("questionnaire-data");
 const data=JSON.parse(embedded.textContent);
 const model=window.QuestionnaireModel.create(data);
+const flow=window.QuestionnaireFlow;
 const {groups,optionalIds,byId,all}=model;
 // Registry display order is independent of frozen source order.
 let answerLockUntil=0;
@@ -142,9 +143,9 @@ function render(){
 }
 function setQuestion(id){state.currentId=id;state.draft=null;state.feedbackOpen=false;state.screen="question";state.notice="";render();window.scrollTo(0,0);}
 function advance(){
- const list=active(),now=list.findIndex(q=>q.id===state.currentId),next=list[now+1];
- if(next){setQuestion(next.id);return;}
- state.screen="results";state.draft=null;state.notice="";render();window.scrollTo(0,0);
+ const destination=flow.next(state,active());
+ if(destination.id){setQuestion(destination.id);return;}
+ state.screen=destination.screen;state.currentId=destination.currentId;state.draft=null;state.notice="";render();window.scrollTo(0,0);
 }
 function start(){
  if(!state.sectionConfirmed){state.selected=[...optionalIds];state.sectionConfirmed=true;}
@@ -156,17 +157,11 @@ function choiceStatus(q,codes){
  return statuses.includes("refused")?"refused":statuses.includes("uncertain")?"uncertain":"answered";
 }
 function advanceAfterSave(){
- if(state.reviewQueue?.[0]===state.currentId){
-  state.reviewQueue.shift();
-  if(state.reviewQueue.length){setQuestion(state.reviewQueue[0]);return;}
-  const previous=state.reviewReturn;
-  state.reviewQueue=null;state.reviewReturn=null;
-  if(previous?.screen==="question"&&active().some(q=>q.id===previous.id)){
-   setQuestion(previous.id);return;
-  }
-  state.currentId=previous?.id||null;state.screen=previous?.screen||"results";state.draft=null;render();return;
- }
- advance();
+ const destination=flow.afterSave(state,active());
+ if(destination.id){setQuestion(destination.id);return;}
+ state.currentId=destination.currentId;state.screen=destination.screen;state.draft=null;
+ if(destination.clearNotice)state.notice="";
+ render();if(destination.scroll)window.scrollTo(0,0);
 }
 function incompatiblePair(q,codes){
  return (q.incompatible||[]).find(([a,b])=>codes.includes(a)&&codes.includes(b));
@@ -204,7 +199,7 @@ function skip(){
  advanceAfterSave();
  if(state.savedCount%10===0){downloadBackup();state.notice=ui().saved10;render();}
 }
-function previous(){const list=active(),idx=list.findIndex(q=>q.id===state.currentId);if(idx>0)setQuestion(list[idx-1].id);else {state.screen="start";render();}}
+function previous(){const destination=flow.previous(state,active());if(destination.id)setQuestion(destination.id);else {state.screen=destination.screen;render();}}
 function skipSection(){
  const q=current();if(!q||groups.get(q.module).required)return;
  if(!window.confirm(ui().skipConfirm))return;
@@ -253,66 +248,19 @@ function restore(file){
  reader.onload=function(){
   try{
    const x=JSON.parse(String(reader.result));
-   if(x.schema!=="mental-pilot-recovery-v1"||!x.answers||typeof x.answers!=="object"||Array.isArray(x.answers))throw Error("Invalid schema");
-   if(x.layoutVersion&&x.layoutVersion!==data.layout_version)throw Error("Unsupported layout");
-   const a={};
-   for(const [id,rec] of Object.entries(x.answers)){
-    const q=byId[id];if(!q||!rec||typeof rec!=="object")throw Error("Invalid record");
-    if(rec.kind==="choice"){
-      if(q.type==="shortText"||q.type==="medicineList"||!Array.isArray(rec.codes)||!rec.codes.length||new Set(rec.codes).size!==rec.codes.length||!rec.codes.every(code=>q.choiceCodes.includes(code)))throw Error("Unknown choice");
-      if((!q.multi&&rec.codes.length!==1)||(q.maxChoices&&rec.codes.length>q.maxChoices)||(rec.codes.length>1&&rec.codes.some(c=>q.exclusive?.includes(c))))throw Error("Invalid single answer");
-      if(incompatiblePair(q,rec.codes))throw Error("Incompatible answers");
-      a[id]={kind:"choice",codes:[...rec.codes],status:choiceStatus(q,rec.codes),savedAt:rec.savedAt||""};
-    }else if(rec.kind==="text"){
-      if(q.type!=="shortText"||typeof rec.value!=="string")throw Error("Invalid text");
-      a[id]={kind:"text",value:rec.value.slice(0,200),status:"answered",savedAt:rec.savedAt||""};
-    }else if(rec.kind==="medicine"){
-      if(q.type!=="medicineList"||!Array.isArray(rec.records)||rec.records.length>50||typeof rec.discussion!=="string"||rec.discussion.length>3000)throw Error("Invalid medicine list");
-      const validStatuses=new Set(["current","past","unknown"]),validBenefits=new Set(["","A","B","C","D","E","F","G"]);
-      const records=rec.records.map(item=>{
-       if(!item||typeof item!=="object"||Array.isArray(item)||Object.keys(item).sort().join(",")!==medicineFields.slice().sort().join(",")||
-          !medicineFields.every(key=>typeof item[key]==="string"&&item[key].length<=1000)||
-          !validStatuses.has(item.status)||!validBenefits.has(item.benefit)||
-          !medicineFields.some(key=>key!=="status"&&item[key].trim()))throw Error("Invalid medicine record");
-       return Object.fromEntries(medicineFields.map(key=>[key,item[key]]));
-      });
-      if(!records.length&&!rec.discussion.trim())throw Error("Empty medicine list");
-      a[id]={kind:"medicine",status:"answered",records,discussion:rec.discussion,savedAt:rec.savedAt||""};
-    }else if(rec.kind==="skip")a[id]={kind:"skip",status:"skipped",savedAt:rec.savedAt||""};
-    else throw Error("Unknown record");
-   }
-   const feedback=x.feedback==null?{}:x.feedback;
-   if(!feedback||typeof feedback!=="object"||Array.isArray(feedback))throw Error("Invalid feedback");
-   const restoredFeedback={};
-   for(const [id,rec] of Object.entries(feedback)){
-    const q=byId[id];
-    if(!q||!rec||typeof rec!=="object"||Array.isArray(rec)||!Array.isArray(rec.reasons)||!rec.reasons.length||new Set(rec.reasons).size!==rec.reasons.length)throw Error("Invalid feedback record");
-    const valid=new Set(["question","language","other",...q.choiceCodes.map(code=>"answer:"+code)]);
-    if(!rec.reasons.every(reason=>typeof reason==="string"&&valid.has(reason))||
-       typeof rec.comment!=="string"||rec.comment.length>500||
-       !["lv","en","ru"].includes(rec.language)||typeof rec.version!=="string"||rec.version.length>40||
-       typeof rec.updatedAt!=="string")throw Error("Invalid feedback details");
-    restoredFeedback[id]={reasons:[...rec.reasons],comment:rec.comment,language:rec.language,version:rec.version,updatedAt:rec.updatedAt};
-   }
-   if(x.selected!=null&&(!Array.isArray(x.selected)||x.selected.some(id=>!optionalIds.includes(id))))
-     throw Error("Recovery file requires an unavailable section");
-   const queue=x.reviewQueue;
-   if(queue!=null&&(!Array.isArray(queue)||new Set(queue).size!==queue.length||
-     queue.some(id=>!byId[id]||!isSafety(byId[id]))))throw Error("Invalid review sequence");
+   const restored=window.QuestionnaireRecovery.validate(x,{byId,optionalIds,legacyOpeningGroups:data.legacy_opening_groups,
+    layoutVersion:data.layout_version,medicineFields,choiceStatus,incompatiblePair,isSafety});
    if((Object.keys(state.answers).length||Object.keys(state.feedback).length)&&!window.confirm(ui().replaceSession))return;
-   state.reviewQueue=queue?.length?[...queue]:null;
-   state.reviewReturn=state.reviewQueue&&["question","report","results"].includes(x.reviewReturn?.screen)
-     ?{screen:x.reviewReturn.screen,id:x.reviewReturn.id}:null;
-   state.answers=a;
-   state.feedback=restoredFeedback;state.feedbackOpen=false;
-   const selected=Array.isArray(x.selected)?x.selected:[];
-   // Old files did not list their implicitly mandatory opening group.
-   state.selected=optionalIds.filter(id=>selected.includes(id)||(!x.layoutVersion&&data.legacy_opening_groups.includes(id)));
-   state.sectionConfirmed=!!x.sectionConfirmed;
+   state.reviewQueue=restored.reviewQueue;
+   state.reviewReturn=restored.reviewReturn;
+   state.answers=restored.answers;
+   state.feedback=restored.feedback;state.feedbackOpen=false;
+   state.selected=restored.selected;
+   state.sectionConfirmed=restored.sectionConfirmed;
    state.support=null;state.supportSeen=[];
-   state.savedCount=Number.isInteger(x.savedCount)&&x.savedCount>=0?x.savedCount:Object.keys(a).length;
-   if(["lv","en","ru"].includes(x.lang))state.lang=x.lang;
-   state.currentId=typeof x.currentId==="string"&&byId[x.currentId]?x.currentId:null;
+   state.savedCount=restored.savedCount;
+   if(restored.lang)state.lang=restored.lang;
+   state.currentId=restored.currentId;
    if(state.reviewQueue)state.currentId=state.reviewQueue[0];
    const pending=active().find(q=>groups.get(q.module).required&&!state.answers[q.id]);
    if(pending&&state.currentId&&!groups.get(byId[state.currentId].module).required)

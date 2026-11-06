@@ -17,10 +17,10 @@
 
 1. [DONE] Audit current source, test, and branch state.
 2. [DONE] Replace pilot-first status with this active handoff and archive the previous chronology.
-3. [IN_PROGRESS] Split runtime browser checks into focused synthetic-data cases; browser run awaits CI.
+3. [DONE] Split runtime browser checks into focused synthetic-data cases; answer, feedback, and recovery browser cases passed CI.
 4. [IN_PROGRESS] Extract query/model, answer-flow, and recovery behavior into tested modules.
-5. [TODO] Add a focused browser layout check for CSS changes.
-6. [TODO] Update architecture, file index, manifest, and CI routing as needed.
+5. [IN_PROGRESS] Add a focused browser layout check for CSS changes.
+6. [IN_PROGRESS] Update architecture, file index, manifest, and CI routing as needed.
 7. [TODO] Run the relevant GitHub checks and one full integration run after structural work.
 8. [BLOCKED] Physical Android testing and human language/clinical review require a device or reviewers.
 
@@ -46,3 +46,10 @@
 **Checks:** model behavior, app source manifest, UI catalogs, isolated screen tests, JS syntax, synthetic bundle assembly, and `git diff --check` PASS. Focused CI workflow 42252272675 passed after the test assertion correction; it did not execute the newly added model test in this checkpoint.
 **Commit:** de529e8; checkpoint note: 077bbf7.
 **Next action:** split feedback/recovery browser behavior into focused synthetic cases, then move validated recovery parsing out of the coordinator. Consolidate the new focused steps into the repository's existing app-component workflow; remove the redundant duplicate workflow file.
+
+**Checkpoint 4 — recovery, flow, and layout boundaries:** extracted recovery validation/normalization to `src/app/core/recovery.js` and queue/back/next transitions to `src/app/core/answer-flow.js`, each with direct Node tests. Added a small synthetic browser layout check for mobile/desktop overflow, fixed Skip placement, and the question-feedback flag's accessible label. Removed the accidental duplicate workflow and extended the repository's original app-component workflow instead.
+
+**Files:** src/app/core/recovery.js, src/app/core/answer-flow.js, src/app/core/app.js, src/app/build.json, tests/app/test_recovery.js, tests/app/test_answer_flow.js, tests/app/test_runtime_layout.py, .github/workflows/app-component-checks.yml, .github/workflows/questionnaire-checks.yml, docs/FILE_INDEX.md, docs/QUESTIONNAIRE_ARCHITECTURE.md, docs/CHANGELOG.md.
+**Checks:** model and recovery pure tests, answer-flow pure test, app/component checks, and `git diff --check` PASS locally; browser checks for the extracted modules and layout await the next CI run. Full 48-module integration will run after structural changes settle.
+**Commit:** pending.
+**Next action:** check recovery/answer-flow browser integration in CI; extract event wiring only if it remains a clean, independently testable boundary; then verify the complete build and 48-module journey.
