@@ -1,7 +1,11 @@
 {
   "schema": "questionnaire-app-build-v1",
   "styles": [
-    "core/styles.css"
+    "styles/base.css",
+    "styles/reports.css",
+    "styles/navigation.css",
+    "styles/feedback.css",
+    "styles/safe-area.css"
   ],
   "scripts": [
     "reports/reports.js",

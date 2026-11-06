@@ -1,0 +1,6 @@
+.report-preview{color:#111;background:#fff;border:1px solid #aaa;border-radius:8px;padding:14px;line-height:1.35;overflow-wrap:anywhere}
+.report-preview h1{font-size:19px;margin:0 0 8px}.report-preview p{margin:4px 0}.report-preview hr{border:0;border-top:1px solid #999;margin:9px 0}
+.copy-source{position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important}
+@media print{.report-preview{border:0;border-radius:0;padding:0}.report-preview h1{font-size:17pt}.report-preview p{font-size:10pt}.copy-source{display:none!important}}
+
+
