@@ -317,11 +317,21 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Checks:** the new test failed before the loader existed, then passed exact string/order comparisons against all three frozen HTML baselines (144 titles total). Full source adapter and hash verifier also passed. No runtime questions or pilot UI changed.
 - **Next action:** build source-backed groups for all modules as a separate bundle function and verify question count, group coverage, conditions, and no duplicate or omitted IDs before activation.
 
-### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 16 (IN_PROGRESS)
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 16
 
 **Task 5k — assemble full source groups without activation.**
 - **Starting commit:** `a958ee76a3203196047c2b9255d77407d3e92212` on `develop`.
-- **Scope:** use the source adapter and title catalogs to construct 48 optional engine groups directly from all 48 immutable module files. Keep the existing 60-question pilot bundle and UI unchanged in this step.
-- **Checks planned:** 48 groups, 712 IDs and orders exactly once, all source conditions preserve parent order, all locale titles, correct module 33/source-section oddity, and unchanged 60-question pilot output.
-- **Files expected:** `tools/build_pilot.py`, a focused full-group test, CI workflow and changelog.
-- **Next action:** implement group assembly and run structural/source-integrity tests; then checkpoint before swapping any build to the full bank.
+- **Implementation commit:** `462b9aea043110aeb7f57c91b8a846ad4cfc2193` on `develop` (remote readback confirmed).
+- **Files:** `tools/build_pilot.py`, `tests/pilot/test_full_groups.py`, `.github/workflows/pilot-checks.yml`, this changelog.
+- **Completed:** added read-only group assembly directly from the original module files and title catalogs. It produces 48 optional groups and all 712 questions once. It preserves `M32_02` in section 33 according to its source `section` field rather than deriving placement from its ID. The current pilot builder still emits 60 questions.
+- **Checks:** new full-group test PASS (48 groups, 712 unique IDs/orders, valid earlier condition parents, exact LV/EN/RU titles and source-section oddity); source audit, all 79 original hashes and existing 60-question builder PASS.
+- **Remaining:** full groups are not yet selected by `build_bundle`/HTML; no complete questionnaire artifact exists yet.
+- **Next action:** Task 5l — set complete, separate question-navigation and clinician-report topic orders. Start questions with approachable topics, keep personal details late in the questionnaire, and put safety-sensitive topics toward the end of the doctor report.
+
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 17 (IN_PROGRESS)
+
+**Task 5l — full topic order.**
+- **Starting commit:** `462b9aea043110aeb7f57c91b8a846ad4cfc2193` on `develop`.
+- **Scope:** define a complete 48-topic navigation order and a separately maintained 48-topic report order. Navigation begins with ordinary, approachable topics and leaves the optional personal-details module near the end. Report order places personal/everyday information first and the explicitly safety-sensitive topics last. No answer weights or risk calculations are introduced.
+- **Files expected:** `src/pilot/modules/layout.json`, `src/pilot/reports/presentation.json`, `tests/pilot/test_layout.py`, `tools/build_pilot.py` if needed, changelog.
+- **Next action:** choose and encode the two full permutations, add tests that each lists every module once and that the first/last placement rules hold, then run existing pilot layout/report tests.
