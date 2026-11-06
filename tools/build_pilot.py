@@ -3,6 +3,7 @@
 
 Usage: python tools/build_pilot.py
        python tools/build_pilot.py --output /tmp/pilot.html
+       python tools/build_pilot.py --full-bank
 
 To add section 21: create src/pilot/modules/21/{logic,lv,en,ru}.json and
 add a registry entry. No edits to existing modules, engine, or translator files.
@@ -124,7 +125,7 @@ def contains_weight_key(value):
     return False
 
 
-def build_bundle(apply_layout=True):
+def build_bundle(apply_layout=True, full_bank=False):
     registry = read_json(SOURCE / "modules" / "registry.json")
     ui = {}
     for lang in LANGS:
@@ -135,10 +136,16 @@ def build_bundle(apply_layout=True):
         if medicine.get("schema") != "medicine-list-ui-v1" or medicine.get("lang") != lang:
             raise ValueError("Wrong medicine-list locale: " + lang)
         ui[lang]["medicine"] = medicine["strings"]
-    groups = []
+    groups = build_source_groups() if full_bank else []
     group_ids = set()
     ids, orders = set(), set()
-    for group in registry["groups"]:
+    if full_bank:
+        for group in groups:
+            group_ids.add(group["id"])
+            for question in group["questions"]:
+                ids.add(question["id"])
+                orders.add(question["order"])
+    for group in ([] if full_bank else registry["groups"]):
         key = group["id"]
         if not isinstance(key, str) or not key.isalnum() or key in group_ids:
             raise ValueError(f"Invalid or duplicate module ID: {key}")
@@ -212,7 +219,12 @@ def build_bundle(apply_layout=True):
     if (len(full_order) != 48 or len(set(full_order)) != 48
             or set(presentation.get("topicOrder", [])) != set(full_order)):
         raise ValueError("Full report topic order must list each source module exactly once")
-    if apply_layout:
+    if full_bank and apply_layout:
+        by_group = {group["id"]: group for group in groups}
+        if set(by_group) != set(full_order):
+            raise ValueError("Full navigation order must cover every source module")
+        groups = [by_group[key] for key in full_order]
+    elif apply_layout:
         # Original files remain storage/source-fidelity units. Presentation topics are separate.
         topics = {}
         for source in groups:
@@ -231,15 +243,18 @@ def build_bundle(apply_layout=True):
             for q in g["questions"]:
                 if q.get("context") and positions[q["context"]["id"]] >= positions[q["id"]]:
                     raise ValueError("Presentation must keep parent before follow-up: " + q["id"])
-    return {"schema": "offline-questionnaire-pilot-v1", "version": registry["app_version"],
-            "layout_version": layout["version"], "legacy_opening_groups": layout["legacy_opening_groups"],
+    return {"schema": "offline-questionnaire-full-bank-v1" if full_bank else "offline-questionnaire-pilot-v1",
+            **({"build_mode": "full_bank"} if full_bank else {}),
+            "version": registry["app_version"] + ("+full-bank" if full_bank else ""),
+            "layout_version": layout["version"] + ("-full-bank" if full_bank else ""),
+            "legacy_opening_groups": [] if full_bank else layout["legacy_opening_groups"],
             "baseline": registry["baseline"], "ui": ui, "groups": groups,
             "presentation": presentation,
             "release_status": {"lv": "PROTOTYPE", "en": "DRAFT_NOT_RELEASED", "ru": "DRAFT_NOT_RELEASED"}}
 
 
-def make_html():
-    data = build_bundle()
+def make_html(full_bank=False):
+    data = build_bundle(full_bank=full_bank)
     style = (SOURCE / "core" / "styles.css").read_text(encoding="utf-8")
     reports = (SOURCE / "reports" / "reports.js").read_text(encoding="utf-8")
     app = (SOURCE / "core" / "app.js").read_text(encoding="utf-8")
@@ -262,12 +277,17 @@ def make_html():
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output", type=Path, default=ROOT / "dist" / "PILOT_offline_LV_EN_RU_v0.2_NOT_RELEASED.html")
+    parser.add_argument("--full-bank", action="store_true",
+                        help="Build the separate 712-question prototype instead of the 60-question pilot.")
+    parser.add_argument("--output", type=Path, default=None)
     args = parser.parse_args()
-    output = make_html().encode("utf-8")
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_bytes(output)
-    print("PILOT BUILT:", args.output)
+    default_name = ("FULL_BANK_offline_LV_EN_RU_NOT_RELEASED.html" if args.full_bank
+                    else "PILOT_offline_LV_EN_RU_v0.2_NOT_RELEASED.html")
+    output_path = args.output or (ROOT / "dist" / default_name)
+    output = make_html(full_bank=args.full_bank).encode("utf-8")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_bytes(output)
+    print("FULL-BANK PROTOTYPE BUILT:" if args.full_bank else "PILOT BUILT:", output_path)
     print("SHA256:", hashlib.sha256(output).hexdigest())
     print("Languages:", ", ".join(LANGS))
     print("PROTOTYPE ONLY: browser, translation, and clinical approval NOT implied.")

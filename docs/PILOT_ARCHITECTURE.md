@@ -1,6 +1,6 @@
 # Editing the offline pilot v0.2
 
-The develop-only pilot implements 60 original questions in LV/EN/RU. All topics are optional, ordered 23, 02, 21, 06, 18, 31, 33. Personal details are last. Sections 02 and 21 are complete within this pilot; the other topics contain only the former opening questions, not their complete imported modules. The frozen bank has 712 questions across 48 modules. This task does not implement that full application. EN/RU and new interface/report wording need human review.
+The develop-only default pilot implements 60 original questions in LV/EN/RU. All topics are optional, ordered 23, 02, 21, 06, 18, 31, 33. Personal details are last. Sections 02 and 21 are complete within this pilot; the other topics contain only the former opening questions, not their complete imported modules. The builder also has an opt-in full-bank mode that packages all 712 source questions in 48 optional groups. That mode is a build/data milestone; full 712-question runtime behavior still needs separate verification. EN/RU and new interface/report wording need human review.
 
 ## Source, layout and presentation
 
@@ -28,11 +28,11 @@ AI export contains only recorded responses in ordinary text, independently under
 
 Doctor output contains the same actual responses, compact coverage counts and ascending presentation priorities, with stable topic order within ties. There is no alert summary, warning icon, numerical weight or risk score. It flows across A4 pages in black and white. If only sensitive responses were provided, no ordinary responses are invented to fill the first page. Existing TXT and decoding-key downloads remain available separately.
 
-Recorded applicable responses remain in reports even when their topic is deselected. Responses hidden by changed conditions stay in recovery but are excluded from current reports; the doctor report explains this. Counts cover applicable pilot questions, not the unimplemented full bank. Tools, progress, in-app usage guide, version history, legal/privacy and contributors are below the main content, collapsed by default. A separate user README is not needed for this artifact; frozen release documentation is unchanged.
+Recorded applicable responses remain in reports even when their topic is deselected. Responses hidden by changed conditions stay in recovery but are excluded from current reports; the doctor report explains this. The default pilot counts cover applicable pilot questions; full-bank runtime report behavior has not been audited. Tools, progress, in-app usage guide, version history, legal/privacy and contributors are below the main content, collapsed by default. A separate user README is not needed for this artifact; frozen release documentation is unchanged.
 
 ## Build and verification
 
-`python tools/build_pilot.py` builds `dist/PILOT_offline_LV_EN_RU_v0.2_NOT_RELEASED.html`. CI stores it as a test artifact, not a public release.
+`python tools/build_pilot.py` builds `dist/PILOT_offline_LV_EN_RU_v0.2_NOT_RELEASED.html`. `python tools/build_pilot.py --full-bank` builds `dist/FULL_BANK_offline_LV_EN_RU_NOT_RELEASED.html` from the frozen source modules. Both are test prototypes, not public releases. CI stores the default pilot as a test artifact; the full-bank build is structurally checked but not published.
 
 Run:
 

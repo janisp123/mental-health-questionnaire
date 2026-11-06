@@ -77,6 +77,13 @@
       "reports": "src/pilot/reports/",
       "interface": "src/pilot/i18n/",
       "builder": "tools/build_pilot.py",
+      "optional_full_bank_build": {
+        "command": "python tools/build_pilot.py --full-bank",
+        "artifact": "dist/FULL_BANK_offline_LV_EN_RU_NOT_RELEASED.html",
+        "sections": 48,
+        "questions": 712,
+        "status": "STRUCTURAL_BUILD_CHECKED__FULL_RUNTIME_NOT_VERIFIED"
+      },
       "tests": "tests/pilot/",
       "ci": ".github/workflows/pilot-checks.yml",
       "architecture": "docs/PILOT_ARCHITECTURE.md",

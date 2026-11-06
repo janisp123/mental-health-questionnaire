@@ -36,6 +36,8 @@ jobs:
         run: python tests/pilot/test_module_titles.py
       - name: Verify full source groups without activating them
         run: python tests/pilot/test_full_groups.py
+      - name: Verify opt-in full-bank single-file build
+        run: python tests/pilot/test_full_bank_build.py
       - name: Verify modular pilot data and offline packaging
         run: python tests/pilot/test_build.py
       - name: Compare active questions and choices against frozen v16
