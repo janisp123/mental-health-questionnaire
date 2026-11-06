@@ -208,8 +208,10 @@ def build_bundle(apply_layout=True):
             raise ValueError("Invalid bold-answer question: " + qid)
         if len(set(codes)) != len(codes) or any(code not in by_id[qid]["choiceCodes"] for code in codes):
             raise ValueError("Invalid bold-answer code: " + qid)
-    if set(presentation.get("topicOrder", [])) != set(layout["order"]):
-        raise ValueError("Report topic order must list each display topic exactly once")
+    full_order = layout.get("full_order", [])
+    if (len(full_order) != 48 or len(set(full_order)) != 48
+            or set(presentation.get("topicOrder", [])) != set(full_order)):
+        raise ValueError("Full report topic order must list each source module exactly once")
     if apply_layout:
         # Original files remain storage/source-fidelity units. Presentation topics are separate.
         topics = {}
