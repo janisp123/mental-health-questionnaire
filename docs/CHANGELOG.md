@@ -141,3 +141,21 @@ Complete detailed historical Latvian changelog remains in the [archived Drive `1
 - The final small adjustment was not observed in a new Actions run. Its browser regressions passed locally; do not describe the final code SHA as having a separate green CI run.
 
 **Still unverified:** native Android Chrome touch/file-picker/clipboard/printing; human review of EN/RU and the new interface/report translations; psychiatrist review of provisional question wording and report-priority rules; all imported modules outside the 60-question pilot. This build is ready for another desktop/mobile UX test, not a clinical validation or public release.
+
+
+## 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · IN_PROGRESS
+
+**Starting commit:** `fd61b0504c8396d5f53fdb9aba5c44dcdefa5414` on `develop`. Current implementation is pilot v0.2: 60 active questions. The frozen source bank has 48 modules/712 questions. Do not call the full questionnaire complete until all modules, behavior and exports are checked.
+
+**Critical design decisions:** Remove the pilot's AI/coded export and presentation weights; use a small, explicit, answer-code allowlist to bold only clearly serious reported answers. Keep one compact clinician report. Green-flag feedback is separate from medical answers, optional, locally backed up, and exports no medical responses or personal details. Feedback Save & Continue preserves an existing answer; if no answer exists it records a skip. Backward compatibility means new code continues to restore pilot-v1 files; old code is not assumed to preserve new feedback fields. Add source modules by stable batches, not one large import, and preserve exact original text/IDs/codes/conditions.
+
+**Numbered checklist**
+1. [IN_PROGRESS] Remove AI/coded-answer UI/export and weighting; retain one clinician report with explicit bold-answer mappings.
+2. [TODO] Add per-question project-feedback flag and non-destructive Save & Continue; persist in new recovery fields and restore old pilot-v1 backups.
+3. [TODO] Add isolated project-feedback copy/export and clinician-report ordering/privacy checks.
+4. [TODO] Audit the full 48-module schema against engine capabilities (types, conditions, status, choice constraints, language coverage); register gaps before integration.
+5. [TODO] Integrate the original 712 questions in small tested batches; update fidelity/navigation tests after each batch.
+6. [TODO] Build the complete offline HTML; update manifest, architecture/index and minimal user-facing documentation after functionality works.
+7. [TODO] Run full source-integrity, browser/export/privacy/offline regressions; record unverified Android and human review.
+
+**Next action:** implement checklist item 1 in the pilot only, add focused report tests, run the existing browser/source checks, commit and record the exact checkpoint. No frozen source, `main`, or Drive release edits.
