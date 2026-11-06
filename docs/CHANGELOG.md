@@ -150,7 +150,7 @@ Complete detailed historical Latvian changelog remains in the [archived Drive `1
 **Critical design decisions:** Remove the pilot's AI/coded export and presentation weights; use a small, explicit, answer-code allowlist to bold only clearly serious reported answers. Keep one compact clinician report. Green-flag feedback is separate from medical answers, optional, locally backed up, and exports no medical responses or personal details. Feedback Save & Continue preserves an existing answer; if no answer exists it records a skip. Backward compatibility means new code continues to restore pilot-v1 files; old code is not assumed to preserve new feedback fields. Add source modules by stable batches, not one large import, and preserve exact original text/IDs/codes/conditions.
 
 **Numbered checklist**
-1. [IN_PROGRESS] Remove AI/coded-answer UI/export and weighting; retain one clinician report with explicit bold-answer mappings. Follow-up: remove two unused `textWeight: 0` keys and reject all weight metadata in the builder.
+1. [DONE] Remove AI/coded-answer UI/export and weighting; retain one clinician report with explicit bold-answer mappings.
 2. [DONE] Add per-question project-feedback flag and non-destructive Save & Continue; persist in new recovery fields and restore old pilot-v1 backups.
 3. [TODO] Add isolated project-feedback copy/export and clinician-report ordering/privacy checks.
 4. [TODO] Audit the full 48-module schema against engine capabilities (types, conditions, status, choice constraints, language coverage); register gaps before integration.
@@ -158,7 +158,7 @@ Complete detailed historical Latvian changelog remains in the [archived Drive `1
 6. [TODO] Build the complete offline HTML; update manifest, architecture/index and minimal user-facing documentation after functionality works.
 7. [TODO] Run full source-integrity, browser/export/privacy/offline regressions; record unverified Android and human review.
 
-**Next action:** finish checklist item 1's weight-metadata follow-up before starting feedback export. No frozen source, `main`, or Drive release edits.
+**Next action:** complete checklist item 3, including the separate project-feedback export and clinician-report feedback ordering/privacy checks. No frozen source, `main`, or Drive release edits.
 
 
 ### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 1
@@ -173,7 +173,7 @@ Complete detailed historical Latvian changelog remains in the [archived Drive `1
 - **Remaining:** feedback form/recovery/report isolation; audit and integration of the remaining full question bank; full-project CI hash verification.
 - **Next action:** task 2 — implement the green flag/edit/remove feedback form and a separate optional feedback object in recovery. Test that Save & Continue never overwrites a medical answer and skips only when no answer exists.
 
-Checklist 2 is now [IN_PROGRESS]; no other checklist item has started.
+At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkpoint for its completion.
 
 ### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 2
 
@@ -186,3 +186,15 @@ Checklist 2 is now [IN_PROGRESS]; no other checklist item has started.
 - **Checks:** new test first failed because the flag was absent, then passed after implementation. Feedback browser test passed across LV/EN/RU labels, edit/remove, skip/preserve, old recovery restore and invalid-record rejection. Existing report, builder, layout, JS syntax, pilot source fidelity, general browser, independence and section 21 checks passed. `tools/verify_project_index.py` confirmed all 79 imported source files and the full 48-module/712-question inventory. Desktop offline Chromium only; native Android remains unverified.
 - **Remaining:** question feedback is not yet included in a separate project-feedback export or the clinician report. Two unused `textWeight: 0` entries remain in presentation metadata; they do not drive the current report, but must be removed and rejected by the builder before checklist item 1 is closed.
 - **Exact next action:** remove the two unused `textWeight` entries, make the builder reject any weight-named presentation key, add a regression test, run the relevant checks, commit and append the exact checkpoint. Then proceed to checklist item 3.
+
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 3
+
+**Checklist:** 1 [DONE] · 2 [DONE] · 3 [IN_PROGRESS] · 4–7 [TODO].
+
+**Task 1 follow-up — remove all weighting metadata**
+- **Implementation commit:** `a470eef5fcb412ccda1c2b0064737297239ab871` on `develop`.
+- **Files:** `src/pilot/reports/presentation.json`, `tools/build_pilot.py`, `tests/pilot/test_build.py`, `tests/pilot/test_reports.js`.
+- **Completed:** removed two unused `textWeight: 0` keys. The builder now rejects any recursively nested presentation key containing “weight”; report tests reject such keys in generated data.
+- **Checks:** the new guard assertion failed before implementation, then passed. Builder, report, layout, three-language pilot source fidelity, JS syntax, feedback browser, general browser, locale/condition independence, section 21, and full project index/hash checks all passed. The last integrity check confirms all 79 imported originals, 48 modules and 712 IDs/orders.
+- **Remaining:** none for checklist item 1; clinical review and native Android testing remain separate overall limitations.
+- **Exact next action:** checklist item 3 — add the isolated project-feedback export and place submitted question feedback first in the clinician report. Verify the feedback export contains no medical answers or personal details, works with zero answers, and clinician content remains ordinary-to-sensitive.
