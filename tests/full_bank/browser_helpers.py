@@ -37,6 +37,15 @@ def backup(page):
     return json.loads(event.value.path().read_text())
 
 
+def restore(page, payload):
+    page.locator("#restore").set_input_files({
+        "name": "synthetic-recovery.json",
+        "mimeType": "application/json",
+        "buffer": json.dumps(payload).encode(),
+    })
+    page.wait_for_timeout(100)
+
+
 def open_page(browser, path: Path):
     page = browser.new_page(accept_downloads=True, offline=True, viewport={"width": 390, "height": 844})
     errors, network = [], []

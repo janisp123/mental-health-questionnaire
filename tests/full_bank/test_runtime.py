@@ -3,7 +3,7 @@ import tempfile
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
-from browser_helpers import act, backup, choose, launch, open_page, qid
+from browser_helpers import act, backup, choose, launch, open_page, qid, restore
 import build_pilot as build
 
 
@@ -36,7 +36,34 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert qid(page) == "M23_02"
     assert backup(page)["answers"]["M23_01"]["codes"] == ["B"]
 
-    # Reach the real medicine-list item via ordinary section navigation.
+    # Feedback is separate from a saved medical answer and survives recovery.
+    act(page, "previous")
+    act(page, "feedback")
+    page.locator('[data-feedback-reason="question"]').check()
+    page.locator("#feedback-comment").fill("Synthetic question note")
+    act(page, "feedbackContinue")
+    saved = backup(page)
+    assert saved["answers"]["M23_01"]["codes"] == ["B"]
+    assert saved["feedback"]["M23_01"]["reasons"] == ["question"]
+    assert saved["feedback"]["M23_01"]["comment"] == "Synthetic question note"
+    restore(page, saved)
+    round_trip = backup(page)
+    assert round_trip["answers"] == saved["answers"]
+    assert round_trip["feedback"] == saved["feedback"]
+
+    # A real conditional follow-up appears for an applicable parent answer.
+    act(page, "sections")
+    page.locator('[data-jump="01"]').click()
+    assert qid(page) == "M01_01"
+    for question_number in range(1, 8):
+        choose(page, "A")
+        assert qid(page) == f"M01_{question_number + 1:02d}"
+    choose(page, "B")
+    assert qid(page) == "M01_09"
+    choose(page, "A")
+    assert qid(page) == "M01_10"
+
+    # Reach the real medication-list item via ordinary section navigation.
     act(page, "sections")
     page.locator('[data-jump="14"]').click()
     assert qid(page) == "M14_01"
@@ -54,10 +81,18 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     act(page, "save")
     assert qid(page) == "M33_02"
     act(page, "results")
+    page.evaluate('window.__copied=null;Object.defineProperty(navigator,"clipboard",{value:{writeText:async t=>{window.__copied=t}},configurable:true})')
+    act(page, "copyFeedback")
+    page.wait_for_function("window.__copied!==null")
+    project_feedback = page.evaluate("window.__copied")
+    assert "Synthetic question note" in project_feedback
+    assert "SYNTHETIC NAME" not in project_feedback
+    assert "SYNTHETIC MEDICINE" not in project_feedback
     act(page, "doctor")
     report = page.locator("#reportText").input_value()
     assert "SYNTHETIC NAME" in report
     assert "SYNTHETIC MEDICINE" in report
+    assert report.index("Question feedback") < report.index("SYNTHETIC NAME")
     assert not page.locator('[data-act="ai"]').count()
     assert not errors, errors
     assert not network, network

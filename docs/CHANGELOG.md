@@ -391,3 +391,11 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Verified:** [CI run 42235385790](https://github.com/janisp123/mental-health-questionnaire/actions/runs/42235385790) passed the full-bank browser journey and the entire transitional workflow. The smoke journey ran all 48 optional sections/712 questions in its embedded bank, tested multi/single responses with double-tap protection, used the real medication and short-text items, and confirmed report inclusion with no browser errors or network requests. Native Android is still unverified.
 - **Verified commit:** `5ba3a75ba97a61341ff37d5121b6538823f82568` on `develop`.
 - **Next action:** make the 712-question build the sole default, move pilot-only source/tests into `archive/pilot/`, and replace pilot-specific CI with full-bank checks.
+
+### 2026-11-06 · FULL-BUILD-FIRST · full-bank behavior coverage (IN_PROGRESS)
+
+- **Starting commit:** `0118aa214bd1c49dd02d76addeea467b22ea6be6` on `develop`.
+- **Task:** strengthen the full-bank browser journey before archiving legacy pilot-only test coverage.
+- **Files:** `tests/full_bank/browser_helpers.py`, `tests/full_bank/test_runtime.py`, this changelog.
+- **In progress:** adding complete-bank checks for conditional follow-ups, feedback save/edit without medical-answer changes, recovery round-trip, feedback-export privacy, and feedback-before-answer report ordering.
+- **Exact next action:** run Python syntax/build checks locally, then verify the expanded journey in GitHub Chromium CI and record the result before archiving pilot-only material.
