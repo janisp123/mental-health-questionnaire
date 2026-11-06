@@ -11,6 +11,7 @@ on:
       - 'tools/build_pilot.py'
       - 'tools/verify_project_index.py'
       - 'tests/pilot/**'
+      - 'tests/full_bank/**'
       - 'project-manifest.json'
       - 'dist/PILOT_offline_LV_EN_RU_v0.2_NOT_RELEASED.html'
       - '.github/workflows/pilot-checks.yml'
@@ -66,6 +67,8 @@ jobs:
           fi
       - name: Run real offline browser smoke journey
         run: python tests/pilot/test_browser.py
+      - name: Run complete-questionnaire offline browser journey
+        run: python tests/full_bank/test_runtime.py
       - name: Test module and translation independence offline
         run: python tests/pilot/test_independence.py
       - name: Check real section 21 from answering to exported reports

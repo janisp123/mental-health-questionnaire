@@ -373,3 +373,13 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Verification:** 79-file source integrity, 48-module audit/adapter/group/title checks, full-bank packaging, 60-question pilot structural/fidelity/layout checks, report/medicine report tests, JavaScript syntax and `git diff --check` all PASS. Full-browser journey has not yet been retargeted to the full build.
 - **Verified checkpoint:** commit `b81d22411a336fe4cd1ddd68650bb3eea875400c` on `develop`; [CI run 42233108862](https://github.com/janisp123/mental-health-questionnaire/actions/runs/42233108862) passed, including the existing pilot browser journey. The relocated runtime/data boundary is verified with no original question content changed.
 - **Next action:** add a full-bank offline-browser journey using the same app shell; switch active CI to full-bank checks and archive the pilot only after those checks pass.
+
+### 2026-11-06 · FULL-BUILD-FIRST · browser coverage added (IN_PROGRESS)
+
+- **Starting commit:** `27209acb1b35c869b494d695952f76aa160be4c2` on `develop`.
+- **Task:** add a real offline-browser journey for the complete build before removing pilot checks.
+- **Files:** `.github/workflows/pilot-checks.yml`, `tests/full_bank/browser_helpers.py`, `tests/full_bank/test_runtime.py`, this changelog.
+- **Completed:** added a full-bank browser test covering 48 optional sections, all 712 embedded questions, multi/single answering and double-tap handling, the real medication-list and short-text items, and report inclusion. CI now runs this journey with Playwright Chromium.
+- **Local checks:** Python compilation, full-bank structural build test (712 questions/48 groups), and `git diff --check` PASS. Browser execution is **pending CI** because Playwright/Chromium is unavailable in this local environment.
+- **Remaining:** CI must pass the new full-bank browser journey; fix any runtime issue before archiving pilot files or removing pilot-only CI coverage.
+- **Exact next action:** commit this checkpoint, inspect the resulting CI step summary, and resolve any full-bank runtime failures.
