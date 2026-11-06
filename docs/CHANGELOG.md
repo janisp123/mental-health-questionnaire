@@ -425,3 +425,5 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **In progress:** the full build journey now checks fixed centered Skip and return, a real gentle-support mapping, runtime LV/RU/EN switching, doctor report copy/print, and the cumulative ten-skip recovery download/restore.
 - **Local checks:** Python compilation, default full build, source integrity and structural/report tests are the pre-CI gate; actual browser execution is pending the workflow.
 - **Exact next action:** run the updated complete-questionnaire workflow and fix any full-build-only issue before claiming these behaviors verified.
+- **CI finding:** run [42239296482](https://github.com/janisp123/mental-health-questionnaire/actions/runs/42239296482) passed earlier new checks through medication/text entry, but the skip test incorrectly assumed `M33_02` was the final questionnaire item. Skip advanced normally to the next applicable question. Updated the test to assert advancement, confirm the saved skip record, then use Previous to return.
+- **Exact next action:** rerun the workflow and inspect the next failing step, if any.

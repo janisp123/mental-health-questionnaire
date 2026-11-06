@@ -94,9 +94,9 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert abs(skip_box["x"] + skip_box["width"] / 2 - 195) < 2
     assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
     act(page, "skip")
-    assert page.locator(".question").count() == 0
+    assert qid(page) != "M33_02"
     assert backup(page)["answers"]["M33_02"]["kind"] == "skip"
-    act(page, "back")
+    act(page, "previous")
     assert qid(page) == "M33_02"
     act(page, "results")
     page.evaluate('window.__copied=null;Object.defineProperty(navigator,"clipboard",{value:{writeText:async t=>{window.__copied=t}},configurable:true})')
