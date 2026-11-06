@@ -432,3 +432,12 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Verified commit:** `50364b06b58c6c80efc25468efbba843a8e366ec` on `develop`.
 - **Remaining/unverified:** no physical Android Chrome run has been performed. EN/RU and new interface wording still need human language review; no clinical validation is claimed.
 - **Next action:** use the provided HTML on Android Chrome to check downloaded-file opening, touch navigation, backup restore, clipboard and printing; record those results separately from Chromium automation.
+
+### 2026-11-06 · APPLICATION-MODULARITY · IN_PROGRESS
+
+- **Goal:** make routine UI, design, feedback, and report edits small and independently testable without opening or rebuilding questionnaire source content unless a data or integration change requires it.
+- **Starting commit:** `ebab58954fee17fa8be150cf84f2b071bb658051` on `develop`; local tree clean and GitHub `develop` readback matches.
+- **Audit:** question content is already isolated in `src/modules/`; the runtime is concentrated in `src/app/core/app.js` (499 lines), the stylesheet is densely packed in `src/app/core/styles.css`, and `tests/full_bank/test_runtime.py` combines many browser behaviors in one sequential journey. The report renderer is already separate.
+- **Checklist:** (1) [DONE] inspect app/build/test boundaries and confirm clean starting state; (2) [IN_PROGRESS] add a focused source manifest and small test harness; (3) [TODO] extract start and section-selection screens; (4) [TODO] extract question, medicine, and feedback screens; (5) [TODO] isolate result/report presentation and shared flow/recovery only where needed; (6) [TODO] split styles into a few role-based files; (7) [TODO] make focused test suites independently runnable and route routine checks to the relevant suite; (8) [TODO] run the full integration suite once after the structural changes and record remaining limits.
+- **Guardrails:** keep `src/modules/` and original question wording unchanged; keep one self-contained offline HTML output; avoid new runtime dependencies and unnecessary abstractions. Each completed item gets its own concise checkpoint and commit.
+- **Exact next action:** make the builder consume explicit ordered application source lists, first adding a failing focused test for source inclusion/order and unchanged offline output.
