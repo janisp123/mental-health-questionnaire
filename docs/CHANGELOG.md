@@ -276,10 +276,20 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Checks:** adapter PASS for 449 questions in modules 01–24; all condition links resolve to earlier source questions in the tested batch. Full source audit and all 79 original-file hashes PASS.
 - **Next action:** test the next source batch, which contains several multi-choice modules and the largest section so far.
 
-### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 12 (IN_PROGRESS)
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 12
 
 **Task 5g — source-adapter batch 5.**
 - **Starting commit:** `181e00c6eabc6ff784dfe9247f67913de58749bd` on `develop`.
-- **Scope:** extend adapter fidelity checks through module 32, newly adding modules 25–32. This batch includes multi-choice questions in 27, 30, 31 and 32, plus 15 conditional items in each of modules 31 and 32.
+- **Implementation commit:** `e15890bfc2877e25fcf10d1d966a69853112a722` on `develop` (remote readback confirmed).
+- **Files:** `tests/pilot/test_source_adapter.py`, `.github/workflows/pilot-checks.yml`, this changelog.
+- **Completed:** extended exact adapter checks through module 32. The batch contains multi-select rules in modules 27, 30, 31 and 32, with 15 conditional entries each in 31 and 32; all source mappings and earlier-parent checks pass.
+- **Checks:** adapter PASS for 610 questions in modules 01–32. Full source audit and original-file hash verifier PASS. Active pilot remains 60 questions.
+- **Next action:** test modules 33–40, including the two short-text entries and conditional branches.
+
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 13 (IN_PROGRESS)
+
+**Task 5h — source-adapter batch 6.**
+- **Starting commit:** `e15890bfc2877e25fcf10d1d966a69853112a722` on `develop`.
+- **Scope:** extend source comparisons through module 40, newly adding 33–40. Module 33 includes the two short-text entries; modules 34–40 contain conditional branches and multi-select answers.
 - **Files expected:** `tests/pilot/test_source_adapter.py`, `.github/workflows/pilot-checks.yml`, this changelog.
-- **Next action:** add modules 25–32 to exact comparisons and run source-adapter and integrity checks before proceeding.
+- **Next action:** extend exact comparisons and run source-adapter/index/audit checks before proceeding.
