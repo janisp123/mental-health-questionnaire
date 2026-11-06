@@ -1,6 +1,6 @@
 {
   "schema": "mental-health-questionnaire-current-index-v2",
-  "updated_date": "2026-11-05",
+  "updated_date": "2026-11-06",
   "repository": "janisp123/mental-health-questionnaire",
   "development_branch": "develop",
   "distribution_branch": "main",
@@ -80,14 +80,26 @@
       "tests": "tests/pilot/",
       "ci": ".github/workflows/pilot-checks.yml",
       "architecture": "docs/PILOT_ARCHITECTURE.md",
-      "artifact": "PILOT_offline_LV_EN_RU_v0.1_NOT_RELEASED",
+      "artifact": "PILOT_offline_LV_EN_RU_v0.2_NOT_RELEASED",
       "active_sections": [
+        "23",
+        "02",
+        "21",
+        "06",
+        "18",
+        "31",
+        "33"
+      ],
+      "question_count": 60,
+      "source_fidelity_check": "tests/pilot/test_source_fidelity.py",
+      "version": "0.2.0-prototype",
+      "source_groups": [
         "opening",
         "02",
         "21"
       ],
-      "question_count": 60,
-      "source_fidelity_check": "tests/pilot/test_source_fidelity.py"
+      "layout": "src/pilot/modules/layout.json",
+      "presentation_metadata": "src/pilot/reports/presentation.json"
     }
   },
   "import_validation": {

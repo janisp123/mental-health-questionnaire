@@ -10,7 +10,8 @@ const all=[];
 for(const group of data.groups){
  for(const q of group.questions){if(byId[q.id])throw Error("Duplicate question: "+q.id);byId[q.id]=q;all.push(q);}
 }
-all.sort((a,b)=>a.order-b.order);
+// Registry display order is independent of frozen source order.
+let answerLockUntil=0;
 const app=document.getElementById("app");
 const report=window.PilotReports;
 let state={lang:"lv",screen:"start",currentId:null,answers:{},selected:[],sectionDraft:[],sectionConfirmed:false,savedCount:0,notice:"",reportView:"doctor",draft:null};
@@ -19,7 +20,7 @@ function esc(s){return report.esc(s);}
 function label(key){return esc(ui()[key]||key);}
 function btn(act,key,cls,extra){return '<button type="button" data-act="'+act+'" class="'+(cls||"")+'" '+(extra||"")+'>'+label(key)+'</button>';}
 function isSafety(q){return !!q.safetyRequired;}
-function canSkip(q){return !isSafety(q);}
+function canSkip(q){return !!q;}
 function questionVisible(q){
  const c=q.context;if(!c || !c.id)return true;
  const parent=byId[c.id];
@@ -31,6 +32,7 @@ function questionVisible(q){
  if(Array.isArray(c.hideValues)&&c.hideValues.some(v=>chosen.has(v)))return false;
  return true;
 }
+function reportQuestions(){return all.filter(questionVisible);}
 function active(){return all.filter(q=>(groups.get(q.module).required||state.selected.includes(q.module))&&questionVisible(q));}
 function current(){return byId[state.currentId]||null;}
 function countGroup(group){
@@ -45,16 +47,38 @@ function sectionBar(){
 }
 function header(){
  const opts=["lv","en","ru"].map(id=>'<option value="'+id+'"'+(id===state.lang?" selected":"")+">"+({lv:"Latviešu",en:"English",ru:"Русский"}[id])+"</option>").join("");
- return '<header><div class="header-row"><h1>'+label("project")+'</h1><label class="lang">'+label("language")+' <select id="language">'+opts+'</select></label></div><p class="muted">'+label("pilot")+'</p><p class="prototype">'+label("notReleased")+'</p>'+sectionBar()+'</header>';
+ return '<header>'+(state.screen==="start"?'<h1>'+label("project")+'</h1>':"")+'<label class="lang">'+label("language")+' <select id="language">'+opts+'</select></label></header>';
+}
+function supportLinks(){
+ return '<a href="tel:+371116123?oai_link_source=model_response_hotline">'+label("supportLink")+'</a><p>'+label("emergencyBody")+' <a href="tel:112">112</a></p>';
+}
+function supportCard(){
+ if(!state.support)return "";
+ return '<aside id="support-message" class="support-card" role="status" aria-live="polite" tabindex="-1"><h2>'+label("supportTitle")+'</h2>'+supportLinks()+'<p>'+label("supportBody")+'</p>'+btn("dismissSupport","dismissSupport")+'</aside>';
+}
+function offerSupport(q,codes){
+ const rules=data.presentation.questions[q.id]?.support||{};
+ const levels=codes.map(c=>rules[c]).filter(Boolean);
+ const level=levels.includes("emergency")?"emergency":levels.length?"support":null;
+ if(!level)return;
+ state.supportSeen=state.supportSeen||[];
+ if(!state.supportSeen.includes(level)){
+  state.support=level;state.supportSeen.push(level);
+  if(level==="emergency"&&!state.supportSeen.includes("support"))state.supportSeen.push("support");
+  state.focusSupport=true;
+ }
+}
+function navigation(){
+ return state.screen==="question"?'<nav class="question-nav" aria-label="'+label("progress")+'">'+btn("previous","prev")+btn("skip","skipQuestion")+btn("support","supportMenu")+'</nav>':"";
 }
 function toolbar(){
  return '<nav class="toolbar" aria-label="Tools">'+btn("backup","saveBackup")+ '<label class="file-label">'+label("restoreBackup")+'<input id="restore" type="file" accept=".json,application/json" aria-label="'+label("restoreBackup")+'"></label>'+btn("results","results")+btn("sections","editSections")+'</nav>';
 }
 function footer(){
- return '<footer><details><summary>'+label("legal")+'</summary><p>'+label("intro")+'</p><p>'+label("privacy")+'</p><p>'+label("help")+'</p></details><details><summary>'+label("helpers")+'</summary><p>'+label("credits")+'</p></details><p class="muted">'+label("footer")+'</p></footer>';
+ return '<footer><details><summary>'+label("tools")+'</summary>'+toolbar()+sectionBar()+'</details><details id="support-details"><summary>'+label("supportMenu")+'</summary><p>'+label("supportBody")+'</p>'+supportLinks()+'</details><details><summary>'+label("guideTitle")+'</summary><p>'+label("guideBody")+'</p></details><details><summary>'+label("notesTitle")+'</summary><p>'+label("notesBody")+'</p></details><details><summary>'+label("legal")+'</summary><p>'+label("intro")+'</p><p>'+label("privacy")+'</p></details><details><summary>'+label("helpers")+'</summary><p>'+label("credits")+'</p></details><p class="muted">'+label("pilot")+' · '+label("footer")+'</p></footer>';
 }
 function renderStart(){
- return '<section class="card"><p>'+label("intro")+'</p><p class="warning">'+label("reviewNote")+'</p><p>'+label("noAuto")+'</p>'+btn("start","start","primary")+ '<div class="actions">'+btn("all","chooseAll")+btn("choose","chooseOwn")+btn("guide","chooseGuide")+'</div></section>';
+ return '<section class="card"><p>'+label("intro")+'</p><p class="muted">'+label("reviewNote")+'</p><p>'+label("noAuto")+'</p>'+btn("start","start","primary")+ '<div class="actions">'+btn("all","chooseAll")+btn("choose","chooseOwn")+btn("guide","chooseGuide")+'</div></section>';
 }
 function renderSelector(){
  const guide=state.screen==="guide";
@@ -73,11 +97,6 @@ function storedDraft(q){
  if(r?.kind==="text")return {value:r.value||""};
  return {codes:[],value:""};
 }
-function safetyText(q,codes){
- if(codes.some(code=>q.urgentCodes?.includes(code)))return ui().help;
- if(codes.some(code=>q.discussCodes?.includes(code)))return ui().attention;
- return "";
-}
 function renderQuestion(){
  const q=current(),u=ui();
  if(!q){state.screen="results";return renderResults();}
@@ -95,57 +114,54 @@ function renderQuestion(){
   q.choiceCodes.map(key=>{
     const checked=(state.draft.codes||[]).includes(key);
     const kind=q.multi?"checkbox":"radio";
-    return '<label class="choice"><input type="'+kind+'" name="answer" value="'+esc(key)+'"'+(checked?" checked":"")+'> <span><b>'+esc(key)+'</b> '+esc(t.choices[key]||key)+'</span></label>';
+    return '<label class="choice"><input type="'+kind+'" name="answer" value="'+esc(key)+'"'+(checked?" checked":"")+'> <span>'+esc(t.choices[key]||key)+'</span></label>';
   }).join("")+'</fieldset>';
  }
- return '<section class="card question"><div class="muted">'+esc(group)+' · '+(idx+1)+'/'+queue.length+' · '+esc(q.id)+'</div><h2>'+esc(t.title)+'</h2>'+time+help+options+'<p id="safetyHint" role="alert" class="warning"'+(safetyText(q,state.draft.codes||[])?'':' hidden')+'>'+esc(safetyText(q,state.draft.codes||[]))+'</p>'+
- '<p class="muted">'+label("saveWarning")+'</p>'+btn("save","next","primary")+
- '<div class="actions">'+(canSkip(q)?btn("skip","skipQuestion"):"")+btn("previous","prev")+(!groups.get(q.module).required?btn("skipSection","skipSection"):"")+btn("sections","editSections")+btn("end","skipRest")+'</div></section>';
+ return '<section class="card question" data-question="'+esc(q.id)+'"><div class="muted">'+esc(group)+' · '+(idx+1)+'/'+queue.length+'</div><h2 tabindex="-1" id="question-heading">'+esc(t.title)+'</h2>'+time+help+options+
+ '<p class="muted">'+label(q.multi||q.type==="shortText"?"saveWarning":"autoHint")+'</p>'+(q.multi||q.type==="shortText"?btn("save","next","primary"):"")+
+ '<div class="actions">'+btn("skipSection","skipSection")+btn("end","skipRest")+'</div></section>';
+
 }
 function renderResults(){
- const qs=active(),u=ui(),v=report.counters(qs,state.answers);
+ const qs=reportQuestions(),u=ui(),v=report.counters(qs,state.answers);
  const stats='<div class="stats"><span>'+label("countDone")+' <b>'+v.answered+'</b></span><span>'+label("countSkip")+' <b>'+v.skipped+'</b></span><span>'+label("countOpen")+' <b>'+v.unanswered+'</b></span></div>';
  const selected=data.groups.map(g=>'<p>'+esc(g.titles[state.lang])+' · '+(g.required||state.selected.includes(g.id)?label("selected"):label("notSelected"))+'</p>').join("");
- const flag=report.flags(qs,state.answers).length;
- return '<section class="card"><h2>'+label("results")+'</h2>'+stats+selected+(qs.some(q=>isSafety(q)&&!state.answers[q.id])?'<p class="warning">'+label("safetyPending")+'</p>':"")+'<p>'+label("doctorDisclaimer")+'</p>'+
- (flag?'<p class="warning">'+label("attention")+': '+flag+'. '+label("warningSensitive")+'</p>':'<p>'+label("noneFlagged")+'</p>')+
+ return '<section class="card"><h2>'+label("results")+'</h2>'+stats+selected+'<p>'+label("doctorDisclaimer")+'</p><p>'+label("noneFlagged")+'</p>'+
  '<div class="actions">'+btn("doctor","specialist","primary-inline")+btn("ai","ai")+btn("downloadTxt","txt")+btn("reference","reference")+'</div>'+
- '<div class="actions">'+btn("back","back")+btn("reviewSafety","reviewSafety")+btn("new","new")+'</div></section>';
+ '<div class="actions">'+btn("back","back")+btn("sections","editSections")+btn("new","new")+'</div></section>';
+
 }
 function codedReport(){
- const applicable=new Set(active().map(q=>q.id));
- const availability=q=>!groups.get(q.module).required&&!state.selected.includes(q.module)
-   ?"omitted":!applicable.has(q.id)?"hidden":null;
- return report.codedText(all,state.answers,state.selected,state.lang,ui(),availability,data.presentation);
+ return report.aiText(reportQuestions(),state.answers,state.selected,state.lang,ui(),data.groups,data.presentation);
 }
 function renderReport(){
- const q=active(),u=ui(),doctor=state.reportView!=="ai";
+ const q=reportQuestions(),u=ui(),doctor=state.reportView!=="ai";
  const heading=doctor?u.doctorHeading:u.coded;
  const result=doctor?report.doctorText(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation):codedReport();
  return '<section class="card report"><h2>'+esc(heading)+'</h2><p>'+label("doctorDisclaimer")+'</p><textarea id="reportText" readonly rows="17">'+esc(result)+'</textarea><pre class="print-report">'+esc(result)+'</pre>'+
  '<div class="actions">'+btn(doctor?"copyDoctor":"copyAI",doctor?"copyDoctor":"copyAI","primary-inline")+
  btn("doctor","specialist")+btn("ai","ai")+btn("print","print")+btn("downloadReport","downloadReport")+btn("downloadTxt","txt")+btn("reference","reference")+'</div>'+
- '<div class="actions">'+btn("resultScreen","backToAnswers")+btn("reviewSafety","reviewSafety")+'</div></section>';
+ '<div class="actions">'+btn("resultScreen","backToAnswers")+btn("sections","editSections")+'</div></section>';
 }
 function render(){
+ const keepSupportFocus=document.activeElement?.id==="support-message";
  document.documentElement.lang=state.lang;
  document.title=ui().project;
  const body=state.screen==="start"?renderStart():(state.screen==="selector"||state.screen==="guide")?renderSelector():state.screen==="question"?renderQuestion():state.screen==="report"?renderReport():renderResults();
- app.innerHTML='<main>'+header()+toolbar()+(state.notice?'<p role="status" class="notice">'+esc(state.notice)+'</p>':"")+body+footer()+'</main>';
+ app.innerHTML='<main>'+header()+supportCard()+(state.notice?'<p role="status" class="notice">'+esc(state.notice)+'</p>':"")+body+footer()+navigation()+'</main>';
+ if(state.focusSupport||keepSupportFocus){document.getElementById('support-message')?.focus({preventScroll:true});state.focusSupport=false;}
 }
-function setQuestion(id){state.currentId=id;state.draft=null;state.screen="question";state.notice="";render();}
+function setQuestion(id){state.currentId=id;state.draft=null;state.screen="question";state.notice="";render();window.scrollTo(0,0);}
 function advance(){
- const list=active();
- const now=list.findIndex(q=>q.id===state.currentId);
- const next=list.slice(now+1).find(q=>!state.answers[q.id]);
+ const list=active(),now=list.findIndex(q=>q.id===state.currentId),next=list[now+1];
  if(next){setQuestion(next.id);return;}
- const initialRemaining=list.some(q=>groups.get(q.module).required&&!state.answers[q.id]);
- if(!initialRemaining && !state.sectionConfirmed){state.sectionDraft=[...state.selected];state.screen="selector";state.notice="";render();return;}
- const later=list.find(q=>!state.answers[q.id]);
- if(later){setQuestion(later.id);return;}
- state.screen="results";state.draft=null;state.notice="";render();
+ state.screen="results";state.draft=null;state.notice="";render();window.scrollTo(0,0);
 }
-function start(){const q=active().find(x=>!state.answers[x.id]);if(q)setQuestion(q.id);else {state.screen=state.sectionConfirmed?"results":"selector";render();}}
+function start(){
+ if(!state.sectionConfirmed){state.selected=[...optionalIds];state.sectionConfirmed=true;}
+ const q=active().find(x=>!state.answers[x.id])||active()[0];
+ if(q)setQuestion(q.id);else{state.screen="selector";render();}
+}
 function choiceStatus(q,codes){
  const statuses=codes.map(c=>q.answerStatus?.[c]);
  return statuses.includes("refused")?"refused":statuses.includes("uncertain")?"uncertain":"answered";
@@ -181,6 +197,7 @@ function save(){
    rec.kind="choice";rec.codes=codes;rec.status=choiceStatus(q,codes);
  }
  state.answers[q.id]=rec;state.savedCount++;
+ if(rec.kind==="choice")offerSupport(q,rec.codes);
  advanceAfterSave();
  if(state.savedCount%10===0){
    downloadBackup();
@@ -191,7 +208,7 @@ function skip(){
  const q=current();if(!q||!canSkip(q))return;
  state.answers[q.id]={kind:"skip",savedAt:new Date().toISOString(),status:"skipped"};
  state.savedCount++;
- advance();
+ advanceAfterSave();
  if(state.savedCount%10===0){downloadBackup();state.notice=ui().saved10;render();}
 }
 function previous(){const list=active(),idx=list.findIndex(q=>q.id===state.currentId);if(idx>0)setQuestion(list[idx-1].id);else {state.screen="start";render();}}
@@ -201,7 +218,8 @@ function skipSection(){
  for(const item of all.filter(x=>x.module===q.module&&questionVisible(x))){
   if(!state.answers[item.id])state.answers[item.id]={kind:"skip",savedAt:new Date().toISOString(),status:"skipped"};
  }
- advance();
+ const next=active().find(x=>x.module!==q.module&&all.indexOf(x)>all.indexOf(q));
+ if(next)setQuestion(next.id);else{state.screen="results";render();}
 }
 function skipRest(){if(window.confirm(ui().restConfirm)){state.screen="results";state.draft=null;render();}}
 function showSections(m){state.screen="selector";state.sectionDraft=m?[...m]:[...state.selected];state.draft=null;render();}
@@ -223,11 +241,9 @@ function setDraft(ev){
   if(q.maxChoices&&codes.length>q.maxChoices){state.notice=ui().maxChoices+" "+q.maxChoices;codes=codes.filter(c=>c!==inp.value);}
  }
  state.draft={forId:q.id,codes};
- const hint=document.getElementById("safetyHint");
- hint.textContent=safetyText(q,codes);hint.hidden=!hint.textContent;
  if(q.multi){
   app.querySelectorAll('input[name="answer"]').forEach(el=>el.checked=codes.includes(el.value));
-  const message=app.querySelector('[role="status"]');if(message)message.textContent=state.notice;
+  const message=app.querySelector('.notice');if(message)message.textContent=state.notice;
  }
 }
 function downloadFile(name,contents,mime){
@@ -235,7 +251,7 @@ function downloadFile(name,contents,mime){
  const href=URL.createObjectURL(blob),link=document.createElement("a");link.href=href;link.download=name;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(href),1500);
 }
 function downloadBackup(){
- const payload={schema:"mental-pilot-recovery-v1",version:data.version,lang:state.lang,selected:[...state.selected],sectionConfirmed:state.sectionConfirmed,currentId:state.currentId,answers:state.answers,savedCount:state.savedCount,reviewQueue:state.reviewQueue||null,reviewReturn:state.reviewReturn||null,exportedAt:new Date().toISOString()};
+ const payload={schema:"mental-pilot-recovery-v1",version:data.version,layoutVersion:data.layout_version,lang:state.lang,selected:[...state.selected],sectionConfirmed:state.sectionConfirmed,currentId:state.currentId,answers:state.answers,savedCount:state.savedCount,reviewQueue:state.reviewQueue||null,reviewReturn:state.reviewReturn||null,exportedAt:new Date().toISOString()};
  downloadFile("anketa-pilot-recovery.json",JSON.stringify(payload,null,2),"application/json");
 }
 function restore(file){
@@ -245,6 +261,7 @@ function restore(file){
   try{
    const x=JSON.parse(String(reader.result));
    if(x.schema!=="mental-pilot-recovery-v1"||!x.answers||typeof x.answers!=="object"||Array.isArray(x.answers))throw Error("Invalid schema");
+   if(x.layoutVersion&&x.layoutVersion!==data.layout_version)throw Error("Unsupported layout");
    const a={};
    for(const [id,rec] of Object.entries(x.answers)){
     const q=byId[id];if(!q||!rec||typeof rec!=="object")throw Error("Invalid record");
@@ -256,7 +273,7 @@ function restore(file){
     }else if(rec.kind==="text"){
       if(q.type!=="shortText"||typeof rec.value!=="string")throw Error("Invalid text");
       a[id]={kind:"text",value:rec.value.slice(0,200),status:"answered",savedAt:rec.savedAt||""};
-    }else if(rec.kind==="skip"&&!isSafety(q))a[id]={kind:"skip",status:"skipped",savedAt:rec.savedAt||""};
+    }else if(rec.kind==="skip")a[id]={kind:"skip",status:"skipped",savedAt:rec.savedAt||""};
     else throw Error("Unknown record");
    }
    if(x.selected!=null&&(!Array.isArray(x.selected)||x.selected.some(id=>!optionalIds.includes(id))))
@@ -268,7 +285,12 @@ function restore(file){
    state.reviewQueue=queue?.length?[...queue]:null;
    state.reviewReturn=state.reviewQueue&&["question","report","results"].includes(x.reviewReturn?.screen)
      ?{screen:x.reviewReturn.screen,id:x.reviewReturn.id}:null;
-   state.answers=a;state.selected=Array.isArray(x.selected)?optionalIds.filter(id=>x.selected.includes(id)):[];state.sectionConfirmed=!!x.sectionConfirmed;
+   state.answers=a;
+   const selected=Array.isArray(x.selected)?x.selected:[];
+   // Old files did not list their implicitly mandatory opening group.
+   state.selected=optionalIds.filter(id=>selected.includes(id)||(!x.layoutVersion&&data.legacy_opening_groups.includes(id)));
+   state.sectionConfirmed=!!x.sectionConfirmed;
+   state.support=null;state.supportSeen=[];
    state.savedCount=Number.isInteger(x.savedCount)&&x.savedCount>=0?x.savedCount:Object.keys(a).length;
    if(["lv","en","ru"].includes(x.lang))state.lang=x.lang;
    state.currentId=typeof x.currentId==="string"&&byId[x.currentId]?x.currentId:null;
@@ -291,11 +313,13 @@ async function copyText(text){
   else if(area&&document.execCommand("copy"))state.notice=ui().copied;
   else state.notice=ui().copyFailure;
  }catch(e){state.notice=ui().copyFailure;}
- const target=document.querySelector('[role="status"]');
+ const target=document.querySelector('.notice');
  if(target)target.textContent=state.notice;else{const p=document.createElement("p");p.role="status";p.className="notice";p.textContent=state.notice;app.querySelector("header").after(p);}
 }
 function action(key){
- const q=active(),u=ui();
+ const q=reportQuestions(),u=ui();
+ if(key==="support"){state.support="support";state.focusSupport=true;render();window.scrollTo(0,0);return;}
+ if(key==="dismissSupport"){state.support=null;render();return;}
  if(key==="start"){start();return;}
  if(key==="all"){if(state.screen==="selector"||state.screen==="guide"){state.sectionDraft=[...optionalIds];render();}else showSections([...optionalIds]);return;}
  if(key==="choose"){showSections([]);return;}
@@ -336,7 +360,16 @@ function action(key){
    copyText(text);return;
  }
 }
-app.addEventListener("click",e=>{const el=e.target.closest("[data-act]");if(el){e.preventDefault();
+function singleAnswer(code){
+ const q=current();if(!q||q.multi||q.type==="shortText"||performance.now()<answerLockUntil)return;
+ answerLockUntil=performance.now()+500;
+ state.draft={forId:q.id,codes:[code]};save();
+}
+app.addEventListener("click",e=>{
+ const choice=e.target.closest(".choice");
+ const radio=choice?.querySelector('input[name="answer"][type="radio"]');
+ if(radio){e.preventDefault();if(e.detail<=1)singleAnswer(radio.value);return;}
+ const el=e.target.closest("[data-act]");if(el){e.preventDefault();
  if(el.dataset.jump){
   const choices=active().filter(q=>q.module===el.dataset.jump);
   const next=choices.find(q=>!state.answers[q.id])||choices[0];
@@ -350,7 +383,7 @@ app.addEventListener("change",e=>{
   render();return;
  }
  if(e.target.id==="restore"){restore(e.target.files[0]);return;}
- if(e.target.name==="answer")setDraft(e);
+ if(e.target.name==="answer"){if(current()?.multi)setDraft(e);else singleAnswer(e.target.value);}
 });
 app.addEventListener("input",e=>{
  if(e.target.id==="shortText"&&current()){state.draft={forId:current().id,value:e.target.value};}

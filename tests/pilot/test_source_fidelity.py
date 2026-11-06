@@ -44,7 +44,7 @@ if __name__ == "__main__":
     for path in sorted((ROOT/"src/modules").glob("182_MODULE_*_v16.json")):
         source = json.loads(path.read_text(encoding="utf-8"))
         originals.extend((source["section"], e) for e in source["entries"])
-    groups = build_bundle()["groups"]
+    groups = build_bundle(apply_layout=False)["groups"]
     count = verify(groups, originals)
     # Damage only the in-memory bundle, after the clean comparison passes.
     q = next(q for g in groups for q in g["questions"] if q["id"]=="M02_01")

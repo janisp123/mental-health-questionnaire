@@ -114,3 +114,13 @@ Complete detailed historical Latvian changelog remains in the [archived Drive `1
 - Next: optional display layout, fixed navigation, single-tap guard, support communication, legacy restore and browser regression updates.
 
 - Stage 1 implementation commit: `c89a601c6caa7cef7fd80692ebe8dfa0adf6c954`; develop head readback confirmed.
+
+### UX-SUPPORT-REPORT-REDESIGN — stage 2 checkpoint (IN_PROGRESS)
+- Implemented pilot v0.2 optional thematic display layout (60 unchanged source questions); personal details last; ordinary goals first. The old opening files remain source storage, not a mandatory questionnaire sequence.
+- Single-choice taps save/advance with 500 ms answer-only protection; multi/text retain manual save. Every question is skippable with fixed centered Skip and Back. Scrollable content reserves the navigation viewport. Back/edit and conditional navigation retain saved data.
+- Added persistent, focusable, calm LV/EN/RU support with verified 116 123 and distinct 112 guidance. Duplicate messages are suppressed; explicit immediate-help disclosures can show emergency guidance. No automatic contacting or diagnostic categories.
+- Added legacy opening-group migration and preserved pilot-v1 recovery/review queues. Tools, usage guide and v0.1/v0.2 notes are collapsed below the questionnaire. No separate user README is needed for the new test artifact.
+- Doctor ordering now puts personal information first among equally neutral entries; serious entries remain last. Recorded applicable answers survive topic deselection in exports; conditionally hidden answers remain in recovery. AI copy contains plain self-contained responses, not codes/JSON/key. All underlying source files remain unchanged.
+- Verified locally: structural/source-fidelity/layout/report tests and JS syntax; offline Chromium UX journey (single/multi/text, physical double click, back/edit, 320/390/540 px repeated Skip, every-ten recovery, legacy/invalid restore, support accessibility, clipboard, HTML/PDF print, all language structures); module/locale independence and real section 21 journeys passed. Source wording and code mappings are compared to frozen originals. Inspected mobile screenshot and extracted printed sample text.
+- An alternate Playwright download succeeded: local browser is Chromium Headless Shell 141 on Linux. This does NOT verify native Android Chrome or human translation quality.
+- Next: full develop CI (including all 79 imported-file hashes/712-question inventory), final browser regressions and recorded exact commit/run. TASK_DONE not yet claimed.

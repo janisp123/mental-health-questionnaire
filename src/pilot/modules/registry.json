@@ -1,6 +1,6 @@
 {
   "schema": "pilot-active-registry-v1",
-  "app_version": "0.1.0-prototype",
+  "app_version": "0.2.0-prototype",
   "baseline": "LV-v16",
   "groups": [
     {

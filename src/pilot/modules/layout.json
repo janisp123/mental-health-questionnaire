@@ -1,0 +1,47 @@
+{
+  "schema": "pilot-layout-v1",
+  "version": "optional-topics-v1",
+  "order": [
+    "23",
+    "02",
+    "21",
+    "06",
+    "18",
+    "31",
+    "33"
+  ],
+  "titles": {
+    "23": {
+      "lv": "Ikdiena un vēlamie uzlabojumi",
+      "en": "Everyday life and goals",
+      "ru": "Повседневная жизнь и цели"
+    },
+    "06": {
+      "lv": "Pašsajūta un drošība",
+      "en": "Wellbeing and safety",
+      "ru": "Самочувствие и безопасность"
+    },
+    "18": {
+      "lv": "Dusmas un rīcība",
+      "en": "Anger and actions",
+      "ru": "Гнев и действия"
+    },
+    "31": {
+      "lv": "Mājas un tuvinieki",
+      "en": "Home and people close to you",
+      "ru": "Дом и близкие"
+    },
+    "33": {
+      "lv": "Par jums un konsultāciju (pēc izvēles)",
+      "en": "About you and the appointment (optional)",
+      "ru": "О вас и консультации (по желанию)"
+    }
+  },
+  "legacy_opening_groups": [
+    "06",
+    "18",
+    "23",
+    "31",
+    "33"
+  ]
+}

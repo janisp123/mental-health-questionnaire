@@ -22,7 +22,7 @@ def read_json(path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def build_bundle():
+def build_bundle(apply_layout=True):
     registry = read_json(SOURCE / "modules" / "registry.json")
     ui = {}
     for lang in LANGS:
@@ -81,9 +81,47 @@ def build_bundle():
                 raise ValueError("Unresolved condition " + q["id"])
             if context and by_id[context["id"]]["order"] >= q["order"]:
                 raise ValueError("Condition must reference an earlier question: " + q["id"])
+    presentation = read_json(SOURCE / "reports" / "presentation.json")
+    for qid, rule in presentation["questions"].items():
+        if qid not in by_id:
+            raise ValueError("Presentation references an unknown question: " + qid)
+        q = by_id[qid]
+        if set(rule["weights"]) != set(q["choiceCodes"]):
+            raise ValueError("Presentation answer codes differ: " + qid)
+        for code, weight in rule["weights"].items():
+            if weight is not None and (type(weight) is not int or weight not in range(4)):
+                raise ValueError("Invalid editorial priority: " + qid)
+            if q.get("answerStatus", {}).get(code) in ("uncertain", "refused") and weight is not None:
+                raise ValueError("Uncertain/refused response must be unrated: " + qid)
+        if "labels" in rule and set(rule["labels"]) != set(LANGS):
+            raise ValueError("Missing report label language: " + qid)
+        if any(code not in q["choiceCodes"] or level not in ("support", "emergency")
+               for code, level in rule.get("support", {}).items()):
+            raise ValueError("Invalid support trigger: " + qid)
+    layout = read_json(SOURCE / "modules" / "layout.json")
+    if apply_layout:
+        # Original files remain storage/source-fidelity units. Presentation topics are separate.
+        topics = {}
+        for source in groups:
+            for q in source["questions"]:
+                key = str(q["originModule"]).zfill(2) if source["id"] == "opening" else source["id"]
+                if key not in topics:
+                    titles = layout["titles"].get(key, source["titles"])
+                    topics[key] = {"id": key, "titles": titles, "concerns": titles,
+                                   "required": False, "questions": []}
+                q["module"] = key
+                topics[key]["questions"].append(q)
+        order = layout["order"] + [key for key in topics if key not in layout["order"]]
+        groups = [topics[key] for key in order if key in topics]
+        positions = {q["id"]: i for i, q in enumerate(q for g in groups for q in g["questions"])}
+        for g in groups:
+            for q in g["questions"]:
+                if q.get("context") and positions[q["context"]["id"]] >= positions[q["id"]]:
+                    raise ValueError("Presentation must keep parent before follow-up: " + q["id"])
     return {"schema": "offline-questionnaire-pilot-v1", "version": registry["app_version"],
+            "layout_version": layout["version"], "legacy_opening_groups": layout["legacy_opening_groups"],
             "baseline": registry["baseline"], "ui": ui, "groups": groups,
-            "presentation": read_json(SOURCE / "reports" / "presentation.json"),
+            "presentation": presentation,
             "release_status": {"lv": "PROTOTYPE", "en": "DRAFT_NOT_RELEASED", "ru": "DRAFT_NOT_RELEASED"}}
 
 
@@ -111,7 +149,7 @@ def make_html():
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output", type=Path, default=ROOT / "dist" / "PILOT_offline_LV_EN_RU_v0.1_NOT_RELEASED.html")
+    parser.add_argument("--output", type=Path, default=ROOT / "dist" / "PILOT_offline_LV_EN_RU_v0.2_NOT_RELEASED.html")
     args = parser.parse_args()
     output = make_html().encode("utf-8")
     args.output.parent.mkdir(parents=True, exist_ok=True)

@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[2]
 spec = importlib.util.spec_from_file_location("pilot_build", ROOT / "tools" / "build_pilot.py")
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
-bundle = module.build_bundle()
+bundle = module.build_bundle(apply_layout=False)
 assert bundle["schema"] == "offline-questionnaire-pilot-v1"
 groups = {g["id"]: g for g in bundle["groups"]}
 opening = groups["opening"]["questions"]
@@ -39,7 +39,7 @@ assert "navigator.sendBeacon" not in html and "fetch(" not in html and "XMLHttpR
 blob=re.search(r'<script id="pilot-data" type="application/json">(.*?)</script>',html,re.S)
 assert blob, "Embedded data missing"
 stored=json.loads(blob.group(1))
-assert stored == bundle
+assert stored == module.build_bundle()
 assert stored["release_status"]["en"] == "DRAFT_NOT_RELEASED"
 assert stored["release_status"]["ru"] == "DRAFT_NOT_RELEASED"
 print(f"PASS structural: {len(questions)} questions, 3 languages, no runtime network imports")

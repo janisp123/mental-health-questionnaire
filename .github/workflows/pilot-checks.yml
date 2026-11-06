@@ -10,7 +10,7 @@ on:
       - 'tools/verify_project_index.py'
       - 'tests/pilot/**'
       - 'project-manifest.json'
-      - 'dist/PILOT_offline_LV_EN_RU_v0.1_NOT_RELEASED.html'
+      - 'dist/PILOT_offline_LV_EN_RU_v0.2_NOT_RELEASED.html'
       - '.github/workflows/pilot-checks.yml'
   workflow_dispatch:
 
@@ -32,6 +32,10 @@ jobs:
         run: python tests/pilot/test_build.py
       - name: Compare active questions and choices against frozen v16
         run: python tests/pilot/test_source_fidelity.py
+      - name: Check optional layout and report semantics
+        run: |
+          python tests/pilot/test_layout.py
+          node tests/pilot/test_reports.js
       - name: Check shared JavaScript syntax
         run: |
           node --check src/pilot/core/app.js
@@ -57,7 +61,7 @@ jobs:
         if: success()
         uses: actions/upload-artifact@v4
         with:
-          name: PILOT_offline_LV_EN_RU_v0.1_NOT_RELEASED
-          path: dist/PILOT_offline_LV_EN_RU_v0.1_NOT_RELEASED.html
+          name: PILOT_offline_LV_EN_RU_v0.2_NOT_RELEASED
+          path: dist/PILOT_offline_LV_EN_RU_v0.2_NOT_RELEASED.html
           retention-days: 14
 

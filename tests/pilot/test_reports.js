@@ -30,6 +30,7 @@ for(const lang of ['lv','en','ru']){
  assert(pos('M06_01')<pos('M02_03'));
  assert(pos('M02_03')<pos('M02_02'));
  assert(pos('M02_02')<pos('M06_02'));
+ assert(pos('M33_01')<pos('M06_01'));
  assert(pos('M33_01')<pos('M06_02'));
  assert(!html.includes('<Synthetic'));assert(html.includes('&lt;Synthetic &amp; example&gt;'));
  assert(!/risk score|risk percentage|High attention|weight:/.test(doc));

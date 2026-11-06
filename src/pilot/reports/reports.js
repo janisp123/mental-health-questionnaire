@@ -41,18 +41,19 @@ function entries(questions,answers,locale,presentation,sorted) {
   const t=q.translations[locale],rec=answers[q.id],rule=presentation?.questions?.[q.id];
   const name=rule?.labels?.[locale]||t.title;
   const value=rec.kind==="text"?rec.value:(rec.codes||[]).map(c=>t.choices[c]).join("; ");
-  return {id:q.id,index,weight:priority(q,rec,presentation),text:name+(t.time?" ("+t.time+")":"")+": "+value};
+  const rank=presentation?.topicOrder?.indexOf(q.module)??-1;
+  return {id:q.id,index,topic:rank<0?999:rank,weight:priority(q,rec,presentation),text:name+(t.time?" ("+t.time+")":"")+": "+value};
  });
  // Unrated disclosures sit after ordinary information, before weighted difficulties.
  // This placement is a layout convention, not an inferred response or severity.
- if(sorted)list.sort((a,b)=>(a.weight===null?0.5:a.weight)-(b.weight===null?0.5:b.weight)||a.index-b.index);
+ if(sorted)list.sort((a,b)=>(a.weight===null?0.5:a.weight)-(b.weight===null?0.5:b.weight)||a.topic-b.topic||a.index-b.index);
  return list;
 }
 function doctorText(questions,answers,selected,locale,ui,groups,presentation) {
  const v=counters(questions,answers);
  return [ui.doctorHeading,ui.doctorDisclaimer,
   ui.countDone+": "+v.answered+" · "+ui.countSkip+": "+v.skipped+" · "+ui.countOpen+": "+v.unanswered,
-  ui.omissionNote,"",...entries(questions,answers,locale,presentation,true).map(e=>e.text)].join("\n");
+  ui.omissionNote,ui.coverageNote,"",...entries(questions,answers,locale,presentation,true).map(e=>e.text)].join("\n");
 }
 function doctorHtml(questions,answers,selected,locale,ui,groups,presentation) {
  const text=doctorText(questions,answers,selected,locale,ui,groups,presentation);

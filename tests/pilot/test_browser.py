@@ -1,153 +1,108 @@
-#!/usr/bin/env python3
-"""Headless Chromium smoke journeys for the two-section offline prototype.
-
-Requires: pip install playwright; python -m playwright install chromium
-Runs against a file:// URL. No remote site, tracker or analytics are needed.
-"""
-import os
-from pathlib import Path
-import tempfile
-import sys
-
+"""Offline UX/recovery/report regression. Desktop Chromium, NOT native Android."""
+import json,tempfile
 from playwright.sync_api import sync_playwright
+from browser_helpers import *
 
-ROOT=Path(__file__).resolve().parents[2]
-sys.path.insert(0,str(ROOT / "tools"))
-from build_pilot import make_html
-
-with tempfile.TemporaryDirectory() as temp:
-    path=Path(temp)/"prototype.html"
-    path.write_text(make_html(),encoding="utf-8")
-    with sync_playwright() as p:
-        browser=p.chromium.launch(executable_path=os.getenv("PILOT_BROWSER"),headless=True,args=["--no-sandbox"])
-        page=browser.new_page(accept_downloads=True, viewport={"width":393,"height":851}, is_mobile=True, has_touch=True, offline=True)
-        errors=[]
-        page.on("pageerror",lambda err: errors.append(str(err)))
-        requests=[]
-        page.on("request",lambda request:requests.append(request.url) if request.url.startswith(("https://", "http://")) else None)
-        page.goto(path.as_uri())
-        assert "Sagatavošanās" in page.locator("h1").inner_text()
-        assert page.locator('[data-act="start"]').count()==1
-        page.select_option("#language","en")
-        assert page.get_by_text("PROTOTYPE · NOT PUBLISHED").count()==1
-        page.click('[data-act="choose"]')
-        assert page.locator("#optional02").count()==1
-        page.locator("#optional02").check()
-        page.click('[data-act="confirm"]')
-        assert "M33_01" in page.locator(".question").inner_text()
-        page.locator("#shortText").fill("FAKE_TEST_NAME")
-        # Editing an answer without Save & Next must not commit it.
-        page.click('[data-act="results"]')
-        assert page.get_by_text("Some opening safety questions still need an answer.").is_visible()
-        page.click('[data-act="ai"]')
-        assert "free_text_redacted" not in page.locator("#reportText").input_value()
-        page.click('[data-act="resultScreen"]')
-        page.click('[data-act="back"]')
-        assert "M33_01" in page.locator(".question").inner_text()
-        page.locator("#shortText").fill("FAKE_TEST_NAME")
-        page.click('[data-act="save"]')
-        assert "M33_02" in page.locator(".question").inner_text()
-        page.select_option("#language","ru")
-        assert "M33_02" in page.locator(".question").inner_text()
-        page.select_option("#language","en")
-        with page.expect_download() as saved:
-            page.click('[data-act="backup"]')
-        backup=saved.value
-        backup_path=Path(temp)/"recovery.json"
-        backup.save_as(backup_path)
-        assert backup_path.exists()
-        page.click('[data-act="results"]')
-        page.click('[data-act="ai"]')
-        coded=page.locator("#reportText").input_value()
-        assert '"status": "free_text_redacted"' in coded
-        assert "FAKE_TEST_NAME" not in coded
-        page.click('[data-act="resultScreen"]')
-        page.once("dialog",lambda d:d.accept())
-        page.click('[data-act="new"]')
-        page.locator("#restore").set_input_files(str(backup_path))
-        page.wait_for_timeout(250)
-        assert "M33_02" in page.locator(".question").inner_text()
-        # Finish remaining opening and visit optional section with synthetic answers.
-        for i in range(45):
-            if page.locator(".question").count():
-                here=page.locator(".question").inner_text()
-                if "M02_01" in here: break
-                if "M06_01" in here:
-                    assert page.locator('[data-act="skip"]').count()==0
-                    page.locator('input[value="B"]').check()
-                    assert "112" in page.locator("#safetyHint").inner_text()
-                if page.locator("#shortText").count():
-                    page.locator("#shortText").fill("")
-                else:
-                    page.locator('input[name="answer"]').first.check()
-                page.click('[data-act="save"]')
-            elif page.locator("#optional02").count():
-                page.locator("#optional02").check()
-                page.click('[data-act="confirm"]')
-            else: raise AssertionError("Unexpected screen during opening")
-        assert "M02_01" in page.locator(".question").inner_text()
-        # Traverse the actual mood section and edit its multiple-choice item.
-        for number in range(1,19):
-            assert f"M02_{number:02}" in page.locator(".question").inner_text()
-            page.locator('input[name="answer"]').first.check()
-            page.click('[data-act="save"]')
-        assert "M02_19" in page.locator(".question").inner_text()
-        page.locator('input[value="A"]').check()
-        page.locator('input[value="B"]').check()
-        page.locator('input[value="K"]').check()
-        assert page.locator('input[name="answer"]:checked').count()==1
-        page.locator('input[value="A"]').check()
-        page.locator('input[value="B"]').check()
-        page.click('[data-act="save"]')
-        page.click('[data-act="previous"]')
-        assert page.locator('input[value="A"]').is_checked() and page.locator('input[value="B"]').is_checked()
-        page.locator('input[value="J"]').check()
-        page.click('[data-act="save"]')
-        assert page.locator('[data-act="skipSection"]').count()==1
-        page.once("dialog",lambda d:d.accept())
-        page.click('[data-act="skipSection"]')
-        assert page.locator('[data-act="doctor"]').count()==1
-        page.click('[data-act="doctor"]')
-        assert page.locator("#reportText").count()==1
-        # Capture the clipboard boundary without relying on host permission prompts.
-        page.evaluate("""Object.defineProperty(navigator, 'clipboard', {configurable:true,
-                      value:{writeText:async text=>{window.copiedForTest=text}}})""")
-        page.click('[data-act="copyDoctor"]')
-        page.wait_for_function("typeof window.copiedForTest === 'string'")
-        assert page.evaluate("window.copiedForTest")==page.locator("#reportText").input_value()
-        assert page.locator('[data-act="downloadReport"]').count()==1
-        page.emulate_media(media="print")
-        assert page.locator(".print-report").is_visible()
-        assert page.locator(".print-report").inner_text() == page.locator("#reportText").input_value()
-        pdf=page.pdf(prefer_css_page_size=True)
-        assert pdf.startswith(b"%PDF")
-        import re
-        assert len(re.findall(rb"/Type /Page\b",pdf))==1, "Expected a one-page clinician summary for the test case"
-        assert "Current safety" in page.locator(".print-report").inner_text()
-        assert "FAKE_TEST_NAME" in page.locator(".print-report").inner_text()
-        page.emulate_media(media="screen")
-        with page.expect_download() as exported:
-            page.click('[data-act="downloadReport"]')
-        assert "<!doctype html>" in exported.value.path().read_text()
-        with page.expect_download() as result:
-            page.click('[data-act="reference"]')
-        assert result.value.suggested_filename.endswith(".md")
-        with page.expect_download() as result:
-            page.click('[data-act="downloadTxt"]')
-        assert result.value.suggested_filename.endswith(".txt")
-        # Revisiting safety must traverse every item, including ones already answered.
-        page.click('[data-act="reviewSafety"]')
-        seen=[]
-        for _ in range(11):
-            assert page.locator('[data-act="skip"]').count()==0
-            seen.append(page.locator(".question .muted").first.inner_text().split(" · ")[-1])
-            page.locator('input[name="answer"]').first.check()
-            page.click('[data-act="save"]')
-        assert len(set(seen)) == 11 and seen[0] == "M06_01" and seen[-1]=="M06_13"
-        assert page.locator("#reportText").is_visible()
-        assert not errors,"Javascript errors: "+repr(errors)
-        assert not requests,"Runtime network requests: "+repr(requests)
-        browser.close()
-print("PASS browser: offline, language switching, manual saving, backups, redacted AI, optional section and exports")
-print("This is a smoke test, not clinical, translation or full release certification.")
-
+with tempfile.TemporaryDirectory() as tmp,sync_playwright() as pw:
+    folder=Path(tmp);html=folder/'pilot.html';html.write_text(build.make_html())
+    browser=launch(pw);page,errors,network=open_page(browser,html)
+    dialogs=[];page.on('dialog',lambda d:dialogs.append(d.message))
+    act(page,'start');assert qid(page)=='M23_11'
+    assert page.locator('[data-act=save]:visible').count()==1 # multiple choice
+    page.locator('input[value=A]').check();page.locator('input[value=B]').check()
+    assert qid(page)=='M23_11';assert backup(page)['answers']=={}
+    act(page,'save');assert qid(page)=='M02_01'
+    assert not page.locator('[data-act=save]:visible').count()
+    # A physical double click must save just one question even after synchronous rendering.
+    page.locator('input[value=B]').locator('..').dblclick(delay=40)
+    assert qid(page)=='M02_02'
+    payload=backup(page);assert payload['answers']['M02_01']['codes']==['B'];assert 'M02_02' not in payload['answers']
+    act(page,'previous');assert qid(page)=='M02_01'
+    choose(page,'D');assert qid(page)=='M02_02'
+    assert backup(page)['answers']['M02_01']['codes']==['D']
+    # Fixed centered Skip: same viewport coordinates, no confirmation, variable question lengths.
+    for width in [320,390,540]:
+        page.set_viewport_size({'width':width,'height':844})
+        box=page.locator('.question-nav [data-act=skip]').bounding_box()
+        assert abs(box['x']+box['width']/2-width/2)<2
+        assert page.locator('main').bounding_box()['height']<=page.locator('.question-nav').bounding_box()['y']
+        x,y=box['x']+box['width']/2,box['y']+box['height']/2
+        for _ in range(2):
+            before=qid(page);page.mouse.click(x,y);assert qid(page)!=before
+            after=page.locator('.question-nav [data-act=skip]').bounding_box()
+            assert abs(after['y']-box['y'])<1
+        assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+    assert not dialogs,dialogs
+    act(page,'previous');skipped=qid(page);choose(page,'A')
+    assert backup(page)['answers'][skipped]['kind']=='choice'
+    # Ten saved/skipped responses produce a cumulative recovery download.
+    page.goto(html.as_uri());restore(page,seed(['02'],current='M02_01'))
+    for i in range(9):act(page,'skip')
+    with page.expect_download() as download:act(page,'skip')
+    ten=json.loads(download.value.path().read_text());assert ten['savedCount']==10 and len(ten['answers'])==10
+    assert all(a['kind']=='skip' for a in ten['answers'].values())
+    page.goto(html.as_uri());restore(page,ten);assert qid(page)=='M02_11'
+    assert backup(page)['answers']==ten['answers']
+    # Every safety question can be skipped and then answered; support remains after advancing.
+    page.goto(html.as_uri());restore(page,seed(['06'],current='M06_01'))
+    act(page,'skip');assert qid(page)=='M06_02'
+    act(page,'previous');choose(page,'B');assert qid(page)=='M06_02'
+    assert page.locator('#support-message').is_visible()
+    assert page.locator('#support-message a[href^="tel:+371116123"]').is_visible()
+    assert page.locator('#support-message a[href="tel:112"]').is_visible()
+    assert page.evaluate('document.activeElement.id')=='support-message'
+    act(page,'dismissSupport');choose(page,'B');assert page.locator('#support-message').is_visible() # escalation
+    act(page,'dismissSupport');choose(page,'B');assert not page.locator('#support-message').count() # no identical interruption
+    act(page,'support');assert page.locator('#support-message').is_visible()
+    page.screenshot(path='/tmp/pilot-support.png',full_page=True)
+    # Text remains manually saved and both fields optional.
+    page.goto(html.as_uri());restore(page,seed(['33'],current='M33_01'))
+    page.locator('#shortText').fill('SYNTHETIC EXAMPLE');assert backup(page)['answers']=={}
+    act(page,'save');assert qid(page)=='M33_02'
+    act(page,'save');assert qid(page)=='M32_02';assert backup(page)['answers']['M33_02']['kind']=='skip'
+    act(page,'previous');page.locator('#shortText').fill('EXAMPLE');act(page,'save')
+    # Old recovery with implicit mandatory opening migrates without dropping data.
+    legacy=seed(['02','21'],{'M33_01':{'kind':'text','value':'SYNTHETIC','status':'answered'},'M06_02':response(['B'])},'M02_01')
+    del legacy['layoutVersion'];page.goto(html.as_uri());restore(page,legacy)
+    migrated=backup(page);assert migrated['answers']['M06_02']['codes']==['B']
+    assert set(migrated['selected'])=={'02','21','06','18','23','31','33'}
+    invalid={**migrated,'answers':{'M02_01':response(['Z'])}};restore(page,invalid)
+    assert page.get_by_text('Cannot load this file. Check its format and version.').is_visible()
+    assert backup(page)['answers']==migrated['answers']
+    # Real output includes selected answers, explicit uncertainty/refusal, no skipped rows or IDs.
+    records={'M33_01':{'kind':'text','value':'SYNTHETIC EXAMPLE','status':'answered'},'M06_02':response(['B']),'M06_01':response(['A']),'M02_03':response(['B']),'M02_02':response(['D']),'M02_11':response(['C']),'M02_12':response(['J']),'M02_01':{'kind':'skip','status':'skipped'}}
+    page.goto(html.as_uri());restore(page,seed(['02','06','33'],records,'M02_01'))
+    act(page,'results');act(page,'doctor')
+    doc=page.locator('#reportText').input_value()
+    assert 'SYNTHETIC EXAMPLE' in doc and 'M06_02' not in doc
+    assert doc.index('SYNTHETIC EXAMPLE')<doc.index('Do you currently intend to die by suicide?')
+    assert 'Saved answers: 7' in doc and 'Skipped questions: 1' in doc
+    assert 'Over the past 2 weeks.' in doc
+    page.evaluate('window.__copied=null;Object.defineProperty(navigator,"clipboard",{value:{writeText:async t=>{window.__copied=t}},configurable:true})')
+    act(page,'copyDoctor');assert page.evaluate('window.__copied')==doc
+    with page.expect_download() as event:act(page,'downloadReport')
+    report_html=event.value.path().read_text();assert '<pre>' in report_html and 'SYNTHETIC EXAMPLE' in report_html
+    page.emulate_media(media='print');assert page.locator('.print-report').is_visible()
+    assert not page.locator('footer').is_visible();page.pdf(path='/tmp/pilot-report.pdf',format='A4');page.emulate_media(media='screen')
+    act(page,'ai');text=page.locator('#reportText').input_value()
+    assert 'M02_' not in text and 'DECODING KEY' not in text and '"codes"' not in text
+    assert 'Little interest or pleasure' not in text and "I don't know / I'm not sure" in text and 'Prefer not to answer.' in text
+    act(page,'copyAI');assert page.evaluate('window.__copied')==text
+    for lang in ['lv','ru','en']:
+        page.select_option('#language',lang)
+        assert page.locator('#reportText').input_value().endswith(build.build_bundle()['ui'][lang]['aiInstruction'])
+    # Tools and docs are after main content, collapsed by default.
+    assert not page.locator('footer details[open]').count()
+    assert page.locator('footer details').count()==6
+    # Keyboard and restore review sequence remain usable without a forced opening.
+    page.goto(html.as_uri());restore(page,seed(['02'],current='M02_01'))
+    page.locator('input[value=A]').focus();page.keyboard.press('Space');assert qid(page)=='M02_02'
+    old_review=seed(['02'],{},'M06_01',reviewQueue=['M06_01','M06_02'],reviewReturn={'screen':'question','id':'M02_01'})
+    del old_review['layoutVersion'];page.goto(html.as_uri());restore(page,old_review)
+    act(page,'skip');assert qid(page)=='M06_02';act(page,'skip');assert qid(page)=='M02_01'
+    # Single and multi changes must not replace the persistent supportive message.
+    act(page,'support');act(page,'sections');page.locator('[data-jump="23"]').click()
+    page.locator('input[value=A]').check();assert page.locator('#support-message a[href="tel:112"]').count()==1
+    assert not errors,errors;assert not network,network
+    browser.close()
+print('PASS: offline single/multi/text, double tap, fixed repeated Skip, back/edit, support, recovery/legacy/invalid, reports/copy/print, three languages; native Android UNVERIFIED.')
