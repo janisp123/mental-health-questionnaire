@@ -4,6 +4,12 @@
 **Development edits:** GitHub only, after the relevant sources have been imported and verified.
 **Google Drive:** distribution of Latvian public files only. Existing Drive archives are read-only source references following the completed migration; do not update its old changelog for routine work.
 
+## 2026-11-06 · UX-SUPPORT-REPORT-REDESIGN · IN_PROGRESS
+
+Scope: the existing 60-question pilot. Preserve original wording/codes and all pilot recovery records. Make all groups optional, redistribute opening items by original theme with personal details last, single-tap single-choice navigation, fixed Skip/Back, persistent gentle support, independent readable AI export, ascending answer-level report presentation priorities. Include previously requested bottom guide/version notes. Verify helpline facts, all three languages, and structural/fidelity/browser regressions. No release or frozen-source edits.
+
+Stages: (1) inspect and pin design/source mappings plus failing acceptance tests; (2) navigation and recovery; (3) support and reports; (4) mobile-width offline regression, documents and checkpoint. Current: inspected AGENTS, changelog, manifest, file index and architecture. Next: fetch current sources and establish the test baseline.
+
 ## 2026-11-05 · SOURCE-FIDELITY-AND-SECTION-21 · TASK_DONE
 
 Plan: verify active modules against frozen v16 by ID and exact codes, demonstrate rejection of swapped labels, inspect section 21 dependencies, import its three existing locales, verify in offline Chromium and checkpoint the artifact. Checkpoint: 41 active questions passed exact v16 logic and LV/EN/RU text comparisons locally. Deliberately swapping English labels B/C at M02_01 failed at the expected ID, locale and field. The gate runs in pilot CI. Section 21 has 19 questions (orders 387–405), no opening overlap or condition parents, and an incompatible A/E pair at M21_06 requiring generic runtime enforcement. Source gate committed at c7e0f37804c93013fb44bff9e776b205012e6594.
