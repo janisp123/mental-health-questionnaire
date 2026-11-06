@@ -130,3 +130,14 @@ Complete detailed historical Latvian changelog remains in the [archived Drive `1
 - Final review separated ordinary support from emergency guidance: 116 123 appears for supportive prompts; 112 appears only for immediate-danger triggers, while remaining available in the expanded support details. This preserves 112 without suggesting every distressed response means emergency danger.
 - Reran all three local Chromium suites after the change: general browser UX, registry/condition independence, real section 21. All passed. Rebuilt artifact SHA256: `9247828dd55f100c12c449154ee77686397b280139fc2eb28c297c2230c0b0a0`. Full develop CI for this last adjustment pending.
 - Native Android Chrome remains UNVERIFIED. Human translation and professional review of source wording and provisional report priorities remain outstanding.
+
+### UX-SUPPORT-REPORT-REDESIGN — TASK_DONE
+
+**Pilot v0.2 implementation complete on `develop`.** The current test pilot contains 60 original questions; the larger 712-question bank is not implemented by this change. No frozen original question data, public `main`, or Google Drive files were changed.
+
+**Verified:**
+- Full GitHub Actions run `42162346126` passed at implementation checkpoint `ee84b5e0f25e2ce52cf3154daa3aaf52b837b19d`: all 79 imported file hashes, 48 sections/712 questions, structural/source fidelity, layout/report tests, offline Chromium user journeys, independence and section 21 report journey; prototype artifact built and uploaded as an expiring test artifact.
+- The final safety-card adjustment and regression expectation are at `60cc44f429697bc3711a9c80c85ac1504e40b40b`. After that adjustment, all three local Chromium suites passed with Chromium Headless Shell 141: single/multi/text, double taps, Skip/back, 116123 versus 112 display, recovery migration, condition handling, clipboard/print, independence, and frozen section 21 report mapping. Structural, source-fidelity, layout and report tests also passed; final built HTML SHA256 `9247828dd55f100c12c449154ee77686397b280139fc2eb28c297c2230c0b0a0`.
+- The final small adjustment was not observed in a new Actions run. Its browser regressions passed locally; do not describe the final code SHA as having a separate green CI run.
+
+**Still unverified:** native Android Chrome touch/file-picker/clipboard/printing; human review of EN/RU and the new interface/report translations; psychiatrist review of provisional question wording and report-priority rules; all imported modules outside the 60-question pilot. This build is ready for another desktop/mobile UX test, not a clinical validation or public release.
