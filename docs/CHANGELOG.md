@@ -353,10 +353,12 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Verified checkpoint:** Task 5m is DONE. Implementation commit `0b825f33a8e5c85397e0c40f5b69f73bf8e7c2b2`; compatibility fix `7284e4a9f7d2b716703f9619d298a9fdf20c1051`. Remote branch readback confirmed both. [CI run 42220636242](https://github.com/janisp123/mental-health-questionnaire/actions/runs/42220636242) passed all source, bundle, report, syntax and pilot browser checks, including the extensibility journey. The optional full-bank HTML embeds all 712 questions in 48 groups; the default pilot remains 60. No distribution artifact was changed. This verifies packaging and existing pilot behavior, not full-bank runtime behavior.
 - **Next action (overall goal still IN_PROGRESS):** Task 5n — run offline-browser behavior checks against the 712-question build, covering group selection, question types, conditional branches, recovery and clinician reports; fix any full-bank-only issues. Keep the default artifact unchanged until that runtime audit passes.
 
-### 2026-11-06 · WORKFLOW-CONTEXT-LOAD-REDUCTION · IN_PROGRESS
+### 2026-11-06 · WORKFLOW-CONTEXT-LOAD-REDUCTION · TASK_DONE
 
 **Goal:** reduce Work chat loading and tool-output overhead while keeping the project's resumable checkpoints and verification intact.
 - **Starting commit:** `cb2ede2ecb6faf5b2cab04f1e72c24e86501edc8` on `develop`.
+- **Implementation commit:** `3b437e9bc0c6f1334507b13d376b91dd0f5c0c42` on `develop` (remote readback confirmed).
 - **Scope:** revise `AGENTS.md` to require targeted changelog/manifest/index reads, focused tests before full checks, and CI step summaries before full logs. No questionnaire or CI behavior changes.
-- **Plan:** add concise context-use rules; verify the wording and diff; checkpoint to `develop`.
-- **Next action:** edit and read back `AGENTS.md`, then record the completed checkpoint.
+- **Completed:** future work should read the active changelog entry and relevant manifest/index sections, run a focused test first, and inspect CI step summaries before requesting logs. This prevents routine turns from loading the full 50 KB changelog, full manifest hash inventory, or entire workflow log.
+- **Checks:** `git diff --check` PASS. Documentation-only change; no code tests or CI run needed. `AGENTS.md` and the changelog were read back from `develop`.
+- **Next action:** resume overall project Task 5n — offline-browser behavior audit of the 712-question build.
