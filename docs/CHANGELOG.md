@@ -10,7 +10,7 @@
 **Goal:** make current project status unambiguous, separate runtime tests by behavior, and split shared runtime logic only along independently testable boundaries. Preserve the 48-module bank and single-file offline build.
 
 **Baseline:** `d250271a83dfcb17799fdbf66f26bf416488722a` on `develop`; it matches the GitHub branch. Checklist commit: `5ef185a`.
-**Latest verified implementation commit:** `873438f622b0a4a58731a8553756716f47359cfc`. GitHub `develop` is `42f658cae02ff3a94a2e1de21058ab49e5604b9e`; implementation trees match exactly.
+**Latest verified implementation commit:** `972b3f1`. GitHub `develop` is `3bd3eff50aaa3937882ecfa4901195cfa51cb759`; implementation trees match exactly.
 
 **Verified baseline:** component workflow 42247708071 and full offline Chromium workflow 42247707973 passed at code commit `4d6ff92002b1b3a686954eaf95743b0d61c5f398`. Source integrity confirmed 48 modules/712 IDs; no physical Android check was run.
 
@@ -24,7 +24,7 @@
 6. [DONE] Update architecture, file index, manifest, and CI routing as needed.
 7. [DONE] Run focused checks and the full integration workflow after structural work.
 8. [BLOCKED] Physical Android testing and human language/clinical review require a device or reviewers.
-9. [IN_PROGRESS] Isolate delegated DOM event wiring behind tested callbacks; then rerun focused and full CI.
+9. [DONE] Isolate delegated DOM event wiring behind tested callbacks; focused and full CI passed.
 
 **Guardrails:** keep source questions, IDs, codes, conditions, and frozen references unchanged; preserve recovery compatibility; keep script and style order explicit in `src/app/build.json`; add no runtime dependencies. Work in small verified commits.
 
@@ -73,6 +73,6 @@
 **Checkpoint 7 — event routing extracted:** moved delegated click/change/input listeners into `src/app/core/events.js`; the coordinator supplies the existing behavior as callbacks. Added a synthetic dispatch test for radio taps, actions, section jumps, medicine controls, restore, locale, modules, answers, and text inputs. The module is in the explicit script order.
 
 **Files:** src/app/core/events.js, src/app/core/app.js, src/app/build.json, tests/app/test_events.js, .github/workflows/app-component-checks.yml, docs/FILE_INDEX.md, docs/QUESTIONNAIRE_ARCHITECTURE.md, docs/CHANGELOG.md.
-**Checks:** event-routing test, model/flow/recovery tests, screen renderers, manifest, catalogs, JS syntax, and `git diff --check` PASS locally. Focused and full GitHub checks are pending.
+**Checks:** event-routing test, model/flow/recovery tests, screen renderers, manifest, catalogs, JS syntax, and `git diff --check` PASS locally. Focused workflow 42254680909 and full workflow 42254680875 PASS.
 **Commit:** 972b3f1.
-**Next action:** run focused synthetic browser and full 48-module integration CI after event extraction.
+**Next action:** hands-on Android Chrome check and human review of LV interface wording, EN/RU drafts, and clinical content; those need a device and human reviewers.
