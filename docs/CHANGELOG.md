@@ -286,10 +286,20 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Checks:** adapter PASS for 610 questions in modules 01–32. Full source audit and original-file hash verifier PASS. Active pilot remains 60 questions.
 - **Next action:** test modules 33–40, including the two short-text entries and conditional branches.
 
-### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 13 (IN_PROGRESS)
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 13
 
 **Task 5h — source-adapter batch 6.**
 - **Starting commit:** `e15890bfc2877e25fcf10d1d966a69853112a722` on `develop`.
-- **Scope:** extend source comparisons through module 40, newly adding 33–40. Module 33 includes the two short-text entries; modules 34–40 contain conditional branches and multi-select answers.
+- **Implementation commit:** `3c0506de0831e8223437b56ec8fb5ac9978b5add` on `develop` (remote readback confirmed).
+- **Files:** `tests/pilot/test_source_adapter.py`, `.github/workflows/pilot-checks.yml`, this changelog.
+- **Completed:** extended adapter checks through module 40, including both `shortText` records in module 33 and the many conditional/multi-select records in modules 34–40.
+- **Checks:** adapter PASS for 668 questions in modules 01–40; earlier condition parents resolve. Full source audit and 79-file hash verifier PASS.
+- **Next action:** complete the adapter audit with modules 41–48.
+
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 14 (IN_PROGRESS)
+
+**Task 5i — source-adapter final batch.**
+- **Starting commit:** `3c0506de0831e8223437b56ec8fb5ac9978b5add` on `develop`.
+- **Scope:** extend exact comparisons to all 48 source modules, newly adding 41–48. This final batch contains conditional and multi-select variations; once it passes, the build adapter's source coverage is all 712 questions.
 - **Files expected:** `tests/pilot/test_source_adapter.py`, `.github/workflows/pilot-checks.yml`, this changelog.
-- **Next action:** extend exact comparisons and run source-adapter/index/audit checks before proceeding.
+- **Next action:** expand comparisons through module 48; verify exact 712 count/IDs/orders/conditions; then checkpoint full read-only source coverage before changing active build output.
