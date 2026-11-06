@@ -246,10 +246,20 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Remaining:** this is a build adapter only; no additional source questions are active. Full group titles and report ordering for all 48 modules still need a source-grounded solution before full activation.
 - **Next action:** Task 5d — extend the adapter fidelity batch to modules 05–08, recording any source variations without changing the active pilot.
 
-### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 9 (IN_PROGRESS)
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 9
 
 **Task 5d — source-adapter batch 2.**
 - **Starting commit:** `e87760abe9971c916678d34b0eeb37fafc727d1c` on `develop`.
-- **Scope:** extend the source adapter fidelity check from modules 01–04 to 01–08 (modules 05–08 are the new batch), covering any multi-choice, text-entry, or condition variations present there. Keep the active 60-question pilot and frozen files unchanged.
-- **Files expected:** `tests/pilot/test_source_adapter.py`, this changelog.
-- **Next action:** inspect the new module types and condition shapes, update the batch assertion, run source-adapter and integrity tests, then checkpoint before adding the following batch.
+- **Implementation commit:** `56fbefcb5fd99649044f83e83fabc98d28306100` on `develop` (remote readback confirmed).
+- **Files:** `.github/workflows/pilot-checks.yml`, `tests/pilot/test_source_adapter.py`, this changelog.
+- **Completed:** expanded adapter checks to modules 01–08. Modules 05–06 add hide-condition branches and module 06 has more nested follow-ups; all records match the unchanged source exactly.
+- **Checks:** `python3 tests/pilot/test_source_adapter.py` PASS for 135 questions, unique IDs/orders, translations, answer/status/type data and valid earlier condition parents. `python3 tests/pilot/test_full_bank_audit.py` and `python3 tools/verify_project_index.py` PASS. Active pilot remains 60 questions.
+- **Next action:** verify the next source batch; do not activate it until the adapter comparisons pass.
+
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 10 (IN_PROGRESS)
+
+**Task 5e — source-adapter batch 3.**
+- **Starting commit:** `56fbefcb5fd99649044f83e83fabc98d28306100` on `develop`.
+- **Scope:** extend fidelity checks to modules 01–16, newly adding 09–16. This batch includes 26 conditional entries in module 10, the 13-field `medicineList` item M14_02, and conditional items in modules 09, 12 and 15.
+- **Files expected:** `tests/pilot/test_source_adapter.py`, `.github/workflows/pilot-checks.yml`, this changelog.
+- **Next action:** add modules 09–16 to exact adapter comparisons, run source-adapter/index/audit checks, and record the result before the next batch.
