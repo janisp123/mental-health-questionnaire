@@ -385,4 +385,5 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Exact next action:** commit this checkpoint, inspect the resulting CI step summary, and resolve any full-bank runtime failures.
 
 - **CI result:** first complete-workflow run [42234413055](https://github.com/janisp123/mental-health-questionnaire/actions/runs/42234413055) passed all existing checks and the 60-question Chromium journey, but the new complete-bank journey failed after answering `M14_01`; it did not reach expected `M14_02`. The failure occurs before medicine/report assertions, so the full-bank runtime audit remains blocked. Updated the assertion to report the actual reached ID.
-- **Exact next action:** rerun the focused complete-bank browser step with the improved diagnostic, then determine whether the app or test path needs correction.
+- **Diagnosis:** rerun [42234679971](https://github.com/janisp123/mental-health-questionnaire/actions/runs/42234679971) showed the current ID remained `M14_01`; its test clicked the parent label, unlike the reliable input activation used elsewhere. Changed this one test action to Playwright's explicit radio `check()`.
+- **Exact next action:** rerun the complete-bank Chromium journey; if it still fails, inspect question rendering/state transitions before archiving anything.
