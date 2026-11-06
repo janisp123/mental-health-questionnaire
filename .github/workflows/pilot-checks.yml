@@ -30,7 +30,7 @@ jobs:
         run: python tools/verify_project_index.py
       - name: Audit all original modules for integration gaps
         run: python tests/pilot/test_full_bank_audit.py
-      - name: Verify direct source adapter on first sixteen modules
+      - name: Verify direct source adapter on first twenty-four modules
         run: python tests/pilot/test_source_adapter.py
       - name: Verify modular pilot data and offline packaging
         run: python tests/pilot/test_build.py
