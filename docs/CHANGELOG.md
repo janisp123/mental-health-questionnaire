@@ -16,8 +16,8 @@
 **Checklist:**
 
 1. [DONE] Audit current source, test, and branch state.
-2. [IN_PROGRESS] Replace pilot-first status with this active handoff and archive the previous chronology.
-3. [TODO] Split runtime browser checks into focused synthetic-data cases.
+2. [DONE] Replace pilot-first status with this active handoff and archive the previous chronology.
+3. [IN_PROGRESS] Split runtime browser checks into focused synthetic-data cases.
 4. [TODO] Extract query/model, answer-flow, and recovery behavior into tested modules.
 5. [TODO] Add a focused browser layout check for CSS changes.
 6. [TODO] Update architecture, file index, manifest, and CI routing as needed.
@@ -26,4 +26,9 @@
 
 **Guardrails:** keep source questions, IDs, codes, conditions, and frozen references unchanged; preserve recovery compatibility; keep script and style order explicit in `src/app/build.json`; add no runtime dependencies. Work in small verified commits.
 
-**Exact next action:** finish this changelog archive checkpoint, then build a small synthetic runtime fixture and use it to split the existing sequential browser journey by behavior.
+**Checkpoint 1 — changelog cleanup:** moved the previous 495-line chronology byte-for-byte to docs/history/CHANGELOG_HISTORY_2026-11-06.md; the active changelog is now a 29-line current status/checkpoint. Updated docs/FILE_INDEX.md so archived pilot IN_PROGRESS entries cannot be mistaken for current work.
+
+**Files:** docs/CHANGELOG.md, docs/history/CHANGELOG_HISTORY_2026-11-06.md, docs/FILE_INDEX.md.
+**Checks:** archive compared byte-for-byte with the starting changelog; git diff --check PASS. No application test needed.
+**Commit:** e77f79ae1f136574dfb15185a98bd452412f6512.
+**Next action:** build a small synthetic runtime fixture and split the existing sequential browser journey by behavior.
