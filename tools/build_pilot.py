@@ -216,8 +216,12 @@ def build_bundle(apply_layout=True, full_bank=False):
         if len(set(codes)) != len(codes) or any(code not in by_id[qid]["choiceCodes"] for code in codes):
             raise ValueError("Invalid bold-answer code: " + qid)
     full_order = layout.get("full_order", [])
+    topic_order = presentation.get("topicOrder", [])
+    full_module_ids = {f"{number:02d}" for number in range(1, 49)}
     if (len(full_order) != 48 or len(set(full_order)) != 48
-            or set(presentation.get("topicOrder", [])) != set(full_order)):
+            or set(full_order) != full_module_ids
+            or len(topic_order) != len(set(topic_order))
+            or not set(full_order).issubset(topic_order)):
         raise ValueError("Full report topic order must list each source module exactly once")
     if full_bank and apply_layout:
         by_group = {group["id"]: group for group in groups}

@@ -2,6 +2,7 @@
 import importlib.util
 import json
 import re
+import shutil
 import subprocess
 import tempfile
 from pathlib import Path
@@ -79,5 +80,42 @@ with tempfile.TemporaryDirectory() as temp_dir:
         r'<script id="pilot-data" type="application/json">(.*?)</script>', cli_html, re.S
     )
     assert cli_data and json.loads(cli_data.group(1)) == full
+
+# Registry additions used by the pilot independence check may extend report order
+# without changing the fixed 48-module full-bank navigation map.
+original_source = build.SOURCE
+try:
+    with tempfile.TemporaryDirectory() as temp_dir:
+        fixture_source = Path(temp_dir) / "pilot"
+        shutil.copytree(original_source, fixture_source)
+        build.SOURCE = fixture_source
+        modules = fixture_source / "modules"
+        registry = build.read_json(modules / "registry.json")
+        registry["groups"].append({"id": "fixture", "required": False, "question_count": 1})
+        (modules / "registry.json").write_text(json.dumps(registry), encoding="utf-8")
+        layout = build.read_json(modules / "layout.json")
+        layout["order"].append("fixture")
+        (modules / "layout.json").write_text(json.dumps(layout), encoding="utf-8")
+        presentation_path = fixture_source / "reports" / "presentation.json"
+        presentation = build.read_json(presentation_path)
+        presentation["topicOrder"].append("fixture")
+        presentation_path.write_text(json.dumps(presentation), encoding="utf-8")
+        question = {"id": "TEST_FIXTURE", "order": 10000, "choiceCodes": ["A", "B"], "multi": False}
+        module = modules / "fixture"
+        module.mkdir()
+        (module / "logic.json").write_text(
+            json.dumps({"group": "fixture", "questions": [question]}), encoding="utf-8"
+        )
+        for language in ("lv", "en", "ru"):
+            locale = {
+                "module": "fixture", "lang": language, "title": "Fixture",
+                "questions": {"TEST_FIXTURE": {"title": "Fixture question", "choices": {"A": "First", "B": "Second"}}},
+            }
+            (module / f"{language}.json").write_text(json.dumps(locale), encoding="utf-8")
+        extended = build.build_bundle()
+        assert sum(len(group["questions"]) for group in extended["groups"]) == 61
+        assert extended["groups"][-1]["id"] == "fixture"
+finally:
+    build.SOURCE = original_source
 
 print("PASS: explicit full-bank build embeds 712 questions/48 optional groups; default pilot remains 60.")
