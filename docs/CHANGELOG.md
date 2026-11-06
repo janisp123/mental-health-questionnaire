@@ -328,10 +328,21 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Remaining:** full groups are not yet selected by `build_bundle`/HTML; no complete questionnaire artifact exists yet.
 - **Next action:** Task 5l — set complete, separate question-navigation and clinician-report topic orders. Start questions with approachable topics, keep personal details late in the questionnaire, and put safety-sensitive topics toward the end of the doctor report.
 
-### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 17 (IN_PROGRESS)
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 17
 
 **Task 5l — full topic order.**
 - **Starting commit:** `462b9aea043110aeb7f57c91b8a846ad4cfc2193` on `develop`.
-- **Scope:** define a complete 48-topic navigation order and a separately maintained 48-topic report order. Navigation begins with ordinary, approachable topics and leaves the optional personal-details module near the end. Report order places personal/everyday information first and the explicitly safety-sensitive topics last. No answer weights or risk calculations are introduced.
-- **Files expected:** `src/pilot/modules/layout.json`, `src/pilot/reports/presentation.json`, `tests/pilot/test_layout.py`, `tools/build_pilot.py` if needed, changelog.
-- **Next action:** choose and encode the two full permutations, add tests that each lists every module once and that the first/last placement rules hold, then run existing pilot layout/report tests.
+- **Implementation commit:** `1b221edddd858986f21aae5e1e8de3010d223645` on `develop` (remote readback confirmed).
+- **Files:** `src/pilot/modules/layout.json`, `src/pilot/reports/presentation.json`, `tests/pilot/test_layout.py`, `tools/build_pilot.py`, this changelog.
+- **Completed:** added an explicit 48-module full navigation order beginning with everyday/physical topics and leaving personal information last, plus a separate 48-topic report order beginning with personal/everyday content and moving safety-sensitive modules toward the end. No weights were added. The existing 7-module pilot order remains unchanged; a first attempt to reuse the new order there failed its browser sequence check and was corrected by separating `full_order`.
+- **Checks:** layout/source order test, builder, report tests, source adapter, full-group test and desktop offline browser journey PASS. Report-order rules verify all 48 modules exactly once and sensitive topics after routine modules. Native Android remains unverified.
+- **Next action:** Task 5m — add an opt-in `full_bank` bundle/build mode using the source groups, keep pilot mode intact, and verify its 712-question data and one-file HTML before switching any default artifact.
+
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 18 (IN_PROGRESS)
+
+**Task 5m — opt-in full-bank bundle.**
+- **Starting commit:** `1b221edddd858986f21aae5e1e8de3010d223645` on `develop`.
+- **Scope:** let the existing builder assemble a full 712-question bundle from source groups, apply `full_order`, and package a full-bank HTML in an explicit mode. Keep the current pilot mode and default artifact unchanged until full runtime checks pass.
+- **Tests planned:** 712 unique question IDs/orders, every locale, 48 optional groups, exact conditions and answer maps, all report mappings resolve, complete embedded HTML with no external runtime requests, pilot output remains 60.
+- **Files expected:** builder, focused full-bundle/build test, workflow and changelog.
+- **Next action:** add a `full_bank` argument and preserve the existing pilot branch; test the full bundle and HTML without changing distribution or public release.
