@@ -49,12 +49,13 @@ function header(){
  const opts=["lv","en","ru"].map(id=>'<option value="'+id+'"'+(id===state.lang?" selected":"")+">"+({lv:"Latviešu",en:"English",ru:"Русский"}[id])+"</option>").join("");
  return '<header>'+(state.screen==="start"?'<h1>'+label("project")+'</h1>':"")+'<label class="lang">'+label("language")+' <select id="language">'+opts+'</select></label></header>';
 }
-function supportLinks(){
- return '<a href="tel:+371116123?oai_link_source=model_response_hotline">'+label("supportLink")+'</a><p>'+label("emergencyBody")+' <a href="tel:112">112</a></p>';
+function supportLinks(includeEmergency){
+ const line='<a href="tel:+371116123?oai_link_source=model_response_hotline">'+label("supportLink")+'</a>';
+ return line+(includeEmergency?'<p>'+label("emergencyBody")+' <a href="tel:112">112</a></p>':"");
 }
 function supportCard(){
  if(!state.support)return "";
- return '<aside id="support-message" class="support-card" role="status" aria-live="polite" tabindex="-1"><h2>'+label("supportTitle")+'</h2>'+supportLinks()+'<p>'+label("supportBody")+'</p>'+btn("dismissSupport","dismissSupport")+'</aside>';
+ return '<aside id="support-message" class="support-card" role="status" aria-live="polite" tabindex="-1"><h2>'+label("supportTitle")+'</h2>'+supportLinks(state.support==="emergency")+'<p>'+label("supportBody")+'</p>'+btn("dismissSupport","dismissSupport")+'</aside>';
 }
 function offerSupport(q,codes){
  const rules=data.presentation.questions[q.id]?.support||{};

@@ -49,9 +49,10 @@ with tempfile.TemporaryDirectory() as tmp,sync_playwright() as pw:
     act(page,'previous');choose(page,'B');assert qid(page)=='M06_02'
     assert page.locator('#support-message').is_visible()
     assert page.locator('#support-message a[href^="tel:+371116123"]').is_visible()
-    assert page.locator('#support-message a[href="tel:112"]').is_visible()
+    assert not page.locator('#support-message a[href="tel:112"]').count()
     assert page.evaluate('document.activeElement.id')=='support-message'
     act(page,'dismissSupport');choose(page,'B');assert page.locator('#support-message').is_visible() # escalation
+    assert page.locator('#support-message a[href="tel:112"]').is_visible()
     act(page,'dismissSupport');choose(page,'B');assert not page.locator('#support-message').count() # no identical interruption
     act(page,'support');assert page.locator('#support-message').is_visible()
     page.screenshot(path='/tmp/pilot-support.png',full_page=True)
@@ -102,7 +103,7 @@ with tempfile.TemporaryDirectory() as tmp,sync_playwright() as pw:
     act(page,'skip');assert qid(page)=='M06_02';act(page,'skip');assert qid(page)=='M02_01'
     # Single and multi changes must not replace the persistent supportive message.
     act(page,'support');act(page,'sections');page.locator('[data-jump="23"]').click()
-    page.locator('input[value=A]').check();assert page.locator('#support-message a[href="tel:112"]').count()==1
+    page.locator('input[value=A]').check();assert page.locator('#support-message a[href^="tel:+371116123"]').count()==1
     assert not errors,errors;assert not network,network
     browser.close()
 print('PASS: offline single/multi/text, double tap, fixed repeated Skip, back/edit, support, recovery/legacy/invalid, reports/copy/print, three languages; native Android UNVERIFIED.')

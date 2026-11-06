@@ -125,3 +125,8 @@ Complete detailed historical Latvian changelog remains in the [archived Drive `1
 - An alternate Playwright download succeeded: local browser is Chromium Headless Shell 141 on Linux. This does NOT verify native Android Chrome or human translation quality.
 - Next: full develop CI (including all 79 imported-file hashes/712-question inventory), final browser regressions and recorded exact commit/run. TASK_DONE not yet claimed.
 - Stage 2 implementation commit: `ee84b5e0f25e2ce52cf3154daa3aaf52b837b19d`; develop head readback confirmed. Local final browser regressions all passed. Built HTML SHA256: `4dca1ed7b0b8d50dfaaad098dd8e2a2e048d2f322d7f94ae7e815282035c737c`. Full CI status pending.
+
+### UX-SUPPORT-REPORT-REDESIGN — final verification update (IN_PROGRESS)
+- Final review separated ordinary support from emergency guidance: 116 123 appears for supportive prompts; 112 appears only for immediate-danger triggers, while remaining available in the expanded support details. This preserves 112 without suggesting every distressed response means emergency danger.
+- Reran all three local Chromium suites after the change: general browser UX, registry/condition independence, real section 21. All passed. Rebuilt artifact SHA256: `9247828dd55f100c12c449154ee77686397b280139fc2eb28c297c2230c0b0a0`. Full develop CI for this last adjustment pending.
+- Native Android Chrome remains UNVERIFIED. Human translation and professional review of source wording and provisional report priorities remain outstanding.
