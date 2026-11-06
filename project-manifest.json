@@ -9,13 +9,21 @@
   "active_changelog": "docs/CHANGELOG.md",
   "release_distribution": {
     "provider": "Google Drive",
-    "folder_name": "Sagatavošanās vizītei pie psihiskās veselības speciālista — latviešu versija",
+    "status": "TECHNICAL_REVIEW_CANDIDATE_NOT_CLINICALLY_VALIDATED",
+    "folder_name": "00_REVIEW CANDIDATE — Git full build v0.2.0 — Latvian reference — English/Russian drafts — SHARE THIS",
     "folder_url": "https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
-    "published_language": "lv",
-    "published_version": "v16",
+    "published_language": "Latvian reference; EN/RU unreviewed drafts",
+    "published_version": "0.2.0 technical-review candidate (question source v16)",
     "files": [
-      "162_Sagatavosanas_vizitei_LV_v16.html",
-      "163_README_LV_v16.md"
+      "187_Questionnaire_FULL_712Q_v0.2.0_REVIEW_BUILD.html",
+      "188_README_LV_v0.2.0_REVIEW_BUILD.md"
+    ],
+    "source_commit": "7e236310e4b57ceb7f2e9e8e3e8988387e6c1814",
+    "artifact_sha256": "a6998ab5539d037493b97e724b7dda6080196d67fb7cb5b75f905dbc9b4bbb70",
+    "readme_sha256": "bf1f837da532adc136fcfc578042d8e9fa7146864a61a9cc2afa86f55ece0d3f",
+    "frozen_v16_baseline": [
+      "reference/baseline/html/162_Sagatavosanas_vizitei_LV_v16.html",
+      "reference/baseline/readme/163_README_LV_v16.md"
     ],
     "auto_sync": false
   },
