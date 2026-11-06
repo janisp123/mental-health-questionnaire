@@ -110,6 +110,14 @@
     "feedbackComment": "Comment (optional)",
     "feedbackContinue": "Save & Continue",
     "removeFeedback": "Remove flag",
-    "feedbackChooseReason": "Choose at least one reason."
+    "feedbackChooseReason": "Choose at least one reason.",
+    "feedbackPrivacy": "Only report an issue with the question here. Do not include your name, personal details, or answers.",
+    "feedbackProjectCopy": "Copy feedback for the project",
+    "feedbackProjectHeading": "Questionnaire feedback",
+    "feedbackSectionHeading": "Question feedback",
+    "feedbackReasonLabel": "Reason",
+    "feedbackVersionLabel": "Questionnaire version",
+    "feedbackContactLabel": "Project contact",
+    "feedbackNone": "No question feedback has been marked."
   }
 }

@@ -11,6 +11,7 @@ import argparse
 import hashlib
 import html
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -94,6 +95,9 @@ def build_bundle(apply_layout=True):
     presentation = read_json(SOURCE / "reports" / "presentation.json")
     if contains_weight_key(presentation):
         raise ValueError("Weight metadata is no longer supported")
+    contact = presentation.get("feedbackContactEmail", "")
+    if not isinstance(contact, str) or not re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", contact):
+        raise ValueError("A valid project-feedback contact email is required")
     for qid, rule in presentation["questions"].items():
         if qid not in by_id:
             raise ValueError("Presentation references an unknown question: " + qid)

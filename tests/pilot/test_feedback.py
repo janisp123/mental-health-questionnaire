@@ -10,7 +10,9 @@ with tempfile.TemporaryDirectory() as tmp,sync_playwright() as pw:
     assert page.locator('[data-act="feedback"]').count()==1
     required={'feedbackFlag','feedbackFlagged','feedbackTitle','feedbackQuestion','feedbackLanguage',
               'feedbackAnswerPrefix','feedbackOther','feedbackComment','feedbackContinue',
-              'removeFeedback','feedbackChooseReason'}
+              'removeFeedback','feedbackChooseReason','feedbackPrivacy','feedbackProjectCopy',
+              'feedbackProjectHeading','feedbackSectionHeading','feedbackReasonLabel',
+              'feedbackVersionLabel','feedbackContactLabel','feedbackNone'}
     bundle=build.build_bundle()
     assert all(required<=set(bundle['ui'][lang]) for lang in ('lv','en','ru'))
     code=next(iter(next(q for g in bundle['groups'] for q in g['questions'] if q['id']==qid0)['choiceCodes']))
@@ -22,6 +24,7 @@ with tempfile.TemporaryDirectory() as tmp,sync_playwright() as pw:
         act(page,'feedback')
     act(page,'feedback')
     assert page.locator('#question-feedback').is_visible()
+    assert bundle['ui']['en']['feedbackPrivacy'] in page.locator('#question-feedback').inner_text()
     assert page.locator('[data-feedback-reason="answer:A"]').is_visible()
     page.locator('[data-feedback-reason="question"]').check()
     page.locator('[data-feedback-reason="answer:A"]').check()
@@ -62,6 +65,30 @@ with tempfile.TemporaryDirectory() as tmp,sync_playwright() as pw:
     restore(page,invalid)
     assert page.get_by_text(build.build_bundle()['ui']['en']['restoreError']).is_visible()
     assert qid(page)=='M02_01'
+
+    # Project feedback works with no medical answers and cannot include answer fields.
+    marked={'M02_01':{'reasons':['question','answer:B'],'comment':'Synthetic feedback note',
+                      'language':'en','version':'v0.2','updatedAt':'2026-11-06T12:00:00Z'}}
+    page.goto(path.as_uri());restore(page,seed(['02'],{},'M02_01',feedback=marked))
+    act(page,'results')
+    page.evaluate('window.__copied=null;Object.defineProperty(navigator,"clipboard",{value:{writeText:async t=>{window.__copied=t}},configurable:true})')
+    act(page,'copyFeedback');project=page.evaluate('window.__copied')
+    assert 'M02_01' in project and 'Synthetic feedback note' in project
+    assert 'janis.paegle.email@gmail.com' in project and 'PRIVATE_PATIENT_SENTINEL' not in project
+    assert 'Incorrect answer B' in project
+    assert 'EN · v0.2' in project and 'Questionnaire version: 0.2.0-prototype' in project
+
+    # The clinician report lists question feedback before answers, then keeps ordinary information first.
+    answers={'M33_01':{'kind':'text','value':'PRIVATE_PATIENT_SENTINEL','status':'answered'},'M06_02':response(['B'])}
+    page.goto(path.as_uri());restore(page,seed(['02','33','06'],answers,'M02_01',feedback=marked))
+    page.evaluate('window.__copied=null;Object.defineProperty(navigator,"clipboard",{value:{writeText:async t=>{window.__copied=t}},configurable:true})')
+    act(page,'results');act(page,'copyFeedback');project=page.evaluate('window.__copied')
+    assert 'PRIVATE_PATIENT_SENTINEL' not in project
+    act(page,'doctor');doctor=page.locator('#reportText').input_value()
+    assert doctor.index(build.build_bundle()['ui']['en']['feedbackSectionHeading'])<doctor.index('PRIVATE_PATIENT_SENTINEL')
+    bundle=build.build_bundle()
+    safety=next(q for g in bundle['groups'] for q in g['questions'] if q['id']=='M06_02')
+    assert doctor.index('PRIVATE_PATIENT_SENTINEL')<doctor.index(safety['translations']['en']['choices']['B'])
     assert not errors,errors;assert not network,network
     browser.close()
 print('PASS: feedback edit/remove, Save & Continue skip/preserve, recovery compatibility and invalid-feedback rejection; native Android UNVERIFIED.')

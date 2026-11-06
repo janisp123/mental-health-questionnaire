@@ -110,6 +110,14 @@
     "feedbackComment": "Комментарий (необязательно)",
     "feedbackContinue": "Сохранить и продолжить",
     "removeFeedback": "Удалить отметку",
-    "feedbackChooseReason": "Выберите хотя бы одну причину."
+    "feedbackChooseReason": "Выберите хотя бы одну причину.",
+    "feedbackPrivacy": "Укажите здесь только замечание к вопросу. Не добавляйте имя, личные данные или ответы.",
+    "feedbackProjectCopy": "Скопировать отзыв для проекта",
+    "feedbackProjectHeading": "Замечания об анкете",
+    "feedbackSectionHeading": "Замечания к вопросам",
+    "feedbackReasonLabel": "Причина",
+    "feedbackVersionLabel": "Версия анкеты",
+    "feedbackContactLabel": "Контакт проекта",
+    "feedbackNone": "Нет отмеченных замечаний к вопросам."
   }
 }

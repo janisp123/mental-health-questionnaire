@@ -110,6 +110,14 @@
     "feedbackComment": "Piezīme (nav obligāti)",
     "feedbackContinue": "Saglabāt un turpināt",
     "removeFeedback": "Noņemt atzīmi",
-    "feedbackChooseReason": "Izvēlieties vismaz vienu iemeslu."
+    "feedbackChooseReason": "Izvēlieties vismaz vienu iemeslu.",
+    "feedbackPrivacy": "Norādi tikai jautājuma labojumu. Neiekļauj savu vārdu, personas datus vai atbildes.",
+    "feedbackProjectCopy": "Kopēt atsauksmi projektam",
+    "feedbackProjectHeading": "Atsauksme par anketu",
+    "feedbackSectionHeading": "Jautājumu atsauksmes",
+    "feedbackReasonLabel": "Iemesls",
+    "feedbackVersionLabel": "Anketas versija",
+    "feedbackContactLabel": "Projekta kontaktadrese",
+    "feedbackNone": "Nav atzīmēta neviena jautājuma piezīme."
   }
 }

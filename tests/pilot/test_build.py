@@ -30,6 +30,7 @@ for q in questions:
 assert set(bundle["ui"]) == {"lv","en","ru"}
 assert not module.contains_weight_key(bundle["presentation"])
 assert module.contains_weight_key({"nested": {"textWeight": 0}})
+assert bundle["presentation"]["feedbackContactEmail"] == "janis.paegle.email@gmail.com"
 keys={lang:set(v) for lang,v in bundle["ui"].items()}
 assert keys["lv"] == keys["en"] == keys["ru"], "Missing UI translations"
 html = module.make_html()

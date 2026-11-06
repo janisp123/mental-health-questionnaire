@@ -25,21 +25,51 @@ function entries(questions,answers,locale,presentation) {
   return {id:q.id,index,topic:Math.max(0,order.indexOf(q.module)),plain:prefix+value,html:"<p>"+esc(prefix)+response+"</p>"};
  }).sort((a,b)=>a.topic-b.topic||a.index-b.index);
 }
-function doctorText(questions,answers,selected,locale,ui,groups,presentation) {
+function feedbackEntries(questions,feedback,catalogs) {
+ const byId=new Map(questions.map(q=>[q.id,q]));
+ return Object.entries(feedback||{}).map(([id,rec])=>{
+  const q=byId.get(id);if(!q)return null;
+  const lang=rec.language,ui=catalogs[lang],t=q.translations[lang];
+  const reasons=(rec.reasons||[]).map(reason=>{
+   if(reason.startsWith("answer:")){
+    const code=reason.slice(7);return ui.feedbackAnswerPrefix+" "+code+": "+(t.choices[code]||code);
+   }
+   return ({question:ui.feedbackQuestion,language:ui.feedbackLanguage,other:ui.feedbackOther})[reason]||reason;
+  });
+  const questionText=t.title+(t.time?" ("+t.time+")":"");
+  const lines=[id+" · "+lang.toUpperCase()+" · "+rec.version,questionText,
+   ui.feedbackReasonLabel+": "+reasons.join("; ")];
+  if(rec.comment)lines.push(ui.feedbackComment+": "+rec.comment);
+  const safe=lines.map(esc);
+  return {id,language:lang,version:rec.version,title:questionText,reasons,comment:rec.comment||"",
+   plain:lines.join("\n"),html:"<p><strong>"+safe[0]+"</strong><br>"+safe.slice(1).join("<br>")+"</p>"};
+ }).filter(Boolean).sort((a,b)=>questions.indexOf(byId.get(a.id))-questions.indexOf(byId.get(b.id)));
+}
+function projectFeedbackText(questions,feedback,locale,catalogs,contactEmail,version) {
+ const ui=catalogs[locale],items=feedbackEntries(questions,feedback,catalogs);
+ return [ui.feedbackProjectHeading,ui.feedbackVersionLabel+": "+version,
+  ui.feedbackContactLabel+": "+contactEmail,
+  ...(items.length?["",...items.map(item=>item.plain)]:["",ui.feedbackNone])].join("\n");
+}
+function doctorText(questions,answers,selected,locale,ui,groups,presentation,feedback={},allQuestions=questions,catalogs={lv:ui,en:ui,ru:ui}) {
  const counts=counters(questions,answers);
+ const items=feedbackEntries(allQuestions,feedback,catalogs);
  return [ui.doctorHeading,ui.doctorDisclaimer,
+  ...(items.length?["",ui.feedbackSectionHeading,...items.map(item=>item.plain)]:[]),"",
   ui.countDone+": "+counts.answered+" · "+ui.countSkip+": "+counts.skipped+" · "+ui.countOpen+": "+counts.unanswered,
   ui.omissionNote,"",...entries(questions,answers,locale,presentation).map(e=>e.plain)].join("\n");
 }
-function doctorMarkup(questions,answers,selected,locale,ui,groups,presentation) {
+function doctorMarkup(questions,answers,selected,locale,ui,groups,presentation,feedback={},allQuestions=questions,catalogs={lv:ui,en:ui,ru:ui}) {
  const counts=counters(questions,answers);
- return "<h1>"+esc(ui.doctorHeading)+"</h1><p>"+esc(ui.doctorDisclaimer)+"</p><p>"+
+ const items=feedbackEntries(allQuestions,feedback,catalogs);
+ const feedbackHtml=items.length?"<h2>"+esc(ui.feedbackSectionHeading)+"</h2>"+items.map(item=>item.html).join(""):"";
+ return "<h1>"+esc(ui.doctorHeading)+"</h1><p>"+esc(ui.doctorDisclaimer)+"</p>"+feedbackHtml+"<p>"+
  esc(ui.countDone+": "+counts.answered+" · "+ui.countSkip+": "+counts.skipped+" · "+ui.countOpen+": "+counts.unanswered)+"</p><p>"+
  esc(ui.omissionNote)+"</p><hr>"+entries(questions,answers,locale,presentation).map(e=>e.html).join("");
 }
-function doctorHtml(questions,answers,selected,locale,ui,groups,presentation) {
+function doctorHtml(questions,answers,selected,locale,ui,groups,presentation,feedback={},allQuestions=questions,catalogs={lv:ui,en:ui,ru:ui}) {
  return '<!doctype html><html lang="'+esc(locale)+'"><head><meta charset="utf-8"><title>'+esc(ui.doctorHeading)+
- '</title><style>@page{size:A4;margin:12mm}body{font:10pt/1.3 Arial,sans-serif;color:#000;background:#fff;margin:0 auto;max-width:186mm}p{margin:0 0 5pt}hr{border:0;border-top:1px solid #777;margin:7pt 0}strong{font-weight:700}</style></head><body>'+doctorMarkup(questions,answers,selected,locale,ui,groups,presentation)+'</body></html>';
+ '</title><style>@page{size:A4;margin:12mm}body{font:10pt/1.3 Arial,sans-serif;color:#000;background:#fff;margin:0 auto;max-width:186mm}p{margin:0 0 5pt}hr{border:0;border-top:1px solid #777;margin:7pt 0}strong{font-weight:700}</style></head><body>'+doctorMarkup(questions,answers,selected,locale,ui,groups,presentation,feedback,allQuestions,catalogs)+'</body></html>';
 }
-window.PilotReports={entries,readable,counters,doctorText,doctorMarkup,doctorHtml,esc};
+window.PilotReports={entries,feedbackEntries,projectFeedbackText,readable,counters,doctorText,doctorMarkup,doctorHtml,esc};
 })();
