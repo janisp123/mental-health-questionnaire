@@ -1,4 +1,5 @@
-"""Offline browser smoke test for the complete 48-module questionnaire."""
+"""Offline browser regression for the complete 48-module questionnaire."""
+import json
 import tempfile
 from pathlib import Path
 
@@ -63,6 +64,15 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     choose(page, "A")
     assert qid(page) == "M01_10"
 
+    # The full-bank safety rules still produce the gentle support message.
+    act(page, "sections")
+    page.locator('[data-jump="06"]').click()
+    assert qid(page) == "M06_01"
+    choose(page, "B")
+    assert page.locator("#support-message").is_visible()
+    assert page.locator('#support-message a[href^="tel:+371116123"]').is_visible()
+    act(page, "dismissSupport")
+
     # Reach the real medication-list item via ordinary section navigation.
     act(page, "sections")
     page.locator('[data-jump="14"]').click()
@@ -80,6 +90,14 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     page.locator("#shortText").fill("SYNTHETIC NAME")
     act(page, "save")
     assert qid(page) == "M33_02"
+    skip_box = page.locator('.question-nav [data-act="skip"]').bounding_box()
+    assert abs(skip_box["x"] + skip_box["width"] / 2 - 195) < 2
+    assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
+    act(page, "skip")
+    assert page.locator(".question").count() == 0
+    assert backup(page)["answers"]["M33_02"]["kind"] == "skip"
+    act(page, "back")
+    assert qid(page) == "M33_02"
     act(page, "results")
     page.evaluate('window.__copied=null;Object.defineProperty(navigator,"clipboard",{value:{writeText:async t=>{window.__copied=t}},configurable:true})')
     act(page, "copyFeedback")
@@ -93,9 +111,43 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert "SYNTHETIC NAME" in report
     assert "SYNTHETIC MEDICINE" in report
     assert report.index("Question feedback") < report.index("SYNTHETIC NAME")
+    page.evaluate('window.__copied=null;Object.defineProperty(navigator,"clipboard",{value:{writeText:async t=>{window.__copied=t}},configurable:true})')
+    act(page, "copyDoctor")
+    page.wait_for_function("window.__copied!==null")
+    assert page.evaluate("window.__copied") == report
+    page.emulate_media(media="print")
+    assert page.locator(".report-preview").is_visible()
+    assert not page.locator("footer").is_visible()
+    pdf_path = Path(tmp) / "doctor-report.pdf"
+    page.pdf(path=str(pdf_path), format="A4")
+    assert pdf_path.stat().st_size > 1000
+    page.emulate_media(media="screen")
+    for language in ("lv", "ru", "en"):
+        page.select_option("#language", language)
+        assert page.locator(".report-preview h1").inner_text() == data["ui"][language]["doctorHeading"]
     assert not page.locator('[data-act="ai"]').count()
     assert not errors, errors
     assert not network, network
+
+    # A fresh full-bank run downloads cumulative recovery after ten skips.
+    recovery_page, recovery_errors, recovery_network = open_page(browser, html_path)
+    recovery_page.locator('[data-act="start"]').click()
+    first = questions[0]
+    for language in ("lv", "ru", "en"):
+        recovery_page.select_option("#language", language)
+        assert recovery_page.locator(".question h2").inner_text() == first["translations"][language]["title"]
+    for _ in range(9):
+        act(recovery_page, "skip")
+    with recovery_page.expect_download() as event:
+        act(recovery_page, "skip")
+    ten_skips = json.loads(event.value.path().read_text())
+    assert ten_skips["savedCount"] == 10 and len(ten_skips["answers"]) == 10
+    assert all(answer["kind"] == "skip" for answer in ten_skips["answers"].values())
+    restore(recovery_page, ten_skips)
+    assert backup(recovery_page)["answers"] == ten_skips["answers"]
+    assert not recovery_errors, recovery_errors
+    assert not recovery_network, recovery_network
+    recovery_page.close()
     browser.close()
 
-print("PASS: 48 sections/712 questions run offline; selection, multi/single, medicine, text and doctor report; Android device UNVERIFIED.")
+print("PASS: full offline runtime includes selection, answer types, conditions, support, feedback/recovery, skip/back, copy/print, three locales, and ten-answer recovery. Android device UNVERIFIED.")

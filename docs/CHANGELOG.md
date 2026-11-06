@@ -416,3 +416,12 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Verified commit:** `c8d69bbcea44fc8f6c9e3cd41679ff5bd31cbcb0` on `develop`.
 - **Overall status:** the full technical-review build is available; the broader verification task remains IN_PROGRESS. The current full-bank browser journey does not yet exercise every report, navigation, safety-message and recovery edge case; actual Android-device behavior is unverified. The build is not clinically validated, and EN/RU remain drafts.
 - **Exact next action:** extend the full-bank browser journey for fixed Skip/Back, safety support, runtime language switching, doctor copy/print, and ten-answer recovery download; then distinguish remaining Android checks from automated Chromium results.
+
+### 2026-11-06 · FULL-BUILD-VERIFICATION · complete runtime regression (IN_PROGRESS)
+
+- **Starting commit:** `71958e36360bdf6fedf5d6c77416fb7560d235dc` on `develop`.
+- **Task:** cover the remaining high-value full-bank runtime behaviors in offline Chromium.
+- **Files:** `tests/full_bank/test_runtime.py`, `tests/full_bank/browser_helpers.py`, this changelog.
+- **In progress:** the full build journey now checks fixed centered Skip and return, a real gentle-support mapping, runtime LV/RU/EN switching, doctor report copy/print, and the cumulative ten-skip recovery download/restore.
+- **Local checks:** Python compilation, default full build, source integrity and structural/report tests are the pre-CI gate; actual browser execution is pending the workflow.
+- **Exact next action:** run the updated complete-questionnaire workflow and fix any full-build-only issue before claiming these behaviors verified.
