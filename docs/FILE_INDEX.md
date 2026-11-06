@@ -15,7 +15,9 @@
 | Questions in LV/EN/RU | `src/modules/182_MODULE_01_LV_EN_RU_v16.json` through `182_MODULE_48_LV_EN_RU_v16.json` | 48 sections, 712 questions, language fields per module; LV reference, EN/RU **unreviewed drafts** |
 | Module source index | `tests/fixtures/181_MODULE_INDEX_v16.json` | Frozen initial module SHA256, count and order; do not confuse with the current overall manifest |
 | Full question bank | `src/modules/182_MODULE_01_LV_EN_RU_v16.json` through `182_MODULE_48_LV_EN_RU_v16.json` | Canonical question/answer content and translations, separate from application design and runtime. |
-| Shared application design/runtime | `src/app/core/`, `src/app/reports/`, `src/app/i18n/` | Reusable offline UI, styles, report renderer and interface labels. It consumes embedded data and does not read question files at runtime. |
+| Application screens and design | `src/app/screens/`, `src/app/styles/`, `src/app/i18n/` | Small independent page templates, role-based styles and interface labels. Edit these without opening question files. |
+| Shared application runtime and reports | `src/app/core/`, `src/app/reports/` | Shared state, navigation, recovery, event handling, and report generation. Runtime consumes embedded data and does not read question files separately. |
+| App source order | `src/app/build.json` | Explicit ordered list of stylesheet and script inputs assembled into the single offline HTML. |
 | Questionnaire presentation config | `src/questionnaire/layout.json`, `src/questionnaire/presentation.json`, `src/questionnaire/i18n/` | Module navigation/report order, answer-specific report rules and frozen module titles; separate from design and original question content. |
 | Full offline application build | `tools/build_questionnaire.py`, `src/app/`, `src/questionnaire/` | `python tools/build_questionnaire.py` builds the complete 712-question questionnaire as one offline HTML file. See [architecture](QUESTIONNAIRE_ARCHITECTURE.md). |
 | Existing working application | `reference/baseline/html/162_Sagatavosanas_vizitei_LV_v16.html` | Exact frozen LV v16 single-file reference for behavior and source text |
@@ -33,17 +35,19 @@
 
 - `src/modules/`: source questionnaires (48 exact modules).
 - `src/i18n/working/`: existing translation drafts/resources.
-- `src/app/`: shared offline application design, runtime and report renderer; contains no question bank.
+- `src/app/`: offline app source with independent screens, styles, shared runtime and report renderer; contains no question bank.
 - `src/questionnaire/`: module order, report presentation rules and source-grounded module titles.
 - `archive/pilot/`: retired 60-question prototype source, tests and notes; not a build input or active CI suite.
 - `tests/full_bank/`: source, build, report and full-runtime checks for the 48-module questionnaire.
+- `tests/app/`: focused screen-rendering and source-assembly checks using synthetic content rather than the full bank.
 - `reference/baseline/html/`, `reference/baseline/readme/`, `reference/baseline/information/`: immutable v16 reference snapshots.
 - `reference/history/`: legacy v9/v14 references; never assume newest.
 - `docs/drive-original/`: immutable former Drive development directions, indexes, and prior changelog, preserved for traceability; some old wording points to Drive because these are historical snapshots.
 - `docs/`: active GitHub changelog, instructions, migration record and release policy.
 - `tests/fixtures/`: imported module index and past EN/RU draft build report; *not* evidence of current full test passes.
 - `tools/`: existing original build helpers and new verification tools.
-- `.github/workflows/questionnaire-checks.yml`: active develop-branch verification workflow, including headless Chromium and a non-release build artifact.
+- `.github/workflows/app-component-checks.yml`: fast focused checks for screen/style edits.
+- `.github/workflows/questionnaire-checks.yml`: full develop-branch source, build, headless Chromium and non-release artifact verification for shared runtime/data/build changes.
 - `main` branch is **not** the active source tree; `develop` holds the import.
 
 ## Distribution — separate from development

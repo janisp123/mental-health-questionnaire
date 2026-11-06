@@ -1,0 +1,41 @@
+name: App Component Checks
+
+on:
+  push:
+    branches: [develop]
+    paths:
+      - 'src/app/screens/**'
+      - 'src/app/styles/**'
+      - 'src/app/i18n/**'
+      - 'tests/app/**'
+      - '.github/workflows/app-component-checks.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  app-components:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check offline app source assembly
+        run: python tests/app/test_build_manifest.py
+      - name: Check interface catalog structure
+        run: python tests/app/test_ui_catalogs.py
+      - name: Test screen renderers with synthetic content
+        run: |
+          node tests/app/test_screens.js
+          node tests/app/test_question_screens.js
+          node tests/app/test_report_screens.js
+      - name: Check component JavaScript syntax
+        run: |
+          for file in src/app/screens/*.js; do
+            node --check "$file"
+          done

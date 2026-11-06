@@ -4,7 +4,9 @@ on:
   push:
     branches: [develop]
     paths:
-      - 'src/app/**'
+      - 'src/app/core/**'
+      - 'src/app/reports/**'
+      - 'src/app/build.json'
       - 'src/questionnaire/**'
       - 'src/modules/**'
       - 'tests/fixtures/**'
@@ -50,6 +52,13 @@ jobs:
         run: |
           node --check src/app/core/app.js
           node --check src/app/reports/reports.js
+      - name: Check isolated app components
+        run: |
+          python tests/app/test_build_manifest.py
+          python tests/app/test_ui_catalogs.py
+          node tests/app/test_screens.js
+          node tests/app/test_question_screens.js
+          node tests/app/test_report_screens.js
       - name: Build complete offline HTML
         run: python tools/build_questionnaire.py
       - name: Prepare desktop Chromium
