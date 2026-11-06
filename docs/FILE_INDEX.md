@@ -27,7 +27,8 @@
 | Standalone README/PDF snapshots | `reference/baseline/readme/`, `reference/baseline/information/` | Current v16 LV reference and unreviewed EN/RU documents |
 | Module reconstruction tool | `tools/183_MODULE_TOOLS_v16.py` | Rebuilds BANK data, not full UI or reports |
 | Release-evidence verifier | `tools/186_RELEASE_GATE_CHECK_v1.py` | Checks evidence metadata; is not an automated browser or clinical test |
-| Active development history | `docs/CHANGELOG.md` | **Only active change log** |
+| Active development status and checkpoints | `docs/CHANGELOG.md` | Short, authoritative current state and next action; keep this file focused on active work. |
+| Archived development history | `docs/history/CHANGELOG_HISTORY_2026-11-06.md` | Previous chronological pilot/full-build log, preserved for historical lookup; do not treat old IN_PROGRESS entries as current. |
 | Historical Drive change log | `docs/drive-original/166_CHANGELOG_LV.md` | Frozen prior history, **never update during development** |
 | Older artifacts | `reference/history/` | Six outdated reference versions; not build inputs unless specifically needed |
 
@@ -43,6 +44,7 @@
 - `reference/baseline/html/`, `reference/baseline/readme/`, `reference/baseline/information/`: immutable v16 reference snapshots.
 - `reference/history/`: legacy v9/v14 references; never assume newest.
 - `docs/drive-original/`: immutable former Drive development directions, indexes, and prior changelog, preserved for traceability; some old wording points to Drive because these are historical snapshots.
+- `docs/history/`: archived GitHub development history kept separate from the active checkpoint.
 - `docs/`: active GitHub changelog, instructions, migration record and release policy.
 - `tests/fixtures/`: imported module index and past EN/RU draft build report; *not* evidence of current full test passes.
 - `tools/`: existing original build helpers and new verification tools.
