@@ -92,5 +92,5 @@
 
 **Files:** src/app/i18n/ui.lv.json, src/app/i18n/ui.en.json, src/app/i18n/ui.ru.json, docs/CHANGELOG.md.
 **Checks:** UI catalog consistency, offline app assembly, start/section screen rendering, question/medicine/feedback screen rendering, and `git diff --check` PASS. Focused GitHub app workflow pending.
-**Commit:** pending.
+**Commit:** 731455a.
 **Next action:** run the focused app workflow and record its result.
