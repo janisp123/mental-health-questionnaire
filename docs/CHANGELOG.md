@@ -219,14 +219,27 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Files:** `src/pilot/i18n/medicine.{lv,en,ru}.json`, `tools/build_pilot.py`, `tests/pilot/test_build.py`, this changelog.
 - **Completed:** the bundle now includes minimal medication-list fields, statuses, benefit choices and related form/report labels. Test comparisons verify these match the corresponding frozen v16 LV/EN/RU text exactly. The 60-question registry is unchanged.
 - **Checks:** `python3 tests/pilot/test_build.py` PASS (60 questions, 3 languages, offline/no imports); `python3 tests/pilot/test_full_bank_audit.py` PASS (48 modules/712 source questions; also reports medicineList as the remaining engine gap); `python3 tools/verify_project_index.py` PASS (79 original hashes); `git diff --check` and all three locale JSON parses PASS. These do not verify language quality or interactive medicine form behavior.
-- **Remaining:** `medicineList` still cannot be answered, restored or reported by the runtime. Full question-bank integration has not begun; the pilot still runs only 60 questions.
+- **Remaining:** `medicineList` rendering and save/restore/report behavior remain to be implemented. Full question-bank integration has not begun; the pilot still runs only 60 questions.
 - **Next action:** Task 5b — implement medicine-list editing and validation, compatible backup restore, and compact clinician-report serialization with focused tests; keep the active registry unchanged until this passes.
 
-### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 7 (IN_PROGRESS)
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 7
 
 **Task 5b — `medicineList` engine support.**
 - **Starting commit:** `c27f82bdbe1567d266700ce4f4f309c0d7973013` on `develop`.
-- **Scope:** render the 13-field repeatable medication form in the existing question screen; manually save a validated self-reported record, restore it through the existing recovery format, and include only entered details in the ordinary-to-sensitive clinician report. Leave the 60-question registry and frozen source untouched.
-- **Tests planned:** missing-field/invalid-enum and valid-record recovery checks; browser add/edit/remove/save/skip/restore journey; compact localized report output and escaping.
-- **Files expected:** pilot app/reports/styles, pilot tests, and this changelog only if implementation requires it.
-- **Next action:** inspect save/restore, delegated event, and report flows; add failing tests for the full record lifecycle before runtime changes.
+- **Implementation commit:** `a1bce9901ff42ec684dd3d4c1a1cef3ca6a3fc73` on `develop` (remote branch readback and local reset confirmed).
+- **Files:** `.github/workflows/pilot-checks.yml`, `src/pilot/core/app.js`, `src/pilot/i18n/medicine.{lv,en,ru}.json`, `src/pilot/reports/reports.js`, `tests/pilot/test_build.py`, `tests/pilot/test_full_bank_audit.py`, new `tests/pilot/test_medicine.py`, new `tests/pilot/test_medicine_report.js`, this changelog.
+- **Completed:** added repeatable medication records with 13 source-labeled fields, current/past/unknown status, optional benefit and discussion; manual save rejects an empty form, Skip remains separate, and the clinician report prints only entered details in compact localized text. Recovery validates record keys, enums, sizes and emptiness atomically. Original pilot-v1 choice/text/skip and feedback records continue restoring. The audit now identifies medicineList as supported while explicitly noting only 60 questions are active.
+- **Checks:** test-first report and browser tests failed before their respective support was added. Then `python3 tests/pilot/test_build.py`, `python3 tests/pilot/test_source_fidelity.py`, `python3 tests/pilot/test_layout.py`, `python3 tests/pilot/test_full_bank_audit.py`, `python3 tools/verify_project_index.py`, JavaScript syntax, `node tests/pilot/test_reports.js`, `node tests/pilot/test_medicine_report.js` and offline Chromium `test_medicine.py`, `test_feedback.py`, `test_browser.py`, `test_independence.py`, `test_section21.py` all passed. Browser tests were run serially on desktop Chromium. The source index still verifies 79 originals / 48 modules / 712 IDs; this is not full runtime integration.
+- **Regression found and fixed:** a stricter restore check initially rejected ordinary original answers because their choice type is implicit; validation now excludes only text and medicine records. Existing recovery and browser suites pass.
+- **Unverified/pending:** GitHub Actions for this commit, native Android Chrome, EN/RU human-language review, professional review, and full 712-question browser behavior.
+- **Next action:** Task 5c — design a read-only adapter that maps the immutable source-bank question schema into the existing engine bundle and prove exact ID/code/text/condition fidelity on the first small module batch without changing the active 60-question pilot.
+
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 8 (IN_PROGRESS)
+
+**Task 5c — direct source-bank adapter, first batch.**
+- **Starting commit:** `a1bce9901ff42ec684dd3d4c1a1cef3ca6a3fc73` on `develop`.
+- **Technical choice:** adapt the immutable `src/modules/182_MODULE_XX_LV_EN_RU_v16.json` data at build time. Do not copy the 712 question records into a second active source tree. Preserve the existing pilot builder/mode for current regression coverage while testing the adapter separately.
+- **Scope:** convert one small batch (modules 01–04) into the engine's question/group shape; retain source IDs, order, codes, wording, statuses, type, conditions and localized choices. No registry activation, app UI change, or frozen-source edit in this step.
+- **Tests planned:** exact round-trip field comparisons for those modules, unique IDs/orders, and condition-parent references; existing pilot remains at 60 questions.
+- **Files planned:** build-time adapter, focused source-adapter test, changelog.
+- **Next action:** inspect the four source module structures and implement a read-only conversion with assertions against the originals; then run unit/source-integrity checks and checkpoint before expanding the batch.
