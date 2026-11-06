@@ -25,6 +25,7 @@
 7. [DONE] Run focused checks and the full integration workflow after structural work.
 8. [BLOCKED] Physical Android testing and human language/clinical review require a device or reviewers.
 9. [DONE] Isolate delegated DOM event wiring behind tested callbacks; focused and full CI passed.
+10. [IN_PROGRESS] Reuse runner-provided Chrome in focused CI; install bundled Chromium only when unavailable.
 
 **Guardrails:** keep source questions, IDs, codes, conditions, and frozen references unchanged; preserve recovery compatibility; keep script and style order explicit in `src/app/build.json`; add no runtime dependencies. Work in small verified commits.
 
@@ -76,3 +77,10 @@
 **Checks:** event-routing test, model/flow/recovery tests, screen renderers, manifest, catalogs, JS syntax, and `git diff --check` PASS locally. Focused workflow 42254680909 and full workflow 42254680875 PASS.
 **Commit:** 972b3f1.
 **Next action:** hands-on Android Chrome check and human review of LV interface wording, EN/RU drafts, and clinical content; those need a device and human reviewers.
+
+**Checkpoint 8 — CI startup cost:** the focused app workflow always downloads Playwright Chromium, while the full workflow first reuses the runner's Google Chrome when present. Apply that existing fallback pattern to the focused workflow and verify it in CI.
+
+**Files:** .github/workflows/app-component-checks.yml, docs/CHANGELOG.md.
+**Checks:** pending focused workflow after the workflow change.
+**Commit:** pending.
+**Next action:** use runner Chrome when available and retain Playwright Chromium as fallback.

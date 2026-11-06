@@ -48,7 +48,12 @@ jobs:
       - name: Prepare focused browser check
         run: |
           python -m pip install playwright
-          python -m playwright install --with-deps chromium
+          if command -v google-chrome >/dev/null; then
+            google-chrome --version
+            echo "QUESTIONNAIRE_BROWSER=$(command -v google-chrome)" >> "$GITHUB_ENV"
+          else
+            python -m playwright install --with-deps chromium
+          fi
       - name: Check synthetic runtime behaviors offline
         run: |
           python tests/app/test_runtime_answers.py
