@@ -1,3 +1,6 @@
+Warning: truncated output (original token count: 8149)
+Total output lines: 212
+
 # Development changelog — mental-health-questionnaire
 
 **Active task log:** This file on GitHub `develop`, effective 2026-11-05.
@@ -103,12 +106,7 @@ Complete detailed historical Latvian changelog remains in the [archived Drive `1
 2. Commit and checkpoint after each meaningful, verified step.
 3. After actual tests and remote readback, set `TASK_DONE`; for interruptions or failed actions leave `IN_PROGRESS` or `BLOCKED` with exact next action.
 4. Only one active task log: `docs/CHANGELOG.md`. `docs/MIGRATION_STATUS.md` may remain a concise directory/reference but is not a second mutable task log after this handoff.
-5. `develop` is the work branch; `main` is not a workbench. Publishing to Drive occurs only from an approved tested release candidate, never directly from unverified development.
-6. No real patient information, user answers, recovery files, personal medical records, credentials or private correspondence in this public repository.
-
-### UX-SUPPORT-REPORT-REDESIGN — stage 1 checkpoint (IN_PROGRESS)
-- Implemented independent per-answer presentation metadata and compact self-contained AI/doctor text. No codes/JSON/decoding keys in AI. Doctor ordering is ascending; uncertainty/refusal are null, not zero. Original language and logic files unchanged.
-- Verified locally: new report acceptance test first failed against old API, then passed; structural 60-question check, frozen-source fidelity including swapped-label rejection, JS syntax passed.
+5. `develop` is the work branch; `main` is not a workbench. Publishing to Drive occurs only from an approved tested re…149 tokens truncated…against old API, then passed; structural 60-question check, frozen-source fidelity including swapped-label rejection, JS syntax passed.
 - Browser verification NOT performed for this stage. Existing browser journeys still need updating for the authorized UX/export changes. Local Chromium installation failed (invalid download archive).
 - This intermediate checkpoint deliberately skips CI; full browser CI must run after stages 2–3 to avoid obsolete expected-export failures. Not TASK_DONE and not a release.
 - Next: optional display layout, fixed navigation, single-tap guard, support communication, legacy restore and browser regression updates.
@@ -152,13 +150,13 @@ Complete detailed historical Latvian changelog remains in the [archived Drive `1
 **Numbered checklist**
 1. [DONE] Remove AI/coded-answer UI/export and weighting; retain one clinician report with explicit bold-answer mappings.
 2. [DONE] Add per-question project-feedback flag and non-destructive Save & Continue; persist in new recovery fields and restore old pilot-v1 backups.
-3. [TODO] Add isolated project-feedback copy/export and clinician-report ordering/privacy checks.
-4. [TODO] Audit the full 48-module schema against engine capabilities (types, conditions, status, choice constraints, language coverage); register gaps before integration.
+3. [DONE] Add isolated project-feedback copy/export and clinician-report ordering/privacy checks.
+4. [IN_PROGRESS] Audit the full 48-module schema against engine capabilities (types, conditions, status, choice constraints, language coverage); register gaps before integration.
 5. [TODO] Integrate the original 712 questions in small tested batches; update fidelity/navigation tests after each batch.
 6. [TODO] Build the complete offline HTML; update manifest, architecture/index and minimal user-facing documentation after functionality works.
 7. [TODO] Run full source-integrity, browser/export/privacy/offline regressions; record unverified Android and human review.
 
-**Next action:** complete checklist item 3, including the separate project-feedback export and clinician-report feedback ordering/privacy checks. No frozen source, `main`, or Drive release edits.
+**Next action:** checklist item 4 — audit all 48 original module JSON schemas against the pilot engine, document supported/unsupported logic and prepare the smallest safe integration batch. No frozen source, `main`, or Drive release edits.
 
 
 ### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 1
@@ -198,3 +196,15 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Checks:** the new guard assertion failed before implementation, then passed. Builder, report, layout, three-language pilot source fidelity, JS syntax, feedback browser, general browser, locale/condition independence, section 21, and full project index/hash checks all passed. The last integrity check confirms all 79 imported originals, 48 modules and 712 IDs/orders.
 - **Remaining:** none for checklist item 1; clinical review and native Android testing remain separate overall limitations.
 - **Exact next action:** checklist item 3 — add the isolated project-feedback export and place submitted question feedback first in the clinician report. Verify the feedback export contains no medical answers or personal details, works with zero answers, and clinician content remains ordinary-to-sensitive.
+
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 4
+
+**Checklist:** 1 [DONE] · 2 [DONE] · 3 [DONE] · 4 [IN_PROGRESS] · 5–7 [TODO].
+
+**Task 3 — feedback exports and report ordering**
+- **Implementation commit:** `5cec85f3024d1fe04029dcd68cc29924adb5fa50` on `develop`.
+- **Files:** `src/pilot/core/app.js`, `src/pilot/reports/reports.js`, `src/pilot/reports/presentation.json`, `src/pilot/i18n/ui.{lv,en,ru}.json`, `tools/build_pilot.py`, `tests/pilot/test_build.py`, `tests/pilot/test_reports.js`, `tests/pilot/test_feedback.py`.
+- **Completed:** added a separate manual “Copy feedback for the project” action that works from the results screen with no medical responses. Its payload is built only from question feedback, original wording/time, question ID, reason, optional comment, reported language/version, current questionnaire version and project contact. The email `janis.paegle.email@gmail.com` matches the address recorded in `src/i18n/working/Temporary translation workspace — questionnaire text only.csv`. The feedback form warns users not to include identifying or answer information. Clinician reports show question feedback before compact medical answers; medical entries keep the existing ordinary-to-sensitive topic order and explicit bold-answer allowlist.
+- **Checks:** report-format checks passed for three locales, dynamic answer-choice reasons, feedback language/version, contact email, empty-feedback output and report ordering. Offline Chromium confirmed export works with no medical answers, excludes a synthetic personal-data sentinel from project feedback even when it is stored in a medical response, and places feedback before ordinary-to-sensitive medical answers. Builder, source/layout, all three pilot browser suites, and full 79-file/48-module/712-question integrity checks passed.
+- **Remaining:** the pilot still runs only 60 questions; full source-bank integrity is not full runtime integration. Native Android Chrome and clinical/professional review are unverified.
+- **Exact next action:** audit each source module's question/condition/status/choice schema and the engine's supported behaviors before integrating any new modules.
