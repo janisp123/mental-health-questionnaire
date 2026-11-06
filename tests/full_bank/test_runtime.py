@@ -3,7 +3,7 @@ import tempfile
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
-from browser_helpers import act, backup, launch, open_page, qid
+from browser_helpers import act, backup, choose, launch, open_page, qid
 import build_pilot as build
 
 
@@ -28,7 +28,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     # Multi-select is manually saved; single-select saves once even on a double tap.
     assert qid(page) == "M23_11"
     page.locator('input[name="answer"][value="A"]').check()
-    page.locator('input[name="answer"][value="B"]').check()
+    choose(page, "B")
     assert backup(page)["answers"] == {}
     act(page, "save")
     assert qid(page) == "M23_01"

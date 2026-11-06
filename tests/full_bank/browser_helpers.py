@@ -25,6 +25,12 @@ def qid(page):
     return page.locator(".question").get_attribute("data-question")
 
 
+def choose(page, code):
+    # The app deliberately ignores rapid taps for 500 ms to prevent double answers.
+    page.wait_for_timeout(520)
+    page.locator(f'input[name="answer"][value="{code}"]').locator("..").click()
+
+
 def backup(page):
     with page.expect_download() as event:
         act(page, "backup")
