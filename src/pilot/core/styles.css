@@ -16,6 +16,7 @@ header{border:0;margin:0;padding:0}.lang{justify-content:flex-end}
 .support-card{border:1px solid var(--accent);border-radius:12px;padding:16px;margin:16px 0;background:#203b36;color:#eef8f4}
 a{color:var(--accent);text-underline-offset:3px}a:focus-visible{outline:3px solid var(--accent)}
 .support-card a,footer a{display:inline-block;min-height:44px;padding:8px 0}
+.question-title-row{display:flex;align-items:flex-start;gap:8px}.question-title-row h2{flex:1;margin-top:8px}.feedback-flag{flex:none;min-width:48px;background:#b8e3ca;color:#123c28;border-color:#76b892;font-size:24px;font-weight:700;line-height:1;padding:8px}.feedback-panel{border:1px solid #76b892;border-radius:12px;padding:12px;margin:10px 0 16px}.feedback-panel legend{font-weight:700;color:#b8e3ca;padding:0 5px}.feedback-choice{margin:7px 0}.feedback-panel textarea{display:block;width:100%;min-height:80px;margin-top:6px}
 @media print{.question-nav,.support-card{display:none!important}main{padding:0}}
 /* Reserve the navigation viewport: content scrolls above it, never underneath. */
 main:has(.question-nav){height:calc(100dvh - 80px - env(safe-area-inset-bottom,0px));overflow-y:auto;padding-bottom:24px}

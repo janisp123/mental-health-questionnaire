@@ -14,7 +14,7 @@ for(const group of data.groups){
 let answerLockUntil=0;
 const app=document.getElementById("app");
 const report=window.PilotReports;
-let state={lang:"lv",screen:"start",currentId:null,answers:{},selected:[],sectionDraft:[],sectionConfirmed:false,savedCount:0,notice:"",draft:null};
+let state={lang:"lv",screen:"start",currentId:null,answers:{},feedback:{},feedbackOpen:false,selected:[],sectionDraft:[],sectionConfirmed:false,savedCount:0,notice:"",draft:null};
 function ui(){return data.ui[state.lang];}
 function esc(s){return report.esc(s);}
 function label(key){return esc(ui()[key]||key);}
@@ -98,6 +98,16 @@ function storedDraft(q){
  if(r?.kind==="text")return {value:r.value||""};
  return {codes:[],value:""};
 }
+function renderFeedback(q,t){
+ if(!state.feedbackOpen)return "";
+ const saved=state.feedback[q.id]||{reasons:[],comment:""},selected=new Set(saved.reasons||[]);
+ const choices=[['question',label("feedbackQuestion")],['language',label("feedbackLanguage")],
+  ...q.choiceCodes.map(code=>['answer:'+code,esc(ui().feedbackAnswerPrefix+" "+code+" — "+(t.choices[code]||code))]),
+  ['other',label("feedbackOther")]];
+ return '<fieldset id="question-feedback" class="feedback-panel"><legend>'+label("feedbackTitle")+'</legend>'+choices.map(([key,text])=>
+  '<label class="choice feedback-choice"><input type="checkbox" data-feedback-reason="'+esc(key)+'"'+(selected.has(key)?' checked':'')+'> <span>'+text+'</span></label>'
+ ).join("")+'<label class="field-label">'+label("feedbackComment")+' <textarea id="feedback-comment" maxlength="500">'+esc(saved.comment||"")+'</textarea></label><p class="muted">'+label("optionalText")+'</p>'+btn("feedbackContinue","feedbackContinue","primary-inline")+(state.feedback[q.id]?btn("removeFeedback","removeFeedback"):"")+'</fieldset>';
+}
 function renderQuestion(){
  const q=current(),u=ui();
  if(!q){state.screen="results";return renderResults();}
@@ -118,7 +128,9 @@ function renderQuestion(){
     return '<label class="choice"><input type="'+kind+'" name="answer" value="'+esc(key)+'"'+(checked?" checked":"")+'> <span>'+esc(t.choices[key]||key)+'</span></label>';
   }).join("")+'</fieldset>';
  }
- return '<section class="card question" data-question="'+esc(q.id)+'"><div class="muted">'+esc(group)+' · '+(idx+1)+'/'+queue.length+'</div><h2 tabindex="-1" id="question-heading">'+esc(t.title)+'</h2>'+time+help+options+
+ const flagged=!!state.feedback[q.id];
+ const feedbackControl='<div class="question-title-row"><h2 tabindex="-1" id="question-heading">'+esc(t.title)+'</h2><button type="button" class="feedback-flag" data-act="feedback" aria-label="'+label("feedbackFlag")+'" aria-expanded="'+state.feedbackOpen+'" title="'+label("feedbackFlag")+'">⚑</button></div>';
+ return '<section class="card question" data-question="'+esc(q.id)+'"><div class="muted">'+esc(group)+' · '+(idx+1)+'/'+queue.length+(flagged?' · '+label("feedbackFlagged"):"")+'</div>'+feedbackControl+renderFeedback(q,t)+time+help+options+
  '<p class="muted">'+label(q.multi||q.type==="shortText"?"saveWarning":"autoHint")+'</p>'+(q.multi||q.type==="shortText"?btn("save","next","primary"):"")+
  '<div class="actions">'+btn("skipSection","skipSection")+btn("end","skipRest")+'</div></section>';
 
@@ -148,7 +160,7 @@ function render(){
  app.innerHTML='<main>'+header()+supportCard()+(state.notice?'<p role="status" class="notice">'+esc(state.notice)+'</p>':"")+body+footer()+navigation()+'</main>';
  if(state.focusSupport||keepSupportFocus){document.getElementById('support-message')?.focus({preventScroll:true});state.focusSupport=false;}
 }
-function setQuestion(id){state.currentId=id;state.draft=null;state.screen="question";state.notice="";render();window.scrollTo(0,0);}
+function setQuestion(id){state.currentId=id;state.draft=null;state.feedbackOpen=false;state.screen="question";state.notice="";render();window.scrollTo(0,0);}
 function advance(){
  const list=active(),now=list.findIndex(q=>q.id===state.currentId),next=list[now+1];
  if(next){setQuestion(next.id);return;}
@@ -248,7 +260,7 @@ function downloadFile(name,contents,mime){
  const href=URL.createObjectURL(blob),link=document.createElement("a");link.href=href;link.download=name;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(href),1500);
 }
 function downloadBackup(){
- const payload={schema:"mental-pilot-recovery-v1",version:data.version,layoutVersion:data.layout_version,lang:state.lang,selected:[...state.selected],sectionConfirmed:state.sectionConfirmed,currentId:state.currentId,answers:state.answers,savedCount:state.savedCount,reviewQueue:state.reviewQueue||null,reviewReturn:state.reviewReturn||null,exportedAt:new Date().toISOString()};
+ const payload={schema:"mental-pilot-recovery-v1",version:data.version,layoutVersion:data.layout_version,lang:state.lang,selected:[...state.selected],sectionConfirmed:state.sectionConfirmed,currentId:state.currentId,answers:state.answers,feedback:state.feedback,savedCount:state.savedCount,reviewQueue:state.reviewQueue||null,reviewReturn:state.reviewReturn||null,exportedAt:new Date().toISOString()};
  downloadFile("anketa-pilot-recovery.json",JSON.stringify(payload,null,2),"application/json");
 }
 function restore(file){
@@ -273,16 +285,30 @@ function restore(file){
     }else if(rec.kind==="skip")a[id]={kind:"skip",status:"skipped",savedAt:rec.savedAt||""};
     else throw Error("Unknown record");
    }
+   const feedback=x.feedback==null?{}:x.feedback;
+   if(!feedback||typeof feedback!=="object"||Array.isArray(feedback))throw Error("Invalid feedback");
+   const restoredFeedback={};
+   for(const [id,rec] of Object.entries(feedback)){
+    const q=byId[id];
+    if(!q||!rec||typeof rec!=="object"||Array.isArray(rec)||!Array.isArray(rec.reasons)||!rec.reasons.length||new Set(rec.reasons).size!==rec.reasons.length)throw Error("Invalid feedback record");
+    const valid=new Set(["question","language","other",...q.choiceCodes.map(code=>"answer:"+code)]);
+    if(!rec.reasons.every(reason=>typeof reason==="string"&&valid.has(reason))||
+       typeof rec.comment!=="string"||rec.comment.length>500||
+       !["lv","en","ru"].includes(rec.language)||typeof rec.version!=="string"||rec.version.length>40||
+       typeof rec.updatedAt!=="string")throw Error("Invalid feedback details");
+    restoredFeedback[id]={reasons:[...rec.reasons],comment:rec.comment,language:rec.language,version:rec.version,updatedAt:rec.updatedAt};
+   }
    if(x.selected!=null&&(!Array.isArray(x.selected)||x.selected.some(id=>!optionalIds.includes(id))))
      throw Error("Recovery file requires an unavailable section");
    const queue=x.reviewQueue;
    if(queue!=null&&(!Array.isArray(queue)||new Set(queue).size!==queue.length||
      queue.some(id=>!byId[id]||!isSafety(byId[id]))))throw Error("Invalid review sequence");
-   if(Object.keys(state.answers).length&&!window.confirm(ui().replaceSession))return;
+   if((Object.keys(state.answers).length||Object.keys(state.feedback).length)&&!window.confirm(ui().replaceSession))return;
    state.reviewQueue=queue?.length?[...queue]:null;
    state.reviewReturn=state.reviewQueue&&["question","report","results"].includes(x.reviewReturn?.screen)
      ?{screen:x.reviewReturn.screen,id:x.reviewReturn.id}:null;
    state.answers=a;
+   state.feedback=restoredFeedback;state.feedbackOpen=false;
    const selected=Array.isArray(x.selected)?x.selected:[];
    // Old files did not list their implicitly mandatory opening group.
    state.selected=optionalIds.filter(id=>selected.includes(id)||(!x.layoutVersion&&data.legacy_opening_groups.includes(id)));
@@ -325,6 +351,22 @@ function action(key){
  if(key==="confirm"){confirmSections();return;}
  if(key==="cancel"){state.screen=state.currentId?"question":"start";render();return;}
  if(key==="save"){save();return;}
+ if(key==="feedback"){state.feedbackOpen=!state.feedbackOpen;state.notice="";render();return;}
+ if(key==="feedbackContinue"){
+  const currentQuestion=current();if(!currentQuestion)return;
+  const reasons=Array.from(app.querySelectorAll('[data-feedback-reason]:checked'),el=>el.dataset.feedbackReason);
+  if(!reasons.length){state.notice=ui().feedbackChooseReason;render();return;}
+  const comment=(document.getElementById("feedback-comment")?.value||"").trim().slice(0,500);
+  state.feedback[currentQuestion.id]={reasons,comment,language:state.lang,version:data.version,updatedAt:new Date().toISOString()};
+  state.feedbackOpen=false;state.notice="";
+  if(!state.answers[currentQuestion.id]){state.answers[currentQuestion.id]={kind:"skip",savedAt:new Date().toISOString(),status:"skipped"};state.savedCount++;}
+  advanceAfterSave();
+  if(state.savedCount&&state.savedCount%10===0){downloadBackup();state.notice=ui().saved10;render();}
+  return;
+ }
+ if(key==="removeFeedback"){
+  if(current())delete state.feedback[state.currentId];state.feedbackOpen=false;state.notice="";render();return;
+ }
  if(key==="skip"){skip();return;}
  if(key==="previous"){previous();return;}
  if(key==="skipSection"){skipSection();return;}
@@ -341,7 +383,7 @@ function action(key){
   }return;}
  if(key==="new"){
    if(window.confirm(u.newConfirm)){
-     const lang=state.lang;state={lang,screen:"start",currentId:null,answers:{},selected:[],sectionDraft:[],sectionConfirmed:false,savedCount:0,notice:"",draft:null};render();
+     const lang=state.lang;state={lang,screen:"start",currentId:null,answers:{},feedback:{},feedbackOpen:false,selected:[],sectionDraft:[],sectionConfirmed:false,savedCount:0,notice:"",draft:null};render();
    }return;
  }
  if(key==="backup"){downloadBackup();state.notice=u.backupSaved;render();return;}

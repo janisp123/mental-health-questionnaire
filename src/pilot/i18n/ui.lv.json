@@ -99,6 +99,17 @@
     "notesTitle": "Versiju izmaiņas",
     "notesBody": "v0.2 (2026-11-06) — izvēles tēmas, personas dati beigās, atbildes ar vienu pieskārienu, fiksēta izlaišanas poga, atbalstošas ziņas, kompakts pārskats speciālistam. Iepriekšējais prototips v0.1 — 60 jautājumi trīs valodās, manuāla saglabāšana, turpināšanas faili un avota atbilstības testi. Šī ir izmēģinājuma, nevis publiski izlaista versija.",
     "coverageNote": "Skaits aptver piemērojamos prototipa jautājumus. Mainītu nosacījumu dēļ paslēptās atbildes saglabājas turpināšanas failā, bet šeit nav iekļautas.",
-    "autoHint": "Pieskaries vienai atbildei, lai saglabātu un turpinātu."
+    "autoHint": "Pieskaries vienai atbildei, lai saglabātu un turpinātu.",
+    "feedbackFlag": "Atzīmēt ierosinājumu par jautājumu",
+    "feedbackFlagged": "Atzīmēts ierosinājums",
+    "feedbackTitle": "Ierosināt labojumu",
+    "feedbackQuestion": "Jautājums ir nepareizs vai neskaidrs",
+    "feedbackLanguage": "Gramatikas vai tulkojuma kļūda",
+    "feedbackAnswerPrefix": "Nepareiza atbilde",
+    "feedbackOther": "Cits iemesls",
+    "feedbackComment": "Piezīme (nav obligāti)",
+    "feedbackContinue": "Saglabāt un turpināt",
+    "removeFeedback": "Noņemt atzīmi",
+    "feedbackChooseReason": "Izvēlieties vismaz vienu iemeslu."
   }
 }

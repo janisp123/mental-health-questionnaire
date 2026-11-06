@@ -99,6 +99,17 @@
     "notesTitle": "Version notes",
     "notesBody": "v0.2 (2026-11-06) — optional topics, personal details at the end, single-tap answers, fixed Skip, supportive messages, a compact clinician report. Earlier pilot v0.1 — 60 questions in three languages, manual save, recovery files and source-fidelity tests. This is a test version, not a public release.",
     "coverageNote": "Counts cover applicable pilot questions. Answers hidden by a changed condition are retained in recovery files but excluded here.",
-    "autoHint": "Tap one answer to save and continue."
+    "autoHint": "Tap one answer to save and continue.",
+    "feedbackFlag": "Suggest a correction to this question",
+    "feedbackFlagged": "Feedback added",
+    "feedbackTitle": "Suggest a correction",
+    "feedbackQuestion": "The question is incorrect or unclear",
+    "feedbackLanguage": "Grammar or translation issue",
+    "feedbackAnswerPrefix": "Incorrect answer",
+    "feedbackOther": "Something else",
+    "feedbackComment": "Comment (optional)",
+    "feedbackContinue": "Save & Continue",
+    "removeFeedback": "Remove flag",
+    "feedbackChooseReason": "Choose at least one reason."
   }
 }
