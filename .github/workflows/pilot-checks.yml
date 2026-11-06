@@ -28,6 +28,8 @@ jobs:
           python-version: '3.12'
       - name: Verify imported original files and modules
         run: python tools/verify_project_index.py
+      - name: Audit all original modules for integration gaps
+        run: python tests/pilot/test_full_bank_audit.py
       - name: Verify modular pilot data and offline packaging
         run: python tests/pilot/test_build.py
       - name: Compare active questions and choices against frozen v16
