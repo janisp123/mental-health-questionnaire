@@ -383,3 +383,6 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Local checks:** Python compilation, full-bank structural build test (712 questions/48 groups), and `git diff --check` PASS. Browser execution is **pending CI** because Playwright/Chromium is unavailable in this local environment.
 - **Remaining:** CI must pass the new full-bank browser journey; fix any runtime issue before archiving pilot files or removing pilot-only CI coverage.
 - **Exact next action:** commit this checkpoint, inspect the resulting CI step summary, and resolve any full-bank runtime failures.
+
+- **CI result:** first complete-workflow run [42234413055](https://github.com/janisp123/mental-health-questionnaire/actions/runs/42234413055) passed all existing checks and the 60-question Chromium journey, but the new complete-bank journey failed after answering `M14_01`; it did not reach expected `M14_02`. The failure occurs before medicine/report assertions, so the full-bank runtime audit remains blocked. Updated the assertion to report the actual reached ID.
+- **Exact next action:** rerun the focused complete-bank browser step with the improved diagnostic, then determine whether the app or test path needs correction.

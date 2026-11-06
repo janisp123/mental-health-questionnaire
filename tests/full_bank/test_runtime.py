@@ -41,7 +41,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     page.locator('[data-jump="14"]').click()
     assert qid(page) == "M14_01"
     page.locator('input[name="answer"][value="B"]').locator("..").click()
-    assert qid(page) == "M14_02"
+    assert qid(page) == "M14_02", f"Expected medication form next, got {qid(page)}"
     page.locator('[data-med-index="0"][data-med-field="name"]').fill("SYNTHETIC MEDICINE")
     act(page, "save")
     assert backup(page)["answers"]["M14_02"]["kind"] == "medicine"
