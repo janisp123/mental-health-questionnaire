@@ -22,6 +22,15 @@ def read_json(path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def contains_weight_key(value):
+    if isinstance(value, dict):
+        return any("weight" in key.lower() or contains_weight_key(item)
+                   for key, item in value.items())
+    if isinstance(value, list):
+        return any(contains_weight_key(item) for item in value)
+    return False
+
+
 def build_bundle(apply_layout=True):
     registry = read_json(SOURCE / "modules" / "registry.json")
     ui = {}
@@ -83,12 +92,12 @@ def build_bundle(apply_layout=True):
                 raise ValueError("Condition must reference an earlier question: " + q["id"])
     layout = read_json(SOURCE / "modules" / "layout.json")
     presentation = read_json(SOURCE / "reports" / "presentation.json")
+    if contains_weight_key(presentation):
+        raise ValueError("Weight metadata is no longer supported")
     for qid, rule in presentation["questions"].items():
         if qid not in by_id:
             raise ValueError("Presentation references an unknown question: " + qid)
         q = by_id[qid]
-        if "weights" in rule:
-            raise ValueError("Weight metadata is no longer supported: " + qid)
         if "labels" in rule and set(rule["labels"]) != set(LANGS):
             raise ValueError("Missing report label language: " + qid)
         if any(code not in q["choiceCodes"] or level not in ("support", "emergency")

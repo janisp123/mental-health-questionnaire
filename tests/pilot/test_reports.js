@@ -6,7 +6,7 @@ const context={window:{}};vm.runInNewContext(fs.readFileSync('src/pilot/reports/
 const r=context.window.PilotReports,qs=data.groups.flatMap(g=>g.questions),q=id=>qs.find(q=>q.id===id);
 const answers={M33_01:{kind:'text',value:'Synthetic'},M06_02:{kind:'choice',codes:['B'],status:'answered'},M06_01:{kind:'choice',codes:['A'],status:'answered'},M02_09:{kind:'choice',codes:['A'],status:'answered'},M23_11:{kind:'choice',codes:['A'],status:'answered'}};
 assert.deepEqual(Object.keys(data.presentation).sort(),['boldAnswers','purpose','questions','schema','topicOrder']);
-assert(!JSON.stringify(data).includes('"weights"'));
+assert(!/"[^"]*weight[^"]*"\s*:/i.test(JSON.stringify(data)));
 for(const lang of ['lv','en','ru']){
  const entries=r.entries(qs,answers,lang,data.presentation);
  assert.deepEqual(entries.map(e=>e.id),['M33_01','M23_11','M02_09','M06_01','M06_02']);

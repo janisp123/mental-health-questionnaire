@@ -28,6 +28,8 @@ for q in questions:
     assert all(set(q["translations"][lang]["choices"]) == codes for lang in ("lv","en","ru"))
     assert all(q["translations"][lang]["title"] for lang in ("lv","en","ru"))
 assert set(bundle["ui"]) == {"lv","en","ru"}
+assert not module.contains_weight_key(bundle["presentation"])
+assert module.contains_weight_key({"nested": {"textWeight": 0}})
 keys={lang:set(v) for lang,v in bundle["ui"].items()}
 assert keys["lv"] == keys["en"] == keys["ru"], "Missing UI translations"
 html = module.make_html()
