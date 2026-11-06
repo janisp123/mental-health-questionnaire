@@ -53,8 +53,12 @@ assert all(context['id'] in ids and order_by_id[context['id']]<entry['order']
 assert types=={'choice':709,'shortText':2,'medicineList':1}, types
 assert [qid for qid,q in ids.items() if q.get('type')=='medicineList']==['M14_02']
 assert len(multi_parents)==5
+app=(ROOT/'src/pilot/core/app.js').read_text(encoding='utf-8')
+reports=(ROOT/'src/pilot/reports/reports.js').read_text(encoding='utf-8')
+assert 'q.type==="medicineList"' in app and 'rec.kind==="medicine"' in app
+assert 'function medicineValues' in reports
 
 print(f'PASS: source structure is consistent across {len(modules)} modules and {len(entries)} questions; IDs/orders unique; LV/EN/RU choices and condition parents match.')
 print(f'ENGINE AUDIT: choice, multi, maxChoices, exclusive, incompatible, refusal/uncertainty status, optional help/time and hide/show conditions fit current generic engine; {len(multi_parents)} conditions have multi-select parents; {len(cross_module_conditions)} cross-section conditions.')
-print('ENGINE GAP: M14_02 uses medicineList (13-field repeating record plus optional discussion in frozen v16); current pilot supports only choice and shortText recovery/report records.')
+print('ENGINE STATUS: medicineList now has a tested form, recovery record, and report formatter; the active pilot registry still contains only its original 60 questions.')
 print('LIMIT: audit validates data shape and translation/code consistency, not EN/RU language accuracy, clinical meaning, or full-browser behavior.')

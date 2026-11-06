@@ -211,11 +211,22 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Checks:** `python tests/pilot/test_full_bank_audit.py` PASS; `python tools/verify_project_index.py` PASS (79 source hashes, 48 modules, 712 IDs/orders). These are structural/source checks, not translation, clinical or browser verification.
 - **Exact next action:** implement and test `medicineList` rendering, save/restore validation and clinician-report output while the current 60-question registry stays unchanged. Then integrate the full bank directly from the immutable 48 source modules in small batches, avoiding duplicate copies of the 20 questions already repositioned in the pilot.
 
-### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 6 (IN_PROGRESS)
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 6
 
 **Task 5a — prepare minimal medicine-list locale data and builder support.**
 - **Starting commit:** `1ba5bb0b1fd73aa0f5f8170d1ff269fde3ce8f46` on `develop`.
-- **Scope:** load only the frozen 13-field medication form labels and controls into the pilot bundle for LV/EN/RU; do not register new questions or change the current 60-question pilot. Frozen references remain read-only.
-- **Test-first status:** `tests/pilot/test_build.py` now asserts complete locale field/status/benefit maps; it fails as expected because `ui[lang].medicine` is not present.
-- **Files planned:** `src/pilot/i18n/medicine.{lv,en,ru}.json`, `tools/build_pilot.py`, `tests/pilot/test_build.py`, this changelog.
-- **Next action:** extract the minimum form strings from frozen locale baselines, load them into the bundle, verify structure and exact reference text, run relevant tests, then commit and record the remote commit SHA.
+- **Implementation commit:** `c27f82bdbe1567d266700ce4f4f309c0d7973013` on `develop` (remote branch readback and local reset confirmed).
+- **Files:** `src/pilot/i18n/medicine.{lv,en,ru}.json`, `tools/build_pilot.py`, `tests/pilot/test_build.py`, this changelog.
+- **Completed:** the bundle now includes minimal medication-list fields, statuses, benefit choices and related form/report labels. Test comparisons verify these match the corresponding frozen v16 LV/EN/RU text exactly. The 60-question registry is unchanged.
+- **Checks:** `python3 tests/pilot/test_build.py` PASS (60 questions, 3 languages, offline/no imports); `python3 tests/pilot/test_full_bank_audit.py` PASS (48 modules/712 source questions; also reports medicineList as the remaining engine gap); `python3 tools/verify_project_index.py` PASS (79 original hashes); `git diff --check` and all three locale JSON parses PASS. These do not verify language quality or interactive medicine form behavior.
+- **Remaining:** `medicineList` still cannot be answered, restored or reported by the runtime. Full question-bank integration has not begun; the pilot still runs only 60 questions.
+- **Next action:** Task 5b — implement medicine-list editing and validation, compatible backup restore, and compact clinician-report serialization with focused tests; keep the active registry unchanged until this passes.
+
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 7 (IN_PROGRESS)
+
+**Task 5b — `medicineList` engine support.**
+- **Starting commit:** `c27f82bdbe1567d266700ce4f4f309c0d7973013` on `develop`.
+- **Scope:** render the 13-field repeatable medication form in the existing question screen; manually save a validated self-reported record, restore it through the existing recovery format, and include only entered details in the ordinary-to-sensitive clinician report. Leave the 60-question registry and frozen source untouched.
+- **Tests planned:** missing-field/invalid-enum and valid-record recovery checks; browser add/edit/remove/save/skip/restore journey; compact localized report output and escaping.
+- **Files expected:** pilot app/reports/styles, pilot tests, and this changelog only if implementation requires it.
+- **Next action:** inspect save/restore, delegated event, and report flows; add failing tests for the full record lifecycle before runtime changes.

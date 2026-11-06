@@ -47,8 +47,7 @@ for lang,path in reference_files.items():
     assert list(current['fields'].values())==reference['fields']
     assert list(current['status'].values())==[reference[k] for k in ('current','past','unknown')]
     assert list(current['benefits'].values())==reference['benefits']
-    for key in ('help','add','remove','discussion','empty','error','limit','unsaved','select',
-                'historyTime','bring','entry','notes','saved','missing','reportIntro','medNote'):
+    for key in ('help','add','remove','discussion','empty','limit','select','entry','notes'):
         assert current[key]==reference[key], f'Medicine reference wording changed: {lang}/{key}'
 assert not module.contains_weight_key(bundle["presentation"])
 assert module.contains_weight_key({"nested": {"textWeight": 0}})

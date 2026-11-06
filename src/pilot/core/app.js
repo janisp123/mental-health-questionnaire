@@ -96,7 +96,49 @@ function storedDraft(q){
  const r=state.answers[q.id];
  if(r?.kind==="choice")return {codes:[...r.codes]};
  if(r?.kind==="text")return {value:r.value||""};
+ if(r?.kind==="medicine")return {records:r.records.map(x=>({...x})),discussion:r.discussion||""};
+ if(q.type==="medicineList")return {records:[blankMedicine()],discussion:""};
  return {codes:[],value:""};
+}
+const medicineFields=Object.keys(data.ui.lv.medicine.fields);
+function blankMedicine(){return Object.fromEntries(medicineFields.map(k=>[k,k==="status"?"current":""]));}
+function medicineSelect(index,key,value,options,labels){
+ return '<label class="field-label">'+esc(ui().medicine.fields[key])+'<select data-med-index="'+index+'" data-med-field="'+key+'"><option value="">—</option>'+options.map(code=>'<option value="'+code+'"'+(value===code?' selected':'')+'>'+esc(labels[code])+'</option>').join("")+'</select></label>';
+}
+function renderMedicine(){
+ const m=ui().medicine,d=state.draft;
+ return '<p class="help">'+esc(m.help)+'</p>'+d.records.map((record,i)=>'<fieldset class="medicine-card"><legend>'+esc(m.entry)+' '+(i+1)+'</legend>'+medicineFields.map(key=>{
+  const value=record[key]||"";
+  if(key==="status")return medicineSelect(i,key,value,["current","past","unknown"],m.status);
+  if(key==="benefit")return medicineSelect(i,key,value,Object.keys(m.benefits),m.benefits);
+  return '<label class="field-label">'+esc(m.fields[key])+'<input type="text" maxlength="1000" data-med-index="'+i+'" data-med-field="'+key+'" value="'+esc(value)+'"></label>';
+ }).join("")+ '<button type="button" data-act="removeMedicine" data-med-remove="'+i+'">'+esc(m.remove)+'</button></fieldset>').join("")+
+ '<button type="button" data-act="addMedicine" class="secondary">'+esc(m.add)+'</button><label class="field-label">'+esc(m.discussion)+'<textarea id="medicineDiscussion" maxlength="3000">'+esc(d.discussion||"")+'</textarea></label><p class="muted">'+esc(m.select)+'</p>';
+}
+function readMedicineControls(){
+ const q=current();if(q?.type!=="medicineList"||!state.draft)return;
+ app.querySelectorAll('[data-med-index][data-med-field]').forEach(el=>{
+  const i=Number(el.dataset.medIndex),key=el.dataset.medField;
+  if(state.draft.records[i]&&medicineFields.includes(key))state.draft.records[i][key]=el.value;
+ });
+ state.draft.discussion=document.getElementById("medicineDiscussion")?.value||state.draft.discussion||"";
+}
+function changeMedicineList(actionName,index){
+ readMedicineControls();const d=state.draft,m=ui().medicine;
+ if(actionName==="addMedicine"){
+  if(d.records.length>=50){state.notice=m.limit;render();return;}
+  d.records.push(blankMedicine());
+ }else{
+  d.records.splice(index,1);if(!d.records.length)d.records.push(blankMedicine());
+ }
+ render();
+}
+function cleanMedicineDraft(){
+ readMedicineControls();const m=ui().medicine;
+ const records=state.draft.records.map(r=>Object.fromEntries(medicineFields.map(k=>[k,(r[k]||"").trim().slice(0,1000)])))
+  .filter(r=>medicineFields.some(k=>k!=="status"&&r[k]));
+ const discussion=(state.draft.discussion||"").trim().slice(0,3000);
+ return {records,discussion,valid:records.length>0||!!discussion};
 }
 function renderFeedback(q,t){
  if(!state.feedbackOpen)return "";
@@ -118,7 +160,9 @@ function renderQuestion(){
  const time=t.time?'<p class="muted">'+esc(t.time)+'</p>':"";
  const help=t.help?'<p class="help">'+esc(t.help)+'</p>':"";
  let options="";
- if(q.type==="shortText") {
+ if(q.type==="medicineList") {
+  options=renderMedicine();
+ } else if(q.type==="shortText") {
   options='<label class="field-label">'+label("enterText")+' <input id="shortText" autocomplete="off" type="text" maxlength="200" value="'+esc(state.draft.value||"")+'"></label><p class="muted">'+label("optionalText")+'</p>';
  } else {
   options='<fieldset><legend class="sr-only">'+esc(t.title)+'</legend>'+
@@ -131,7 +175,7 @@ function renderQuestion(){
  const flagged=!!state.feedback[q.id];
  const feedbackControl='<div class="question-title-row"><h2 tabindex="-1" id="question-heading">'+esc(t.title)+'</h2><button type="button" class="feedback-flag" data-act="feedback" aria-label="'+label("feedbackFlag")+'" aria-expanded="'+state.feedbackOpen+'" title="'+label("feedbackFlag")+'">⚑</button></div>';
  return '<section class="card question" data-question="'+esc(q.id)+'"><div class="muted">'+esc(group)+' · '+(idx+1)+'/'+queue.length+(flagged?' · '+label("feedbackFlagged"):"")+'</div>'+feedbackControl+renderFeedback(q,t)+time+help+options+
- '<p class="muted">'+label(q.multi||q.type==="shortText"?"saveWarning":"autoHint")+'</p>'+(q.multi||q.type==="shortText"?btn("save","next","primary"):"")+
+ '<p class="muted">'+label(q.multi||q.type==="shortText"||q.type==="medicineList"?"saveWarning":"autoHint")+'</p>'+(q.multi||q.type==="shortText"||q.type==="medicineList"?btn("save","next","primary"):"")+
  '<div class="actions">'+btn("skipSection","skipSection")+btn("end","skipRest")+'</div></section>';
 
 }
@@ -196,7 +240,11 @@ function incompatiblePair(q,codes){
 function save(){
  const q=current();if(!q)return;
  let rec={savedAt:new Date().toISOString()};
- if(q.type==="shortText"){
+ if(q.type==="medicineList"){
+   const cleaned=cleanMedicineDraft();
+   if(!cleaned.valid){state.notice=ui().medicine.empty;render();return;}
+   rec.kind="medicine";rec.status="answered";rec.records=cleaned.records;rec.discussion=cleaned.discussion;
+ } else if(q.type==="shortText"){
    rec.kind="text";rec.value=document.getElementById("shortText")?.value.trim().slice(0,200)||"";rec.status="answered";
    if(!rec.value){skip();return;}
  } else {
@@ -241,7 +289,7 @@ function confirmSections(){
  if(first)setQuestion(first.id);else {state.screen="results";render();}
 }
 function setDraft(ev){
- const q=current();if(!q||q.type==="shortText")return;
+ const q=current();if(!q||q.type==="shortText"||q.type==="medicineList")return;
  const inp=ev.target;if(inp.name!=="answer")return;
  let codes=(state.draft?.codes||[]).slice();
  if(!q.multi){codes=[inp.value];}else{
@@ -277,13 +325,25 @@ function restore(file){
    for(const [id,rec] of Object.entries(x.answers)){
     const q=byId[id];if(!q||!rec||typeof rec!=="object")throw Error("Invalid record");
     if(rec.kind==="choice"){
-      if(q.type==="shortText"||!Array.isArray(rec.codes)||!rec.codes.length||new Set(rec.codes).size!==rec.codes.length||!rec.codes.every(code=>q.choiceCodes.includes(code)))throw Error("Unknown choice");
+      if(q.type==="shortText"||q.type==="medicineList"||!Array.isArray(rec.codes)||!rec.codes.length||new Set(rec.codes).size!==rec.codes.length||!rec.codes.every(code=>q.choiceCodes.includes(code)))throw Error("Unknown choice");
       if((!q.multi&&rec.codes.length!==1)||(q.maxChoices&&rec.codes.length>q.maxChoices)||(rec.codes.length>1&&rec.codes.some(c=>q.exclusive?.includes(c))))throw Error("Invalid single answer");
       if(incompatiblePair(q,rec.codes))throw Error("Incompatible answers");
       a[id]={kind:"choice",codes:[...rec.codes],status:choiceStatus(q,rec.codes),savedAt:rec.savedAt||""};
     }else if(rec.kind==="text"){
       if(q.type!=="shortText"||typeof rec.value!=="string")throw Error("Invalid text");
       a[id]={kind:"text",value:rec.value.slice(0,200),status:"answered",savedAt:rec.savedAt||""};
+    }else if(rec.kind==="medicine"){
+      if(q.type!=="medicineList"||!Array.isArray(rec.records)||rec.records.length>50||typeof rec.discussion!=="string"||rec.discussion.length>3000)throw Error("Invalid medicine list");
+      const validStatuses=new Set(["current","past","unknown"]),validBenefits=new Set(["","A","B","C","D","E","F","G"]);
+      const records=rec.records.map(item=>{
+       if(!item||typeof item!=="object"||Array.isArray(item)||Object.keys(item).sort().join(",")!==medicineFields.slice().sort().join(",")||
+          !medicineFields.every(key=>typeof item[key]==="string"&&item[key].length<=1000)||
+          !validStatuses.has(item.status)||!validBenefits.has(item.benefit)||
+          !medicineFields.some(key=>key!=="status"&&item[key].trim()))throw Error("Invalid medicine record");
+       return Object.fromEntries(medicineFields.map(key=>[key,item[key]]));
+      });
+      if(!records.length&&!rec.discussion.trim())throw Error("Empty medicine list");
+      a[id]={kind:"medicine",status:"answered",records,discussion:rec.discussion,savedAt:rec.savedAt||""};
     }else if(rec.kind==="skip")a[id]={kind:"skip",status:"skipped",savedAt:rec.savedAt||""};
     else throw Error("Unknown record");
    }
@@ -411,6 +471,9 @@ app.addEventListener("click",e=>{
  const radio=choice?.querySelector('input[name="answer"][type="radio"]');
  if(radio){e.preventDefault();if(e.detail<=1)singleAnswer(radio.value);return;}
  const el=e.target.closest("[data-act]");if(el){e.preventDefault();
+ if(el.dataset.act==="addMedicine"||el.dataset.act==="removeMedicine"){
+  changeMedicineList(el.dataset.act,Number(el.dataset.medRemove));return;
+ }
  if(el.dataset.jump){
   const choices=active().filter(q=>q.module===el.dataset.jump);
   const next=choices.find(q=>!state.answers[q.id])||choices[0];
@@ -419,6 +482,7 @@ app.addEventListener("click",e=>{
 }});
 app.addEventListener("change",e=>{
  if(e.target.id==="language"){state.lang=e.target.value;state.notice="";render();return;}
+ if(e.target.hasAttribute("data-med-field")){readMedicineControls();return;}
  if(e.target.hasAttribute("data-module")){
   state.sectionDraft=Array.from(app.querySelectorAll("[data-module]:checked"),el=>el.dataset.module);
   render();return;
@@ -428,6 +492,8 @@ app.addEventListener("change",e=>{
 });
 app.addEventListener("input",e=>{
  if(e.target.id==="shortText"&&current()){state.draft={forId:current().id,value:e.target.value};}
+ if(e.target.hasAttribute("data-med-field")){readMedicineControls();}
+ if(e.target.id==="medicineDiscussion"&&state.draft){state.draft.discussion=e.target.value;}
 });
 render();
 })();
