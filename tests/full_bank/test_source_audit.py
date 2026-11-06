@@ -54,8 +54,9 @@ assert types=={'choice':709,'shortText':2,'medicineList':1}, types
 assert [qid for qid,q in ids.items() if q.get('type')=='medicineList']==['M14_02']
 assert len(multi_parents)==5
 app=(ROOT/'src/app/core/app.js').read_text(encoding='utf-8')
+recovery=(ROOT/'src/app/core/recovery.js').read_text(encoding='utf-8')
 reports=(ROOT/'src/app/reports/reports.js').read_text(encoding='utf-8')
-assert 'q.type==="medicineList"' in app and 'rec.kind==="medicine"' in app
+assert 'q.type==="medicineList"' in app and 'record.kind==="medicine"' in recovery
 assert 'function medicineValues' in reports
 
 print(f'PASS: source structure is consistent across {len(modules)} modules and {len(entries)} questions; IDs/orders unique; LV/EN/RU choices and condition parents match.')
