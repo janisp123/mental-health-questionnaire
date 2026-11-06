@@ -48,7 +48,7 @@
 - `docs/`: active GitHub changelog, instructions, migration record and release policy.
 - `tests/fixtures/`: imported module index and past EN/RU draft build report; *not* evidence of current full test passes.
 - `tools/`: existing original build helpers and new verification tools.
-- `.github/workflows/app-components.yml`: focused checks for app, screen, style, locale and synthetic fixture edits.
+- `.github/workflows/app-component-checks.yml`: focused checks for app, screen, style, locale and synthetic fixture edits.
 - `.github/workflows/questionnaire-checks.yml`: full source, build, headless Chromium and non-release artifact verification for question-bank and full-build changes.
 - `main` branch is **not** the active source tree; `develop` holds the import.
 
