@@ -11,6 +11,7 @@
 
 **Baseline:** `d250271a83dfcb17799fdbf66f26bf416488722a` on `develop`; it matches the GitHub branch. Checklist commit: `5ef185a`.
 **Latest verified implementation commit:** `972b3f1`. GitHub `develop` is `3bd3eff50aaa3937882ecfa4901195cfa51cb759`; implementation trees match exactly.
+**Latest verified workflow commit:** `863ae0d`; focused workflow 42255642293 passed using runner-provided Google Chrome 156.0.8078.79.
 
 **Verified baseline:** component workflow 42247708071 and full offline Chromium workflow 42247707973 passed at code commit `4d6ff92002b1b3a686954eaf95743b0d61c5f398`. Source integrity confirmed 48 modules/712 IDs; no physical Android check was run.
 
@@ -25,7 +26,7 @@
 7. [DONE] Run focused checks and the full integration workflow after structural work.
 8. [BLOCKED] Physical Android testing and human language/clinical review require a device or reviewers.
 9. [DONE] Isolate delegated DOM event wiring behind tested callbacks; focused and full CI passed.
-10. [IN_PROGRESS] Reuse runner-provided Chrome in focused CI; install bundled Chromium only when unavailable.
+10. [DONE] Reuse runner-provided Chrome in focused CI; install bundled Chromium only when unavailable.
 
 **Guardrails:** keep source questions, IDs, codes, conditions, and frozen references unchanged; preserve recovery compatibility; keep script and style order explicit in `src/app/build.json`; add no runtime dependencies. Work in small verified commits.
 
@@ -78,9 +79,9 @@
 **Commit:** 972b3f1.
 **Next action:** hands-on Android Chrome check and human review of LV interface wording, EN/RU drafts, and clinical content; those need a device and human reviewers.
 
-**Checkpoint 8 — CI startup cost:** the focused app workflow always downloads Playwright Chromium, while the full workflow first reuses the runner's Google Chrome when present. Apply that existing fallback pattern to the focused workflow and verify it in CI.
+**Checkpoint 8 — CI startup cost:** the focused app workflow now uses the runner's Google Chrome when present and downloads Playwright Chromium only as a fallback. GitHub run 42255642293 used preinstalled Chrome 156.0.8078.79 and passed all focused checks.
 
 **Files:** .github/workflows/app-component-checks.yml, docs/CHANGELOG.md.
-**Checks:** pending focused workflow after the workflow change.
-**Commit:** pending.
-**Next action:** use runner Chrome when available and retain Playwright Chromium as fallback.
+**Checks:** focused workflow 42255642293 PASS; its logs show `/usr/bin/google-chrome`, with no Playwright browser download step. Full integration remains covered by 42254680875.
+**Commit:** 863ae0d; GitHub `develop` 71c8107.
+**Next action:** hands-on Android Chrome check and human review of LV interface wording, EN/RU drafts, and clinical content; those need a device and human reviewers.
