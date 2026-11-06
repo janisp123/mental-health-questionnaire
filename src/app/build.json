@@ -5,6 +5,8 @@
   ],
   "scripts": [
     "reports/reports.js",
+    "screens/start.js",
+    "screens/section-selector.js",
     "core/app.js"
   ]
 }
