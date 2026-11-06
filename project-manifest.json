@@ -4,7 +4,7 @@
   "repository": "janisp123/mental-health-questionnaire",
   "development_branch": "develop",
   "distribution_branch": "main",
-  "status": "SOURCE_MIGRATED_VERIFIED__MODULAR_PILOT_IN_DEVELOPMENT__EN_RU_DRAFT",
+  "status": "FULL_QUESTIONNAIRE_TECHNICAL_BUILD_IN_PROGRESS__EN_RU_DRAFT",
   "single_source_of_truth": "This manifest on GitHub develop; revise this index when active source paths or release status change.",
   "active_changelog": "docs/CHANGELOG.md",
   "release_distribution": {
@@ -36,7 +36,7 @@
     "application": {
       "current_reference_html": "reference/baseline/html/162_Sagatavosanas_vizitei_LV_v16.html",
       "status": "FROZEN_V16_BEHAVIORAL_REFERENCE",
-      "note": "Use this file to compare behavior. Edit pilot sources under src/pilot/."
+      "note": "Use this frozen file as the behavioral reference. Edit shared interface/runtime in src/app/, question content in src/modules/, and questionnaire presentation in src/questionnaire/."
     },
     "english": {
       "html": "reference/baseline/html/172_Questionnaire_EN_v16_DRAFT_NOT_RELEASED.html",
@@ -62,51 +62,32 @@
     "release_gate": "docs/RELEASE_POLICY.md",
     "archive": {
       "old_drive_changelog": "docs/drive-original/166_CHANGELOG_LV.md",
-      "old_versions_dir": "reference/history/"
+      "old_versions_dir": "reference/history/",
+      "pilot_prototype": "archive/pilot/"
     },
-    "pilot": {
-      "status": "PROTOTYPE_NOT_RELEASED",
-      "languages": [
-        "lv",
-        "en",
-        "ru"
-      ],
-      "registry": "src/pilot/modules/registry.json",
-      "module_source_pattern": "src/pilot/modules/{id}/{logic,lv,en,ru}.json",
-      "core": "src/app/core/",
+    "development_build": {
+      "status": "TECHNICAL_REVIEW_BUILD_NOT_RELEASED",
+      "version": "0.2.0-prototype+full-bank",
+      "sections": 48,
+      "questions": 712,
+      "reference_language": "lv",
+      "translation_status": {
+        "en": "DRAFT_NOT_REVIEWED",
+        "ru": "DRAFT_NOT_REVIEWED"
+      },
+      "question_sources": "src/modules/",
+      "builder": "tools/build_questionnaire.py",
+      "build_config": "src/questionnaire/build.json",
+      "application_core": "src/app/core/",
       "reports": "src/app/reports/",
       "interface": "src/app/i18n/",
-      "builder": "tools/build_pilot.py",
-      "optional_full_bank_build": {
-        "command": "python tools/build_pilot.py --full-bank",
-        "artifact": "dist/FULL_BANK_offline_LV_EN_RU_NOT_RELEASED.html",
-        "sections": 48,
-        "questions": 712,
-        "status": "STRUCTURAL_BUILD_CHECKED__FULL_RUNTIME_NOT_VERIFIED"
-      },
-      "tests": "tests/pilot/",
-      "ci": ".github/workflows/pilot-checks.yml",
-      "architecture": "docs/PILOT_ARCHITECTURE.md",
-      "artifact": "PILOT_offline_LV_EN_RU_v0.2_NOT_RELEASED",
-      "active_sections": [
-        "23",
-        "02",
-        "21",
-        "06",
-        "18",
-        "31",
-        "33"
-      ],
-      "question_count": 60,
-      "source_fidelity_check": "tests/pilot/test_source_fidelity.py",
-      "version": "0.2.0-prototype",
-      "source_groups": [
-        "opening",
-        "02",
-        "21"
-      ],
       "layout": "src/questionnaire/layout.json",
-      "presentation_metadata": "src/questionnaire/presentation.json"
+      "presentation_metadata": "src/questionnaire/presentation.json",
+      "tests": "tests/full_bank/",
+      "ci": ".github/workflows/questionnaire-checks.yml",
+      "architecture": "docs/QUESTIONNAIRE_ARCHITECTURE.md",
+      "artifact": "dist/QUESTIONNAIRE_LV_EN_RU_NOT_RELEASED.html",
+      "recovery_schema": "mental-pilot-recovery-v1 (retained for compatibility)"
     }
   },
   "import_validation": {

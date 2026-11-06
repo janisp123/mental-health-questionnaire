@@ -1,5 +1,5 @@
 {
-  "schema": "pilot-report-format-v1",
+  "schema": "questionnaire-presentation-v1",
   "purpose": "Explicit answer-code allowlist for bold clinician-report text. No score or severity calculation. Review mappings against the frozen source.",
   "feedbackContactEmail": "janis.paegle.email@gmail.com",
   "questions": {

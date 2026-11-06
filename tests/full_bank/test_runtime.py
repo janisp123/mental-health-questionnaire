@@ -4,16 +4,16 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 from browser_helpers import act, backup, choose, launch, open_page, qid, restore
-import build_pilot as build
+import build_questionnaire as build
 
 
 with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     html_path = Path(tmp) / "questionnaire.html"
-    html_path.write_text(build.make_html(full_bank=True), encoding="utf-8")
+    html_path.write_text(build.make_html(), encoding="utf-8")
     browser = launch(pw)
     page, errors, network = open_page(browser, html_path)
 
-    data = page.locator("#pilot-data").evaluate("el => JSON.parse(el.textContent)")
+    data = page.locator("#questionnaire-data").evaluate("el => JSON.parse(el.textContent)")
     assert len(data["groups"]) == 48
     questions = [q for group in data["groups"] for q in group["questions"]]
     assert len(questions) == 712

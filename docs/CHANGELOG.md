@@ -402,3 +402,12 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Verified:** `py_compile`, full-bank packaging (712/48), source integrity (79 original files), and `git diff --check` PASS. [CI run 42236483520](https://github.com/janisp123/mental-health-questionnaire/actions/runs/42236483520) passed the expanded Chromium journey and existing regression suite. The full-bank flow now verifies real conditional navigation, feedback and recovery persistence without changing an existing medical answer, project-feedback privacy, and feedback appearing before medical answers in the doctor report. Native Android remains unverified.
 - **Verified commit:** `07e1960f6adeea51ba58e1a1259a486539e98de1` on `develop`.
 - **Next action:** make the 712-question build the sole default, archive pilot-only data/tests, and replace pilot-specific CI with full-bank checks.
+
+### 2026-11-06 · FULL-BUILD-FIRST · full build becomes default (IN_PROGRESS)
+
+- **Starting commit:** `961ddfb87f961e145eb3e3f35ea0434879b14ca8` on `develop`.
+- **Files:** default builder renamed to `tools/build_questionnaire.py`; build metadata added at `src/questionnaire/build.json`; shared data script/labels and output names made questionnaire-wide; pilot source/tests/architecture moved to `archive/pilot/`; full-bank source/build/report tests moved to `tests/full_bank/`; new full-only workflow, manifest, file index, README, and architecture added.
+- **Completed locally:** the default builder now emits all 712 questions/48 optional sections and has no pilot build branch. The active workflow checks the full bank and produces a short-lived technical-review artifact, not a release. Historical pilot recovery schema remains accepted for compatibility. No original question source files changed.
+- **Local checks:** all full-bank source audit/adapter/title/group/build/layout/report tests, Python compilation, JS syntax, 79-file source/hash verifier, and `git diff --check` PASS. Browser run pending CI on the renamed default build.
+- **Remaining:** new workflow and browser journey must pass after archival/path changes; correct any failures and read back manifest/index/docs.
+- **Exact next action:** commit this batch, inspect the new `questionnaire-checks.yml` run summary, fix any failing step, then record the verified commit and artifact.

@@ -1,7 +1,7 @@
-/* Offline questionnaire pilot: one engine, independent logic + per-language text. */
+/* Offline questionnaire: shared interface and runtime, separate question content. */
 (function () {
 "use strict";
-const embedded=document.getElementById("pilot-data");
+const embedded=document.getElementById("questionnaire-data");
 const data=JSON.parse(embedded.textContent);
 const groups=new Map(data.groups.map(g=>[g.id,g]));
 const optionalIds=data.groups.filter(g=>!g.required).map(g=>g.id);
@@ -13,7 +13,7 @@ for(const group of data.groups){
 // Registry display order is independent of frozen source order.
 let answerLockUntil=0;
 const app=document.getElementById("app");
-const report=window.PilotReports;
+const report=window.QuestionnaireReports;
 let state={lang:"lv",screen:"start",currentId:null,answers:{},feedback:{},feedbackOpen:false,selected:[],sectionDraft:[],sectionConfirmed:false,savedCount:0,notice:"",draft:null};
 function ui(){return data.ui[state.lang];}
 function esc(s){return report.esc(s);}
@@ -76,7 +76,7 @@ function toolbar(){
  return '<nav class="toolbar" aria-label="Tools">'+btn("backup","saveBackup")+ '<label class="file-label">'+label("restoreBackup")+'<input id="restore" type="file" accept=".json,application/json" aria-label="'+label("restoreBackup")+'"></label>'+btn("results","results")+btn("sections","editSections")+'</nav>';
 }
 function footer(){
- return '<footer><details><summary>'+label("tools")+'</summary>'+toolbar()+sectionBar()+'</details><details id="support-details"><summary>'+label("supportMenu")+'</summary><p>'+label("supportBody")+'</p>'+supportLinks()+'</details><details><summary>'+label("guideTitle")+'</summary><p>'+label("guideBody")+'</p></details><details><summary>'+label("notesTitle")+'</summary><p>'+label("notesBody")+'</p></details><details><summary>'+label("legal")+'</summary><p>'+label("intro")+'</p><p>'+label("privacy")+'</p></details><details><summary>'+label("helpers")+'</summary><p>'+label("credits")+'</p></details><p class="muted">'+label("pilot")+' · '+label("footer")+'</p></footer>';
+ return '<footer><details><summary>'+label("tools")+'</summary>'+toolbar()+sectionBar()+'</details><details id="support-details"><summary>'+label("supportMenu")+'</summary><p>'+label("supportBody")+'</p>'+supportLinks()+'</details><details><summary>'+label("guideTitle")+'</summary><p>'+label("guideBody")+'</p></details><details><summary>'+label("notesTitle")+'</summary><p>'+label("notesBody")+'</p></details><details><summary>'+label("legal")+'</summary><p>'+label("intro")+'</p><p>'+label("privacy")+'</p></details><details><summary>'+label("helpers")+'</summary><p>'+label("credits")+'</p></details><p class="muted">'+label("statusNote")+' · '+label("footer")+'</p></footer>';
 }
 function renderStart(){
  return '<section class="card"><p>'+label("intro")+'</p><p class="muted">'+label("reviewNote")+'</p><p>'+label("noAuto")+'</p>'+btn("start","start","primary")+ '<div class="actions">'+btn("all","chooseAll")+btn("choose","chooseOwn")+btn("guide","chooseGuide")+'</div></section>';
@@ -311,7 +311,7 @@ function downloadFile(name,contents,mime){
 }
 function downloadBackup(){
  const payload={schema:"mental-pilot-recovery-v1",version:data.version,layoutVersion:data.layout_version,lang:state.lang,selected:[...state.selected],sectionConfirmed:state.sectionConfirmed,currentId:state.currentId,answers:state.answers,feedback:state.feedback,savedCount:state.savedCount,reviewQueue:state.reviewQueue||null,reviewReturn:state.reviewReturn||null,exportedAt:new Date().toISOString()};
- downloadFile("anketa-pilot-recovery.json",JSON.stringify(payload,null,2),"application/json");
+ downloadFile("questionnaire-recovery.json",JSON.stringify(payload,null,2),"application/json");
 }
 function restore(file){
  if(!file)return;
@@ -449,7 +449,7 @@ function action(key){
    }return;
  }
  if(key==="backup"){downloadBackup();state.notice=u.backupSaved;render();return;}
- if(key==="downloadReport"){downloadFile("anketa-pilot-report-"+state.lang+".html",report.doctorHtml(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation,state.feedback,all,data.ui),"text/html;charset=utf-8");return;}
+ if(key==="downloadReport"){downloadFile("questionnaire-report-"+state.lang+".html",report.doctorHtml(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation,state.feedback,all,data.ui),"text/html;charset=utf-8");return;}
  if(key==="print"){
    if(state.screen!=="report"){state.reportView="doctor";state.screen="report";render();}
    window.print();return;

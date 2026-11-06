@@ -10,7 +10,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 
 
 def launch(pw):
-    return pw.chromium.launch(executable_path=os.getenv("PILOT_BROWSER"), args=["--no-sandbox"])
+    return pw.chromium.launch(executable_path=os.getenv("QUESTIONNAIRE_BROWSER"), args=["--no-sandbox"])
 
 
 def act(page, key):

@@ -1,6 +1,6 @@
 # Project file index — latest verified versions
 
-**Status: SOURCE TRANSFER COMPLETE (79/79 files). Application refactor and EN/RU release are NOT complete.**
+**Status: SOURCE TRANSFER COMPLETE (79/79 files). Full offline questionnaire build is in technical review development; EN/RU remain drafts.**
 
 ## Where to start each time
 
@@ -17,8 +17,8 @@
 | Full question bank | `src/modules/182_MODULE_01_LV_EN_RU_v16.json` through `182_MODULE_48_LV_EN_RU_v16.json` | Canonical question/answer content and translations, separate from application design and runtime. |
 | Shared application design/runtime | `src/app/core/`, `src/app/reports/`, `src/app/i18n/` | Reusable offline UI, styles, report renderer and interface labels. It consumes embedded data and does not read question files at runtime. |
 | Questionnaire presentation config | `src/questionnaire/layout.json`, `src/questionnaire/presentation.json`, `src/questionnaire/i18n/` | Module navigation/report order, answer-specific report rules and frozen module titles; separate from design and original question content. |
-| Pilot fixture and full-bank builder | `src/pilot/modules/`, `tools/build_pilot.py` | Pilot v0.2 still builds 60 questions by default. `python tools/build_pilot.py --full-bank` packages 712 questions in 48 optional groups; full runtime behavior remains unverified. Pilot sources are transitional and scheduled for archive. See [architecture](PILOT_ARCHITECTURE.md). |
-| Existing working application | `reference/baseline/html/162_Sagatavosanas_vizitei_LV_v16.html` | Exact frozen LV v16 single-file browser reference; behavioral comparison source for the developing pilot |
+| Full offline application build | `tools/build_questionnaire.py`, `src/app/`, `src/questionnaire/` | `python tools/build_questionnaire.py` builds the complete 712-question questionnaire as one offline HTML file. See [architecture](QUESTIONNAIRE_ARCHITECTURE.md). |
+| Existing working application | `reference/baseline/html/162_Sagatavosanas_vizitei_LV_v16.html` | Exact frozen LV v16 single-file reference for behavior and source text |
 | English app snapshot | `reference/baseline/html/172_Questionnaire_EN_v16_DRAFT_NOT_RELEASED.html` | Reference draft only, **not a release** |
 | Russian app snapshot | `reference/baseline/html/172_Questionnaire_RU_v16_DRAFT_NOT_RELEASED.html` | Reference draft only, **not a release** |
 | Working language resources | `src/i18n/working/` | EN/RU catalogs, memory, overrides and one CSV snapshot of the prior Google Sheet |
@@ -35,14 +35,15 @@
 - `src/i18n/working/`: existing translation drafts/resources.
 - `src/app/`: shared offline application design, runtime and report renderer; contains no question bank.
 - `src/questionnaire/`: module order, report presentation rules and source-grounded module titles.
-- `src/pilot/`: transitional 60-question fixture, scheduled for archive after full-build browser checks replace its workflow coverage.
+- `archive/pilot/`: retired 60-question prototype source, tests and notes; not a build input or active CI suite.
+- `tests/full_bank/`: source, build, report and full-runtime checks for the 48-module questionnaire.
 - `reference/baseline/html/`, `reference/baseline/readme/`, `reference/baseline/information/`: immutable v16 reference snapshots.
 - `reference/history/`: legacy v9/v14 references; never assume newest.
 - `docs/drive-original/`: immutable former Drive development directions, indexes, and prior changelog, preserved for traceability; some old wording points to Drive because these are historical snapshots.
 - `docs/`: active GitHub changelog, instructions, migration record and release policy.
 - `tests/fixtures/`: imported module index and past EN/RU draft build report; *not* evidence of current full test passes.
 - `tools/`: existing original build helpers and new verification tools.
-- `.github/workflows/`: active develop-branch verification workflow, including headless Chromium.
+- `.github/workflows/questionnaire-checks.yml`: active develop-branch verification workflow, including headless Chromium and a non-release build artifact.
 - `main` branch is **not** the active source tree; `develop` holds the import.
 
 ## Distribution — separate from development
@@ -58,4 +59,4 @@ Google Drive's [Latvian public folder](https://drive.google.com/drive/folders/1B
 5. Git history tracks previous versions; we do not create endless numbered duplicates in the active source folders.
 6. Validate imports with `python tools/verify_project_index.py`. This is source integrity, not a user-interface, translation or clinical release approval.
 
-**Editable prototype:** [Pilot architecture and remaining verification](PILOT_ARCHITECTURE.md). Use the pilot registry and module locale files for development.
+**Editable application:** [Questionnaire architecture and current limits](QUESTIONNAIRE_ARCHITECTURE.md). Keep interface/runtime edits in `src/app/`, question content in `src/modules/`, and navigation/report rules in `src/questionnaire/`.
