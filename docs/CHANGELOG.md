@@ -159,3 +159,18 @@ Complete detailed historical Latvian changelog remains in the [archived Drive `1
 7. [TODO] Run full source-integrity, browser/export/privacy/offline regressions; record unverified Android and human review.
 
 **Next action:** implement checklist item 1 in the pilot only, add focused report tests, run the existing browser/source checks, commit and record the exact checkpoint. No frozen source, `main`, or Drive release edits.
+
+
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 1
+
+**Checklist:** 1 [DONE] · 2 [IN_PROGRESS] · 3–7 [TODO].
+
+**Task 1 — remove AI export/weights; simplify clinician report**
+- **Commit:** `6ec21edfa7daec196ba8f601a5c4b9130bce6f21` on `develop` (read back as current head at commit time).
+- **Files:** `src/pilot/core/app.js`, `src/pilot/core/styles.css`, `src/pilot/reports/reports.js`, `src/pilot/reports/presentation.json`, `src/pilot/i18n/ui.{lv,en,ru}.json`, `tools/build_pilot.py`, `tests/pilot/test_reports.js`, `tests/pilot/test_browser.py`, `tests/pilot/test_independence.py`, `tests/pilot/test_section21.py`.
+- **Completed:** removed AI/coded, all-results TXT and decoding-key UI/routes; removed presentation-weight tables and sort calculations; retained a single compact clinician report. Added a 13-question answer-code allowlist that bolds only explicit selected answers. The report keeps language/topic order, original selected answer wording and periods. No IDs, scores or category totals are printed.
+- **Checks:** `node tests/pilot/test_reports.js` PASS; `python tests/pilot/test_build.py` PASS; `python tests/pilot/test_source_fidelity.py` PASS for the seven source modules present in this local worktree; `python tests/pilot/test_layout.py` PASS; JS syntax PASS; three offline Chromium browser suites (general UX, independence/conditions, real section 21) PASS; artifact built, SHA256 `982712c11f7964e2f117f9bebb177cdd304370ab9fbd7f6eb94f658e196f7f0d`. This does not verify the absent 41 original modules locally or native Android.
+- **Remaining:** feedback form/recovery/report isolation; audit and integration of the remaining full question bank; full-project CI hash verification.
+- **Next action:** task 2 — implement the green flag/edit/remove feedback form and a separate optional feedback object in recovery. Test that Save & Continue never overwrites a medical answer and skips only when no answer exists.
+
+Checklist 2 is now [IN_PROGRESS]; no other checklist item has started.
