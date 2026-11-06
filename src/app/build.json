@@ -1,0 +1,10 @@
+{
+  "schema": "questionnaire-app-build-v1",
+  "styles": [
+    "core/styles.css"
+  ],
+  "scripts": [
+    "reports/reports.js",
+    "core/app.js"
+  ]
+}

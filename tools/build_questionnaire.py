@@ -21,6 +21,29 @@ def read_json(path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def load_app_sources():
+    """Assemble the app's explicit ordered source list without reading question data."""
+    manifest = read_json(APP / "build.json")
+    if manifest.get("schema") != "questionnaire-app-build-v1":
+        raise ValueError("Invalid application build manifest")
+
+    def read_sources(key):
+        paths = manifest.get(key)
+        if not isinstance(paths, list) or not paths or len(paths) != len(set(paths)):
+            raise ValueError("Application manifest must list unique " + key)
+        sources = []
+        for relative_path in paths:
+            if not isinstance(relative_path, str) or not relative_path.strip():
+                raise ValueError("Invalid application source path in " + key)
+            path = (APP / relative_path).resolve()
+            if not path.is_relative_to(APP.resolve()) or not path.is_file():
+                raise ValueError("Application source is missing or outside src/app: " + relative_path)
+            sources.append(path.read_text(encoding="utf-8"))
+        return "".join(sources)
+
+    return read_sources("styles"), read_sources("scripts")
+
+
 def load_module_titles():
     """Load exact frozen section headings for the full-bank module selector."""
     result = {}
@@ -191,11 +214,9 @@ def build_bundle():
         "release_status": {"lv": "PROTOTYPE", "en": "DRAFT_NOT_RELEASED", "ru": "DRAFT_NOT_RELEASED"},
     }
 
-def make_html():
-    data = build_bundle()
-    style = (APP / "core" / "styles.css").read_text(encoding="utf-8")
-    reports = (APP / "reports" / "reports.js").read_text(encoding="utf-8")
-    app = (APP / "core" / "app.js").read_text(encoding="utf-8")
+def make_html(data=None):
+    data = build_bundle() if data is None else data
+    style, scripts = load_app_sources()
     data_json = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
     # Never allow JSON values to prematurely terminate their script tag.
     data_json = data_json.replace("<", "\\u003c").replace(">", "\\u003e")
@@ -209,7 +230,7 @@ def make_html():
             '<title>' + html.escape(data["ui"]["lv"]["project"]) + '</title>'
             '<style>' + style + '</style></head><body><div id="app"></div>'
             '<script id="questionnaire-data" type="application/json">' + data_json + '</script>'
-            '<script>' + reports + '</script><script>' + app + '</script>'
+            '<script>' + scripts + '</script>'
             '</body></html>\n')
 
 
