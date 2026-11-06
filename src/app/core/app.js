@@ -3,13 +3,8 @@
 "use strict";
 const embedded=document.getElementById("questionnaire-data");
 const data=JSON.parse(embedded.textContent);
-const groups=new Map(data.groups.map(g=>[g.id,g]));
-const optionalIds=data.groups.filter(g=>!g.required).map(g=>g.id);
-const byId=Object.create(null);
-const all=[];
-for(const group of data.groups){
- for(const q of group.questions){if(byId[q.id])throw Error("Duplicate question: "+q.id);byId[q.id]=q;all.push(q);}
-}
+const model=window.QuestionnaireModel.create(data);
+const {groups,optionalIds,byId,all}=model;
 // Registry display order is independent of frozen source order.
 let answerLockUntil=0;
 const app=document.getElementById("app");
@@ -19,26 +14,13 @@ function ui(){return data.ui[state.lang];}
 function esc(s){return report.esc(s);}
 function label(key){return esc(ui()[key]||key);}
 function btn(act,key,cls,extra){return '<button type="button" data-act="'+act+'" class="'+(cls||"")+'" '+(extra||"")+'>'+label(key)+'</button>';}
-function isSafety(q){return !!q.safetyRequired;}
 function canSkip(q){return !!q;}
-function questionVisible(q){
- const c=q.context;if(!c || !c.id)return true;
- const parent=byId[c.id];
- if(!parent || !questionVisible(parent) || (!groups.get(parent.module).required && !state.selected.includes(parent.module)))return false;
- const a=state.answers[c.id];
- if(!a || a.kind!=="choice")return !Array.isArray(c.showValues);
- const chosen=new Set(a.codes||[]);
- if(Array.isArray(c.showValues)&&!c.showValues.some(v=>chosen.has(v)))return false;
- if(Array.isArray(c.hideValues)&&c.hideValues.some(v=>chosen.has(v)))return false;
- return true;
-}
-function reportQuestions(){return all.filter(questionVisible);}
-function active(){return all.filter(q=>(groups.get(q.module).required||state.selected.includes(q.module))&&questionVisible(q));}
-function current(){return byId[state.currentId]||null;}
-function countGroup(group){
- const q=all.filter(x=>x.module===group && questionVisible(x));
- return {total:q.length,done:q.filter(x=>state.answers[x.id]).length,skipped:q.filter(x=>state.answers[x.id]?.kind==="skip").length};
-}
+function questionVisible(q){return model.questionVisible(state,q);}
+function reportQuestions(){return model.reportQuestions(state);}
+function active(){return model.active(state);}
+function current(){return model.current(state);}
+function isSafety(q){return model.isSafety(q);}
+function countGroup(group){return model.countGroup(state,group);}
 function sectionBar(){
  return '<div class="section-progress">'+data.groups.map(g=>{
   const count=countGroup(g.id);

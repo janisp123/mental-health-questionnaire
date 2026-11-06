@@ -17,8 +17,8 @@
 
 1. [DONE] Audit current source, test, and branch state.
 2. [DONE] Replace pilot-first status with this active handoff and archive the previous chronology.
-3. [IN_PROGRESS] Split runtime browser checks into focused synthetic-data cases.
-4. [TODO] Extract query/model, answer-flow, and recovery behavior into tested modules.
+3. [IN_PROGRESS] Split runtime browser checks into focused synthetic-data cases; browser run awaits CI.
+4. [IN_PROGRESS] Extract query/model, answer-flow, and recovery behavior into tested modules.
 5. [TODO] Add a focused browser layout check for CSS changes.
 6. [TODO] Update architecture, file index, manifest, and CI routing as needed.
 7. [TODO] Run the relevant GitHub checks and one full integration run after structural work.
@@ -31,7 +31,7 @@
 **Files:** docs/CHANGELOG.md, docs/history/CHANGELOG_HISTORY_2026-11-06.md, docs/FILE_INDEX.md.
 **Checks:** archive compared byte-for-byte with the starting changelog; git diff --check PASS. No application test needed.
 **Commit:** e77f79ae1f136574dfb15185a98bd452412f6512.
-**Next action:** build a small synthetic runtime fixture and split the existing sequential browser journey by behavior.
+**Next action:** add focused synthetic feedback/recovery cases; retain the existing full-bank browser journey as the integration gate.
 
 **Checkpoint 2 — focused runtime test foundation:** added a three-question synthetic bundle and an isolated browser case for one-tap choice, deferred multi-select save, skip, and offline operation. Added a focused app workflow so screen/style/locale edits run the app checks without automatically triggering the full 712-question integration workflow. The full-bank workflow remains the integration gate and can still be run manually.
 
@@ -39,3 +39,10 @@
 **Checks:** app source manifest, locale catalogs, all isolated screen renderers, Python syntax, synthetic bundle assembly, and `git diff --check` PASS. Browser execution is pending CI: local Playwright Chromium download returned a truncated archive, so no local browser result is claimed.
 **Commit:** pending.
 **Next action:** extract question visibility, active queue, and progress queries into an independently tested model module; then extend the synthetic cases for feedback and recovery.
+
+**Checkpoint 3 — question model extracted:** moved lookup tables, conditional visibility, active/report question lists, safety tagging, and progress counts into `src/app/core/model.js`. `app.js` now delegates those queries. Added the module to the explicit build manifest and a Node test for parent conditions, optional sections, progress, order, and duplicate IDs.
+
+**Files:** src/app/core/model.js, src/app/core/app.js, src/app/build.json, tests/app/test_model.js, .github/workflows/app-components.yml, docs/QUESTIONNAIRE_ARCHITECTURE.md, docs/CHANGELOG.md.
+**Checks:** model behavior, app source manifest, UI catalogs, isolated screen tests, JS syntax, synthetic bundle assembly, and `git diff --check` PASS. Chromium browser execution still awaits CI because local browser download failed.
+**Commit:** pending.
+**Next action:** split feedback/recovery browser behavior into focused synthetic cases, then move validated recovery parsing out of the coordinator.
