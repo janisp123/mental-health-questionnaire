@@ -1,3 +1,6 @@
+Warning: truncated output (original token count: 8568)
+Total output lines: 222
+
 Warning: truncated output (original token count: 8149)
 Total output lines: 212
 
@@ -106,20 +109,7 @@ Complete detailed historical Latvian changelog remains in the [archived Drive `1
 2. Commit and checkpoint after each meaningful, verified step.
 3. After actual tests and remote readback, set `TASK_DONE`; for interruptions or failed actions leave `IN_PROGRESS` or `BLOCKED` with exact next action.
 4. Only one active task log: `docs/CHANGELOG.md`. `docs/MIGRATION_STATUS.md` may remain a concise directory/reference but is not a second mutable task log after this handoff.
-5. `develop` is the work branch; `main` is not a workbench. Publishing to Drive occurs only from an approved tested re…149 tokens truncated…against old API, then passed; structural 60-question check, frozen-source fidelity including swapped-label rejection, JS syntax passed.
-- Browser verification NOT performed for this stage. Existing browser journeys still need updating for the authorized UX/export changes. Local Chromium installation failed (invalid download archive).
-- This intermediate checkpoint deliberately skips CI; full browser CI must run after stages 2–3 to avoid obsolete expected-export failures. Not TASK_DONE and not a release.
-- Next: optional display layout, fixed navigation, single-tap guard, support communication, legacy restore and browser regression updates.
-
-- Stage 1 implementation commit: `c89a601c6caa7cef7fd80692ebe8dfa0adf6c954`; develop head readback confirmed.
-
-### UX-SUPPORT-REPORT-REDESIGN — stage 2 checkpoint (IN_PROGRESS)
-- Implemented pilot v0.2 optional thematic display layout (60 unchanged source questions); personal details last; ordinary goals first. The old opening files remain source storage, not a mandatory questionnaire sequence.
-- Single-choice taps save/advance with 500 ms answer-only protection; multi/text retain manual save. Every question is skippable with fixed centered Skip and Back. Scrollable content reserves the navigation viewport. Back/edit and conditional navigation retain saved data.
-- Added persistent, focusable, calm LV/EN/RU support with verified 116 123 and distinct 112 guidance. Duplicate messages are suppressed; explicit immediate-help disclosures can show emergency guidance. No automatic contacting or diagnostic categories.
-- Added legacy opening-group migration and preserved pilot-v1 recovery/review queues. Tools, usage guide and v0.1/v0.2 notes are collapsed below the questionnaire. No separate user README is needed for the new test artifact.
-- Doctor ordering now puts personal information first among equally neutral entries; serious entries remain last. Recorded applicable answers survive topic deselection in exports; conditionally hidden answers remain in recovery. AI copy contains plain self-contained responses, not codes/JSON/key. All underlying source files remain unchanged.
-- Verified locally: structural/source-fidelity/layout/report tests and JS syntax; offline Chromium UX journey (single/multi/text, physical double click, back/edit, 320/390/540 px repeated Skip, every-ten recovery, legacy/invalid restore, support accessibility, clipboard, HTML/PDF print, all language structures); module/locale independence and real section 21 journeys passed. Source wording and code mappings are compared to frozen originals. Inspected mobile screenshot and extracted printed sample text.
+5. `develop` is the work branch; `main…568 tokens truncated… structural/source-fidelity/layout/report tests and JS syntax; offline Chromium UX journey (single/multi/text, physical double click, back/edit, 320/390/540 px repeated Skip, every-ten recovery, legacy/invalid restore, support accessibility, clipboard, HTML/PDF print, all language structures); module/locale independence and real section 21 journeys passed. Source wording and code mappings are compared to frozen originals. Inspected mobile screenshot and extracted printed sample text.
 - An alternate Playwright download succeeded: local browser is Chromium Headless Shell 141 on Linux. This does NOT verify native Android Chrome or human translation quality.
 - Next: full develop CI (including all 79 imported-file hashes/712-question inventory), final browser regressions and recorded exact commit/run. TASK_DONE not yet claimed.
 - Stage 2 implementation commit: `ee84b5e0f25e2ce52cf3154daa3aaf52b837b19d`; develop head readback confirmed. Local final browser regressions all passed. Built HTML SHA256: `4dca1ed7b0b8d50dfaaad098dd8e2a2e048d2f322d7f94ae7e815282035c737c`. Full CI status pending.
@@ -151,12 +141,12 @@ Complete detailed historical Latvian changelog remains in the [archived Drive `1
 1. [DONE] Remove AI/coded-answer UI/export and weighting; retain one clinician report with explicit bold-answer mappings.
 2. [DONE] Add per-question project-feedback flag and non-destructive Save & Continue; persist in new recovery fields and restore old pilot-v1 backups.
 3. [DONE] Add isolated project-feedback copy/export and clinician-report ordering/privacy checks.
-4. [IN_PROGRESS] Audit the full 48-module schema against engine capabilities (types, conditions, status, choice constraints, language coverage); register gaps before integration.
-5. [TODO] Integrate the original 712 questions in small tested batches; update fidelity/navigation tests after each batch.
+4. [DONE] Audit the full 48-module schema against engine capabilities (types, conditions, status, choice constraints, language coverage); register gaps before integration.
+5. [IN_PROGRESS] Integrate the original 712 questions in small tested batches; update fidelity/navigation tests after each batch.
 6. [TODO] Build the complete offline HTML; update manifest, architecture/index and minimal user-facing documentation after functionality works.
 7. [TODO] Run full source-integrity, browser/export/privacy/offline regressions; record unverified Android and human review.
 
-**Next action:** checklist item 4 — audit all 48 original module JSON schemas against the pilot engine, document supported/unsupported logic and prepare the smallest safe integration batch. No frozen source, `main`, or Drive release edits.
+**Next action:** checklist item 5 — add support for the one full-bank question type the pilot cannot represent: `medicineList`. Preserve the frozen 13-field repeating record and discussion note, and cover save, restore and doctor report before registering any new module. No frozen source, `main`, or Drive release edits.
 
 
 ### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 1
@@ -208,3 +198,15 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Checks:** report-format checks passed for three locales, dynamic answer-choice reasons, feedback language/version, contact email, empty-feedback output and report ordering. Offline Chromium confirmed export works with no medical answers, excludes a synthetic personal-data sentinel from project feedback even when it is stored in a medical response, and places feedback before ordinary-to-sensitive medical answers. Builder, source/layout, all three pilot browser suites, and full 79-file/48-module/712-question integrity checks passed.
 - **Remaining:** the pilot still runs only 60 questions; full source-bank integrity is not full runtime integration. Native Android Chrome and clinical/professional review are unverified.
 - **Exact next action:** audit each source module's question/condition/status/choice schema and the engine's supported behaviors before integrating any new modules.
+
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 5
+
+**Checklist:** 1 [DONE] · 2 [DONE] · 3 [DONE] · 4 [DONE] · 5 [IN_PROGRESS] · 6–7 [TODO].
+
+**Task 4 — all-source schema and capability audit**
+- **Audit commit:** `cf01df3cc16869fea1955918b01bbc3bc37e08f3` on `develop`; added `tests/pilot/test_full_bank_audit.py` to CI.
+- **Findings:** the source is structurally consistent: 48 modules, 712 unique IDs/orders, locale choice-code parity, valid conditions with earlier parents, known answer statuses, and valid multi-choice/exclusive/incompatible constraints. It contains 709 ordinary choice items, 2 `shortText` items and one `medicineList` item (`M14_02`). Five conditional items have multi-select parents; there are no cross-section conditional parents. The full-project hash verifier confirms all 79 imported originals.
+- **Important source detail:** one source entry (`M32_02`) is stored under module 33 with `section: 33`; IDs must be preserved as supplied, without deriving them from file paths or renumbering. The audit deliberately checks uniqueness, not ID-prefix-to-file equality.
+- **Engine gap:** the existing pilot supports choice and short text, but not the frozen medicine list's 13 fields per record, repeated records, benefit status, or optional discussion note. The frozen v16 HTML defines its Latvian labels; EN/RU source help is draft and the structured labels need careful locale-source review. The original files remain unchanged.
+- **Checks:** `python tests/pilot/test_full_bank_audit.py` PASS; `python tools/verify_project_index.py` PASS (79 source hashes, 48 modules, 712 IDs/orders). These are structural/source checks, not translation, clinical or browser verification.
+- **Exact next action:** implement and test `medicineList` rendering, save/restore validation and clinician-report output while the current 60-question registry stays unchanged. Then integrate the full bank directly from the immutable 48 source modules in small batches, avoiding duplicate copies of the 20 questions already repositioned in the pilot.
