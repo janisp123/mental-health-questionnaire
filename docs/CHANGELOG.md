@@ -112,3 +112,5 @@ Complete detailed historical Latvian changelog remains in the [archived Drive `1
 - Browser verification NOT performed for this stage. Existing browser journeys still need updating for the authorized UX/export changes. Local Chromium installation failed (invalid download archive).
 - This intermediate checkpoint deliberately skips CI; full browser CI must run after stages 2–3 to avoid obsolete expected-export failures. Not TASK_DONE and not a release.
 - Next: optional display layout, fixed navigation, single-tap guard, support communication, legacy restore and browser regression updates.
+
+- Stage 1 implementation commit: `c89a601c6caa7cef7fd80692ebe8dfa0adf6c954`; develop head readback confirmed.
