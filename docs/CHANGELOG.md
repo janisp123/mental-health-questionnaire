@@ -24,6 +24,7 @@
 6. [DONE] Update architecture, file index, manifest, and CI routing as needed.
 7. [DONE] Run focused checks and the full integration workflow after structural work.
 8. [BLOCKED] Physical Android testing and human language/clinical review require a device or reviewers.
+9. [IN_PROGRESS] Isolate delegated DOM event wiring behind tested callbacks; then rerun focused and full CI.
 
 **Guardrails:** keep source questions, IDs, codes, conditions, and frozen references unchanged; preserve recovery compatibility; keep script and style order explicit in `src/app/build.json`; add no runtime dependencies. Work in small verified commits.
 
@@ -61,3 +62,10 @@
 **Checks:** full workflow 42253832767 PASS; focused workflow 42253582837 PASS; local/remote Git tree match PASS; working tree clean at checkpoint.
 **Commit:** 873438f locally; GitHub `develop` 42f658c.
 **Next action:** hands-on Android Chrome check and human review of LV interface wording, EN/RU drafts, and clinical content; those need a device and human reviewers.
+
+**Checkpoint 6 — final coordinator boundary:** user-facing screens, question model, answer transitions, recovery validation, reports, and styles are separate. One clean boundary remains: move delegated click/change/input routing to `core/events.js` and test its callback dispatch with synthetic events. Keep UI and answer state in the coordinator.
+
+**Files:** docs/CHANGELOG.md.
+**Checks:** prior code verification remains at implementation commit 873438f; no application code changed in this checkpoint.
+**Commit:** pending.
+**Next action:** extract and test event delegation, then rerun both CI workflows.
