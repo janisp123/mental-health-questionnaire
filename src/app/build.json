@@ -7,6 +7,9 @@
     "reports/reports.js",
     "screens/start.js",
     "screens/section-selector.js",
+    "screens/question.js",
+    "screens/medicine.js",
+    "screens/feedback.js",
     "core/app.js"
   ]
 }

@@ -94,18 +94,8 @@ function storedDraft(q){
 }
 const medicineFields=Object.keys(data.ui.lv.medicine.fields);
 function blankMedicine(){return Object.fromEntries(medicineFields.map(k=>[k,k==="status"?"current":""]));}
-function medicineSelect(index,key,value,options,labels){
- return '<label class="field-label">'+esc(ui().medicine.fields[key])+'<select data-med-index="'+index+'" data-med-field="'+key+'"><option value="">—</option>'+options.map(code=>'<option value="'+code+'"'+(value===code?' selected':'')+'>'+esc(labels[code])+'</option>').join("")+'</select></label>';
-}
 function renderMedicine(){
- const m=ui().medicine,d=state.draft;
- return '<p class="help">'+esc(m.help)+'</p>'+d.records.map((record,i)=>'<fieldset class="medicine-card"><legend>'+esc(m.entry)+' '+(i+1)+'</legend>'+medicineFields.map(key=>{
-  const value=record[key]||"";
-  if(key==="status")return medicineSelect(i,key,value,["current","past","unknown"],m.status);
-  if(key==="benefit")return medicineSelect(i,key,value,Object.keys(m.benefits),m.benefits);
-  return '<label class="field-label">'+esc(m.fields[key])+'<input type="text" maxlength="1000" data-med-index="'+i+'" data-med-field="'+key+'" value="'+esc(value)+'"></label>';
- }).join("")+ '<button type="button" data-act="removeMedicine" data-med-remove="'+i+'">'+esc(m.remove)+'</button></fieldset>').join("")+
- '<button type="button" data-act="addMedicine" class="secondary">'+esc(m.add)+'</button><label class="field-label">'+esc(m.discussion)+'<textarea id="medicineDiscussion" maxlength="3000">'+esc(d.discussion||"")+'</textarea></label><p class="muted">'+esc(m.select)+'</p>';
+ return window.QuestionnaireScreens.medicine({medicine:ui().medicine,draft:state.draft,medicineFields,escape:esc});
 }
 function readMedicineControls(){
  const q=current();if(q?.type!=="medicineList"||!state.draft)return;
@@ -133,43 +123,18 @@ function cleanMedicineDraft(){
  return {records,discussion,valid:records.length>0||!!discussion};
 }
 function renderFeedback(q,t){
- if(!state.feedbackOpen)return "";
- const saved=state.feedback[q.id]||{reasons:[],comment:""},selected=new Set(saved.reasons||[]);
- const choices=[['question',label("feedbackQuestion")],['language',label("feedbackLanguage")],
-  ...q.choiceCodes.map(code=>['answer:'+code,esc(ui().feedbackAnswerPrefix+" "+code+" — "+(t.choices[code]||code))]),
-  ['other',label("feedbackOther")]];
- return '<fieldset id="question-feedback" class="feedback-panel"><legend>'+label("feedbackTitle")+'</legend>'+choices.map(([key,text])=>
-  '<label class="choice feedback-choice"><input type="checkbox" data-feedback-reason="'+esc(key)+'"'+(selected.has(key)?' checked':'')+'> <span>'+text+'</span></label>'
- ).join("")+'<label class="field-label">'+label("feedbackComment")+' <textarea id="feedback-comment" maxlength="500">'+esc(saved.comment||"")+'</textarea></label><p class="muted">'+label("optionalText")+'</p><p class="muted">'+label("feedbackPrivacy")+'</p>'+btn("feedbackContinue","feedbackContinue","primary-inline")+(state.feedback[q.id]?btn("removeFeedback","removeFeedback"):"")+'</fieldset>';
+ return window.QuestionnaireScreens.feedback({q,t,state,ui:ui(),label,escape:esc,btn});
 }
 function renderQuestion(){
  const q=current(),u=ui();
  if(!q){state.screen="results";return renderResults();}
- const t=q.translations[state.lang];
  if(!state.draft || state.draft.forId!==q.id)state.draft={forId:q.id,...storedDraft(q)};
- const queue=active(),idx=queue.findIndex(x=>x.id===q.id);
+ const queue=active();
  const group=groups.get(q.module).titles[state.lang];
- const time=t.time?'<p class="muted">'+esc(t.time)+'</p>':"";
- const help=t.help?'<p class="help">'+esc(t.help)+'</p>':"";
- let options="";
- if(q.type==="medicineList") {
-  options=renderMedicine();
- } else if(q.type==="shortText") {
-  options='<label class="field-label">'+label("enterText")+' <input id="shortText" autocomplete="off" type="text" maxlength="200" value="'+esc(state.draft.value||"")+'"></label><p class="muted">'+label("optionalText")+'</p>';
- } else {
-  options='<fieldset><legend class="sr-only">'+esc(t.title)+'</legend>'+
-  q.choiceCodes.map(key=>{
-    const checked=(state.draft.codes||[]).includes(key);
-    const kind=q.multi?"checkbox":"radio";
-    return '<label class="choice"><input type="'+kind+'" name="answer" value="'+esc(key)+'"'+(checked?" checked":"")+'> <span>'+esc(t.choices[key]||key)+'</span></label>';
-  }).join("")+'</fieldset>';
- }
- const flagged=!!state.feedback[q.id];
- const feedbackControl='<div class="question-title-row"><h2 tabindex="-1" id="question-heading">'+esc(t.title)+'</h2><button type="button" class="feedback-flag" data-act="feedback" aria-label="'+label("feedbackFlag")+'" aria-expanded="'+state.feedbackOpen+'" title="'+label("feedbackFlag")+'">⚑</button></div>';
- return '<section class="card question" data-question="'+esc(q.id)+'"><div class="muted">'+esc(group)+' · '+(idx+1)+'/'+queue.length+(flagged?' · '+label("feedbackFlagged"):"")+'</div>'+feedbackControl+renderFeedback(q,t)+time+help+options+
- '<p class="muted">'+label(q.multi||q.type==="shortText"||q.type==="medicineList"?"saveWarning":"autoHint")+'</p>'+(q.multi||q.type==="shortText"||q.type==="medicineList"?btn("save","next","primary"):"")+
- '<div class="actions">'+btn("skipSection","skipSection")+btn("end","skipRest")+'</div></section>';
-
+ return window.QuestionnaireScreens.question({
+  q,state,ui:u,queue,group,escape:esc,label,btn,
+  renderFeedback:()=>renderFeedback(q,q.translations[state.lang]),renderMedicine,
+ });
 }
 function renderResults(){
  const qs=reportQuestions(),u=ui(),v=report.counters(qs,state.answers);
