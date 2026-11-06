@@ -39,6 +39,10 @@ def build_bundle(apply_layout=True):
         catalog = read_json(SOURCE / "i18n" / ("ui." + lang + ".json"))
         assert catalog["lang"] == lang
         ui[lang] = catalog["strings"]
+        medicine = read_json(SOURCE / "i18n" / ("medicine." + lang + ".json"))
+        if medicine.get("schema") != "medicine-list-ui-v1" or medicine.get("lang") != lang:
+            raise ValueError("Wrong medicine-list locale: " + lang)
+        ui[lang]["medicine"] = medicine["strings"]
     groups = []
     group_ids = set()
     ids, orders = set(), set()

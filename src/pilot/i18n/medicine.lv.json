@@ -1,0 +1,52 @@
+{
+  "schema": "medicine-list-ui-v1",
+  "lang": "lv",
+  "strings": {
+    "help": "Katrām zālēm pievienojiet atsevišķu ierakstu. Iekļaujiet būtiskas agrāk lietotas zāles arī tad, ja pašlaik nelietojat nevienas. Pārrakstiet informāciju no iepakojuma vai rakstiet “nezinu”; neminiet. Uztura bagātinātāji šeit nav jāuzskaita. Pārmaiņas saglabājas tikai pēc “Saglabāt un tālāk”. Ja nav pievienojamu detaļu, izlaidiet jautājumu.",
+    "add": "Pievienot citas zāles",
+    "remove": "Noņemt šo ierakstu",
+    "discussion": "Ko vēlaties pajautāt psihiatram par zālēm? (nav obligāti)",
+    "empty": "Ievadiet vismaz vienu detaļu vai izlaidiet jautājumu.",
+    "error": "Pārbaudiet zāļu informāciju. Katrā laukā jābūt tekstam; rakstiet samērīgi īsi.",
+    "limit": "Varat pievienot līdz 50 zāļu ierakstiem.",
+    "unsaved": "Zāļu informācija vēl nav saglabāta.",
+    "select": "Ierakstiet tikai zināmo. Visi lauki ir brīvprātīgi.",
+    "historyTime": "Pašreizējās un būtiskas agrāk lietotas zāles. Norādiet faktisko lietošanu; tas nav ārstēšanas ieteikums.",
+    "bring": "Tālāk ir iekļauta jūsu ievadītā zāļu informācija. Ja iespējams, paņemiet līdzi iepakojumus, pašreizējo zāļu sarakstu un izrakstus, lai ārsts varētu informāciju pārbaudīt.",
+    "entry": "Zāles",
+    "notes": "Jautājumi psihiatram",
+    "saved": "Saglabātā zāļu informācija",
+    "missing": "Nav norādīts",
+    "reportIntro": "Paša cilvēka sniegta informācija, nevis diagnoze vai ārstēšanas ieteikums. Trūkstošas atbildes nav negatīvas atbildes. Jautājumi var attiekties uz dažādiem periodiem.",
+    "medNote": "Tikai paša norādīta zāļu informācija. Neminiet mērvienības, neaprēķiniet devas, neiesakiet izmaiņas un neizdariet secinājumus par cēloni tikai laika sakritības dēļ. Trūkstošie lauki paliek nezināmi. Pašreizēja un agrāka lietošana, kopējais ilgums un ilgums konkrētā devā ir dažādas ziņas.",
+    "fields": {
+      "name": "Precīzs zāļu nosaukums",
+      "status": "Pašlaik lietotas vai agrāk lietotas zāles",
+      "strength": "Stiprums / forma, ja zināms",
+      "dose": "Faktiski lietotais daudzums vienā reizē",
+      "schedule": "Cik bieži un kad lietojat (arī pēc vajadzības)",
+      "duration": "Cik ilgi lietojat / aptuvenais sākuma datums",
+      "doseDuration": "Cik ilgi lietojat šo devu",
+      "reason": "Kādam nolūkam lietojat",
+      "benefit": "Vai šīs zāles palīdzēja?",
+      "effects": "Kas uzlabojās, pasliktinājās vai radīja blakusparādības?",
+      "changes": "Simptomi vai pārmaiņas pēc zāļu sākšanas, devas maiņas, izlaišanas vai pārtraukšanas; laiks, ja zināms",
+      "stoppedWhen": "Kad un kā pārtraucāt (uzreiz / pakāpeniski), ja attiecas",
+      "stopReason": "Kāpēc pārtraucāt, ja attiecas"
+    },
+    "status": {
+      "current": "Lietoju pašlaik",
+      "past": "Lietoju agrāk / pārtraucu",
+      "unknown": "Nezinu / neesmu pārliecināts/-a"
+    },
+    "benefits": {
+      "A": "Izteikts uzlabojums",
+      "B": "Neliels uzlabojums",
+      "C": "Nav pamanāmu pārmaiņu",
+      "D": "Pasliktinājās",
+      "E": "Vēl par agru spriest",
+      "F": "Neesmu pārliecināts/-a",
+      "G": "Nevēlos atbildēt"
+    }
+  }
+}

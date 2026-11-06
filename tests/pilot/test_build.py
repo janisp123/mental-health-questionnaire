@@ -28,6 +28,28 @@ for q in questions:
     assert all(set(q["translations"][lang]["choices"]) == codes for lang in ("lv","en","ru"))
     assert all(q["translations"][lang]["title"] for lang in ("lv","en","ru"))
 assert set(bundle["ui"]) == {"lv","en","ru"}
+medicine_keys={'name','status','strength','dose','schedule','duration','doseDuration','reason',
+               'benefit','effects','changes','stoppedWhen','stopReason'}
+assert all(set(bundle['ui'][lang]['medicine']['fields'])==medicine_keys for lang in ('lv','en','ru'))
+assert all(set(bundle['ui'][lang]['medicine']['status'])=={'current','past','unknown'} for lang in ('lv','en','ru'))
+assert all(set(bundle['ui'][lang]['medicine']['benefits'])==set('ABCDEFG') for lang in ('lv','en','ru'))
+reference_files={
+    'lv':ROOT/'reference/baseline/html/162_Sagatavosanas_vizitei_LV_v16.html',
+    'en':ROOT/'reference/baseline/html/172_Questionnaire_EN_v16_DRAFT_NOT_RELEASED.html',
+    'ru':ROOT/'reference/baseline/html/172_Questionnaire_RU_v16_DRAFT_NOT_RELEASED.html',
+}
+for lang,path in reference_files.items():
+    source=path.read_text(encoding='utf-8')
+    raw=re.search(r'const MED_TEXT = (\{.*?\});\s*const MED_FIELDS',source,re.S)
+    assert raw, f'Medicine reference text missing: {lang}'
+    reference=json.loads(raw.group(1))
+    current=bundle['ui'][lang]['medicine']
+    assert list(current['fields'].values())==reference['fields']
+    assert list(current['status'].values())==[reference[k] for k in ('current','past','unknown')]
+    assert list(current['benefits'].values())==reference['benefits']
+    for key in ('help','add','remove','discussion','empty','error','limit','unsaved','select',
+                'historyTime','bring','entry','notes','saved','missing','reportIntro','medNote'):
+        assert current[key]==reference[key], f'Medicine reference wording changed: {lang}/{key}'
 assert not module.contains_weight_key(bundle["presentation"])
 assert module.contains_weight_key({"nested": {"textWeight": 0}})
 assert bundle["presentation"]["feedbackContactEmail"] == "janis.paegle.email@gmail.com"

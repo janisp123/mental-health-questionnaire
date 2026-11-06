@@ -210,3 +210,12 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Engine gap:** the existing pilot supports choice and short text, but not the frozen medicine list's 13 fields per record, repeated records, benefit status, or optional discussion note. The frozen v16 HTML defines its Latvian labels; EN/RU source help is draft and the structured labels need careful locale-source review. The original files remain unchanged.
 - **Checks:** `python tests/pilot/test_full_bank_audit.py` PASS; `python tools/verify_project_index.py` PASS (79 source hashes, 48 modules, 712 IDs/orders). These are structural/source checks, not translation, clinical or browser verification.
 - **Exact next action:** implement and test `medicineList` rendering, save/restore validation and clinician-report output while the current 60-question registry stays unchanged. Then integrate the full bank directly from the immutable 48 source modules in small batches, avoiding duplicate copies of the 20 questions already repositioned in the pilot.
+
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 6 (IN_PROGRESS)
+
+**Task 5a — prepare minimal medicine-list locale data and builder support.**
+- **Starting commit:** `1ba5bb0b1fd73aa0f5f8170d1ff269fde3ce8f46` on `develop`.
+- **Scope:** load only the frozen 13-field medication form labels and controls into the pilot bundle for LV/EN/RU; do not register new questions or change the current 60-question pilot. Frozen references remain read-only.
+- **Test-first status:** `tests/pilot/test_build.py` now asserts complete locale field/status/benefit maps; it fails as expected because `ui[lang].medicine` is not present.
+- **Files planned:** `src/pilot/i18n/medicine.{lv,en,ru}.json`, `tools/build_pilot.py`, `tests/pilot/test_build.py`, this changelog.
+- **Next action:** extract the minimum form strings from frozen locale baselines, load them into the bundle, verify structure and exact reference text, run relevant tests, then commit and record the remote commit SHA.
