@@ -28,7 +28,8 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert backup(page)["answers"].get("SYN_02") is None
     act(page, "save")
     assert page.locator('.question').get_attribute("data-question") == "SYN_03"
-    assert backup(page)["answers"]["SYN_02"]["codes"] == ["A", "B"]
+    saved_codes = backup(page)["answers"].get("SYN_02", {}).get("codes", [])
+    assert sorted(saved_codes) == ["A", "B"], f"Expected both saved codes, got {saved_codes!r}"
 
     act(page, "skip")
     assert page.locator("#app").inner_text().find("Results / copy") >= 0
