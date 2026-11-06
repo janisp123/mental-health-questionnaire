@@ -10,8 +10,8 @@
 **Goal:** make current project status unambiguous, separate runtime tests by behavior, and split shared runtime logic only along independently testable boundaries. Preserve the 48-module bank and single-file offline build.
 
 **Baseline:** `d250271a83dfcb17799fdbf66f26bf416488722a` on `develop`; it matches the GitHub branch. Checklist commit: `5ef185a`.
-**Latest verified implementation commit:** `972b3f1`. GitHub `develop` is `3bd3eff50aaa3937882ecfa4901195cfa51cb759`; implementation trees match exactly.
-**Latest verified workflow commit:** `863ae0d`; focused workflow 42255642293 passed using runner-provided Google Chrome 156.0.8078.79.
+**Latest verified implementation commit:** `731455a`. GitHub `develop` is `af615ac8ca0573aae4f2744d4b2e4429deef2364`; local and remote trees match exactly.
+**Latest verified workflow commit:** focused workflow 42258847072 passed on the current branch head.
 
 **Verified baseline:** component workflow 42247708071 and full offline Chromium workflow 42247707973 passed at code commit `4d6ff92002b1b3a686954eaf95743b0d61c5f398`. Source integrity confirmed 48 modules/712 IDs; no physical Android check was run.
 
@@ -91,6 +91,6 @@
 **Checkpoint 9 — plain-language progress controls:** starting implementation commit `e70d0f427c159a01d40ede1f35b778ca1a780cd0` on `develop`. Changed save/resume labels to plain language, removed `.json` from visible labels, and explained that closing the browser loses session answers unless a progress file is saved. Updated guide, privacy, backup, restore, and related prompts in LV/EN/RU. The recovery file schema and behavior are unchanged.
 
 **Files:** src/app/i18n/ui.lv.json, src/app/i18n/ui.en.json, src/app/i18n/ui.ru.json, docs/CHANGELOG.md.
-**Checks:** UI catalog consistency, offline app assembly, start/section screen rendering, question/medicine/feedback screen rendering, and `git diff --check` PASS. Focused GitHub app workflow pending.
+**Checks:** UI catalog consistency, offline app assembly, start/section screen rendering, question/medicine/feedback screen rendering, `git diff --check`, and focused GitHub app workflow 42258847072 PASS. Full questionnaire workflow was not needed for copy-only changes.
 **Commit:** 731455a.
-**Next action:** run the focused app workflow and record its result.
+**Next action:** human review of EN/RU draft wording; the LV progress warning is now explicit and the save/resume labels are plain language.
