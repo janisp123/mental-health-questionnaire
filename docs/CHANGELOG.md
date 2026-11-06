@@ -296,10 +296,21 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Checks:** adapter PASS for 668 questions in modules 01–40; earlier condition parents resolve. Full source audit and 79-file hash verifier PASS.
 - **Next action:** complete the adapter audit with modules 41–48.
 
-### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 14 (IN_PROGRESS)
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 14
 
 **Task 5i — source-adapter final batch.**
 - **Starting commit:** `3c0506de0831e8223437b56ec8fb5ac9978b5add` on `develop`.
-- **Scope:** extend exact comparisons to all 48 source modules, newly adding 41–48. This final batch contains conditional and multi-select variations; once it passes, the build adapter's source coverage is all 712 questions.
-- **Files expected:** `tests/pilot/test_source_adapter.py`, `.github/workflows/pilot-checks.yml`, this changelog.
-- **Next action:** expand comparisons through module 48; verify exact 712 count/IDs/orders/conditions; then checkpoint full read-only source coverage before changing active build output.
+- **Implementation commit:** `a80595f419d535eb96af92ccdf67cc203c5bcae5` on `develop` (remote readback confirmed).
+- **Files:** `tests/pilot/test_source_adapter.py`, `.github/workflows/pilot-checks.yml`, this changelog.
+- **Completed:** adapter fidelity checks now cover every original question in all 48 source modules. The test asserts all 712 IDs/orders, translations, codes, statuses, types, condition references and earlier-parent order; the active pilot remains 60 questions.
+- **Checks:** `python3 tests/pilot/test_source_adapter.py` PASS for all 712; `python3 tests/pilot/test_full_bank_audit.py` PASS; `python3 tools/verify_project_index.py` PASS for all 79 original hashes. This is source mapping verification, not application integration or translation/clinical review.
+- **Next action:** resolve source section labels from the frozen references, then build full groups directly from the source without maintaining duplicate question copies.
+
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 15 (IN_PROGRESS)
+
+**Task 5j — source-grounded full-module labels.**
+- **Starting commit:** `a80595f419d535eb96af92ccdf67cc203c5bcae5` on `develop`.
+- **Finding:** module JSON contains question text but no section title. The frozen LV/EN/RU references each have 48 exact title strings; avoid inventing or translating the headings.
+- **Scope:** extract those 48 titles into small locale resources; add a test that compares each resource with its frozen reference array. Do not change question data, active registry or frozen files.
+- **Files expected:** `src/pilot/i18n/module-titles.{lv,en,ru}.json`, `tools/build_pilot.py`, a focused test, workflow and changelog.
+- **Next action:** inspect the exact `TITLES` arrays in all three baselines, extract them without modification, add completeness/equality checks, then checkpoint before full-bank assembly.
