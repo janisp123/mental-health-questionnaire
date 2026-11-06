@@ -32,6 +32,8 @@ jobs:
         run: python tests/pilot/test_full_bank_audit.py
       - name: Verify direct source adapter on all 48 modules
         run: python tests/pilot/test_source_adapter.py
+      - name: Verify all 48 localized module titles
+        run: python tests/pilot/test_module_titles.py
       - name: Verify modular pilot data and offline packaging
         run: python tests/pilot/test_build.py
       - name: Compare active questions and choices against frozen v16

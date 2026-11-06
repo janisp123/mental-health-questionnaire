@@ -23,6 +23,21 @@ def read_json(path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def load_module_titles():
+    """Load exact frozen section headings for the full-bank module selector."""
+    result = {}
+    expected = [f"{number:02d}" for number in range(1, 49)]
+    for lang in LANGS:
+        catalog = read_json(SOURCE / "i18n" / ("module-titles." + lang + ".json"))
+        titles = catalog.get("titles")
+        if (catalog.get("schema") != "frozen-module-titles-v1" or catalog.get("lang") != lang
+                or not isinstance(titles, dict) or list(titles) != expected
+                or not all(isinstance(title, str) and title.strip() for title in titles.values())):
+            raise ValueError("Invalid full-bank module titles: " + lang)
+        result[lang] = titles
+    return result
+
+
 def adapt_source_entry(entry):
     """Map one frozen LV/EN/RU module entry to the pilot engine's question shape."""
     lv = entry["lv"]
