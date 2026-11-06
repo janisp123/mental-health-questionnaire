@@ -19,7 +19,7 @@ full = build.build_bundle(full_bank=True)
 assert full["schema"] == "offline-questionnaire-full-bank-v1"
 assert full["build_mode"] == "full_bank"
 assert [group["id"] for group in full["groups"]] == build.read_json(
-    ROOT / "src" / "pilot" / "modules" / "layout.json"
+    ROOT / "src" / "questionnaire" / "layout.json"
 )["full_order"]
 assert all(group["required"] is False for group in full["groups"])
 questions = [question for group in full["groups"] for question in group["questions"]]
@@ -84,19 +84,23 @@ with tempfile.TemporaryDirectory() as temp_dir:
 # Registry additions used by the pilot independence check may extend report order
 # without changing the fixed 48-module full-bank navigation map.
 original_source = build.SOURCE
+original_questionnaire = build.QUESTIONNAIRE
 try:
     with tempfile.TemporaryDirectory() as temp_dir:
         fixture_source = Path(temp_dir) / "pilot"
         shutil.copytree(original_source, fixture_source)
         build.SOURCE = fixture_source
+        fixture_questionnaire = Path(temp_dir) / "questionnaire"
+        shutil.copytree(original_questionnaire, fixture_questionnaire)
+        build.QUESTIONNAIRE = fixture_questionnaire
         modules = fixture_source / "modules"
         registry = build.read_json(modules / "registry.json")
         registry["groups"].append({"id": "fixture", "required": False, "question_count": 1})
         (modules / "registry.json").write_text(json.dumps(registry), encoding="utf-8")
-        layout = build.read_json(modules / "layout.json")
+        layout = build.read_json(fixture_questionnaire / "layout.json")
         layout["order"].append("fixture")
-        (modules / "layout.json").write_text(json.dumps(layout), encoding="utf-8")
-        presentation_path = fixture_source / "reports" / "presentation.json"
+        (fixture_questionnaire / "layout.json").write_text(json.dumps(layout), encoding="utf-8")
+        presentation_path = fixture_questionnaire / "presentation.json"
         presentation = build.read_json(presentation_path)
         presentation["topicOrder"].append("fixture")
         presentation_path.write_text(json.dumps(presentation), encoding="utf-8")
@@ -117,5 +121,6 @@ try:
         assert extended["groups"][-1]["id"] == "fixture"
 finally:
     build.SOURCE = original_source
+    build.QUESTIONNAIRE = original_questionnaire
 
 print("PASS: explicit full-bank build embeds 712 questions/48 optional groups; default pilot remains 60.")

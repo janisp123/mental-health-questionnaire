@@ -10,8 +10,8 @@ assert b['groups'][-1]['id']=='33'
 assert all(q['originModule']==int(g['id']) for g in b['groups'] for q in g['questions'])
 assert b['layout_version']=='optional-topics-v1'
 assert set(b['legacy_opening_groups'])=={'06','18','23','31','33'}
-layout=json.loads((ROOT/'src/pilot/modules/layout.json').read_text())
-presentation=json.loads((ROOT/'src/pilot/reports/presentation.json').read_text())
+layout=json.loads((ROOT/'src/questionnaire/layout.json').read_text())
+presentation=json.loads((ROOT/'src/questionnaire/presentation.json').read_text())
 expected={f'{i:02d}' for i in range(1,49)}
 assert layout['order']==['23','02','21','06','18','31','33']
 assert len(layout['full_order'])==48 and set(layout['full_order'])==expected

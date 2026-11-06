@@ -362,3 +362,13 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Completed:** future work should read the active changelog entry and relevant manifest/index sections, run a focused test first, and inspect CI step summaries before requesting logs. This prevents routine turns from loading the full 50 KB changelog, full manifest hash inventory, or entire workflow log.
 - **Checks:** `git diff --check` PASS. Documentation-only change; no code tests or CI run needed. `AGENTS.md` and the changelog were read back from `develop`.
 - **Next action:** resume overall project Task 5n — offline-browser behavior audit of the 712-question build.
+
+### 2026-11-06 · FULL-BUILD-FIRST · IN_PROGRESS
+
+**Goal:** make the 712-question application the active build, archive the 60-question pilot, remove pilot-only checks/artifacts from the active workflow, and keep reusable design/runtime code separate from the immutable question bank.
+- **Starting commit:** `4f51b0e0498a64669c21dab8c10c1839f8bfec99` on `develop`.
+- **Checklist:** (1) [DONE] confirm the 48 source modules/712 questions remain the canonical untouched bank; (2) [DONE] isolate reusable UI/runtime and design assets from question content; (3) [IN_PROGRESS] make the full bank the primary build and add browser verification; (4) [TODO] archive pilot-only data/artifact/tests and remove pilot-only checks/artifacts from active CI; (5) [IN_PROGRESS] update the manifest/index/architecture and verify the complete workflow.
+- **Approach:** keep `src/modules/` unchanged as question/answer source; move only reusable UI/runtime out of the pilot namespace; use the existing source adapter and full-module ordering. Preserve the pilot files in an archive until equivalent full-build checks pass, then remove them from active CI.
+- **Step 1 complete:** moved reusable app/runtime/style/report code and shared UI/medicine labels into `src/app/`; moved full-bank layout, report rules and frozen module titles into `src/questionnaire/`. Updated the builder, tests, manifest, file index and architecture paths. Original question modules were untouched.
+- **Verification:** 79-file source integrity, 48-module audit/adapter/group/title checks, full-bank packaging, 60-question pilot structural/fidelity/layout checks, report/medicine report tests, JavaScript syntax and `git diff --check` all PASS. Full-browser journey has not yet been retargeted to the full build.
+- **Next action:** add a full-bank offline-browser journey using the same app shell; switch active CI to full-bank checks and archive the pilot only after those checks pass.

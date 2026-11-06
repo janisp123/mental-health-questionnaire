@@ -5,10 +5,10 @@ The develop-only default pilot implements 60 original questions in LV/EN/RU. All
 ## Source, layout and presentation
 
 - `src/pilot/modules/registry.json` registers storage groups (opening, 02, 21). Their original logic, IDs, order, answer codes, statuses, conditions and three locale files remain unchanged.
-- `src/pilot/modules/layout.json` defines display order and titles. The builder distributes the old opening items by their original `originModule`, without modifying original order. All display groups are optional. New registered modules append without engine changes. Parent conditions must precede follow-ups in both source and display order.
-- `src/pilot/reports/presentation.json` holds independently reviewable, provisional answer-specific priorities, concise labels and support triggers. It never changes source answers. Unknown/refused responses have null priority; skipped/missing responses also return null, and are excluded from report entries. Null entries are placed after ordinary information, before weighted difficulties; that placement is not a severity claim.
+- `src/questionnaire/layout.json` defines display order and exact module titles. Full-bank groups are assembled from their original `section` field without modifying source order. All groups are optional. Parent conditions must precede follow-ups in source and display order.
+- `src/questionnaire/presentation.json` holds independently reviewable answer-specific labels and support triggers. It never changes source answers. No total, probability, diagnosis or automatic clinical risk category is calculated.
 - Priorities 0–3 order individual answered entries only. Multiple selections retain every chosen answer and use the highest explicit presentation priority. No total, probability, diagnosis or automatic clinical risk category is calculated. Past experiences, current thoughts, intentions and preparations retain their original time/context and distinct rules. No cross-question clinical inference is made. Future clinicians can review the metadata against original answer wording.
-- `src/pilot/i18n/ui.{lv,en,ru}.json` contains shared interface/support/report instructions. Source question translations remain in their original modules. Never edit frozen v16 to make fidelity checks pass.
+- `src/app/i18n/ui.{lv,en,ru}.json` contains shared interface/support/report instructions. Source question translations remain in `src/modules/`. Never edit frozen v16 to make fidelity checks pass.
 
 ## Answering and recovery
 
@@ -32,7 +32,7 @@ Recorded applicable responses remain in reports even when their topic is deselec
 
 ## Build and verification
 
-`python tools/build_pilot.py` builds `dist/PILOT_offline_LV_EN_RU_v0.2_NOT_RELEASED.html`. `python tools/build_pilot.py --full-bank` builds `dist/FULL_BANK_offline_LV_EN_RU_NOT_RELEASED.html` from the frozen source modules. Both are test prototypes, not public releases. CI stores the default pilot as a test artifact; the full-bank build is structurally checked but not published.
+`python tools/build_pilot.py` still builds the transitional 60-question pilot. `python tools/build_pilot.py --full-bank` builds `dist/FULL_BANK_offline_LV_EN_RU_NOT_RELEASED.html` from `src/modules/` and the separate app/config directories. The full-bank runtime and pilot archive are in progress; neither file is a public release.
 
 Run:
 
@@ -41,7 +41,7 @@ Run:
 - `python tests/pilot/test_source_fidelity.py` — every active original field/translation against frozen v16, plus deliberate swapped-label rejection.
 - `python tests/pilot/test_layout.py` — fixed 60-ID scope, optional display topics, personal details last.
 - `node tests/pilot/test_reports.js` — per-answer metadata coverage, actual text/time, ascending order, null statuses, HTML escaping and all three output languages.
-- `node --check src/pilot/core/app.js` and `node --check src/pilot/reports/reports.js`.
+- `node --check src/app/core/app.js` and `node --check src/app/reports/reports.js`.
 - With Playwright Chromium: `test_browser.py`, `test_independence.py`, `test_section21.py` under `tests/pilot/` — actual offline browser answering, double taps, skip/back, recovery, copy/print/export, support, module independence, conditions, invalid restore and source-to-output mapping.
 
 Desktop Chromium checks are not native Android verification. Remaining manual checks: downloaded-file opening, touch/keyboard behavior and fixed navigation with Android browser controls, every-ten-answer downloads, file-picker restoration, clipboard and multi-page printing. Translation review and clinical review of source wording/presentation rules remain outstanding. See `docs/CHANGELOG.md` for exact verified commits and CI runs.

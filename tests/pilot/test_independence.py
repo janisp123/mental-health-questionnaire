@@ -8,14 +8,15 @@ def snapshot(path):return {p.relative_to(path):p.read_bytes() for p in path.rglo
 
 with tempfile.TemporaryDirectory() as tmp,sync_playwright() as pw:
     temp=Path(tmp);source=temp/'pilot';shutil.copytree(build.SOURCE,source);build.SOURCE=source
+    questionnaire=temp/'questionnaire';shutil.copytree(build.QUESTIONNAIRE,questionnaire);build.QUESTIONNAIRE=questionnaire
     before=snapshot(source);modules=source/'modules';registry=build.read_json(modules/'registry.json')
     module=modules/'fixture';module.mkdir()
     q={'id':'TEST21','order':10000,'choiceCodes':['A','B'],'multi':False}
     follow={**q,'id':'TEST21_F','order':10001,'context':{'id':'TEST21','showValues':['A']}}
     write(module/'logic.json',{'group':'fixture','questions':[q,follow]})
     registry['groups'].append({'id':'fixture','required':False,'question_count':2});write(modules/'registry.json',registry)
-    layout=build.read_json(modules/'layout.json');layout['order'].append('fixture');write(modules/'layout.json',layout)
-    presentation=build.read_json(source/'reports'/'presentation.json');presentation['topicOrder'].append('fixture');write(source/'reports'/'presentation.json',presentation)
+    layout=build.read_json(questionnaire/'layout.json');layout['order'].append('fixture');write(questionnaire/'layout.json',layout)
+    presentation=build.read_json(questionnaire/'presentation.json');presentation['topicOrder'].append('fixture');write(questionnaire/'presentation.json',presentation)
     for lang in build.LANGS:
         write(module/(lang+'.json'),{'module':'fixture','lang':lang,'title':'Test fixture '+lang,'questions':{'TEST21':{'title':'Original '+lang,'choices':{'A':'First','B':'Second'}},'TEST21_F':{'title':'Conditional '+lang,'choices':{'A':'Follow first','B':'Follow second'}}}})
     assert all((source/p).read_bytes()==v for p,v in before.items() if p not in (Path('modules/registry.json'),Path('modules/layout.json'),Path('reports/presentation.json')))

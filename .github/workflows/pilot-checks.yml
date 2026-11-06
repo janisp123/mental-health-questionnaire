@@ -4,6 +4,8 @@ on:
   push:
     branches: [develop]
     paths:
+      - 'src/app/**'
+      - 'src/questionnaire/**'
       - 'src/pilot/**'
       - 'src/modules/**'
       - 'tools/build_pilot.py'
@@ -49,8 +51,8 @@ jobs:
           node tests/pilot/test_medicine_report.js
       - name: Check shared JavaScript syntax
         run: |
-          node --check src/pilot/core/app.js
-          node --check src/pilot/reports/reports.js
+          node --check src/app/core/app.js
+          node --check src/app/reports/reports.js
       - name: Build prototype single HTML
         run: python tools/build_pilot.py
       - name: Prepare browser for offline journeys

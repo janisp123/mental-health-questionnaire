@@ -73,9 +73,9 @@
       ],
       "registry": "src/pilot/modules/registry.json",
       "module_source_pattern": "src/pilot/modules/{id}/{logic,lv,en,ru}.json",
-      "core": "src/pilot/core/",
-      "reports": "src/pilot/reports/",
-      "interface": "src/pilot/i18n/",
+      "core": "src/app/core/",
+      "reports": "src/app/reports/",
+      "interface": "src/app/i18n/",
       "builder": "tools/build_pilot.py",
       "optional_full_bank_build": {
         "command": "python tools/build_pilot.py --full-bank",
@@ -105,8 +105,8 @@
         "02",
         "21"
       ],
-      "layout": "src/pilot/modules/layout.json",
-      "presentation_metadata": "src/pilot/reports/presentation.json"
+      "layout": "src/questionnaire/layout.json",
+      "presentation_metadata": "src/questionnaire/presentation.json"
     }
   },
   "import_validation": {

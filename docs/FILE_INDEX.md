@@ -14,7 +14,10 @@
 |---|---|---|
 | Questions in LV/EN/RU | `src/modules/182_MODULE_01_LV_EN_RU_v16.json` through `182_MODULE_48_LV_EN_RU_v16.json` | 48 sections, 712 questions, language fields per module; LV reference, EN/RU **unreviewed drafts** |
 | Module source index | `tests/fixtures/181_MODULE_INDEX_v16.json` | Frozen initial module SHA256, count and order; do not confuse with the current overall manifest |
-| Editable pilot and opt-in full-bank package | `src/pilot/modules/registry.json`, `src/pilot/core/`, `src/pilot/reports/`, `tools/build_pilot.py` | Default pilot v0.2 remains 60 active questions. `python tools/build_pilot.py --full-bank` packages all 712 source questions into 48 optional groups for structural/build review; full runtime behavior remains unverified. Display layout: `src/pilot/modules/layout.json`; per-answer report priorities: `src/pilot/reports/presentation.json`. Source fidelity: `tests/pilot/test_source_fidelity.py`. See [architecture](PILOT_ARCHITECTURE.md). |
+| Full question bank | `src/modules/182_MODULE_01_LV_EN_RU_v16.json` through `182_MODULE_48_LV_EN_RU_v16.json` | Canonical question/answer content and translations, separate from application design and runtime. |
+| Shared application design/runtime | `src/app/core/`, `src/app/reports/`, `src/app/i18n/` | Reusable offline UI, styles, report renderer and interface labels. It consumes embedded data and does not read question files at runtime. |
+| Questionnaire presentation config | `src/questionnaire/layout.json`, `src/questionnaire/presentation.json`, `src/questionnaire/i18n/` | Module navigation/report order, answer-specific report rules and frozen module titles; separate from design and original question content. |
+| Pilot fixture and full-bank builder | `src/pilot/modules/`, `tools/build_pilot.py` | Pilot v0.2 still builds 60 questions by default. `python tools/build_pilot.py --full-bank` packages 712 questions in 48 optional groups; full runtime behavior remains unverified. Pilot sources are transitional and scheduled for archive. See [architecture](PILOT_ARCHITECTURE.md). |
 | Existing working application | `reference/baseline/html/162_Sagatavosanas_vizitei_LV_v16.html` | Exact frozen LV v16 single-file browser reference; behavioral comparison source for the developing pilot |
 | English app snapshot | `reference/baseline/html/172_Questionnaire_EN_v16_DRAFT_NOT_RELEASED.html` | Reference draft only, **not a release** |
 | Russian app snapshot | `reference/baseline/html/172_Questionnaire_RU_v16_DRAFT_NOT_RELEASED.html` | Reference draft only, **not a release** |
@@ -29,15 +32,17 @@
 ## Directory roles
 
 - `src/modules/`: source questionnaires (48 exact modules).
-- `src/i18n/working/`: existing translation drafts/resources. New stable localization code goes under `src/i18n/`.
-- `src/core/`, `src/reports/`, `src/information/`: reserved for future shared engine, outputs and in-app information. **Not yet implemented.**
+- `src/i18n/working/`: existing translation drafts/resources.
+- `src/app/`: shared offline application design, runtime and report renderer; contains no question bank.
+- `src/questionnaire/`: module order, report presentation rules and source-grounded module titles.
+- `src/pilot/`: transitional 60-question fixture, scheduled for archive after full-build browser checks replace its workflow coverage.
 - `reference/baseline/html/`, `reference/baseline/readme/`, `reference/baseline/information/`: immutable v16 reference snapshots.
 - `reference/history/`: legacy v9/v14 references; never assume newest.
 - `docs/drive-original/`: immutable former Drive development directions, indexes, and prior changelog, preserved for traceability; some old wording points to Drive because these are historical snapshots.
 - `docs/`: active GitHub changelog, instructions, migration record and release policy.
 - `tests/fixtures/`: imported module index and past EN/RU draft build report; *not* evidence of current full test passes.
 - `tools/`: existing original build helpers and new verification tools.
-- `.github/workflows/`: active develop-branch pilot workflow, including headless Chromium.
+- `.github/workflows/`: active develop-branch verification workflow, including headless Chromium.
 - `main` branch is **not** the active source tree; `develop` holds the import.
 
 ## Distribution — separate from development

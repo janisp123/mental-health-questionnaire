@@ -17,6 +17,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "src" / "pilot"
+APP = ROOT / "src" / "app"
+QUESTIONNAIRE = ROOT / "src" / "questionnaire"
 LANGS = ("lv", "en", "ru")
 
 
@@ -29,7 +31,7 @@ def load_module_titles():
     result = {}
     expected = [f"{number:02d}" for number in range(1, 49)]
     for lang in LANGS:
-        catalog = read_json(SOURCE / "i18n" / ("module-titles." + lang + ".json"))
+        catalog = read_json(QUESTIONNAIRE / "i18n" / ("module-titles." + lang + ".json"))
         titles = catalog.get("titles")
         if (catalog.get("schema") != "frozen-module-titles-v1" or catalog.get("lang") != lang
                 or not isinstance(titles, dict) or list(titles) != expected
@@ -129,10 +131,10 @@ def build_bundle(apply_layout=True, full_bank=False):
     registry = read_json(SOURCE / "modules" / "registry.json")
     ui = {}
     for lang in LANGS:
-        catalog = read_json(SOURCE / "i18n" / ("ui." + lang + ".json"))
+        catalog = read_json(APP / "i18n" / ("ui." + lang + ".json"))
         assert catalog["lang"] == lang
         ui[lang] = catalog["strings"]
-        medicine = read_json(SOURCE / "i18n" / ("medicine." + lang + ".json"))
+        medicine = read_json(APP / "i18n" / ("medicine." + lang + ".json"))
         if medicine.get("schema") != "medicine-list-ui-v1" or medicine.get("lang") != lang:
             raise ValueError("Wrong medicine-list locale: " + lang)
         ui[lang]["medicine"] = medicine["strings"]
@@ -194,8 +196,8 @@ def build_bundle(apply_layout=True, full_bank=False):
                 raise ValueError("Unresolved condition " + q["id"])
             if context and by_id[context["id"]]["order"] >= q["order"]:
                 raise ValueError("Condition must reference an earlier question: " + q["id"])
-    layout = read_json(SOURCE / "modules" / "layout.json")
-    presentation = read_json(SOURCE / "reports" / "presentation.json")
+    layout = read_json(QUESTIONNAIRE / "layout.json")
+    presentation = read_json(QUESTIONNAIRE / "presentation.json")
     if contains_weight_key(presentation):
         raise ValueError("Weight metadata is no longer supported")
     contact = presentation.get("feedbackContactEmail", "")
@@ -259,9 +261,9 @@ def build_bundle(apply_layout=True, full_bank=False):
 
 def make_html(full_bank=False):
     data = build_bundle(full_bank=full_bank)
-    style = (SOURCE / "core" / "styles.css").read_text(encoding="utf-8")
-    reports = (SOURCE / "reports" / "reports.js").read_text(encoding="utf-8")
-    app = (SOURCE / "core" / "app.js").read_text(encoding="utf-8")
+    style = (APP / "core" / "styles.css").read_text(encoding="utf-8")
+    reports = (APP / "reports" / "reports.js").read_text(encoding="utf-8")
+    app = (APP / "core" / "app.js").read_text(encoding="utf-8")
     data_json = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
     # Never allow JSON values to prematurely terminate their script tag.
     data_json = data_json.replace("<", "\\u003c").replace(">", "\\u003e")

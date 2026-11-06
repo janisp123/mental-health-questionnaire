@@ -2,7 +2,7 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert');
 const cp=require('child_process');
 const data=JSON.parse(cp.execFileSync('python',['-c','import sys,json;sys.path.insert(0,"tools");from build_pilot import build_bundle;print(json.dumps(build_bundle()))'],{maxBuffer:8e6}));
-const context={window:{}};vm.runInNewContext(fs.readFileSync('src/pilot/reports/reports.js','utf8'),context);
+const context={window:{}};vm.runInNewContext(fs.readFileSync('src/app/reports/reports.js','utf8'),context);
 const r=context.window.PilotReports,qs=data.groups.flatMap(g=>g.questions),q=id=>qs.find(q=>q.id===id);
 const answers={M33_01:{kind:'text',value:'Synthetic'},M06_02:{kind:'choice',codes:['B'],status:'answered'},M06_01:{kind:'choice',codes:['A'],status:'answered'},M02_09:{kind:'choice',codes:['A'],status:'answered'},M23_11:{kind:'choice',codes:['A'],status:'answered'}};
 assert.deepEqual(Object.keys(data.presentation).sort(),['boldAnswers','feedbackContactEmail','purpose','questions','schema','topicOrder']);
