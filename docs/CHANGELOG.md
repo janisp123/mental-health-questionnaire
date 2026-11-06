@@ -256,10 +256,20 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Checks:** `python3 tests/pilot/test_source_adapter.py` PASS for 135 questions, unique IDs/orders, translations, answer/status/type data and valid earlier condition parents. `python3 tests/pilot/test_full_bank_audit.py` and `python3 tools/verify_project_index.py` PASS. Active pilot remains 60 questions.
 - **Next action:** verify the next source batch; do not activate it until the adapter comparisons pass.
 
-### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 10 (IN_PROGRESS)
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 10
 
 **Task 5e — source-adapter batch 3.**
 - **Starting commit:** `56fbefcb5fd99649044f83e83fabc98d28306100` on `develop`.
-- **Scope:** extend fidelity checks to modules 01–16, newly adding 09–16. This batch includes 26 conditional entries in module 10, the 13-field `medicineList` item M14_02, and conditional items in modules 09, 12 and 15.
+- **Implementation commit:** `2dff096fb92ca358615154eeaa34b1236ed7004b` on `develop` (remote readback confirmed).
+- **Files:** `tests/pilot/test_source_adapter.py`, `.github/workflows/pilot-checks.yml`, this changelog.
+- **Completed:** extended exact source comparisons through module 16. The batch includes 26 conditional questions in module 10, M14_02 medicineList, and conditions in modules 09, 12 and 15; adapter output retains each unchanged.
+- **Checks:** source-adapter PASS for 293 questions in modules 01–16; all IDs/orders unique; each condition parent exists in the batch and precedes its child. Full source audit and original-file hash verifier PASS. Active pilot remains 60 questions.
+- **Next action:** verify the next source batch before enabling it in runtime.
+
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 11 (IN_PROGRESS)
+
+**Task 5f — source-adapter batch 4.**
+- **Starting commit:** `2dff096fb92ca358615154eeaa34b1236ed7004b` on `develop`.
+- **Scope:** extend fidelity checks through module 24, newly adding modules 17–24. This includes 11 conditional entries in module 18 and smaller condition groups in modules 17 and 19.
 - **Files expected:** `tests/pilot/test_source_adapter.py`, `.github/workflows/pilot-checks.yml`, this changelog.
-- **Next action:** add modules 09–16 to exact adapter comparisons, run source-adapter/index/audit checks, and record the result before the next batch.
+- **Next action:** extend exact comparisons to modules 17–24; run adapter and source-integrity checks; commit and record before the next batch.
