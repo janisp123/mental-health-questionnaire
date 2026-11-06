@@ -4,17 +4,12 @@ on:
   push:
     branches: [develop]
     paths:
-      - 'src/app/core/**'
-      - 'src/app/reports/**'
-      - 'src/app/build.json'
       - 'src/questionnaire/**'
       - 'src/modules/**'
-      - 'tests/fixtures/**'
       - 'tests/full_bank/**'
       - 'tools/build_questionnaire.py'
       - 'tools/verify_project_index.py'
       - 'project-manifest.json'
-      - 'docs/QUESTIONNAIRE_ARCHITECTURE.md'
       - '.github/workflows/questionnaire-checks.yml'
   workflow_dispatch:
 

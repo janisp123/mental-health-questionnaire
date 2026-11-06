@@ -40,7 +40,7 @@
 - `src/questionnaire/`: module order, report presentation rules and source-grounded module titles.
 - `archive/pilot/`: retired 60-question prototype source, tests and notes; not a build input or active CI suite.
 - `tests/full_bank/`: source, build, report and full-runtime checks for the 48-module questionnaire.
-- `tests/app/`: focused screen-rendering and source-assembly checks using synthetic content rather than the full bank.
+- `tests/app/`: focused screen-rendering, source-assembly and synthetic-runtime checks; no full question bank is loaded.
 - `reference/baseline/html/`, `reference/baseline/readme/`, `reference/baseline/information/`: immutable v16 reference snapshots.
 - `reference/history/`: legacy v9/v14 references; never assume newest.
 - `docs/drive-original/`: immutable former Drive development directions, indexes, and prior changelog, preserved for traceability; some old wording points to Drive because these are historical snapshots.
@@ -48,8 +48,8 @@
 - `docs/`: active GitHub changelog, instructions, migration record and release policy.
 - `tests/fixtures/`: imported module index and past EN/RU draft build report; *not* evidence of current full test passes.
 - `tools/`: existing original build helpers and new verification tools.
-- `.github/workflows/app-component-checks.yml`: fast focused checks for screen/style edits.
-- `.github/workflows/questionnaire-checks.yml`: full develop-branch source, build, headless Chromium and non-release artifact verification for shared runtime/data/build changes.
+- `.github/workflows/app-components.yml`: focused checks for app, screen, style, locale and synthetic fixture edits.
+- `.github/workflows/questionnaire-checks.yml`: full source, build, headless Chromium and non-release artifact verification for question-bank and full-build changes.
 - `main` branch is **not** the active source tree; `develop` holds the import.
 
 ## Distribution — separate from development

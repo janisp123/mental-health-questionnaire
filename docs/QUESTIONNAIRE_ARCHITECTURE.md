@@ -11,9 +11,9 @@ The working build assembles the original 48 modules and 712 questions into one o
 - `tools/build_questionnaire.py` validates and combines these sources into `dist/QUESTIONNAIRE_LV_EN_RU_NOT_RELEASED.html`.
 - `tests/app/` checks individual screen renderers and source assembly using synthetic content, without loading the 712-question bank.
 - `tests/full_bank/` checks source mapping, packaging, reports, offline runtime behavior, and the complete browser journey.
-- `.github/workflows/app-component-checks.yml` runs the fast synthetic checks for screen/style changes. `.github/workflows/questionnaire-checks.yml` runs the full regression for shared runtime, report, source-data, or build changes.
+- `.github/workflows/app-components.yml` runs focused synthetic checks for app, screen, style, and interface-locale changes. `.github/workflows/questionnaire-checks.yml` runs the full regression for question-bank and full-build changes; it can also be started manually.
 - `archive/pilot/` holds the retired 60-question prototype and its old tests for history only.
 
-The HTML contains its runtime and all questions, works offline, and makes no network requests. Screen and report-page markup has focused synthetic-content tests; shared answer-flow and recovery logic remain in the central runtime and use the full integration checks. Automated desktop Chromium checks pass; native Android testing and clinical review remain outstanding. EN/RU content and the new interface text have not had human language review. This build is for professional review, not diagnosis or clinical validation.
+The HTML contains its runtime and all questions, works offline, and makes no network requests. Screen and report-page markup has focused synthetic-content tests. A compact synthetic bundle is also used for isolated browser checks, while the 48-module end-to-end journey remains a separate integration gate. Automated desktop Chromium checks pass; native Android testing and clinical review remain outstanding. EN/RU content and the new interface text have not had human language review. This build is for professional review, not diagnosis or clinical validation.
 
 Recovery files retain the existing `mental-pilot-recovery-v1` schema to preserve compatibility with the prior prototype. The file remains local unless the user chooses to copy or share it.
