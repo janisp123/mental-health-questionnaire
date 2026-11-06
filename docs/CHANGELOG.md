@@ -105,3 +105,10 @@ Complete detailed historical Latvian changelog remains in the [archived Drive `1
 4. Only one active task log: `docs/CHANGELOG.md`. `docs/MIGRATION_STATUS.md` may remain a concise directory/reference but is not a second mutable task log after this handoff.
 5. `develop` is the work branch; `main` is not a workbench. Publishing to Drive occurs only from an approved tested release candidate, never directly from unverified development.
 6. No real patient information, user answers, recovery files, personal medical records, credentials or private correspondence in this public repository.
+
+### UX-SUPPORT-REPORT-REDESIGN — stage 1 checkpoint (IN_PROGRESS)
+- Implemented independent per-answer presentation metadata and compact self-contained AI/doctor text. No codes/JSON/decoding keys in AI. Doctor ordering is ascending; uncertainty/refusal are null, not zero. Original language and logic files unchanged.
+- Verified locally: new report acceptance test first failed against old API, then passed; structural 60-question check, frozen-source fidelity including swapped-label rejection, JS syntax passed.
+- Browser verification NOT performed for this stage. Existing browser journeys still need updating for the authorized UX/export changes. Local Chromium installation failed (invalid download archive).
+- This intermediate checkpoint deliberately skips CI; full browser CI must run after stages 2–3 to avoid obsolete expected-export failures. Not TASK_DONE and not a release.
+- Next: optional display layout, fixed navigation, single-tap guard, support communication, legacy restore and browser regression updates.

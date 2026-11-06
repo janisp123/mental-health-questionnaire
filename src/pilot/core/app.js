@@ -116,12 +116,12 @@ function codedReport(){
  const applicable=new Set(active().map(q=>q.id));
  const availability=q=>!groups.get(q.module).required&&!state.selected.includes(q.module)
    ?"omitted":!applicable.has(q.id)?"hidden":null;
- return report.codedText(all,state.answers,state.selected,state.lang,ui(),availability);
+ return report.codedText(all,state.answers,state.selected,state.lang,ui(),availability,data.presentation);
 }
 function renderReport(){
  const q=active(),u=ui(),doctor=state.reportView!=="ai";
  const heading=doctor?u.doctorHeading:u.coded;
- const result=doctor?report.doctorText(q,state.answers,state.selected,state.lang,u,data.groups):codedReport();
+ const result=doctor?report.doctorText(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation):codedReport();
  return '<section class="card report"><h2>'+esc(heading)+'</h2><p>'+label("doctorDisclaimer")+'</p><textarea id="reportText" readonly rows="17">'+esc(result)+'</textarea><pre class="print-report">'+esc(result)+'</pre>'+
  '<div class="actions">'+btn(doctor?"copyDoctor":"copyAI",doctor?"copyDoctor":"copyAI","primary-inline")+
  btn("doctor","specialist")+btn("ai","ai")+btn("print","print")+btn("downloadReport","downloadReport")+btn("downloadTxt","txt")+btn("reference","reference")+'</div>'+
@@ -326,13 +326,13 @@ function action(key){
  if(key==="backup"){downloadBackup();state.notice=u.backupSaved;render();return;}
  if(key==="downloadTxt"){downloadFile("anketa-pilot-"+state.lang+".txt",report.allTxt(q,state.answers,state.selected,state.lang,u));return;}
  if(key==="reference"){downloadFile("anketa-pilot-reference-"+state.lang+".md",report.decodingKey(q,state.lang),"text/markdown;charset=utf-8");return;}
- if(key==="downloadReport"){downloadFile("anketa-pilot-report-"+state.lang+".html",report.doctorHtml(q,state.answers,state.selected,state.lang,u,data.groups),"text/html;charset=utf-8");return;}
+ if(key==="downloadReport"){downloadFile("anketa-pilot-report-"+state.lang+".html",report.doctorHtml(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation),"text/html;charset=utf-8");return;}
  if(key==="print"){
    if(state.screen!=="report"){state.reportView="doctor";state.screen="report";render();}
    window.print();return;
  }
  if(key==="copyDoctor"||key==="copyAI"){
-   const text=key==="copyDoctor"?report.doctorText(q,state.answers,state.selected,state.lang,u,data.groups):codedReport();
+   const text=key==="copyDoctor"?report.doctorText(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation):codedReport();
    copyText(text);return;
  }
 }

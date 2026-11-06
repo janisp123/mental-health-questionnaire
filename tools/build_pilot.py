@@ -83,6 +83,7 @@ def build_bundle():
                 raise ValueError("Condition must reference an earlier question: " + q["id"])
     return {"schema": "offline-questionnaire-pilot-v1", "version": registry["app_version"],
             "baseline": registry["baseline"], "ui": ui, "groups": groups,
+            "presentation": read_json(SOURCE / "reports" / "presentation.json"),
             "release_status": {"lv": "PROTOTYPE", "en": "DRAFT_NOT_RELEASED", "ru": "DRAFT_NOT_RELEASED"}}
 
 

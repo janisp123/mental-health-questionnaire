@@ -1,0 +1,712 @@
+{
+  "schema": "pilot-presentation-v1",
+  "purpose": "Editorial report ordering only; provisional, not clinically validated. No aggregate score. Null is unrated, not neutral. Review individual code mappings against frozen source.",
+  "questions": {
+    "M02_01": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 2
+      }
+    },
+    "M02_02": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 2
+      }
+    },
+    "M02_03": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 2
+      }
+    },
+    "M02_04": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 2
+      }
+    },
+    "M02_05": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 2
+      }
+    },
+    "M02_06": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 2
+      },
+      "labels": {
+        "lv": "Mazvērtības, neveiksmes vai vainas izjūta par sevi/ģimeni",
+        "en": "Feeling worthless, a failure, or having let yourself/family down",
+        "ru": "Чувство собственной никчёмности, неудачи или вины перед собой/семьёй"
+      }
+    },
+    "M02_07": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 2
+      }
+    },
+    "M02_08": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 2
+      },
+      "labels": {
+        "lv": "Citiem pamanāms kustību/runas lēnums vai izteikts nemiers",
+        "en": "Noticeably slowed movement/speech or marked restlessness",
+        "ru": "Заметная окружающим замедленность движений/речи или выраженное беспокойство"
+      }
+    },
+    "M02_09": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": 2,
+        "D": 2
+      },
+      "support": {
+        "B": "support",
+        "C": "support",
+        "D": "support"
+      }
+    },
+    "M02_10": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 2,
+        "E": 2,
+        "F": 0,
+        "G": null,
+        "H": null
+      },
+      "labels": {
+        "lv": "Nomāktības simptomu ietekme uz darbu, mājas pienākumiem vai attiecībām",
+        "en": "Impact of low-mood symptoms on work, home duties or relationships",
+        "ru": "Влияние симптомов подавленности на работу, домашние обязанности или отношения"
+      }
+    },
+    "M02_11": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": null,
+        "D": null,
+        "E": 0
+      },
+      "labels": {
+        "lv": "Atkārtoti nomāktības periodi dzīves laikā",
+        "en": "Repeated periods of low mood during life",
+        "ru": "Повторные периоды подавленности в течение жизни"
+      }
+    },
+    "M02_12": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 2,
+        "E": 2,
+        "F": 2,
+        "G": 2,
+        "H": 1,
+        "I": null,
+        "J": null
+      },
+      "labels": {
+        "lv": "Pēdējā nomāktības vai prieka zuduma perioda ilgums",
+        "en": "Duration of most recent low-mood/loss-of-pleasure episode",
+        "ru": "Длительность последнего периода подавленности/утраты удовольствия"
+      }
+    },
+    "M02_13": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": null,
+        "D": null,
+        "E": 0
+      },
+      "labels": {
+        "lv": "Prieka zudums arī agrāk patīkamās situācijās",
+        "en": "Loss of pleasure even in previously enjoyable situations",
+        "ru": "Утрата удовольствия даже в ранее приятных ситуациях"
+      }
+    },
+    "M02_14": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 2,
+        "E": 2,
+        "F": null,
+        "G": null
+      }
+    },
+    "M02_15": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 2,
+        "E": 2,
+        "F": null,
+        "G": null
+      }
+    },
+    "M02_16": {
+      "weights": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 0,
+        "E": null,
+        "F": null
+      }
+    },
+    "M02_17": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 2,
+        "E": 2,
+        "F": null,
+        "G": null
+      },
+      "labels": {
+        "lv": "Garastāvokļa atšķirības stiprums starp rītu un vakaru",
+        "en": "Size of morning–evening mood difference",
+        "ru": "Выраженность разницы настроения утром и вечером"
+      }
+    },
+    "M02_18": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": 1,
+        "D": 2,
+        "E": 2,
+        "F": null,
+        "G": null
+      },
+      "labels": {
+        "lv": "Dienas ar garastāvokļa izmaiņām dienas gaitā",
+        "en": "Days with mood changes during the day",
+        "ru": "Дни с изменениями настроения в течение дня"
+      }
+    },
+    "M02_19": {
+      "weights": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1,
+        "E": 1,
+        "F": 1,
+        "G": 1,
+        "H": 1,
+        "I": 0,
+        "J": null,
+        "K": null
+      },
+      "labels": {
+        "lv": "Paša saskatītie diennakts garastāvokļa izmaiņu iemesli",
+        "en": "Perceived reasons for mood changes during the day",
+        "ru": "Предполагаемые самим человеком причины изменений настроения в течение дня"
+      }
+    },
+    "M02_20": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": null,
+        "D": null
+      }
+    },
+    "M02_21": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": null,
+        "D": null
+      }
+    },
+    "M21_01": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": null,
+        "D": null,
+        "E": 0
+      }
+    },
+    "M21_02": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": null,
+        "D": null,
+        "E": 0
+      }
+    },
+    "M21_03": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": null,
+        "D": null,
+        "E": 0
+      }
+    },
+    "M21_04": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": null,
+        "D": null,
+        "E": 0
+      }
+    },
+    "M21_05": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": null,
+        "D": null,
+        "E": 0
+      },
+      "labels": {
+        "lv": "Vai neparastas uztveres/pārliecības pieredzes biedēja vai traucēja rīkoties",
+        "en": "Unusual perceptions/beliefs causing fear or interfering with action",
+        "ru": "Пугали ли необычные восприятия/убеждения или мешали действовать"
+      }
+    },
+    "M21_06": {
+      "weights": {
+        "A": 1,
+        "B": 1,
+        "C": 2,
+        "E": 2,
+        "F": 0,
+        "G": null,
+        "H": null
+      },
+      "labels": {
+        "lv": "Neparastas uztveres vai pārliecības pieredžu apstākļi",
+        "en": "Circumstances of unusual perceptions or beliefs",
+        "ru": "Обстоятельства необычных восприятий или убеждений"
+      }
+    },
+    "M21_07": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": null,
+        "D": null,
+        "E": 0
+      }
+    },
+    "M21_08": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": null,
+        "D": null,
+        "E": 0
+      }
+    },
+    "M21_09": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": null,
+        "D": null,
+        "E": 0
+      }
+    },
+    "M21_10": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": null,
+        "D": null,
+        "E": 0
+      }
+    },
+    "M21_11": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": null,
+        "D": null,
+        "E": 0
+      },
+      "labels": {
+        "lv": "Neatliekamas palīdzības meklēšana neparastu uztveres/pārliecības pieredžu dēļ",
+        "en": "Emergency help previously sought for unusual perceptions/beliefs",
+        "ru": "Обращение за экстренной помощью из-за необычных восприятий/убеждений"
+      }
+    },
+    "M21_12": {
+      "weights": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 2,
+        "E": 2,
+        "F": 0,
+        "G": null,
+        "H": null
+      }
+    },
+    "M21_13": {
+      "weights": {
+        "A": 2,
+        "B": 2,
+        "C": 1,
+        "D": 1,
+        "E": 1,
+        "F": 0,
+        "G": null,
+        "H": null
+      }
+    },
+    "M21_14": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": 2,
+        "D": 2,
+        "E": 2,
+        "F": null,
+        "G": null
+      },
+      "labels": {
+        "lv": "Neparastas uztveres vai pārliecības pieredzes",
+        "en": "Unusual perceptions or beliefs experienced",
+        "ru": "Пережитые необычные восприятия или убеждения"
+      }
+    },
+    "M21_15": {
+      "weights": {
+        "A": 0,
+        "B": 3,
+        "C": null,
+        "D": null
+      },
+      "labels": {
+        "lv": "Pašlaik vajadzīga palīdzība pretoties balsīm/pieredzēm, kas mudina apdraudēt sevi vai citus",
+        "en": "Currently needs help resisting voices/experiences urging dangerous actions toward self or others",
+        "ru": "Сейчас нужна помощь, чтобы противостоять голосам/переживаниям, побуждающим к опасным действиям против себя или других"
+      },
+      "support": {
+        "B": "emergency"
+      }
+    },
+    "M21_16": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": null,
+        "D": null
+      }
+    },
+    "M21_17": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": null,
+        "D": null
+      }
+    },
+    "M21_18": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": null,
+        "D": null
+      }
+    },
+    "M21_19": {
+      "weights": {
+        "A": 2,
+        "B": 2,
+        "C": 2,
+        "D": 0,
+        "E": null,
+        "F": null
+      },
+      "labels": {
+        "lv": "Neparastas uztveres/pārliecības pieredžu saistība ar garastāvokli",
+        "en": "Timing of unusual perceptions/beliefs relative to mood",
+        "ru": "Связь необычных восприятий/убеждений с настроением"
+      }
+    },
+    "M33_01": {
+      "weights": {
+        "A": 0,
+        "B": 0,
+        "C": null,
+        "D": null
+      },
+      "textWeight": 0
+    },
+    "M33_02": {
+      "weights": {
+        "A": 0,
+        "B": 0,
+        "C": null,
+        "D": null
+      },
+      "textWeight": 0
+    },
+    "M32_02": {
+      "weights": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": null
+      }
+    },
+    "M33_04": {
+      "weights": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": null,
+        "F": null
+      }
+    },
+    "M33_09": {
+      "weights": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": null
+      }
+    },
+    "M06_01": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": null,
+        "D": null
+      },
+      "support": {
+        "B": "support",
+        "C": "support"
+      }
+    },
+    "M06_02": {
+      "weights": {
+        "A": 0,
+        "B": 3,
+        "C": null,
+        "D": null
+      },
+      "support": {
+        "B": "emergency",
+        "C": "support"
+      }
+    },
+    "M06_02P": {
+      "weights": {
+        "A": 0,
+        "B": 3,
+        "C": null,
+        "D": null
+      },
+      "support": {
+        "B": "emergency",
+        "C": "support"
+      }
+    },
+    "M06_23": {
+      "weights": {
+        "A": 0,
+        "B": 2,
+        "C": null,
+        "D": null
+      },
+      "labels": {
+        "lv": "Pašreizēja vēlme sev kaitēt neatkarīgi no vēlmes nomirt",
+        "en": "Current urge to self-harm, with or without wanting to die",
+        "ru": "Нынешний позыв навредить себе независимо от желания умереть"
+      },
+      "support": {
+        "B": "support",
+        "C": "support"
+      }
+    },
+    "M06_03": {
+      "weights": {
+        "A": 3,
+        "B": 0,
+        "C": null,
+        "D": null
+      },
+      "support": {
+        "A": "emergency",
+        "C": "support"
+      }
+    },
+    "M06_10": {
+      "weights": {
+        "A": 0,
+        "B": 3,
+        "C": null,
+        "D": null
+      },
+      "support": {
+        "B": "emergency",
+        "C": "support"
+      }
+    },
+    "M18_20": {
+      "weights": {
+        "A": 0,
+        "B": 3,
+        "C": null,
+        "D": null
+      },
+      "labels": {
+        "lv": "Pašreizēja gatavošanās fiziski kaitēt citam",
+        "en": "Currently preparing to physically harm another person",
+        "ru": "Подготовка сейчас к физическому причинению вреда другому человеку"
+      },
+      "support": {
+        "B": "emergency",
+        "C": "support"
+      }
+    },
+    "M06_11": {
+      "weights": {
+        "A": 3,
+        "B": 0,
+        "C": null,
+        "D": null
+      },
+      "support": {
+        "A": "emergency",
+        "C": "support"
+      }
+    },
+    "M31_09": {
+      "weights": {
+        "A": 0,
+        "B": 3,
+        "C": null,
+        "D": null
+      },
+      "support": {
+        "B": "emergency",
+        "C": "support"
+      }
+    },
+    "M31_10": {
+      "weights": {
+        "A": 0,
+        "B": 3,
+        "C": null,
+        "D": null
+      },
+      "support": {
+        "B": "emergency",
+        "C": "support"
+      }
+    },
+    "M06_13": {
+      "weights": {
+        "A": 0,
+        "B": 3,
+        "C": null,
+        "D": null
+      },
+      "support": {
+        "B": "emergency",
+        "C": "support"
+      }
+    },
+    "M33_06": {
+      "weights": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "F": null,
+        "G": null
+      }
+    },
+    "M33_07": {
+      "weights": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0,
+        "I": 0,
+        "J": null,
+        "K": null
+      }
+    },
+    "M33_08": {
+      "weights": {
+        "A": 0,
+        "B": null,
+        "C": 0,
+        "D": 0,
+        "E": null,
+        "F": null
+      }
+    },
+    "M23_11": {
+      "weights": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0,
+        "F": 0,
+        "G": 0,
+        "H": 0,
+        "I": 0,
+        "J": 0,
+        "K": 0,
+        "L": 0,
+        "M": 0,
+        "N": null,
+        "O": null
+      }
+    }
+  }
+}
