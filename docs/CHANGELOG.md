@@ -306,11 +306,22 @@ At checkpoint 1, checklist item 2 became [IN_PROGRESS]. See the following checkp
 - **Checks:** `python3 tests/pilot/test_source_adapter.py` PASS for all 712; `python3 tests/pilot/test_full_bank_audit.py` PASS; `python3 tools/verify_project_index.py` PASS for all 79 original hashes. This is source mapping verification, not application integration or translation/clinical review.
 - **Next action:** resolve source section labels from the frozen references, then build full groups directly from the source without maintaining duplicate question copies.
 
-### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 15 (IN_PROGRESS)
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 15
 
 **Task 5j — source-grounded full-module labels.**
 - **Starting commit:** `a80595f419d535eb96af92ccdf67cc203c5bcae5` on `develop`.
 - **Finding:** module JSON contains question text but no section title. The frozen LV/EN/RU references each have 48 exact title strings; avoid inventing or translating the headings.
-- **Scope:** extract those 48 titles into small locale resources; add a test that compares each resource with its frozen reference array. Do not change question data, active registry or frozen files.
-- **Files expected:** `src/pilot/i18n/module-titles.{lv,en,ru}.json`, `tools/build_pilot.py`, a focused test, workflow and changelog.
-- **Next action:** inspect the exact `TITLES` arrays in all three baselines, extract them without modification, add completeness/equality checks, then checkpoint before full-bank assembly.
+- **Implementation commit:** `a958ee76a3203196047c2b9255d77407d3e92212` on `develop` (remote readback confirmed).
+- **Files:** `src/pilot/i18n/module-titles.{lv,en,ru}.json`, `tools/build_pilot.py`, `tests/pilot/test_module_titles.py`, `.github/workflows/pilot-checks.yml`, this changelog.
+- **Completed:** stored the 48 original section titles for LV/EN/RU without editing the references. The builder validates complete ordered title maps for future full-bank groups.
+- **Checks:** the new test failed before the loader existed, then passed exact string/order comparisons against all three frozen HTML baselines (144 titles total). Full source adapter and hash verifier also passed. No runtime questions or pilot UI changed.
+- **Next action:** build source-backed groups for all modules as a separate bundle function and verify question count, group coverage, conditions, and no duplicate or omitted IDs before activation.
+
+### 2026-11-06 · COMPLETE-QUESTIONNAIRE-REVIEW-FEEDBACK · checkpoint 16 (IN_PROGRESS)
+
+**Task 5k — assemble full source groups without activation.**
+- **Starting commit:** `a958ee76a3203196047c2b9255d77407d3e92212` on `develop`.
+- **Scope:** use the source adapter and title catalogs to construct 48 optional engine groups directly from all 48 immutable module files. Keep the existing 60-question pilot bundle and UI unchanged in this step.
+- **Checks planned:** 48 groups, 712 IDs and orders exactly once, all source conditions preserve parent order, all locale titles, correct module 33/source-section oddity, and unchanged 60-question pilot output.
+- **Files expected:** `tools/build_pilot.py`, a focused full-group test, CI workflow and changelog.
+- **Next action:** implement group assembly and run structural/source-integrity tests; then checkpoint before swapping any build to the full bank.
