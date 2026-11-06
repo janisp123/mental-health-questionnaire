@@ -10,6 +10,8 @@
     "screens/question.js",
     "screens/medicine.js",
     "screens/feedback.js",
+    "screens/results.js",
+    "screens/report-page.js",
     "core/app.js"
   ]
 }

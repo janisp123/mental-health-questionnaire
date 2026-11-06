@@ -137,23 +137,18 @@ function renderQuestion(){
  });
 }
 function renderResults(){
- const qs=reportQuestions(),u=ui(),v=report.counters(qs,state.answers);
- const stats='<div class="stats"><span>'+label("countDone")+' <b>'+v.answered+'</b></span><span>'+label("countSkip")+' <b>'+v.skipped+'</b></span><span>'+label("countOpen")+' <b>'+v.unanswered+'</b></span></div>';
+ const qs=reportQuestions(),v=report.counters(qs,state.answers);
  const selected=data.groups.map(g=>'<p>'+esc(g.titles[state.lang])+' · '+(g.required||state.selected.includes(g.id)?label("selected"):label("notSelected"))+'</p>').join("");
  const feedbackText=report.projectFeedbackText(all,state.feedback,state.lang,data.ui,data.presentation.feedbackContactEmail,data.version);
- return '<section class="card"><h2>'+label("results")+'</h2>'+stats+selected+'<p>'+label("doctorDisclaimer")+'</p><p>'+label("noneFlagged")+'</p>'+
- '<p>'+label("feedbackContactLabel")+': <span>'+esc(data.presentation.feedbackContactEmail)+'</span></p><textarea id="projectFeedbackSource" class="copy-source" readonly aria-hidden="true" tabindex="-1">'+esc(feedbackText)+'</textarea>'+
- '<div class="actions">'+btn("doctor","specialist","primary-inline")+btn("copyFeedback","feedbackProjectCopy")+'</div>'+
- '<div class="actions">'+btn("back","back")+btn("sections","editSections")+btn("new","new")+'</div></section>';
-
+ return window.QuestionnaireScreens.results({
+  label,escape:esc,btn,counts:v,selected,feedbackText,feedbackEmail:data.presentation.feedbackContactEmail,
+ });
 }
 function renderReport(){
  const q=reportQuestions(),u=ui();
  const plain=report.doctorText(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation,state.feedback,all,data.ui);
  const markup=report.doctorMarkup(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation,state.feedback,all,data.ui);
- return '<section class="card report"><h2>'+esc(u.doctorHeading)+'</h2><div class="report-preview">'+markup+'</div><textarea id="reportText" class="copy-source" readonly aria-hidden="true" tabindex="-1">'+esc(plain)+'</textarea>'+
- '<div class="actions">'+btn("copyDoctor","copyDoctor","primary-inline")+btn("print","print")+btn("downloadReport","downloadReport")+'</div>'+
- '<div class="actions">'+btn("resultScreen","backToAnswers")+btn("sections","editSections")+'</div></section>';
+ return window.QuestionnaireScreens.reportPage({heading:u.doctorHeading,markup,plain,escape:esc,label,btn});
 }
 function render(){
  const keepSupportFocus=document.activeElement?.id==="support-message";
