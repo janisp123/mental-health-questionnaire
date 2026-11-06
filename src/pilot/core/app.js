@@ -14,7 +14,7 @@ for(const group of data.groups){
 let answerLockUntil=0;
 const app=document.getElementById("app");
 const report=window.PilotReports;
-let state={lang:"lv",screen:"start",currentId:null,answers:{},selected:[],sectionDraft:[],sectionConfirmed:false,savedCount:0,notice:"",reportView:"doctor",draft:null};
+let state={lang:"lv",screen:"start",currentId:null,answers:{},selected:[],sectionDraft:[],sectionConfirmed:false,savedCount:0,notice:"",draft:null};
 function ui(){return data.ui[state.lang];}
 function esc(s){return report.esc(s);}
 function label(key){return esc(ui()[key]||key);}
@@ -128,20 +128,16 @@ function renderResults(){
  const stats='<div class="stats"><span>'+label("countDone")+' <b>'+v.answered+'</b></span><span>'+label("countSkip")+' <b>'+v.skipped+'</b></span><span>'+label("countOpen")+' <b>'+v.unanswered+'</b></span></div>';
  const selected=data.groups.map(g=>'<p>'+esc(g.titles[state.lang])+' · '+(g.required||state.selected.includes(g.id)?label("selected"):label("notSelected"))+'</p>').join("");
  return '<section class="card"><h2>'+label("results")+'</h2>'+stats+selected+'<p>'+label("doctorDisclaimer")+'</p><p>'+label("noneFlagged")+'</p>'+
- '<div class="actions">'+btn("doctor","specialist","primary-inline")+btn("ai","ai")+btn("downloadTxt","txt")+btn("reference","reference")+'</div>'+
+ '<div class="actions">'+btn("doctor","specialist","primary-inline")+'</div>'+
  '<div class="actions">'+btn("back","back")+btn("sections","editSections")+btn("new","new")+'</div></section>';
 
 }
-function codedReport(){
- return report.aiText(reportQuestions(),state.answers,state.selected,state.lang,ui(),data.groups,data.presentation);
-}
 function renderReport(){
- const q=reportQuestions(),u=ui(),doctor=state.reportView!=="ai";
- const heading=doctor?u.doctorHeading:u.coded;
- const result=doctor?report.doctorText(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation):codedReport();
- return '<section class="card report"><h2>'+esc(heading)+'</h2><p>'+label("doctorDisclaimer")+'</p><textarea id="reportText" readonly rows="17">'+esc(result)+'</textarea><pre class="print-report">'+esc(result)+'</pre>'+
- '<div class="actions">'+btn(doctor?"copyDoctor":"copyAI",doctor?"copyDoctor":"copyAI","primary-inline")+
- btn("doctor","specialist")+btn("ai","ai")+btn("print","print")+btn("downloadReport","downloadReport")+btn("downloadTxt","txt")+btn("reference","reference")+'</div>'+
+ const q=reportQuestions(),u=ui();
+ const plain=report.doctorText(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation);
+ const markup=report.doctorMarkup(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation);
+ return '<section class="card report"><h2>'+esc(u.doctorHeading)+'</h2><div class="report-preview">'+markup+'</div><textarea id="reportText" class="copy-source" readonly aria-hidden="true" tabindex="-1">'+esc(plain)+'</textarea>'+
+ '<div class="actions">'+btn("copyDoctor","copyDoctor","primary-inline")+btn("print","print")+btn("downloadReport","downloadReport")+'</div>'+
  '<div class="actions">'+btn("resultScreen","backToAnswers")+btn("sections","editSections")+'</div></section>';
 }
 function render(){
@@ -335,7 +331,7 @@ function action(key){
  if(key==="end"){skipRest();return;}
  if(key==="sections"){showSections();return;}
  if(key==="results"){state.screen="results";render();return;}
- if(key==="doctor"||key==="ai"){state.reportView=key==="doctor"?"doctor":"ai";state.screen="report";render();return;}
+ if(key==="doctor"){state.screen="report";render();return;}
  if(key==="resultScreen"){state.screen="results";render();return;}
  if(key==="back"){state.screen=state.currentId?"question":"start";render();return;}
  if(key==="reviewSafety"){const safety=active().filter(isSafety);if(safety.length){
@@ -345,20 +341,17 @@ function action(key){
   }return;}
  if(key==="new"){
    if(window.confirm(u.newConfirm)){
-     const lang=state.lang;state={lang,screen:"start",currentId:null,answers:{},selected:[],sectionDraft:[],sectionConfirmed:false,savedCount:0,notice:"",reportView:"doctor",draft:null};render();
+     const lang=state.lang;state={lang,screen:"start",currentId:null,answers:{},selected:[],sectionDraft:[],sectionConfirmed:false,savedCount:0,notice:"",draft:null};render();
    }return;
  }
  if(key==="backup"){downloadBackup();state.notice=u.backupSaved;render();return;}
- if(key==="downloadTxt"){downloadFile("anketa-pilot-"+state.lang+".txt",report.allTxt(q,state.answers,state.selected,state.lang,u));return;}
- if(key==="reference"){downloadFile("anketa-pilot-reference-"+state.lang+".md",report.decodingKey(q,state.lang),"text/markdown;charset=utf-8");return;}
  if(key==="downloadReport"){downloadFile("anketa-pilot-report-"+state.lang+".html",report.doctorHtml(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation),"text/html;charset=utf-8");return;}
  if(key==="print"){
    if(state.screen!=="report"){state.reportView="doctor";state.screen="report";render();}
    window.print();return;
  }
- if(key==="copyDoctor"||key==="copyAI"){
-   const text=key==="copyDoctor"?report.doctorText(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation):codedReport();
-   copyText(text);return;
+ if(key==="copyDoctor"){
+   copyText(report.doctorText(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation));return;
  }
 }
 function singleAnswer(code){

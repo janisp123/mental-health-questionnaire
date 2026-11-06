@@ -82,16 +82,16 @@ with tempfile.TemporaryDirectory() as tmp,sync_playwright() as pw:
     page.evaluate('window.__copied=null;Object.defineProperty(navigator,"clipboard",{value:{writeText:async t=>{window.__copied=t}},configurable:true})')
     act(page,'copyDoctor');assert page.evaluate('window.__copied')==doc
     with page.expect_download() as event:act(page,'downloadReport')
-    report_html=event.value.path().read_text();assert '<pre>' in report_html and 'SYNTHETIC EXAMPLE' in report_html
-    page.emulate_media(media='print');assert page.locator('.print-report').is_visible()
+    report_html=event.value.path().read_text();assert '<strong>' in report_html and 'SYNTHETIC EXAMPLE' in report_html
+    page.emulate_media(media='print');assert page.locator('.report-preview').is_visible()
     assert not page.locator('footer').is_visible();page.pdf(path='/tmp/pilot-report.pdf',format='A4');page.emulate_media(media='screen')
-    act(page,'ai');text=page.locator('#reportText').input_value()
-    assert 'M02_' not in text and 'DECODING KEY' not in text and '"codes"' not in text
-    assert 'Little interest or pleasure' not in text and "I don't know / I'm not sure" in text and 'Prefer not to answer.' in text
-    act(page,'copyAI');assert page.evaluate('window.__copied')==text
+    assert not page.locator('[data-act="ai"]').count()
+    assert not page.locator('[data-act="downloadTxt"]').count()
+    assert not page.locator('[data-act="reference"]').count()
+    assert page.locator('.report-preview strong').inner_text() == 'Yes'
     for lang in ['lv','ru','en']:
         page.select_option('#language',lang)
-        assert page.locator('#reportText').input_value().endswith(build.build_bundle()['ui'][lang]['aiInstruction'])
+        assert page.locator('.report-preview h1').inner_text() == build.build_bundle()['ui'][lang]['doctorHeading']
     # Tools and docs are after main content, collapsed by default.
     assert not page.locator('footer details[open]').count()
     assert page.locator('footer details').count()==6

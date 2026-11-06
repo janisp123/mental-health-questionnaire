@@ -81,24 +81,26 @@ def build_bundle(apply_layout=True):
                 raise ValueError("Unresolved condition " + q["id"])
             if context and by_id[context["id"]]["order"] >= q["order"]:
                 raise ValueError("Condition must reference an earlier question: " + q["id"])
+    layout = read_json(SOURCE / "modules" / "layout.json")
     presentation = read_json(SOURCE / "reports" / "presentation.json")
     for qid, rule in presentation["questions"].items():
         if qid not in by_id:
             raise ValueError("Presentation references an unknown question: " + qid)
         q = by_id[qid]
-        if set(rule["weights"]) != set(q["choiceCodes"]):
-            raise ValueError("Presentation answer codes differ: " + qid)
-        for code, weight in rule["weights"].items():
-            if weight is not None and (type(weight) is not int or weight not in range(4)):
-                raise ValueError("Invalid editorial priority: " + qid)
-            if q.get("answerStatus", {}).get(code) in ("uncertain", "refused") and weight is not None:
-                raise ValueError("Uncertain/refused response must be unrated: " + qid)
+        if "weights" in rule:
+            raise ValueError("Weight metadata is no longer supported: " + qid)
         if "labels" in rule and set(rule["labels"]) != set(LANGS):
             raise ValueError("Missing report label language: " + qid)
         if any(code not in q["choiceCodes"] or level not in ("support", "emergency")
                for code, level in rule.get("support", {}).items()):
             raise ValueError("Invalid support trigger: " + qid)
-    layout = read_json(SOURCE / "modules" / "layout.json")
+    for qid, codes in presentation.get("boldAnswers", {}).items():
+        if qid not in by_id or not isinstance(codes, list) or not codes:
+            raise ValueError("Invalid bold-answer question: " + qid)
+        if len(set(codes)) != len(codes) or any(code not in by_id[qid]["choiceCodes"] for code in codes):
+            raise ValueError("Invalid bold-answer code: " + qid)
+    if set(presentation.get("topicOrder", [])) != set(layout["order"]):
+        raise ValueError("Report topic order must list each display topic exactly once")
     if apply_layout:
         # Original files remain storage/source-fidelity units. Presentation topics are separate.
         topics = {}

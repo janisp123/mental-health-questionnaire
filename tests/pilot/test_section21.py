@@ -31,13 +31,10 @@ with tempfile.TemporaryDirectory() as tmp,sync_playwright() as pw:
     assert backup(page)['answers']==saved['answers']
     act(page,'results');act(page,'doctor');doctor=page.locator('#reportText').input_value()
     assert 'Saved answers: 19' in doctor
-    assert doctor.rstrip().endswith('Currently.): Yes') # current dangerous urging is last
-    act(page,'ai');report=page.locator('#reportText').input_value()
-    assert 'M21_' not in report and 'DECODING KEY' not in report
-    # Each output line uses the independent source's exact selected response(s) and time.
-    lines=report.splitlines()[1:-2];assert len(lines)==19
-    for entry,line in zip(bank['entries'],lines):
-        id=entry['lv']['id'];t=entry['en'];assert t['time'] in line
-        assert line.endswith(': '+'; '.join(t['choices'][c] for c in expected[id]))
+    assert 'Currently.): Yes' in doctor
+    assert page.locator('.report-preview strong').inner_text() == 'Yes'
+    assert not page.locator('[data-act="ai"]').count()
+    assert not page.locator('[data-act="reference"]').count()
+    assert not page.locator('[data-act="downloadTxt"]').count()
     assert not errors,errors;assert not network,network;browser.close()
-print('PASS: 19 frozen-source questions/choices, incompatibility handling, support, restoration, compact doctor and AI response fidelity.')
+print('PASS: 19 frozen-source questions/choices, incompatibility handling, support, restoration, compact doctor report and bold-answer mapping.')
