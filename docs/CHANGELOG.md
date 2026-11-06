@@ -27,6 +27,7 @@
 8. [BLOCKED] Physical Android testing and human language/clinical review require a device or reviewers.
 9. [DONE] Isolate delegated DOM event wiring behind tested callbacks; focused and full CI passed.
 10. [DONE] Reuse runner-provided Chrome in focused CI; install bundled Chromium only when unavailable.
+11. [DONE] Use plain-language file save/resume labels and explicitly warn that session progress is lost when the browser closes unless saved to a file.
 
 **Guardrails:** keep source questions, IDs, codes, conditions, and frozen references unchanged; preserve recovery compatibility; keep script and style order explicit in `src/app/build.json`; add no runtime dependencies. Work in small verified commits.
 
@@ -65,6 +66,7 @@
 **Commit:** 873438f locally; GitHub `develop` 42f658c.
 **Next action:** hands-on Android Chrome check and human review of LV interface wording, EN/RU drafts, and clinical content; those need a device and human reviewers.
 
+
 **Checkpoint 6 — final coordinator boundary:** user-facing screens, question model, answer transitions, recovery validation, reports, and styles are separate. One clean boundary remains: move delegated click/change/input routing to `core/events.js` and test its callback dispatch with synthetic events. Keep UI and answer state in the coordinator.
 
 **Files:** docs/CHANGELOG.md.
@@ -85,3 +87,10 @@
 **Checks:** focused workflow 42255642293 PASS; its logs show `/usr/bin/google-chrome`, with no Playwright browser download step. Full integration remains covered by 42254680875.
 **Commit:** 863ae0d; GitHub `develop` 71c8107.
 **Next action:** hands-on Android Chrome check and human review of LV interface wording, EN/RU drafts, and clinical content; those need a device and human reviewers.
+
+**Checkpoint 9 — plain-language progress controls:** starting implementation commit `e70d0f427c159a01d40ede1f35b778ca1a780cd0` on `develop`. Changed save/resume labels to plain language, removed `.json` from visible labels, and explained that closing the browser loses session answers unless a progress file is saved. Updated guide, privacy, backup, restore, and related prompts in LV/EN/RU. The recovery file schema and behavior are unchanged.
+
+**Files:** src/app/i18n/ui.lv.json, src/app/i18n/ui.en.json, src/app/i18n/ui.ru.json, docs/CHANGELOG.md.
+**Checks:** UI catalog consistency, offline app assembly, start/section screen rendering, question/medicine/feedback screen rendering, and `git diff --check` PASS. Focused GitHub app workflow pending.
+**Commit:** pending.
+**Next action:** run the focused app workflow and record its result.
