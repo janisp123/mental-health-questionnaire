@@ -69,3 +69,10 @@
 **Checks:** prior code verification remains at implementation commit 873438f; no application code changed in this checkpoint.
 **Commit:** pending.
 **Next action:** extract and test event delegation, then rerun both CI workflows.
+
+**Checkpoint 7 — event routing extracted:** moved delegated click/change/input listeners into `src/app/core/events.js`; the coordinator supplies the existing behavior as callbacks. Added a synthetic dispatch test for radio taps, actions, section jumps, medicine controls, restore, locale, modules, answers, and text inputs. The module is in the explicit script order.
+
+**Files:** src/app/core/events.js, src/app/core/app.js, src/app/build.json, tests/app/test_events.js, .github/workflows/app-component-checks.yml, docs/FILE_INDEX.md, docs/QUESTIONNAIRE_ARCHITECTURE.md, docs/CHANGELOG.md.
+**Checks:** event-routing test, model/flow/recovery tests, screen renderers, manifest, catalogs, JS syntax, and `git diff --check` PASS locally. Focused and full GitHub checks are pending.
+**Commit:** pending.
+**Next action:** run focused synthetic browser and full 48-module integration CI after event extraction.

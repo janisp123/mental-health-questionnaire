@@ -39,6 +39,7 @@ jobs:
           node tests/app/test_model.js
           node tests/app/test_answer_flow.js
           node tests/app/test_recovery.js
+          node tests/app/test_events.js
       - name: Check app JavaScript syntax
         run: |
           for file in src/app/core/*.js src/app/screens/*.js src/app/reports/*.js; do

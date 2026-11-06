@@ -348,34 +348,20 @@ function singleAnswer(code){
  answerLockUntil=performance.now()+500;
  state.draft={forId:q.id,codes:[code]};save();
 }
-app.addEventListener("click",e=>{
- const choice=e.target.closest(".choice");
- const radio=choice?.querySelector('input[name="answer"][type="radio"]');
- if(radio){e.preventDefault();if(e.detail<=1)singleAnswer(radio.value);return;}
- const el=e.target.closest("[data-act]");if(el){e.preventDefault();
- if(el.dataset.act==="addMedicine"||el.dataset.act==="removeMedicine"){
-  changeMedicineList(el.dataset.act,Number(el.dataset.medRemove));return;
- }
- if(el.dataset.jump){
-  const choices=active().filter(q=>q.module===el.dataset.jump);
-  const next=choices.find(q=>!state.answers[q.id])||choices[0];
+window.QuestionnaireEvents.bind(app,{
+ singleAnswer,action,
+ medicineAction:changeMedicineList,
+ jump:moduleId=>{
+  const choices=active().filter(q=>q.module===moduleId),next=choices.find(q=>!state.answers[q.id])||choices[0];
   if(next)setQuestion(next.id);
- }else action(el.getAttribute("data-act"));
-}});
-app.addEventListener("change",e=>{
- if(e.target.id==="language"){state.lang=e.target.value;state.notice="";render();return;}
- if(e.target.hasAttribute("data-med-field")){readMedicineControls();return;}
- if(e.target.hasAttribute("data-module")){
-  state.sectionDraft=Array.from(app.querySelectorAll("[data-module]:checked"),el=>el.dataset.module);
-  render();return;
- }
- if(e.target.id==="restore"){restore(e.target.files[0]);return;}
- if(e.target.name==="answer"){if(current()?.multi)setDraft(e);else singleAnswer(e.target.value);}
-});
-app.addEventListener("input",e=>{
- if(e.target.id==="shortText"&&current()){state.draft={forId:current().id,value:e.target.value};}
- if(e.target.hasAttribute("data-med-field")){readMedicineControls();}
- if(e.target.id==="medicineDiscussion"&&state.draft){state.draft.discussion=e.target.value;}
+ },
+ language:value=>{state.lang=value;state.notice="";render();},
+ medicineChange:readMedicineControls,
+ moduleChange:()=>{state.sectionDraft=Array.from(app.querySelectorAll("[data-module]:checked"),el=>el.dataset.module);render();},
+ restore,
+ answerChange:event=>{if(current()?.multi)setDraft(event);else singleAnswer(event.target.value);},
+ shortTextInput:value=>{if(current())state.draft={forId:current().id,value};},
+ medicineDiscussionInput:value=>{if(state.draft)state.draft.discussion=value;}
 });
 render();
 })();
