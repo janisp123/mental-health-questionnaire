@@ -1,7 +1,7 @@
 # Sagatavošanās vizītei pie psihiskās veselības speciālista
 
 **Tehniskās pārbaudes versija · 0.2.0 · 07.11.2026**
-**GitHub develop · avota commit cfb8f68**
+**GitHub develop · avota commit 3e7e1f4**
 
 Šī bezmaksas anketa pieaugušajiem palīdz sagatavot informāciju sarunai ar psihiskās veselības speciālistu. Saudzīgāks formulējums palīdz jautājumus uztvert mierīgāk un atvieglo pirmo soli ceļā pie speciālista. Anketa nenosaka diagnozi.
 
