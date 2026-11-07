@@ -1,13 +1,13 @@
 # Sagatavošanās vizītei pie psihiskās veselības speciālista
 
-**Tehniskās pārbaudes versija · 0.2.0 · 07.11.2026**  
-**Veidota no GitHub `develop` · avota commit `1f87aba`**
+**Tehniskās pārbaudes versija · 0.2.0 · 07.11.2026**
+**GitHub develop · avota commit 1f87aba**
 
 Šī bezmaksas anketa pieaugušajiem palīdz sagatavot informāciju sarunai ar psihiskās veselības speciālistu. Saudzīgāks formulējums palīdz jautājumus uztvert mierīgāk un atvieglo pirmo soli ceļā pie speciālista. Anketa nenosaka diagnozi.
 
 ## Kas iekļauts
 
-48 avota moduļi un 712 jautājumi ir apvienoti 15 sadaļās. Papildu jautājumi var parādīties atkarībā no iepriekšējām atbildēm. Tu vari izlaist jebkuru jautājumu vai sadaļu un atbildēt tikai uz to, ar ko esi gatavs dalīties.
+48 avota moduļi un 712 jautājumi ir apvienoti 15 sadaļās, katrā ir 36–70 jautājumu. Papildu jautājumi var parādīties atkarībā no iepriekšējām atbildēm. Tu vari izlaist jebkuru jautājumu vai sadaļu un atbildēt tikai uz to, ar ko esi gatavs dalīties.
 
 ## Kā sākt
 
@@ -26,3 +26,4 @@ Anketa darbojas bez interneta, neveic analītiku un automātiski nenosūta atbil
 Latviešu valoda ir atsauces valoda; angļu un krievu teksti ir melnraksti, kuriem vajadzīga cilvēka pārbaude. Šī versija paredzēta profesionālai tehniskai pārskatīšanai. Tā nav klīniski validēta un neaizstāj speciālista izvērtējumu.
 
 Jautājumu atsauksmēm: **janis.paegle.email@gmail.com**
+
