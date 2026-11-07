@@ -1,7 +1,7 @@
 # Sagatavošanās vizītei pie psihiskās veselības speciālista
 
 **Tehniskās pārbaudes versija · 0.2.0 · 07.11.2026**  
-**GitHub develop · anketas avota commit 3e7e1f4**
+**GitHub develop · anketas avota commit d6c6052**
 
 [Latviešu](#latviešu) · [English](#english) · [Русский](#русский)
 
@@ -36,7 +36,7 @@ Latviešu valoda ir atsauces valoda. Angļu un krievu anketas teksti ir melnraks
 # Preparing for an appointment with a mental health professional
 
 **Technical review version · 0.2.0 · 7 November 2026**  
-**GitHub develop · questionnaire source commit 3e7e1f4**
+**GitHub develop · questionnaire source commit d6c6052**
 
 ## English
 
@@ -69,7 +69,7 @@ Latvian is the reference language. The English and Russian questionnaire text ar
 # Подготовка к приёму специалиста по психическому здоровью
 
 **Версия для технической проверки · 0.2.0 · 7 ноября 2026 года**  
-**GitHub develop · исходный код анкеты, commit 3e7e1f4**
+**GitHub develop · исходный код анкеты, commit d6c6052**
 
 ## Русский
 
