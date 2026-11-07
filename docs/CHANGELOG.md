@@ -10,7 +10,7 @@
 **Starting commit:** `50b3f7ca6162c65b870a26702c638a1f31fd7dd0` on `develop`.
 
 1. [DONE] Add localized per-question instructions for multiple-choice questions, using the original `maxChoices` value where defined and otherwise saying multiple answers are allowed.
-2. [IN_PROGRESS] Keep a single-choice answer visibly selected for one second before saving and advancing. Preserve Skip and ensure a pending timer cannot overwrite a later action. Verify with focused and full-bank browser checks.
+2. [DONE] Keep a single-choice answer visibly selected for one second before saving and advancing. Preserve Skip and ensure a pending timer cannot overwrite a later action.
 
 **Workflow:** verify and record each task separately, then rebuild and refresh the Drive HTML/PDF after each completed task so the user can test that checkpoint.
 
@@ -27,7 +27,11 @@
 **Tests added/updated:** focused browser case checks immediate highlight, no early advance, one-second advance, and Skip winning over a pending answer; full-bank helper now waits for the delayed transition and keeps the double-tap case.
 **Local checks:** event, answer-flow, app-build-manifest, locale-catalog, screen-renderer, JavaScript/Python syntax, and `git diff --check` PASS. Local Chromium is unavailable, so browser tests remain pending in GitHub Actions.
 **CI findings:** app-component workflow `42358174072` PASS. Full-bank runs `42358094071` and `42358174069` exposed test-harness assumptions: multi-select remains on the question, and this offline app CSP blocks Playwright string-evaluation waits. The helper now uses a fixed 1.1-second wait for single-choice only; multi-select remains manual-save.
-**Exact next action:** rerun focused and full-bank Chromium workflows, fix any failures, and refresh the HTML/PDF after both pass.
+**Final CI:** focused app workflow `42358261344` PASS and full offline questionnaire workflow `42358261312` PASS on `65797713807f273ef61d31d8bb3684844248e197`. The focused browser case confirmed immediate visual selection, no early advance, one-second advance, and Skip cancelling the pending answer. Full 712-question Chromium journey passed. Earlier failures were test assumptions and were corrected before this pass.
+**Verified artifacts:** HTML SHA-256 `40f3b74ae1284388ea3f4f880f722a102005fd82c7fc326e3d3559d893def614`; Latvian PDF SHA-256 `0aed2c2006ea9e16a6d9ee34ba7cb5e38cb1c30ae934bc166bde198d81b81958`. Both files replaced in Drive in place; readback hashes match. The PDF renders as one A4 page and was visually inspected.
+**Commits:** runtime `e2e44e24fd32aa02d3893415b41cbb92053ab4e7`; browser-helper corrections `4abccbc0821fa106d3c31cc87955461ebd0e44a2`, `65797713807f273ef61d31d8bb3684844248e197`.
+**Remaining limitation:** actual Android-device testing is not done. Desktop Chromium verified the offline build; human review of language and clinical content remains separate.
+**Exact next action:** test the refreshed Drive HTML on your devices and report any issues.
 
 ## 2026-11-07 · SECTION-END-SAVE-PROMPT · DONE
 
