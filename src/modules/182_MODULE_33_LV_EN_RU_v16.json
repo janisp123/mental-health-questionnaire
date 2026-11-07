@@ -267,7 +267,7 @@
           "A": "Man",
           "B": "Woman",
           "C": "Non-binary identity",
-          "D": "Other characteristics",
+          "D": "Another description",
           "E": "I'm not sure.",
           "F": "I don't want to answer."
         }
@@ -279,8 +279,8 @@
           "A": "Мужчина",
           "B": "Женщина",
           "C": "Небинарная идентичность",
-          "D": "Другие характеристики",
-          "E": "Я не уверен.",
+          "D": "Другое описание",
+          "E": "Не уверен(а).",
           "F": "Я не хочу отвечать."
         }
       },
@@ -337,17 +337,17 @@
         "time": "Currently.",
         "choices": {
           "A": "Independently",
-          "B": "With the help of another person, I choose the answers myself/themselves",
+          "B": "With help from another person, I choose the answers myself.",
           "C": "Another person answers for me.",
           "D": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Как заполнить анкету?",
+        "title": "Как вы заполняете анкету?",
         "time": "В настоящее время.",
         "choices": {
-          "A": "Независимо",
-          "B": "С помощью другого человека я сам/сама выбираю ответы.",
+          "A": "Самостоятельно",
+          "B": "С помощью другого человека; ответы выбираю самостоятельно.",
           "C": "За меня ответит другой человек.",
           "D": "Я не хочу отвечать."
         }
@@ -419,10 +419,10 @@
         "title": "Какова ваша основная причина заполнения этой анкеты?",
         "time": "В настоящее время.",
         "choices": {
-          "A": "Я хотел бы получить помощь в связи с текущими трудностями.",
+          "A": "Хочу получить помощь в связи с текущими трудностями.",
           "B": "Подготовка к консультации у специалиста",
           "C": "Я хочу лучше понять свои чувства.",
-          "D": "Я заполняю его из любопытства.",
+          "D": "Заполняю анкету из любопытства.",
           "E": "Анкета была рекомендована специалистом или другим лицом.",
           "F": "Другая причина / сложно сказать",
           "G": "Я не хочу отвечать."
@@ -501,9 +501,9 @@
           "C": "The difficulties have been going on for a long time; I want to finally discuss them.",
           "D": "They have started to interfere more with everyday life",
           "E": "A significant life event has occurred",
-          "F": "Someone has expressed concern about my feelings or behavior.",
+          "F": "Someone has expressed concern about my well-being or behavior.",
           "G": "I would like to review my current treatment.",
-          "H": "Now is the time or willingness to seek help",
+          "H": "I now have an opportunity to seek help or feel ready to do so.",
           "I": "No particular reason; I want to check how I'm feeling.",
           "J": "Other reason / hard to say",
           "K": "I don't want to answer."
@@ -518,9 +518,9 @@
           "C": "Трудности существуют уже давно; я хочу наконец обсудить их.",
           "D": "Они стали все больше вмешиваться в повседневную жизнь.",
           "E": "Произошло важное событие в жизни.",
-          "F": "Кто-то выразил обеспокоенность по поводу моих чувств или поведения.",
+          "F": "Кто-то выразил обеспокоенность моим самочувствием или поведением.",
           "G": "Я хотел(а) бы пересмотреть свое текущее лечение.",
-          "H": "Сейчас самое время или есть желание обратиться за помощью.",
+          "H": "Сейчас есть возможность или готовность обратиться за помощью.",
           "I": "Особой причины нет; я хочу проверить, как я себя чувствую.",
           "J": "Другая причина / сложно сказать",
           "K": "Я не хочу отвечать."
@@ -594,7 +594,7 @@
         "choices": {
           "A": "Yes",
           "B": "Possibly, but I'm not sure.",
-          "C": "I don't think it would help, although the difficulties are",
+          "C": "I don't think it would help, although I am experiencing difficulties.",
           "D": "I don't feel the need for help right now.",
           "E": "Difficult to say",
           "F": "I don't want to answer."
@@ -605,7 +605,7 @@
         "time": "В настоящее время.",
         "choices": {
           "A": "Да",
-          "B": "Возможно, но я не уверен.",
+          "B": "Возможно, но пока не уверен(а).",
           "C": "Я не думаю, что это поможет, хотя трудности и существуют.",
           "D": "В данный момент я не чувствую необходимости в помощи.",
           "E": "Трудно сказать",
@@ -686,13 +686,13 @@
         "time": "В настоящее время.",
         "help": "Ответ необязателен. Сексуальная ориентация и гендерная идентичность — это разные понятия.",
         "choices": {
-          "A": "Гетеросексуальный",
-          "B": "гомосексуал",
-          "C": "Бисексуал или пансексуал",
-          "D": "Асексуал",
-          "E": "Другие характеристики",
-          "F": "Я не уверен.",
-          "G": "Я не хочу отвечать."
+          "A": "Гетеросексуальная ориентация",
+          "B": "Гомосексуальная ориентация",
+          "C": "Бисексуальная или пансексуальная ориентация",
+          "D": "Асексуальная ориентация",
+          "E": "Другой вариант",
+          "F": "Не уверен(а).",
+          "G": "Не хочу отвечать."
         }
       },
       "translation_provenance": {
@@ -766,7 +766,7 @@
           "C": "Written communication",
           "D": "Interpreter or other language of conversation",
           "E": "The presence of a supportive person",
-          "F": "Hearing, vision or other adaptation",
+          "F": "An accommodation for hearing, vision, or another need",
           "G": "Not needed",
           "H": "I don't know",
           "I": "I don't want to answer."
@@ -781,7 +781,7 @@
           "C": "Письменная коммуникация",
           "D": "Переводчик или другой язык общения",
           "E": "Присутствие человека, оказывающего поддержку.",
-          "F": "Слух, зрение или другие приспособления",
+          "F": "Приспособления с учётом особенностей слуха, зрения или других потребностей",
           "G": "Не требуется",
           "H": "Я не знаю",
           "I": "Я не хочу отвечать."
