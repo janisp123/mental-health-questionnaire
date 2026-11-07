@@ -38,8 +38,8 @@
 | Order | Section | Questions | Status |
 |---:|---|---:|---|
 | 1 | S11 — Everyday life, goals, digital habits and spending | 62 | DONE |
-| 2 | S01 — Health history, medicines and memory | 61 | IN_PROGRESS |
-| 3 | S09 — Sleep, fatigue and pain | 50 | TODO |
+| 2 | S01 — Health history, medicines and memory | 61 | DONE |
+| 3 | S09 — Sleep, fatigue and pain | 50 | IN_PROGRESS |
 | 4 | S06 — Attention, learning and development | 43 | TODO |
 | 5 | S10 — Alcohol, nicotine and other substances | 37 | TODO |
 | 6 | S13 — Family, social context and caregiving | 70 | TODO |
@@ -53,7 +53,11 @@
 | 14 | S04 — Wellbeing, safety and unusual experiences | 44 | TODO |
 | 15 | S05 — Anger and impulses | 36 | TODO |
 
-**Exact next action:** finish S01, verify the full build, and refresh the Drive HTML/PDF; then continue with S09 if checks pass. External human and clinical reviews remain outstanding.
+**Translation audit — Section S01:** reviewed all 61 questions and answer options across source modules 01, 14, and 30. Corrected identified EN/RU meaning, grammar, inclusivity, and timeframe issues, including the exact one-month boundary, diagnosis-status wording, medication-dose reasons, memory terminology, and the urgent hand-movement note. Latvian wording, question IDs, answer codes, and conditions were preserved. All EN/RU option-code sets match Latvian.
+**Checks:** full offline Chromium workflow `42369805843` PASS on source commit `421c526e0eaee40dddd2e16cee4669faeeb0ee7a`. The run rebuilt and exercised all 712 questions; S01-specific assertions cover 61 questions, corrected wording, and Russian gender-neutral uncertainty. The generated HTML was checked for the S01 corrections.
+**Distribution:** refreshed the existing Drive technical-review HTML and trilingual PDF in place. Read-back SHA-256 matched the uploaded files: HTML `8ededc611dc63fdc495d72b2a5bbf936550824b13028c8aa1dcf49e0738d26f2`; PDF `8613fd1ce73767ada568d464541862a0f5398f048840f6e6e281bda98b7851d0`. The README now makes feedback voluntary and unpaid, directs feedback to the project email, and removes the statement that Latvian is primary while EN/RU are untranslated. The answer PDF is described as material for the user’s appointment; it does not need to be sent to the project.
+**Audit build checkpoint:** `421c526e0eaee40dddd2e16cee4669faeeb0ee7a`; S11 and S01 are verified and distributed.
+**Exact next action:** begin S09 — Sleep, fatigue and pain (50 questions). Continue in section order only after the source/index checks, full CI, and built-section inspection pass. External human and clinical reviews remain outstanding.
 
 ## 2026-11-07 · QUESTION-ANSWER-CLARITY · IN_PROGRESS
 
