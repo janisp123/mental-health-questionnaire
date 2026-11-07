@@ -140,3 +140,15 @@
 **Implementation commits:** `40637a3188905c6e139c9e698d040c4e3304ff1e`, `1afb5328c3b1207c9e2065537ba92399e36b6738`, `3449505000586957ea8e7dbabc48ab7d8f9866cb`.
 **Limitations:** Android-device use and human EN/RU, interface, and clinical review remain outstanding. The wording does not promise absolute anonymity; call history or a phone bill may show the call.
 **Next action:** compile the next review build from GitHub `develop`; do not use the old Drive HTML. Human and Android checks remain separate review steps.
+
+
+## 2026-11-07 · GOOGLE-DRIVE-REVIEW-CANDIDATE-REFRESH · IN_PROGRESS
+
+**Starting GitHub commit:** `805e0873ec97881bba2cb042a9b01ff75926be8e` on `develop`.
+**Change:** rebuilt the full offline HTML from `develop` application sources at `40637a3188905c6e139c9e698d040c4e3304ff1e`, then replaced the current HTML and Latvian PDF in the existing Drive review folder in place. Their Drive IDs and existing links were preserved. The folder contains the two current review files only; no historical v16 reference was changed.
+
+**Files in Drive:** `187_Questionnaire_FULL_712Q_v0.2.0_REVIEW_BUILD.html` (SHA-256 `46417a3a2a6d4972cf30e6e26201597d1ea7ef4e14c39baeb39ba73a0b80b6e5`) and `188_README_LV_v0.2.0_REVIEW_BUILD.pdf` (SHA-256 `f4639c80d9ea36e37632638913b29f6618f9808891a5f522dc86501725947e21`). The PDF was text-checked, confirmed as one A4 page, and visually inspected after rendering.
+**Git files:** `project-manifest.json`, `docs/FILE_INDEX.md`, `docs/CHANGELOG.md`. The manifest now records the current candidate checksums and distinguishes it from a public release; the file index no longer describes the folder as v16-only.
+**Local checks:** `tools/verify_project_index.py` (79/79 originals, 48 modules, 712 IDs), app build manifest, UI catalogs, and `git diff --check` PASS. Drive readback confirmed the updated HTML/PDF names and modification dates.
+**Commit:** documentation checkpoint pending; full GitHub workflow is triggered by the manifest update.
+**Next action:** inspect the full GitHub workflow on the new commit; record the result, then mark DONE.

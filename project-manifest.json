@@ -1,32 +1,12 @@
 {
   "schema": "mental-health-questionnaire-current-index-v2",
-  "updated_date": "2026-11-06",
+  "updated_date": "2026-11-07",
   "repository": "janisp123/mental-health-questionnaire",
   "development_branch": "develop",
   "distribution_branch": "main",
   "status": "FULL_QUESTIONNAIRE_TECHNICAL_BUILD_IN_PROGRESS__EN_RU_DRAFT",
   "single_source_of_truth": "This manifest on GitHub develop; revise this index when active source paths or release status change.",
   "active_changelog": "docs/CHANGELOG.md",
-  "release_distribution": {
-    "provider": "Google Drive",
-    "status": "TECHNICAL_REVIEW_CANDIDATE_NOT_CLINICALLY_VALIDATED",
-    "folder_name": "00_REVIEW CANDIDATE — Git full build v0.2.0 — Latvian reference — English/Russian drafts — SHARE THIS",
-    "folder_url": "https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
-    "published_language": "Latvian reference; EN/RU unreviewed drafts",
-    "published_version": "0.2.0 technical-review candidate (question source v16)",
-    "files": [
-      "187_Questionnaire_FULL_712Q_v0.2.0_REVIEW_BUILD.html",
-      "188_README_LV_v0.2.0_REVIEW_BUILD.md"
-    ],
-    "source_commit": "7e236310e4b57ceb7f2e9e8e3e8988387e6c1814",
-    "artifact_sha256": "a6998ab5539d037493b97e724b7dda6080196d67fb7cb5b75f905dbc9b4bbb70",
-    "readme_sha256": "bf1f837da532adc136fcfc578042d8e9fa7146864a61a9cc2afa86f55ece0d3f",
-    "frozen_v16_baseline": [
-      "reference/baseline/html/162_Sagatavosanas_vizitei_LV_v16.html",
-      "reference/baseline/readme/163_README_LV_v16.md"
-    ],
-    "auto_sync": false
-  },
   "current_versions": {
     "questionnaire": {
       "reference_language": "lv",
@@ -588,5 +568,25 @@
       "bytes": 9448,
       "role": "development-tool"
     }
-  ]
+  ],
+  "review_distribution": {
+    "provider": "Google Drive",
+    "folder_url": "https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+    "purpose": "PROFESSIONAL_TECHNICAL_REVIEW_CANDIDATE_NOT_PUBLIC_RELEASE",
+    "reference_language": "lv",
+    "version": "0.2.0",
+    "source_commit": "40637a3188905c6e139c9e698d040c4e3304ff1e",
+    "last_built_date": "2026-11-07",
+    "auto_sync": false,
+    "files": [
+      {
+        "name": "187_Questionnaire_FULL_712Q_v0.2.0_REVIEW_BUILD.html",
+        "sha256": "46417a3a2a6d4972cf30e6e26201597d1ea7ef4e14c39baeb39ba73a0b80b6e5"
+      },
+      {
+        "name": "188_README_LV_v0.2.0_REVIEW_BUILD.pdf",
+        "sha256": "f4639c80d9ea36e37632638913b29f6618f9808891a5f522dc86501725947e21"
+      }
+    ]
+  }
 }

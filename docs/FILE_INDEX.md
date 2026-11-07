@@ -54,7 +54,7 @@
 
 ## Distribution — separate from development
 
-Google Drive's [Latvian public folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb), now named **“Sagatavošanās vizītei pie psihiskās veselības speciālista — latviešu versija”**, contains exactly the LV v16 HTML and LV README. It is **distribution only**. Do not edit the Drive files while developing. Build, run all required release gates, promote an approved version, and only then publish an updated artifact there. EN/RU are still **drafts** and remain unpublished.
+Google Drive's [professional review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb) currently contains the full 48-section, 712-question HTML candidate and its concise Latvian PDF guide. This is a **technical review candidate, not a public release or clinical validation**. The older Drive v16 copies were removed; the frozen v16 references remain under `reference/baseline/`. When the review candidate is explicitly refreshed, build both files from GitHub `develop`, verify the build and PDF, replace the two files in place so existing links stay valid, and update the checksums in `project-manifest.json` and checkpoint in `docs/CHANGELOG.md`. EN/RU remain unreviewed drafts.
 
 ## Rules for identifying the latest version
 
