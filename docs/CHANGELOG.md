@@ -126,3 +126,15 @@
 **Checks:** GitHub readback confirmed the new instruction; documentation-only change, no application tests run.
 **Commit:** `e55f4e52163e8bdc1afbf4811583c3c2e0244bad` (branch-status verification rule).
 **Next action:** use the live-branch check before future push/status reports.
+
+
+## 2026-11-07 · UI-CLARITY-PRIVACY-SUPPORT · IN_PROGRESS
+
+**Starting commit:** `ef4f0fc947cbd4fe9a0b5f5c00cbc0361402456a` on GitHub `develop`.
+**Change:** removed the guided section-picker path and the non-clickable progress-chip list from the footer; kept section completion counts in the section picker. Clarified save-file privacy and technical-review status in LV/EN/RU. Replaced stale patch history with a Riga timestamp and concise change categories. Updated 116123 to an unspaced six-digit number, added careful anonymity/confidentiality wording and the phone-log caveat, and corrected the dial link to `tel:116123`. Added a repository rule to keep future localized change notes current.
+
+**Files:** `AGENTS.md`, `src/app/core/app.js`, `src/app/screens/start.js`, `src/app/screens/section-selector.js`, `src/app/styles/base.css`, `src/app/i18n/ui.lv.json`, `src/app/i18n/ui.en.json`, `src/app/i18n/ui.ru.json`, `tests/app/test_screens.js`, `tests/app/test_runtime_layout.py`, `tests/app/test_ui_catalogs.py`, `tests/full_bank/test_runtime.py`, `docs/CHANGELOG.md`.
+**Local checks:** app source manifest, catalog structure/content, isolated screens/model/flow/recovery/events, full source integrity, all 48 modules/712 IDs and order, build/layout/report audits, full offline HTML build, JS syntax, and `git diff --check` PASS. Build SHA-256: `46417a3a2a6d4972cf30e6e26201597d1ea7ef4e14c39baeb39ba73a0b80b6e5`.
+**Not run locally:** the two Playwright browser checks; Playwright is not installed in this workspace. GitHub CI is the browser verification gate. No Android-device or human translation/clinical review was performed.
+**Commit:** exact remote SHA to be recorded after creation/readback.
+**Next action:** inspect both GitHub workflows for the source commit; update this record with their results, then resolve any failure before marking DONE.

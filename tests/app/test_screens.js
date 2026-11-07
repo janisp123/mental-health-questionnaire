@@ -10,7 +10,6 @@ const labels = {
   noAuto: "Synthetic privacy note",
   selector: "Choose sections",
   selectIntro: "Select any sections",
-  guideIntro: "Suggested sections",
   selected: "Selected",
   notSelected: "Not selected",
   chooseAll: "All",
@@ -18,7 +17,6 @@ const labels = {
   confirmSections: "Continue",
   cancel: "Back",
   chooseOwn: "Choose",
-  chooseGuide: "Guide",
   start: "Start",
   jump: "Go to section",
 };
@@ -30,6 +28,7 @@ const start = screens.start({label, btn});
 assert.match(start, /Synthetic introduction/);
 assert.match(start, /data-act="start"/);
 assert.match(start, /Synthetic privacy note/);
+assert.doesNotMatch(start, /data-act="guide"/);
 
 const groups = new Map([
   ["01", {id:"01", required:true}],
@@ -50,12 +49,12 @@ assert.match(selector, /data-module="02"[^>]*checked/);
 assert.match(selector, /data-act="jump"/);
 assert.match(selector, /data-act="confirm"/);
 
-state.screen = "guide";
-const guide = screens.sectionSelector({
+const ordinary = screens.sectionSelector({
   state, data, groups, label, btn, escape:value=>String(value),
   countGroup:()=>({done:0,total:1}), active:()=>[],
 });
-assert.match(guide, /Grūtību pazīmes/);
-assert.doesNotMatch(guide, /data-act="jump"/);
+assert.match(ordinary, /Labsajūta/);
+assert.match(ordinary, /0\/1/);
+assert.match(ordinary, /data-act="jump"/);
 
 console.log("PASS: start and section-picker screens render independently with synthetic content.");

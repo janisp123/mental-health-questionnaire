@@ -22,18 +22,12 @@ function active(){return model.active(state);}
 function current(){return model.current(state);}
 function isSafety(q){return model.isSafety(q);}
 function countGroup(group){return model.countGroup(state,group);}
-function sectionBar(){
- return '<div class="section-progress">'+data.groups.map(g=>{
-  const count=countGroup(g.id);
-  return '<span>'+esc(g.titles[state.lang])+' <strong>'+count.done+'/'+count.total+'</strong></span>';
- }).join("")+'</div>';
-}
 function header(){
  const opts=["lv","en","ru"].map(id=>'<option value="'+id+'"'+(id===state.lang?" selected":"")+">"+({lv:"Latviešu",en:"English",ru:"Русский"}[id])+"</option>").join("");
  return '<header>'+(state.screen==="start"?'<h1>'+label("project")+'</h1>':"")+'<label class="lang">'+label("language")+' <select id="language">'+opts+'</select></label></header>';
 }
 function supportLinks(includeEmergency){
- const line='<a href="tel:+371116123?oai_link_source=model_response_hotline">'+label("supportLink")+'</a>';
+ const line='<a href="tel:116123">'+label("supportLink")+'</a>';
  return line+(includeEmergency?'<p>'+label("emergencyBody")+' <a href="tel:112">112</a></p>':"");
 }
 function supportCard(){
@@ -59,7 +53,7 @@ function toolbar(){
  return '<nav class="toolbar" aria-label="Tools">'+btn("backup","saveBackup")+ '<label class="file-label">'+label("restoreBackup")+'<input id="restore" type="file" accept=".json,application/json" aria-label="'+label("restoreBackup")+'"></label>'+btn("results","results")+btn("sections","editSections")+'</nav>';
 }
 function footer(){
- return '<footer><details><summary>'+label("tools")+'</summary>'+toolbar()+sectionBar()+'</details><details id="support-details"><summary>'+label("supportMenu")+'</summary><p>'+label("supportBody")+'</p>'+supportLinks()+'</details><details><summary>'+label("guideTitle")+'</summary><p>'+label("guideBody")+'</p></details><details><summary>'+label("notesTitle")+'</summary><p>'+label("notesBody")+'</p></details><details><summary>'+label("legal")+'</summary><p>'+label("intro")+'</p><p>'+label("privacy")+'</p></details><details><summary>'+label("helpers")+'</summary><p>'+label("credits")+'</p></details><p class="muted">'+label("statusNote")+' · '+label("footer")+'</p></footer>';
+ return '<footer><details><summary>'+label("tools")+'</summary>'+toolbar()+'</details><details id="support-details"><summary>'+label("supportMenu")+'</summary><p>'+label("supportBody")+'</p>'+supportLinks()+'</details><details><summary>'+label("guideTitle")+'</summary><p>'+label("guideBody")+'</p></details><details><summary>'+label("notesTitle")+'</summary><p>'+label("notesBody")+'</p></details><details><summary>'+label("legal")+'</summary>'+ui().legalBody.split("\n\n").map(text=>'<p>'+esc(text)+'</p>').join("")+'</details><details><summary>'+label("helpers")+'</summary><p>'+label("credits")+'</p></details><p class="muted">'+label("statusNote")+' · '+label("footer")+'</p></footer>';
 }
 function renderStart(){
  return window.QuestionnaireScreens.start({label,btn});
@@ -137,7 +131,7 @@ function render(){
  const keepSupportFocus=document.activeElement?.id==="support-message";
  document.documentElement.lang=state.lang;
  document.title=ui().project;
- const body=state.screen==="start"?renderStart():(state.screen==="selector"||state.screen==="guide")?renderSelector():state.screen==="question"?renderQuestion():state.screen==="report"?renderReport():renderResults();
+ const body=state.screen==="start"?renderStart():state.screen==="selector"?renderSelector():state.screen==="question"?renderQuestion():state.screen==="report"?renderReport():renderResults();
  app.innerHTML='<main>'+header()+supportCard()+(state.notice?'<p role="status" class="notice">'+esc(state.notice)+'</p>':"")+body+footer()+navigation()+'</main>';
  if(state.focusSupport||keepSupportFocus){document.getElementById('support-message')?.focus({preventScroll:true});state.focusSupport=false;}
 }
@@ -288,9 +282,8 @@ function action(key){
  if(key==="support"){state.support="support";state.focusSupport=true;render();window.scrollTo(0,0);return;}
  if(key==="dismissSupport"){state.support=null;render();return;}
  if(key==="start"){start();return;}
- if(key==="all"){if(state.screen==="selector"||state.screen==="guide"){state.sectionDraft=[...optionalIds];render();}else showSections([...optionalIds]);return;}
+ if(key==="all"){if(state.screen==="selector"){state.sectionDraft=[...optionalIds];render();}else showSections([...optionalIds]);return;}
  if(key==="choose"){showSections([]);return;}
- if(key==="guide"){state.sectionDraft=[...state.selected];state.screen="guide";render();return;}
  if(key==="clear"){state.sectionDraft=[];render();return;}
  if(key==="confirm"){confirmSections();return;}
  if(key==="cancel"){state.screen=state.currentId?"question":"start";render();return;}

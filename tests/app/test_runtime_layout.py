@@ -15,6 +15,12 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     write_fixture(html_path)
     browser = launch(pw)
     page, errors, network = open_page(browser, html_path)
+    assert not page.locator('[data-act="guide"]').count()
+    assert not page.locator(".section-progress").count()
+    page.locator('[data-act="choose"]').click()
+    assert page.locator(".module-choice").first.get_by_text("0/3").is_visible()
+    assert not page.locator(".section-progress").count()
+    page.locator('[data-act="cancel"]').click()
     page.locator('[data-act="start"]').click()
     page.wait_for_selector(".question-nav")
 

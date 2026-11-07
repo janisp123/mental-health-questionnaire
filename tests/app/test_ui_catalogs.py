@@ -29,4 +29,16 @@ for stem in ("ui", "medicine"):
             f"missing={sorted(expected - actual)}, extra={sorted(actual - expected)}"
         )
 
-print("PASS: LV/EN/RU interface and medicine catalogs have matching key structure.")
+ui = {
+    lang: json.loads((ROOT / "src" / "app" / "i18n" / f"ui.{lang}.json").read_text(encoding="utf-8"))["strings"]
+    for lang in LOCALES
+}
+assert all("chooseGuide" not in ui[lang] for lang in LOCALES)
+for lang in LOCALES:
+    strings = ui[lang]
+    assert "legalBody" in strings and "notesBody" in strings
+    assert "116123" in strings["supportBody"]
+    assert "116 123" not in strings["supportBody"]
+    assert "v0.2" not in strings["notesBody"] and "v16" not in strings["statusNote"]
+
+print("PASS: LV/EN/RU catalogs align; review, privacy, support number, and current-change labels are present.")

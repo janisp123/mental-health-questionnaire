@@ -70,7 +70,10 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert qid(page) == "M06_01"
     choose(page, "B")
     assert page.locator("#support-message").is_visible()
-    assert page.locator('#support-message a[href^="tel:+371116123"]').is_visible()
+    assert page.locator('#support-message a[href="tel:116123"]').is_visible()
+    support_text = page.locator("#support-message").inner_text()
+    assert "116123" in support_text and "116 123" not in support_text
+    assert "sešciparu numurs" in support_text
     act(page, "dismissSupport")
 
     # Reach the real medication-list item via ordinary section navigation.
