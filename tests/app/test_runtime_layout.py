@@ -19,7 +19,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert not page.locator('[data-act="guide"]').count()
     assert page.locator("[data-act=start]").count() == 1
     page.locator('[data-act="start"]').click()
-    assert page.locator("[data-module]").count() == 1
+    assert page.locator("[data-module]").count() == 2
     assert "3 questions" in page.locator(".card").inner_text()
     assert not re.search(r"\b0/\d+\b", page.locator(".card").inner_text())
     assert not page.locator(".section-progress").count()

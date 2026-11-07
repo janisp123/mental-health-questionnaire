@@ -143,20 +143,22 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert not errors, errors
     assert not network, network
 
-    # A fresh full-bank run downloads cumulative recovery after ten skips.
+    # Saving is user-initiated; ten ordinary skips must not trigger a download.
     recovery_page, recovery_errors, recovery_network = open_page(browser, html_path)
+    recovery_downloads = []
+    recovery_page.on("download", lambda download: recovery_downloads.append(download.suggested_filename))
     recovery_page.locator('[data-act="start"]').click()
     recovery_page.locator('[data-act="all"]').click()
     first = questions[0]
     for language in ("lv", "ru", "en"):
         recovery_page.select_option("#language", language)
         assert recovery_page.locator(".question h2").inner_text() == first["translations"][language]["title"]
-    for _ in range(9):
+    for _ in range(10):
         act(recovery_page, "skip")
-    with recovery_page.expect_download() as event:
-        act(recovery_page, "skip")
-    ten_skips = json.loads(event.value.path().read_text())
-    assert ten_skips["savedCount"] == 10 and len(ten_skips["answers"]) == 10
+    assert recovery_downloads == [], recovery_downloads
+    ten_skips = backup(recovery_page)
+    assert recovery_downloads == ["questionnaire-recovery.json"]
+    assert len(ten_skips["answers"]) == 10
     assert all(answer["kind"] == "skip" for answer in ten_skips["answers"].values())
     restore(recovery_page, ten_skips)
     assert backup(recovery_page)["answers"] == ten_skips["answers"]
@@ -165,5 +167,5 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     recovery_page.close()
     browser.close()
 
-print("PASS: full offline runtime includes selection, answer types, conditions, support, feedback/recovery, skip/back, copy/print, three locales, and ten-answer recovery. Android device UNVERIFIED.")
+print("PASS: full offline runtime includes selection, answer types, conditions, support, feedback/recovery, skip/back, copy/print, three locales, and manual progress saving. Android device UNVERIFIED.")
 

@@ -11,11 +11,11 @@
 
 **Change:** removed automatic recovery-file downloads while answering. When a user reaches the end of a section, the app now recommends saving and offers “Save and continue” or “Continue without saving” in LV/EN/RU. The existing manual save control remains. A section-boundary recovery file points to the next question so it resumes in the right place.
 
-**Files:** `src/app/core/app.js`, `src/app/i18n/ui.lv.json`, `src/app/i18n/ui.en.json`, `src/app/i18n/ui.ru.json`, `tests/app/runtime_fixture.py`, `tests/app/test_runtime_answers.py`, `tests/full_bank/browser_helpers.py`, `docs/QUESTIONNAIRE_ARCHITECTURE.md`, `docs/CHANGELOG.md`.
+**Files:** `src/app/core/app.js`, `src/app/i18n/ui.lv.json`, `src/app/i18n/ui.en.json`, `src/app/i18n/ui.ru.json`, `tests/app/runtime_fixture.py`, `tests/app/test_runtime_answers.py`, `tests/app/test_runtime_layout.py`, `tests/full_bank/browser_helpers.py`, `tests/full_bank/test_runtime.py`, `docs/QUESTIONNAIRE_ARCHITECTURE.md`, `docs/CHANGELOG.md`.
 
-**Checks:** locale catalogs, app source/screens/logic, JavaScript syntax, offline HTML build, and `git diff --check` PASS. Focused workflow 42353162597 caught a test-fixture error: its next-section question had the first section's ID. Corrected the fixture mapping; workflow rerun is pending. Local Chromium is unavailable. The full-bank workflow is running.
+**Checks:** locale catalogs, app source/screens/logic, JavaScript syntax, offline HTML build, and `git diff --check` PASS. Focused workflows 42353162597 and 42353268809 exposed test expectations needing updates for the second synthetic group and manual-only backups; those are corrected and pending rerun. Full-bank workflow 42353162601 exposed its old ten-answer auto-download expectation; changed it to verify ten skips cause no download and manual save still works. Local Chromium is unavailable; rerun workflows in CI.
 
-**Next action:** confirm focused and full-bank CI after the fixture correction. No Google Drive copy was updated.
+**Next action:** confirm focused and full-bank CI after updating the affected runtime checks. No Google Drive copy was updated.
 
 ## 2026-11-06 · FULL-GIT-REVIEW-CANDIDATE · PREPARED
 
