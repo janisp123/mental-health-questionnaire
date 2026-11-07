@@ -31,6 +31,7 @@ These rules apply to future development work in this repository, particularly lo
 - A professional-review package contains the self-contained questionnaire HTML and a concise, readable PDF guide. Keep editable Markdown source in the repository or private project documentation; do not put it in the reviewer folder unless requested.
 - Before sharing a PDF, render it and inspect the page visually at normal reading size. Check that text is legible, page breaks are clean, and the instructions match the current build and button labels.
 - Keep the reviewer folder limited to the current files intended for reviewers. After replacing a deliverable, verify the folder contents and update its current-state/archive index so filenames and formats agree.
+- The user tests the current questionnaire from the Google Drive review folder. After every verified implementation batch intended for user testing, rebuild the HTML and matching PDF from `develop`, replace the Drive files in place, and verify both uploaded files by readback before handing off. Do not defer Drive refresh until a major release.
 - Clearly label technical review status and limitations. Never imply clinical validation, human translation review, or device testing that has not happened.
 
 ## Keep each work session focused
