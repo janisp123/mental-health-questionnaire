@@ -354,12 +354,13 @@ function singleAnswer(code){
  clearPendingSingleAnswer();
  state.draft={forId:q.id,codes:[code]};
  const pending={id:q.id,code,timer:null};
+ pendingSingleAnswer=pending;
+ render();
  pending.timer=setTimeout(()=>{
   if(pendingSingleAnswer!==pending||current()?.id!==pending.id)return;
   pendingSingleAnswer=null;
   save();
- },1000);
- pendingSingleAnswer=pending;
+ },1300);
 }
 window.QuestionnaireEvents.bind(app,{
  singleAnswer,action,

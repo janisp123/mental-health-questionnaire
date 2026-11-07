@@ -27,12 +27,15 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     single_choice = page.locator('input[name="answer"][value="B"]')
     single_choice.click()
     assert single_choice.is_checked(), "The selected answer should be visible immediately"
+    assert single_choice.locator("..").locator(".choice-checkmark").is_visible(), "Selected answer needs a clear checkmark"
     selected_color = single_choice.locator("..").evaluate("el => getComputedStyle(el).backgroundColor")
     assert selected_color != "rgb(27, 44, 58)", f"Selected choice is not visually highlighted: {selected_color}"
     assert page.locator('.question').get_attribute("data-question") == "SYN_01"
-    page.wait_for_timeout(400)
+    page.wait_for_timeout(500)
     assert page.locator('.question').get_attribute("data-question") == "SYN_01"
-    page.wait_for_timeout(700)
+    page.wait_for_timeout(500)
+    assert page.locator('.question').get_attribute("data-question") == "SYN_01"
+    page.wait_for_timeout(400)
     assert page.locator('.question').get_attribute("data-question") == "SYN_02"
     assert downloads == [], "Answering a question must not trigger a download"
     saved = backup(page)
@@ -57,7 +60,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     page.locator('.question-nav [data-act="skip"]').click()
     assert page.locator('[data-act="saveAndContinue"]').is_visible()
     assert page.locator('[data-act="continueWithoutSaving"]').is_visible()
-    page.wait_for_timeout(1100)
+    page.wait_for_timeout(1400)
     assert page.locator('[data-act="continueWithoutSaving"]').is_visible(), "A pending answer must not replace a later Skip"
     assert len(downloads) == 3, downloads
     with page.expect_download() as event:

@@ -34,9 +34,9 @@ def choose(page, code):
     if option.get_attribute("type") == "checkbox":
         option.locator("..").click()
         return
-    # Single-choice answers remain visible for one second before saving and advancing.
+    # Single-choice answers remain visibly selected for about 1.3 seconds before advancing.
     option.locator("..").click()
-    page.wait_for_timeout(1100)
+    page.wait_for_timeout(1400)
     continue_button = page.locator('[data-act="continueWithoutSaving"]:visible')
     if continue_button.count():
         continue_button.click()

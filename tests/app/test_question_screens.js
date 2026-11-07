@@ -51,6 +51,7 @@ const question = screens.question({
 });
 assert.match(question,/Synthetic question/);
 assert.match(question,/value="A" checked/);
+assert.match(question,/class="choice-checkmark"[^>]*>✓<\/span>/);
 assert.match(question,/Feedback control/);
 assert.match(question,/data-act="skipSection"/);
 

@@ -13,7 +13,7 @@ screens.question = function ({q,state,ui,queue,group,escape,label,btn,renderFeed
  else options='<fieldset><legend class="sr-only">'+escape(t.title)+'</legend>'+
   q.choiceCodes.map(key=>{
     const checked=(state.draft.codes||[]).includes(key),kind=q.multi?"checkbox":"radio";
-    return '<label class="choice"><input type="'+kind+'" name="answer" value="'+escape(key)+'"'+(checked?" checked":"")+'> <span>'+escape(t.choices[key]||key)+'</span></label>';
+    return '<label class="choice"><input type="'+kind+'" name="answer" value="'+escape(key)+'"'+(checked?" checked":"")+'> <span>'+escape(t.choices[key]||key)+'</span>'+(checked?'<span class="choice-checkmark" aria-hidden="true">✓</span>':"")+'</label>';
   }).join("")+'</fieldset>';
  const flagged=!!state.feedback[q.id];
  const feedbackControl='<div class="question-title-row"><h2 tabindex="-1" id="question-heading">'+escape(t.title)+'</h2><button type="button" class="feedback-flag" data-act="feedback" aria-label="'+label("feedbackFlag")+'" aria-expanded="'+state.feedbackOpen+'" title="'+label("feedbackFlag")+'">⚑</button></div>';

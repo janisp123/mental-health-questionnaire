@@ -19,6 +19,10 @@
 
 **Workflow:** complete and record one batch at a time on `develop`; refresh the Google Drive HTML/PDF after each verified user-testable batch. Preserve the 48 source modules, 712 question IDs, recovery schema, and frozen references.
 
+**Batch 1 — selection cue:** immediately render the selected radio as checked with a stronger green card and a separate checkmark; delay advance about 1.3 seconds. Updated focused and full-bank browser tests for visible state, delayed advance, double tap, and Skip.
+**Local checks:** screen renderer, event delegation, build manifest, locale catalogs, JS/Python syntax, and `git diff --check` PASS. Chromium is unavailable locally; GitHub browser workflows are pending.
+**Exact next action:** push the checkpoint and wait for focused and full offline-browser CI before marking Task 1 DONE and refreshing Drive.
+
 ## 2026-11-07 · QUESTION-ANSWER-CLARITY · IN_PROGRESS
 
 **Starting commit:** `50b3f7ca6162c65b870a26702c638a1f31fd7dd0` on `develop`.
