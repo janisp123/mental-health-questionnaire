@@ -18,7 +18,8 @@ for(const lang of ['lv','en','ru']){
  assert(plain.includes(data.ui[lang].reportCountSelected+': '+qs.length));
  assert(plain.includes(data.ui[lang].reportCountDone+': 5'));
  assert(plain.includes(data.ui[lang].reportCountSkip+': 1'));
- assert(plain.includes(data.ui[lang].reportName+': ______________________________'));
+ assert(plain.includes(data.ui[lang].reportName+': __________'));
+ assert(plain.includes(data.ui[lang].reportDate+': ______'));
  assert(!plain.includes(q('M02_20').translations[lang].title));
  assert(html.includes('<strong>'+q('M06_02').translations[lang].choices.B+'</strong>'));
  assert(!html.includes('<strong>'+q('M06_01').translations[lang].choices.A+'</strong>'));
