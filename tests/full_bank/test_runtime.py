@@ -55,6 +55,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert question_by_id["M01_17"]["translations"]["en"]["choices"]["M"] == "I have no diagnosis from this list."
     assert question_by_id["M01_17"]["translations"]["ru"]["choices"]["G"] == "Расстройство аутистического спектра"
     assert question_by_id["M01_25"]["translations"]["ru"]["title"] == "Почему завершился последний курс такой помощи?"
+    assert question_by_id["M01_22"]["translations"]["ru"]["choices"]["E"] == "Самочувствие меняется"
     assert question_by_id["M14_17"]["translations"]["ru"]["title"] == "Как часто за последние 4 недели вы пропускали запланированный приём дозы регулярно принимаемого лекарства?"
     assert question_by_id["M14_18"]["translations"]["ru"]["choices"]["E"] == "Не чувствовал(а) необходимости или сомневался(ась) в пользе."
     assert question_by_id["M30_13"]["translations"]["ru"]["title"] == "Появились ли у вас внезапно прямо сейчас или только что слабость в лице или руке, нарушение речи либо выраженная потеря зрения?"
