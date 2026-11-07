@@ -23,6 +23,9 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     page, errors, network = open_page(browser, html_path)
 
     data = page.locator("#questionnaire-data").evaluate("el => JSON.parse(el.textContent)")
+    assert "izlaid jautājumus, kas šķiet atbilstoši" in data["ui"]["lv"]["guideBody"].lower()
+    assert "skip questions that seem fine" in data["ui"]["en"]["guideBody"].lower()
+    assert "пропускайте подходящие вопросы" in data["ui"]["ru"]["guideBody"].lower()
     assert len(data["groups"]) == 15
     questions = [q for group in data["groups"] for q in group["questions"]]
     assert len(questions) == 712
