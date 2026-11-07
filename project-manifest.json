@@ -577,13 +577,13 @@
     "purpose": "PROFESSIONAL_TECHNICAL_REVIEW_CANDIDATE_NOT_PUBLIC_RELEASE",
     "reference_language": "lv",
     "version": "0.2.0",
-    "source_commit": "337746c23b27ff9d07396243a9bed7fb581354af",
+    "source_commit": "60921b9cd256a3fb76a57beb58d26f7b54dea6e1",
     "last_built_date": "2026-11-07",
     "auto_sync": false,
     "files": [
       {
         "name": "187_Questionnaire_FULL_712Q_v0.2.0_REVIEW_BUILD.html",
-        "sha256": "1d7e964db1996edb536afc405a61181d3efce7e11eb36714648560ae5273fa14"
+        "sha256": "e6469902184583c123f5c2d6a5654c1d3729adeae123320e519f57ac50574dba"
       },
       {
         "name": "188_README_LV_EN_RU_v0.2.0_REVIEW_BUILD.pdf",
