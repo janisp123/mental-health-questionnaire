@@ -138,3 +138,13 @@
 **Not run locally:** the two Playwright browser checks; Playwright is not installed in this workspace. GitHub CI is the browser verification gate. No Android-device or human translation/clinical review was performed.
 **Commit:** `40637a3188905c6e139c9e698d040c4e3304ff1e` (source and tests).
 **GitHub CI:** focused app run `42341394945` and full questionnaire run `42341394954` are running on this commit.\n**Next action:** inspect both workflow results; resolve any failure, then record verified outcomes and mark DONE.
+
+
+### Browser assertion correction · IN_PROGRESS
+
+**Finding:** the synthetic section count is `0/2` because a conditional question is initially hidden. The full-browser support copy is better checked for the six-digit number without spaces; localized wording is checked in the catalog test.
+**Change:** corrected the focused layout assertion, strengthened LV/EN/RU catalog assertions for six digits, confidentiality, privacy-file handling, and review status, and kept the full-bank browser assertion focused on visible `116123` formatting/link behavior.
+**Files:** `tests/app/test_runtime_layout.py`, `tests/app/test_ui_catalogs.py`, `tests/full_bank/test_runtime.py`, `docs/CHANGELOG.md`.
+**Local checks:** updated catalog, screen-renderer, source-manifest and Python syntax checks PASS; Playwright remains unavailable locally.
+**Commit:** pending remote readback.
+**Next action:** rerun the focused and full GitHub workflows; record results and close this checkpoint only after both pass.
