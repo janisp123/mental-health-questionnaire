@@ -8,16 +8,19 @@ sys.path.insert(0, str(ROOT / "tools"))
 import build_questionnaire as build
 
 
-def _question(qid, title, codes, *, multi=False, context=None, module="S01"):
+def _question(qid, title, codes, *, multi=False, max_choices=None, context=None, module="S01"):
     translations = {
         lang: {"title": title, "time": "", "choices": {code: f"Option {code}" for code in codes}}
         for lang in ("lv", "en", "ru")
     }
-    return {
+    question = {
         "id": qid, "module": module, "multi": multi, "context": context,
         "choiceCodes": codes, "exclusive": [], "incompatible": [],
         "answerStatus": {}, "type": "choice", "translations": translations,
     }
+    if max_choices is not None:
+        question["maxChoices"] = max_choices
+    return question
 
 
 def make_fixture():
@@ -30,7 +33,7 @@ def make_fixture():
         "id": "S01", "required": False, "questionCount": 3, "titles": titles, "concerns": titles,
         "questions": [
             _question("SYN_01", "Single choice", ["A", "B"]),
-            _question("SYN_02", "Multiple choice", ["A", "B"], multi=True),
+            _question("SYN_02", "Multiple choice", ["A", "B", "C", "D"], multi=True, max_choices=3),
             _question("SYN_03", "Conditional follow-up", ["A"], context={"id": "SYN_01", "showValues": ["B"]}),
         ],
     }

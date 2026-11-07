@@ -32,11 +32,16 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
 
     page.locator('input[name="answer"][value="A"]').check()
     page.locator('input[name="answer"][value="B"]').check()
+    page.locator('input[name="answer"][value="C"]').check()
+    assert page.locator(".selection-hint").inner_text() == "Vari izvēlēties ne vairāk kā 3 atbildes."
+    page.locator('input[name="answer"][value="D"]').check()
+    assert page.locator('input[name="answer"][value="D"]').is_checked() is False
+    assert "3" in page.locator(".notice").inner_text()
     assert backup(page)["answers"].get("SYN_02") is None
     act(page, "save")
     assert page.locator('.question').get_attribute("data-question") == "SYN_03"
     saved_codes = backup(page)["answers"].get("SYN_02", {}).get("codes", [])
-    assert sorted(saved_codes) == ["A", "B"], f"Expected both saved codes, got {saved_codes!r}"
+    assert sorted(saved_codes) == ["A", "B", "C"], f"Expected up to three saved codes, got {saved_codes!r}"
 
     page.locator('[data-act="skip"]').click()
     assert page.locator('[data-act="saveAndContinue"]').is_visible()

@@ -10,7 +10,9 @@ const labels = {
   optionalText:"Optional", feedbackPrivacy:"No medical answers are included",
   feedbackContinue:"Save and continue", removeFeedback:"Remove feedback", feedbackFlag:"Flag question",
   feedbackFlagged:"Feedback added", enterText:"Your answer", saveWarning:"Save your answer",
-  autoHint:"Choose one answer", next:"Save and continue", skipSection:"Skip section", skipRest:"Finish",
+  autoHint:"Choose one answer", multiHint:"Vari izvēlēties vairākas atbildes.",
+  multiMaxHint:"Vari izvēlēties ne vairāk kā {count} atbildes.",
+  next:"Save and continue", skipSection:"Skip section", skipRest:"Finish",
 };
 const label = key => labels[key] || key;
 const btn = (action,key,cls="",extra="") =>
@@ -51,5 +53,21 @@ assert.match(question,/Synthetic question/);
 assert.match(question,/value="A" checked/);
 assert.match(question,/Feedback control/);
 assert.match(question,/data-act="skipSection"/);
+
+const multi = {...q,multi:true,maxChoices:3};
+const multiQuestion = screens.question({
+  q:multi,state:{lang:"lv",draft:{codes:[]},feedback:{},feedbackOpen:false},ui:{},queue:[multi],
+  group:"Synthetic section",label,btn,escape,renderFeedback:()=>"",renderMedicine:()=>"",
+});
+assert.match(multiQuestion,/ne vairāk kā 3 atbildes/);
+assert.match(multiQuestion,/selection-hint/);
+
+const unlimited = {...multi}; delete unlimited.maxChoices;
+const unlimitedQuestion = screens.question({
+  q:unlimited,state:{lang:"lv",draft:{codes:[]},feedback:{},feedbackOpen:false},ui:{},queue:[unlimited],
+  group:"Synthetic section",label,btn,escape,renderFeedback:()=>"",renderMedicine:()=>"",
+});
+assert.match(unlimitedQuestion,/Vari izvēlēties vairākas atbildes\./);
+assert.doesNotMatch(unlimitedQuestion,/ne vairāk kā/);
 
 console.log("PASS: question, medicine, and feedback screens render from synthetic records.");
