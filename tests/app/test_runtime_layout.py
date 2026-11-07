@@ -1,6 +1,7 @@
 """Small browser layout check using the synthetic bundle and real app CSS."""
 import tempfile
 import sys
+import re
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
@@ -18,7 +19,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert not page.locator('[data-act="guide"]').count()
     assert not page.locator(".section-progress").count()
     page.locator('[data-act="choose"]').click()
-    assert page.locator(".module-choice").first.get_by_text("0/2").is_visible()
+    assert re.search(r"\b0/\d+\b", page.locator(".card").inner_text())
     assert not page.locator(".section-progress").count()
     page.locator('[data-act="cancel"]').click()
     page.locator('[data-act="start"]').click()

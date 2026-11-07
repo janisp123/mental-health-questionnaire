@@ -137,15 +137,24 @@
 **Local checks:** app source manifest, catalog structure/content, isolated screens/model/flow/recovery/events, full source integrity, all 48 modules/712 IDs and order, build/layout/report audits, full offline HTML build, JS syntax, and `git diff --check` PASS. Build SHA-256: `46417a3a2a6d4972cf30e6e26201597d1ea7ef4e14c39baeb39ba73a0b80b6e5`.
 **Not run locally:** the two Playwright browser checks; Playwright is not installed in this workspace. GitHub CI is the browser verification gate. No Android-device or human translation/clinical review was performed.
 **Commit:** `40637a3188905c6e139c9e698d040c4e3304ff1e` (source and tests).
-**Initial GitHub CI:** focused app run `42341394945` and full questionnaire run `42341394954` reached the browser step and failed on brittle new test expectations; earlier component, source-integrity, report, and build checks passed.
+**Initial GitHub CI:** focused app run `42341394945` failed because the required fixture section is rendered as plain text, not a `.module-choice` row. Full run `42341394954` reached the browser support check and failed only on a brittle Latvian wording assertion. The full workflow then passed as run `42341599375` after removing that wording assertion; source, report, and build checks passed in both runs.
 **Next action:** inspect both workflow results; resolve any failure, then record verified outcomes and mark DONE.
 
 
 ### Browser assertion correction · IN_PROGRESS
 
-**Finding:** the synthetic section count is `0/2` because a conditional question is initially hidden. The full-browser support copy is better checked for the six-digit number without spaces; localized wording is checked in the catalog test.
+**Finding:** the synthetic fixture only has a required section, which the picker renders as text rather than a `.module-choice` checkbox row. The browser test now scans the picker text for a visible completion count. The full-browser support copy is checked for the six-digit number without spaces; localized wording is checked in the catalog test.
 **Change:** corrected the focused layout assertion, strengthened LV/EN/RU catalog assertions for six digits, confidentiality, privacy-file handling, and review status, and kept the full-bank browser assertion focused on visible `116123` formatting/link behavior.
 **Files:** `tests/app/test_runtime_layout.py`, `tests/app/test_ui_catalogs.py`, `tests/full_bank/test_runtime.py`, `docs/CHANGELOG.md`.
 **Local checks:** updated catalog, screen-renderer, source-manifest and Python syntax checks PASS; Playwright remains unavailable locally.
 **Commit:** `1afb5328c3b1207c9e2065537ba92399e36b6738`.
-**Next action:** rerun the focused and full GitHub workflows; record results and close this checkpoint only after both pass.
+**Full workflow:** `42341599375` PASS, including the 712-question Chromium journey. The focused app workflow exposed one remaining selector-test locator mismatch in run `42341599465`.\n**Next action:** rerun the focused app workflow after the locator correction; if it passes, record both verified workflow runs and mark DONE.
+
+
+### Focused selector assertion · IN_PROGRESS
+
+**Correction:** test completion counts on the selector card rather than assuming the fixture's required section has an optional checkbox row.
+**Files:** `tests/app/test_runtime_layout.py`, `docs/CHANGELOG.md`.
+**Local checks:** Python syntax, catalog, screen, app-manifest, and diff checks PASS. Playwright remains unavailable locally.
+**Commit:** pending remote readback.
+**Next action:** inspect the focused app workflow triggered by this correction.
