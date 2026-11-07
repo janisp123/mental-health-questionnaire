@@ -9,22 +9,26 @@
 
 **Starting commit:** `b78a9c278bc4cb75ca5a39150f95f3d2e1139e85` on GitHub `develop`.
 
-1. [DONE] Make single-choice selection unmistakable before the delayed advance; preserve immediate Skip and duplicate-tap protection.
-2. [TODO] Produce one report: selected-question / completed / skipped counts at the top; answered items only; clearly separate user technical feedback after answers; preserve explicit safety-answer bolding.
-3. [TODO] Put entered name and surname at the upper-left of the printable report; if absent, leave writable name and date space there.
-4. [TODO] Replace the report wall and duplicate export actions with only Print / save PDF, Back to answers, and Select sections. Remove contact email from results and reviewer PDF; retain it in legal notice and feedback.
-5. [TODO] Explain the accuracy-review workflow in the in-app guide and reviewer PDF: skip acceptable questions, flag problematic ones and choose reasons, then prepare and return the PDF.
-6. [TODO] Run focused report, screen, and selection checks; run the full offline Chromium journey for shared runtime/report changes; refresh both Drive files and verify readback hashes.
-7. [TODO] Ask the user to verify Android selection visibility and Print / save PDF after the new build is in Drive.
+1. [DONE] Make single-choice selection unmistakable before delayed advance; preserve immediate Skip and duplicate-tap protection.
+2. [DONE] Put selected / completed / skipped counts at the top of the clinician report, omit skipped answers, place technical feedback after answers, and retain explicit safety-answer bolding.
+3. [DONE] Place name and surname at the report’s upper left if provided; show writable name/date lines when absent.
+4. [DONE] Keep the report screen to Print / save PDF, Back to answers, and Select sections; remove the contact email from results and the reviewer PDF while retaining it in the legal notice and project-feedback copy.
+5. [DONE] Explain the accuracy-review workflow in the Latvian, English, and Russian in-app guides and the Latvian reviewer PDF.
+6. [DONE] Run focused report/screen/selection checks and the full offline Chromium journey; refresh both Drive files in place and verify their readback hashes.
+7. [TODO] User check on Android Chrome: confirm the single-choice cue and Print / save PDF flow are clear on their device.
 
-**Workflow:** complete and record one batch at a time on `develop`; refresh the Google Drive HTML/PDF after each verified user-testable batch. Preserve the 48 source modules, 712 question IDs, recovery schema, and frozen references.
+**Workflow:** work in small verified batches on `develop`; refresh the Google Drive HTML/PDF after each user-testable batch. Preserve the 48 source modules, 712 question IDs, recovery schema, and frozen references.
 
 **Batch 1 — selection cue:** the selected radio renders checked with a stronger green card and a separate checkmark, then advances after about 1.3 seconds. Skip cancels the pending timer; duplicate taps are coalesced.
-**Checks:** app-component workflow `42361043110` PASS and full offline questionnaire workflow `42361043037` PASS on `cfb8f6868fc04a801339063faea79614861bd166`. Both were read from GitHub Actions; no local browser run is claimed.
-**Drive refresh:** replaced the HTML and one-page A4 Latvian reviewer PDF in place; their existing file IDs and links were preserved. Readback SHA-256 values match: HTML `5e4ee429be88e60d7a2e11b91d1384e1e096882ae103a1478bcecb5192749fa3`, PDF `38a2e723364211863f9a0aaa4c9907d7b1815e1709ec1d226c44d8a16263b0bf`. PDF was rendered and visually inspected.
-**Reviewer guide:** records source commit `cfb8f68`, describes the stronger selection cue, and no longer shows the contact email.
-**Metadata commits:** selection code `cfb8f6868fc04a801339063faea79614861bd166`; reviewer guide `4adfa43bb44f8a8c5ff7e2a92a966faea6a4ba04`, followed by email removal `3e1b5733816c6af0b9a57e782145be5a9a973368`.
-**Exact next action:** implement Batch 2 — the concise printable report and answer counts/name placement — in small reviewed steps, then run focused and full offline browser checks before refreshing Drive again.
+**Checks:** app-component workflow `42361043110` PASS and full offline questionnaire workflow `42361043037` PASS on `cfb8f6868fc04a801339063faea79614861bd166`.
+**Drive refresh:** replaced HTML and one-page A4 Latvian reviewer PDF in place, preserving their IDs. Readback hashes matched: HTML `5e4ee429be88e60d7a2e11b91d1384e1e096882ae103a1478bcecb5192749fa3`; PDF `38a2e723364211863f9a0aaa4c9907d7b1815e1709ec1d226c44d8a16263b0bf`. PDF rendered and visually inspected.
+**Reviewer guide:** records the build commit, describes the visible selection cue, and contains no contact email.
+
+**Batch 2 — concise report:** the report screen now exposes only Print / save PDF, Back to answers, and Select sections. Print output puts name/date lines and selected/completed/skipped counts at the top; skipped responses are omitted. Technical feedback appears after medical answers. Explicit configured bolding remains applied to designated safety answers. The visible results page has no project contact email; project-feedback copy retains the project contact.
+**Accuracy-review instructions:** in-app guides in LV/EN/RU and the Latvian reviewer PDF tell reviewers to skip acceptable questions, flag unclear or incorrect items, choose a reason, then print/save and return the PDF. The reviewer PDF states that skipped responses are omitted and that technical feedback is separated after answers.
+**Checks:** report/component checks and syntax/locale checks passed. Full offline Chromium workflow `42365207780` PASS after correcting a stale test assertion: the test opened the app in English but compared Latvian labels. Full workflow `42365507785` PASS on source/test commit `3e7e1f402d7d396477fe70f99fa8698075eeffe7`; it verified the report and all three accuracy-guide translations. App-component workflow `42365400460` PASS.
+**Drive refresh:** replaced the existing HTML and PDF in place, preserving IDs. Readback SHA-256 values match: HTML `57101a80db86081f6e44d158cdf6b80519ec15796bb85c86ca4916c37086652e`; PDF `60bb9aeec4a12735999d96daf90db246559da4ee7c74b96b40fce7d9624c8333`. The PDF was rendered and visually inspected as a clean one-page A4 document.
+**Exact next action:** ask the user to check the updated build on Android Chrome and report any layout or interaction issue. External human and clinical reviews remain outstanding.
 
 ## 2026-11-07 · QUESTION-ANSWER-CLARITY · IN_PROGRESS
 
