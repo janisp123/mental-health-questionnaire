@@ -30,9 +30,13 @@ def qid(page):
 
 
 def choose(page, code):
+    option = page.locator(f'input[name="answer"][value="{code}"]')
+    if option.get_attribute("type") == "checkbox":
+        option.locator("..").click()
+        return
     # Single-choice answers remain visible for one second before saving and advancing.
     before = qid(page)
-    page.locator(f'input[name="answer"][value="{code}"]').locator("..").click()
+    option.locator("..").click()
     page.wait_for_function(
         "before => document.querySelector('.question')?.dataset.question !== before || "
         "document.querySelector('[data-act=\\\"continueWithoutSaving\\\"]')",
