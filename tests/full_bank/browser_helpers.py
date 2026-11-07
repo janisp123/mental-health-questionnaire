@@ -30,9 +30,15 @@ def qid(page):
 
 
 def choose(page, code):
-    # The app deliberately ignores rapid taps for 500 ms to prevent double answers.
-    page.wait_for_timeout(520)
+    # Single-choice answers remain visible for one second before saving and advancing.
+    before = qid(page)
     page.locator(f'input[name="answer"][value="{code}"]').locator("..").click()
+    page.wait_for_function(
+        "before => document.querySelector('.question')?.dataset.question !== before || "
+        "document.querySelector('[data-act=\\\"continueWithoutSaving\\\"]')",
+        arg=before,
+        timeout=2500,
+    )
     continue_button = page.locator('[data-act="continueWithoutSaving"]:visible')
     if continue_button.count():
         continue_button.click()

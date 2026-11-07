@@ -6,7 +6,7 @@ root.QuestionnaireEvents = {
   app.addEventListener("click",event=>{
    const choice=event.target.closest(".choice");
    const radio=choice?.querySelector('input[name="answer"][type="radio"]');
-   if(radio){event.preventDefault();if(event.detail<=1)handlers.singleAnswer(radio.value);return;}
+   if(radio){if(event.detail<=1)handlers.singleAnswer(radio.value);return;}
    const element=event.target.closest("[data-act]");if(!element)return;
    event.preventDefault();
    if(element.dataset.act==="addMedicine"||element.dataset.act==="removeMedicine"){

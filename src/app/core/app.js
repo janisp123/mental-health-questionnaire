@@ -7,7 +7,7 @@ const model=window.QuestionnaireModel.create(data);
 const flow=window.QuestionnaireFlow;
 const {groups,optionalIds,byId,all}=model;
 // Registry display order is independent of frozen source order.
-let answerLockUntil=0;
+let pendingSingleAnswer=null;
 const app=document.getElementById("app");
 const report=window.QuestionnaireReports;
 let state={lang:"lv",screen:"start",currentId:null,answers:{},feedback:{},feedbackOpen:false,selected:[],sectionDraft:[],sectionConfirmed:false,pendingSectionEnd:null,notice:"",draft:null};
@@ -139,7 +139,8 @@ function render(){
  app.innerHTML='<main>'+header()+supportCard()+(state.notice?'<p role="status" class="notice">'+esc(state.notice)+'</p>':"")+body+(state.screen==="sectionComplete"?"":footer())+navigation()+'</main>';
  if(state.focusSupport||keepSupportFocus){document.getElementById('support-message')?.focus({preventScroll:true});state.focusSupport=false;}
 }
-function setQuestion(id){state.currentId=id;state.pendingSectionEnd=null;state.draft=null;state.feedbackOpen=false;state.screen="question";state.notice="";render();window.scrollTo(0,0);}
+function clearPendingSingleAnswer(){if(pendingSingleAnswer)clearTimeout(pendingSingleAnswer.timer);pendingSingleAnswer=null;}
+function setQuestion(id){clearPendingSingleAnswer();state.currentId=id;state.pendingSectionEnd=null;state.draft=null;state.feedbackOpen=false;state.screen="question";state.notice="";render();window.scrollTo(0,0);}
 function advance(){
  const destination=flow.next(state,active());
  if(destination.id){setQuestion(destination.id);return;}
@@ -190,6 +191,7 @@ function save(){
  advanceAfterSave();
 }
 function skip(){
+ clearPendingSingleAnswer();
  const q=current();if(!q||!canSkip(q))return;
  state.answers[q.id]={kind:"skip",savedAt:new Date().toISOString(),status:"skipped"};
  advanceAfterSave();
@@ -288,6 +290,7 @@ async function copyText(text,sourceId="reportText"){
  if(target)target.textContent=state.notice;else{const p=document.createElement("p");p.role="status";p.className="notice";p.textContent=state.notice;app.querySelector("header").after(p);}
 }
 function action(key){
+ if(["skip","previous","skipSection","end","sections","results","doctor","resultScreen","back","reviewSafety","new","feedbackContinue"].includes(key))clearPendingSingleAnswer();
  const q=reportQuestions(),u=ui();
  if(key==="support"){state.support="support";state.focusSupport=true;render();window.scrollTo(0,0);return;}
  if(key==="dismissSupport"){state.support=null;render();return;}
@@ -346,9 +349,17 @@ function action(key){
  }
 }
 function singleAnswer(code){
- const q=current();if(!q||q.multi||q.type==="shortText"||performance.now()<answerLockUntil)return;
- answerLockUntil=performance.now()+500;
- state.draft={forId:q.id,codes:[code]};save();
+ const q=current();if(!q||q.multi||q.type==="shortText")return;
+ if(pendingSingleAnswer?.id===q.id&&pendingSingleAnswer.code===code)return;
+ clearPendingSingleAnswer();
+ state.draft={forId:q.id,codes:[code]};
+ const pending={id:q.id,code,timer:null};
+ pending.timer=setTimeout(()=>{
+  if(pendingSingleAnswer!==pending||current()?.id!==pending.id)return;
+  pendingSingleAnswer=null;
+  save();
+ },1000);
+ pendingSingleAnswer=pending;
 }
 window.QuestionnaireEvents.bind(app,{
  singleAnswer,action,

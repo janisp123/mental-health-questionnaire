@@ -45,6 +45,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     act(page, "save")
     assert qid(page) == "M23_01"
     page.locator('input[name="answer"][value="B"]').locator("..").dblclick(delay=40)
+    page.wait_for_function("document.querySelector('.question')?.dataset.question === 'M23_02'", timeout=2500)
     assert qid(page) == "M23_02"
     assert backup(page)["answers"]["M23_01"]["codes"] == ["B"]
 

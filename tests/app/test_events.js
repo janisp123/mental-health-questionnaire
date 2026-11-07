@@ -17,7 +17,7 @@ function target({id="",name="",value="",dataset={},attrs=[],files=[]}={}){
 }
 const radio=target({value:"B"}),choice={querySelector:()=>radio};
 const single=target();single.closest=selector=>selector===".choice"?choice:null;
-assert(emit("click",single),"prevents native radio navigation");
+assert(!emit("click",single),"allows the browser to show the native radio selection");
 assert(calls[0].join("|")==="single|B","delegates one-tap answers");
 const add=target({dataset:{act:"addMedicine",medRemove:"2"}});add.closest=selector=>selector==="[data-act]"?add:null;
 emit("click",add);assert(calls[1].join("|")==="medicine|addMedicine|2","delegates medicine actions");

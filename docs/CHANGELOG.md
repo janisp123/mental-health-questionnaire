@@ -10,7 +10,7 @@
 **Starting commit:** `50b3f7ca6162c65b870a26702c638a1f31fd7dd0` on `develop`.
 
 1. [DONE] Add localized per-question instructions for multiple-choice questions, using the original `maxChoices` value where defined and otherwise saying multiple answers are allowed.
-2. [TODO] Keep a single-choice answer visibly selected for one second before saving and advancing. Preserve Skip and ensure a pending timer cannot overwrite a later action. Verify with a focused browser case.
+2. [IN_PROGRESS] Keep a single-choice answer visibly selected for one second before saving and advancing. Preserve Skip and ensure a pending timer cannot overwrite a later action. Verify with focused and full-bank browser checks.
 
 **Workflow:** verify and record each task separately, then rebuild and refresh the Drive HTML/PDF after each completed task so the user can test that checkpoint.
 
@@ -20,7 +20,13 @@
 **GitHub commits:** feature `e57b866aae511658b94d478f1b2e4e554a94d5eb`; test corrections `379a7b86585193c4f51dfe8b54bde0697d4a17ab`, `21c1d2650fec887d60209839a609801c08ca075d`, `cee47ce3e3e5f7de740dbd9f2b3045ef7816f85d`.
 **Drive refresh:** replaced the current HTML and PDF in place, preserving their file IDs. HTML SHA-256 `5f97ae67e6099776ae6aa48e13cf9a9464903814c208d0c3334e43638ed2476c`; PDF SHA-256 `791cb6deb85b5b32ea600044a6aa4ce3cf5a4e11660e250bcfa0b7eba2df5e46`. Downloaded Drive readbacks match both local hashes.
 **Manifest/README:** updated source commit to `cee47ce3e3e5f7de740dbd9f2b3045ef7816f85d` and recorded current artifact checksums; reviewer PDF now describes the multiple-answer guidance.
-**Next action:** start task 2, then refresh Drive again after its browser verification.
+**Metadata Git commit:** `035d5bcae48e66e0094f0f814973938532373953`.
+**Next action:** finish task 2, run the focused and full-bank browser checks, then rebuild and refresh Drive.
+
+**Task 2 checkpoint — visible single-choice selection:** implementation started from `035d5bcae48e66e0094f0f814973938532373953` on `develop`. The selected radio is now left native and highlighted for one second before saving and advancing. Skip/navigation cancels a pending timer; duplicate click/change events for the same choice are coalesced.
+**Tests added/updated:** focused browser case checks immediate highlight, no early advance, one-second advance, and Skip winning over a pending answer; full-bank helper now waits for the delayed transition and keeps the double-tap case.
+**Local checks:** event, answer-flow, app-build-manifest, locale-catalog, screen-renderer, JavaScript/Python syntax, and `git diff --check` PASS. Local Chromium is unavailable, so browser tests remain pending in GitHub Actions.
+**Exact next action:** commit this implementation to `develop`, wait for focused and full-bank Chromium workflows, fix any failures, and refresh the HTML/PDF after both pass.
 
 ## 2026-11-07 · SECTION-END-SAVE-PROMPT · DONE
 
