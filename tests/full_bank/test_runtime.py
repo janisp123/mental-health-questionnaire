@@ -49,6 +49,25 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert "Я не знаю / Я не уверен" not in first_section_russian
     assert "Я не уверен." not in first_section_russian
 
+    s01_questions = [q for q in questions if q["module"] == "S01"]
+    assert len(s01_questions) == 61
+    assert question_by_id["M01_09"]["translations"]["en"]["choices"]["B"] == "More than 24 hours ago, but no more than 1 month ago"
+    assert question_by_id["M01_17"]["translations"]["en"]["choices"]["M"] == "I have no diagnosis from this list."
+    assert question_by_id["M01_17"]["translations"]["ru"]["choices"]["G"] == "Расстройство аутистического спектра"
+    assert question_by_id["M01_25"]["translations"]["ru"]["title"] == "Почему завершился последний курс такой помощи?"
+    assert question_by_id["M14_17"]["translations"]["ru"]["title"] == "Как часто за последние 4 недели вы пропускали запланированный приём дозы регулярно принимаемого лекарства?"
+    assert question_by_id["M14_18"]["translations"]["ru"]["choices"]["E"] == "Не чувствовал(а) необходимости или сомневался(ась) в пользе."
+    assert question_by_id["M30_13"]["translations"]["ru"]["title"] == "Появились ли у вас внезапно прямо сейчас или только что слабость в лице или руке, нарушение речи либо выраженная потеря зрения?"
+    assert question_by_id["M30_17"]["translations"]["en"]["time"].startswith("The past 28 days. New or worsening difficulties")
+    assert question_by_id["M30_20"]["translations"]["ru"]["choices"]["C"] == "Более 24 часов назад, но не более месяца назад"
+    assert question_by_id["M30_25"]["translations"]["en"]["title"] == "Is the person now barely moving or not speaking, staying frozen for a long time, or unable to take in fluids, with these symptoms starting suddenly?"
+    s01_russian_answers = [
+        answer for q in s01_questions
+        for answer in q["translations"]["ru"].get("choices", {}).values()
+    ]
+    assert "Я не знаю / Я не уверен" not in s01_russian_answers
+    assert "Я не уверен." not in s01_russian_answers
+
     # Start opens a short section picker; select-all chooses every group and continues.
     page.locator('[data-act="start"]').click()
     assert page.locator(".question-nav").count() == 0
