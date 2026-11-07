@@ -586,12 +586,13 @@
         "sha256": "57101a80db86081f6e44d158cdf6b80519ec15796bb85c86ca4916c37086652e"
       },
       {
-        "name": "188_README_LV_v0.2.0_REVIEW_BUILD.pdf",
-        "sha256": "60bb9aeec4a12735999d96daf90db246559da4ee7c74b96b40fce7d9624c8333"
+        "name": "188_README_LV_EN_RU_v0.2.0_REVIEW_BUILD.pdf",
+        "sha256": "9c3cd316081dfa830e71be4de4d33172e1ecf3aad6f8c1a5cfbd7d8f4cc5a5d6"
       }
     ],
     "source_modules": 48,
     "sections": 15,
-    "questions": 712
+    "questions": 712,
+    "source_readme": "docs/review/README_LV_EN_RU_v0.2.0.md"
   }
 }
