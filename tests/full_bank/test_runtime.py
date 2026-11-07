@@ -49,6 +49,29 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert "Я не знаю / Я не уверен" not in first_section_russian
     assert "Я не уверен." not in first_section_russian
 
+    # S13: translation parity covers all 70 questions; key safety, caregiver and bullying wording is exact.
+    s13_questions = [q for q in questions if q["module"] == "S13"]
+    assert len(s13_questions) == 70
+    s13_russian = [
+        text for q in s13_questions
+        for text in q["translations"]["ru"].get("choices", {}).values()
+    ]
+    assert "Я не знаю / Я не уверен" not in s13_russian
+    assert question_by_id["M31_08"]["translations"]["en"]["title"] == "Have you felt unable to continue caring without additional help?"
+    assert "без дополнительной помощи" in question_by_id["M31_08"]["translations"]["ru"]["title"]
+    assert "чтобы наказать или принудить" in question_by_id["M31_17"]["translations"]["ru"]["choices"]["G"]
+    assert "медицинская помощь" not in question_by_id["M31_17"]["translations"]["ru"]["title"]
+    assert question_by_id["M31_20"]["translations"]["ru"]["title"].startswith("Если вы задумывались")
+    assert question_by_id["M32_26"]["translations"]["en"]["choices"]["B"] == "More than 24 hours ago, but no more than 1 month ago"
+    assert question_by_id["M32_26"]["translations"]["ru"]["choices"]["B"] == "Более 24 часов назад, но не более месяца назад"
+    assert "учебном заведении" in question_by_id["M32_35"]["translations"]["ru"]["title"]
+    assert question_by_id["M32_36"]["translations"]["ru"]["title"] == "С какими действиями в свой адрес вы сталкивались?"
+    assert "со стороны другого человека?" in question_by_id["M32_39"]["translations"]["ru"]["title"]
+    assert question_by_id["M32_40"]["translations"]["ru"]["title"] == "Кто так с вами обращался?"
+    assert "За последние 6 месяцев" in question_by_id["M32_41"]["translations"]["ru"]["title"]
+    assert question_by_id["M32_45"]["translations"]["ru"]["title"].startswith("Видели ли вы")
+    assert "отстранением от учебы" not in question_by_id["M32_46"]["translations"]["ru"]["title"]
+
     s01_questions = [q for q in questions if q["module"] == "S01"]
     assert len(s01_questions) == 61
     assert question_by_id["M01_09"]["translations"]["en"]["choices"]["B"] == "More than 24 hours ago, but no more than 1 month ago"

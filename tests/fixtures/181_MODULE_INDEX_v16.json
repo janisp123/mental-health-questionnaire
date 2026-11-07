@@ -218,14 +218,14 @@
       "section": 31,
       "name": "182_MODULE_31_LV_EN_RU_v16.json",
       "question_count": 20,
-      "sha256": "544f60ec4ff51d4523776b68e636f2624c44a78a5f5ee4e4d877661ce1cb765f",
+      "sha256": "f2c444d21053e610a6712483add8f003f13c27d1edacc0cec1d2bf4e142cb2f1",
       "first_id": "M31_09"
     },
     {
       "section": 32,
       "name": "182_MODULE_32_LV_EN_RU_v16.json",
       "question_count": 50,
-      "sha256": "d054dc961e6c3ac7ab2feddc95810c35bf2b4bfbc7657389490b193503529820",
+      "sha256": "adf3dae5268b57dc1efb7e7be256f9db58dc6ae211caea28619503ff83315a36",
       "first_id": "M32_01"
     },
     {
