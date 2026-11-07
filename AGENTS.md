@@ -23,6 +23,14 @@ These rules apply to future development work in this repository, particularly lo
 - EN and RU translations remain drafts until human review and release-gate requirements are satisfied.
 - Do not claim an untested feature, translation or release passed verification.
 
+## Review package and document output
+
+- Choose document formats for the intended reader and delivery channel; do not assume a file called `README` should be Markdown.
+- A professional-review package contains the self-contained questionnaire HTML and a concise, readable PDF guide. Keep editable Markdown source in the repository or private project documentation; do not put it in the reviewer folder unless requested.
+- Before sharing a PDF, render it and inspect the page visually at normal reading size. Check that text is legible, page breaks are clean, and the instructions match the current build and button labels.
+- Keep the reviewer folder limited to the current files intended for reviewers. After replacing a deliverable, verify the folder contents and update its current-state/archive index so filenames and formats agree.
+- Clearly label technical review status and limitations. Never imply clinical validation, human translation review, or device testing that has not happened.
+
 ## Keep each work session focused
 
 - Read the active changelog checkpoint with `tail` or a narrow line range. Search older history with `rg` only when the current task depends on it. Preserve the existing task ID and exact next action in handoffs.
