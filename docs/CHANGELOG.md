@@ -128,33 +128,15 @@
 **Next action:** use the live-branch check before future push/status reports.
 
 
-## 2026-11-07 · UI-CLARITY-PRIVACY-SUPPORT · IN_PROGRESS
+
+## 2026-11-07 · UI-CLARITY-PRIVACY-SUPPORT · DONE
 
 **Starting commit:** `ef4f0fc947cbd4fe9a0b5f5c00cbc0361402456a` on GitHub `develop`.
-**Change:** removed the guided section-picker path and the non-clickable progress-chip list from the footer; kept section completion counts in the section picker. Clarified save-file privacy and technical-review status in LV/EN/RU. Replaced stale patch history with a Riga timestamp and concise change categories. Updated 116123 to an unspaced six-digit number, added careful anonymity/confidentiality wording and the phone-log caveat, and corrected the dial link to `tel:116123`. Added a repository rule to keep future localized change notes current.
+**Change:** removed the guided picker and the non-clickable footer progress chips, retaining completion counts in section selection. Rewrote privacy/review-status text in LV/EN/RU, replaced stale version history with the Riga last-change timestamp and brief categories, clarified the 116123 six-digit number and anonymity/confidentiality limits, and fixed its dial link to `tel:116123`. Added a repository rule to keep future localized change timestamps current.
 
 **Files:** `AGENTS.md`, `src/app/core/app.js`, `src/app/screens/start.js`, `src/app/screens/section-selector.js`, `src/app/styles/base.css`, `src/app/i18n/ui.lv.json`, `src/app/i18n/ui.en.json`, `src/app/i18n/ui.ru.json`, `tests/app/test_screens.js`, `tests/app/test_runtime_layout.py`, `tests/app/test_ui_catalogs.py`, `tests/full_bank/test_runtime.py`, `docs/CHANGELOG.md`.
-**Local checks:** app source manifest, catalog structure/content, isolated screens/model/flow/recovery/events, full source integrity, all 48 modules/712 IDs and order, build/layout/report audits, full offline HTML build, JS syntax, and `git diff --check` PASS. Build SHA-256: `46417a3a2a6d4972cf30e6e26201597d1ea7ef4e14c39baeb39ba73a0b80b6e5`.
-**Not run locally:** the two Playwright browser checks; Playwright is not installed in this workspace. GitHub CI is the browser verification gate. No Android-device or human translation/clinical review was performed.
-**Commit:** `40637a3188905c6e139c9e698d040c4e3304ff1e` (source and tests).
-**Initial GitHub CI:** focused app run `42341394945` failed because the required fixture section is rendered as plain text, not a `.module-choice` row. Full run `42341394954` reached the browser support check and failed only on a brittle Latvian wording assertion. The full workflow then passed as run `42341599375` after removing that wording assertion; source, report, and build checks passed in both runs.
-**Next action:** inspect both workflow results; resolve any failure, then record verified outcomes and mark DONE.
-
-
-### Browser assertion correction · IN_PROGRESS
-
-**Finding:** the synthetic fixture only has a required section, which the picker renders as text rather than a `.module-choice` checkbox row. The browser test now scans the picker text for a visible completion count. The full-browser support copy is checked for the six-digit number without spaces; localized wording is checked in the catalog test.
-**Change:** corrected the focused layout assertion, strengthened LV/EN/RU catalog assertions for six digits, confidentiality, privacy-file handling, and review status, and kept the full-bank browser assertion focused on visible `116123` formatting/link behavior.
-**Files:** `tests/app/test_runtime_layout.py`, `tests/app/test_ui_catalogs.py`, `tests/full_bank/test_runtime.py`, `docs/CHANGELOG.md`.
-**Local checks:** updated catalog, screen-renderer, source-manifest and Python syntax checks PASS; Playwright remains unavailable locally.
-**Commit:** `1afb5328c3b1207c9e2065537ba92399e36b6738`.
-**Full workflow:** `42341599375` PASS, including the 712-question Chromium journey. The focused app workflow exposed one remaining selector-test locator mismatch in run `42341599465`.\n**Next action:** rerun the focused app workflow after the locator correction; if it passes, record both verified workflow runs and mark DONE.
-
-
-### Focused selector assertion · IN_PROGRESS
-
-**Correction:** test completion counts on the selector card rather than assuming the fixture's required section has an optional checkbox row.
-**Files:** `tests/app/test_runtime_layout.py`, `docs/CHANGELOG.md`.
-**Local checks:** Python syntax, catalog, screen, app-manifest, and diff checks PASS. Playwright remains unavailable locally.
-**Commit:** `3449505000586957ea8e7dbabc48ab7d8f9866cb`.
-**CI:** the focused app workflow is expected for this test-path change; its run ID/result will be recorded after GitHub publishes it.\n**Next action:** inspect the focused app workflow for this commit; fix any failure and record the verified result.
+**Local verification:** app manifest/catalog/screen/model/flow/recovery/event tests, source-integrity audit (48 modules/712 IDs), module titles/conditions, full-bank layout/report checks, full offline HTML build, JS/Python syntax, and `git diff --check` PASS. Built HTML SHA-256: `46417a3a2a6d4972cf30e6e26201597d1ea7ef4e14c39baeb39ba73a0b80b6e5`.
+**Browser verification:** local Playwright unavailable. GitHub focused app workflow `42341713103` PASS on selector-test fix `3449505000586957ea8e7dbabc48ab7d8f9866cb`; full questionnaire workflow `42341599375` PASS on `1afb5328c3b1207c9e2065537ba92399e36b6738`, including the full offline 712-question Chromium journey. Initial runs `42341394945` and `42341394954` failed only on newly added brittle assertions; both were corrected and rerun successfully.
+**Implementation commits:** `40637a3188905c6e139c9e698d040c4e3304ff1e`, `1afb5328c3b1207c9e2065537ba92399e36b6738`, `3449505000586957ea8e7dbabc48ab7d8f9866cb`.
+**Limitations:** Android-device use and human EN/RU, interface, and clinical review remain outstanding. The wording does not promise absolute anonymity; call history or a phone bill may show the call.
+**Next action:** compile the next review build from GitHub `develop`; do not use the old Drive HTML. Human and Android checks remain separate review steps.
