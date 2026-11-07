@@ -554,7 +554,7 @@
     },
     {
       "path": "tests/fixtures/181_MODULE_INDEX_v16.json",
-      "git_blob_sha1": "4b500aa7d5d7169cd929b808fc8a1e80e4b80eaf",
+      "git_blob_sha1": "d66b11bc458246438d3292cf7fd127d9a44029c1",
       "bytes": 11906,
       "role": "reference-test-data"
     },
