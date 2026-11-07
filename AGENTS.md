@@ -16,6 +16,8 @@ These rules apply to future development work in this repository, particularly lo
 ## Development safety and source of truth
 
 - Work on `develop`, not `main`, unless an approved release is being published.
+- Before reporting branch status or pushing, verify the live GitHub target branch through the authenticated GitHub connection or a successful fetch. Treat local `origin/<branch>` as current only after a successful fetch; if remote state cannot be verified, say so instead of estimating which commits need pushing.
+- After a GitHub API or CLI update, read back the target branch/files and report the verified remote commit. A failed CLI push does not by itself mean the connected GitHub integration cannot write.
 - Before significant edits, inspect the relevant parts of `docs/FILE_INDEX.md`, `project-manifest.json`, and the active entry at the end of `docs/CHANGELOG.md`. Do not load or print those whole files by default.
 - Work on one module and language at a time wherever possible. Preserve original IDs, answer codes, validation logic and backup compatibility.
 - Do not silently modify the public Google Drive Latvian release, the frozen v16 reference baselines, or the original Drive archive.
