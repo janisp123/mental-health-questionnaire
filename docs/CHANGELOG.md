@@ -41,8 +41,8 @@
 | 2 | S01 — Health history, medicines and memory | 61 | DONE |
 | 3 | S09 — Sleep, fatigue and pain | 50 | DONE |
 | 4 | S06 — Attention, learning and development | 43 | DONE |
-| 5 | S10 — Alcohol, nicotine and other substances | 37 | IN_PROGRESS |
-| 6 | S13 — Family, social context and caregiving | 70 | TODO |
+| 5 | S10 — Alcohol, nicotine and other substances | 37 | DONE |
+| 6 | S13 — Family, social context and caregiving | 70 | IN_PROGRESS |
 | 7 | S12 — Relationships and emotional patterns | 42 | TODO |
 | 8 | S14 — Eating, appearance and health concerns | 49 | TODO |
 | 9 | S15 — Sexuality and reproductive health | 47 | TODO |
@@ -65,7 +65,11 @@
 **Checks:** full offline Chromium workflow `42371371509` PASS on source commit `60921b9cd256a3fb76a57beb58d26f7b54dea6e1`. It rebuilt and exercised all 712 questions; S06-specific assertions cover all 43 questions and key corrected strings. The generated HTML was checked for the corrections.
 **Distribution:** refreshed the existing Drive technical-review HTML in place and verified read-back SHA-256 `e6469902184583c123f5c2d6a5654c1d3729adeae123320e519f57ac50574dba`. The trilingual PDF remains unchanged from the refreshed S01 copy, SHA-256 `8613fd1ce73767ada568d464541862a0f5398f048840f6e6e281bda98b7851d0`.
 **Audit build checkpoint:** `60921b9cd256a3fb76a57beb58d26f7b54dea6e1`; S11, S01, S09, and S06 are verified and distributed.
-**Exact next action:** begin S10 — Alcohol, nicotine and other substances (37 questions). Continue in section order only after the source/index checks, full CI, and built-section inspection pass. External human and clinical reviews remain outstanding.
+**Translation audit — Section S10:** reviewed all 37 questions and answer options in source module 15. Corrected EN/RU meaning and grammar for “none” options, lifetime wording, alcohol-use frequency, use outside medical instructions, and the distinction between general substances and narcotics. Fixed the repeated “occasion” wording and the “for other substances” answer fragments. Standardized Russian uncertainty options. Latvian text, question IDs, answer codes, and conditions were preserved; EN/RU option-code sets match Latvian.
+**Checks:** full offline Chromium workflow `42371760581` PASS on source commit `3e024abc12c040a1024690f66c817c9d7e2b76fc`. It rebuilt and exercised all 712 questions; S10-specific assertions cover all 37 questions and key corrected strings. The generated HTML was checked for the corrections.
+**Distribution:** refreshed the existing Drive technical-review HTML in place and verified read-back SHA-256 `31d49bc94a520e15e9d2d638e5b4e66f9a4189a00504c6cb42340ed08221f927`. The trilingual PDF remains unchanged from the refreshed S01 copy, SHA-256 `8613fd1ce73767ada568d464541862a0f5398f048840f6e6e281bda98b7851d0`.
+**Audit build checkpoint:** `3e024abc12c040a1024690f66c817c9d7e2b76fc`; S11, S01, S09, S06, and S10 are verified and distributed.
+**Exact next action:** begin S13 — Family, social context and caregiving (70 questions). Continue in section order only after the source/index checks, full CI, and built-section inspection pass. External human and clinical reviews remain outstanding.
 
 ## 2026-11-07 · QUESTION-ANSWER-CLARITY · IN_PROGRESS
 
