@@ -78,21 +78,21 @@
       "section": 11,
       "name": "182_MODULE_11_LV_EN_RU_v16.json",
       "question_count": 17,
-      "sha256": "0692e8462d68eaaeabb417685a15e7bbe2f0acb355e2d42df543bfecd627766a",
+      "sha256": "a35abacc469c3f56139b8d653235c09bade58c622a9d6240bae173923097e9ca",
       "first_id": "M11_01"
     },
     {
       "section": 12,
       "name": "182_MODULE_12_LV_EN_RU_v16.json",
       "question_count": 15,
-      "sha256": "5d3e231efd47aa1796e872afde99603c9ed373823e522bcad99039a308c641b5",
+      "sha256": "e5b496f23e654630270d817cf89ca98cfe5b9bce948015f813834924689c28d0",
       "first_id": "M12_01"
     },
     {
       "section": 13,
       "name": "182_MODULE_13_LV_EN_RU_v16.json",
       "question_count": 18,
-      "sha256": "d8b84cf699a8d883ee6438dc7c4cdf1e689e9992785a3ff01d4af3225a550d14",
+      "sha256": "f170fea46523a7753a959e673c027992782beaa8ad14629a7dac7d8097cff6f1",
       "first_id": "M13_01"
     },
     {

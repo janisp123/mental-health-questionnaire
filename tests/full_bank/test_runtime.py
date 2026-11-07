@@ -62,6 +62,22 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert question_by_id["M30_17"]["translations"]["en"]["time"] == "The past 28 days. New or worsening difficulties with hand movements should be assessed by a doctor. Sudden weakness, speech or vision changes require emergency help (112 or your local emergency number); do not wait to finish."
     assert question_by_id["M30_20"]["translations"]["ru"]["choices"]["C"] == "Более 24 часов назад, но не более месяца назад"
     assert question_by_id["M30_25"]["translations"]["en"]["title"] == "Is the person now barely moving or not speaking, staying frozen for a long time, or unable to take in fluids, with these symptoms starting suddenly?"
+
+    s09_questions = [q for q in questions if q["module"] == "S09"]
+    assert len(s09_questions) == 50
+    assert question_by_id["M11_17"]["translations"]["en"]["title"] == "On work or study days compared with days off, does your usual sleep onset or wake-up time differ by more than two hours?"
+    assert question_by_id["M11_17"]["translations"]["ru"]["title"] == "Обычно ли время, когда вы засыпаете или просыпаетесь, отличается более чем на два часа в рабочие или учебные дни по сравнению с выходными?"
+    assert question_by_id["M12_11"]["translations"]["en"]["choices"]["B"] == "More than 24 hours ago, but no more than 1 month ago"
+    assert question_by_id["M12_11"]["translations"]["ru"]["choices"]["B"] == "Более 24 часов назад, но не более 1 месяца назад"
+    assert question_by_id["M13_10"]["translations"]["en"]["time"] == "At any point in your life."
+    assert question_by_id["M13_10"]["translations"]["ru"]["time"] == "Когда-либо в жизни."
+    assert question_by_id["M13_15"]["translations"]["ru"]["choices"]["F"] == "По-разному / не знаю"
+    s09_russian_answers = [
+        answer for q in s09_questions
+        for answer in q["translations"]["ru"].get("choices", {}).values()
+    ]
+    assert "Я не знаю / Я не уверен" not in s09_russian_answers
+    assert "Я не уверен." not in s09_russian_answers
     s01_russian_answers = [
         answer for q in s01_questions
         for answer in q["translations"]["ru"].get("choices", {}).values()

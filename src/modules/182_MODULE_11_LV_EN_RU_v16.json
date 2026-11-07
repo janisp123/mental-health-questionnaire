@@ -697,7 +697,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -767,7 +767,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -919,7 +919,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -1077,7 +1077,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -1229,7 +1229,7 @@
         }
       },
       "en": {
-        "title": "Does your sleep onset or wake-up time usually differ by more than two hours on weekdays or school days and weekends?",
+        "title": "On work or study days compared with days off, does your usual sleep onset or wake-up time differ by more than two hours?",
         "time": "The past 28 days.",
         "choices": {
           "A": "No",
@@ -1239,7 +1239,7 @@
         }
       },
       "ru": {
-        "title": "Ваше время засыпания или пробуждения обычно отличается более чем на два часа в будние дни, а также в школьные дни и выходные?",
+        "title": "Обычно ли время, когда вы засыпаете или просыпаетесь, отличается более чем на два часа в рабочие или учебные дни по сравнению с выходными?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Нет",
@@ -1293,7 +1293,7 @@
         }
       },
       "en": {
-        "title": "Do you sleep significantly better at a time that suits you, freely chosen by you, than at a time required by work or studies?",
+        "title": "Do you sleep significantly better when you can choose your own sleep schedule than when work or studies determine it?",
         "time": "The past 28 days.",
         "choices": {
           "A": "No",
@@ -1303,7 +1303,7 @@
         }
       },
       "ru": {
-        "title": "Вы спите значительно лучше в удобное для вас, свободно выбранное вами время, чем в то время, которое требуется для работы или учебы?",
+        "title": "Спите ли вы значительно лучше, когда можете сами выбирать время сна, чем когда его определяют работа или учёба?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Нет",
