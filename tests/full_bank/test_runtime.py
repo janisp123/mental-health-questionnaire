@@ -71,6 +71,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert question_by_id["M12_11"]["translations"]["ru"]["choices"]["B"] == "Более 24 часов назад, но не более 1 месяца назад"
     assert question_by_id["M13_10"]["translations"]["en"]["time"] == "At any point in your life."
     assert question_by_id["M13_10"]["translations"]["ru"]["time"] == "Когда-либо в жизни."
+    assert question_by_id["M13_10"]["translations"]["ru"]["choices"]["C"] == "Не знаю / трудно сказать."
     assert question_by_id["M13_15"]["translations"]["ru"]["choices"]["F"] == "По-разному / не знаю"
     s09_russian_answers = [
         answer for q in s09_questions
