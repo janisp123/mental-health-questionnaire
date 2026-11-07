@@ -19,6 +19,16 @@
 
 **Next action:** user-facing Android check if desired; no Google Drive copy was updated.
 
+## 2026-11-07 · SECTION-SAVE-DRIVE-REFRESH · DONE
+
+**Source:** verified application code commit `706f335e7ca3de752db306b138fcb89c0a68a5f7` on `develop`.
+**Change:** updated the Drive HTML and matching Latvian PDF in place for testing. The PDF now describes the end-of-section save choices and identifies the matching source commit. Added a standing rule to refresh the Drive test files after every verified batch intended for user testing.
+**Files:** `AGENTS.md`, `docs/review/README_LV_v0.2.0.md`, `project-manifest.json`, `docs/CHANGELOG.md`, Google Drive review candidate.
+**Artifacts:** HTML SHA-256 `65fc98d91471bea56bffe21d7f8e839822a7749da59a675f2949835dccdb7b32`; PDF SHA-256 `b62fa740bb39307816f8232f0abaa0500f2a79fa86ba4d1afdaf456ccf9ccd3e`.
+**Verification:** PDF rendered and visually inspected as one A4 page; Drive file bytes and hashes read back after replacement. App behavior checks remain those recorded for the source commit above.
+**Git commit:** `247c503695fd59e96c33619433be59ff92375838` (artifact metadata, review PDF source, and automatic Drive-refresh handoff rule).
+**Next action:** continue Android and human review; refresh Drive after each future verified testing batch.
+
 ## 2026-11-06 · FULL-GIT-REVIEW-CANDIDATE · PREPARED
 
 **Source:** GitHub `develop` application and question sources, commit `7e236310e4b57ceb7f2e9e8e3e8988387e6c1814` (48 modules, 712 questions). Manifest checkpoint `af284d880efeb0032e4ad4391e43aa6d33d992d4`.
