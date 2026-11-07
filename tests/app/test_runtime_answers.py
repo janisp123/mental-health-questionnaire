@@ -33,7 +33,8 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     page.locator('input[name="answer"][value="A"]').check()
     page.locator('input[name="answer"][value="B"]').check()
     page.locator('input[name="answer"][value="C"]').check()
-    assert page.locator(".selection-hint").inner_text() == "Vari izvēlēties ne vairāk kā 3 atbildes."
+    selection_hint = page.locator(".selection-hint").inner_text()
+    assert selection_hint == "Vari izvēlēties ne vairāk kā 3 atbildes.", f"Unexpected selection hint: {selection_hint!r}"
     page.locator('input[name="answer"][value="D"]').check()
     assert page.locator('input[name="answer"][value="D"]').is_checked() is False
     assert "3" in page.locator(".notice").inner_text()
