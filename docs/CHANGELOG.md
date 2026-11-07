@@ -1,7 +1,7 @@
 # Active development changelog — mental-health-questionnaire
 
 **Active branch:** `develop`; `main` and the frozen v16 Git reference remain unchanged. The old Drive v16 copies were removed from the link-shared review folder; the current technical-review candidate is indexed in the manifest.
-**Current build:** one self-contained offline HTML with all 48 modules and 712 original questions. Automated desktop Chromium checks pass. This is a technical-review build, not a release or clinical validation.
+**Current build:** one self-contained offline HTML with 48 unchanged source modules / 712 questions grouped into 15 user-facing sections. The latest interface and grouping changes are on GitHub `develop` at `2339b3f`; CI verification for that commit is pending. This is a technical-review build, not a release or clinical validation.
 **Outstanding external checks:** actual Android Chrome use; human review of LV interface wording and EN/RU drafts; professional/clinical review. Do not mark those complete without evidence.
 **History:** the prior pilot and full-build chronology is preserved in [CHANGELOG_HISTORY_2026-11-06.md](history/CHANGELOG_HISTORY_2026-11-06.md). Read it only when a task needs that history.
 
@@ -163,5 +163,5 @@
 **Checkpoint 1 — implemented:** Start now opens section choice; the picker offers select-all-and-continue and continue-with-selected. The 48 source modules are grouped into 15 user-facing sections (36–70 questions each). Results show completed answers only. Localized copy covers gentle tone, backup-loss risk, file privacy, and formal address. Added `docs/LANGUAGE_STYLE_GUIDE.md`; recovery maps older selected-module files to the new groups.
 **Files changed:** `src/app/`, `src/questionnaire/layout.json`, `src/questionnaire/presentation.json`, `src/app/i18n/`, `tools/build_questionnaire.py`, focused tests, `AGENTS.md`, `README.md`, manifest, architecture and file index.
 **Local verification:** focused app and full-bank tests, UI catalog checks, project index/source integrity (79 original files, 48 modules, 712 IDs), build, JavaScript/Python syntax checks, and `git diff --check` passed. Local Playwright is unavailable, so browser verification is pending GitHub Actions. Android-device testing and human review of EN/RU remain outstanding.
-**Git commit:** `f4ca182` (`feat: group sections and simplify questionnaire entry`), based on `8728cdce`.
-**Next action:** push `develop`, verify GitHub Actions, then build the exact verified HTML and update the current Drive HTML/PDF. Do not mark the Drive refresh complete until readback confirms both files.
+**GitHub commit:** `2339b3f` (`feat: group sections and simplify questionnaire entry`), based on `8728cdce`.
+**Next action:** verify both GitHub workflows, then build the exact verified HTML and update the current Drive HTML/PDF. Do not mark the Drive refresh complete until readback confirms both files.
