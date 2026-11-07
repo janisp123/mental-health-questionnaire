@@ -25,5 +25,4 @@ Anketa darbojas bez interneta, neveic analītiku un automātiski nenosūta atbil
 
 Latviešu valoda ir atsauces valoda; angļu un krievu teksti ir melnraksti, kuriem vajadzīga cilvēka pārbaude. Šī versija paredzēta profesionālai tehniskai pārskatīšanai. Tā nav klīniski validēta un neaizstāj speciālista izvērtējumu.
 
-Jautājumu atsauksmēm: **janis.paegle.email@gmail.com**
 
