@@ -5,6 +5,15 @@
 **Outstanding external checks:** actual Android Chrome use; human review of LV interface wording and EN/RU drafts; professional/clinical review. Do not mark those complete without evidence.
 **History:** the prior pilot and full-build chronology is preserved in [CHANGELOG_HISTORY_2026-11-06.md](history/CHANGELOG_HISTORY_2026-11-06.md). Read it only when a task needs that history.
 
+## 2026-11-07 · QUESTION-ANSWER-CLARITY · IN_PROGRESS
+
+**Starting commit:** `50b3f7ca6162c65b870a26702c638a1f31fd7dd0` on `develop`.
+
+1. [IN_PROGRESS] Add localized per-question instructions for multiple-choice questions, using the original `maxChoices` value where defined and otherwise saying multiple answers are allowed. Verify isolated screen rendering and a synthetic browser case.
+2. [TODO] Keep a single-choice answer visibly selected for one second before saving and advancing. Preserve Skip and ensure a pending timer cannot overwrite a later action. Verify with a focused browser case.
+
+**Workflow:** verify and record each task separately, then rebuild and refresh the Drive HTML/PDF after each completed task so the user can test that checkpoint.
+
 ## 2026-11-07 · SECTION-END-SAVE-PROMPT · DONE
 
 **Starting commit:** `b2964d660afdb319e4dd695485e2be50797489f9` on `develop`.
