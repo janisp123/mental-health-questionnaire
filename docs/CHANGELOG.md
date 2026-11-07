@@ -26,8 +26,8 @@
 **Task 2 checkpoint — visible single-choice selection:** implementation started from `035d5bcae48e66e0094f0f814973938532373953` on `develop`. The selected radio is now left native and highlighted for one second before saving and advancing. Skip/navigation cancels a pending timer; duplicate click/change events for the same choice are coalesced.
 **Tests added/updated:** focused browser case checks immediate highlight, no early advance, one-second advance, and Skip winning over a pending answer; full-bank helper now waits for the delayed transition and keeps the double-tap case.
 **Local checks:** event, answer-flow, app-build-manifest, locale-catalog, screen-renderer, JavaScript/Python syntax, and `git diff --check` PASS. Local Chromium is unavailable, so browser tests remain pending in GitHub Actions.
-**First CI result:** app-component workflow `42358094055` PASS. Full-bank workflow `42358094071` exposed an outdated browser helper that expected multi-select taps to advance; the application check did not fail. Updated helper to wait for navigation only on single-choice radios.
-**Exact next action:** rerun focused and full-bank Chromium workflows on the helper correction, fix any failures, and refresh the HTML/PDF after both pass.
+**CI findings:** app-component workflow `42358174072` PASS. Full-bank runs `42358094071` and `42358174069` exposed test-harness assumptions: multi-select remains on the question, and this offline app CSP blocks Playwright string-evaluation waits. The helper now uses a fixed 1.1-second wait for single-choice only; multi-select remains manual-save.
+**Exact next action:** rerun focused and full-bank Chromium workflows, fix any failures, and refresh the HTML/PDF after both pass.
 
 ## 2026-11-07 · SECTION-END-SAVE-PROMPT · DONE
 

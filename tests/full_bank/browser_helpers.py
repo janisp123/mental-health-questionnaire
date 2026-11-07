@@ -35,14 +35,8 @@ def choose(page, code):
         option.locator("..").click()
         return
     # Single-choice answers remain visible for one second before saving and advancing.
-    before = qid(page)
     option.locator("..").click()
-    page.wait_for_function(
-        "before => document.querySelector('.question')?.dataset.question !== before || "
-        "document.querySelector('[data-act=\\\"continueWithoutSaving\\\"]')",
-        arg=before,
-        timeout=2500,
-    )
+    page.wait_for_timeout(1100)
     continue_button = page.locator('[data-act="continueWithoutSaving"]:visible')
     if continue_button.count():
         continue_button.click()
