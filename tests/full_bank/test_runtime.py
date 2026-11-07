@@ -59,7 +59,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert question_by_id["M14_17"]["translations"]["ru"]["title"] == "Как часто за последние 4 недели вы пропускали запланированный приём дозы регулярно принимаемого лекарства?"
     assert question_by_id["M14_18"]["translations"]["ru"]["choices"]["E"] == "Не чувствовал(а) необходимости или сомневался(ась) в пользе."
     assert question_by_id["M30_13"]["translations"]["ru"]["title"] == "Появились ли у вас внезапно прямо сейчас или только что слабость в лице или руке, нарушение речи либо выраженная потеря зрения?"
-    assert question_by_id["M30_17"]["translations"]["en"]["time"].startswith("The past 28 days. New or worsening difficulties")
+    assert question_by_id["M30_17"]["translations"]["en"]["time"] == "The past 28 days. New or worsening difficulties with hand movements should be assessed by a doctor. Sudden weakness, speech or vision changes require emergency help (112 or your local emergency number); do not wait to finish."
     assert question_by_id["M30_20"]["translations"]["ru"]["choices"]["C"] == "Более 24 часов назад, но не более месяца назад"
     assert question_by_id["M30_25"]["translations"]["en"]["title"] == "Is the person now barely moving or not speaking, staying frozen for a long time, or unable to take in fluids, with these symptoms starting suddenly?"
     s01_russian_answers = [
