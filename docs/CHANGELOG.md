@@ -136,5 +136,5 @@
 **Files:** `AGENTS.md`, `src/app/core/app.js`, `src/app/screens/start.js`, `src/app/screens/section-selector.js`, `src/app/styles/base.css`, `src/app/i18n/ui.lv.json`, `src/app/i18n/ui.en.json`, `src/app/i18n/ui.ru.json`, `tests/app/test_screens.js`, `tests/app/test_runtime_layout.py`, `tests/app/test_ui_catalogs.py`, `tests/full_bank/test_runtime.py`, `docs/CHANGELOG.md`.
 **Local checks:** app source manifest, catalog structure/content, isolated screens/model/flow/recovery/events, full source integrity, all 48 modules/712 IDs and order, build/layout/report audits, full offline HTML build, JS syntax, and `git diff --check` PASS. Build SHA-256: `46417a3a2a6d4972cf30e6e26201597d1ea7ef4e14c39baeb39ba73a0b80b6e5`.
 **Not run locally:** the two Playwright browser checks; Playwright is not installed in this workspace. GitHub CI is the browser verification gate. No Android-device or human translation/clinical review was performed.
-**Commit:** exact remote SHA to be recorded after creation/readback.
-**Next action:** inspect both GitHub workflows for the source commit; update this record with their results, then resolve any failure before marking DONE.
+**Commit:** `40637a3188905c6e139c9e698d040c4e3304ff1e` (source and tests).
+**GitHub CI:** focused app run `42341394945` and full questionnaire run `42341394954` are running on this commit.\n**Next action:** inspect both workflow results; resolve any failure, then record verified outcomes and mark DONE.
