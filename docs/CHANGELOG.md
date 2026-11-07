@@ -5,6 +5,20 @@
 **Outstanding external checks:** actual Android Chrome use; human review of LV interface wording and EN/RU drafts; professional/clinical review. Do not mark those complete without evidence.
 **History:** the prior pilot and full-build chronology is preserved in [CHANGELOG_HISTORY_2026-11-06.md](history/CHANGELOG_HISTORY_2026-11-06.md). Read it only when a task needs that history.
 
+## 2026-11-07 · REPORT-AND-ANSWER-VISIBILITY · IN_PROGRESS
+
+**Starting commit:** `b78a9c278bc4cb75ca5a39150f95f3d2e1139e85` on GitHub `develop`.
+
+1. [IN_PROGRESS] Make single-choice selection unmistakable before the delayed advance; preserve immediate Skip and duplicate-tap protection.
+2. [TODO] Produce one report: selected-question / completed / skipped counts at the top; answered items only; clearly separate user technical feedback after answers; preserve explicit safety-answer bolding.
+3. [TODO] Put entered name and surname at the upper-left of the printable report; if absent, leave writable name and date space there.
+4. [TODO] Replace the report wall and duplicate export actions with only Print / save PDF, Back to answers, and Select sections. Remove contact email from results and reviewer PDF; retain it in legal notice and feedback.
+5. [TODO] Explain the accuracy-review workflow in the in-app guide and reviewer PDF: skip acceptable questions, flag problematic ones and choose reasons, then prepare and return the PDF.
+6. [TODO] Run focused report, screen, and selection checks; run the full offline Chromium journey for the shared runtime/report changes; refresh both Drive files and verify readback hashes.
+7. [TODO] Ask the user to verify Android selection visibility and Print / save PDF after the new build is in Drive.
+
+**Workflow:** complete and record one batch at a time on `develop`; refresh the Google Drive HTML/PDF after each verified user-testable batch. Preserve the 48 source modules, 712 question IDs, recovery schema, and frozen references.
+
 ## 2026-11-07 · QUESTION-ANSWER-CLARITY · IN_PROGRESS
 
 **Starting commit:** `50b3f7ca6162c65b870a26702c638a1f31fd7dd0` on `develop`.
