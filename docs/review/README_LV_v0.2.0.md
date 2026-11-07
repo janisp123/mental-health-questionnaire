@@ -1,7 +1,7 @@
 # Sagatavošanās vizītei pie psihiskās veselības speciālista
 
 **Tehniskās pārbaudes versija · 0.2.0 · 07.11.2026**
-**GitHub develop · avota commit 6579771**
+**GitHub develop · avota commit cfb8f68**
 
 Šī bezmaksas anketa pieaugušajiem palīdz sagatavot informāciju sarunai ar psihiskās veselības speciālistu. Saudzīgāks formulējums palīdz jautājumus uztvert mierīgāk un atvieglo pirmo soli ceļā pie speciālista. Anketa nenosaka diagnozi.
 
@@ -12,7 +12,7 @@
 ## Kā sākt
 
 1. Lejupielādē HTML failu un atver to pārlūkā, piemēram, Chrome. Google Drive priekšskatījumā anketa var nedarboties.
-2. Spied **Sākt / turpināt**. Izvēlies visas sadaļas vai tikai tās, kuras vēlies aizpildīt. Jautājumos ar vairākām atbildēm ekrānā ir norādīts, cik atbilžu vari izvēlēties. Izvēloties vienu atbildi, tā uz sekundi iezīmējas, pirms anketa pāriet pie nākamā jautājuma.
+2. Spied **Sākt / turpināt**. Izvēlies visas sadaļas vai tikai tās, kuras vēlies aizpildīt. Jautājumos ar vairākām atbildēm ekrānā ir norādīts, cik atbilžu vari izvēlēties. Izvēloties vienu atbildi, tā uzreiz izceļas ar zaļu fonu un atzīmi. Pēc īsas pauzes anketa pāriet pie nākamā jautājuma.
 3. Sadaļas beigās izvēlies **Saglabāt un turpināt** vai **Turpināt bez saglabāšanas**. Ja vēlies paņemt ilgāku pārtraukumu, saglabā progresu failā un vēlāk atver to pašu HTML failu, lai izvēlētos **Turpināt no faila**.
 
 ## Saglabāšana un privātums
