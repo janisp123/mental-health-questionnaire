@@ -56,7 +56,7 @@
 
 ## Distribution — separate from development
 
-Google Drive's [professional review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb) still contains the previous 48-section, 712-question candidate while the 15-section Git build is verified. The Drive refresh is pending. Once the GitHub checks pass, replace the existing HTML and PDF in place, then update their checksums and source commit in `project-manifest.json` and record the Drive readback in `docs/CHANGELOG.md`. The older Drive v16 copies were removed; the frozen v16 references remain under `reference/baseline/`. EN/RU remain unreviewed drafts.
+Google Drive's [professional review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb) contains the current 712-question, 15-section technical-review candidate. The HTML and Latvian PDF were rebuilt from Git sources and replaced in place; their Drive IDs and links are preserved. SHA-256 values and source commit are recorded in `project-manifest.json`. The older Drive v16 copies were removed; frozen v16 references remain under `reference/baseline/`. EN/RU remain unreviewed drafts.
 
 ## Rules for identifying the latest version
 
