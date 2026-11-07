@@ -35,7 +35,7 @@
         }
       },
       "en": {
-        "title": "Have you had any speech, language, motor coordination, or independent daily living difficulties as a child or currently?",
+        "title": "Have you had difficulties with speech or language, motor coordination, or independent daily activities, either in childhood or currently?",
         "time": "In childhood or now.",
         "choices": {
           "A": "No",
@@ -45,7 +45,7 @@
         }
       },
       "ru": {
-        "title": "Были ли у вас в детстве или есть сейчас какие-либо трудности с речью, языком, координацией движений или самостоятельной повседневной жизнью?",
+        "title": "Были ли у вас в детстве или есть сейчас трудности с речью или языком, координацией движений либо самостоятельным выполнением повседневных дел?",
         "time": "В детстве или сейчас.",
         "choices": {
           "A": "Нет",
@@ -126,8 +126,8 @@
         "choices": {
           "A": "Произношение или беглость речи",
           "B": "Понимание языка или выражение мыслей",
-          "C": "Координация перемещений и практической деятельности",
-          "D": "Освоение повседневных навыков и самостоятельности.",
+          "C": "Координация движений и практические действия",
+          "D": "Освоение повседневных навыков и самостоятельности",
           "F": "Я не знаю",
           "G": "Я не хочу отвечать."
         }
@@ -191,7 +191,7 @@
         }
       },
       "ru": {
-        "title": "Вы испытываете трудности с речью в определенных ситуациях, хотя в других ситуациях можете и знаете необходимый язык?",
+        "title": "Бывает ли, что в определённых ситуациях вы не можете говорить, хотя в других ситуациях способны говорить и знаете нужный язык?",
         "time": "В детстве или сейчас.",
         "choices": {
           "A": "Нет",
@@ -256,24 +256,24 @@
       },
       "en": {
         "title": "How have the difficulties changed?",
-        "time": "In the course of life.",
+        "time": "Over the course of your life.",
         "choices": {
-          "A": "Remains similar since childhood",
-          "B": "Reduced with support",
-          "C": "Intensified in adulthood",
-          "D": "Only started in adulthood",
+          "A": "About the same since childhood",
+          "B": "Lessened with support",
+          "C": "Worsened in adulthood",
+          "D": "Started only in adulthood",
           "E": "I don't know",
           "F": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Как изменились трудности?",
-        "time": "В ходе жизни.",
+        "title": "Как изменились эти трудности?",
+        "time": "На протяжении жизни.",
         "choices": {
-          "A": "Остается таким же с детства.",
-          "B": "Снижено при поддержке",
-          "C": "Усиливается во взрослом возрасте.",
-          "D": "Начала проявляться только во взрослом возрасте.",
+          "A": "Примерно такие же, как в детстве",
+          "B": "Уменьшились при поддержке",
+          "C": "Усилились во взрослом возрасте",
+          "D": "Начались только во взрослом возрасте",
           "E": "Я не знаю",
           "F": "Я не хочу отвечать."
         }
@@ -333,8 +333,8 @@
         }
       },
       "en": {
-        "title": "Are previous developmental, speech therapist, school, or psychological evaluations available?",
-        "time": "At any time in life.",
+        "title": "Do you have access to any previous developmental assessments or evaluations from a speech therapist, school, or psychologist?",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -343,8 +343,8 @@
         }
       },
       "ru": {
-        "title": "Имеются ли результаты предыдущих оценок развития, проведенных логопедом, школьным психологом или экспертизой?",
-        "time": "В любой момент жизни.",
+        "title": "Есть ли у вас прежние заключения об оценке развития или результаты обследований логопеда, школы или психолога?",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",

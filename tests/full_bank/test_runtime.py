@@ -72,6 +72,19 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert question_by_id["M13_10"]["translations"]["en"]["time"] == "At any point in your life."
     assert question_by_id["M13_10"]["translations"]["ru"]["time"] == "Когда-либо в жизни."
     assert question_by_id["M13_10"]["translations"]["ru"]["choices"]["C"] == "Не знаю / трудно сказать."
+    s06_questions = [q for q in questions if q["module"] == "S06"]
+    assert len(s06_questions) == 43
+    assert question_by_id["M25_03"]["translations"]["ru"]["title"] == "Было ли вам значительно труднее выполнять математические вычисления, чем вашим сверстникам?"
+    assert question_by_id["M46_01"]["translations"]["en"]["title"] == "Have you had difficulties with speech or language, motor coordination, or independent daily activities, either in childhood or currently?"
+    assert question_by_id["M46_02"]["translations"]["ru"]["choices"]["C"] == "Координация движений и практические действия"
+    assert question_by_id["M46_04"]["translations"]["en"]["choices"]["A"] == "About the same since childhood"
+    assert question_by_id["M46_05"]["translations"]["ru"]["time"] == "Когда-либо в жизни."
+    s06_russian_answers = [
+        answer for q in s06_questions
+        for answer in q["translations"]["ru"].get("choices", {}).values()
+    ]
+    assert "Я не знаю / Я не уверен" not in s06_russian_answers
+    assert "Я не уверен." not in s06_russian_answers
     assert question_by_id["M13_15"]["translations"]["ru"]["choices"]["F"] == "По-разному / не знаю"
     s09_russian_answers = [
         answer for q in s09_questions
