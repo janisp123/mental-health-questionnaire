@@ -3,6 +3,7 @@ import importlib.util
 import json
 import re
 import subprocess
+import sys
 import tempfile
 from pathlib import Path
 
@@ -74,7 +75,7 @@ assert embedded and json.loads(embedded.group(1)) == bundle
 with tempfile.TemporaryDirectory() as temp_dir:
     output_path = Path(temp_dir) / "questionnaire.html"
     subprocess.run(
-        ["python3", str(ROOT / "tools" / "build_questionnaire.py"), "--output", str(output_path)],
+        [sys.executable, str(ROOT / "tools" / "build_questionnaire.py"), "--output", str(output_path)],
         check=True,
         capture_output=True,
         text=True,

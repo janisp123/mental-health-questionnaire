@@ -28,7 +28,7 @@ for expected,mod in enumerate(modules,1):
         types[q.get('type','choice')]+=1
         for lang in ('lv','en','ru'):
             t={key:q[key] for key in allowed_translation if key in q} if lang=='lv' else entry[lang]
-            assert set(t)<=allowed_translation and {'title','time','choices'}<=set(t)
+            assert set(t)<=allowed_translation and {'title','time','choices'}<=set(t), (qid, lang, sorted(t))
             assert ('help' in q)==('help' in t), (qid,lang,sorted(t))
             assert set(t['choices'])==set(q['choices'])
         if q.get('maxChoices'):
@@ -47,6 +47,13 @@ for expected,mod in enumerate(modules,1):
                 multi_parents.append((qid,context['id']))
 
 assert len(entries)==712 and set(orders)==set(range(712))
+# Translation edits must never alter the frozen Latvian source or its logic.
+reference=(ROOT/'reference/baseline/html/162_Sagatavosanas_vizitei_LV_v16.html').read_text(encoding='utf-8')
+frozen_bank=json.JSONDecoder().raw_decode(reference.split('const BANK = ',1)[1])[0]
+ordered_entries=sorted(entries,key=lambda entry:entry['order'])
+assert len(frozen_bank)==len(ordered_entries)
+for frozen,entry in zip(frozen_bank,ordered_entries):
+    assert entry['lv']==frozen, ('Frozen Latvian text/logic changed', frozen['id'])
 order_by_id={qid:order for order,qid in orders.items()}
 assert all(context['id'] in ids and order_by_id[context['id']]<entry['order']
            for entry in entries if (context:=entry['lv'].get('context')))

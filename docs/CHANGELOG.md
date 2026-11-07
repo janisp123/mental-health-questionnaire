@@ -5,6 +5,16 @@
 **Outstanding external checks:** actual Android Chrome use; human review of LV interface wording and EN/RU drafts; professional/clinical review. Do not mark those complete without evidence.
 **History:** the prior pilot and full-build chronology is preserved in [CHANGELOG_HISTORY_2026-11-06.md](history/CHANGELOG_HISTORY_2026-11-06.md). Read it only when a task needs that history.
 
+## 2026-11-07 · TRANSLATION-AUDIT-RECOVERY · IN_PROGRESS
+
+Resumed from `85f4332`. Verified GitHub's last successful checkpoint is S10 (`d0ac047`); S13's three subsequent runs failed. Reproduced the index failure: `tests/fixtures/181_MODULE_INDEX_v16.json` is 11906 bytes, but the manifest recorded 11816. Its recorded Git blob hash was already correct. Repaired only the byte count.
+
+Established local Python/Playwright/Chromium checks on Windows. Restored exact Git text bytes after checkout CRLF conversion; frozen reference content is unchanged. Fixed the CLI build test to invoke the current Python interpreter instead of assuming `python3`. Source-audit failures now identify the affected question and language, and the audit checks every LV record against the frozen 712-question baseline.
+
+Baseline after the manifest repair: 23/24 local checks passed, including full offline browser journey, recovery, report, print PDF, responsive layout and all three locales. The remaining source-audit failure identifies malformed RU keys (`choices.E`, `choices.F`, `choices.B`) on M32_36, M32_40 and M32_42. S13 review and repair are in progress; do not mark it complete from the browser pass alone.
+
+Drive folder read on this session: HTML modified 14:18, PDF 13:57. Read access works; write access awaits a connected Drive session. No files uploaded in this recovery session yet. Exact next action: complete S13 corrections, refresh indexes, rerun all checks, commit the verified checkpoint, then S12. Detailed task checklist: `docs/superpowers/plans/2026-11-07-translation-completion.md`.
+
 ## 2026-11-07 · REPORT-AND-ANSWER-VISIBILITY · IN_PROGRESS
 
 **Starting commit:** `b78a9c278bc4cb75ca5a39150f95f3d2e1139e85` on GitHub `develop`.
