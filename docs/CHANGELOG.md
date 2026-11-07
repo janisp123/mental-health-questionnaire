@@ -32,7 +32,28 @@
 **Translation audit — Section S11:** reviewed all 62 questions and answer options in Latvian, English, and Russian. The structure was complete, but the review found meaning, grammar, time-frame, and gender-agreement problems. Corrected the identified English/Russian strings in source modules 16, 17, 23, 33, and 43; Latvian source text, question IDs, and answer codes were preserved. Updated the module and fixture integrity indexes. This is a section-by-section audit; English and Russian remain marked as drafts until the full bank is reviewed.
 **Checks:** full offline Chromium workflow `42368219970` PASS on `d6c60525c3ec2c6a39e0c4f80a3c7ce9c161ca20`. It verifies the rebuilt 712-question application and targeted translation corrections. The generated HTML was independently checked for all 62 S11 questions and 11 corrected-string checks.
 **Drive refresh:** replaced the existing HTML and trilingual reviewer PDF in place, preserving their IDs. Readback SHA-256 values match: HTML `d5d319dcbe51340d66ce6e24b89a5abfa7bee9437a07bba74bbe8999ae70b897`; PDF `1db6de44a7110117ba5e25d477ef35d41648cc8cb0815e93c35f7299bc6fa294`.
-**Exact next action:** continue the translation audit with Section S01. Separately, ask the user to check the updated build on Android Chrome and report any layout or interaction issue. External human and clinical reviews remain outstanding.
+**Translation audit progression:** compare Latvian source meaning, timeframe, and answer-option intent against English and Russian; check grammar and natural phrasing; change only translation strings; preserve Latvian text, IDs, codes, and conditions. After each section, update source/fixture integrity indexes, run full CI and inspect the built section, then refresh Drive HTML and reviewer PDF. Record findings and stop point here before moving on.
+**Audit build checkpoint:** `d6c60525c3ec2c6a39e0c4f80a3c7ce9c161ca20`; Section S11 corrections are verified and distributed.
+
+| Order | Section | Questions | Status |
+|---:|---|---:|---|
+| 1 | S11 — Everyday life, goals, digital habits and spending | 62 | DONE |
+| 2 | S01 — Health history, medicines and memory | 61 | IN_PROGRESS |
+| 3 | S09 — Sleep, fatigue and pain | 50 | TODO |
+| 4 | S06 — Attention, learning and development | 43 | TODO |
+| 5 | S10 — Alcohol, nicotine and other substances | 37 | TODO |
+| 6 | S13 — Family, social context and caregiving | 70 | TODO |
+| 7 | S12 — Relationships and emotional patterns | 42 | TODO |
+| 8 | S14 — Eating, appearance and health concerns | 49 | TODO |
+| 9 | S15 — Sexuality and reproductive health | 47 | TODO |
+| 10 | S07 — Intrusive thoughts and repetitive habits | 45 | TODO |
+| 11 | S08 — Trauma, loss and life changes | 48 | TODO |
+| 12 | S02 — Mood and energy | 38 | TODO |
+| 13 | S03 — Anxiety, panic-like episodes and stress | 40 | TODO |
+| 14 | S04 — Wellbeing, safety and unusual experiences | 44 | TODO |
+| 15 | S05 — Anger and impulses | 36 | TODO |
+
+**Exact next action:** finish S01, verify the full build, and refresh the Drive HTML/PDF; then continue with S09 if checks pass. External human and clinical reviews remain outstanding.
 
 ## 2026-11-07 · QUESTION-ANSWER-CLARITY · IN_PROGRESS
 
