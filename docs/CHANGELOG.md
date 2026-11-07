@@ -116,3 +116,13 @@
 **Verification:** PDF rendered and visually inspected; A4 one-page layout and extracted text checked. The review folder listing and project index were read back. No application tests run; this change does not affect runtime behavior.
 **Commit:** `db72f2134c58383b46cf384be6b0bf0b31b62e27` (review-package standard in `AGENTS.md`).
 **Next action:** use this standard for future reviewer-facing document updates.
+
+
+## 2026-11-07 · LIVE-GITHUB-STATUS-CHECK · DONE
+
+**Change:** added a rule to check the live GitHub branch before reporting ahead/behind counts or push status. Local tracking refs are used only after a successful fetch; API/CLI updates are confirmed by reading back the remote branch/files.
+
+**Files:** `AGENTS.md`, `docs/CHANGELOG.md`.
+**Checks:** GitHub readback confirmed the new instruction; documentation-only change, no application tests run.
+**Commit:** `e55f4e52163e8bdc1afbf4811583c3c2e0244bad` (branch-status verification rule).
+**Next action:** use the live-branch check before future push/status reports.
