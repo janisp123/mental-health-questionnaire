@@ -156,5 +156,5 @@
 **Correction:** test completion counts on the selector card rather than assuming the fixture's required section has an optional checkbox row.
 **Files:** `tests/app/test_runtime_layout.py`, `docs/CHANGELOG.md`.
 **Local checks:** Python syntax, catalog, screen, app-manifest, and diff checks PASS. Playwright remains unavailable locally.
-**Commit:** pending remote readback.
-**Next action:** inspect the focused app workflow triggered by this correction.
+**Commit:** `3449505000586957ea8e7dbabc48ab7d8f9866cb`.
+**CI:** the focused app workflow is expected for this test-path change; its run ID/result will be recorded after GitHub publishes it.\n**Next action:** inspect the focused app workflow for this commit; fix any failure and record the verified result.
