@@ -30,6 +30,24 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     questions = [q for group in data["groups"] for q in group["questions"]]
     assert len(questions) == 712
     assert len({q["id"] for q in questions}) == 712
+    question_by_id = {q["id"]: q for q in questions}
+    assert question_by_id["M23_21"]["translations"]["en"]["choices"]["A"] == "A conversation and assessment"
+    assert question_by_id["M23_21"]["translations"]["ru"]["choices"]["A"] == "Беседа и оценка состояния"
+    assert question_by_id["M16_13"]["translations"]["en"]["choices"]["F"] == "Another activity"
+    assert question_by_id["M16_13"]["translations"]["ru"]["choices"]["F"] == "Другой вид деятельности"
+    assert question_by_id["M43_01"]["translations"]["ru"]["title"].startswith("Сколько дней за последние 28 дней")
+    assert question_by_id["M43_04"]["translations"]["ru"]["choices"]["C"] == "Сон и отдых"
+    assert question_by_id["M33_07"]["translations"]["en"]["choices"]["H"] == "I now have an opportunity to seek help or feel ready to do so."
+    assert question_by_id["M33_07"]["translations"]["ru"]["choices"]["H"] == "Сейчас есть возможность или готовность обратиться за помощью."
+    assert question_by_id["M33_08"]["translations"]["en"]["choices"]["C"] == "I don't think it would help, although I am experiencing difficulties."
+    assert question_by_id["M23_25"]["translations"]["ru"]["choices"]["C"] == "Существенно не изменились"
+    assert question_by_id["M33_05"]["translations"]["ru"]["choices"]["A"] == "Гетеросексуальная ориентация"
+    first_section_russian = [
+        text for q in questions if q["module"] == "S11"
+        for text in q["translations"]["ru"].get("choices", {}).values()
+    ]
+    assert "Я не знаю / Я не уверен" not in first_section_russian
+    assert "Я не уверен." not in first_section_russian
 
     # Start opens a short section picker; select-all chooses every group and continues.
     page.locator('[data-act="start"]').click()
