@@ -8,13 +8,13 @@ sys.path.insert(0, str(ROOT / "tools"))
 import build_questionnaire as build
 
 
-def _question(qid, title, codes, *, multi=False, context=None):
+def _question(qid, title, codes, *, multi=False, context=None, module="S01"):
     translations = {
         lang: {"title": title, "time": "", "choices": {code: f"Option {code}" for code in codes}}
         for lang in ("lv", "en", "ru")
     }
     return {
-        "id": qid, "module": "S01", "multi": multi, "context": context,
+        "id": qid, "module": module, "multi": multi, "context": context,
         "choiceCodes": codes, "exclusive": [], "incompatible": [],
         "answerStatus": {}, "type": "choice", "translations": translations,
     }
@@ -38,7 +38,7 @@ def make_fixture():
     next_group = {
         "id": "S02", "required": False, "questionCount": 1,
         "titles": next_titles, "concerns": next_titles,
-        "questions": [_question("SYN_04", "Next section", ["A", "B"])],
+        "questions": [_question("SYN_04", "Next section", ["A", "B"], module="S02")],
     }
     return {
         "schema": "offline-questionnaire-full-bank-v1", "version": "synthetic-test",

@@ -13,9 +13,9 @@
 
 **Files:** `src/app/core/app.js`, `src/app/i18n/ui.lv.json`, `src/app/i18n/ui.en.json`, `src/app/i18n/ui.ru.json`, `tests/app/runtime_fixture.py`, `tests/app/test_runtime_answers.py`, `tests/full_bank/browser_helpers.py`, `docs/QUESTIONNAIRE_ARCHITECTURE.md`, `docs/CHANGELOG.md`.
 
-**Checks:** locale-catalog check PASS; complete 712-question offline HTML build PASS. The focused browser test could not run locally because this workspace has no Chromium executable; browser behavior remains unverified here. Full-bank regression was not run.
+**Checks:** locale catalogs, app source/screens/logic, JavaScript syntax, offline HTML build, and `git diff --check` PASS. Focused workflow 42353162597 caught a test-fixture error: its next-section question had the first section's ID. Corrected the fixture mapping; workflow rerun is pending. Local Chromium is unavailable. The full-bank workflow is running.
 
-**Next action:** run the focused browser workflow in CI or a machine with Chromium. No Google Drive copy was updated.
+**Next action:** confirm focused and full-bank CI after the fixture correction. No Google Drive copy was updated.
 
 ## 2026-11-06 · FULL-GIT-REVIEW-CANDIDATE · PREPARED
 
