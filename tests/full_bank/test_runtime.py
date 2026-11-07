@@ -125,10 +125,12 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     report = page.locator(".report-preview").evaluate("(el) => el.textContent")
     assert "SYNTHETIC NAME" in report
     assert "SYNTHETIC MEDICINE" in report
-    assert report.index("SYNTHETIC NAME") < report.index(data["ui"]["lv"]["feedbackSectionHeading"])
-    assert data["ui"]["lv"]["reportCountSelected"] in report
-    assert data["ui"]["lv"]["reportCountDone"] in report
-    assert data["ui"]["lv"]["reportCountSkip"] in report
+    report_locale = page.locator("html").get_attribute("lang")
+    assert report.index("SYNTHETIC NAME") < report.index(data["ui"][report_locale]["feedbackSectionHeading"])
+    assert data["ui"][report_locale]["reportCountSelected"] in report
+    assert data["ui"][report_locale]["reportCountDone"] in report
+    assert data["ui"][report_locale]["reportCountSkip"] in report
+    assert "Synthetic question note" in report
     assert page.locator("#reportText").count() == 0
     assert page.locator('[data-act="print"]').count() == 1
     assert page.locator('[data-act="back"]').count() == 1
