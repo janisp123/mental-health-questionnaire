@@ -36,7 +36,7 @@
       },
       "en": {
         "title": "Have you seen a psychiatrist before?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -46,11 +46,11 @@
       },
       "ru": {
         "title": "Обращались ли вы раньше к психиатру?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Не хочу отвечать."
         }
       },
@@ -100,7 +100,7 @@
       },
       "en": {
         "title": "Have you previously received a psychiatric diagnosis?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -110,11 +110,11 @@
       },
       "ru": {
         "title": "Ставили ли вам ранее психиатрический диагноз?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Не хочу отвечать."
         }
       },
@@ -270,7 +270,7 @@
       },
       "en": {
         "title": "What has been the usual course of your mental health difficulties over your lifetime?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "I have not had these difficulties",
           "B": "One episode, followed by improvement",
@@ -283,7 +283,7 @@
       },
       "ru": {
         "title": "Как обычно протекали ваши трудности с психическим здоровьем на протяжении жизни?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Таких трудностей не было",
           "B": "Один эпизод с последующим улучшением",
@@ -348,7 +348,7 @@
       },
       "en": {
         "title": "Since these difficulties began, have you had a period of at least one month when you felt significantly better?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -359,11 +359,11 @@
       },
       "ru": {
         "title": "После начала этих трудностей был ли период продолжительностью не менее месяца, когда вы чувствовали себя значительно лучше?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -416,7 +416,7 @@
       },
       "en": {
         "title": "Have you ever received emergency psychiatric care?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -426,11 +426,11 @@
       },
       "ru": {
         "title": "Получали ли вы когда-либо экстренную психиатрическую помощь?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Не хочу отвечать."
         }
       },
@@ -480,7 +480,7 @@
       },
       "en": {
         "title": "Have you been admitted to hospital for mental health reasons?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -490,11 +490,11 @@
       },
       "ru": {
         "title": "Лечились ли вы в стационаре в связи с психическим состоянием?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Не хочу отвечать."
         }
       },
@@ -546,7 +546,7 @@
       },
       "en": {
         "title": "Have you ever had a period of emotional difficulties when you were unable to carry out your usual daily responsibilities?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -557,11 +557,11 @@
       },
       "ru": {
         "title": "Был ли в вашей жизни период эмоциональных трудностей, когда вы не могли выполнять обычные повседневные обязанности?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -632,7 +632,7 @@
         "time": "Time since the most recent decline in daily functioning described.",
         "choices": {
           "A": "Within the past 24 hours",
-          "B": "More than 24 hours ago, but less than 1 month ago",
+          "B": "More than 24 hours ago, but no more than 1 month ago",
           "C": "More than 1 month but not more than 1 year ago",
           "D": "More than 1 year ago, but no more than 5 years ago",
           "E": "More than 5 years ago",
@@ -646,7 +646,7 @@
         "time": "Время с последнего указанного ухудшения способности выполнять повседневные дела.",
         "choices": {
           "A": "В течение последних 24 часов",
-          "B": "Более 24 часов назад, но менее месяца назад",
+          "B": "Более 24 часов назад, но не более месяца назад",
           "C": "Более месяца, но не более года назад",
           "D": "Более года назад, но не более 5 лет назад",
           "E": "Более 5 лет назад",
@@ -711,7 +711,7 @@
       },
       "en": {
         "title": "Did your mental health difficulties first begin after a major distressing life event?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -722,11 +722,11 @@
       },
       "ru": {
         "title": "Возникли ли ваши трудности с психическим здоровьем впервые после тяжёлого жизненного события?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -796,7 +796,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -857,7 +857,7 @@
       },
       "en": {
         "title": "Overall, how helpful was previous non-medicine support such as counselling or psychotherapy?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "I have not received this kind of support",
           "B": "Marked improvement",
@@ -871,7 +871,7 @@
       },
       "ru": {
         "title": "Насколько в целом помогла прежняя немедикаментозная помощь, например консультирование или психотерапия?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Такую помощь не получал(а)",
           "B": "Выраженное улучшение",
@@ -951,7 +951,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Не хочу отвечать."
         }
       },
@@ -1038,7 +1038,7 @@
           "E": "Неврологическое заболевание",
           "F": "Заболевание, связанное с длительной болью или нарушением движений",
           "G": "Другое физическое заболевание",
-          "H": "Такие заболевания мне не известны",
+          "H": "Такие заболевания мне неизвестны.",
           "I": "Я не знаю",
           "J": "Не хочу отвечать."
         }
@@ -1123,7 +1123,7 @@
       },
       "en": {
         "title": "What diagnoses or possible diagnoses has the specialist mentioned to you?",
-        "time": "At any time in your life. Refer to what a specialist says, not self-diagnosis.",
+        "time": "At any point in your life. Use what a specialist has told you; do not rely on self-diagnosis.",
         "choices": {
           "A": "Depression",
           "B": "Anxiety or panic disorder",
@@ -1131,20 +1131,20 @@
           "D": "Psychotic disorders",
           "E": "PTSD or other trauma-related disorders",
           "F": "ADHD",
-          "G": "Autistic spectrum disorders",
+          "G": "Autism spectrum disorder",
           "H": "Obsessive compulsive disorder",
           "I": "Eating disorders",
           "J": "Substance use or addiction disorders",
           "K": "Personality disorders",
-          "L": "Other diagnosis",
-          "M": "There is no such diagnosis.",
+          "L": "Another diagnosis",
+          "M": "I have no diagnosis from this list.",
           "N": "I don't know",
           "O": "I don't want to answer."
         }
       },
       "ru": {
         "title": "Какие диагнозы или возможные диагнозы вам назвал специалист?",
-        "time": "В любой момент вашей жизни. Обращайтесь к мнению специалиста, а не занимайтесь самодиагностикой.",
+        "time": "Когда-либо в жизни. Учитывайте мнение специалиста, а не занимайтесь самодиагностикой.",
         "choices": {
           "A": "Депрессия",
           "B": "Тревожное или паническое расстройство",
@@ -1152,13 +1152,13 @@
           "D": "Психотические расстройства",
           "E": "Посттравматическое стрессовое расстройство или другие расстройства, связанные с травмой",
           "F": "СДВГ",
-          "G": "Расстройства аутистического спектра",
+          "G": "Расстройство аутистического спектра",
           "H": "Обсессивно-компульсивное расстройство",
           "I": "Расстройства пищевого поведения",
           "J": "Расстройства, связанные с употреблением психоактивных веществ или зависимостью.",
           "K": "Расстройства личности",
-          "L": "Другие диагнозы",
-          "M": "Такого диагноза не существует.",
+          "L": "Другой диагноз",
+          "M": "У меня нет диагноза из этого списка.",
           "N": "Я не знаю",
           "O": "Я не хочу отвечать."
         }
@@ -1239,10 +1239,10 @@
         "title": "What is the status of these diagnoses?",
         "time": "Currently.",
         "choices": {
-          "A": "Diagnosis determined by a specialist",
-          "B": "Only suspicion or investigation",
-          "C": "Later revised or cancelled diagnosis",
-          "D": "Different diagnoses have different status; to be clarified at the visit",
+          "A": "A diagnosis made by a specialist",
+          "B": "Only suspected, or still being assessed",
+          "C": "Diagnosis later revised or withdrawn",
+          "D": "Different diagnoses have different statuses; clarify at the appointment",
           "E": "Does not apply to me",
           "F": "I don't know",
           "G": "I don't want to answer."
@@ -1253,9 +1253,9 @@
         "time": "В настоящее время.",
         "choices": {
           "A": "Диагноз установлен специалистом.",
-          "B": "Только подозрение или расследование",
-          "C": "Впоследствии диагноз был пересмотрен или отменен.",
-          "D": "Разные диагнозы имеют разный статус; это будет уточнено во время визита.",
+          "B": "Есть только подозрение или диагноз ещё уточняется",
+          "C": "Диагноз впоследствии пересмотрен или отменён",
+          "D": "Статус разных диагнозов различается; это нужно уточнить на приёме.",
           "E": "Ко мне это не относится",
           "F": "Я не знаю",
           "G": "Я не хочу отвечать."
@@ -1400,7 +1400,7 @@
         }
       },
       "en": {
-        "title": "How did the current major difficulty begin?",
+        "title": "How did your most significant current difficulty begin?",
         "time": "Currently.",
         "choices": {
           "A": "Suddenly, within hours or days",
@@ -1413,7 +1413,7 @@
         }
       },
       "ru": {
-        "title": "Как возникли нынешние серьезные трудности?",
+        "title": "Как началась ваша наиболее значимая нынешняя трудность?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Внезапно, в течение нескольких часов или дней",
@@ -1492,12 +1492,12 @@
         }
       },
       "en": {
-        "title": "Which difficulty group started first?",
+        "title": "Which category of difficulties began first?",
         "time": "At the beginning of the current deterioration.",
         "choices": {
           "A": "Mood",
           "B": "Anxiety or fear",
-          "C": "Sleepiness or fatigue",
+          "C": "Sleep or fatigue",
           "D": "Attention or memory",
           "E": "Pain or physical health",
           "F": "Substance use",
@@ -1510,12 +1510,12 @@
         }
       },
       "ru": {
-        "title": "Какая группа по уровню сложности начала первой?",
+        "title": "Какая категория трудностей возникла первой?",
         "time": "В начале нынешнего ухудшения ситуации.",
         "choices": {
           "A": "Настроение",
           "B": "Тревога или страх",
-          "C": "Сонливость или усталость",
+          "C": "Сон или усталость",
           "D": "Внимание или память",
           "E": "Боль или физическое здоровье",
           "F": "Употребление психоактивных веществ",
@@ -1616,7 +1616,16 @@
           "D": "Улучшено",
           "E": "Переменная",
           "F": "Я не знаю",
-          "G": "Я не хочу отвечать."
+          "G": "Я не хочу отвечать.",
+          "choices": {
+            "A": "Практически никакой разницы",
+            "B": "Немного хуже",
+            "C": "Значительно ухудшилось",
+            "D": "Улучшено",
+            "E": "Самочувствие меняется",
+            "F": "Я не знаю",
+            "G": "Я не хочу отвечать."
+          }
         }
       },
       "translation_provenance": {
@@ -1681,14 +1690,14 @@
       },
       "en": {
         "title": "What professional help have you received other than medication?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "Individual psychotherapy",
           "B": "Group therapy",
           "C": "Psychologist consultations",
           "D": "Couples or family therapy",
           "E": "Rehabilitation or social support",
-          "F": "Another way",
+          "F": "Another form of support",
           "G": "Not received",
           "H": "I don't know",
           "I": "I don't want to answer."
@@ -1696,14 +1705,14 @@
       },
       "ru": {
         "title": "Какую профессиональную помощь вы получили помимо медикаментозного лечения?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Индивидуальная психотерапия",
           "B": "Групповая терапия",
           "C": "Консультации психолога",
           "D": "Семейная или супружеская терапия",
           "E": "Реабилитация или социальная поддержка",
-          "F": "Другой способ",
+          "F": "Другой вид помощи",
           "G": "Не получено",
           "H": "Я не знаю",
           "I": "Я не хочу отвечать."
@@ -1772,7 +1781,7 @@
         }
       },
       "en": {
-        "title": "For how long did you receive the most recent course of this help?",
+        "title": "How long did you receive the most recent course of this support?",
         "time": "The most recent course of help.",
         "choices": {
           "A": "Less than a month",
@@ -1786,7 +1795,7 @@
         }
       },
       "ru": {
-        "title": "Как долго вы получали эту помощь в последний раз?",
+        "title": "Как долго длился последний курс такой помощи?",
         "time": "Последний курс оказания помощи.",
         "choices": {
           "A": "Менее месяца",
@@ -1864,10 +1873,10 @@
         }
       },
       "en": {
-        "title": "Why did the last aid course end?",
+        "title": "Why did the most recent course of support end?",
         "time": "Currently.",
         "choices": {
-          "A": "Course completed by agreement",
+          "A": "Course completed as agreed",
           "B": "It got better.",
           "C": "There was not enough benefit",
           "D": "It got worse or was an unpleasant experience",
@@ -1880,15 +1889,15 @@
         }
       },
       "ru": {
-        "title": "Почему завершился последний курс оказания первой помощи?",
+        "title": "Почему завершился последний курс такой помощи?",
         "time": "В настоящее время.",
         "choices": {
-          "A": "Курс завершается по соглашению.",
+          "A": "Курс завершился по договорённости.",
           "B": "Стало лучше.",
-          "C": "Преимущества были недостаточны.",
-          "D": "Ситуация ухудшилась или стала неприятным опытом.",
-          "E": "Из-за стоимости, времени или доступности",
-          "F": "Помощь по-прежнему оказывается.",
+          "C": "Помощь не принесла достаточной пользы.",
+          "D": "Состояние ухудшилось или опыт получения помощи был неприятным.",
+          "E": "Из-за стоимости, нехватки времени или недоступности помощи.",
+          "F": "Помощь всё ещё продолжается.",
           "G": "Другая причина",
           "H": "Ко мне это не относится",
           "I": "Я не знаю",
