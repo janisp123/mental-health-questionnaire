@@ -8,7 +8,7 @@
       "section": 1,
       "name": "182_MODULE_01_LV_EN_RU_v16.json",
       "question_count": 23,
-      "sha256": "7e7469fb3da42db4cdcdf19fbab488706a737c6d8616370ea96a8d28a4e9148a",
+      "sha256": "024f33375de30bbf066db1a60028138e2934ad4e5867b7c13c5d8d048e47dade",
       "first_id": "M01_01"
     },
     {
@@ -99,7 +99,7 @@
       "section": 14,
       "name": "182_MODULE_14_LV_EN_RU_v16.json",
       "question_count": 12,
-      "sha256": "1f6253a9adac8ee1c035441b56b8e0f951db27bebc77c1c6d36adf5cff22c93f",
+      "sha256": "eb7ae921c28e900015f157f87cfc0151d2effc4c5d03594ed36faf95673e58d8",
       "first_id": "M14_01"
     },
     {
@@ -211,7 +211,7 @@
       "section": 30,
       "name": "182_MODULE_30_LV_EN_RU_v16.json",
       "question_count": 26,
-      "sha256": "143433d17902582ae255abb8d3d99229f2179d644bfe1e6e795bc40324e220d6",
+      "sha256": "5ad9ff6b6cb9e43243cae7f2c0dc556eaaa629856caeea1ddc29ab1917ff9f3d",
       "first_id": "M30_01"
     },
     {
