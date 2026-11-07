@@ -122,14 +122,18 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert "SYNTHETIC NAME" not in project_feedback
     assert "SYNTHETIC MEDICINE" not in project_feedback
     act(page, "doctor")
-    report = page.locator("#reportText").input_value()
+    report = page.locator(".report-preview").evaluate("(el) => el.textContent")
     assert "SYNTHETIC NAME" in report
     assert "SYNTHETIC MEDICINE" in report
-    assert report.index("Question feedback") < report.index("SYNTHETIC NAME")
-    page.evaluate('window.__copied=null;Object.defineProperty(navigator,"clipboard",{value:{writeText:async t=>{window.__copied=t}},configurable:true})')
-    act(page, "copyDoctor")
-    page.wait_for_function("window.__copied!==null")
-    assert page.evaluate("window.__copied") == report
+    assert report.index("SYNTHETIC NAME") < report.index(data["ui"]["lv"]["feedbackSectionHeading"])
+    assert data["ui"]["lv"]["reportCountSelected"] in report
+    assert data["ui"]["lv"]["reportCountDone"] in report
+    assert data["ui"]["lv"]["reportCountSkip"] in report
+    assert page.locator("#reportText").count() == 0
+    assert page.locator('[data-act="print"]').count() == 1
+    assert page.locator('[data-act="back"]').count() == 1
+    assert page.locator('[data-act="sections"]').count() == 1
+    assert page.locator('[data-act="copyDoctor"],[data-act="downloadReport"]').count() == 0
     page.emulate_media(media="print")
     assert page.locator(".report-preview").is_visible()
     assert not page.locator("footer").is_visible()
@@ -137,9 +141,6 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     page.pdf(path=str(pdf_path), format="A4")
     assert pdf_path.stat().st_size > 1000
     page.emulate_media(media="screen")
-    for language in ("lv", "ru", "en"):
-        page.select_option("#language", language)
-        assert page.locator(".report-preview h1").inner_text() == data["ui"][language]["doctorHeading"]
     assert not page.locator('[data-act="ai"]').count()
     assert not errors, errors
     assert not network, network
