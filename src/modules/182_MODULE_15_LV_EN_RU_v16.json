@@ -125,8 +125,8 @@
         }
       },
       "en": {
-        "title": "For how long in total have you used nicotine during your lifetime?",
-        "time": "At any time in life.",
+        "title": "How long in total have you used nicotine over your lifetime?",
+        "time": "At any point in your life.",
         "choices": {
           "A": "I have never used nicotine",
           "B": "Less than 1 year",
@@ -140,7 +140,7 @@
       },
       "ru": {
         "title": "Как долго в общей сложности вы употребляли никотин за всю жизнь?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Никогда не употреблял(а) никотин",
           "B": "Менее 1 года",
@@ -214,7 +214,7 @@
       },
       "en": {
         "title": "Have you tried to quit nicotine several times?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -225,11 +225,11 @@
       },
       "ru": {
         "title": "Пытались ли вы несколько раз отказаться от никотина?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -290,7 +290,7 @@
       },
       "en": {
         "title": "Did your mood or fatigue change significantly when you stopped using nicotine?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -301,11 +301,11 @@
       },
       "ru": {
         "title": "Значительно ли менялись настроение или усталость при отказе от никотина?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -442,7 +442,7 @@
       },
       "en": {
         "title": "Have you ever had a period when it was difficult to control your alcohol use?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -453,11 +453,11 @@
       },
       "ru": {
         "title": "Был ли в вашей жизни период, когда было трудно контролировать употребление алкоголя?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -512,7 +512,7 @@
       },
       "en": {
         "title": "Has alcohol use ever caused problems with your health, relationships or responsibilities?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -523,11 +523,11 @@
       },
       "ru": {
         "title": "Вызывало ли употребление алкоголя когда-либо проблемы со здоровьем, отношениями или выполнением обязанностей?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -590,7 +590,7 @@
         "title": "Over the past 28 days, how many caffeinated drinks did you usually have per day?",
         "time": "The past 28 days.",
         "choices": {
-          "A": "Nobody",
+          "A": "None",
           "B": "Less than 1 per day",
           "C": "1 per day",
           "D": "2 per day",
@@ -604,7 +604,7 @@
         "title": "Сколько напитков с кофеином вы обычно выпивали в день за последние 28 дней?",
         "time": "Последние 28 дней.",
         "choices": {
-          "A": "Никто",
+          "A": "Ни одного напитка",
           "B": "Менее 1 в день",
           "C": "1 в день",
           "D": "2 в день",
@@ -670,7 +670,7 @@
       },
       "en": {
         "title": "Does reducing caffeine cause headaches, fatigue or irritability?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -681,11 +681,11 @@
       },
       "ru": {
         "title": "Вызывает ли сокращение кофеина головную боль, усталость или раздражительность?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -755,8 +755,8 @@
         "choices": {
           "A": "Нет",
           "B": "Да, но не за последние 3 месяца",
-          "C": "Да, в том числе за последние 3 месяца",
-          "D": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Не знаю / трудно сказать",
           "E": "Не хочу отвечать."
         }
       },
@@ -816,7 +816,7 @@
       },
       "en": {
         "title": "Have you ever found it difficult to control your use of these substances?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -827,11 +827,11 @@
       },
       "ru": {
         "title": "Было ли вам когда-либо трудно контролировать употребление этих веществ?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -885,8 +885,8 @@
         }
       },
       "en": {
-        "title": "Have panic, suspiciousness or unusual behaviour ever occurred while using or stopping substances?",
-        "time": "At any time in life.",
+        "title": "Have you ever experienced panic, suspiciousness, or unusual behaviour while using or stopping substances?",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -897,11 +897,11 @@
       },
       "ru": {
         "title": "Возникали ли когда-либо паника, подозрительность или необычное поведение при употреблении веществ или отказе от них?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -956,7 +956,7 @@
       },
       "en": {
         "title": "Have you needed professional help because of substance use?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -967,11 +967,11 @@
       },
       "ru": {
         "title": "Приходилось ли обращаться за профессиональной помощью из-за употребления веществ?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -1135,7 +1135,7 @@
         }
       },
       "en": {
-        "title": "On how many occasions did you have 6 or more of these drinks on one occasion (about 60 g of pure alcohol)?",
+        "title": "How many times did you drink 6 or more of these drinks on one occasion (about 60 g of pure alcohol)?",
         "time": "The past 3 months. One drink here means about 10 g of pure alcohol: approximately 250 ml of 5% beer, 100 ml of 12% wine or 30 ml of 40% spirits. An ordinary glass or bottle may contain more than one such drink.",
         "choices": {
           "A": "On no occasions",
@@ -1276,7 +1276,7 @@
       },
       "en": {
         "title": "Have you ever had seizures, severe confusion or hallucinations after reducing or stopping alcohol?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -1286,7 +1286,7 @@
       },
       "ru": {
         "title": "Были ли когда-нибудь судороги, выраженная спутанность сознания или галлюцинации после сокращения или прекращения употребления алкоголя?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
@@ -1422,7 +1422,7 @@
         "title": "Which intoxicating substances have you used outside treatment directed by a doctor? Select all that apply.",
         "time": "At any time in your life. Do not repeat medicine names or doses here; use the medicine list for those.",
         "choices": {
-          "A": "Nobody",
+          "A": "None",
           "B": "Cannabis",
           "C": "Stimulants such as amphetamine or cocaine",
           "D": "Opioids",
@@ -1437,7 +1437,7 @@
         "title": "Какие опьяняющие вещества вы употребляли вне назначенного врачом лечения? Выберите всё подходящее.",
         "time": "За всю жизнь. Не повторяйте здесь названия и дозы лекарств; для этого есть список лекарств.",
         "choices": {
-          "A": "Никто",
+          "A": "Ничего из перечисленного",
           "B": "Каннабис",
           "C": "Стимуляторы, например амфетамин или кокаин",
           "D": "Опиоиды",
@@ -1523,7 +1523,7 @@
           "C": "1–2 days per week",
           "D": "3–4 days per week",
           "E": "5–7 days per week",
-          "F": "Variable / don't know",
+          "F": "It varies / I don't know",
           "G": "I don't want to answer."
         }
       },
@@ -1536,7 +1536,7 @@
           "C": "1–2 дня в неделю",
           "D": "3–4 дня в неделю",
           "E": "5–7 дней в неделю",
-          "F": "Переменная / не знаю",
+          "F": "По-разному / не знаю",
           "G": "Я не хочу отвечать."
         }
       },
@@ -1598,7 +1598,7 @@
       },
       "en": {
         "title": "After reducing or stopping other substances, have you had physical withdrawal symptoms or a strong craving to use again? Exclude alcohol, nicotine and caffeine.",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -1608,7 +1608,7 @@
       },
       "ru": {
         "title": "После сокращения или прекращения других веществ были ли физические симптомы отмены или сильная тяга употребить снова? Не учитывайте алкоголь, никотин и кофеин.",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
@@ -1757,7 +1757,7 @@
         }
       },
       "en": {
-        "title": "How often did you use stimulants outside of your doctor's instructions?",
+        "title": "How often did you use stimulants other than as directed by a doctor?",
         "time": "The last 3 months.",
         "choices": {
           "A": "Never",
@@ -1771,7 +1771,7 @@
         }
       },
       "ru": {
-        "title": "Как часто вы использовали стимуляторы вне рекомендаций врача?",
+        "title": "Как часто вы употребляли стимуляторы не по назначению или с нарушением указаний врача?",
         "time": "Последние 3 месяца.",
         "choices": {
           "A": "Никогда",
@@ -1845,7 +1845,7 @@
         }
       },
       "en": {
-        "title": "How often did you use opioids outside of your doctor's instructions?",
+        "title": "How often did you use opioids other than as directed by a doctor?",
         "time": "The last 3 months.",
         "choices": {
           "A": "Never",
@@ -1859,7 +1859,7 @@
         }
       },
       "ru": {
-        "title": "Как часто вы принимали опиоиды вне рекомендаций врача?",
+        "title": "Как часто вы принимали опиоиды не по назначению или с нарушением указаний врача?",
         "time": "Последние 3 месяца.",
         "choices": {
           "A": "Никогда",
@@ -1933,7 +1933,7 @@
         }
       },
       "en": {
-        "title": "How often did you use sedatives or sleeping pills without a doctor's prescription?",
+        "title": "How often did you use sedatives or sleeping medicines other than as directed by a doctor?",
         "time": "The last 3 months.",
         "choices": {
           "A": "Never",
@@ -1947,7 +1947,7 @@
         }
       },
       "ru": {
-        "title": "Как часто вы принимали успокоительные или снотворные средства без рецепта врача?",
+        "title": "Как часто вы принимали успокоительные или снотворные средства не по назначению или с нарушением указаний врача?",
         "time": "Последние 3 месяца.",
         "choices": {
           "A": "Никогда",
@@ -2021,7 +2021,7 @@
         }
       },
       "en": {
-        "title": "How often did you use other intoxicants?",
+        "title": "How often did you use other intoxicating substances?",
         "time": "The last 3 months.",
         "choices": {
           "A": "Never",
@@ -2035,7 +2035,7 @@
         }
       },
       "ru": {
-        "title": "Как часто вы употребляли другие одурманивающие вещества?",
+        "title": "Как часто вы употребляли другие вещества, вызывающие опьянение?",
         "time": "Последние 3 месяца.",
         "choices": {
           "A": "Никогда",
@@ -2197,7 +2197,7 @@
         }
       },
       "en": {
-        "title": "When was the last time you used stimulants without a doctor's prescription?",
+        "title": "When did you last use stimulants other than as directed by a doctor?",
         "time": "Currently.",
         "choices": {
           "A": "Within the past 24 hours",
@@ -2211,7 +2211,7 @@
         }
       },
       "ru": {
-        "title": "Когда вы в последний раз употребляли стимуляторы без рецепта врача?",
+        "title": "Когда вы в последний раз употребляли стимуляторы не по назначению или с нарушением указаний врача?",
         "time": "В настоящее время.",
         "choices": {
           "A": "За последние 24 часа",
@@ -2285,7 +2285,7 @@
         }
       },
       "en": {
-        "title": "When was the last time you used opioids outside of your doctor's instructions?",
+        "title": "When did you last use opioids other than as directed by a doctor?",
         "time": "Currently.",
         "choices": {
           "A": "Within the past 24 hours",
@@ -2299,7 +2299,7 @@
         }
       },
       "ru": {
-        "title": "Когда вы в последний раз принимали опиоиды вне рекомендаций врача?",
+        "title": "Когда вы в последний раз принимали опиоиды не по назначению или с нарушением указаний врача?",
         "time": "В настоящее время.",
         "choices": {
           "A": "За последние 24 часа",
@@ -2373,7 +2373,7 @@
         }
       },
       "en": {
-        "title": "When was the last time you took sedatives or sleeping pills without a doctor's prescription?",
+        "title": "When did you last use sedatives or sleeping medicines other than as directed by a doctor?",
         "time": "Currently.",
         "choices": {
           "A": "Within the past 24 hours",
@@ -2387,7 +2387,7 @@
         }
       },
       "ru": {
-        "title": "Когда вы в последний раз принимали успокоительные или снотворные препараты без рецепта врача?",
+        "title": "Когда вы в последний раз принимали успокоительные или снотворные средства не по назначению или с нарушением указаний врача?",
         "time": "В настоящее время.",
         "choices": {
           "A": "За последние 24 часа",
@@ -2615,7 +2615,7 @@
         }
       },
       "ru": {
-        "title": "Сильное желание употребить наркотики затрудняло занятия другими делами?",
+        "title": "Затрудняло ли сильное желание употребить другие дела?",
         "time": "За последние 3 месяца. Включая алкоголь и другие одурманивающие вещества.",
         "choices": {
           "A": "Нет",
@@ -2679,7 +2679,7 @@
         }
       },
       "ru": {
-        "title": "Вы продолжали употреблять наркотики, несмотря на то, что знали, что это вредит вашему здоровью, отношениям или обязанностям?",
+        "title": "Продолжали ли вы употреблять, несмотря на то, что знали о вреде для здоровья, отношений или выполнения обязанностей?",
         "time": "За последние 3 месяца. Включая алкоголь и другие одурманивающие вещества.",
         "choices": {
           "A": "Нет",
@@ -2753,8 +2753,8 @@
           "C": "Stimulants, including cocaine",
           "D": "Opioids",
           "E": "Sedatives or sleeping pills",
-          "F": "For other or unknown substances",
-          "G": "For several substances together",
+          "F": "Other or unknown substances",
+          "G": "Several substances together",
           "H": "Does not apply to me",
           "I": "I don't know",
           "J": "I don't want to answer."
@@ -2769,8 +2769,8 @@
           "C": "Стимуляторы, включая кокаин",
           "D": "Опиоиды",
           "E": "Седативные средства или снотворное",
-          "F": "Для других или неизвестных веществ",
-          "G": "Для нескольких веществ одновременно",
+          "F": "Другие или неизвестные вещества",
+          "G": "Несколько веществ одновременно",
           "H": "Ко мне это не относится",
           "I": "Я не знаю",
           "J": "Я не хочу отвечать."
@@ -2834,7 +2834,7 @@
       },
       "en": {
         "title": "Has there ever been a possible overdose with impaired consciousness or breathing?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -2844,7 +2844,7 @@
       },
       "ru": {
         "title": "Были ли когда-либо случаи возможной передозировки с нарушением сознания или дыхания?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",

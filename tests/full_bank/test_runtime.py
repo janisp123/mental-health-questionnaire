@@ -85,6 +85,22 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     ]
     assert "Я не знаю / Я не уверен" not in s06_russian_answers
     assert "Я не уверен." not in s06_russian_answers
+    s10_questions = [q for q in questions if q["module"] == "S10"]
+    assert len(s10_questions) == 37
+    assert question_by_id["M15_08"]["translations"]["en"]["choices"]["A"] == "None"
+    assert question_by_id["M15_08"]["translations"]["ru"]["choices"]["A"] == "Ни одного напитка"
+    assert question_by_id["M15_20"]["translations"]["en"]["choices"]["A"] == "None"
+    assert question_by_id["M15_16"]["translations"]["en"]["title"] == "How many times did you drink 6 or more of these drinks on one occasion (about 60 g of pure alcohol)?"
+    assert question_by_id["M15_34"]["translations"]["ru"]["title"] == "Затрудняло ли сильное желание употребить другие дела?"
+    assert question_by_id["M15_36"]["translations"]["en"]["choices"]["F"] == "Other or unknown substances"
+    assert question_by_id["M15_36"]["translations"]["ru"]["choices"]["G"] == "Несколько веществ одновременно"
+    assert question_by_id["M15_26"]["translations"]["en"]["title"] == "How often did you use sedatives or sleeping medicines other than as directed by a doctor?"
+    s10_russian_answers = [
+        answer for q in s10_questions
+        for answer in q["translations"]["ru"].get("choices", {}).values()
+    ]
+    assert "Я не знаю / Я не уверен" not in s10_russian_answers
+    assert "Я не уверен." not in s10_russian_answers
     assert question_by_id["M13_15"]["translations"]["ru"]["choices"]["F"] == "По-разному / не знаю"
     s09_russian_answers = [
         answer for q in s09_questions
