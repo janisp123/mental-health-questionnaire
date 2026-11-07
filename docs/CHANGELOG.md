@@ -9,19 +9,22 @@
 
 **Starting commit:** `b78a9c278bc4cb75ca5a39150f95f3d2e1139e85` on GitHub `develop`.
 
-1. [IN_PROGRESS] Make single-choice selection unmistakable before the delayed advance; preserve immediate Skip and duplicate-tap protection.
+1. [DONE] Make single-choice selection unmistakable before the delayed advance; preserve immediate Skip and duplicate-tap protection.
 2. [TODO] Produce one report: selected-question / completed / skipped counts at the top; answered items only; clearly separate user technical feedback after answers; preserve explicit safety-answer bolding.
 3. [TODO] Put entered name and surname at the upper-left of the printable report; if absent, leave writable name and date space there.
 4. [TODO] Replace the report wall and duplicate export actions with only Print / save PDF, Back to answers, and Select sections. Remove contact email from results and reviewer PDF; retain it in legal notice and feedback.
 5. [TODO] Explain the accuracy-review workflow in the in-app guide and reviewer PDF: skip acceptable questions, flag problematic ones and choose reasons, then prepare and return the PDF.
-6. [TODO] Run focused report, screen, and selection checks; run the full offline Chromium journey for the shared runtime/report changes; refresh both Drive files and verify readback hashes.
+6. [TODO] Run focused report, screen, and selection checks; run the full offline Chromium journey for shared runtime/report changes; refresh both Drive files and verify readback hashes.
 7. [TODO] Ask the user to verify Android selection visibility and Print / save PDF after the new build is in Drive.
 
 **Workflow:** complete and record one batch at a time on `develop`; refresh the Google Drive HTML/PDF after each verified user-testable batch. Preserve the 48 source modules, 712 question IDs, recovery schema, and frozen references.
 
-**Batch 1 — selection cue:** immediately render the selected radio as checked with a stronger green card and a separate checkmark; delay advance about 1.3 seconds. Updated focused and full-bank browser tests for visible state, delayed advance, double tap, and Skip.
-**Local checks:** screen renderer, event delegation, build manifest, locale catalogs, JS/Python syntax, and `git diff --check` PASS. Chromium is unavailable locally; GitHub browser workflows are pending.
-**Exact next action:** push the checkpoint and wait for focused and full offline-browser CI before marking Task 1 DONE and refreshing Drive.
+**Batch 1 — selection cue:** the selected radio renders checked with a stronger green card and a separate checkmark, then advances after about 1.3 seconds. Skip cancels the pending timer; duplicate taps are coalesced.
+**Checks:** app-component workflow `42361043110` PASS and full offline questionnaire workflow `42361043037` PASS on `cfb8f6868fc04a801339063faea79614861bd166`. Both were read from GitHub Actions; no local browser run is claimed.
+**Drive refresh:** replaced the HTML and one-page A4 Latvian reviewer PDF in place; their existing file IDs and links were preserved. Readback SHA-256 values match: HTML `5e4ee429be88e60d7a2e11b91d1384e1e096882ae103a1478bcecb5192749fa3`, PDF `38a2e723364211863f9a0aaa4c9907d7b1815e1709ec1d226c44d8a16263b0bf`. PDF was rendered and visually inspected.
+**Reviewer guide:** records source commit `cfb8f68`, describes the stronger selection cue, and no longer shows the contact email.
+**Metadata commits:** selection code `cfb8f6868fc04a801339063faea79614861bd166`; reviewer guide `4adfa43bb44f8a8c5ff7e2a92a966faea6a4ba04`, followed by email removal `3e1b5733816c6af0b9a57e782145be5a9a973368`.
+**Exact next action:** implement Batch 2 — the concise printable report and answer counts/name placement — in small reviewed steps, then run focused and full offline browser checks before refreshing Drive again.
 
 ## 2026-11-07 · QUESTION-ANSWER-CLARITY · IN_PROGRESS
 
