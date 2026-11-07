@@ -50,7 +50,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Не хочу отвечать."
         }
       },
@@ -114,7 +114,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Не хочу отвечать."
         }
       },
@@ -178,7 +178,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Не хочу отвечать."
         }
       },
@@ -228,7 +228,7 @@
       },
       "en": {
         "title": "Have you ever lost consciousness or had an episode when you were unaware of what was happening around you?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -238,11 +238,11 @@
       },
       "ru": {
         "title": "Были ли когда-либо потеря сознания или эпизод, во время которого вы не понимали происходящее вокруг?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Не хочу отвечать."
         }
       },
@@ -294,7 +294,7 @@
       },
       "en": {
         "title": "What is your experience of epileptic seizures or similar episodes?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "A doctor has diagnosed epilepsy",
           "B": "One or more possible episodes; no diagnosis has been made",
@@ -305,10 +305,10 @@
       },
       "ru": {
         "title": "Каков ваш опыт эпилептических приступов или похожих эпизодов?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Врач диагностировал эпилепсию",
-          "B": "Был один или несколько подозрительных эпизодов; диагноз не установлен",
+          "B": "Был один или несколько эпизодов, похожих на эпилептический приступ; диагноз не установлен",
           "C": "Таких эпизодов не было",
           "D": "Не знаю / трудно сказать",
           "E": "Не хочу отвечать."
@@ -362,7 +362,7 @@
       },
       "en": {
         "title": "Have you had a head injury involving loss of consciousness?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -372,11 +372,11 @@
       },
       "ru": {
         "title": "Была ли у вас травма головы с потерей сознания?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Не хочу отвечать."
         }
       },
@@ -426,7 +426,7 @@
       },
       "en": {
         "title": "Have you ever had a severe headache together with changes in vision, speech, sensation or movement?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -436,11 +436,11 @@
       },
       "ru": {
         "title": "Были ли когда-либо сильные головные боли вместе с изменениями зрения, речи, чувствительности или движений?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Не хочу отвечать."
         }
       },
@@ -504,7 +504,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Не хочу отвечать."
         }
       },
@@ -554,7 +554,7 @@
       },
       "en": {
         "title": "Have memory gaps ever begun after severe stress or a distressing event?",
-        "time": "At any time in life.",
+        "time": "At any point in your life.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -564,11 +564,11 @@
       },
       "ru": {
         "title": "Начинались ли когда-либо провалы памяти после сильного стресса или тяжёлого события?",
-        "time": "В любой момент жизни.",
+        "time": "Когда-либо в жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Не хочу отвечать."
         }
       },
@@ -632,7 +632,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Не хочу отвечать."
         }
       },
@@ -696,7 +696,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Не хочу отвечать."
         }
       },
@@ -843,12 +843,12 @@
         }
       },
       "ru": {
-        "title": "Возникли ли сейчас или только что внезапно новая слабость лица или руки, нарушение речи либо выраженная потеря зрения?",
+        "title": "Появились ли у вас внезапно прямо сейчас или только что слабость в лице или руке, нарушение речи либо выраженная потеря зрения?",
         "time": "Новые симптомы, внезапно возникшие сейчас или только что.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / трудно сказать.",
           "D": "Не хочу отвечать."
         }
       },
@@ -1168,7 +1168,8 @@
           "F": "Other fine hand movements",
           "G": "I don't know",
           "H": "I don't want to answer."
-        }
+        },
+        "context": "The past 28 days. New or worsening difficulties with hand movements should be assessed by a doctor. Sudden weakness, speech or vision changes require emergency help (112 or your local emergency number); do not wait to finish."
       },
       "ru": {
         "title": "Были ли трудности с какими-либо из следующих действий руками? Выберите всё подходящее.",
@@ -1260,7 +1261,7 @@
           "B": "Только левую",
           "C": "Только правую",
           "D": "Обе",
-          "E": "Переменная / не знаю",
+          "E": "По-разному / не знаю",
           "F": "Я не хочу отвечать."
         }
       },
@@ -1406,7 +1407,7 @@
         "choices": {
           "A": "No hand difficulty",
           "B": "Within the past 24 hours",
-          "C": "More than 24 hours ago, but less than 1 month ago",
+          "C": "More than 24 hours ago, but no more than 1 month ago",
           "D": "More than 1 month ago, but no more than 3 months ago",
           "E": "More than 3 months ago",
           "F": "I don't know",
@@ -1419,7 +1420,7 @@
         "choices": {
           "A": "Трудностей с руками нет",
           "B": "За последние 24 часа",
-          "C": "Более 24 часов назад, но менее месяца назад",
+          "C": "Более 24 часов назад, но не более месяца назад",
           "D": "Более месяца, но не более 3 месяцев назад",
           "E": "Более 3 месяцев назад",
           "F": "Я не знаю",
@@ -1658,7 +1659,7 @@
         }
       },
       "en": {
-        "title": "How often did you struggle to find an everyday word you knew, beyond recalling a person’s name?",
+        "title": "How often did you have trouble finding a familiar everyday word, not just remembering a person's name?",
         "time": "The past 28 days.",
         "choices": {
           "A": "Never",
@@ -1671,7 +1672,7 @@
         }
       },
       "ru": {
-        "title": "Как часто вам было трудно подобрать знакомое повседневное слово, помимо имени человека?",
+        "title": "Как часто вам было трудно подобрать знакомое повседневное слово, а не только вспомнить имя человека?",
         "time": "За последние 28 дней.",
         "choices": {
           "A": "Никогда",
@@ -1804,7 +1805,7 @@
         }
       },
       "en": {
-        "title": "Is the person suddenly unable to move or speak, remains frozen for long periods of time, or is unable to take in fluids?",
+        "title": "Is the person now barely moving or not speaking, staying frozen for a long time, or unable to take in fluids, with these symptoms starting suddenly?",
         "time": "Currently / in the last few days.",
         "help": "This is not a test for catatonia. Sudden changes should be evaluated medically.",
         "choices": {
@@ -1815,7 +1816,7 @@
         }
       },
       "ru": {
-        "title": "Человек внезапно теряет способность двигаться или говорить, замирает на длительное время или не может принимать жидкость?",
+        "title": "Человек сейчас почти не двигается или не говорит, надолго замирает либо не может пить, и эти симптомы возникли внезапно?",
         "time": "В настоящее время / в последние несколько дней.",
         "help": "Это не тест на кататонию. Внезапные изменения требуют медицинского обследования.",
         "choices": {
