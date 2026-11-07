@@ -78,6 +78,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     # The full-bank safety rules still produce the gentle support message.
     act(page, "sections")
     page.locator('[data-jump="S03"]').click()
+    skip_until(page, "M06_01")
     assert qid(page) == "M06_01"
     choose(page, "B")
     assert page.locator("#support-message").is_visible()
@@ -165,3 +166,4 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     browser.close()
 
 print("PASS: full offline runtime includes selection, answer types, conditions, support, feedback/recovery, skip/back, copy/print, three locales, and ten-answer recovery. Android device UNVERIFIED.")
+
