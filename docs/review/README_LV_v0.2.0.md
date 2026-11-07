@@ -15,6 +15,10 @@
 2. Spied **Sākt / turpināt**. Izvēlies visas sadaļas vai tikai tās, kuras vēlies aizpildīt. Jautājumos ar vairākām atbildēm ekrānā ir norādīts, cik atbilžu vari izvēlēties. Izvēloties vienu atbildi, tā uzreiz izceļas ar zaļu fonu un atzīmi. Pēc īsas pauzes anketa pāriet pie nākamā jautājuma.
 3. Sadaļas beigās izvēlies **Saglabāt un turpināt** vai **Turpināt bez saglabāšanas**. Ja vēlies paņemt ilgāku pārtraukumu, saglabā progresu failā un vēlāk atver to pašu HTML failu, lai izvēlētos **Turpināt no faila**.
 
+## Precizitātes pārskatīšana
+
+Ja pārbaudi jautājumu formulējumus, vari izlaist jautājumus, kas šķiet atbilstoši. Atzīmē kļūdainu vai neskaidru jautājumu, izvēlies iemeslu un, ja vajadzīgs, pievieno īsu piezīmi. Kad pārbaude pabeigta, anketā sagatavo pārskatu un izvēlies **Drukāt / saglabāt PDF**. Nosūti PDF atpakaļ pārskatīšanai; tajā būs atbildētie jautājumi un atsevišķa tehnisko atsauksmju sadaļa. Izlaistās atbildes PDF netiek iekļautas, bet izlaisto jautājumu skaits ir norādīts pārskata augšdaļā.
+
 ## Saglabāšana un privātums
 
 Atbildes paliek atvērtajā anketā. Aizverot pārlūku, pārslēdzoties uz citu lietotni, saņemot zvanu vai citādi pārtraucot darbu, progress var pazust, ja tas nav saglabāts failā. Pirms pārtraukuma spied **Saglabāt progresu failā**.
