@@ -39,8 +39,8 @@
 |---:|---|---:|---|
 | 1 | S11 — Everyday life, goals, digital habits and spending | 62 | DONE |
 | 2 | S01 — Health history, medicines and memory | 61 | DONE |
-| 3 | S09 — Sleep, fatigue and pain | 50 | IN_PROGRESS |
-| 4 | S06 — Attention, learning and development | 43 | TODO |
+| 3 | S09 — Sleep, fatigue and pain | 50 | DONE |
+| 4 | S06 — Attention, learning and development | 43 | IN_PROGRESS |
 | 5 | S10 — Alcohol, nicotine and other substances | 37 | TODO |
 | 6 | S13 — Family, social context and caregiving | 70 | TODO |
 | 7 | S12 — Relationships and emotional patterns | 42 | TODO |
@@ -57,7 +57,11 @@
 **Checks:** full offline Chromium workflow `42369805843` PASS on source commit `421c526e0eaee40dddd2e16cee4669faeeb0ee7a`. The run rebuilt and exercised all 712 questions; S01-specific assertions cover 61 questions, corrected wording, and Russian gender-neutral uncertainty. The generated HTML was checked for the S01 corrections.
 **Distribution:** refreshed the existing Drive technical-review HTML and trilingual PDF in place. Read-back SHA-256 matched the uploaded files: HTML `8ededc611dc63fdc495d72b2a5bbf936550824b13028c8aa1dcf49e0738d26f2`; PDF `8613fd1ce73767ada568d464541862a0f5398f048840f6e6e281bda98b7851d0`. The README now makes feedback voluntary and unpaid, directs feedback to the project email, and removes the statement that Latvian is primary while EN/RU are untranslated. The answer PDF is described as material for the user’s appointment; it does not need to be sent to the project.
 **Audit build checkpoint:** `421c526e0eaee40dddd2e16cee4669faeeb0ee7a`; S11 and S01 are verified and distributed.
-**Exact next action:** begin S09 — Sleep, fatigue and pain (50 questions). Continue in section order only after the source/index checks, full CI, and built-section inspection pass. External human and clinical reviews remain outstanding.
+**Translation audit — Section S09:** reviewed all 50 questions and answer options in source modules 11, 12, and 13. Corrected EN/RU wording for the workday/weekend sleep comparison, the exact one-month onset boundary, the lifetime timeframe, and variable pain responses. Standardized gendered Russian uncertainty options to gender-neutral wording. Latvian text, question IDs, answer codes, and conditions were preserved; EN/RU option-code sets match Latvian.
+**Checks:** full offline Chromium workflow `42370999829` PASS on source commit `337746c23b27ff9d07396243a9bed7fb581354af`. It rebuilt and exercised the full 712-question application; the S09 browser assertions cover all 50 questions and key corrected strings. The generated HTML was checked for the corrections.
+**Distribution:** refreshed the existing Drive technical-review HTML in place and verified read-back SHA-256 `1d7e964db1996edb536afc405a61181d3efce7e11eb36714648560ae5273fa14`. The trilingual PDF remains the refreshed S01 copy, SHA-256 `8613fd1ce73767ada568d464541862a0f5398f048840f6e6e281bda98b7851d0`.
+**Audit build checkpoint:** `337746c23b27ff9d07396243a9bed7fb581354af`; S11, S01, and S09 are verified and distributed.
+**Exact next action:** begin S06 — Attention, learning and development (43 questions). Continue in section order only after the source/index checks, full CI, and built-section inspection pass. External human and clinical reviews remain outstanding.
 
 ## 2026-11-07 · QUESTION-ANSWER-CLARITY · IN_PROGRESS
 
