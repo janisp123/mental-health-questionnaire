@@ -34,12 +34,18 @@ def make_fixture():
             _question("SYN_03", "Conditional follow-up", ["A"], context={"id": "SYN_01", "showValues": ["B"]}),
         ],
     }
+    next_titles = {"lv": "Nākamā sintētiskā sadaļa", "en": "Next synthetic section", "ru": "Следующий тестовый раздел"}
+    next_group = {
+        "id": "S02", "required": False, "questionCount": 1,
+        "titles": next_titles, "concerns": next_titles,
+        "questions": [_question("SYN_04", "Next section", ["A", "B"])],
+    }
     return {
         "schema": "offline-questionnaire-full-bank-v1", "version": "synthetic-test",
         "layout_version": "synthetic-test", "legacy_opening_groups": [], "ui": ui,
-        "groups": [group],
+        "groups": [group, next_group],
         "source_module_to_section": {"01":"S01"}, "previous_layout_versions": [],
-        "presentation": {"questions": {}, "boldAnswers": {}, "topicOrder": ["S01"], "feedbackContactEmail": "test@example.invalid"},
+        "presentation": {"questions": {}, "boldAnswers": {}, "topicOrder": ["S01", "S02"], "feedbackContactEmail": "test@example.invalid"},
     }
 
 

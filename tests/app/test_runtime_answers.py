@@ -1,4 +1,5 @@
 """Focused browser check for single, multi-select, and skipped answers."""
+import json
 import tempfile
 import sys
 from pathlib import Path
@@ -15,13 +16,17 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     write_fixture(html_path)
     browser = launch(pw)
     page, errors, network = open_page(browser, html_path)
+    downloads = []
+    page.on("download", lambda download: downloads.append(download.suggested_filename))
     page.locator('[data-act="start"]').click()
     page.locator('[data-module="S01"]').check()
+    page.locator('[data-module="S02"]').check()
     page.locator('[data-act="confirm"]').click()
     assert page.locator('.question').get_attribute("data-question") == "SYN_01"
 
     page.locator('input[name="answer"][value="B"]').check()
     assert page.locator('.question').get_attribute("data-question") == "SYN_02"
+    assert downloads == [], "Answering a question must not trigger a download"
     saved = backup(page)
     assert saved["answers"]["SYN_01"]["codes"] == ["B"]
 
@@ -33,9 +38,21 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     saved_codes = backup(page)["answers"].get("SYN_02", {}).get("codes", [])
     assert sorted(saved_codes) == ["A", "B"], f"Expected both saved codes, got {saved_codes!r}"
 
-    act(page, "skip")
+    page.locator('[data-act="skip"]').click()
+    assert page.locator('[data-act="saveAndContinue"]').is_visible()
+    assert page.locator('[data-act="continueWithoutSaving"]').is_visible()
+    assert len(downloads) == 3, downloads
+    with page.expect_download() as event:
+        page.locator('[data-act="saveAndContinue"]').click()
+    saved_at_boundary = json.loads(event.value.path().read_text())
+    assert saved_at_boundary["currentId"] == "SYN_04"
+    assert page.locator('.question').get_attribute("data-question") == "SYN_04"
+    page.locator('[data-act="skip"]').click()
+    assert page.locator('[data-act="continueWithoutSaving"]').is_visible()
+    assert len(downloads) == 4
+    page.locator('[data-act="continueWithoutSaving"]').click()
     assert page.locator("#app").inner_text().find("Results / copy") >= 0
-    assert backup(page)["answers"]["SYN_03"]["kind"] == "skip"
+    assert saved_at_boundary["answers"]["SYN_03"]["kind"] == "skip"
     assert not errors, errors
     assert not network, network
     browser.close()

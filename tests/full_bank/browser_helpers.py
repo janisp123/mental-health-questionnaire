@@ -19,6 +19,10 @@ def act(page, key):
         page.locator("footer details").first.locator("summary").click()
         button = page.locator(f'[data-act="{key}"]:visible').first
     button.click()
+    if key not in ("saveAndContinue", "continueWithoutSaving"):
+        continue_button = page.locator('[data-act="continueWithoutSaving"]:visible')
+        if continue_button.count():
+            continue_button.click()
 
 
 def qid(page):
@@ -29,6 +33,9 @@ def choose(page, code):
     # The app deliberately ignores rapid taps for 500 ms to prevent double answers.
     page.wait_for_timeout(520)
     page.locator(f'input[name="answer"][value="{code}"]').locator("..").click()
+    continue_button = page.locator('[data-act="continueWithoutSaving"]:visible')
+    if continue_button.count():
+        continue_button.click()
 
 
 def backup(page):

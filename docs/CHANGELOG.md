@@ -5,6 +5,18 @@
 **Outstanding external checks:** actual Android Chrome use; human review of LV interface wording and EN/RU drafts; professional/clinical review. Do not mark those complete without evidence.
 **History:** the prior pilot and full-build chronology is preserved in [CHANGELOG_HISTORY_2026-11-06.md](history/CHANGELOG_HISTORY_2026-11-06.md). Read it only when a task needs that history.
 
+## 2026-11-07 · SECTION-END-SAVE-PROMPT · IN_PROGRESS
+
+**Starting commit:** `b2964d660afdb319e4dd695485e2be50797489f9` on `develop`.
+
+**Change:** removed automatic recovery-file downloads while answering. When a user reaches the end of a section, the app now recommends saving and offers “Save and continue” or “Continue without saving” in LV/EN/RU. The existing manual save control remains. A section-boundary recovery file points to the next question so it resumes in the right place.
+
+**Files:** `src/app/core/app.js`, `src/app/i18n/ui.lv.json`, `src/app/i18n/ui.en.json`, `src/app/i18n/ui.ru.json`, `tests/app/runtime_fixture.py`, `tests/app/test_runtime_answers.py`, `tests/full_bank/browser_helpers.py`, `docs/QUESTIONNAIRE_ARCHITECTURE.md`, `docs/CHANGELOG.md`.
+
+**Checks:** locale-catalog check PASS; complete 712-question offline HTML build PASS. The focused browser test could not run locally because this workspace has no Chromium executable; browser behavior remains unverified here. Full-bank regression was not run.
+
+**Next action:** run the focused browser workflow in CI or a machine with Chromium. No Google Drive copy was updated.
+
 ## 2026-11-06 · FULL-GIT-REVIEW-CANDIDATE · PREPARED
 
 **Source:** GitHub `develop` application and question sources, commit `7e236310e4b57ceb7f2e9e8e3e8988387e6c1814` (48 modules, 712 questions). Manifest checkpoint `af284d880efeb0032e4ad4391e43aa6d33d992d4`.

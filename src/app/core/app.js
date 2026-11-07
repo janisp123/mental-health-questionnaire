@@ -10,7 +10,7 @@ const {groups,optionalIds,byId,all}=model;
 let answerLockUntil=0;
 const app=document.getElementById("app");
 const report=window.QuestionnaireReports;
-let state={lang:"lv",screen:"start",currentId:null,answers:{},feedback:{},feedbackOpen:false,selected:[],sectionDraft:[],sectionConfirmed:false,savedCount:0,notice:"",draft:null};
+let state={lang:"lv",screen:"start",currentId:null,answers:{},feedback:{},feedbackOpen:false,selected:[],sectionDraft:[],sectionConfirmed:false,pendingSectionEnd:null,notice:"",draft:null};
 function ui(){return data.ui[state.lang];}
 function esc(s){return report.esc(s);}
 function label(key){return esc(ui()[key]||key);}
@@ -128,15 +128,18 @@ function renderReport(){
  const markup=report.doctorMarkup(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation,state.feedback,all,data.ui);
  return window.QuestionnaireScreens.reportPage({heading:u.doctorHeading,markup,plain,escape:esc,label,btn});
 }
+function renderSectionComplete(){
+ return '<section class="card"><h2>'+label("sectionCompleteTitle")+'</h2><p>'+label("sectionCompleteBody")+'</p>'+btn("saveAndContinue","saveAndContinue","primary")+btn("continueWithoutSaving","continueWithoutSaving")+'</section>';
+}
 function render(){
  const keepSupportFocus=document.activeElement?.id==="support-message";
  document.documentElement.lang=state.lang;
  document.title=ui().project;
- const body=state.screen==="start"?renderStart():state.screen==="selector"?renderSelector():state.screen==="question"?renderQuestion():state.screen==="report"?renderReport():renderResults();
- app.innerHTML='<main>'+header()+supportCard()+(state.notice?'<p role="status" class="notice">'+esc(state.notice)+'</p>':"")+body+footer()+navigation()+'</main>';
+ const body=state.screen==="start"?renderStart():state.screen==="selector"?renderSelector():state.screen==="question"?renderQuestion():state.screen==="sectionComplete"?renderSectionComplete():state.screen==="report"?renderReport():renderResults();
+ app.innerHTML='<main>'+header()+supportCard()+(state.notice?'<p role="status" class="notice">'+esc(state.notice)+'</p>':"")+body+(state.screen==="sectionComplete"?"":footer())+navigation()+'</main>';
  if(state.focusSupport||keepSupportFocus){document.getElementById('support-message')?.focus({preventScroll:true});state.focusSupport=false;}
 }
-function setQuestion(id){state.currentId=id;state.draft=null;state.feedbackOpen=false;state.screen="question";state.notice="";render();window.scrollTo(0,0);}
+function setQuestion(id){state.currentId=id;state.pendingSectionEnd=null;state.draft=null;state.feedbackOpen=false;state.screen="question";state.notice="";render();window.scrollTo(0,0);}
 function advance(){
  const destination=flow.next(state,active());
  if(destination.id){setQuestion(destination.id);return;}
@@ -150,7 +153,12 @@ function choiceStatus(q,codes){
  return statuses.includes("refused")?"refused":statuses.includes("uncertain")?"uncertain":"answered";
 }
 function advanceAfterSave(){
+ const wasReviewing=!!state.reviewQueue,finished=current();
  const destination=flow.afterSave(state,active());
+ const next=destination.id&&byId[destination.id];
+ if(!wasReviewing&&finished&&(destination.screen==="results"||(next&&next.module!==finished.module))){
+  state.pendingSectionEnd=destination;state.screen="sectionComplete";state.draft=null;state.notice="";render();window.scrollTo(0,0);return;
+ }
  if(destination.id){setQuestion(destination.id);return;}
  state.currentId=destination.currentId;state.screen=destination.screen;state.draft=null;
  if(destination.clearNotice)state.notice="";
@@ -177,20 +185,14 @@ function save(){
    if(pair){state.notice=ui().incompatibleAnswers+" "+pair.join(" + ");render();return;}
    rec.kind="choice";rec.codes=codes;rec.status=choiceStatus(q,codes);
  }
- state.answers[q.id]=rec;state.savedCount++;
+ state.answers[q.id]=rec;
  if(rec.kind==="choice")offerSupport(q,rec.codes);
  advanceAfterSave();
- if(state.savedCount%10===0){
-   downloadBackup();
-   state.notice=ui().saved10;render();
- }
 }
 function skip(){
  const q=current();if(!q||!canSkip(q))return;
  state.answers[q.id]={kind:"skip",savedAt:new Date().toISOString(),status:"skipped"};
- state.savedCount++;
  advanceAfterSave();
- if(state.savedCount%10===0){downloadBackup();state.notice=ui().saved10;render();}
 }
 function previous(){const destination=flow.previous(state,active());if(destination.id)setQuestion(destination.id);else {state.screen=destination.screen;render();}}
 function skipSection(){
@@ -233,8 +235,16 @@ function downloadFile(name,contents,mime){
  const href=URL.createObjectURL(blob),link=document.createElement("a");link.href=href;link.download=name;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(href),1500);
 }
 function downloadBackup(){
- const payload={schema:"mental-pilot-recovery-v1",version:data.version,layoutVersion:data.layout_version,lang:state.lang,selected:[...state.selected],sectionConfirmed:state.sectionConfirmed,currentId:state.currentId,answers:state.answers,feedback:state.feedback,savedCount:state.savedCount,reviewQueue:state.reviewQueue||null,reviewReturn:state.reviewReturn||null,exportedAt:new Date().toISOString()};
+ const payload={schema:"mental-pilot-recovery-v1",version:data.version,layoutVersion:data.layout_version,lang:state.lang,selected:[...state.selected],sectionConfirmed:state.sectionConfirmed,currentId:state.currentId,answers:state.answers,feedback:state.feedback,reviewQueue:state.reviewQueue||null,reviewReturn:state.reviewReturn||null,exportedAt:new Date().toISOString()};
  downloadFile("questionnaire-recovery.json",JSON.stringify(payload,null,2),"application/json");
+}
+function continueAfterSection(shouldSave){
+ const destination=state.pendingSectionEnd;if(!destination)return;
+ if(shouldSave){if(destination.id)state.currentId=destination.id;downloadBackup();}
+ state.pendingSectionEnd=null;
+ state.notice=shouldSave?ui().backupSaved:"";
+ if(destination.id){state.currentId=destination.id;state.draft=null;state.feedbackOpen=false;state.screen="question";render();window.scrollTo(0,0);return;}
+ state.currentId=destination.currentId??state.currentId;state.screen=destination.screen||"results";state.draft=null;render();window.scrollTo(0,0);
 }
 function restore(file){
  if(!file)return;
@@ -253,7 +263,6 @@ function restore(file){
    state.selected=restored.selected;
    state.sectionConfirmed=restored.sectionConfirmed;
    state.support=null;state.supportSeen=[];
-   state.savedCount=restored.savedCount;
    if(restored.lang)state.lang=restored.lang;
    state.currentId=restored.currentId;
    if(state.reviewQueue)state.currentId=state.reviewQueue[0];
@@ -287,6 +296,8 @@ function action(key){
  if(key==="confirm"){confirmSections();return;}
  if(key==="cancel"){state.screen=state.currentId?"question":"start";render();return;}
  if(key==="save"){save();return;}
+ if(key==="saveAndContinue"){continueAfterSection(true);return;}
+ if(key==="continueWithoutSaving"){continueAfterSection(false);return;}
  if(key==="feedback"){state.feedbackOpen=!state.feedbackOpen;state.notice="";render();return;}
  if(key==="feedbackContinue"){
   const currentQuestion=current();if(!currentQuestion)return;
@@ -295,9 +306,8 @@ function action(key){
   const comment=(document.getElementById("feedback-comment")?.value||"").trim().slice(0,500);
   state.feedback[currentQuestion.id]={reasons,comment,language:state.lang,version:data.version,updatedAt:new Date().toISOString()};
   state.feedbackOpen=false;state.notice="";
-  if(!state.answers[currentQuestion.id]){state.answers[currentQuestion.id]={kind:"skip",savedAt:new Date().toISOString(),status:"skipped"};state.savedCount++;}
+  if(!state.answers[currentQuestion.id])state.answers[currentQuestion.id]={kind:"skip",savedAt:new Date().toISOString(),status:"skipped"};
   advanceAfterSave();
-  if(state.savedCount&&state.savedCount%10===0){downloadBackup();state.notice=ui().saved10;render();}
   return;
  }
  if(key==="removeFeedback"){
@@ -319,7 +329,7 @@ function action(key){
   }return;}
  if(key==="new"){
    if(window.confirm(u.newConfirm)){
-     const lang=state.lang;state={lang,screen:"start",currentId:null,answers:{},feedback:{},feedbackOpen:false,selected:[],sectionDraft:[],sectionConfirmed:false,savedCount:0,notice:"",draft:null};render();
+     const lang=state.lang;state={lang,screen:"start",currentId:null,answers:{},feedback:{},feedbackOpen:false,selected:[],sectionDraft:[],sectionConfirmed:false,notice:"",draft:null};render();
    }return;
  }
  if(key==="backup"){downloadBackup();state.notice=u.backupSaved;render();return;}
