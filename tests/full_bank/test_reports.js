@@ -4,7 +4,7 @@ const cp=require('child_process');
 const data=JSON.parse(cp.execFileSync('python',['-c','import sys,json;sys.path.insert(0,"tools");from build_questionnaire import build_bundle;print(json.dumps(build_bundle()))'],{maxBuffer:8e6}));
 const context={window:{}};vm.runInNewContext(fs.readFileSync('src/app/reports/reports.js','utf8'),context);
 const r=context.window.QuestionnaireReports,qs=data.groups.flatMap(g=>g.questions),q=id=>qs.find(q=>q.id===id);
-const answers={M33_01:{kind:'text',value:'Synthetic'},M06_02:{kind:'choice',codes:['B'],status:'answered'},M06_01:{kind:'choice',codes:['A'],status:'answered'},M02_09:{kind:'choice',codes:['A'],status:'answered'},M23_11:{kind:'choice',codes:['A'],status:'answered'}};
+const answers={M33_01:{kind:'text',value:'Synthetic'},M06_02:{kind:'choice',codes:['B'],status:'answered'},M06_01:{kind:'choice',codes:['A'],status:'answered'},M02_09:{kind:'choice',codes:['A'],status:'answered'},M23_11:{kind:'choice',codes:['A'],status:'answered'},M02_20:{kind:'skip',status:'skipped'}};
 assert.deepEqual(Object.keys(data.presentation).sort(),['boldAnswers','feedbackContactEmail','purpose','questions','schema','topicOrder']);
 assert(!/"[^"]*weight[^"]*"\s*:/i.test(JSON.stringify(data)));
 for(const lang of ['lv','en','ru']){
@@ -15,6 +15,11 @@ for(const lang of ['lv','en','ru']){
  assert(plain.includes(q('M06_02').translations[lang].choices.B));
  assert(!/M06_02|\[B\]|\bweight\b|risk score/i.test(plain));
  assert(!/Unanswered|Nav atbildēts|Без ответа/i.test(plain));
+ assert(plain.includes(data.ui[lang].reportCountSelected+': '+qs.length));
+ assert(plain.includes(data.ui[lang].reportCountDone+': 5'));
+ assert(plain.includes(data.ui[lang].reportCountSkip+': 1'));
+ assert(plain.includes(data.ui[lang].reportName+': ______________________________'));
+ assert(!plain.includes(q('M02_20').translations[lang].title));
  assert(html.includes('<strong>'+q('M06_02').translations[lang].choices.B+'</strong>'));
  assert(!html.includes('<strong>'+q('M06_01').translations[lang].choices.A+'</strong>'));
  assert(!html.includes('<strong>'+q('M02_09').translations[lang].choices.A+'</strong>'));
@@ -38,8 +43,10 @@ const emptyFeedback=r.projectFeedbackText(qs,{},'en',data.ui,'janis.paegle.email
 assert(emptyFeedback.includes(data.ui.en.feedbackNone));
 assert(emptyFeedback.includes('janis.paegle.email@gmail.com'));
 const doctorWithFeedback=r.doctorText(qs,answers,[], 'en',data.ui.en, data.groups,data.presentation,feedback,qs);
-assert(doctorWithFeedback.indexOf(data.ui.en.feedbackSectionHeading)<doctorWithFeedback.indexOf('Synthetic'));
-assert(doctorWithFeedback.indexOf(data.ui.en.feedbackSectionHeading)<doctorWithFeedback.indexOf(r.entries(qs,answers,'en',data.presentation)[0].plain));
+const lastAnswer=r.entries(qs,answers,'en',data.presentation).map(e=>e.plain).at(-1);
+assert(doctorWithFeedback.indexOf(data.ui.en.feedbackSectionHeading)>doctorWithFeedback.lastIndexOf(lastAnswer));
+assert(!doctorWithFeedback.includes('janis.paegle.email@gmail.com'));
+assert(doctorWithFeedback.includes(data.ui.en.reportDate+': ____________________'));
 const html=cp.execFileSync('python',['-c','import sys;sys.path.insert(0,"tools");from build_questionnaire import make_html;print(make_html())'],{encoding:'utf8',maxBuffer:8e6});
 for(const word of ['Prepare answers for AI','Copy coded answers for AI','DECODING KEY','aiInstruction','copyAI'])assert(!html.includes(word),word);
 console.log('PASS: one doctor report, explicit answer-code bold rules, normal-to-sensitive order, three locales, no AI export or weights.');

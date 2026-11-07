@@ -119,14 +119,13 @@ function renderResults(){
  const selected="";
  const feedbackText=report.projectFeedbackText(all,state.feedback,state.lang,data.ui,data.presentation.feedbackContactEmail,data.version);
  return window.QuestionnaireScreens.results({
-  label,escape:esc,btn,counts:v,selected,feedbackText,feedbackEmail:data.presentation.feedbackContactEmail,
+  label,escape:esc,btn,counts:v,selected,feedbackText,
  });
 }
 function renderReport(){
  const q=reportQuestions(),u=ui();
- const plain=report.doctorText(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation,state.feedback,all,data.ui);
  const markup=report.doctorMarkup(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation,state.feedback,all,data.ui);
- return window.QuestionnaireScreens.reportPage({heading:u.doctorHeading,markup,plain,escape:esc,label,btn});
+ return window.QuestionnaireScreens.reportPage({heading:u.doctorHeading,markup,escape:esc,label,btn});
 }
 function renderSectionComplete(){
  return '<section class="card"><h2>'+label("sectionCompleteTitle")+'</h2><p>'+label("sectionCompleteBody")+'</p>'+btn("saveAndContinue","saveAndContinue","primary")+btn("continueWithoutSaving","continueWithoutSaving")+'</section>';
@@ -136,7 +135,7 @@ function render(){
  document.documentElement.lang=state.lang;
  document.title=ui().project;
  const body=state.screen==="start"?renderStart():state.screen==="selector"?renderSelector():state.screen==="question"?renderQuestion():state.screen==="sectionComplete"?renderSectionComplete():state.screen==="report"?renderReport():renderResults();
- app.innerHTML='<main>'+header()+supportCard()+(state.notice?'<p role="status" class="notice">'+esc(state.notice)+'</p>':"")+body+(state.screen==="sectionComplete"?"":footer())+navigation()+'</main>';
+ app.innerHTML='<main>'+(state.screen==="report"?"":header()+supportCard())+(state.notice?'<p role="status" class="notice">'+esc(state.notice)+'</p>':"")+body+(state.screen==="sectionComplete"||state.screen==="report"?"":footer())+navigation()+'</main>';
  if(state.focusSupport||keepSupportFocus){document.getElementById('support-message')?.focus({preventScroll:true});state.focusSupport=false;}
 }
 function clearPendingSingleAnswer(){if(pendingSingleAnswer)clearTimeout(pendingSingleAnswer.timer);pendingSingleAnswer=null;}
@@ -336,13 +335,9 @@ function action(key){
    }return;
  }
  if(key==="backup"){downloadBackup();state.notice=u.backupSaved;render();return;}
- if(key==="downloadReport"){downloadFile("questionnaire-report-"+state.lang+".html",report.doctorHtml(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation,state.feedback,all,data.ui),"text/html;charset=utf-8");return;}
  if(key==="print"){
    if(state.screen!=="report"){state.reportView="doctor";state.screen="report";render();}
    window.print();return;
- }
- if(key==="copyDoctor"){
-   copyText(report.doctorText(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation,state.feedback,all,data.ui));return;
  }
  if(key==="copyFeedback"){
    copyText(report.projectFeedbackText(all,state.feedback,state.lang,data.ui,data.presentation.feedbackContactEmail,data.version),"projectFeedbackSource");return;

@@ -9,7 +9,7 @@ function readable(q,rec,locale) {
  return (rec.codes||[]).map(c=>(q.translations[locale].choices||{})[c]||c).join("; ");
 }
 function counters(questions,answers) {
- const counts={answered:0,skipped:0,unanswered:0};
+ const counts={selected:questions.length,answered:0,skipped:0,unanswered:0};
  questions.forEach(q=>{const a=answers[q.id];if(!a)counts.unanswered++;else if(a.kind==="skip")counts.skipped++;else counts.answered++;});
  return counts;
 }
@@ -66,25 +66,34 @@ function projectFeedbackText(questions,feedback,locale,catalogs,contactEmail,ver
   ui.feedbackContactLabel+": "+contactEmail,
   ...(items.length?["",...items.map(item=>item.plain)]:["",ui.feedbackNone])].join("\n");
 }
-function doctorText(questions,answers,selected,locale,ui,groups,presentation,feedback={},allQuestions=questions,catalogs={lv:ui,en:ui,ru:ui}) {
+function identityText(ui,identity={}) {
+ const name=[identity.name,identity.surname].map(value=>String(value||"").trim()).filter(Boolean).join(" ");
+ return ui.reportName+": "+(name||"____________________________")+"\n"+ui.reportDate+": ____________________";
+}
+function countText(counts,ui) {
+ return [ui.reportCountSelected+": "+counts.selected,ui.reportCountDone+": "+counts.answered,ui.reportCountSkip+": "+counts.skipped].join(" · ");
+}
+function doctorText(questions,answers,selected,locale,ui,groups,presentation,feedback={},allQuestions=questions,catalogs={lv:ui,en:ui,ru:ui},identity={}) {
  const counts=counters(questions,answers);
  const items=feedbackEntries(allQuestions,feedback,catalogs);
- return [ui.doctorHeading,ui.doctorDisclaimer,
-  ...(items.length?["",ui.feedbackSectionHeading,...items.map(item=>item.plain)]:[]),"",
-  ui.countDone+": "+counts.answered,
-  ui.omissionNote,"",...entries(questions,answers,locale,presentation,catalogs[locale]?.medicine).map(e=>e.plain)].join("\n");
+ const responses=entries(questions,answers,locale,presentation,catalogs[locale]?.medicine).map(e=>e.plain);
+ return [identityText(ui,identity),"",ui.doctorHeading,ui.doctorDisclaimer,countText(counts,ui),"",...responses,
+  ...(items.length?["","",ui.feedbackSectionHeading,...items.map(item=>item.plain)]:[])].join("\n");
 }
-function doctorMarkup(questions,answers,selected,locale,ui,groups,presentation,feedback={},allQuestions=questions,catalogs={lv:ui,en:ui,ru:ui}) {
+function doctorMarkup(questions,answers,selected,locale,ui,groups,presentation,feedback={},allQuestions=questions,catalogs={lv:ui,en:ui,ru:ui},identity={}) {
  const counts=counters(questions,answers);
  const items=feedbackEntries(allQuestions,feedback,catalogs);
- const feedbackHtml=items.length?"<h2>"+esc(ui.feedbackSectionHeading)+"</h2>"+items.map(item=>item.html).join(""):"";
- return "<h1>"+esc(ui.doctorHeading)+"</h1><p>"+esc(ui.doctorDisclaimer)+"</p>"+feedbackHtml+"<p>"+
- esc(ui.countDone+": "+counts.answered)+"</p><p>"+
- esc(ui.omissionNote)+"</p><hr>"+entries(questions,answers,locale,presentation,catalogs[locale]?.medicine).map(e=>e.html.replace(/\n/g,"<br>")).join("");
+ const name=[identity.name,identity.surname].map(value=>String(value||"").trim()).filter(Boolean).join(" ");
+ const nameValue=name?esc(name):'<span class="write-in"></span>';
+ const dateHtml='<p><strong>'+esc(ui.reportDate)+':</strong> <span class="write-in write-in-date"></span></p>';
+ const summary="<p class=\"report-counts\">"+esc(countText(counts,ui))+"</p>";
+ const responses=entries(questions,answers,locale,presentation,catalogs[locale]?.medicine).map(e=>e.html.replace(/\n/g,"<br>")).join("");
+ const feedbackHtml=items.length?"<hr><h2>"+esc(ui.feedbackSectionHeading)+"</h2>"+items.map(item=>item.html).join(""):"";
+ return '<div class="report-identity"><p><strong>'+esc(ui.reportName)+':</strong> '+nameValue+'</p>'+dateHtml+'</div><h1>'+esc(ui.doctorHeading)+'</h1><p>'+esc(ui.doctorDisclaimer)+'</p>'+summary+'<hr>'+responses+feedbackHtml;
 }
-function doctorHtml(questions,answers,selected,locale,ui,groups,presentation,feedback={},allQuestions=questions,catalogs={lv:ui,en:ui,ru:ui}) {
+function doctorHtml(questions,answers,selected,locale,ui,groups,presentation,feedback={},allQuestions=questions,catalogs={lv:ui,en:ui,ru:ui},identity={}) {
  return '<!doctype html><html lang="'+esc(locale)+'"><head><meta charset="utf-8"><title>'+esc(ui.doctorHeading)+
- '</title><style>@page{size:A4;margin:12mm}body{font:10pt/1.3 Arial,sans-serif;color:#000;background:#fff;margin:0 auto;max-width:186mm}p{margin:0 0 5pt}hr{border:0;border-top:1px solid #777;margin:7pt 0}strong{font-weight:700}</style></head><body>'+doctorMarkup(questions,answers,selected,locale,ui,groups,presentation,feedback,allQuestions,catalogs)+'</body></html>';
+ '</title><style>@page{size:A4;margin:12mm}body{font:10pt/1.3 Arial,sans-serif;color:#000;background:#fff;margin:0 auto;max-width:186mm}p{margin:0 0 5pt}hr{border:0;border-top:1px solid #777;margin:7pt 0}strong{font-weight:700}.write-in{display:inline-block;width:75mm;height:12pt;border-bottom:1px solid #555;vertical-align:baseline}.write-in-date{width:35mm}.report-identity{margin-bottom:10pt}.report-counts{font-weight:700}</style></head><body>'+doctorMarkup(questions,answers,selected,locale,ui,groups,presentation,feedback,allQuestions,catalogs,identity)+'</body></html>';
 }
 window.QuestionnaireReports={entries,medicineValues,feedbackEntries,projectFeedbackText,readable,counters,doctorText,doctorMarkup,doctorHtml,esc};
 })();

@@ -91,7 +91,7 @@
     "guideTitle": "How to use this questionnaire",
     "guideBody": "Open the downloaded HTML file in a browser; it will not work in preview mode. A single choice is saved in the open questionnaire; for multiple choices or text, press “Save & Next”. Save progress to a file before taking a break. You can keep the file on your phone or computer. It is not encrypted, so share it only with people you trust or healthcare professionals. Do not post it on social media or anywhere public. You decide what to discuss with a professional.",
     "notesTitle": "Latest changes",
-    "notesBody": "Last updated: 7 Nov 2026, 10:47 Riga time — section-end progress saving; multi-answer guidance.",
+    "notesBody": "Last changes: November 7, 2026, 12:29 Riga time — PDF report counts and layout.",
     "coverageNote": "Counts cover applicable questions. Answers hidden by changed conditions remain in the saved file but are not included here.",
     "autoHint": "Choose one answer to save it in the open questionnaire and continue.",
     "feedbackFlag": "Suggest a correction to this question",
@@ -118,6 +118,11 @@
     "continueSelected": "Continue with selected sections",
     "backupWarning": "If progress has not been saved to a file, closing the browser, taking a call or another interruption may cause it to be lost. Save progress to a file before taking a break.",
     "sectionProgress": "{total} questions · completed: {completed}",
-    "noSectionsSelected": "Select at least one section, or choose all sections."
+    "noSectionsSelected": "Select at least one section, or choose all sections.",
+    "reportCountSelected": "Selected questions",
+    "reportCountDone": "Completed questions",
+    "reportCountSkip": "Skipped questions",
+    "reportName": "Name and surname",
+    "reportDate": "Date"
   }
 }
