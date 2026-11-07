@@ -5,7 +5,7 @@
 **Outstanding external checks:** actual Android Chrome use; human review of LV interface wording and EN/RU drafts; professional/clinical review. Do not mark those complete without evidence.
 **History:** the prior pilot and full-build chronology is preserved in [CHANGELOG_HISTORY_2026-11-06.md](history/CHANGELOG_HISTORY_2026-11-06.md). Read it only when a task needs that history.
 
-## 2026-11-07 · SECTION-END-SAVE-PROMPT · IN_PROGRESS
+## 2026-11-07 · SECTION-END-SAVE-PROMPT · DONE
 
 **Starting commit:** `b2964d660afdb319e4dd695485e2be50797489f9` on `develop`.
 
@@ -13,9 +13,11 @@
 
 **Files:** `src/app/core/app.js`, `src/app/i18n/ui.lv.json`, `src/app/i18n/ui.en.json`, `src/app/i18n/ui.ru.json`, `tests/app/runtime_fixture.py`, `tests/app/test_runtime_answers.py`, `tests/app/test_runtime_layout.py`, `tests/full_bank/browser_helpers.py`, `tests/full_bank/test_runtime.py`, `docs/QUESTIONNAIRE_ARCHITECTURE.md`, `docs/CHANGELOG.md`.
 
-**Checks:** locale catalogs, app source/screens/logic, JavaScript syntax, offline HTML build, and `git diff --check` PASS. Focused workflows 42353162597 and 42353268809 exposed test expectations needing updates for the second synthetic group and manual-only backups; those are corrected and pending rerun. Full-bank workflow 42353162601 exposed its old ten-answer auto-download expectation; changed it to verify ten skips cause no download and manual save still works. Local Chromium is unavailable; rerun workflows in CI.
+**Checks:** locale catalogs, app source/screens/logic, JavaScript syntax, offline HTML build, and `git diff --check` PASS. The first CI runs exposed outdated test assumptions; updated the synthetic section fixture and full-bank recovery check. Focused workflow 42353404253 and full-bank workflow 42353404241 PASS. Local Chromium is unavailable; the browser checks ran in CI with desktop Chrome. Android device testing was not done.
 
-**Next action:** confirm focused and full-bank CI after updating the affected runtime checks. No Google Drive copy was updated.
+**Latest verified code commit:** `706f335e7ca3de752db306b138fcb89c0a68a5f7` on `develop`. The regenerated 712-question HTML has SHA-256 `65fc98d91471bea56bffe21d7f8e839822a7749da59a675f2949835dccdb7b32`.
+
+**Next action:** user-facing Android check if desired; no Google Drive copy was updated.
 
 ## 2026-11-06 · FULL-GIT-REVIEW-CANDIDATE · PREPARED
 
