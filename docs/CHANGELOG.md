@@ -150,5 +150,5 @@
 **Files in Drive:** `187_Questionnaire_FULL_712Q_v0.2.0_REVIEW_BUILD.html` (SHA-256 `46417a3a2a6d4972cf30e6e26201597d1ea7ef4e14c39baeb39ba73a0b80b6e5`) and `188_README_LV_v0.2.0_REVIEW_BUILD.pdf` (SHA-256 `f4639c80d9ea36e37632638913b29f6618f9808891a5f522dc86501725947e21`). The PDF was text-checked, confirmed as one A4 page, and visually inspected after rendering.
 **Git files:** `project-manifest.json`, `docs/FILE_INDEX.md`, `docs/CHANGELOG.md`. The manifest now records the current candidate checksums and distinguishes it from a public release; the file index no longer describes the folder as v16-only.
 **Local checks:** `tools/verify_project_index.py` (79/79 originals, 48 modules, 712 IDs), app build manifest, UI catalogs, and `git diff --check` PASS. Drive readback confirmed the updated HTML/PDF names and modification dates.
-**Commit:** documentation checkpoint pending; full GitHub workflow is triggered by the manifest update.
+**Commit:** `f0260ff752a2d6182a5e2fa28bfb10042009936d`. Full GitHub workflow `42344703148` is queued on this commit.
 **Next action:** inspect the full GitHub workflow on the new commit; record the result, then mark DONE.
