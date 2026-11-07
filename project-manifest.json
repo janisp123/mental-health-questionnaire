@@ -440,14 +440,14 @@
     },
     {
       "path": "src/modules/182_MODULE_31_LV_EN_RU_v16.json",
-      "git_blob_sha1": "f7f882089bfb7846b2f7a229d3009edcde36b251",
-      "bytes": 55964,
+      "git_blob_sha1": "4986fc2d0cdfa14f1cba229ccdebe24930c6373b",
+      "bytes": 55960,
       "role": "question-module"
     },
     {
       "path": "src/modules/182_MODULE_32_LV_EN_RU_v16.json",
-      "git_blob_sha1": "5b61ac2357c82cf472a9e5652391ab45c7192e0d",
-      "bytes": 134516,
+      "git_blob_sha1": "a06ee6f6b53095659e07ac44b6c287f47efead1f",
+      "bytes": 135179,
       "role": "question-module"
     },
     {
