@@ -1,9 +1,11 @@
 # Sagatavošanās vizītei pie psihiskās veselības speciālista
 
 **Tehniskās pārbaudes versija · 0.2.0 · 07.11.2026**  
-**GitHub develop · anketas avota commit d6c6052**
+**GitHub develop · anketas avota commit 421c526**
 
 [Latviešu](#latviešu) · [English](#english) · [Русский](#русский)
+
+**Projekta atsauksmēm / Project feedback / Обратная связь по проекту:** janis.paegle.email@gmail.com
 
 ## Latviešu
 
@@ -11,7 +13,7 @@
 
 ### Kas iekļauts
 
-48 avota moduļi un 712 jautājumi ir apvienoti 15 sadaļās, katrā ir 36-70 jautājumu. Papildu jautājumi var parādīties atkarībā no iepriekšējām atbildēm. Vari izlaist jebkuru jautājumu vai sadaļu un atbildēt tikai uz to, ar ko esi gatavs dalīties.
+48 avota moduļi un 712 jautājumi ir apvienoti 15 sadaļās, katrā ir 36–70 jautājumu. Papildu jautājumi var parādīties atkarībā no iepriekšējām atbildēm. Vari izlaist jebkuru jautājumu vai sadaļu un atbildēt tikai uz to, ar ko esi gatavs dalīties.
 
 ### Kā sākt
 
@@ -19,9 +21,9 @@
 2. Spied **Sākt**. Izvēlies visas sadaļas vai tikai tās, kuras vēlies aizpildīt. Jautājumos ar vairākām atbildēm ekrānā ir norādīts, cik atbilžu vari izvēlēties. Izvēloties vienu atbildi, tā izceļas ar zaļu fonu un atzīmi, un pēc īsas pauzes anketa pāriet pie nākamā jautājuma.
 3. Sadaļas beigās izvēlies **Saglabāt un turpināt** vai **Turpināt nesaglabājot**. Pirms ilgāka pārtraukuma saglabā progresu failā. Vēlāk atver to pašu HTML failu un izvēlies **Turpināt no faila**.
 
-### Precizitātes pārskatīšana
+### Atsauksmes par projektu
 
-Jautājumus, kas šķiet atbilstoši, vari izlaist. Kļūdainu vai neskaidru jautājumu atzīmē, izvēlies iemeslu un, ja vajadzīgs, pievieno īsu piezīmi. Kad pārbaude pabeigta, sagatavo pārskatu un izvēlies **Drukāt / saglabāt PDF**. Nosūti PDF atpakaļ pārskatīšanai. Tajā būs atbildētie jautājumi un atsevišķa tehnisko atsauksmju sadaļa. Izlaistās atbildes PDF netiek iekļautas, bet izlaisto jautājumu skaits ir norādīts pārskata augšdaļā.
+Atbildes projekta veidotājiem nav jānosūta. Anketu vari izmantot, lai sagatavotos vizītei; ja nepieciešams, saglabā PDF un paņem to līdzi speciālistam. Ja vēlies palīdzēt uzlabot šo bezmaksas projektu, galvenais veids ir nosūtīt atsauksmi uz norādīto projekta e-pastu. Kļūdaina vai neskaidra jautājuma vai atbildes atzīmēšana anketā ir papildu iespēja un pilnīgi brīvprātīga — dari to tikai tad, ja pats vēlies palīdzēt. Par palīdzību nav paredzēta samaksa vai cita atlīdzība.
 
 ### Saglabāšana un privātums
 
@@ -31,12 +33,12 @@ Anketa darbojas bez interneta, neveic analītiku un automātiski nenosūta atbil
 
 ### Versijas statuss
 
-Latviešu valoda ir atsauces valoda. Angļu un krievu anketas teksti ir melnraksti, kuriem vajadzīga cilvēka pārbaude. Šī versija paredzēta profesionālai tehniskai pārskatīšanai. Tā nav klīniski validēta un neaizstāj speciālista izvērtējumu.
+Šī ir tehniskai pārskatīšanai paredzēta versija. Tā nav klīniski validēta un neaizstāj speciālista izvērtējumu.
 
 # Preparing for an appointment with a mental health professional
 
 **Technical review version · 0.2.0 · 7 November 2026**  
-**GitHub develop · questionnaire source commit d6c6052**
+**GitHub develop · questionnaire source commit 421c526**
 
 ## English
 
@@ -52,9 +54,9 @@ The questionnaire brings together 48 source modules and 712 questions in 15 sect
 2. Select **Start**. Choose all sections or only the ones you want to complete. For questions that allow multiple answers, the screen shows how many you can select. A selected single answer is highlighted in green with a checkmark, and the questionnaire moves to the next question after a short pause.
 3. At the end of a section, choose **Save and continue** or **Continue without saving**. Save your progress to a file before a longer break. Later, open the same HTML file and choose **Resume from file**.
 
-### Accuracy review
+### Project feedback
 
-Skip questions that seem appropriate as written. Flag a question that seems incorrect or unclear, choose a reason, and add a short note if needed. When you finish, prepare the report and select **Print / save PDF**. Return the PDF for review. It includes answered questions and a separate technical feedback section. Skipped answers are omitted; the number of skipped questions appears at the top of the report.
+You do not need to send your answers to the project. Use the questionnaire to prepare for your appointment; if useful, save the PDF and take it to your professional. If you want to help improve this free project, the main way to help is to send feedback to the project email above. Flagging an incorrect or unclear question or answer in the questionnaire is an additional, entirely optional way to help; do this only if you choose to support the project. No payment or other reward is offered for helping.
 
 ### Saving and privacy
 
@@ -64,12 +66,12 @@ The questionnaire works offline, does not use analytics, and does not send answe
 
 ### Version status
 
-Latvian is the reference language. The English and Russian questionnaire text are drafts that need human review. This version is for professional technical review. It has not been clinically validated and does not replace an assessment by a professional.
+This is a technical review version. It has not been clinically validated and does not replace an assessment by a professional.
 
 # Подготовка к приёму специалиста по психическому здоровью
 
 **Версия для технической проверки · 0.2.0 · 7 ноября 2026 года**  
-**GitHub develop · исходный код анкеты, commit d6c6052**
+**GitHub develop · исходный код анкеты, commit 421c526**
 
 ## Русский
 
@@ -85,9 +87,9 @@ Latvian is the reference language. The English and Russian questionnaire text ar
 2. Нажмите **Начать**. Выберите все разделы или только те, которые хотите заполнить. Для вопросов с несколькими вариантами на экране указано, сколько ответов можно выбрать. Выбранный одиночный ответ выделяется зелёным цветом и отметкой; после короткой паузы анкета переходит к следующему вопросу.
 3. В конце раздела выберите **Сохранить и продолжить** или **Продолжить без сохранения**. Перед длительным перерывом сохраните прогресс в файл. Позже откройте тот же HTML-файл и выберите **Продолжить из файла**.
 
-### Проверка точности
+### Обратная связь по проекту
 
-Пропускайте вопросы, которые кажутся подходящими. Отмечайте вопрос, который кажется неверным или неясным, выбирайте причину и при необходимости добавляйте короткий комментарий. После проверки подготовьте отчёт и выберите **Печать / сохранить PDF**. Отправьте PDF на проверку. В нём есть отвеченные вопросы и отдельный раздел с техническими замечаниями. Пропущенные ответы не включаются; количество пропущенных вопросов указано в верхней части отчёта.
+Отправлять свои ответы авторам проекта не нужно. Используйте анкету для подготовки к приёму; при необходимости сохраните PDF и возьмите его с собой к специалисту. Если Вы хотите помочь улучшить этот бесплатный проект, главный способ — отправить отзыв на указанный выше адрес проекта. Отметить в анкете ошибочный или неясный вопрос либо ответ можно дополнительно, но это полностью добровольно — делайте это, только если сами хотите помочь проекту. Помощь не оплачивается; вознаграждение не предусмотрено.
 
 ### Сохранение и конфиденциальность
 
@@ -97,4 +99,4 @@ Latvian is the reference language. The English and Russian questionnaire text ar
 
 ### Статус версии
 
-Латышский язык является основным. Английский и русский тексты анкеты - черновики, которые должен проверить человек. Эта версия предназначена для профессиональной технической проверки. Она не прошла клиническую валидацию и не заменяет оценку специалиста.
+Это версия для технической проверки. Она не прошла клиническую валидацию и не заменяет оценку специалиста.
