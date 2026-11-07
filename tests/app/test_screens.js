@@ -5,20 +5,11 @@ require("../../src/app/screens/start.js");
 require("../../src/app/screens/section-selector.js");
 const screens = globalThis.QuestionnaireScreens;
 const labels = {
-  intro: "Synthetic introduction",
-  reviewNote: "Synthetic review note",
-  noAuto: "Synthetic privacy note",
-  selector: "Choose sections",
-  selectIntro: "Select any sections",
-  selected: "Selected",
-  notSelected: "Not selected",
-  chooseAll: "All",
-  clearSections: "Clear",
-  confirmSections: "Continue",
-  cancel: "Back",
-  chooseOwn: "Choose",
-  start: "Start",
-  jump: "Go to section",
+  intro: "Synthetic introduction", reviewNote: "Synthetic review note",
+  selector: "Choose sections", selectIntro: "Select any sections",
+  sectionProgress: "{total} questions · completed: {completed}",
+  chooseAllAndContinue: "Select all and continue", continueSelected: "Continue with selected sections",
+  cancel: "Back", start: "Start", jump: "Go to section",
 };
 const label = key => labels[key] || key;
 const btn = (action, key, cls = "", extra = "") =>
@@ -27,34 +18,25 @@ const btn = (action, key, cls = "", extra = "") =>
 const start = screens.start({label, btn});
 assert.match(start, /Synthetic introduction/);
 assert.match(start, /data-act="start"/);
-assert.match(start, /Synthetic privacy note/);
-assert.doesNotMatch(start, /data-act="guide"/);
+assert.doesNotMatch(start, /data-act="all"|data-act="choose"|data-act="guide"/);
+assert.equal((start.match(/<button/g)||[]).length, 1);
 
-const groups = new Map([
-  ["01", {id:"01", required:true}],
-  ["02", {id:"02", required:false}],
-]);
+const groups = new Map([[
+  "S01", {id:"S01", required:false},
+]]);
 const data = {groups:[
-  {id:"01", required:true, titles:{lv:"Ikdiena"}, concerns:{lv:"Ikdiena"}},
-  {id:"02", required:false, titles:{lv:"Labsajūta"}, concerns:{lv:"Grūtību pazīmes"}},
+  {id:"S01", required:false, questionCount:35, titles:{lv:"Ikdiena"}},
 ]};
-const state = {screen:"selector", lang:"lv", sectionDraft:["02"], selected:["02"], answers:{}};
+const state = {screen:"selector", lang:"lv", sectionDraft:["S01"], selected:["S01"], answers:{}};
 const selector = screens.sectionSelector({
   state, data, groups, label, btn, escape:value=>String(value),
-  countGroup:()=>({done:0,total:1}), active:()=>[],
+  countGroup:()=>({done:2,total:1}), active:()=>[],
 });
-assert.match(selector, /Ikdiena/);
-assert.match(selector, /Labsajūta/);
-assert.match(selector, /data-module="02"[^>]*checked/);
-assert.match(selector, /data-act="jump"/);
+assert.match(selector, /data-act="all"/);
 assert.match(selector, /data-act="confirm"/);
+assert.match(selector, /data-module="S01"[^>]*checked/);
+assert.match(selector, /35 questions · completed: 2/);
+assert.doesNotMatch(selector, /0\/1|notSelected|clearSections/);
+assert.match(selector, /data-act="jump"/);
 
-const ordinary = screens.sectionSelector({
-  state, data, groups, label, btn, escape:value=>String(value),
-  countGroup:()=>({done:0,total:1}), active:()=>[],
-});
-assert.match(ordinary, /Labsajūta/);
-assert.match(ordinary, /0\/1/);
-assert.match(ordinary, /data-act="jump"/);
-
-console.log("PASS: start and section-picker screens render independently with synthetic content.");
+console.log("PASS: start contains one button; section picker offers select-all/continue, selected-section continue and useful totals.");

@@ -50,7 +50,7 @@ function navigation(){
  return state.screen==="question"?'<nav class="question-nav" aria-label="'+label("progress")+'">'+btn("previous","prev")+btn("skip","skipQuestion")+btn("support","supportMenu")+'</nav>':"";
 }
 function toolbar(){
- return '<nav class="toolbar" aria-label="Tools">'+btn("backup","saveBackup")+ '<label class="file-label">'+label("restoreBackup")+'<input id="restore" type="file" accept=".json,application/json" aria-label="'+label("restoreBackup")+'"></label>'+btn("results","results")+btn("sections","editSections")+'</nav>';
+ return '<nav class="toolbar" aria-label="Tools">'+btn("backup","saveBackup")+'<small class="backup-note">'+label("backupWarning")+'</small><label class="file-label">'+label("restoreBackup")+'<input id="restore" type="file" accept=".json,application/json" aria-label="'+label("restoreBackup")+'"></label>'+btn("results","results")+btn("sections","editSections")+'</nav>';
 }
 function footer(){
  return '<footer><details><summary>'+label("tools")+'</summary>'+toolbar()+'</details><details id="support-details"><summary>'+label("supportMenu")+'</summary><p>'+label("supportBody")+'</p>'+supportLinks()+'</details><details><summary>'+label("guideTitle")+'</summary><p>'+label("guideBody")+'</p></details><details><summary>'+label("notesTitle")+'</summary><p>'+label("notesBody")+'</p></details><details><summary>'+label("legal")+'</summary>'+ui().legalBody.split("\n\n").map(text=>'<p>'+esc(text)+'</p>').join("")+'</details><details><summary>'+label("helpers")+'</summary><p>'+label("credits")+'</p></details><p class="muted">'+label("statusNote")+' · '+label("footer")+'</p></footer>';
@@ -115,7 +115,8 @@ function renderQuestion(){
 }
 function renderResults(){
  const qs=reportQuestions(),v=report.counters(qs,state.answers);
- const selected=data.groups.map(g=>'<p>'+esc(g.titles[state.lang])+' · '+(g.required||state.selected.includes(g.id)?label("selected"):label("notSelected"))+'</p>').join("");
+ v.completed=v.answered+v.skipped;
+ const selected="";
  const feedbackText=report.projectFeedbackText(all,state.feedback,state.lang,data.ui,data.presentation.feedbackContactEmail,data.version);
  return window.QuestionnaireScreens.results({
   label,escape:esc,btn,counts:v,selected,feedbackText,feedbackEmail:data.presentation.feedbackContactEmail,
@@ -142,9 +143,7 @@ function advance(){
  state.screen=destination.screen;state.currentId=destination.currentId;state.draft=null;state.notice="";render();window.scrollTo(0,0);
 }
 function start(){
- if(!state.sectionConfirmed){state.selected=[...optionalIds];state.sectionConfirmed=true;}
- const q=active().find(x=>!state.answers[x.id])||active()[0];
- if(q)setQuestion(q.id);else{state.screen="selector";render();}
+ showSections(state.sectionConfirmed?[...state.selected]:[]);
 }
 function choiceStatus(q,codes){
  const statuses=codes.map(c=>q.answerStatus?.[c]);
@@ -206,6 +205,7 @@ function skipSection(){
 function skipRest(){if(window.confirm(ui().restConfirm)){state.screen="results";state.draft=null;render();}}
 function showSections(m){state.screen="selector";state.sectionDraft=m?[...m]:[...state.selected];state.draft=null;render();}
 function confirmSections(){
+ if(!state.sectionDraft.length){state.notice=ui().noSectionsSelected;render();return;}
  state.selected=optionalIds.filter(id=>state.sectionDraft.includes(id));state.sectionConfirmed=true;
  state.screen="question";
  const first=active().find(q=>!state.answers[q.id]);
@@ -243,7 +243,8 @@ function restore(file){
   try{
    const x=JSON.parse(String(reader.result));
    const restored=window.QuestionnaireRecovery.validate(x,{byId,optionalIds,legacyOpeningGroups:data.legacy_opening_groups,
-    layoutVersion:data.layout_version,medicineFields,choiceStatus,incompatiblePair,isSafety});
+    layoutVersion:data.layout_version,previousLayoutVersions:data.previous_layout_versions,
+    selectedModuleMap:data.source_module_to_section,medicineFields,choiceStatus,incompatiblePair,isSafety});
    if((Object.keys(state.answers).length||Object.keys(state.feedback).length)&&!window.confirm(ui().replaceSession))return;
    state.reviewQueue=restored.reviewQueue;
    state.reviewReturn=restored.reviewReturn;
@@ -282,9 +283,7 @@ function action(key){
  if(key==="support"){state.support="support";state.focusSupport=true;render();window.scrollTo(0,0);return;}
  if(key==="dismissSupport"){state.support=null;render();return;}
  if(key==="start"){start();return;}
- if(key==="all"){if(state.screen==="selector"){state.sectionDraft=[...optionalIds];render();}else showSections([...optionalIds]);return;}
- if(key==="choose"){showSections([]);return;}
- if(key==="clear"){state.sectionDraft=[];render();return;}
+ if(key==="all"){state.sectionDraft=[...optionalIds];confirmSections();return;}
  if(key==="confirm"){confirmSections();return;}
  if(key==="cancel"){state.screen=state.currentId?"question":"start";render();return;}
  if(key==="save"){save();return;}

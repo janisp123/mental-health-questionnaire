@@ -12,13 +12,14 @@
 
 | Role | Exact current path | Meaning |
 |---|---|---|
-| Questions in LV/EN/RU | `src/modules/182_MODULE_01_LV_EN_RU_v16.json` through `182_MODULE_48_LV_EN_RU_v16.json` | 48 sections, 712 questions, language fields per module; LV reference, EN/RU **unreviewed drafts** |
+| Questions in LV/EN/RU | `src/modules/182_MODULE_01_LV_EN_RU_v16.json` through `182_MODULE_48_LV_EN_RU_v16.json` | 48 frozen source modules, 712 questions; grouped into 15 user-facing sections (36–70 source questions each); LV reference, EN/RU **unreviewed drafts** |
 | Module source index | `tests/fixtures/181_MODULE_INDEX_v16.json` | Frozen initial module SHA256, count and order; do not confuse with the current overall manifest |
 | Full question bank | `src/modules/182_MODULE_01_LV_EN_RU_v16.json` through `182_MODULE_48_LV_EN_RU_v16.json` | Canonical question/answer content and translations, separate from application design and runtime. |
 | Application screens and design | `src/app/screens/`, `src/app/styles/`, `src/app/i18n/` | Small independent page templates, role-based styles and interface labels. Edit these without opening question files. |
 | Shared application runtime and reports | `src/app/core/`, `src/app/reports/` | `model.js` handles lookup/visibility/progress; `answer-flow.js` handles navigation transitions; `recovery.js` validates recovery files; `events.js` delegates DOM events; `app.js` coordinates page state. Runtime consumes embedded data and does not read question files separately. |
 | App source order | `src/app/build.json` | Explicit ordered list of stylesheet and script inputs assembled into the single offline HTML. |
-| Questionnaire presentation config | `src/questionnaire/layout.json`, `src/questionnaire/presentation.json`, `src/questionnaire/i18n/` | Module navigation/report order, answer-specific report rules and frozen module titles; separate from design and original question content. |
+| Questionnaire presentation config | `src/questionnaire/layout.json`, `src/questionnaire/presentation.json`, `src/questionnaire/i18n/` | User-facing section grouping and navigation/report order, answer-specific report rules and frozen module titles; separate from design and original question content. |
+| Language and tone rules | `docs/LANGUAGE_STYLE_GUIDE.md` | Read before editing user-facing wording or translations. |
 | Full offline application build | `tools/build_questionnaire.py`, `src/app/`, `src/questionnaire/` | `python tools/build_questionnaire.py` builds the complete 712-question questionnaire as one offline HTML file. See [architecture](QUESTIONNAIRE_ARCHITECTURE.md). |
 | Existing working application | `reference/baseline/html/162_Sagatavosanas_vizitei_LV_v16.html` | Exact frozen LV v16 single-file reference for behavior and source text |
 | English app snapshot | `reference/baseline/html/172_Questionnaire_EN_v16_DRAFT_NOT_RELEASED.html` | Reference draft only, **not a release** |
@@ -37,9 +38,9 @@
 - `src/modules/`: source questionnaires (48 exact modules).
 - `src/i18n/working/`: existing translation drafts/resources.
 - `src/app/`: offline app source with independent screens, styles, shared runtime and report renderer; contains no question bank.
-- `src/questionnaire/`: module order, report presentation rules and source-grounded module titles.
+- `src/questionnaire/`: user-section grouping, source-module order, report presentation rules and source-grounded module titles.
 - `archive/pilot/`: retired 60-question prototype source, tests and notes; not a build input or active CI suite.
-- `tests/full_bank/`: source, build, report and full-runtime checks for the 48-module questionnaire.
+- `tests/full_bank/`: source, build, report and full-runtime checks for all 48 source modules and 15 user-facing sections.
 - `tests/app/`: focused screen-rendering, source-assembly, pure runtime-rule, synthetic browser, and layout checks; no full question bank is loaded.
 - `reference/baseline/html/`, `reference/baseline/readme/`, `reference/baseline/information/`: immutable v16 reference snapshots.
 - `reference/history/`: legacy v9/v14 references; never assume newest.
@@ -54,7 +55,7 @@
 
 ## Distribution — separate from development
 
-Google Drive's [professional review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb) currently contains the full 48-section, 712-question HTML candidate and its concise Latvian PDF guide. This is a **technical review candidate, not a public release or clinical validation**. The older Drive v16 copies were removed; the frozen v16 references remain under `reference/baseline/`. When the review candidate is explicitly refreshed, build both files from GitHub `develop`, verify the build and PDF, replace the two files in place so existing links stay valid, and update the checksums in `project-manifest.json` and checkpoint in `docs/CHANGELOG.md`. EN/RU remain unreviewed drafts.
+Google Drive's [professional review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb) still contains the previous 48-section, 712-question candidate while the 15-section Git build is verified. The Drive refresh is pending. Once the GitHub checks pass, replace the existing HTML and PDF in place, then update their checksums and source commit in `project-manifest.json` and record the Drive readback in `docs/CHANGELOG.md`. The older Drive v16 copies were removed; the frozen v16 references remain under `reference/baseline/`. EN/RU remain unreviewed drafts.
 
 ## Rules for identifying the latest version
 

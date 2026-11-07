@@ -16,6 +16,8 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     browser = launch(pw)
     page, errors, network = open_page(browser, html_path)
     page.locator('[data-act="start"]').click()
+    page.locator('[data-module="S01"]').check()
+    page.locator('[data-act="confirm"]').click()
     choose(page, "B")
     act(page, "skip")
     saved = backup(page)

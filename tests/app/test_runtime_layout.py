@@ -17,12 +17,14 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     browser = launch(pw)
     page, errors, network = open_page(browser, html_path)
     assert not page.locator('[data-act="guide"]').count()
-    assert not page.locator(".section-progress").count()
-    page.locator('[data-act="choose"]').click()
-    assert re.search(r"\b0/\d+\b", page.locator(".card").inner_text())
-    assert not page.locator(".section-progress").count()
-    page.locator('[data-act="cancel"]').click()
+    assert page.locator("[data-act=start]").count() == 1
     page.locator('[data-act="start"]').click()
+    assert page.locator("[data-module]").count() == 1
+    assert "3 questions" in page.locator(".card").inner_text()
+    assert not re.search(r"\b0/\d+\b", page.locator(".card").inner_text())
+    assert not page.locator(".section-progress").count()
+    page.locator('[data-module="S01"]').check()
+    page.locator('[data-act="confirm"]').click()
     page.wait_for_selector(".question-nav")
 
     for width, height in ((390, 844), (1280, 720)):

@@ -1,4 +1,4 @@
-"""Offline browser regression for the complete 48-module questionnaire."""
+"""Offline browser regression for the complete questionnaire and its 15 user sections."""
 import json
 import tempfile
 from pathlib import Path
@@ -8,6 +8,14 @@ from browser_helpers import act, backup, choose, launch, open_page, qid, restore
 import build_questionnaire as build
 
 
+def skip_until(page, target):
+    for _ in range(120):
+        if qid(page) == target:
+            return
+        act(page, "skip")
+    raise AssertionError(f"Could not reach {target} inside the selected section")
+
+
 with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     html_path = Path(tmp) / "questionnaire.html"
     html_path.write_text(build.make_html(), encoding="utf-8")
@@ -15,16 +23,19 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     page, errors, network = open_page(browser, html_path)
 
     data = page.locator("#questionnaire-data").evaluate("el => JSON.parse(el.textContent)")
-    assert len(data["groups"]) == 48
+    assert len(data["groups"]) == 15
     questions = [q for group in data["groups"] for q in group["questions"]]
     assert len(questions) == 712
     assert len({q["id"] for q in questions}) == 712
 
-    # All sections are optional, and the section picker exposes the full bank.
+    # Start opens a short section picker; select-all chooses every group and continues.
+    page.locator('[data-act="start"]').click()
+    assert page.locator(".question-nav").count() == 0
+    assert page.locator("input[data-module]").count() == 15
+    assert all(group["questionCount"] >= 30 for group in data["groups"])
     page.locator('[data-act="all"]').click()
-    assert page.locator("input[data-module]").count() == 48
-    assert page.locator("input[data-module]:checked").count() == 48
-    page.locator('[data-act="confirm"]').click()
+    assert qid(page) == "M23_11"
+    assert len(backup(page)["selected"]) == 15
 
     # Multi-select is manually saved; single-select saves once even on a double tap.
     assert qid(page) == "M23_11"
@@ -54,8 +65,8 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
 
     # A real conditional follow-up appears for an applicable parent answer.
     act(page, "sections")
-    page.locator('[data-jump="01"]').click()
-    assert qid(page) == "M01_01"
+    page.locator('[data-jump="S01"]').click()
+    skip_until(page, "M01_01")
     for question_number in range(1, 8):
         choose(page, "A")
         assert qid(page) == f"M01_{question_number + 1:02d}"
@@ -66,7 +77,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
 
     # The full-bank safety rules still produce the gentle support message.
     act(page, "sections")
-    page.locator('[data-jump="06"]').click()
+    page.locator('[data-jump="S03"]').click()
     assert qid(page) == "M06_01"
     choose(page, "B")
     assert page.locator("#support-message").is_visible()
@@ -77,8 +88,8 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
 
     # Reach the real medication-list item via ordinary section navigation.
     act(page, "sections")
-    page.locator('[data-jump="14"]').click()
-    assert qid(page) == "M14_01"
+    page.locator('[data-jump="S01"]').click()
+    skip_until(page, "M14_01")
     choose(page, "B")
     assert qid(page) == "M14_02", f"Expected medication form next, got {qid(page)}"
     page.locator('[data-med-index="0"][data-med-field="name"]').fill("SYNTHETIC MEDICINE")
@@ -87,8 +98,8 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
 
     # Text questions are manually saved and remain in the clinician report.
     act(page, "sections")
-    page.locator('[data-jump="33"]').click()
-    assert qid(page) == "M33_01"
+    page.locator('[data-jump="S11"]').click()
+    skip_until(page, "M33_01")
     page.locator("#shortText").fill("SYNTHETIC NAME")
     act(page, "save")
     assert qid(page) == "M33_02"
@@ -134,6 +145,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     # A fresh full-bank run downloads cumulative recovery after ten skips.
     recovery_page, recovery_errors, recovery_network = open_page(browser, html_path)
     recovery_page.locator('[data-act="start"]').click()
+    recovery_page.locator('[data-act="all"]').click()
     first = questions[0]
     for language in ("lv", "ru", "en"):
         recovery_page.select_option("#language", language)

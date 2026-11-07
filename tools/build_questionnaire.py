@@ -67,6 +67,7 @@ def adapt_source_entry(entry):
         "id": lv["id"],
         "order": entry["order"],
         "module": str(section).zfill(2),
+        "sourceModule": str(section).zfill(2),
         "originModule": section,
         "section": section,
         "profile": lv["profile"],
@@ -161,8 +162,8 @@ def build_bundle():
             raise ValueError("Wrong medicine-list locale: " + lang)
         ui[lang]["medicine"] = medicine["strings"]
 
-    groups = build_source_groups()
-    by_id = {q["id"]: q for group in groups for q in group["questions"]}
+    source_groups = build_source_groups()
+    by_id = {q["id"]: q for group in source_groups for q in group["questions"]}
     layout = read_json(QUESTIONNAIRE / "layout.json")
     presentation = read_json(QUESTIONNAIRE / "presentation.json")
     if (layout.get("schema") != "questionnaire-layout-v1"
@@ -190,12 +191,54 @@ def build_bundle():
 
     module_ids = {f"{number:02d}" for number in range(1, 49)}
     full_order = layout.get("full_order", [])
+    section_groups = layout.get("section_groups", [])
+    section_ids = [group.get("id") for group in section_groups if isinstance(group, dict)]
     topic_order = presentation.get("topicOrder", [])
     if (len(full_order) != 48 or len(set(full_order)) != 48 or set(full_order) != module_ids
-            or len(topic_order) != 48 or len(set(topic_order)) != 48 or set(topic_order) != module_ids):
-        raise ValueError("Navigation and report order must list each source module exactly once")
-    by_group = {group["id"]: group for group in groups}
-    groups = [by_group[key] for key in full_order]
+            or len(section_groups) == 0 or len(section_ids) != len(section_groups)
+            or len(set(section_ids)) != len(section_ids)
+            or len(topic_order) != len(section_ids) or len(set(topic_order)) != len(topic_order)
+            or set(topic_order) != set(section_ids)):
+        raise ValueError("Source-module order and user-section/report order must be complete and unique")
+    source_to_section = {}
+    for section_group in section_groups:
+        if set(section_group.get("title", {})) != set(LANGS):
+            raise ValueError("Each user-facing section requires a title in all languages")
+        modules = section_group.get("source_modules")
+        if not isinstance(modules, list) or not modules:
+            raise ValueError("Each user-facing section must list its source modules")
+        for module_id in modules:
+            if module_id not in module_ids or module_id in source_to_section:
+                raise ValueError("User-facing section mapping has an unknown or duplicate source module")
+            source_to_section[module_id] = section_group["id"]
+    if set(source_to_section) != module_ids:
+        raise ValueError("Every original source module must belong to exactly one user-facing section")
+    source_by_group = {group["id"]: group for group in source_groups}
+    ordered_groups = []
+    for section_group in section_groups:
+        section_id = section_group["id"]
+        questions = []
+        for module_id in full_order:
+            if source_to_section[module_id] != section_id:
+                continue
+            for source_question in source_by_group[module_id]["questions"]:
+                question = dict(source_question)
+                question["sourceModule"] = module_id
+                question["module"] = section_id
+                questions.append(question)
+        if len(questions) < 30:
+            raise ValueError("Each user-facing section must contain at least 30 source questions: " + section_id)
+        ordered_groups.append({
+            "id": section_id,
+            "titles": section_group["title"],
+            "concerns": section_group["title"],
+            "required": False,
+            "questionCount": len(questions),
+            "sourceModules": section_group["source_modules"],
+            "questions": questions,
+        })
+    groups = ordered_groups
+    by_id = {q["id"]: q for group in groups for q in group["questions"]}
     positions = {q["id"]: index for index, q in enumerate(
         question for group in groups for question in group["questions"])}
     for qid, q in by_id.items():
@@ -205,7 +248,9 @@ def build_bundle():
     return {
         "schema": "offline-questionnaire-full-bank-v1",
         "version": config["version"],
-        "layout_version": layout["version"] + "-full-bank",
+        "layout_version": layout["version"],
+        "source_module_to_section": source_to_section,
+        "previous_layout_versions": ["optional-topics-v1-full-bank"],
         "legacy_opening_groups": [],
         "baseline": config["baseline"],
         "ui": ui,

@@ -14,7 +14,7 @@ def _question(qid, title, codes, *, multi=False, context=None):
         for lang in ("lv", "en", "ru")
     }
     return {
-        "id": qid, "module": "01", "multi": multi, "context": context,
+        "id": qid, "module": "S01", "multi": multi, "context": context,
         "choiceCodes": codes, "exclusive": [], "incompatible": [],
         "answerStatus": {}, "type": "choice", "translations": translations,
     }
@@ -27,7 +27,7 @@ def make_fixture():
         ui[lang]["medicine"] = json.loads((ROOT / "src/app/i18n" / f"medicine.{lang}.json").read_text(encoding="utf-8"))["strings"]
     titles = {"lv": "Sintētiska sadaļa", "en": "Synthetic section", "ru": "Тестовый раздел"}
     group = {
-        "id": "01", "required": True, "titles": titles, "concerns": titles,
+        "id": "S01", "required": False, "questionCount": 3, "titles": titles, "concerns": titles,
         "questions": [
             _question("SYN_01", "Single choice", ["A", "B"]),
             _question("SYN_02", "Multiple choice", ["A", "B"], multi=True),
@@ -38,7 +38,8 @@ def make_fixture():
         "schema": "offline-questionnaire-full-bank-v1", "version": "synthetic-test",
         "layout_version": "synthetic-test", "legacy_opening_groups": [], "ui": ui,
         "groups": [group],
-        "presentation": {"questions": {}, "boldAnswers": {}, "topicOrder": ["01"], "feedbackContactEmail": "test@example.invalid"},
+        "source_module_to_section": {"01":"S01"}, "previous_layout_versions": [],
+        "presentation": {"questions": {}, "boldAnswers": {}, "topicOrder": ["S01"], "feedbackContactEmail": "test@example.invalid"},
     }
 
 

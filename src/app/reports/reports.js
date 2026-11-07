@@ -71,7 +71,7 @@ function doctorText(questions,answers,selected,locale,ui,groups,presentation,fee
  const items=feedbackEntries(allQuestions,feedback,catalogs);
  return [ui.doctorHeading,ui.doctorDisclaimer,
   ...(items.length?["",ui.feedbackSectionHeading,...items.map(item=>item.plain)]:[]),"",
-  ui.countDone+": "+counts.answered+" · "+ui.countSkip+": "+counts.skipped+" · "+ui.countOpen+": "+counts.unanswered,
+  ui.countDone+": "+counts.answered,
   ui.omissionNote,"",...entries(questions,answers,locale,presentation,catalogs[locale]?.medicine).map(e=>e.plain)].join("\n");
 }
 function doctorMarkup(questions,answers,selected,locale,ui,groups,presentation,feedback={},allQuestions=questions,catalogs={lv:ui,en:ui,ru:ui}) {
@@ -79,7 +79,7 @@ function doctorMarkup(questions,answers,selected,locale,ui,groups,presentation,f
  const items=feedbackEntries(allQuestions,feedback,catalogs);
  const feedbackHtml=items.length?"<h2>"+esc(ui.feedbackSectionHeading)+"</h2>"+items.map(item=>item.html).join(""):"";
  return "<h1>"+esc(ui.doctorHeading)+"</h1><p>"+esc(ui.doctorDisclaimer)+"</p>"+feedbackHtml+"<p>"+
- esc(ui.countDone+": "+counts.answered+" · "+ui.countSkip+": "+counts.skipped+" · "+ui.countOpen+": "+counts.unanswered)+"</p><p>"+
+ esc(ui.countDone+": "+counts.answered)+"</p><p>"+
  esc(ui.omissionNote)+"</p><hr>"+entries(questions,answers,locale,presentation,catalogs[locale]?.medicine).map(e=>e.html.replace(/\n/g,"<br>")).join("");
 }
 function doctorHtml(questions,answers,selected,locale,ui,groups,presentation,feedback={},allQuestions=questions,catalogs={lv:ui,en:ui,ru:ui}) {

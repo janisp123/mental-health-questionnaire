@@ -9,11 +9,12 @@ assert.deepEqual(Object.keys(data.presentation).sort(),['boldAnswers','feedbackC
 assert(!/"[^"]*weight[^"]*"\s*:/i.test(JSON.stringify(data)));
 for(const lang of ['lv','en','ru']){
  const entries=r.entries(qs,answers,lang,data.presentation);
- assert.deepEqual(entries.map(e=>e.id),['M33_01','M23_11','M02_09','M06_01','M06_02']);
+ assert.deepEqual(entries.map(e=>e.id),['M23_11','M33_01','M02_09','M06_01','M06_02']);
  const plain=r.doctorText(qs,answers,[],lang,data.ui[lang],data.groups,data.presentation);
  const html=r.doctorHtml(qs,answers,[],lang,data.ui[lang],data.groups,data.presentation);
  assert(plain.includes(q('M06_02').translations[lang].choices.B));
  assert(!/M06_02|\[B\]|\bweight\b|risk score/i.test(plain));
+ assert(!/Unanswered|Nav atbildēts|Без ответа/i.test(plain));
  assert(html.includes('<strong>'+q('M06_02').translations[lang].choices.B+'</strong>'));
  assert(!html.includes('<strong>'+q('M06_01').translations[lang].choices.A+'</strong>'));
  assert(!html.includes('<strong>'+q('M02_09').translations[lang].choices.A+'</strong>'));

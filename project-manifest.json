@@ -56,7 +56,7 @@
     "development_build": {
       "status": "TECHNICAL_REVIEW_BUILD_NOT_RELEASED",
       "version": "0.2.0-prototype+full-bank",
-      "sections": 48,
+      "sections": 15,
       "questions": 712,
       "reference_language": "lv",
       "translation_status": {
@@ -80,7 +80,9 @@
       "component_ci": ".github/workflows/app-component-checks.yml",
       "architecture": "docs/QUESTIONNAIRE_ARCHITECTURE.md",
       "artifact": "dist/QUESTIONNAIRE_LV_EN_RU_NOT_RELEASED.html",
-      "recovery_schema": "mental-pilot-recovery-v1 (retained for compatibility)"
+      "recovery_schema": "mental-pilot-recovery-v1 (retained for compatibility)",
+      "source_modules": 48,
+      "note": "15 user-facing sections group all 48 source modules; each group contains 36–70 original questions. Source questions remain unchanged."
     }
   },
   "import_validation": {

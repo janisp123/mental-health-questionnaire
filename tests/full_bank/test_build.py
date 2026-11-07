@@ -15,12 +15,14 @@ spec.loader.exec_module(build)
 
 bundle = build.build_bundle()
 assert bundle["schema"] == "offline-questionnaire-full-bank-v1"
-assert [group["id"] for group in bundle["groups"]] == build.read_json(
+assert [group["id"] for group in bundle["groups"]] == [group["id"] for group in build.read_json(
     ROOT / "src" / "questionnaire" / "layout.json"
-)["full_order"]
+)["section_groups"]]
 assert all(group["required"] is False for group in bundle["groups"])
+assert len(bundle["groups"]) == 15
+assert all(group["questionCount"] == len(group["questions"]) and 36 <= group["questionCount"] <= 70 for group in bundle["groups"])
 questions = [question for group in bundle["groups"] for question in group["questions"]]
-assert len(bundle["groups"]) == 48
+assert len(bundle["groups"]) == 15
 assert len(questions) == 712
 assert len({question["id"] for question in questions}) == 712
 assert len({question["order"] for question in questions}) == 712
@@ -31,7 +33,12 @@ source_by_id = {
     for group in build.build_source_groups()
     for question in group["questions"]
 }
-assert by_id == source_by_id
+assert set(by_id) == set(source_by_id)
+for question_id, source_question in source_by_id.items():
+    grouped_question = dict(by_id[question_id])
+    assert grouped_question["sourceModule"] == source_question["module"]
+    grouped_question["module"] = grouped_question["sourceModule"]
+    assert grouped_question == source_question
 positions = {question["id"]: index for index, question in enumerate(questions)}
 for question in questions:
     for language in ("lv", "en", "ru"):
@@ -80,4 +87,4 @@ with tempfile.TemporaryDirectory() as temp_dir:
     )
     assert cli_data and json.loads(cli_data.group(1)) == bundle
 
-print("PASS: default CLI creates one offline HTML with all 712 questions in 48 optional sections.")
+print("PASS: default CLI creates one offline HTML with all 712 questions in 15 optional sections; original 48-module source mapping is retained.")

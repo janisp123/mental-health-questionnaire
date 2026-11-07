@@ -3,10 +3,10 @@
 "use strict";
 root.QuestionnaireRecovery = {
  validate(payload,options){
-  const {byId,optionalIds,legacyOpeningGroups,layoutVersion,medicineFields,choiceStatus,incompatiblePair,isSafety}=options;
+  const {byId,optionalIds,legacyOpeningGroups,layoutVersion,previousLayoutVersions=[],selectedModuleMap={},medicineFields,choiceStatus,incompatiblePair,isSafety}=options;
   const x=payload;
   if(!x||x.schema!=="mental-pilot-recovery-v1"||!x.answers||typeof x.answers!=="object"||Array.isArray(x.answers))throw Error("Invalid schema");
-  if(x.layoutVersion&&x.layoutVersion!==layoutVersion)throw Error("Unsupported layout");
+  if(x.layoutVersion&&x.layoutVersion!==layoutVersion&&!previousLayoutVersions.includes(x.layoutVersion))throw Error("Unsupported layout");
   const answers={};
   for(const [id,record] of Object.entries(x.answers)){
    const q=byId[id];if(!q||!record||typeof record!=="object"||Array.isArray(record))throw Error("Invalid record");
@@ -43,11 +43,13 @@ root.QuestionnaireRecovery = {
       !["lv","en","ru"].includes(record.language)||typeof record.version!=="string"||record.version.length>40||typeof record.updatedAt!=="string")throw Error("Invalid feedback details");
    restoredFeedback[id]={reasons:[...record.reasons],comment:record.comment,language:record.language,version:record.version,updatedAt:record.updatedAt};
   }
-  if(x.selected!=null&&(!Array.isArray(x.selected)||x.selected.some(id=>!optionalIds.includes(id))))throw Error("Recovery file requires an unavailable section");
+  if(x.selected!=null&&!Array.isArray(x.selected))throw Error("Recovery file requires an unavailable section");
+  const selectedIds=Array.isArray(x.selected)?x.selected.map(id=>optionalIds.includes(id)?id:selectedModuleMap[id]||null):[];
+  if(selectedIds.includes(null))throw Error("Recovery file requires an unavailable section");
   const queue=x.reviewQueue;
   if(queue!=null&&(!Array.isArray(queue)||new Set(queue).size!==queue.length||queue.some(id=>!byId[id]||!isSafety(byId[id]))))throw Error("Invalid review sequence");
-  const selectedIds=Array.isArray(x.selected)?x.selected:[];
-  const selected=optionalIds.filter(id=>selectedIds.includes(id)||(!x.layoutVersion&&legacyOpeningGroups.includes(id)));
+  const selectedSet=new Set(selectedIds);
+  const selected=optionalIds.filter(id=>selectedSet.has(id)||(!x.layoutVersion&&legacyOpeningGroups.includes(id)));
   const reviewQueue=queue?.length?[...queue]:null;
   const currentId=reviewQueue?reviewQueue[0]:(typeof x.currentId==="string"&&byId[x.currentId]?x.currentId:null);
   return {

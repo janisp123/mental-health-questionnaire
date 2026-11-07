@@ -4,7 +4,7 @@ Free, non-commercial, offline questionnaire to help adults organize information 
 
 ## Current development build
 
-The working application assembles all 48 original modules and 712 questions into one self-contained HTML file. Latvian is the reference language. English and Russian are unreviewed drafts. Every section and question is optional.
+The working application assembles all 48 original modules and 712 questions into 15 optional user-facing sections of 36–70 questions each, in one self-contained HTML file. Latvian is the reference language. English and Russian are unreviewed drafts.
 
 The file runs offline and sends no data. Answers remain in the open session unless the user downloads a recovery file, copies a report, prints it, or otherwise chooses to share it. Question feedback is separate from medical answers. The doctor report shows recorded answers and feedback without calculating a diagnosis or score.
 

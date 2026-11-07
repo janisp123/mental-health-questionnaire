@@ -26,6 +26,10 @@ assert(clean.currentId==="SAFE"&&clean.savedCount===4&&clean.lang==="en","restor
 
 const legacy=root.QuestionnaireRecovery.validate({schema:"mental-pilot-recovery-v1",answers:{}},opts);
 assert(legacy.selected[0]==="02","migrates legacy implicit section selection");
+const groupedOptions={...opts,optionalIds:["S01"],layoutVersion:"grouped-v1",previousLayoutVersions:["old-layout"],selectedModuleMap:{"01":"S01"},legacyOpeningGroups:[]};
+const grouped=root.QuestionnaireRecovery.validate({schema:"mental-pilot-recovery-v1",layoutVersion:"old-layout",answers:{},selected:["01"]},groupedOptions);
+assert(grouped.selected[0]==="S01","maps a prior source-module selection into its new grouped section");
+rejectWith({...{schema:"mental-pilot-recovery-v1",layoutVersion:"old-layout",answers:{},selected:["99"]}},groupedOptions,"unknown legacy section");
 reject({...payload,layoutVersion:"other"},"unsupported layout");
 reject({...payload,answers:{CHOICE:{kind:"choice",codes:["UNKNOWN"]}}},"unknown answer code");
 reject({...payload,feedback:{CHOICE:{reasons:["answer:unknown"],comment:"",language:"en",version:"v",updatedAt:""}}},"unknown feedback answer code");
@@ -34,3 +38,4 @@ console.log("PASS: synthetic recovery normalization, legacy compatibility, and i
 
 function assert(value,message){if(!value)throw new Error(message);}
 function reject(value,message){let rejected=false;try{root.QuestionnaireRecovery.validate(value,opts);}catch(e){rejected=true;}assert(rejected,"rejects "+message);}
+function rejectWith(value,options,message){let rejected=false;try{root.QuestionnaireRecovery.validate(value,options);}catch(e){rejected=true;}assert(rejected,"rejects "+message);}
