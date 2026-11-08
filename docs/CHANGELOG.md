@@ -494,3 +494,11 @@ Reused the shared action-row spacing for Continue and Back. Reproduced the touch
 ### 2026-11-08 · Improvement goals checklist
 
 Removed the three-choice limit from M23_11 in the built questionnaire. The frozen source, answer codes and mutually exclusive choices are preserved. Source parity, locale, build and offline Chromium checks passed. Verified selecting, saving and restoring all 12 applicable choices at phone width. Reviewer HTML SHA-256 `2764a577fa532a5af171c4914a83494393e1d114078197a0c4628a3edc7977a4`.
+
+### 2026-11-08 · Isolated translation-pack loader
+
+Local checkpoint on `codex/translation-pack-loader`. The opt-in registry in `src/questionnaire/build.json` is empty, so the test build includes LV/EN/RU only. The loader reads validated translations by question ID and answer code without rewriting frozen modules. The test command writes only to the isolated `dist/translation-pack-test/` directory.
+
+The test HTML contained byte-identical questionnaire data to the sent reviewer baseline in `MH_Public_version`. Offline Chromium matched both language menus, navigation, restored answers, and extracted PDF text for all three clinician report languages and project feedback. Both print paths suppressed local file paths. An in-memory Ukrainian test restored progress and Ukrainian feedback and rendered Latvian report labels while preserving typed Ukrainian. The saved TEST file still contains only LV/EN/RU. The two reviewer files retained their SHA-256 hashes, HTML `2764a577fa532a5af171c4914a83494393e1d114078197a0c4628a3edc7977a4` and PDF `17b84900179dfff97f47b375e91824ce11d6cf1b439f315ba0486a0cdbd9a8bc`.
+
+Next: complete Ukrainian language and clinical safety review, then test a separate four-language release candidate on Android. Decide how to handle rollback of progress files with Ukrainian feedback. The frozen reviewer build rejects feedback recorded in a language it does not recognize.

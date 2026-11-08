@@ -72,7 +72,8 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert page.locator('[data-act="continueWithoutSaving"]').is_visible()
     assert len(downloads) == 4
     page.locator('[data-act="continueWithoutSaving"]').click()
-    assert page.locator("#app").inner_text().find("Results / copy") >= 0
+    assert page.get_by_role("heading", name="Results", exact=True).is_visible()
+    assert page.locator('[data-act="doctor"]').is_visible()
     assert saved_at_boundary["answers"]["SYN_03"]["kind"] == "skip"
     assert not errors, errors
     assert not network, network

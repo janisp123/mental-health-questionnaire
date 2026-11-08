@@ -3,7 +3,7 @@
 "use strict";
 root.QuestionnaireRecovery = {
  validate(payload,options){
-  const {byId,optionalIds,legacyOpeningGroups,layoutVersion,previousLayoutVersions=[],selectedModuleMap={},medicineFields,choiceStatus,incompatiblePair,isSafety}=options;
+  const {byId,optionalIds,legacyOpeningGroups,layoutVersion,previousLayoutVersions=[],selectedModuleMap={},medicineFields,choiceStatus,incompatiblePair,isSafety,languages=["lv","en","ru"]}=options;
   const x=payload;
   if(!x||x.schema!=="mental-pilot-recovery-v1"||!x.answers||typeof x.answers!=="object"||Array.isArray(x.answers))throw Error("Invalid schema");
   if(x.layoutVersion&&x.layoutVersion!==layoutVersion&&!previousLayoutVersions.includes(x.layoutVersion))throw Error("Unsupported layout");
@@ -40,7 +40,7 @@ root.QuestionnaireRecovery = {
    if(!q||!record||typeof record!=="object"||Array.isArray(record)||!Array.isArray(record.reasons)||!record.reasons.length||new Set(record.reasons).size!==record.reasons.length)throw Error("Invalid feedback record");
    const valid=new Set(["question","language","other",...q.choiceCodes.map(code=>"answer:"+code)]);
    if(!record.reasons.every(reason=>typeof reason==="string"&&valid.has(reason))||typeof record.comment!=="string"||record.comment.length>500||
-      !["lv","en","ru"].includes(record.language)||typeof record.version!=="string"||record.version.length>40||typeof record.updatedAt!=="string")throw Error("Invalid feedback details");
+      !languages.includes(record.language)||typeof record.version!=="string"||record.version.length>40||typeof record.updatedAt!=="string")throw Error("Invalid feedback details");
    restoredFeedback[id]={reasons:[...record.reasons],comment:record.comment,language:record.language,version:record.version,updatedAt:record.updatedAt};
   }
   if(x.selected!=null&&!Array.isArray(x.selected))throw Error("Recovery file requires an unavailable section");
@@ -57,7 +57,7 @@ root.QuestionnaireRecovery = {
    reviewQueue,
    reviewReturn:reviewQueue&&["question","report","results"].includes(x.reviewReturn?.screen)?{screen:x.reviewReturn.screen,id:x.reviewReturn.id}:null,
    savedCount:Number.isInteger(x.savedCount)&&x.savedCount>=0?x.savedCount:Object.keys(answers).length,
-   lang:["lv","en","ru"].includes(x.lang)?x.lang:null,currentId
+   lang:languages.includes(x.lang)?x.lang:null,currentId
   };
  }
 };

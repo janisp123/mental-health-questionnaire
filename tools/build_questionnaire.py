@@ -9,6 +9,8 @@ import hashlib
 import html
 import json
 import re
+import sys
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -146,11 +148,92 @@ def contains_weight_key(value):
     return False
 
 
+def check_catalog(reference, translation, field):
+    if type(reference) is not type(translation):
+        raise ValueError(f"{field}: translation type differs")
+    if isinstance(reference, dict):
+        if reference.keys() != translation.keys():
+            raise ValueError(f"{field}: translation keys differ")
+        for key in reference:
+            check_catalog(reference[key], translation[key], f"{field}.{key}")
+    elif isinstance(reference, list):
+        if len(reference) != len(translation):
+            raise ValueError(f"{field}: translation list length differs")
+        for index, (source, translated) in enumerate(zip(reference, translation)):
+            check_catalog(source, translated, f"{field}[{index}]")
+    elif isinstance(reference, str):
+        placeholders = r"\{[A-Za-z_][A-Za-z_0-9]*\}"
+        if (bool(reference.strip()) != bool(translation.strip())
+                or Counter(re.findall(placeholders, reference)) != Counter(re.findall(placeholders, translation))):
+            raise ValueError(f"{field}: translation text or placeholders differ")
+
+
+def apply_translation_packs(bundle, packs):
+    """Add validated wording only. The source bank still owns question behavior."""
+    # The script is also launched directly from tools/, where the repo is not on sys.path.
+    if str(ROOT) not in sys.path:
+        sys.path.insert(0, str(ROOT))
+    from translations import workspace
+
+    reference_ui = bundle["ui"]["lv"]
+    question_rules = bundle["presentation"]["questions"]
+    reference_sections = {group["id"]: group["titles"]["lv"] for group in bundle["groups"]}
+    reference_reports = {qid: rule["labels"]["lv"] for qid, rule in question_rules.items() if "labels" in rule}
+    for locale in packs:
+        folder = ROOT / "translations" / locale
+
+        def catalog(filename, key, reference, schema=None):
+            document = workspace.read_json(folder / filename)
+            if (not isinstance(document, dict) or document.get("lang") != locale
+                    or (schema and document.get("schema") != schema)):
+                raise ValueError(f"{locale}/{filename}: invalid catalog header")
+            translated = document.get(key)
+            check_catalog(reference, translated, f"{locale}/{filename}")
+            return translated
+
+        ui = catalog("ui.json", "strings", {k: v for k, v in reference_ui.items() if k != "medicine"},
+                     "questionnaire-ui-locale-v1")
+        ui["medicine"] = catalog("medicine.json", "strings", reference_ui["medicine"], "medicine-list-ui-v1")
+        sections = catalog("section-titles.json", "titles", reference_sections)
+        labels = catalog("report-labels.json", "labels", reference_reports)
+        question_files = {path.stem for path in (folder / "questions").glob("*.json")}
+        unexpected = question_files - set(workspace.MODULES)
+        if unexpected:
+            raise ValueError(f"{locale}: unknown translation module files: {', '.join(sorted(unexpected))}")
+        by_id = {}
+        for module in workspace.MODULES:
+            path = folder / "questions" / f"{module}.json"
+            try:
+                pack = workspace.read_json(path)
+                workspace.check_pack(workspace.load_source(module), pack, complete=True)
+            except (OSError, ValueError) as error:
+                raise ValueError(f"{locale}/questions/{module}.json: {error}") from error
+            by_id.update(pack["questions"])
+
+        bundle["ui"][locale] = ui
+        for group in bundle["groups"]:
+            # Concerns and titles share the same dictionary in the full-bank bundle.
+            group["titles"][locale] = sections[group["id"]]
+            for question in group["questions"]:
+                question["translations"][locale] = by_id[question["id"]]
+        for qid, label in labels.items():
+            question_rules[qid]["labels"][locale] = label
+        bundle["release_status"][locale] = "DRAFT_NOT_RELEASED"
+    bundle["languageNames"] = packs
+
+
 def build_bundle():
     """Assemble the complete 48-section bank without copying question sources."""
     config = read_json(QUESTIONNAIRE / "build.json")
     if config.get("schema") != "questionnaire-build-v1":
         raise ValueError("Invalid questionnaire build configuration")
+    packs = config.get("translationPacks", {})
+    if not isinstance(packs, dict) or any(
+        locale in LANGS or not re.fullmatch(r"[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*", locale)
+        or not isinstance(name, str) or not name.strip()
+        for locale, name in packs.items()
+    ):
+        raise ValueError("Invalid translationPacks language registry")
     ui = {}
     for lang in LANGS:
         catalog = read_json(APP / "i18n" / ("ui." + lang + ".json"))
@@ -249,7 +332,7 @@ def build_bundle():
         if q.get("context") and positions[q["context"]["id"]] >= positions[qid]:
             raise ValueError("Navigation must keep condition parent before follow-up: " + qid)
 
-    return {
+    bundle = {
         "schema": "offline-questionnaire-full-bank-v1",
         "version": config["version"],
         "layout_version": layout["version"],
@@ -262,6 +345,10 @@ def build_bundle():
         "presentation": presentation,
         "release_status": {"lv": "PROTOTYPE", "en": "DRAFT_NOT_RELEASED", "ru": "DRAFT_NOT_RELEASED"},
     }
+    if packs:
+        apply_translation_packs(bundle, packs)
+    return bundle
+
 
 def make_html(data=None):
     data = build_bundle() if data is None else data
@@ -285,15 +372,26 @@ def make_html(data=None):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output", type=Path, default=None)
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--output", type=Path, default=None)
+    mode.add_argument("--translation-pack-test", action="store_true",
+                      help="write a TEST file in this checkout's dedicated dist folder")
     args = parser.parse_args()
-    output_path = args.output or (ROOT / "dist" / "QUESTIONNAIRE_LV_EN_RU_NOT_RELEASED.html")
-    output = make_html().encode("utf-8")
+    data = build_bundle()
+    locale_suffix = "_".join(data["ui"]).upper()
+    output_path = args.output or (ROOT / "dist" / f"QUESTIONNAIRE_{locale_suffix}_NOT_RELEASED.html")
+    if args.translation_pack_test:
+        output_path = ROOT / "dist" / "translation-pack-test" / "QUESTIONNAIRE_TRANSLATION_PACK_TEST.html"
+        if output_path.resolve() != output_path:
+            parser.error("Test output must stay inside this checkout and cannot use redirected paths")
+    output = make_html(data).encode("utf-8")
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_bytes(output)
+    # Test mode never overwrites an existing file, including a link to another artifact.
+    with output_path.open("xb" if args.translation_pack_test else "wb") as handle:
+        handle.write(output)
     print("COMPLETE QUESTIONNAIRE BUILT:", output_path)
     print("SHA256:", hashlib.sha256(output).hexdigest())
-    print("Languages:", ", ".join(LANGS))
+    print("Languages:", ", ".join(data["ui"]))
     print("PROTOTYPE ONLY: browser, translation, and clinical approval NOT implied.")
 
 

@@ -24,6 +24,13 @@ assert(clean.answers.SAFE.kind==="skip"&&clean.feedback.CHOICE.reasons.length===
 assert(clean.selected[0]==="02"&&clean.reviewQueue[0]==="SAFE"&&clean.reviewReturn.screen==="results","restores selection and safety review state");
 assert(clean.currentId==="SAFE"&&clean.savedCount===4&&clean.lang==="en","restores navigation metadata");
 
+const newLocale={...payload,lang:"uk",feedback:{CHOICE:{...payload.feedback.CHOICE,language:"uk"}}};
+const localized=root.QuestionnaireRecovery.validate(newLocale,{...opts,languages:["lv","en","ru","uk"]});
+assert(localized.lang==="uk"&&localized.feedback.CHOICE.language==="uk","restores progress and feedback for an enabled pack");
+reject(newLocale,"feedback language absent from an older build");
+const fallback=root.QuestionnaireRecovery.validate({...newLocale,feedback:{}},opts);
+assert(fallback.lang===null&&fallback.answers.CHOICE.codes[0]==="B","preserves answer codes if the interface language is unavailable");
+
 const legacy=root.QuestionnaireRecovery.validate({schema:"mental-pilot-recovery-v1",answers:{}},opts);
 assert(legacy.selected[0]==="02","migrates legacy implicit section selection");
 const groupedOptions={...opts,optionalIds:["S01"],layoutVersion:"grouped-v1",previousLayoutVersions:["old-layout"],selectedModuleMap:{"01":"S01"},legacyOpeningGroups:[]};

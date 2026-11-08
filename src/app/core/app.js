@@ -10,7 +10,7 @@ const {groups,optionalIds,byId,all}=model;
 let pendingSingleAnswer=null;
 const app=document.getElementById("app");
 const report=window.QuestionnaireReports;
-const languageNames={lv:"Latviešu",en:"English",ru:"Русский"};
+const languageNames={lv:"Latviešu",en:"English",ru:"Русский",...data.languageNames};
 let state={lang:"lv",screen:"start",currentId:null,answers:{},feedback:{},feedbackOpen:false,selected:[],sectionDraft:[],sectionConfirmed:false,pendingSectionEnd:null,notice:"",draft:null};
 function ui(){return data.ui[state.lang];}
 function esc(s){return report.esc(s);}
@@ -24,7 +24,7 @@ function current(){return model.current(state);}
 function isSafety(q){return model.isSafety(q);}
 function countGroup(group){return model.countGroup(state,group);}
 function languageOptions(selected){
- return Object.entries(languageNames).map(([id,name])=>'<option value="'+id+'"'+(id===selected?" selected":"")+">"+name+"</option>").join("");
+ return Object.entries(languageNames).map(([id,name])=>'<option value="'+id+'"'+(id===selected?" selected":"")+">"+esc(name)+"</option>").join("");
 }
 function header(){
  return '<header>'+(state.screen==="start"?'<h1>'+label("project")+'</h1>':"")+'<label class="lang">'+label("language")+' <select id="language">'+languageOptions(state.lang)+'</select></label></header>';
@@ -268,7 +268,8 @@ function restore(file){
    const x=JSON.parse(String(reader.result));
    const restored=window.QuestionnaireRecovery.validate(x,{byId,optionalIds,legacyOpeningGroups:data.legacy_opening_groups,
     layoutVersion:data.layout_version,previousLayoutVersions:data.previous_layout_versions,
-    selectedModuleMap:data.source_module_to_section,medicineFields,choiceStatus,incompatiblePair,isSafety});
+    selectedModuleMap:data.source_module_to_section,medicineFields,choiceStatus,incompatiblePair,isSafety,
+    languages:Object.keys(languageNames)});
    if((Object.keys(state.answers).length||Object.keys(state.feedback).length)&&!window.confirm(ui().replaceSession))return;
    state.reviewQueue=restored.reviewQueue;
    state.reviewReturn=restored.reviewReturn;
@@ -367,7 +368,7 @@ window.QuestionnaireEvents.bind(app,{
   const choices=active().filter(q=>q.module===moduleId),next=choices.find(q=>!state.answers[q.id])||choices[0];
   if(next)setQuestion(next.id);
  },
- language:value=>{state.lang=value;state.notice="";render();},
+ language:value=>{if(Object.hasOwn(languageNames,value)){state.lang=value;state.notice="";render();}},
  reportLanguage:value=>{if(Object.hasOwn(languageNames,value))state.reportLang=value;},
  medicineChange:readMedicineControls,
  moduleChange:()=>{state.sectionDraft=Array.from(app.querySelectorAll("[data-module]:checked"),el=>el.dataset.module);render();},
