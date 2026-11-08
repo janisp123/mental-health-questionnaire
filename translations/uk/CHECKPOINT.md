@@ -5,7 +5,7 @@ Updated 8 November 2026, Riga time. Branch `develop`.
 | Scope | Status |
 | --- | --- |
 | Questionnaire source | Latvian v16 in `src/modules/`, baseline `f25a6c1` |
-| Question text | 323 of 712 translated and structurally checked |
+| Question text | 342 of 712 translated and structurally checked |
 | Interface | 126 of 126 keys drafted. Keys, types, placeholders and dated entries checked against Latvian. |
 | Reviewer README | Ukrainian text drafted in `README_REVIEW.uk.md`. Button labels checked against `ui.json`. |
 | Medication form | All 32 strings drafted. Nested keys, saved answer codes and clinician report labels checked. |
@@ -15,7 +15,7 @@ Updated 8 November 2026, Riga time. Branch `develop`.
 
 ## Next batch
 
-Start S12 with module **19** (relationships and safety). Then modules 24 and 38.
+Continue S12 with module **24** (recurring emotional and relationship patterns), then module 38.
 
 ## Checkpoint history
 
@@ -34,3 +34,4 @@ Start S12 with module **19** (relationships and safety). Then modules 24 and 38.
 - 2026-11-08 · Drafted all 20 caregiving and safety questions in module 31. Checked the distinctions among hardship, unmet needs, thoughts, wishes, and intent. Flag M31_09–10 and M31_14–20 for clinical review.
 - 2026-11-08 · Drafted the first 25 questions in module 32, through M32_26. Checked family and living context, age bands, and inclusive boundaries for event recency. The remaining 25 questions are pending.
 - 2026-11-08 · Drafted the final 25 questions in module 32, completing S13 with 70 questions. Verified all 50 module 32 IDs and codes with the completion check. Flag childhood harm and bullying questions for human review.
+- 2026-11-08 · Drafted all 19 questions in S12 module 19. Checked privacy and recency wording and made small wording corrections in module 32. Flag M19_07–08 and M19_13–15 for safety review.
