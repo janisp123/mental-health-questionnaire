@@ -2,7 +2,11 @@
 
 This workspace lives on `develop` and has its own [checkpoint](CHECKPOINT.md). It is outside the questionnaire builder and both language selectors. The reviewer HTML, PDF and existing Latvian, English and Russian sources are outside the scope of translation batches.
 
-## Work one batch at a time
+## Translation order
+
+Start with `ui.json` and the [Ukrainian reviewer README](README_REVIEW.uk.md). Finish the remaining interface, medication, section and report labels before the question modules. Keep the UI keys, data types and placeholders from the Latvian catalog. Verify the README uses the same button labels.
+
+## Question batches
 
 Run these commands from the repository root. In Windows PowerShell, set `$env:PYTHONUTF8 = "1"` for UTF-8 console output.
 
