@@ -15,6 +15,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     write_fixture(html_path)
     browser = launch(pw)
     page, errors, network = open_page(browser, html_path)
+    ui = page.locator("#questionnaire-data").evaluate("el => JSON.parse(el.textContent).ui")
     panel = page.locator("footer details").last
     contact = panel.locator('a[href="mailto:test@example.invalid"]')
     for locale in ("lv", "en", "ru"):
@@ -24,7 +25,9 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
         panel.locator("summary").click()
         assert contact.is_visible()
         assert contact.inner_text() == "test@example.invalid"
-        assert "Janis Paegle" in panel.inner_text()
+        assert panel.locator("p").all_inner_texts() == [
+            ui[locale]["projectFeedbackInvitation"] + " test@example.invalid"
+        ]
     page.select_option("#language", "en")
     page.locator('[data-act="start"]').click()
     page.locator('[data-module="S01"]').check()

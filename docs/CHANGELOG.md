@@ -434,3 +434,7 @@ Grouped the creator byline, project feedback email and acknowledgements in the l
 ### 2026-11-08 · Feedback and acknowledgements heading
 
 Renamed the final expandable section in all three languages. The locale, feedback and build checks passed. Verified the heading, creator byline and email link in the rebuilt reviewer HTML, SHA-256 `ae2c557fc19152e30fdb5d5868a3ca74066f15b0a1d9803fba7dcc3184ce7fbf`.
+
+### 2026-11-08 · Simplified feedback section
+
+Kept the contact invitation and clickable email as the only text in the final expandable section. The browser feedback regression, locale check and full-bank build passed. Verified both start and results screens in all three languages in the reviewer HTML, SHA-256 `8f61ab9fd66dde19eaf764b13deceb0a83d4e0180988a96b2a9f9c859d3474c6`.
