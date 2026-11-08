@@ -2,7 +2,7 @@
 
 **Active branch:** `develop`; `main` and the frozen v16 Git reference remain unchanged. The old Drive v16 copies were removed from the link-shared review folder; the current technical-review candidate is indexed in the manifest.
 **Current build:** one self-contained offline HTML with 48 unchanged source modules / 712 questions grouped into 15 user-facing sections. GitHub app and full-bank workflows passed; the current technical-review HTML and trilingual PDF are in the linked Drive folder. This is not a public release or clinical validation.
-**Outstanding external checks:** actual Android Chrome use; human review of LV interface wording and EN/RU drafts; professional/clinical review. Do not mark those complete without evidence.
+**Outstanding external checks:** actual Android Chrome use; human review of LV interface wording and EN/RU translations; professional/clinical review. Do not mark those complete without evidence.
 **History:** the prior pilot and full-build chronology is preserved in [CHANGELOG_HISTORY_2026-11-06.md](history/CHANGELOG_HISTORY_2026-11-06.md). Read it only when a task needs that history.
 
 ## 2026-11-07 · TRANSLATION-AUDIT-RECOVERY · IN_PROGRESS
@@ -450,3 +450,7 @@ Used “sūtiet” in the Latvian feedback invitation and added a contributor he
 ### 2026-11-08 · Formal address in the Latvian HTML interface
 
 Updated the welcome screen, controls, help, support and privacy text to use formal Latvian address. Screened all 712 frozen Latvian records, including choices and help, for informal pronouns and common informal verbs. No matches were found in the question bank. Source parity, locale, build and offline Chromium checks passed. Verified the reviewer HTML, SHA-256 `022a5e2b20ae52023ae4223cda1b175f3b079a32a8a667bac5dd258deeb25295`. The separate PDF guide still needs the formal wording pass.
+
+### 2026-11-08 · Reviewer notices and PC zoom instructions
+
+Removed the translation draft notices from the reviewer HTML. Added the Ctrl and mouse wheel instructions to the HTML and trilingual PDF guide and updated the PDF’s Latvian address to match the app. Verified the HTML offline in all three languages and visually checked the three A4 PDF pages. Reviewer HTML SHA-256 `f29cb584ad62fbb37ab1d983236d9c27dc14dae24e05f05ae71acf076179b054` and PDF SHA-256 `17b84900179dfff97f47b375e91824ce11d6cf1b439f315ba0486a0cdbd9a8bc`.

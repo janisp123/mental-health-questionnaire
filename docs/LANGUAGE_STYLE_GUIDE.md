@@ -13,7 +13,7 @@ Read this short guide before changing interface text, help, reports, or translat
 - Be calm, welcoming, respectful, and plain. Do not open with “Don’t hurry” or use language that pressures, shames, frightens, or implies a diagnosis.
 - Explain choices and privacy directly. Make clear that any question can be skipped and that a professional makes clinical assessments.
 - Keep established wording, IDs, codes, conditions, time periods, and source attribution unchanged unless the task explicitly authorizes a question-bank edit.
-- Edit interface copy in LV/EN/RU together. EN/RU are drafts and still require human review; automated checks only catch technical consistency.
+- Edit interface copy in LV/EN/RU together. EN/RU translations still require human review; automated checks only catch technical consistency.
 - Preserve Latvian diacritics and Russian ё where the approved wording uses it. Check punctuation, quotation marks, units, date formats, number spacing, and button labels in the rendered app.
 
 ## References

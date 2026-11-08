@@ -3,6 +3,6 @@
 "use strict";
 const screens = root.QuestionnaireScreens = root.QuestionnaireScreens || {};
 screens.start = function ({label, btn}) {
- return '<section class="card"><p>'+label("intro")+'</p><p class="muted">'+label("reviewNote")+'</p>'+btn("start","start","primary")+'</section>';
+ return '<section class="card"><p>'+label("intro")+'</p>'+btn("start","start","primary")+'</section>';
 };
 })(globalThis);

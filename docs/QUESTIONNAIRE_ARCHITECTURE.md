@@ -2,7 +2,7 @@
 
 The working build assembles the original 48 modules and 712 questions into 15 user-facing sections in one offline HTML file. Each section contains 36–70 original questions; the source modules remain separate and unchanged.
 
-- `src/modules/` is the canonical LV/EN/RU question bank. LV is the reference; EN/RU remain drafts.
+- `src/modules/` is the canonical LV/EN/RU question bank. LV is the reference. EN/RU translations await human review.
 - `src/app/screens/` contains separate first-page, section-picker, question, medication, feedback, completion, and report-page templates. Each accepts its data and labels from the runtime.
 - `src/app/styles/` contains ordered base, report, navigation, feedback, and safe-area styles. Change a visual area here without opening question files.
 - `src/app/core/model.js` owns question lookup, conditional visibility, active question order, and visible progress counts. `src/app/core/answer-flow.js` owns next/back and safety-review transitions. `src/app/core/recovery.js` validates and normalizes backup files. `src/app/core/events.js` delegates click/change/input events to injected coordinator callbacks. `src/app/core/app.js` coordinates page state, file selection, and screen components. `src/app/reports/` generates doctor and project-feedback reports; `src/app/i18n/` holds interface labels.

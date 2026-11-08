@@ -5,7 +5,7 @@ require("../../src/app/screens/start.js");
 require("../../src/app/screens/section-selector.js");
 const screens = globalThis.QuestionnaireScreens;
 const labels = {
-  intro: "Synthetic introduction", reviewNote: "Synthetic review note",
+  intro: "Synthetic introduction",
   selector: "Choose sections", selectIntro: "Select any sections",
   sectionProgress: "{total} questions · completed: {completed}",
   chooseAllAndContinue: "Select all and continue", continueSelected: "Continue with selected sections",

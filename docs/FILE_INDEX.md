@@ -1,6 +1,6 @@
 # Project file index — latest verified versions
 
-**Status: SOURCE TRANSFER COMPLETE (79/79 files). Full offline questionnaire build is in technical review development; EN/RU remain drafts.**
+**Status: SOURCE TRANSFER COMPLETE (79/79 files). The full offline questionnaire is a technical review build.**
 
 ## Where to start each time
 
@@ -14,7 +14,7 @@ For interrupted work, start with [`docs/WORK_CHECKPOINT.md`](WORK_CHECKPOINT.md)
 
 | Role | Exact current path | Meaning |
 |---|---|---|
-| Questions in LV/EN/RU | `src/modules/182_MODULE_01_LV_EN_RU_v16.json` through `182_MODULE_48_LV_EN_RU_v16.json` | 48 frozen source modules, 712 questions; grouped into 15 user-facing sections (36–70 source questions each); LV reference, EN/RU **unreviewed drafts** |
+| Questions in LV/EN/RU | `src/modules/182_MODULE_01_LV_EN_RU_v16.json` through `182_MODULE_48_LV_EN_RU_v16.json` | 48 frozen source modules, 712 questions; grouped into 15 user-facing sections (36–70 source questions each); LV reference and EN/RU translations |
 | Module source index | `tests/fixtures/181_MODULE_INDEX_v16.json` | Frozen initial module SHA256, count and order; do not confuse with the current overall manifest |
 | Full question bank | `src/modules/182_MODULE_01_LV_EN_RU_v16.json` through `182_MODULE_48_LV_EN_RU_v16.json` | Canonical question/answer content and translations, separate from application design and runtime. |
 | Application screens and design | `src/app/screens/`, `src/app/styles/`, `src/app/i18n/` | Small independent page templates, role-based styles and interface labels. Edit these without opening question files. |
@@ -58,7 +58,7 @@ For interrupted work, start with [`docs/WORK_CHECKPOINT.md`](WORK_CHECKPOINT.md)
 
 ## Distribution — separate from development
 
-Google Drive's [professional review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb) contains the current 712-question, 15-section technical-review candidate. The HTML and Latvian PDF were rebuilt from Git sources and replaced in place; their Drive IDs and links are preserved. SHA-256 values and source commit are recorded in `project-manifest.json`. The older Drive v16 copies were removed; frozen v16 references remain under `reference/baseline/`. EN/RU remain unreviewed drafts.
+Google Drive's [professional review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb) contains the current 712-question, 15-section technical-review candidate. The HTML and Latvian PDF were rebuilt from Git sources and replaced in place; their Drive IDs and links are preserved. SHA-256 values and source commit are recorded in `project-manifest.json`. The older Drive v16 copies were removed; frozen v16 references remain under `reference/baseline/`. Human language review is pending.
 
 ## Rules for identifying the latest version
 

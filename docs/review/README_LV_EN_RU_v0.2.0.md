@@ -1,7 +1,6 @@
 # Sagatavošanās vizītei pie psihiskās veselības speciālista
 
-**Tehniskās pārbaudes versija · 0.2.0 · 07.11.2026**  
-**GitHub develop · anketas avota commit 421c526**
+**Tehniskās pārbaudes versija · 0.2.0 · 08.11.2026**
 
 [Latviešu](#latviešu) · [English](#english) · [Русский](#русский)
 
@@ -13,23 +12,25 @@
 
 ### Kas iekļauts
 
-48 avota moduļi un 712 jautājumi ir apvienoti 15 sadaļās, katrā ir 36–70 jautājumu. Papildu jautājumi var parādīties atkarībā no iepriekšējām atbildēm. Vari izlaist jebkuru jautājumu vai sadaļu un atbildēt tikai uz to, ar ko esi gatavs dalīties.
+48 avota moduļi un 712 jautājumi ir apvienoti 15 sadaļās, katrā ir 36–70 jautājumu. Papildu jautājumi var parādīties atkarībā no iepriekšējām atbildēm. Varat izlaist jebkuru jautājumu vai sadaļu un atbildēt tikai uz jautājumiem, par kuriem vēlaties sniegt informāciju.
 
 ### Kā sākt
 
-1. Lejupielādē HTML failu un atver to pārlūkā, piemēram, Chrome. Google Drive priekšskatījumā anketa var nedarboties.
-2. Spied **Sākt**. Izvēlies visas sadaļas vai tikai tās, kuras vēlies aizpildīt. Jautājumos ar vairākām atbildēm ekrānā ir norādīts, cik atbilžu vari izvēlēties. Izvēloties vienu atbildi, tā izceļas ar zaļu fonu un atzīmi, un pēc īsas pauzes anketa pāriet pie nākamā jautājuma.
-3. Sadaļas beigās izvēlies **Saglabāt un turpināt** vai **Turpināt nesaglabājot**. Pirms ilgāka pārtraukuma saglabā progresu failā. Vēlāk atver to pašu HTML failu un izvēlies **Turpināt no faila**.
+1. Lejupielādējiet HTML failu un atveriet to pārlūkā, piemēram, Chrome. Google Drive priekšskatījumā anketa var nedarboties.
+2. Nospiediet **Sākt**. Izvēlieties visas sadaļas vai tikai tās, kuras vēlaties aizpildīt. Jautājumos ar vairākām atbildēm ekrānā ir norādīts, cik atbilžu varat izvēlēties. Izvēloties vienu atbildi, tā izceļas ar zaļu fonu un atzīmi, un pēc īsas pauzes anketa pāriet pie nākamā jautājuma.
+3. Sadaļas beigās izvēlieties **Saglabāt un turpināt** vai **Turpināt nesaglabājot**. Pirms ilgāka pārtraukuma saglabājiet progresu failā. Vēlāk atveriet to pašu HTML failu un izvēlieties **Turpināt no faila**.
+
+Datorā turiet nospiestu Ctrl taustiņu un ritiniet peles ritenīti uz augšu vai leju, lai palielinātu vai samazinātu teksta izmēru.
 
 ### Atsauksmes par projektu
 
-Atbildes projekta veidotājiem nav jānosūta. Anketu vari izmantot, lai sagatavotos vizītei; ja nepieciešams, saglabā PDF un paņem to līdzi speciālistam. Ja vēlies palīdzēt uzlabot šo bezmaksas projektu, galvenais veids ir nosūtīt atsauksmi uz norādīto projekta e-pastu. Kļūdaina vai neskaidra jautājuma vai atbildes atzīmēšana anketā ir papildu iespēja un pilnīgi brīvprātīga — dari to tikai tad, ja pats vēlies palīdzēt. Par palīdzību nav paredzēta samaksa vai cita atlīdzība.
+Atbildes projekta veidotājiem nav jānosūta. Anketu varat izmantot, lai sagatavotos vizītei. Ja nepieciešams, saglabājiet PDF un paņemiet to līdzi speciālistam. Ja vēlaties palīdzēt uzlabot šo bezmaksas projektu, galvenais veids ir nosūtīt atsauksmi uz norādīto projekta e-pastu. Kļūdaina vai neskaidra jautājuma vai atbildes atzīmēšana anketā ir papildu iespēja un pilnīgi brīvprātīga. Par palīdzību nav paredzēta samaksa vai cita atlīdzība.
 
 ### Saglabāšana un privātums
 
-Atbildes paliek atvērtajā anketā. Aizverot pārlūku, pārslēdzoties uz citu lietotni, saņemot zvanu vai citādi pārtraucot darbu, progress var pazust, ja tas nav saglabāts failā. Pirms pārtraukuma spied **Saglabāt progresu failā**.
+Atbildes paliek atvērtajā anketā. Aizverot pārlūku, pārslēdzoties uz citu lietotni, saņemot zvanu vai citādi pārtraucot darbu, progress var pazust, ja tas nav saglabāts failā. Pirms pārtraukuma nospiediet **Saglabāt progresu failā**.
 
-Anketa darbojas bez interneta, neveic analītiku un automātiski nenosūta atbildes. Progresa fails nav šifrēts un var saturēt sensitīvu veselības informāciju. Glabā to droši un kopīgo tikai ar cilvēkiem, kuriem uzticies, vai medicīnas speciālistu. Neievieto šo informāciju sociālajos tīklos vai citur publiski.
+Anketa darbojas bez interneta, neveic analītiku un automātiski nenosūta atbildes. Progresa fails nav šifrēts un var saturēt sensitīvu veselības informāciju. Glabājiet to droši un kopīgojiet tikai ar cilvēkiem, kuriem uzticaties, vai medicīnas speciālistu. Neievietojiet šo informāciju sociālajos tīklos vai citur publiski.
 
 ### Versijas statuss
 
@@ -37,8 +38,7 @@ Anketa darbojas bez interneta, neveic analītiku un automātiski nenosūta atbil
 
 # Preparing for an appointment with a mental health professional
 
-**Technical review version · 0.2.0 · 7 November 2026**  
-**GitHub develop · questionnaire source commit 421c526**
+**Technical review version · 0.2.0 · 8 November 2026**
 
 ## English
 
@@ -53,6 +53,8 @@ The questionnaire brings together 48 source modules and 712 questions in 15 sect
 1. Download the HTML file and open it in a browser such as Chrome. The questionnaire may not work in Google Drive preview.
 2. Select **Start**. Choose all sections or only the ones you want to complete. For questions that allow multiple answers, the screen shows how many you can select. A selected single answer is highlighted in green with a checkmark, and the questionnaire moves to the next question after a short pause.
 3. At the end of a section, choose **Save and continue** or **Continue without saving**. Save your progress to a file before a longer break. Later, open the same HTML file and choose **Resume from file**.
+
+On a PC, hold Ctrl and scroll the mouse wheel up or down to make the text larger or smaller.
 
 ### Project feedback
 
@@ -70,8 +72,7 @@ This is a technical review version. It has not been clinically validated and doe
 
 # Подготовка к приёму специалиста по психическому здоровью
 
-**Версия для технической проверки · 0.2.0 · 7 ноября 2026 года**  
-**GitHub develop · исходный код анкеты, commit 421c526**
+**Версия для технической проверки · 0.2.0 · 8 ноября 2026 года**
 
 ## Русский
 
@@ -86,6 +87,8 @@ This is a technical review version. It has not been clinically validated and doe
 1. Скачайте HTML-файл и откройте его в браузере, например Chrome. В режиме предпросмотра Google Drive анкета может не работать.
 2. Нажмите **Начать**. Выберите все разделы или только те, которые хотите заполнить. Для вопросов с несколькими вариантами на экране указано, сколько ответов можно выбрать. Выбранный одиночный ответ выделяется зелёным цветом и отметкой; после короткой паузы анкета переходит к следующему вопросу.
 3. В конце раздела выберите **Сохранить и продолжить** или **Продолжить без сохранения**. Перед длительным перерывом сохраните прогресс в файл. Позже откройте тот же HTML-файл и выберите **Продолжить из файла**.
+
+На компьютере удерживайте клавишу Ctrl и прокручивайте колёсико мыши вверх или вниз, чтобы увеличить или уменьшить размер текста.
 
 ### Обратная связь по проекту
 

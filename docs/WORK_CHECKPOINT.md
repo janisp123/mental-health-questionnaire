@@ -20,10 +20,11 @@ Updated 8 November 2026, Riga time. Active branch: `develop`.
 - Toolbar landmark localization fixed and verified in LV, EN and RU. Rebuilt and tested the repository reviewer HTML.
 - The final expandable section is titled Feedback and acknowledgements and contains the feedback invitation, email link and contributor heading. Rebuilt and verified the reviewer HTML in all three languages.
 - The questionnaire footer ends with the creator credit in the same style as the status text. Verified in the rebuilt reviewer HTML.
-- The Latvian HTML interface uses polite address. All 712 frozen Latvian questions were screened for informal address and source parity passed. The separate PDF guide still needs the formal wording pass.
+- The Latvian HTML interface uses polite address. All 712 frozen Latvian questions were screened for informal address and source parity passed. The PDF guide now uses formal Latvian address.
+- Reviewer HTML and PDF include PC zoom instructions in all three languages. The HTML omits the translation draft notices.
 - Next action: run the physical Android journey and obtain human language and clinical review.
 
 ## Reviewer package
 
 - The repository reviewer copies are kept under `MH_Public_version`. The shared Google Drive folder is updated separately by the owner.
-- English and Russian remain drafts. Human translation and clinical review and actual Android testing are outstanding.
+- Human language and clinical review and physical Android testing are outstanding.
