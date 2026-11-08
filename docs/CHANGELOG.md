@@ -466,3 +466,7 @@ Added a localized statement after the inline creator credit that anyone can use 
 ### 2026-11-08 · Free for everyone to use
 
 Simplified the footer in all three languages and clarified in the README that clinicians can use the free questionnaire during paid appointments. The locale and build checks passed. Verified the inline wording in the offline reviewer HTML, SHA-256 `6c2386b615255f0da8ab20994c904af7bab7804fbe5d7d9cb8c11c3010556c5e`.
+
+### 2026-11-08 · Project future plans
+
+Added professional review and follow-up revisions, and additional translations based on requests, to the final expandable section in all three languages. The locale, feedback and build checks passed. Verified the packaged HTML offline at 320 px in all three languages. Reviewer HTML SHA-256 `01b5344a61434ddec2de3622df5bdfaef0b59fea786123e84af15d4f307cfa81`.

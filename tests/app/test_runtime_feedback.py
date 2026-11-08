@@ -23,6 +23,10 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
         assert not panel.evaluate("(details) => details.open")
         assert not page.locator('a[href="mailto:test@example.invalid"]').is_visible()
         panel.locator("summary").click()
+        assert panel.locator("li").count() == 2
+        assert panel.locator("li").all_inner_texts() == [
+            ui[locale]["projectPlanReview"], ui[locale]["projectPlanLanguages"]
+        ]
         assert contact.is_visible()
         assert contact.inner_text() == "test@example.invalid"
         assert panel.locator("p").all_inner_texts() == [
