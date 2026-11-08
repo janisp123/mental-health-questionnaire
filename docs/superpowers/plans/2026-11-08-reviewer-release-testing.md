@@ -24,6 +24,7 @@
 
 - [x] Fix the touching Continue and Back buttons at the bottom of the section picker. Verified at 320 and 390 px in LV, EN and RU using Chromium.
 - [ ] Confirm the section picker button spacing on the physical Android device.
+- [ ] Review the three-answer cap on checklist-style questions. Start with M23_11 (“Ko visvairāk vēlētos uzlabot?”) and allow every applicable option. Keep mutually exclusive choices exclusive. Confirm on Android that four or more applicable choices can be selected, saved and restored, and that the selection hint matches the behavior.
 
 - [ ] Download the exact reviewer HTML, enable airplane mode and open it from Files in Chrome. Verify the app works offline after closing Chrome and reopening the file. Record the phone model, Android version and browser version.
 - [ ] Check narrow portrait and landscape, enlarged text, keyboard dismissal, double taps, navigating back, language switching, and readable LV/EN/RU choices.
