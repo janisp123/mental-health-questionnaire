@@ -5,7 +5,7 @@ Updated 8 November 2026, Riga time. Branch `develop`.
 | Scope | Status |
 | --- | --- |
 | Questionnaire source | Latvian v16 in `src/modules/`, baseline `f25a6c1` |
-| Question text | 592 of 712 translated and structurally checked |
+| Question text | 632 of 712 translated and structurally checked |
 | Interface | 126 of 126 keys drafted. Keys, types, placeholders and dated entries checked against Latvian. |
 | Reviewer README | Ukrainian text drafted in `README_REVIEW.uk.md`. Button labels checked against `ui.json`. |
 | Medication form | All 32 strings drafted. Nested keys, saved answer codes and clinician report labels checked. |
@@ -15,7 +15,7 @@ Updated 8 November 2026, Riga time. Branch `develop`.
 
 ## Next batch
 
-Start S03 with module **03** (anxiety), then modules 04 and 22. Keep legacy screening items flagged for human and source review.
+Start S04 with module **06** (safety), then module 21. S05 follows.
 
 ## Checkpoint history
 
@@ -42,3 +42,4 @@ Start S03 with module **03** (anxiety), then modules 04 and 22. Keep legacy scre
 - 2026-11-08 · Drafted all 45 S07 questions in modules 09, 29, 39, 47 and 48. Checked distinctions among routines, compulsions, repeated urges and current safety concerns.
 - 2026-11-08 · Drafted all 48 S08 questions in modules 10, 35, 41 and 42. Checked event timing, bereavement and dissociation language, and marked trauma and current danger wording for human review.
 - 2026-11-08 · Drafted all 38 S02 questions in modules 02 and 05. Checked two-week frequency bands, duration boundaries and the instruction to use the same episode. Flag M02_01–09 for review of the legacy instrument wording and reuse conditions.
+- 2026-11-08 · Drafted all 40 S03 questions in modules 03, 04 and 22. Checked panic-like episodes, time windows and the distinction between wanting uncertainty or distress to end and wanting life to end. Flag M03_01–07 and M22_16 for appropriate human review.
