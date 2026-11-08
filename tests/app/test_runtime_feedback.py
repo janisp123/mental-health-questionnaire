@@ -26,7 +26,8 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
         assert contact.is_visible()
         assert contact.inner_text() == "test@example.invalid"
         assert panel.locator("p").all_inner_texts() == [
-            ui[locale]["projectFeedbackInvitation"] + " test@example.invalid"
+            ui[locale]["projectFeedbackInvitation"] + " test@example.invalid",
+            ui[locale]["projectContributors"],
         ]
     page.select_option("#language", "en")
     page.locator('[data-act="start"]').click()
