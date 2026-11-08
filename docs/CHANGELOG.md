@@ -418,3 +418,7 @@ Repository reviewer HTML: SHA-256 `9e93741ebbd74c83191e6c2c3dca59059d31713c5c828
 ### 2026-11-08 · Technical QA baseline
 
 Tested reviewer artifact at c09987a. All 23 active checks passed on Windows. Additional checks on the packaged HTML covered offline recovery, emergency support, old-layout backup migration, hidden answers and 45 viewport and locale combinations. Recorded the untranslated toolbar landmark, retired pilot test failures and Android and human review gates in the [reviewer test plan](superpowers/plans/2026-11-08-reviewer-release-testing.md).
+
+### 2026-11-08 · Localized toolbar accessibility label
+
+The toolbar landmark now uses the same localized name as the visible tools heading. The regression reproduced the Latvian failure before the fix and passed in all three languages after it. Locale catalogs, project index, full HTML build and offline Chromium journey passed. Verified all three toolbar labels in the packaged HTML, SHA-256 `d2b45db8346d9a9da08617eb299185a56881636bae4ff0577fd03f729a901d71`. Next: physical Android testing and human review.

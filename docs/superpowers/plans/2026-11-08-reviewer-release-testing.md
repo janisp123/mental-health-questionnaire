@@ -16,7 +16,8 @@
 - [x] Open the packaged HTML offline in Chromium. Across 320, 390 and 844 CSS pixels, check five sensitive or long questions in each of LV, EN and RU. All 45 views matched the embedded title, set the document language and fit the viewport.
 - [x] Confirm an emergency answer opens a focused support card with the emergency and support phone links. Import an invalid answer code and verify the existing session survives. Restore the valid backup in a fresh tab. No HTTP requests or JavaScript errors were observed in these checks.
 - [x] Import a synthetic previous-layout backup, verify old module IDs map to one section, then change a parent answer to close a branch. The hidden answer stayed in recovery and was excluded from the clinician report.
-- [ ] Reproduce the toolbar landmark label in LV and RU, use the existing localized tools label, and pin the behavior in an accessibility test. Check tab order, focus after choosing a locale, and support announcements in a screen reader.
+- [x] Reuse the localized tools label for the toolbar landmark. The browser regression and packaged HTML check pass in LV, EN and RU.
+- [ ] Check tab order, focus after choosing a locale, and support announcements in a screen reader.
 - [ ] Clarify the retired pilot test locations. Five scripts under tests/pilot fail outside the active CI matrix. Four look for the old registry under src/pilot and one asserts against an obsolete runtime implementation.
 
 ## 3. Test on a physical Android device

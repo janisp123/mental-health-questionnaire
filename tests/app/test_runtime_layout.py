@@ -36,6 +36,12 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
         assert abs(box["y"] + box["height"] - height) < 2, f"Navigation not anchored to viewport at {width}px"
         assert nav.locator('[data-act="skip"]').bounding_box()["height"] >= 44
     assert page.locator(".feedback-flag").get_attribute("aria-label")
+    for locale in ("lv", "en", "ru"):
+        page.select_option("#language", locale)
+        tools = page.locator("footer details").first
+        summary = tools.locator("summary")
+        summary.click()
+        assert tools.get_by_role("navigation", name=summary.inner_text(), exact=True).count() == 1, locale
     assert not errors, errors
     assert not network, network
     browser.close()
