@@ -35,7 +35,7 @@
         }
       },
       "en": {
-        "title": "Have there been feelings of alienation or memory lapses that you would like to discuss?",
+        "title": "Have you felt detached or had gaps in your memory that you would like to discuss?",
         "time": "Last 12 months.",
         "choices": {
           "A": "No",
@@ -45,7 +45,7 @@
         }
       },
       "ru": {
-        "title": "Были ли у вас чувства отчуждения или провалы в памяти, которые вы хотели бы обсудить?",
+        "title": "Были ли у Вас ощущения отстранённости или провалы в памяти, которые Вы хотели бы обсудить?",
         "time": "Последние 12 месяцев.",
         "choices": {
           "A": "Нет",
@@ -111,27 +111,27 @@
         }
       },
       "en": {
-        "title": "How often do you feel alienated from yourself, as if you are being watched from the outside?",
+        "title": "How often do you feel detached from yourself, as if you were watching yourself from the outside?",
         "time": "The past 28 days.",
         "choices": {
-          "A": "On no days",
-          "B": "On 1-3 days",
-          "C": "On 4-10 days",
-          "D": "On 11-20 days",
-          "E": "On 21-28 days",
+          "A": "No days",
+          "B": "On 1–3 days",
+          "C": "On 4–10 days",
+          "D": "On 11–20 days",
+          "E": "On 21–28 days",
           "F": "I do not know / difficult to say",
           "G": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Как часто вы чувствуете себя отчужденным от самого себя, словно за вами наблюдают извне?",
+        "title": "Как часто Вы чувствуете отстранённость от себя, словно наблюдаете за собой со стороны?",
         "time": "Последние 28 дней.",
         "choices": {
-          "A": "Ни в один из дней",
-          "B": "В течение 1-3 дней",
-          "C": "В течение 4-10 дней",
-          "D": "В течение 11-20 дней",
-          "E": "В течение 21-28 дней",
+          "A": "Ни одного дня",
+          "B": "1–3 дня",
+          "C": "4–10 дней",
+          "D": "11–20 дней",
+          "E": "21–28 дней",
           "F": "Не знаю / трудно сказать",
           "G": "Я не хочу отвечать."
         }
@@ -199,27 +199,27 @@
         }
       },
       "en": {
-        "title": "How often does the surroundings seem unreal or foreign?",
+        "title": "How often do your surroundings seem unreal or unfamiliar?",
         "time": "The past 28 days.",
         "choices": {
-          "A": "On no days",
-          "B": "On 1-3 days",
-          "C": "On 4-10 days",
-          "D": "On 11-20 days",
-          "E": "On 21-28 days",
+          "A": "No days",
+          "B": "On 1–3 days",
+          "C": "On 4–10 days",
+          "D": "On 11–20 days",
+          "E": "On 21–28 days",
           "F": "I do not know / difficult to say",
           "G": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Как часто окружающая обстановка кажется вам нереальной или чужой?",
+        "title": "Как часто окружающая обстановка кажется Вам нереальной или чужой?",
         "time": "Последние 28 дней.",
         "choices": {
-          "A": "Ни в один из дней",
-          "B": "В течение 1-3 дней",
-          "C": "В течение 4-10 дней",
-          "D": "В течение 11-20 дней",
-          "E": "В течение 21-28 дней",
+          "A": "Ни одного дня",
+          "B": "1–3 дня",
+          "C": "4–10 дней",
+          "D": "11–20 дней",
+          "E": "21–28 дней",
           "F": "Не знаю / трудно сказать",
           "G": "Я не хочу отвечать."
         }
@@ -287,27 +287,27 @@
         }
       },
       "en": {
-        "title": "How often do you not remember actions you performed while awake, more than in the case of normal forgetfulness?",
+        "title": "How often are you unable to remember things you did while awake, beyond ordinary forgetfulness?",
         "time": "The past 28 days.",
         "choices": {
-          "A": "On no days",
-          "B": "On 1-3 days",
-          "C": "On 4-10 days",
-          "D": "On 11-20 days",
-          "E": "On 21-28 days",
+          "A": "No days",
+          "B": "On 1–3 days",
+          "C": "On 4–10 days",
+          "D": "On 11–20 days",
+          "E": "On 21–28 days",
           "F": "I do not know / difficult to say",
           "G": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Как часто вы не помните действия, совершенные в состоянии бодрствования, чаще, чем в случае обычной забывчивости?",
+        "title": "Как часто Вы не помните, что делали в состоянии бодрствования, и это выходит за рамки обычной забывчивости?",
         "time": "Последние 28 дней.",
         "choices": {
-          "A": "Ни в один из дней",
-          "B": "В течение 1-3 дней",
-          "C": "В течение 4-10 дней",
-          "D": "В течение 11-20 дней",
-          "E": "В течение 21-28 дней",
+          "A": "Ни одного дня",
+          "B": "1–3 дня",
+          "C": "4–10 дней",
+          "D": "11–20 дней",
+          "E": "21–28 дней",
           "F": "Не знаю / трудно сказать",
           "G": "Я не хочу отвечать."
         }
@@ -382,7 +382,7 @@
           "B": "From 5 minutes to 1 hour (inclusive)",
           "C": "More than 1 hour but less than 24 hours",
           "D": "24 hours or more",
-          "E": "Very variable",
+          "E": "It varies a lot",
           "F": "I don't know",
           "G": "I don't want to answer."
         }
@@ -395,7 +395,7 @@
           "B": "От 5 минут до 1 часа (включительно)",
           "C": "Более 1 часа, но менее 24 часов",
           "D": "24 часа или более",
-          "E": "Очень изменчивый",
+          "E": "Продолжительность сильно различается",
           "F": "Я не знаю",
           "G": "Я не хочу отвечать."
         }
@@ -468,9 +468,9 @@
         "title": "What circumstances do the episodes coincide with?",
         "time": "The past 28 days.",
         "choices": {
-          "A": "Lack of sleep or difficulty falling asleep/waking up",
+          "A": "Lack of sleep, falling asleep, or waking up",
           "B": "Substance use",
-          "C": "Medication use or change",
+          "C": "Taking or changing medication",
           "D": "Severe stress or reminder of trauma",
           "E": "Head injury or seizure",
           "F": "Even without these conditions",
@@ -482,9 +482,9 @@
         "title": "С какими обстоятельствами совпадают эти эпизоды?",
         "time": "Последние 28 дней.",
         "choices": {
-          "A": "Недостаток сна или трудности с засыпанием/пробуждением",
-          "B": "Употребление психоактивных веществ",
-          "C": "Применение или изменение лекарственных препаратов",
+          "A": "Недостаток сна, засыпание или пробуждение",
+          "B": "Употребление веществ",
+          "C": "Приём или смена лекарств",
           "D": "Сильный стресс или напоминание о травме",
           "E": "Травма головы или судороги",
           "F": "Даже без этих условий",
@@ -561,7 +561,7 @@
         }
       },
       "ru": {
-        "title": "Затрудняют ли эти приступы безопасное вождение, работу с механизмами или уход за другими людьми?",
+        "title": "Мешают ли эти эпизоды безопасно водить, работать с оборудованием или заботиться о других?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Нет",
@@ -635,15 +635,15 @@
           "A": "Not at all",
           "B": "A little",
           "C": "Moderately",
-          "D": "Severely",
-          "E": "Very severely",
+          "D": "A lot",
+          "E": "Very much",
           "F": "Does not apply to me",
           "G": "I do not know / difficult to say",
           "H": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Насколько сильно эти события мешают вашей повседневной жизни?",
+        "title": "Насколько эти переживания мешают Вашей повседневной жизни?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Совсем нет",

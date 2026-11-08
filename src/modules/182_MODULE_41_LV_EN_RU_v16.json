@@ -45,7 +45,7 @@
         }
       },
       "ru": {
-        "title": "Возникли ли эмоциональные или повседневные трудности после какого-либо стрессового события или жизненных перемен?",
+        "title": "Начались ли эмоциональные или повседневные трудности после конкретного стрессового события или жизненной перемены?",
         "time": "Последние 12 месяцев.",
         "choices": {
           "A": "Нет",
@@ -113,28 +113,28 @@
         }
       },
       "en": {
-        "title": "What are the difficulties of change related to?",
+        "title": "What kind of change are these difficulties linked to?",
         "time": "Last 12 months.",
         "choices": {
           "A": "Relationship breakdown or conflict",
           "B": "Job loss or change",
-          "C": "Illness or care",
+          "C": "Illness or caregiving",
           "D": "Financial or housing difficulties",
           "E": "Relocation or migration",
-          "F": "For other changes",
+          "F": "Other changes",
           "G": "I don't know",
           "H": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "С какими трудностями связаны перемены?",
+        "title": "С какой переменой связаны эти трудности?",
         "time": "Последние 12 месяцев.",
         "choices": {
           "A": "Разрыв отношений или конфликт",
-          "B": "потеря или смена работы",
-          "C": "Болезнь или уход",
+          "B": "Потеря или смена работы",
+          "C": "Болезнь или уход за другим человеком",
           "D": "Финансовые или жилищные трудности",
-          "E": "Перемещение или миграция",
+          "E": "Переезд или миграция",
           "F": "Другие изменения",
           "G": "Я не знаю",
           "H": "Я не хочу отвечать."
@@ -202,22 +202,22 @@
       },
       "en": {
         "title": "How soon after the event did the difficulties begin?",
-        "time": "The time of the beginning of this event and difficulties.",
+        "time": "When this event happened and when the difficulties began.",
         "choices": {
-          "A": "During the month",
-          "B": "Later than a month",
-          "C": "There were difficulties before.",
+          "A": "Within one month of the event",
+          "B": "More than one month after the event",
+          "C": "The difficulties were already present before the event",
           "D": "I don't know",
           "E": "I don't want to answer."
         }
       },
       "ru": {
         "title": "Как скоро после события начались трудности?",
-        "time": "Время начала этого события и связанные с ним трудности.",
+        "time": "Когда произошло событие и когда начались трудности.",
         "choices": {
-          "A": "В течение месяца",
-          "B": "Позднее чем на месяц",
-          "C": "И раньше были трудности.",
+          "A": "В течение месяца после события",
+          "B": "Более чем через месяц после события",
+          "C": "Трудности были ещё до события",
           "D": "Я не знаю",
           "E": "Я не хочу отвечать."
         }
@@ -281,27 +281,27 @@
         }
       },
       "en": {
-        "title": "How often do thoughts about an event occupy your attention so much that it is difficult to focus on anything else?",
+        "title": "How often do thoughts about the event take up so much of your attention that it is hard to focus on anything else?",
         "time": "The past 28 days.",
         "choices": {
-          "A": "On no days",
-          "B": "On 1-3 days",
-          "C": "On 4-10 days",
-          "D": "On 11-20 days",
-          "E": "On 21-28 days",
+          "A": "No days",
+          "B": "On 1–3 days",
+          "C": "On 4–10 days",
+          "D": "On 11–20 days",
+          "E": "On 21–28 days",
           "F": "I do not know / difficult to say",
           "G": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Как часто мысли о каком-либо событии настолько занимают ваше внимание, что вам трудно сосредоточиться на чем-либо другом?",
+        "title": "Как часто мысли об этом событии настолько занимают Ваше внимание, что Вам трудно сосредоточиться на чём-либо другом?",
         "time": "Последние 28 дней.",
         "choices": {
-          "A": "Ни в один из дней",
-          "B": "В течение 1-3 дней",
-          "C": "В течение 4-10 дней",
-          "D": "В течение 11-20 дней",
-          "E": "В течение 21-28 дней",
+          "A": "Ни одного дня",
+          "B": "1–3 дня",
+          "C": "4–10 дней",
+          "D": "11–20 дней",
+          "E": "21–28 дней",
           "F": "Не знаю / трудно сказать",
           "G": "Я не хочу отвечать."
         }
@@ -377,8 +377,8 @@
           "A": "Not at all",
           "B": "A little",
           "C": "Moderately",
-          "D": "Severely",
-          "E": "Very severely",
+          "D": "Very difficult",
+          "E": "Extremely difficult",
           "F": "Does not apply to me",
           "G": "I do not know / difficult to say",
           "H": "I don't want to answer."

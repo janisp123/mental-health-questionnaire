@@ -35,7 +35,7 @@
         }
       },
       "en": {
-        "title": "Are there any difficulties you would like to discuss after the death of a loved one?",
+        "title": "Since someone close to you died, have you had any difficulties you would like to discuss?",
         "time": "Currently.",
         "choices": {
           "A": "No",
@@ -45,7 +45,7 @@
         }
       },
       "ru": {
-        "title": "Есть ли у вас какие-либо трудности, которые вы хотели бы обсудить после смерти близкого человека?",
+        "title": "Есть ли у Вас после смерти близкого человека трудности, которые Вы хотели бы обсудить?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Нет",
@@ -112,10 +112,10 @@
       },
       "en": {
         "title": "How long ago did this person die?",
-        "time": "Currently; frequency last 4 weeks.",
+        "time": "Currently. For frequency, consider the past 4 weeks.",
         "choices": {
-          "A": "Less than a month",
-          "B": "1-5 months ago",
+          "A": "Less than a month ago",
+          "B": "1–5 months ago",
           "C": "6–11 months ago",
           "D": "1–2 years ago",
           "E": "More than 2 years ago",
@@ -125,10 +125,10 @@
       },
       "ru": {
         "title": "Как давно умер этот человек?",
-        "time": "В настоящее время частота таких случаев наблюдается в течение последних 4 недель.",
+        "time": "В настоящее время. Для оценки частоты учитывайте последние 4 недели.",
         "choices": {
-          "A": "Менее месяца",
-          "B": "1-5 месяцев назад",
+          "A": "Менее месяца назад",
+          "B": "1–5 месяцев назад",
           "C": "6–11 месяцев назад",
           "D": "1–2 года назад",
           "E": "Более 2 лет назад",
@@ -199,12 +199,12 @@
         }
       },
       "en": {
-        "title": "How often do you feel a strong longing for the deceased or do thoughts about them take up a large part of your day?",
-        "time": "Currently; frequency last 4 weeks.",
+        "title": "How often do you long strongly for the person who died, or spend a large part of the day thinking about them?",
+        "time": "Currently. For frequency, consider the past 4 weeks.",
         "choices": {
           "A": "Never",
           "B": "Several days",
-          "C": "More than half a day",
+          "C": "On more than half of the days",
           "D": "Almost every day",
           "E": "Does not apply to me",
           "F": "I don't know",
@@ -212,12 +212,12 @@
         }
       },
       "ru": {
-        "title": "Как часто вы испытываете сильную тоску по усопшим, или мысли о них занимают большую часть вашего дня?",
-        "time": "В настоящее время частота таких случаев наблюдается в течение последних 4 недель.",
+        "title": "Как часто Вы сильно тоскуете по умершему близкому человеку или мысли о нём занимают значительную часть дня?",
+        "time": "В настоящее время. Для оценки частоты учитывайте последние 4 недели.",
         "choices": {
           "A": "Никогда",
           "B": "Несколько дней",
-          "C": "Более половины дня",
+          "C": "Более чем в половине дней",
           "D": "Почти каждый день",
           "E": "Ко мне это не относится",
           "F": "Я не знаю",
@@ -290,21 +290,21 @@
       },
       "en": {
         "title": "How difficult is it to accept what happened or return to activities that are important to you?",
-        "time": "Currently; frequency last 4 weeks.",
+        "time": "Currently. For frequency, consider the past 4 weeks.",
         "choices": {
           "A": "Not at all",
           "B": "A little",
           "C": "Moderately",
-          "D": "Severely",
-          "E": "Very severely",
+          "D": "Very difficult",
+          "E": "Extremely difficult",
           "F": "Does not apply to me",
           "G": "I don't know",
           "H": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Насколько сложно вам смириться с произошедшим или вернуться к занятиям, которые для вас важны?",
-        "time": "В настоящее время частота таких случаев наблюдается в течение последних 4 недель.",
+        "title": "Насколько сложно Вам смириться с произошедшим или вернуться к занятиям, которые для Вас важны?",
+        "time": "В настоящее время. Для оценки частоты учитывайте последние 4 недели.",
         "choices": {
           "A": "Совсем нет",
           "B": "Немного",
@@ -384,21 +384,21 @@
       },
       "en": {
         "title": "How much is grief currently interfering with your daily life?",
-        "time": "Currently; frequency last 4 weeks.",
+        "time": "Currently. For frequency, consider the past 4 weeks.",
         "choices": {
           "A": "Not at all",
           "B": "A little",
           "C": "Moderately",
-          "D": "Severely",
-          "E": "Very severely",
+          "D": "A lot",
+          "E": "Very much",
           "F": "Does not apply to me",
           "G": "I don't know",
           "H": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Насколько сильно горе в данный момент мешает вашей повседневной жизни?",
-        "time": "В настоящее время частота таких случаев наблюдается в течение последних 4 недель.",
+        "title": "Насколько сильно горе в данный момент мешает Вашей повседневной жизни?",
+        "time": "В настоящее время. Для оценки частоты учитывайте последние 4 недели.",
         "choices": {
           "A": "Совсем нет",
           "B": "Немного",
@@ -469,8 +469,8 @@
         }
       },
       "en": {
-        "title": "Are your grieving experiences or the expectations of those around you related to culture, religion, or family traditions that you would like to explain to your doctor?",
-        "time": "Currently; frequency last 4 weeks.",
+        "title": "Is the way you grieve, or what others expect of you, shaped by cultural, religious, or family traditions you would like to explain to your doctor?",
+        "time": "Currently. For frequency, consider the past 4 weeks.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -479,8 +479,8 @@
         }
       },
       "ru": {
-        "title": "Связаны ли ваши переживания, связанные с горем, или ожидания окружающих вас людей с культурой, религией или семейными традициями, о которых вы хотели бы рассказать своему врачу?",
-        "time": "В настоящее время частота таких случаев наблюдается в течение последних 4 недель.",
+        "title": "Связано ли то, как Вы переживаете утрату, или то, чего ждут от Вас окружающие, с культурными, религиозными или семейными традициями, о которых Вы хотели бы рассказать врачу?",
+        "time": "В настоящее время. Для оценки частоты учитывайте последние 4 недели.",
         "choices": {
           "A": "Нет",
           "B": "Да",
