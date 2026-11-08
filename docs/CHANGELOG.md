@@ -52,7 +52,7 @@ Drive folder read on this session: HTML modified 14:18, PDF 13:57. Read access w
 | 3 | S09 — Sleep, fatigue and pain | 50 | DONE |
 | 4 | S06 — Attention, learning and development | 43 | DONE |
 | 5 | S10 — Alcohol, nicotine and other substances | 37 | DONE |
-| 6 | S13 — Family, social context and caregiving | 70 | IN_PROGRESS |
+| 6 | S13 — Family, social context and caregiving | 70 | DONE locally |
 | 7 | S12 — Relationships and emotional patterns | 42 | TODO |
 | 8 | S14 — Eating, appearance and health concerns | 49 | TODO |
 | 9 | S15 — Sexuality and reproductive health | 47 | TODO |
@@ -295,3 +295,6 @@ Drive folder read on this session: HTML modified 14:18, PDF 13:57. Read access w
 **Drive refresh:** replaced HTML and PDF in place; existing file IDs preserved. HTML SHA-256 `b18e843582f5d5de46c554decf939ad36d9b91c6289c2adcd0efd0ee33adf202`; PDF SHA-256 `842ca0d54432c9fdbab933070992335c269c75f44b9cc5245fc3b5ead4bda136`. Readback bytes and hashes match the local artifacts. Versioned PDF source: `docs/review/README_LV_v0.2.0.md`.
 **Remaining limitations:** actual Android-device testing and human review of language and clinical content remain outstanding. This is technical readiness for professional review, not clinical validation.
 **Next action:** use this current Drive candidate for professional technical review when ready.
+
+### Recovery checkpoint — S13 complete locally
+All 70 S13 questions and 423 option labels per language reviewed. Corrected meanings and formal address; repaired five invalid RU option keys. Independent review findings applied. Full local 24/24 checks PASS, including browser and print/recovery journeys, index integrity and exact frozen LV record parity. Evidence: docs/review/audit-S13.md and docs/review/checks/S13-local.txt. Drive/GitHub not updated; user requests local work until 8 November evening. Next: S12 (42 questions).

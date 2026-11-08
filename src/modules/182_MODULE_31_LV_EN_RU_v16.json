@@ -35,7 +35,7 @@
         }
       },
       "en": {
-        "title": "Is the physical safety of a child or another person in your care currently at risk?",
+        "title": "Is the physical safety of a child or another person who needs care currently at risk?",
         "time": "Currently.",
         "choices": {
           "A": "No",
@@ -45,12 +45,12 @@
         }
       },
       "ru": {
-        "title": "Находится ли сейчас под угрозой физическая безопасность ребёнка или другого человека на вашем попечении?",
+        "title": "Находится ли сейчас под угрозой физическая безопасность ребёнка или другого человека, нуждающегося в уходе?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Не знаю / трудно сказать",
+          "C": "Не знаю / не уверен(а)",
           "D": "Не хочу отвечать."
         }
       },
@@ -109,12 +109,12 @@
         }
       },
       "ru": {
-        "title": "Испытываете ли вы сейчас угрозы или насилие дома?",
+        "title": "Сталкиваетесь ли Вы сейчас дома с угрозами или насилием?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Не знаю / трудно сказать",
+          "C": "Не знаю / не уверен(а)",
           "D": "Не хочу отвечать."
         }
       },
@@ -164,9 +164,9 @@
         "help": "Iekļaujiet arī bērna ikdienas aprūpi bez slimības vai invaliditātes. Atbildiet par savu pieredzi; citu cilvēku vārdus nenorādiet."
       },
       "en": {
-        "title": "Do you currently regularly care for a child or an adult who needs help with everyday life?",
+        "title": "Do you regularly care for a child or for an adult who needs help with everyday life?",
         "time": "Currently.",
-        "help": "Also include daily care of the child without illness or disability. Answer about your own experience; do not use other people's names.",
+        "help": "Include everyday care for a child even if the child has no illness or disability. Answer based on your own experience. Do not give other people's names.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -175,13 +175,13 @@
         }
       },
       "ru": {
-        "title": "В настоящее время вы регулярно ухаживаете за ребенком или взрослым, нуждающимся в помощи в повседневной жизни?",
+        "title": "В настоящее время Вы регулярно ухаживаете за ребенком или взрослым, нуждающимся в помощи в повседневной жизни?",
         "time": "В настоящее время.",
         "help": "Также учитывайте повседневный уход за ребёнком, даже если у него нет заболевания или инвалидности. Отвечайте исходя из собственного опыта; не указывайте имена других людей.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Не знаю / трудно сказать",
+          "C": "Не знаю / не уверен(а)",
           "D": "Не хочу отвечать."
         }
       },
@@ -260,13 +260,13 @@
         }
       },
       "ru": {
-        "title": "Сколько дополнительной помощи в целом нужно человеку, за которым вы преимущественно ухаживаете?",
+        "title": "Сколько дополнительной помощи в целом нужно человеку, за которым Вы преимущественно ухаживаете?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Дополнительная помощь не нужна",
           "B": "Небольшая периодическая помощь",
-          "C": "Регулярная помощь в части повседневных действий",
-          "D": "Ежедневный уход во многих действиях",
+          "C": "Регулярная помощь с некоторыми повседневными делами",
+          "D": "Ежедневный уход с помощью во многих повседневных делах",
           "E": "Постоянный присмотр или очень интенсивный уход",
           "F": "Трудно оценить",
           "G": "Ко мне это не относится",
@@ -345,12 +345,12 @@
         }
       },
       "ru": {
-        "title": "Мешали ли обязанности по уходу за последние 28 дней работать или посещать собственные приёмы у врачей?",
+        "title": "Было ли Вам за последние 28 дней трудно работать или ходить на приём к врачу из-за обязанностей по уходу?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Не знаю / трудно сказать",
+          "C": "Не знаю / не уверен(а)",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -421,12 +421,12 @@
         }
       },
       "ru": {
-        "title": "Испытываете ли вы постоянную нехватку сна из-за обязанностей по уходу?",
+        "title": "Испытываете ли Вы постоянную нехватку сна из-за обязанностей по уходу?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Не знаю / трудно сказать",
+          "C": "Не знаю / не уверен(а)",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -497,12 +497,12 @@
         }
       },
       "ru": {
-        "title": "Получаете ли вы регулярную практическую помощь в уходе?",
+        "title": "Получаете ли Вы регулярную практическую помощь в уходе?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Не знаю / трудно сказать",
+          "C": "Не знаю / не уверен(а)",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -573,12 +573,12 @@
         }
       },
       "ru": {
-        "title": "Чувствуете ли вы эмоциональную опустошённость из-за ухода за другим человеком?",
+        "title": "Чувствуете ли Вы эмоциональную опустошённость из-за ухода за другим человеком?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Не знаю / трудно сказать",
+          "C": "Не знаю / не уверен(а)",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -649,12 +649,12 @@
         }
       },
       "ru": {
-        "title": "Мешают ли обязанности по уходу отдыхать или уделять время себе?",
+        "title": "Лишают ли Вас обязанности по уходу возможности отдохнуть или уделить время себе?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Не знаю / трудно сказать",
+          "C": "Не знаю / не уверен(а)",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -714,7 +714,7 @@
         }
       },
       "en": {
-        "title": "Have you felt unable to continue caring without additional help?",
+        "title": "Have your caregiving responsibilities made you feel that you can no longer continue providing care without additional help?",
         "time": "The past 28 days.",
         "choices": {
           "A": "No",
@@ -725,12 +725,12 @@
         }
       },
       "ru": {
-        "title": "Бывало ли, что вы чувствовали: больше не можете продолжать уход без дополнительной помощи?",
+        "title": "Возникало ли у Вас из-за обязанностей по уходу ощущение, что Вы больше не можете продолжать уход без дополнительной помощи?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Не знаю / трудно сказать",
+          "C": "Не знаю / не уверен(а)",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -806,7 +806,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Не знаю / трудно сказать",
+          "C": "Не знаю / не уверен(а)",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -886,7 +886,7 @@
         }
       },
       "ru": {
-        "title": "Какую поддержку вы сейчас хотели бы обсудить? Можно выбрать несколько ответов.",
+        "title": "Какую поддержку Вы сейчас хотели бы обсудить? Можно выбрать несколько ответов.",
         "time": "В настоящее время.",
         "choices": {
           "A": "Практическая помощь в уходе",
@@ -960,7 +960,7 @@
         }
       },
       "en": {
-        "title": "How much do caring responsibilities and family safety circumstances affect your health?",
+        "title": "How much do your caregiving situation and your family’s safety affect your health?",
         "time": "The past 28 days.",
         "choices": {
           "A": "Not at all",
@@ -974,7 +974,7 @@
         }
       },
       "ru": {
-        "title": "Насколько обязанности по уходу и ситуация с безопасностью в семье влияют на ваше здоровье?",
+        "title": "Насколько обстоятельства ухода и ситуация с безопасностью в семье влияют на Ваше здоровье?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Совсем нет",
@@ -1049,16 +1049,16 @@
       "en": {
         "title": "Have your caregiving responsibilities left you feeling trapped and without a choice?",
         "time": "The past 28 days.",
-        "help": "Overload does not in itself mean a desire to harm someone. You can refuse to respond.",
+        "help": "Feeling overloaded does not in itself mean you want to harm someone. You can choose not to answer.",
         "choices": {
           "A": "No",
           "B": "Yes",
-          "C": "I do not know / difficult to say",
+          "C": "I don't know / It's hard to say",
           "D": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Возникало ли у вас из-за обязанностей по уходу ощущение, что вы в ловушке и у вас нет выбора?",
+        "title": "Возникало ли у Вас из-за обязанностей по уходу ощущение, что Вы в ловушке и у Вас нет выбора?",
         "time": "Последние 28 дней.",
         "help": "Перегрузка сама по себе не означает желания причинить кому-либо вред. Вы можете отказаться отвечать.",
         "choices": {
@@ -1122,20 +1122,20 @@
         }
       },
       "en": {
-        "title": "Has a person in your care been left without necessary care?",
+        "title": "Did anyone in your care go without care they needed?",
         "time": "The past 28 days.",
-        "help": "For example, food, hygiene, safe supervision or necessary health care. This can happen for a variety of reasons; the following questions clarify these.",
+        "help": "For example, food, hygiene, supervision to keep the person safe, or necessary health care. This can happen for different reasons. The next questions ask about them.",
         "choices": {
           "A": "No",
           "B": "Yes",
-          "C": "I do not know / difficult to say",
+          "C": "I don't know / It's hard to say",
           "D": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Был ли человек, находящийся под вашей опекой, оставлен без необходимого ухода?",
+        "title": "Случалось ли, что человек, за которым Вы ухаживаете, не получал необходимого ухода?",
         "time": "Последние 28 дней.",
-        "help": "Например, питание, гигиена, безопасный надзор или необходимое медицинское обслуживание. Это может происходить по разным причинам; следующие вопросы помогут прояснить ситуацию.",
+        "help": "Например, питание, гигиена, присмотр для безопасности человека или необходимая медицинская помощь. Это может происходить по разным причинам. Следующие вопросы помогут их уточнить.",
         "choices": {
           "A": "Нет",
           "B": "Да",
@@ -1203,28 +1203,28 @@
         }
       },
       "en": {
-        "title": "What necessary care was left unprovided?",
+        "title": "What necessary care did the person go without?",
         "time": "The past 28 days.",
         "help": "",
         "choices": {
           "A": "Food or drink",
           "B": "Hygiene or appropriate clothing",
-          "C": "Safe supervision or assistance with movement",
+          "C": "Supervision to keep the person safe or help getting around",
           "D": "Necessary healthcare",
           "E": "Other need",
-          "F": "I do not know / difficult to say",
+          "F": "I don't know / It's hard to say",
           "G": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Какой необходимый уход остался без внимания?",
+        "title": "Какой необходимый уход человек не получил?",
         "time": "Последние 28 дней.",
         "help": "",
         "choices": {
           "A": "Еда или напитки",
           "B": "Гигиена или соответствующая одежда",
-          "C": "Безопасный присмотр или помощь при передвижении.",
-          "D": "Необходимое медицинское обслуживание",
+          "C": "Присмотр для безопасности человека или помощь при передвижении",
+          "D": "Необходимая медицинская помощь",
           "E": "Другие потребности",
           "F": "Не знаю / трудно сказать",
           "G": "Я не хочу отвечать."
@@ -1309,10 +1309,10 @@
           "C": "Lack of access to money, housing or services",
           "D": "There was no one to help.",
           "E": "I didn't know what to do.",
-          "F": "The person in care refused help.",
+          "F": "The person receiving care refused help.",
           "G": "I deliberately withheld care to punish or coerce",
           "H": "Other reason",
-          "I": "I do not know / difficult to say",
+          "I": "I don't know / It's hard to say",
           "J": "I don't want to answer."
         }
       },
@@ -1325,7 +1325,7 @@
           "B": "Моё физическое или психическое здоровье",
           "C": "Отсутствие доступа к деньгам, жилью или услугам.",
           "D": "Помочь было некому.",
-          "E": "Не было ясности, как поступить.",
+          "E": "Я не знал(а), как поступить.",
           "F": "Человек, о котором я забочусь, отказался от помощи.",
           "G": "Я намеренно не обеспечивал(а) необходимый уход, чтобы наказать или принудить.",
           "H": "Другая причина",
@@ -1397,18 +1397,18 @@
         }
       },
       "en": {
-        "title": "Is someone in your care currently lacking the necessary care and needs help to provide it?",
+        "title": "Is anyone in your care currently going without care they need, with help needed to provide it?",
         "time": "Currently.",
         "help": "",
         "choices": {
           "A": "No",
           "B": "Yes",
-          "C": "I do not know / difficult to say",
+          "C": "I don't know / It's hard to say",
           "D": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Есть ли среди тех, кто находится под вашей опекой, кто в настоящее время не получает необходимого ухода и нуждается в помощи для его обеспечения?",
+        "title": "Есть ли среди людей, за которыми Вы ухаживаете, кто сейчас не получает необходимого ухода, для обеспечения которого нужна помощь?",
         "time": "В настоящее время.",
         "help": "",
         "choices": {
@@ -1470,20 +1470,20 @@
       "en": {
         "title": "Have you experienced any of the following thoughts when thinking about a loved one's serious illness or suffering?",
         "time": "The past 28 days.",
-        "help": "Thought, desire and intention to act are not the same thing. This question does not concern coordinated medical relief of symptoms. It is not necessary to describe the type of harm.",
+        "help": "Having a thought, having a wish, and intending to act are different. This question does not cover agreed medical measures to relieve symptoms. You do not need to describe the type of harm.",
         "choices": {
           "A": "I wish for the suffering to end, without thinking about death.",
           "B": "I have wished for the person to die and for the suffering to end.",
-          "C": "I have considered causing this person's death myself.",
+          "C": "I have thought about causing this person's death myself.",
           "D": "None of the above / such a situation has not occurred",
-          "E": "I do not know / difficult to say",
+          "E": "I don't know / It's hard to say",
           "F": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Возникали ли у вас какие-либо из следующих мыслей, когда вы думали о серьезной болезни или страданиях близкого человека?",
+        "title": "Возникали ли у Вас какие-либо из следующих мыслей, когда Вы думали о серьезной болезни или страданиях близкого человека?",
         "time": "Последние 28 дней.",
-        "help": "Мысль, желание и намерение действовать — не одно и то же. Этот вопрос не касается медицинских мер по согласованному облегчению симптомов. Нет необходимости описывать, каким именно мог быть вред.",
+        "help": "Мысль, желание и намерение действовать — не одно и то же. Этот вопрос не касается согласованных медицинских мер по облегчению симптомов. Не нужно описывать характер возможного вреда.",
         "choices": {
           "A": "Я желаю, чтобы страдания прекратились, не думая о смерти.",
           "B": "Мне хотелось, чтобы этот человек умер и чтобы его страдания закончились.",
@@ -1555,26 +1555,26 @@
         }
       },
       "en": {
-        "title": "If you thought about causing someone's death yourself, how did you feel about that thought?",
+        "title": "If you thought about causing that person's death yourself, how did you feel about that thought?",
         "time": "The past 28 days.",
-        "help": "Evaluate the thought experience, not your character. Current intention and preparation are clarified by individual questions.",
+        "help": "Focus on what it was like to have the thought, not on judging your character. Separate questions ask about current intent and preparation.",
         "choices": {
           "A": "It was unwanted and contrary to what I want.",
           "B": "Sometimes I wanted to do that.",
-          "C": "The experience was variable or mixed",
+          "C": "My experience of the thought varied or was mixed.",
           "D": "There were no such thoughts.",
-          "E": "I do not know / difficult to say",
+          "E": "I don't know / It's hard to say",
           "F": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Если вы задумывались о том, чтобы собственными действиями стать причиной смерти человека, как вы воспринимали эту мысль?",
+        "title": "Если у Вас возникала мысль самому или самой стать причиной смерти этого человека, как Вы воспринимали эту мысль?",
         "time": "Последние 28 дней.",
-        "help": "Оценивайте мыслительный процесс, а не свой характер. Текущие намерения и подготовка уточняются с помощью отдельных вопросов.",
+        "help": "Оценивайте то, как Вы переживали эту мысль, а не свой характер. Текущее намерение и подготовку уточняют отдельные вопросы.",
         "choices": {
           "A": "Эта мысль была нежелательной и противоречила моим желаниям.",
           "B": "Иногда мне хотелось так поступить.",
-          "C": "Моё отношение к этой мысли менялось или было противоречивым.",
+          "C": "Я переживал(а) эту мысль по-разному или испытывал(а) смешанные чувства.",
           "D": "Таких мыслей не было.",
           "E": "Не знаю / трудно сказать",
           "F": "Я не хочу отвечать."

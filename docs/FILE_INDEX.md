@@ -4,6 +4,8 @@
 
 ## Where to start each time
 
+For interrupted work, start with [`docs/WORK_CHECKPOINT.md`](WORK_CHECKPOINT.md): exact next action, verified sections, local test evidence and synchronization status. It takes precedence over older historical checkpoints for resuming the active task.
+
 1. **Current version pointers and full machine-verifiable list:** [`project-manifest.json`](../project-manifest.json). Treat this as authoritative for which file/version is current; it pins the Git blob SHA1 and size of all **79 imported original files**.
 2. **New work progress:** [`docs/CHANGELOG.md`](CHANGELOG.md). Register tasks before editing; checkpoint every verified batch.
 3. **Release policy:** [`docs/RELEASE_POLICY.md`](RELEASE_POLICY.md). A successful source import does NOT certify behavior, translations or clinical validity.

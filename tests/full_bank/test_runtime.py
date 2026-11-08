@@ -57,19 +57,19 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
         for text in q["translations"]["ru"].get("choices", {}).values()
     ]
     assert "Я не знаю / Я не уверен" not in s13_russian
-    assert question_by_id["M31_08"]["translations"]["en"]["title"] == "Have you felt unable to continue caring without additional help?"
+    assert question_by_id["M31_08"]["translations"]["en"]["title"] == "Have your caregiving responsibilities made you feel that you can no longer continue providing care without additional help?"
     assert "без дополнительной помощи" in question_by_id["M31_08"]["translations"]["ru"]["title"]
     assert "чтобы наказать или принудить" in question_by_id["M31_17"]["translations"]["ru"]["choices"]["G"]
     assert "медицинская помощь" not in question_by_id["M31_17"]["translations"]["ru"]["title"]
-    assert question_by_id["M31_20"]["translations"]["ru"]["title"].startswith("Если вы задумывались")
+    assert question_by_id["M31_20"]["translations"]["ru"]["title"].startswith("Если у Вас возникала мысль")
     assert question_by_id["M32_26"]["translations"]["en"]["choices"]["B"] == "More than 24 hours ago, but no more than 1 month ago"
     assert question_by_id["M32_26"]["translations"]["ru"]["choices"]["B"] == "Более 24 часов назад, но не более месяца назад"
     assert "учебном заведении" in question_by_id["M32_35"]["translations"]["ru"]["title"]
-    assert question_by_id["M32_36"]["translations"]["ru"]["title"] == "С какими действиями в свой адрес вы сталкивались?"
-    assert "со стороны другого человека?" in question_by_id["M32_39"]["translations"]["ru"]["title"]
-    assert question_by_id["M32_40"]["translations"]["ru"]["title"] == "Кто так с вами обращался?"
-    assert "За последние 6 месяцев" in question_by_id["M32_41"]["translations"]["ru"]["title"]
-    assert question_by_id["M32_45"]["translations"]["ru"]["title"].startswith("Видели ли вы")
+    assert question_by_id["M32_36"]["translations"]["ru"]["title"] == "С какими действиями в свой адрес Вы сталкивались?"
+    assert "другого человека" in question_by_id["M32_39"]["translations"]["ru"]["title"]
+    assert question_by_id["M32_40"]["translations"]["ru"]["title"] == "Кто так с Вами обращался?"
+    assert "за последние 6 месяцев" in question_by_id["M32_41"]["translations"]["ru"]["title"].lower()
+    assert question_by_id["M32_45"]["translations"]["ru"]["title"].startswith("Видели ли Вы")
     assert "отстранением от учебы" not in question_by_id["M32_46"]["translations"]["ru"]["title"]
 
     s01_questions = [q for q in questions if q["module"] == "S01"]
@@ -282,4 +282,3 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     browser.close()
 
 print("PASS: full offline runtime includes selection, answer types, conditions, support, feedback/recovery, skip/back, copy/print, three locales, and manual progress saving. Android device UNVERIFIED.")
-

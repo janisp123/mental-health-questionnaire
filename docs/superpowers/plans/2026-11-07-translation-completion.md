@@ -6,8 +6,8 @@
 **Execution:** Use subagent-driven-development for one section at a time, with root coordination and verification. The fresh task-specific clone on develop is the isolated workspace. Do not recreate work from completed checkpoints.
 
 ## Tasks
-- [ ] Reproduce S13 failure, repair metadata, establish working local Python/browser tools.
-- [ ] Review and verify S13 (70 questions).
+- [x] Reproduce S13 failure, repair metadata, establish working local Python/browser tools.
+- [x] Review and verify S13 (70 questions).
 - [ ] Review and verify S12 (42 questions).
 - [ ] Review and verify S14 (49 questions).
 - [ ] Review and verify S15 (47 questions).
@@ -26,6 +26,8 @@ Read every question and option in LV/EN/RU for the selected section; correct dem
 Preserve negation, onset boundaries, frequency/duration units, sensitive-question meaning, and answer-option intent. Preserve safety answer mappings and backup compatibility. Verify Unicode and offline rendering on Windows as well as CI.
 
 ## Execution ledger
+- Latest user direction: local work for now, synchronize all changes on 8 November evening. `docs/WORK_CHECKPOINT.md` is the current resumable status; no more remote pushes before then.
+- User direction 2026-11-07: finish changes/tests locally; defer further Git operations and synchronization until work is done. Save section checkpoints in local files. Baseline archive is `../baseline.zip` for comparisons without Git.
 - Baseline: 85f4332, five sections previously verified; S13 committed but CI source-integrity check fails.
 - Local baseline: Git autocrlf converted checkout text to CRLF, causing a separate local hash failure; restore exact repository bytes before comparing with CI.
 - Ruling: continue using the fresh dedicated clone on develop, as required by AGENTS.md; no additional worktree needed.

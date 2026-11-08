@@ -1,0 +1,102 @@
+
+=== tools/verify_project_index.py: 0 ===
+PASS: 79 original files, 48 module hashes, 712 question IDs and orders
+This is not clinical, browser, or translation validation.
+
+
+=== tests\full_bank\test_build.py: 0 ===
+PASS: default CLI creates one offline HTML with all 712 questions in 15 optional sections; original 48-module source mapping is retained.
+
+
+=== tests\full_bank\test_full_groups.py: 0 ===
+PASS: 48 immutable source modules map to 15 optional groups/712 questions; exact source titles and earlier conditions remain available.
+
+
+=== tests\full_bank\test_layout.py: 0 ===
+PASS: all 712 IDs occur once; 15 user sections each contain 36–70 questions; report order is independently complete.
+
+
+=== tests\full_bank\test_module_titles.py: 0 ===
+PASS: 48 section titles in LV/EN/RU exactly match the frozen references.
+
+
+=== tests\full_bank\test_runtime.py: 0 ===
+PASS: full offline runtime includes selection, answer types, conditions, support, feedback/recovery, skip/back, copy/print, three locales, and manual progress saving. Android device UNVERIFIED.
+
+
+=== tests\full_bank\test_source_adapter.py: 0 ===
+PASS: read-only adapter preserves all 712 questions in all 48 modules and the default build.
+
+
+=== tests\full_bank\test_source_audit.py: 0 ===
+PASS: source structure is consistent across 48 modules and 712 questions; IDs/orders unique; LV/EN/RU choices and condition parents match.
+ENGINE AUDIT: choice, multi, maxChoices, exclusive, incompatible, refusal/uncertainty status, optional help/time and hide/show conditions fit current generic engine; 5 conditions have multi-select parents; 0 cross-section conditions.
+ENGINE STATUS: medicineList has a tested form, recovery record, and report formatter; full runtime is checked in Chromium.
+LIMIT: audit validates data shape and translation/code consistency, not EN/RU language accuracy, clinical meaning, or full-browser behavior.
+
+
+=== tests\app\test_build_manifest.py: 0 ===
+PASS: explicit app sources assemble offline with a synthetic bundle only.
+
+
+=== tests\app\test_runtime_answers.py: 0 ===
+PASS: synthetic single choice, deferred multi-select, skip, offline load.
+
+
+=== tests\app\test_runtime_feedback.py: 0 ===
+PASS: synthetic feedback saves independently, round-trips, and can be removed.
+
+
+=== tests\app\test_runtime_layout.py: 0 ===
+PASS: synthetic mobile/desktop layout, fixed skip navigation, accessible flag label, offline load.
+
+
+=== tests\app\test_runtime_recovery.py: 0 ===
+PASS: synthetic choice and skip records restore offline with conditions respected.
+
+
+=== tests\app\test_ui_catalogs.py: 0 ===
+PASS: LV/EN/RU catalogs align; review, privacy, support number, and current-change labels are present.
+
+
+=== tests\app\test_answer_flow.js: 0 ===
+PASS: synthetic answer advancement, back navigation, and safety review transitions.
+
+
+=== tests\app\test_events.js: 0 ===
+PASS: synthetic click/change/input events dispatch to isolated coordinator callbacks.
+
+
+=== tests\app\test_model.js: 0 ===
+PASS: synthetic question visibility, queue, section selection, progress, and ID uniqueness.
+
+
+=== tests\app\test_question_screens.js: 0 ===
+PASS: question, medicine, and feedback screens render from synthetic records.
+
+
+=== tests\app\test_recovery.js: 0 ===
+PASS: synthetic recovery normalization, legacy compatibility, and invalid-data rejection.
+
+
+=== tests\app\test_report_screens.js: 0 ===
+PASS: completion page omits contact details; report page exposes only print, answers, and sections.
+
+
+=== tests\app\test_screens.js: 0 ===
+PASS: start contains one button; section picker offers select-all/continue, selected-section continue and useful totals.
+
+
+=== tests\full_bank\test_medicine_report.js: 0 ===
+PASS: medicine-list report labels, values, time context and escaping in LV/EN/RU.
+
+
+=== tests\full_bank\test_reports.js: 0 ===
+PASS: one doctor report, explicit answer-code bold rules, normal-to-sensitive order, three locales, no AI export or weights.
+
+
+=== tools/build_questionnaire.py: 0 ===
+COMPLETE QUESTIONNAIRE BUILT: dist/QUESTIONNAIRE_LV_EN_RU_NOT_RELEASED.html
+SHA256: 2975ab219d501726874e76dd5529edf4c5a86ae177c1825ac40b114660c4ec0c
+Languages: lv, en, ru
+PROTOTYPE ONLY: browser, translation, and clinical approval NOT implied.
