@@ -298,3 +298,7 @@ Drive folder read on this session: HTML modified 14:18, PDF 13:57. Read access w
 
 ### Recovery checkpoint — S13 complete locally
 All 70 S13 questions and 423 option labels per language reviewed. Corrected meanings and formal address; repaired five invalid RU option keys. Independent review findings applied. Full local 24/24 checks PASS, including browser and print/recovery journeys, index integrity and exact frozen LV record parity. Evidence: docs/review/audit-S13.md and docs/review/checks/S13-local.txt. Drive/GitHub not updated; user requests local work until 8 November evening. Next: S12 (42 questions).
+
+### 2026-11-08 · S13 repository synchronization
+
+Verified S13 source checkpoint: `eecfc0f`. The repository review package is in `MH_Public_version`. The HTML is the exact build from the 24/24 local checks (SHA-256 `2975ab219d501726874e76dd5529edf4c5a86ae177c1825ac40b114660c4ec0c`); the existing trilingual guide remains applicable (SHA-256 `8613fd1ce73767ada568d464541862a0f5398f048840f6e6e281bda98b7851d0`). The owner copies the two files to the shared Drive folder. Next translation audit: S12.
