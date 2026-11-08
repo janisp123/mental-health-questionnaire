@@ -1,5 +1,6 @@
 """Interface-label files stay structurally aligned without loading question content."""
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -63,12 +64,15 @@ for lang in LOCALES:
     assert "Не спешите" not in strings["intro"]
     assert "48 source modules" in strings["statusNote"] if lang == "en" else True
     if lang == "lv":
-        assert "tikai ar cilvēkiem, kuriem uzticies" in strings["legalBody"]
+        assert "tikai ar cilvēkiem, kuriem uzticaties" in strings["legalBody"]
         assert "sociālajos tīklos" in strings["legalBody"]
     if lang == "ru":
         assert "только с людьми, которым Вы доверяете" in strings["legalBody"]
         assert "социальных сетях" in strings["legalBody"]
-assert "Tev" in ui["lv"]["intro"]
+assert "palīdzēt Jums" in ui["lv"]["intro"]
+informal_address = re.compile(r"\b(?:tu|tev|tevi|tevis|tavs|tava|tavam|tavai|vari|vēlies|izvēlies|uzticies)\b", re.IGNORECASE)
+for key, text in ui["lv"].items():
+    assert not informal_address.search(text), key
 assert "Вам" in ui["ru"]["intro"] and "Вы" in ui["ru"]["guideBody"]
 assert "you" in ui["en"]["intro"] and "You" not in ui["en"]["intro"]
 

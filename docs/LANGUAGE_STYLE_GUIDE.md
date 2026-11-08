@@ -4,7 +4,7 @@ Read this short guide before changing interface text, help, reports, or translat
 
 ## Addressing the reader
 
-- **Latvian:** address one reader with `Tu`, `Tev`, `Tevi`, `Tavs/Tava` and their case forms, capitalized consistently. The Latvian Language Agency says capitalized `tu/jūs` is customary in letters and notes that use elsewhere depends on the communication context; this project chooses the respectful letter-like form for direct user-facing text.
+- **Latvian:** address one reader formally with `Jūs`, `Jums`, `Jūsu` and matching polite verb forms in interface and new reviewer text. Preserve the wording and capitalization of the frozen Latvian question bank. The Latvian Language Agency says capitalized `tu/jūs` is customary in letters and notes that use elsewhere depends on the communication context; this project chooses the respectful letter-like form for direct user-facing text.
 - **Russian:** address one reader formally with `Вы`, `Вам`, `Вас`, `Ваш` and their forms. The reference rule permits capitals in reusable questionnaires and other texts addressed to one person. Use lowercase when addressing multiple people.
 - **English:** use ordinary `you/your` spelling; lowercase except where normal sentence capitalization requires it.
 

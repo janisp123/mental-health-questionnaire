@@ -446,3 +446,7 @@ Added “made by Janis Paegle 2026” as the final line of the questionnaire foo
 ### 2026-11-08 · Polite Latvian feedback wording and contributor heading
 
 Used “sūtiet” in the Latvian feedback invitation and added a contributor heading below the email in all three languages. The feedback regression, locale check and full-bank build passed. Verified the wording and layout in the reviewer HTML, SHA-256 `8a520e8355722d70d2992a46bff11407e232700711cfcb2e2b925d0410c1e781`.
+
+### 2026-11-08 · Formal address in the Latvian HTML interface
+
+Updated the welcome screen, controls, help, support and privacy text to use formal Latvian address. Screened all 712 frozen Latvian records, including choices and help, for informal pronouns and common informal verbs. No matches were found in the question bank. Source parity, locale, build and offline Chromium checks passed. Verified the reviewer HTML, SHA-256 `022a5e2b20ae52023ae4223cda1b175f3b079a32a8a667bac5dd258deeb25295`. The separate PDF guide still needs the formal wording pass.
