@@ -35,7 +35,7 @@
         }
       },
       "en": {
-        "title": "Does separation from a loved one or the possibility of it cause you strong fear?",
+        "title": "Does being apart from someone close to you, or the possibility of being apart, cause you intense fear?",
         "time": "Currently.",
         "choices": {
           "A": "No",
@@ -45,7 +45,7 @@
         }
       },
       "ru": {
-        "title": "Вызывает ли у вас сильный страх разлука с любимым человеком или сама возможность такой разлуки?",
+        "title": "Вызывает ли у Вас сильный страх разлука с близким человеком или возможность такой разлуки?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Нет",
@@ -116,7 +116,7 @@
         "choices": {
           "A": "Never",
           "B": "Several days",
-          "C": "More than half a day",
+          "C": "On more than half of the days",
           "D": "Almost every day",
           "E": "Does not apply to me",
           "F": "I don't know",
@@ -124,12 +124,12 @@
         }
       },
       "ru": {
-        "title": "Боитесь ли вы, что во время разлуки с вами или с этим человеком случится что-то плохое?",
+        "title": "Боитесь ли Вы, что во время разлуки с Вами или с этим человеком случится что-то плохое?",
         "time": "Последние 4 недели.",
         "choices": {
           "A": "Никогда",
           "B": "Несколько дней",
-          "C": "Более половины дня",
+          "C": "Более чем в половине дней",
           "D": "Почти каждый день",
           "E": "Ко мне это не относится",
           "F": "Я не знаю",
@@ -208,21 +208,21 @@
           "B": "Work or study",
           "C": "Traveling",
           "D": "Sleeping separately",
-          "E": "Being left alone",
+          "E": "Being alone",
           "F": "None of the above",
           "G": "I don't know",
           "H": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "В чём заключаются трудности, которые вызывает этот страх?",
+        "title": "Что Вам трудно делать из-за этого страха?",
         "time": "В настоящее время.",
         "choices": {
-          "A": "Выход из дома",
-          "B": "Работа или учеба",
-          "C": "Путешествие",
-          "D": "Спать раздельно",
-          "E": "Оставленный в одиночестве",
+          "A": "Выходить из дома",
+          "B": "Работать или учиться",
+          "C": "Путешествовать",
+          "D": "Спать отдельно",
+          "E": "Оставаться в одиночестве",
           "F": "Ничего из перечисленного",
           "G": "Я не знаю",
           "H": "Я не хочу отвечать."
@@ -295,7 +295,7 @@
         }
       },
       "en": {
-        "title": "How long will this fear last?",
+        "title": "How long has this fear been going on?",
         "time": "Currently.",
         "choices": {
           "A": "Less than a month",
@@ -309,7 +309,7 @@
         }
       },
       "ru": {
-        "title": "Как долго продлится этот страх?",
+        "title": "Как долго продолжается этот страх?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Менее месяца",
@@ -381,7 +381,7 @@
         }
       },
       "en": {
-        "title": "Is the fear related to a current real threat, loss, or health condition?",
+        "title": "Is this fear related to a real threat right now, a loss, or someone’s health?",
         "time": "Currently.",
         "choices": {
           "A": "No",
@@ -391,7 +391,7 @@
         }
       },
       "ru": {
-        "title": "Связан ли этот страх с реальной угрозой, потерей или состоянием здоровья?",
+        "title": "Связан ли этот страх с реальной угрозой в настоящее время, утратой или состоянием здоровья человека?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Нет",
@@ -459,21 +459,21 @@
         }
       },
       "en": {
-        "title": "How much do they interfere with everyday life?",
+        "title": "How much do these fears interfere with everyday life?",
         "time": "Currently.",
         "choices": {
           "A": "Not at all",
           "B": "A little",
           "C": "Moderately",
-          "D": "Severely",
-          "E": "Very severely",
+          "D": "A lot",
+          "E": "Very much",
           "F": "Does not apply to me",
           "G": "I don't know",
           "H": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Насколько сильно они мешают повседневной жизни?",
+        "title": "Насколько эти страхи мешают повседневной жизни?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Совсем нет",

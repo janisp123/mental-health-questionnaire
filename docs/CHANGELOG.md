@@ -53,7 +53,7 @@ Drive folder read on this session: HTML modified 14:18, PDF 13:57. Read access w
 | 4 | S06 — Attention, learning and development | 43 | DONE |
 | 5 | S10 — Alcohol, nicotine and other substances | 37 | DONE |
 | 6 | S13 — Family, social context and caregiving | 70 | DONE locally |
-| 7 | S12 — Relationships and emotional patterns | 42 | TODO |
+| 7 | S12 — Relationships and emotional patterns | 42 | DONE |
 | 8 | S14 — Eating, appearance and health concerns | 49 | TODO |
 | 9 | S15 — Sexuality and reproductive health | 47 | TODO |
 | 10 | S07 — Intrusive thoughts and repetitive habits | 45 | TODO |
@@ -306,3 +306,9 @@ Verified S13 source checkpoint: `eecfc0f`. The repository review package is in `
 ### 2026-11-08 · S12 checkpoint 1 · module 19
 
 Audited all 19 module 19 questions and their English and Russian options and time notes. Corrected the Russian day counts and formal address, clarified controlling behavior and privacy wording, and preserved the Latvian records, answer codes and ordering, and questionnaire logic. Updated module integrity metadata and all three in-app change notes. Source integrity, frozen Latvian parity, the source adapter, UI catalogs, and the full offline HTML build passed. S12 remains in progress. Next: module 24, then module 38 and section-level browser verification. The reviewer package still represents S13.
+
+### 2026-11-08 · S12 complete · modules 24 and 38
+
+Reviewed the remaining 23 questions, completing all 42 in S12. Clarified long-standing patterns and formal Russian address. Corrected the separation-fear frequency scale (more than half of the days) and changed the duration question from a future prediction to elapsed duration in both draft languages. Preserved Latvian source, IDs, option codes, conditions and logic. Source integrity, frozen Latvian parity, source adapter, UI catalogs, full HTML build and Chromium offline journey passed. The built HTML was also inspected for the corrected frequency option in all three languages.
+
+Repository reviewer HTML: SHA-256 `6004e75f72d30525105da6ca0713e3f228896c158efba84827fe803e22e9dd86`. The existing trilingual PDF guide remains applicable. The owner copies the HTML to the shared Drive folder. Next: S14.

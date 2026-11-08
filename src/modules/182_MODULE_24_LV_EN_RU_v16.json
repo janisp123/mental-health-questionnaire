@@ -54,7 +54,7 @@
         }
       },
       "ru": {
-        "title": "Как часто ваши эмоции резко меняются в течение нескольких часов?",
+        "title": "Как часто Ваши эмоции резко меняются в течение нескольких часов?",
         "time": "Последние 12 месяцев.",
         "choices": {
           "A": "Никогда",
@@ -212,12 +212,12 @@
         }
       },
       "ru": {
-        "title": "Возникал ли за последние 12 месяцев повторяющийся сильный страх, что близкие вас оставят?",
+        "title": "Испытывали ли Вы неоднократно за последние 12 месяцев сильный страх, что близкие люди Вас оставят?",
         "time": "Последние 12 месяцев.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -271,7 +271,7 @@
         }
       },
       "en": {
-        "title": "Do your relationships sometimes change quickly from very close to highly conflictual?",
+        "title": "Do your relationships sometimes shift quickly from being very close to being full of conflict?",
         "time": "Last 12 months.",
         "choices": {
           "A": "No",
@@ -282,12 +282,12 @@
         }
       },
       "ru": {
-        "title": "Бывает ли, что отношения быстро меняются от очень близких к очень конфликтным?",
+        "title": "Бывает ли, что очень близкие отношения быстро становятся очень конфликтными?",
         "time": "Последние 12 месяцев.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -352,12 +352,12 @@
         }
       },
       "ru": {
-        "title": "Трудно ли вам на протяжении длительного времени понять, кто вы и каковы ваши жизненные цели?",
+        "title": "Трудно ли Вам уже долгое время понять, кто Вы или каковы Ваши жизненные цели?",
         "time": "Последние 12 месяцев.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -422,12 +422,12 @@
         }
       },
       "ru": {
-        "title": "Действуете ли вы импульсивно, когда эмоции переполняют?",
+        "title": "Действуете ли Вы импульсивно, когда эмоции Вас переполняют?",
         "time": "Последние 12 месяцев.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -492,12 +492,12 @@
         }
       },
       "ru": {
-        "title": "Бывает ли у вас длительное чувство внутренней пустоты?",
+        "title": "Бывает ли у Вас длительное чувство внутренней пустоты?",
         "time": "Последние 12 месяцев.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -562,12 +562,12 @@
         }
       },
       "ru": {
-        "title": "Нужно ли вам много времени после конфликтов, чтобы восстановить эмоциональное равновесие?",
+        "title": "Нужно ли Вам много времени после конфликтов, чтобы восстановить эмоциональное равновесие?",
         "time": "Последние 12 месяцев.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -627,7 +627,7 @@
         "time": "Your age when similar longstanding patterns began.",
         "choices": {
           "A": "Yes, before age 18",
-          "B": "Yes, first at age 18-24",
+          "B": "Yes, they first appeared between ages 18 and 24",
           "C": "No, they began at age 25 or later",
           "D": "There are no such difficulties.",
           "E": "I do not remember / difficult to say",
@@ -636,10 +636,10 @@
       },
       "ru": {
         "title": "Были ли похожие особенности эмоциональных реакций или отношений уже до 25 лет?",
-        "time": "Возраст начала похожих длительных особенностей.",
+        "time": "Ваш возраст, когда впервые появились похожие устойчивые особенности.",
         "choices": {
           "A": "Да, уже до 18 лет",
-          "B": "Да, впервые в возрасте 18-24 лет",
+          "B": "Да, впервые в возрасте 18–24 лет",
           "C": "Нет, начались в возрасте 25 лет или позже",
           "D": "Таких трудностей нет.",
           "E": "Не помню / трудно сказать",
@@ -703,7 +703,7 @@
         "time": "Last 12 months.",
         "choices": {
           "A": "There are no such difficulties.",
-          "B": "They occur only during separate, distinct periods",
+          "B": "They occur only during distinct periods",
           "C": "They recur in different situations even outside such periods",
           "D": "Both a longstanding pattern and separate periods of worsening",
           "E": "Difficult to say",
@@ -717,7 +717,7 @@
           "A": "Таких трудностей нет.",
           "B": "Возникают только в отдельные, отличающиеся от обычного периоды",
           "C": "Повторяются в разных ситуациях и вне таких периодов",
-          "D": "Есть и длительная закономерность, и отдельные ухудшения",
+          "D": "И устойчивые особенности, и отдельные периоды ухудшения",
           "E": "Трудно сказать",
           "F": "Не хочу отвечать."
         }
@@ -784,12 +784,12 @@
         }
       },
       "ru": {
-        "title": "Трудно ли вам принимать неопределённость или изменения в отношениях?",
+        "title": "Трудно ли Вам принимать неопределённость или изменения в отношениях?",
         "time": "Последние 12 месяцев.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -849,14 +849,14 @@
         }
       },
       "en": {
-        "title": "How much do these patterns interfere with work, intimacy or daily life?",
+        "title": "How much do these patterns interfere with work, closeness in relationships, or daily life?",
         "time": "Last 12 months.",
         "choices": {
           "A": "Not at all",
           "B": "A little",
           "C": "Moderately",
-          "D": "Severely",
-          "E": "Very severely",
+          "D": "A lot",
+          "E": "Very much",
           "F": "Does not apply to me",
           "G": "Difficult to say",
           "H": "Prefer not to answer."
@@ -930,9 +930,9 @@
         }
       },
       "en": {
-        "title": "Do strict rules or the requirement to do everything perfectly prevent you from completing tasks or collaborating for a long time?",
+        "title": "Have strict rules or the need to do everything perfectly made it difficult over a long period to finish tasks or work with others?",
         "time": "Several years, in different life situations.",
-        "help": "A personality diagnosis is not determined by a single answer. Living conditions, development, and current health must be taken into account.",
+        "help": "A diagnosis relating to personality cannot be made from a single answer. Life circumstances, development, and current health need to be considered.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -941,9 +941,9 @@
         }
       },
       "ru": {
-        "title": "Строгие правила или требование делать все идеально мешают вам завершать задачи или долгосрочно сотрудничать?",
+        "title": "Мешают ли Вам уже долгое время строгие правила или требование делать всё безупречно завершать дела или работать с другими людьми?",
         "time": "Несколько лет, в разных жизненных ситуациях.",
-        "help": "Диагноз личности не может быть поставлен на основании одного ответа. Необходимо учитывать условия жизни, развитие личности и текущее состояние здоровья.",
+        "help": "Диагноз, связанный с особенностями личности, нельзя поставить по одному ответу. Нужно учитывать жизненные обстоятельства, развитие и текущее состояние здоровья.",
         "choices": {
           "A": "Нет",
           "B": "Да",
@@ -999,9 +999,9 @@
         }
       },
       "en": {
-        "title": "Do you avoid close relationships for long periods of time or experience a strong sense of alienation that causes you difficulty?",
+        "title": "Do you avoid close relationships for long periods or feel strongly disconnected in a way that causes you difficulties?",
         "time": "Several years, in different life situations.",
-        "help": "A personality diagnosis is not determined by a single answer. Living conditions, development, and current health must be taken into account.",
+        "help": "A diagnosis relating to personality cannot be made from a single answer. Life circumstances, development, and current health need to be considered.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -1010,9 +1010,9 @@
         }
       },
       "ru": {
-        "title": "Вы избегаете близких отношений в течение длительного времени или испытываете сильное чувство отчуждения, которое доставляет вам трудности?",
+        "title": "Вы избегаете близких отношений в течение длительного времени или испытываете сильное чувство отчуждения, которое доставляет Вам трудности?",
         "time": "Несколько лет, в разных жизненных ситуациях.",
-        "help": "Диагноз личности не может быть поставлен на основании одного ответа. Необходимо учитывать условия жизни, развитие личности и текущее состояние здоровья.",
+        "help": "Диагноз, связанный с особенностями личности, нельзя поставить по одному ответу. Нужно учитывать жизненные обстоятельства, развитие и текущее состояние здоровья.",
         "choices": {
           "A": "Нет",
           "B": "Да",
@@ -1070,7 +1070,7 @@
       "en": {
         "title": "Do you repeatedly find it difficult to consider the needs of other people or the impact of your actions on them?",
         "time": "Several years, in different life situations.",
-        "help": "A personality diagnosis is not determined by a single answer. Living conditions, development, and current health must be taken into account.",
+        "help": "A diagnosis relating to personality cannot be made from a single answer. Life circumstances, development, and current health need to be considered.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -1079,9 +1079,9 @@
         }
       },
       "ru": {
-        "title": "Вам часто бывает трудно учитывать потребности других людей или влияние ваших действий на них?",
+        "title": "Бывало ли неоднократно, что Вам трудно учитывать потребности других людей или то, как Ваши действия влияют на них?",
         "time": "Несколько лет, в разных жизненных ситуациях.",
-        "help": "Диагноз личности не может быть поставлен на основании одного ответа. Необходимо учитывать условия жизни, развитие личности и текущее состояние здоровья.",
+        "help": "Диагноз, связанный с особенностями личности, нельзя поставить по одному ответу. Нужно учитывать жизненные обстоятельства, развитие и текущее состояние здоровья.",
         "choices": {
           "A": "Нет",
           "B": "Да",
@@ -1137,9 +1137,9 @@
         }
       },
       "en": {
-        "title": "Is it difficult to set and achieve your goals without the guidance of other people for a long time?",
+        "title": "Have you had lasting difficulty setting and achieving your goals without guidance from other people?",
         "time": "Several years, in different life situations.",
-        "help": "A personality diagnosis is not determined by a single answer. Living conditions, development, and current health must be taken into account.",
+        "help": "A diagnosis relating to personality cannot be made from a single answer. Life circumstances, development, and current health need to be considered.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -1148,9 +1148,9 @@
         }
       },
       "ru": {
-        "title": "Сложно ли ставить и достигать цели без помощи других людей в течение длительного времени?",
+        "title": "Трудно ли Вам уже долгое время ставить и достигать своих целей без руководства со стороны других людей?",
         "time": "Несколько лет, в разных жизненных ситуациях.",
-        "help": "Диагноз личности не может быть поставлен на основании одного ответа. Необходимо учитывать условия жизни, развитие личности и текущее состояние здоровья.",
+        "help": "Диагноз, связанный с особенностями личности, нельзя поставить по одному ответу. Нужно учитывать жизненные обстоятельства, развитие и текущее состояние здоровья.",
         "choices": {
           "A": "Нет",
           "B": "Да",
