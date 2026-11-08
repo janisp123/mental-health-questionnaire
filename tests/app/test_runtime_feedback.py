@@ -16,17 +16,21 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     browser = launch(pw)
     page, errors, network = open_page(browser, html_path)
     ui = page.locator("#questionnaire-data").evaluate("el => JSON.parse(el.textContent).ui")
+    notes = page.locator("#project-updates")
     panel = page.locator("footer details").last
     contact = panel.locator('a[href="mailto:test@example.invalid"]')
     for locale in ("lv", "en", "ru"):
         page.select_option("#language", locale)
+        notes.locator("summary").click()
+        assert notes.locator("ol li").count() == 10
+        assert notes.locator("ol li").all_inner_texts() == ui[locale]["notesHistory"]
+        assert notes.locator("ul li").all_inner_texts() == [
+            ui[locale]["projectPlanReview"], ui[locale]["projectPlanLanguages"]
+        ]
         assert not panel.evaluate("(details) => details.open")
         assert not page.locator('a[href="mailto:test@example.invalid"]').is_visible()
         panel.locator("summary").click()
-        assert panel.locator("li").count() == 2
-        assert panel.locator("li").all_inner_texts() == [
-            ui[locale]["projectPlanReview"], ui[locale]["projectPlanLanguages"]
-        ]
+        assert panel.locator("li").count() == 0
         assert contact.is_visible()
         assert contact.inner_text() == "test@example.invalid"
         assert panel.locator("p").all_inner_texts() == [

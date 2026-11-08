@@ -18,7 +18,7 @@ Updated 8 November 2026, Riga time. Active branch: `develop`.
 - S05 complete: 36 questions in module 18. Source integrity, frozen Latvian parity, locale catalogs, offline HTML build and Chromium journey passed. Translation audit complete: 712 of 712 questions across all 15 sections.
 - Technical QA: all 23 active checks passed. Verified the packaged HTML offline, including emergency support, recovery compatibility and 45 viewport and locale combinations. See the [reviewer test plan](superpowers/plans/2026-11-08-reviewer-release-testing.md) for evidence and outstanding checks.
 - Toolbar landmark localization fixed and verified in LV, EN and RU. Rebuilt and tested the repository reviewer HTML.
-- The final expandable section contains feedback, acknowledgements and future plans for professional review and additional translations based on requests. Rebuilt and verified the reviewer HTML in all three languages.
+- The updates panel shows the latest ten changes and future plans in all three languages. Feedback and acknowledgements have a separate panel. Rebuilt and verified the reviewer HTML in all three languages.
 - The footer shows question counts, professional interpretation wording, the inline creator credit and a statement that the questionnaire is free for everyone to use. Verified in the rebuilt reviewer HTML.
 - The Latvian HTML interface uses polite address. All 712 frozen Latvian questions were screened for informal address and source parity passed. The PDF guide now uses formal Latvian address.
 - Reviewer HTML and PDF include PC zoom instructions in all three languages. The HTML omits the translation draft notices.

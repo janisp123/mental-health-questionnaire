@@ -27,7 +27,7 @@ These rules apply to future development work in this repository, particularly lo
 - Never publish questionnaire responses or identifiable patient information to this public repository.
 - EN and RU translations remain drafts until human review and release-gate requirements are satisfied.
 - Do not claim an untested feature, translation or release passed verification.
-- When user-facing questionnaire text or behavior changes, update the in-app last-change date/time and concise category note in LV/EN/RU together. Use Riga local time; verify the visible text and all three catalogs before committing.
+- When user-facing questionnaire text or behavior changes, prepend a dated entry to the in-app notesHistory list in LV/EN/RU together and retain the latest ten entries. Use Riga local time and verify the visible text and all three catalogs before committing.
 - Before editing user-facing wording or translations, read `docs/LANGUAGE_STYLE_GUIDE.md` and apply its LV/RU/EN address and tone conventions. Preserve frozen source question content unless explicitly asked to edit the question bank.
 
 ## Review package and document output

@@ -49,7 +49,9 @@ privacy_phrases = {
 }
 for lang in LOCALES:
     strings = ui[lang]
-    assert "legalBody" in strings and "notesBody" in strings
+    assert "legalBody" in strings
+    assert len(strings["notesHistory"]) == 10
+    assert all(isinstance(note, str) and note for note in strings["notesHistory"])
     assert "backupWarning" in strings and "sectionProgress" in strings
     assert "share it only" in strings["legalBody"] if lang == "en" else True
     assert "social media" in strings["legalBody"] if lang == "en" else True
@@ -58,7 +60,8 @@ for lang in LOCALES:
     assert "116 123" not in strings["supportBody"]
     assert all(phrase in strings["supportBody"] for phrase in support_phrases[lang])
     assert all(phrase in strings["legalBody"] for phrase in privacy_phrases[lang])
-    assert "v0.2" not in strings["notesBody"] and "v16" not in strings["statusNote"]
+    assert all("v0.2" not in note for note in strings["notesHistory"])
+    assert "v16" not in strings["statusNote"]
     assert "Nesteidzies" not in strings["intro"]
     assert "Take your time" not in strings["intro"]
     assert "Не спешите" not in strings["intro"]
@@ -72,7 +75,8 @@ for lang in LOCALES:
 assert "palīdzēt Jums" in ui["lv"]["intro"]
 informal_address = re.compile(r"\b(?:tu|tev|tevi|tevis|tavs|tava|tavam|tavai|vari|vēlies|izvēlies|uzticies)\b", re.IGNORECASE)
 for key, text in ui["lv"].items():
-    assert not informal_address.search(text), key
+    for value in text if isinstance(text, list) else [text]:
+        assert not informal_address.search(value), key
 assert "Вам" in ui["ru"]["intro"] and "Вы" in ui["ru"]["guideBody"]
 assert "you" in ui["en"]["intro"] and "You" not in ui["en"]["intro"]
 

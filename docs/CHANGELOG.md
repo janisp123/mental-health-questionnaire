@@ -470,3 +470,7 @@ Simplified the footer in all three languages and clarified in the README that cl
 ### 2026-11-08 · Project future plans
 
 Added professional review and follow-up revisions, and additional translations based on requests, to the final expandable section in all three languages. The locale, feedback and build checks passed. Verified the packaged HTML offline at 320 px in all three languages. Reviewer HTML SHA-256 `01b5344a61434ddec2de3622df5bdfaef0b59fea786123e84af15d4f307cfa81`.
+
+### 2026-11-08 · Latest changes and future plans
+
+Moved the future plans beneath the ten latest dated updates in the expandable updates panel. Feedback and acknowledgements have their own panel. The locale, feedback, layout and build checks passed. Verified order and mobile-width layout in all three languages in the offline reviewer HTML, SHA-256 `fcf6d557acba6577c183a3b15dc446f88d22d2394e69cf9e44185c11cb211da4`.

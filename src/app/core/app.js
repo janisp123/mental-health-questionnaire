@@ -56,8 +56,10 @@ function footer(){
  const email=esc(data.presentation.feedbackContactEmail);
  const contact=email
   ? '<p>'+label("projectFeedbackInvitation")+' <a href="mailto:'+email+'">'+email+'</a></p>' : "";
- return '<footer><details><summary>'+label("tools")+'</summary>'+toolbar()+'</details><details id="support-details"><summary>'+label("supportMenu")+'</summary><p>'+label("supportBody")+'</p>'+supportLinks()+'</details><details><summary>'+label("guideTitle")+'</summary><p>'+label("guideBody")+'</p></details><details><summary>'+label("notesTitle")+'</summary><p>'+label("notesBody")+'</p></details><details><summary>'+label("legal")+'</summary>'+ui().legalBody.split("\n\n").map(text=>'<p>'+esc(text)+'</p>').join("")+'</details><details><summary>'+label("helpers")+'</summary>'+contact+'<p><strong>'+label("projectContributors")+'</strong></p>'+
-  '<h3>'+label("projectPlans")+'</h3><ul><li>'+label("projectPlanReview")+'</li><li>'+label("projectPlanLanguages")+'</li></ul></details><p class="muted">'+label("statusNote")+' · '+label("footer")+' · <span lang="en">made by Janis Paegle 2026</span> · '+label("freeUse")+'</p></footer>';
+ const updates='<details id="project-updates"><summary>'+label("notesTitle")+'</summary><ol>'+
+  ui().notesHistory.map(note=>'<li>'+esc(note)+'</li>').join("")+'</ol><h3>'+label("projectPlans")+'</h3><ul><li>'+
+  label("projectPlanReview")+'</li><li>'+label("projectPlanLanguages")+'</li></ul></details>';
+ return '<footer><details><summary>'+label("tools")+'</summary>'+toolbar()+'</details><details id="support-details"><summary>'+label("supportMenu")+'</summary><p>'+label("supportBody")+'</p>'+supportLinks()+'</details><details><summary>'+label("guideTitle")+'</summary><p>'+label("guideBody")+'</p></details>'+updates+'<details><summary>'+label("legal")+'</summary>'+ui().legalBody.split("\n\n").map(text=>'<p>'+esc(text)+'</p>').join("")+'</details><details><summary>'+label("helpers")+'</summary>'+contact+'<p><strong>'+label("projectContributors")+'</strong></p></details><p class="muted">'+label("statusNote")+' · '+label("footer")+' · <span lang="en">made by Janis Paegle 2026</span> · '+label("freeUse")+'</p></footer>';
 }
 function renderStart(){
  return window.QuestionnaireScreens.start({label,btn});
