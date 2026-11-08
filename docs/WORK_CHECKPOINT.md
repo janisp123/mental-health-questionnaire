@@ -16,7 +16,8 @@ Updated 8 November 2026, Riga time. Active branch: `develop`.
 - S03 complete: 40 questions in modules 03, 04 and 22. Seven legacy screening records were preserved. Source integrity, frozen Latvian parity, locale catalogs, offline HTML build and Chromium journey passed. Total audited: 632 of 712 across thirteen sections.
 - S04 complete: 44 questions in modules 06 and 21. Source integrity, frozen Latvian parity, locale catalogs, offline HTML build and Chromium journey passed. Total audited: 676 of 712 across fourteen sections.
 - S05 complete: 36 questions in module 18. Source integrity, frozen Latvian parity, locale catalogs, offline HTML build and Chromium journey passed. Translation audit complete: 712 of 712 questions across all 15 sections.
-- Next action: share the refreshed reviewer HTML and existing PDF guide for human language and clinical review. Run the offline journey on an Android device before release.
+- Technical QA: all 23 active checks passed. Verified the packaged HTML offline, including emergency support, recovery compatibility and 45 viewport and locale combinations. See the [reviewer test plan](superpowers/plans/2026-11-08-reviewer-release-testing.md) for evidence and outstanding checks.
+- Next action: run the physical Android journey, address the toolbar landmark localization, and obtain human language and clinical review.
 
 ## Reviewer package
 

@@ -414,3 +414,7 @@ Reviewed the last 36 questions. Corrected day counts, one-month boundaries, the 
 All 712 questions across 15 sections have passed the translation audit. English and Russian remain drafts pending human language and clinical review. Actual Android device testing is outstanding.
 
 Repository reviewer HTML: SHA-256 `9e93741ebbd74c83191e6c2c3dca59059d31713c5c8287946f5672935272a3d8`. The existing trilingual PDF guide remains applicable. The owner copies the HTML to the shared Drive folder.
+
+### 2026-11-08 · Technical QA baseline
+
+Tested reviewer artifact at c09987a. All 23 active checks passed on Windows. Additional checks on the packaged HTML covered offline recovery, emergency support, old-layout backup migration, hidden answers and 45 viewport and locale combinations. Recorded the untranslated toolbar landmark, retired pilot test failures and Android and human review gates in the [reviewer test plan](superpowers/plans/2026-11-08-reviewer-release-testing.md).
