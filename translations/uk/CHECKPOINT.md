@@ -5,7 +5,7 @@ Updated 8 November 2026, Riga time. Branch `develop`.
 | Scope | Status |
 | --- | --- |
 | Questionnaire source | Latvian v16 in `src/modules/`, baseline `f25a6c1` |
-| Question text | 414 of 712 translated and structurally checked |
+| Question text | 461 of 712 translated and structurally checked |
 | Interface | 126 of 126 keys drafted. Keys, types, placeholders and dated entries checked against Latvian. |
 | Reviewer README | Ukrainian text drafted in `README_REVIEW.uk.md`. Button labels checked against `ui.json`. |
 | Medication form | All 32 strings drafted. Nested keys, saved answer codes and clinician report labels checked. |
@@ -15,7 +15,7 @@ Updated 8 November 2026, Riga time. Branch `develop`.
 
 ## Next batch
 
-Start S15 with module **26** (sexual wellbeing), then 27, 34 and 40.
+Start S07 with module **09** (unwanted thoughts and rituals), then modules 29, 39, 47 and 48.
 
 ## Checkpoint history
 
@@ -38,3 +38,4 @@ Start S15 with module **26** (sexual wellbeing), then 27, 34 and 40.
 - 2026-11-08 · Drafted the remaining 23 S12 questions in modules 24 and 38. Checked age and duration boundaries, the distinction between ongoing patterns and episodes, and the wording around real threats and loss.
 - 2026-11-08 · Drafted 28 S14 questions in modules 20 and 28. Checked the wording on eating patterns, loss of control and worries about health. The remaining four S14 modules are pending.
 - 2026-11-08 · Drafted the remaining 21 S14 questions in modules 36, 37, 44 and 45. Checked duration boundaries and distinctions between eating restrictions, body-image concerns and physical symptoms. S14 is complete.
+- 2026-11-08 · Drafted all 47 S15 questions in modules 26, 27, 34 and 40. Checked cycle and postpartum boundaries, distinctions between personal and family history, and gender and sexuality wording. Flag pregnancy and postpartum safety wording for clinical review.
