@@ -18,7 +18,7 @@ Updated 8 November 2026, Riga time. Active branch: `develop`.
 - S05 complete: 36 questions in module 18. Source integrity, frozen Latvian parity, locale catalogs, offline HTML build and Chromium journey passed. Translation audit complete: 712 of 712 questions across all 15 sections.
 - Technical QA: all 23 active checks passed. Verified the packaged HTML offline, including emergency support, recovery compatibility and 45 viewport and locale combinations. See the [reviewer test plan](superpowers/plans/2026-11-08-reviewer-release-testing.md) for evidence and outstanding checks.
 - Toolbar landmark localization fixed and verified in LV, EN and RU. Rebuilt and tested the repository reviewer HTML.
-- The final expandable section contains the creator byline, feedback email and acknowledgements. Rebuilt and verified the reviewer HTML in all three languages.
+- The final expandable section is titled Feedback and acknowledgements and contains the creator byline and feedback email. Rebuilt and verified the reviewer HTML in all three languages.
 - Next action: run the physical Android journey and obtain human language and clinical review.
 
 ## Reviewer package

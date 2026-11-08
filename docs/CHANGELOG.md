@@ -430,3 +430,7 @@ The start and results screens show the configured project feedback address as a 
 ### 2026-11-08 · Help, feedback and acknowledgements
 
 Grouped the creator byline, project feedback email and acknowledgements in the last expandable section in Latvian, English and Russian. The feedback, layout, locale, build and full offline Chromium checks passed. Verified the collapsed and expanded states on the start and results screens in the packaged HTML at 320 px. Reviewer HTML SHA-256 `8dca22bab083603f9b882a7e1bde51b468b4577e0fd7da6242eb5c740b560166`.
+
+### 2026-11-08 · Feedback and acknowledgements heading
+
+Renamed the final expandable section in all three languages. The locale, feedback and build checks passed. Verified the heading, creator byline and email link in the rebuilt reviewer HTML, SHA-256 `ae2c557fc19152e30fdb5d5868a3ca74066f15b0a1d9803fba7dcc3184ce7fbf`.
