@@ -45,7 +45,7 @@
         }
       },
       "ru": {
-        "title": "Вы неоднократно употребляете в пищу несъедобные вещества, или пища неоднократно возвращается в рот после проглатывания?",
+        "title": "Бывает ли, что Вы неоднократно едите вещества, которые не являются пищей, или еда после проглатывания неоднократно возвращается в рот?",
         "time": "Последние 3 месяца.",
         "choices": {
           "A": "Нет",
@@ -111,19 +111,19 @@
         "time": "The last 3 months.",
         "choices": {
           "A": "I eat substances that are not food.",
-          "B": "Food repeatedly comes back into the mouth without intentionally inducing vomiting",
+          "B": "Food repeatedly comes back into my mouth without me deliberately making myself vomit.",
           "C": "Both experiences",
           "D": "I don't know",
           "E": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Какой из этих случаев относится к вам?",
+        "title": "Что из перечисленного относится к Вам?",
         "time": "Последние 3 месяца.",
         "choices": {
-          "A": "Я употребляю в пищу вещества, которые не являются едой.",
-          "B": "Пища неоднократно возвращается в рот без намеренного вызывания рвоты.",
-          "C": "Оба опыта",
+          "A": "Я ем вещества, которые не являются пищей.",
+          "B": "Еда неоднократно возвращается в рот, хотя я не вызываю рвоту намеренно.",
+          "C": "И то и другое",
           "D": "Я не знаю",
           "E": "Я не хочу отвечать."
         }
@@ -187,7 +187,7 @@
         }
       },
       "en": {
-        "title": "How long does this experience repeat?",
+        "title": "How long has this been happening repeatedly?",
         "time": "Since the beginning.",
         "choices": {
           "A": "Less than a month",
@@ -200,13 +200,13 @@
         }
       },
       "ru": {
-        "title": "Как часто это явление будет повторяться?",
+        "title": "Как давно это повторяется?",
         "time": "С самого начала.",
         "choices": {
           "A": "Менее месяца",
           "B": "1–3 месяца",
           "C": "Более 3 месяцев, но менее года",
-          "D": "год или более",
+          "D": "Год или дольше",
           "E": "Таких трудностей нет.",
           "F": "Я не знаю / Я не помню",
           "G": "Я не хочу отвечать."
@@ -271,23 +271,23 @@
         }
       },
       "en": {
-        "title": "Has your doctor evaluated a possible physical cause or nutritional deficiency?",
+        "title": "Has a doctor assessed whether there might be a physical cause or a nutrient deficiency?",
         "time": "In connection with these difficulties.",
         "choices": {
           "A": "No",
           "B": "Yes, the cause has been determined.",
-          "C": "Yes, the investigation is ongoing.",
+          "C": "Yes, the medical assessment is ongoing.",
           "D": "I don't know",
           "E": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Ваш врач проводил обследование на предмет возможной физической причины или дефицита питательных веществ?",
+        "title": "Проверял ли врач, есть ли возможная физическая причина или дефицит питательных веществ?",
         "time": "В связи с этими трудностями.",
         "choices": {
           "A": "Нет",
           "B": "Да, причина установлена.",
-          "C": "Да, расследование продолжается.",
+          "C": "Да, обследование продолжается.",
           "D": "Я не знаю",
           "E": "Я не хочу отвечать."
         }
@@ -348,7 +348,7 @@
       "en": {
         "title": "Does it cause pain, weight loss, choking, or difficulty eating?",
         "time": "The last 3 months.",
-        "help": "These symptoms should be evaluated by a doctor. Poisoning, choking, or inability to swallow fluids should not wait until the questionnaire is completed.",
+        "help": "A doctor should assess these symptoms. If there is poisoning, choking, or an inability to take in fluids, do not wait until you finish the questionnaire.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -357,9 +357,9 @@
         }
       },
       "ru": {
-        "title": "Вызывает ли это боль, потерю веса, удушье или затруднения при приеме пищи?",
+        "title": "Вызывает ли это боль, снижение веса, поперхивание или трудности с едой?",
         "time": "Последние 3 месяца.",
-        "help": "Эти симптомы должны быть оценены врачом. Отравление, удушье или неспособность глотать жидкости не должны откладываться до заполнения анкеты.",
+        "help": "Эти симптомы должен оценить врач. При отравлении, удушье или невозможности пить не ждите, пока закончите анкету.",
         "choices": {
           "A": "Нет",
           "B": "Да",

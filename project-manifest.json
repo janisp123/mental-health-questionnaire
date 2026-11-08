@@ -518,14 +518,14 @@
     },
     {
       "path": "src/modules/182_MODULE_44_LV_EN_RU_v16.json",
-      "git_blob_sha1": "6f9f5f9f799cce2279a19be4377f49ecca5dd6fa",
-      "bytes": 13041,
+      "git_blob_sha1": "2260b264749383ce643335df7a148e919440e4b4",
+      "bytes": 12953,
       "role": "question-module"
     },
     {
       "path": "src/modules/182_MODULE_45_LV_EN_RU_v16.json",
-      "git_blob_sha1": "79be6bdbacfa03306b09ff7371881b921f854357",
-      "bytes": 11887,
+      "git_blob_sha1": "16f76343afcd77d20a2f07fe67399b01b123d7b7",
+      "bytes": 11931,
       "role": "question-module"
     },
     {
@@ -554,7 +554,7 @@
     },
     {
       "path": "tests/fixtures/181_MODULE_INDEX_v16.json",
-      "git_blob_sha1": "8098f03f950a46b20f0413eca2f07e43ed5e2159",
+      "git_blob_sha1": "86e5a55a130779e7129dd2b9dbb1a0da5d9524d0",
       "bytes": 11906,
       "role": "reference-test-data"
     },

@@ -54,7 +54,7 @@ Drive folder read on this session: HTML modified 14:18, PDF 13:57. Read access w
 | 5 | S10 — Alcohol, nicotine and other substances | 37 | DONE |
 | 6 | S13 — Family, social context and caregiving | 70 | DONE locally |
 | 7 | S12 — Relationships and emotional patterns | 42 | DONE |
-| 8 | S14 — Eating, appearance and health concerns | 49 | IN PROGRESS (39/49) |
+| 8 | S14 — Eating, appearance and health concerns | 49 | DONE |
 | 9 | S15 — Sexuality and reproductive health | 47 | TODO |
 | 10 | S07 — Intrusive thoughts and repetitive habits | 45 | TODO |
 | 11 | S08 — Trauma, loss and life changes | 48 | TODO |
@@ -324,3 +324,9 @@ Reviewed the 12 health-concern questions in English and Russian. Clarified day-c
 ### 2026-11-08 · S14 checkpoint 3 · modules 36 and 37
 
 Reviewed 11 questions on eating restrictions and appearance concerns. Corrected the elapsed-duration question in both drafts and repaired appearance answer labels that referred to skis or asked a question instead of naming a body feature. Preserved Latvian wording, conditions, IDs and answer codes. Source integrity, frozen Latvian parity, source adapter, locale catalogs and the full offline HTML build passed. S14 is at 39 of 49 questions. Next: modules 44 and 45, followed by browser verification and the reviewer HTML refresh.
+
+### 2026-11-08 · S14 complete · modules 44 and 45
+
+Reviewed the remaining 10 questions, completing all 49 in S14. Corrected duration versus future frequency, medical assessment wording, and the existing safety note about poisoning, choking and inability to take in fluids. Clarified the body-odour questions and formal Russian address. Preserved the Latvian source, IDs, answer codes and branching. Source integrity, frozen Latvian parity, locale catalogs, full HTML build and Chromium offline journey passed. Inspected the built HTML for all 49 S14 questions and the corrected appearance, duration and safety wording.
+
+Repository reviewer HTML: SHA-256 `0668b4d7a97c11708db1cef236a0c70b9f0b9cfb8e302e1397b5f1ecd5d632fb`. The existing trilingual PDF guide remains applicable. The owner copies the HTML to the shared Drive folder. Next: S15.
