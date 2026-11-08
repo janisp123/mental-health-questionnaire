@@ -222,9 +222,9 @@ def apply_translation_packs(bundle, packs):
     bundle["languageNames"] = packs
 
 
-def build_bundle():
+def build_bundle(config_path=None):
     """Assemble the complete 48-section bank without copying question sources."""
-    config = read_json(QUESTIONNAIRE / "build.json")
+    config = read_json(config_path or QUESTIONNAIRE / "build.json")
     if config.get("schema") != "questionnaire-build-v1":
         raise ValueError("Invalid questionnaire build configuration")
     packs = config.get("translationPacks", {})
@@ -376,18 +376,31 @@ def main():
     mode.add_argument("--output", type=Path, default=None)
     mode.add_argument("--translation-pack-test", action="store_true",
                       help="write a TEST file in this checkout's dedicated dist folder")
+    mode.add_argument("--candidate", metavar="NAME",
+                      help="build an explicit candidate from src/questionnaire/candidates")
     args = parser.parse_args()
-    data = build_bundle()
+    config_path = None
+    if args.candidate:
+        if not re.fullmatch(r"v[0-9]+\.[0-9]+\.[0-9]+-[a-z][a-z0-9-]*", args.candidate):
+            parser.error("Invalid candidate name")
+        config_path = QUESTIONNAIRE / "candidates" / (args.candidate + ".json")
+        if config_path.resolve() != config_path or not config_path.is_file():
+            parser.error("Unknown candidate: " + args.candidate)
+    data = build_bundle(config_path=config_path)
     locale_suffix = "_".join(data["ui"]).upper()
     output_path = args.output or (ROOT / "dist" / f"QUESTIONNAIRE_{locale_suffix}_NOT_RELEASED.html")
     if args.translation_pack_test:
         output_path = ROOT / "dist" / "translation-pack-test" / "QUESTIONNAIRE_TRANSLATION_PACK_TEST.html"
-        if output_path.resolve() != output_path:
-            parser.error("Test output must stay inside this checkout and cannot use redirected paths")
+    if args.candidate:
+        output_path = (ROOT / "dist" / "candidates" / args.candidate
+                       / f"QUESTIONNAIRE_{locale_suffix}_{args.candidate}.html")
+    isolated = args.translation_pack_test or bool(args.candidate)
+    if isolated and output_path.resolve() != output_path:
+        parser.error("Isolated output must stay inside this checkout and cannot use redirected paths")
     output = make_html(data).encode("utf-8")
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    # Test mode never overwrites an existing file, including a link to another artifact.
-    with output_path.open("xb" if args.translation_pack_test else "wb") as handle:
+    # Isolated builds never overwrite an existing file or a link to another artifact.
+    with output_path.open("xb" if isolated else "wb") as handle:
         handle.write(output)
     print("COMPLETE QUESTIONNAIRE BUILT:", output_path)
     print("SHA256:", hashlib.sha256(output).hexdigest())

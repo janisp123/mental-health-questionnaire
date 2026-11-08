@@ -13,17 +13,10 @@ import build_questionnaire as build
 
 class TranslationPackTests(unittest.TestCase):
     def build_with_ukrainian(self):
-        config = build.QUESTIONNAIRE / "build.json"
-        read = build.read_json
-
-        def read_config(path):
-            data = read(path)
-            if path == config:
-                data["translationPacks"] = {"uk": "Українська"}
-            return data
-
-        with patch.object(build, "read_json", side_effect=read_config):
-            return build.build_bundle()
+        config = build.QUESTIONNAIRE / "candidates" / "v0.2.1-review.json"
+        bundle = build.build_bundle(config_path=config)
+        self.assertEqual(bundle["version"], "0.2.1-review+full-bank")
+        return bundle
 
     def test_disabled_pack_is_never_read(self):
         with patch.object(build, "apply_translation_packs") as load:
@@ -35,6 +28,7 @@ class TranslationPackTests(unittest.TestCase):
     def test_adding_pack_only_adds_localized_data(self):
         default = build.build_bundle()
         enabled = self.build_with_ukrainian()
+        enabled["version"] = default["version"]
         self.assertEqual(enabled.pop("languageNames"), {"uk": "Українська"})
         self.assertEqual(enabled["release_status"].pop("uk"), "DRAFT_NOT_RELEASED")
         ui = enabled["ui"].pop("uk")
@@ -75,6 +69,20 @@ class TranslationPackTests(unittest.TestCase):
         for invalid in ({"text": "Missing marker"}, {"text": "Value {count}", "extra": "?"}, {"text": ["Example {count}"]}):
             with self.subTest(invalid=invalid), self.assertRaises(ValueError):
                 build.check_catalog(reference, invalid, "test")
+
+    def test_candidate_rejects_arbitrary_paths(self):
+        for args, expected in (
+            (["--candidate", "../build"], "Invalid candidate name"),
+            (["--candidate", "v0.2.1-review", "--output", "unused.html"], "not allowed with argument"),
+        ):
+            with self.subTest(args=args):
+                result = subprocess.run(
+                    [sys.executable, str(ROOT / "tools" / "build_questionnaire.py"), *args],
+                    capture_output=True,
+                    text=True,
+                )
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn(expected, result.stderr)
 
     def test_test_build_rejects_custom_output(self):
         result = subprocess.run(
