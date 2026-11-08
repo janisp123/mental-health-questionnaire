@@ -54,7 +54,7 @@ Drive folder read on this session: HTML modified 14:18, PDF 13:57. Read access w
 | 5 | S10 — Alcohol, nicotine and other substances | 37 | DONE |
 | 6 | S13 — Family, social context and caregiving | 70 | DONE locally |
 | 7 | S12 — Relationships and emotional patterns | 42 | DONE |
-| 8 | S14 — Eating, appearance and health concerns | 49 | IN PROGRESS (16/49) |
+| 8 | S14 — Eating, appearance and health concerns | 49 | IN PROGRESS (28/49) |
 | 9 | S15 — Sexuality and reproductive health | 47 | TODO |
 | 10 | S07 — Intrusive thoughts and repetitive habits | 45 | TODO |
 | 11 | S08 — Trauma, loss and life changes | 48 | TODO |
@@ -316,3 +316,7 @@ Repository reviewer HTML: SHA-256 `6004e75f72d30525105da6ca0713e3f228896c158efba
 ### 2026-11-08 · S14 checkpoint 1 · module 20
 
 Reviewed all 16 questions and answer labels in module 20. Corrected Russian wording that asked about the urge to eat rather than eating, day-count choices that could imply a continuous spell, and the zero-episodes answer. Clarified night-eating wording in both drafts and used formal Russian address. Latvian records, answer codes, ordering and logic are unchanged. Source integrity, frozen Latvian parity, source adapter, UI catalogs and offline HTML build passed. The reviewer package remains at S12. Next: module 28.
+
+### 2026-11-08 · S14 checkpoint 2 · module 28
+
+Reviewed the 12 health-concern questions in English and Russian. Clarified day-count responses, wording about medical tests and ongoing health worries, and respectful Russian address. Preserved Latvian wording, conditions, IDs and answer codes. Source integrity, frozen Latvian parity, source adapter, locale catalogs and full offline HTML build passed. S14 is at 28 of 49 questions. Next: module 36. The repository reviewer package remains at S12 until the S14 browser check.
