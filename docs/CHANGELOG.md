@@ -400,3 +400,9 @@ Repository reviewer HTML: SHA-256 `7872e6b68f33678b2865be32408d3cdf9e7dbbcbaa647
 ### 2026-11-08 · S04 checkpoint · module 06
 
 Reviewed 25 questions. Preserved the distinctions among current thoughts, intent, plan, and intentional self-harm with or without a wish to die. Corrected the one-month boundary in both recency questions and clarified the wording about distress and medical care. Latvian records, answer codes, order and conditions were preserved. Source integrity, frozen Latvian parity, source adapter, locale catalogs and offline HTML build passed. Next: module 21.
+
+### 2026-11-08 · S04 complete · module 21
+
+Reviewed the final 19 questions. Clarified wording about dreams versus wakefulness, the timing of unusual experiences, and the distinction between low mood and a diagnosis. Preserved Latvian records, answer codes, order and conditions. Source integrity, frozen Latvian parity, source adapter, locale catalogs, offline build and Chromium offline journey passed. Checked all 44 S04 records in the reviewer HTML. Next: S05.
+
+Repository reviewer HTML: SHA-256 `8446c5e06b1d00f56da3a768e0d98b3541dea060430893efae2fbd26075b7e2b`. The existing trilingual PDF guide remains applicable. The owner copies the HTML to the shared Drive folder.

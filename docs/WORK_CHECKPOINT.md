@@ -14,8 +14,8 @@ Updated 8 November 2026, Riga time. Active branch: `develop`.
 - S08 complete: 48 questions in modules 10, 35, 41 and 42. Source integrity, frozen LV parity, locale catalogs, full offline build and Chromium journey passed. Verified total: 554 of 712 questions across eleven sections.
 - S02 complete: 38 questions in modules 02 and 05. The first nine legacy screening records were preserved. Source integrity, frozen LV parity, locale catalogs, full offline build and Chromium journey passed. Verified total: 592 of 712 questions across twelve sections.
 - S03 complete: 40 questions in modules 03, 04 and 22. Seven legacy screening records were preserved. Source integrity, frozen Latvian parity, locale catalogs, offline HTML build and Chromium journey passed. Total audited: 632 of 712 across thirteen sections.
-- S04 checkpoint: audited 25 questions in module 06. Source integrity, frozen Latvian parity, source adapter, locale catalogs and offline HTML build passed. Total audited: 657 of 712. Reviewer package remains at S03.
-- Next action: audit S04 module 21, then S05.
+- S04 complete: 44 questions in modules 06 and 21. Source integrity, frozen Latvian parity, locale catalogs, offline HTML build and Chromium journey passed. Total audited: 676 of 712 across fourteen sections.
+- Next action: audit S05 module 18.
 
 ## Reviewer package
 
