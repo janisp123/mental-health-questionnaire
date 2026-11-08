@@ -54,7 +54,7 @@ Drive folder read on this session: HTML modified 14:18, PDF 13:57. Read access w
 | 5 | S10 — Alcohol, nicotine and other substances | 37 | DONE |
 | 6 | S13 — Family, social context and caregiving | 70 | DONE locally |
 | 7 | S12 — Relationships and emotional patterns | 42 | DONE |
-| 8 | S14 — Eating, appearance and health concerns | 49 | TODO |
+| 8 | S14 — Eating, appearance and health concerns | 49 | IN PROGRESS (16/49) |
 | 9 | S15 — Sexuality and reproductive health | 47 | TODO |
 | 10 | S07 — Intrusive thoughts and repetitive habits | 45 | TODO |
 | 11 | S08 — Trauma, loss and life changes | 48 | TODO |
@@ -312,3 +312,7 @@ Audited all 19 module 19 questions and their English and Russian options and tim
 Reviewed the remaining 23 questions, completing all 42 in S12. Clarified long-standing patterns and formal Russian address. Corrected the separation-fear frequency scale (more than half of the days) and changed the duration question from a future prediction to elapsed duration in both draft languages. Preserved Latvian source, IDs, option codes, conditions and logic. Source integrity, frozen Latvian parity, source adapter, UI catalogs, full HTML build and Chromium offline journey passed. The built HTML was also inspected for the corrected frequency option in all three languages.
 
 Repository reviewer HTML: SHA-256 `6004e75f72d30525105da6ca0713e3f228896c158efba84827fe803e22e9dd86`. The existing trilingual PDF guide remains applicable. The owner copies the HTML to the shared Drive folder. Next: S14.
+
+### 2026-11-08 · S14 checkpoint 1 · module 20
+
+Reviewed all 16 questions and answer labels in module 20. Corrected Russian wording that asked about the urge to eat rather than eating, day-count choices that could imply a continuous spell, and the zero-episodes answer. Clarified night-eating wording in both drafts and used formal Russian address. Latvian records, answer codes, ordering and logic are unchanged. Source integrity, frozen Latvian parity, source adapter, UI catalogs and offline HTML build passed. The reviewer package remains at S12. Next: module 28.
