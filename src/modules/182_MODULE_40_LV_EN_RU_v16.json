@@ -35,7 +35,7 @@
         }
       },
       "en": {
-        "title": "Is it repeatedly difficult to control sexual behavior, even though it causes significant unwanted consequences?",
+        "title": "Do you repeatedly find it hard to control your sexual behavior even though it has significant unwanted consequences?",
         "time": "Currently.",
         "choices": {
           "A": "No",
@@ -45,7 +45,7 @@
         }
       },
       "ru": {
-        "title": "Трудно ли постоянно контролировать сексуальное поведение, даже если оно приводит к значительным нежелательным последствиям?",
+        "title": "Возникают ли у Вас снова и снова трудности с контролем сексуального поведения, хотя оно приводит к существенным нежелательным последствиям?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Нет",
@@ -120,7 +120,7 @@
           "B": "Relationship difficulties",
           "C": "Financial losses",
           "D": "Health or safety risks",
-          "E": "Mainly shame or inconsistency with my beliefs",
+          "E": "Mainly shame or a conflict with my beliefs",
           "F": "Other consequences",
           "G": "I don't know",
           "H": "I don't want to answer."
@@ -199,7 +199,7 @@
         }
       },
       "en": {
-        "title": "Have you tried repeatedly to reduce this behavior but failed?",
+        "title": "Have you tried several times to reduce this behavior without success?",
         "time": "Currently.",
         "choices": {
           "A": "No",
@@ -209,7 +209,7 @@
         }
       },
       "ru": {
-        "title": "Вы неоднократно пытались уменьшить такое поведение, но безуспешно?",
+        "title": "Пытались ли Вы неоднократно реже так поступать, но у Вас не получилось?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Нет",
@@ -277,7 +277,7 @@
         }
       },
       "en": {
-        "title": "How long will the control difficulties last?",
+        "title": "How long have you had difficulty controlling this behavior?",
         "time": "Currently.",
         "choices": {
           "A": "Less than a month",
@@ -291,7 +291,7 @@
         }
       },
       "ru": {
-        "title": "Как долго продлятся проблемы с управлением?",
+        "title": "Как давно Вам трудно контролировать это поведение?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Менее месяца",
@@ -376,7 +376,7 @@
         }
       },
       "ru": {
-        "title": "Они появляются только в периоды заметного повышения энергии или под воздействием каких-либо веществ?",
+        "title": "Возникают ли эти трудности только в периоды выраженного подъёма энергии или под действием веществ?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Только в периоды повышенной энергии",
@@ -449,7 +449,7 @@
         }
       },
       "ru": {
-        "title": "Хотели бы вы обсудить этот вопрос со своим врачом в частном порядке?",
+        "title": "Хотели бы Вы обсудить эту тему с врачом наедине?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Нет",

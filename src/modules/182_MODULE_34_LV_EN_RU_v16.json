@@ -34,7 +34,7 @@
         }
       },
       "en": {
-        "title": "Would you like to complete the optional section on gender identity, external pressure, and self-perception?",
+        "title": "Would you like to complete the optional section on gender identity, pressure from others, and how you feel?",
         "time": "Currently.",
         "help": "Gender identity or LGBT identity is not a mental illness in itself. This section is optional; you can skip any question.",
         "choices": {
@@ -44,11 +44,11 @@
         }
       },
       "ru": {
-        "title": "Хотите пройти дополнительный раздел, посвященный гендерной идентичности, внешнему давлению и самовосприятию?",
+        "title": "Хотите ли Вы заполнить необязательный раздел о гендерной идентичности, давлении со стороны окружающих и самочувствии?",
         "time": "В настоящее время.",
-        "help": "Гендерная идентичность или идентичность ЛГБТ сами по себе не являются психическим заболеванием. Этот раздел необязателен; вы можете пропустить любой вопрос.",
+        "help": "Гендерная идентичность или принадлежность к ЛГБТ сами по себе не являются психическим заболеванием. Этот раздел добровольный. Вы можете пропустить любой вопрос.",
         "choices": {
-          "A": "Нет, пропустите этот раздел.",
+          "A": "Нет, пропустить этот раздел",
           "B": "Да",
           "C": "Я не хочу отвечать."
         }
@@ -111,21 +111,21 @@
         "title": "Did you feel pressured to accept, hide, reject, or change your gender identity or gender expression?",
         "time": "At any time in life.",
         "choices": {
-          "A": "Adopting an identity or expression that I did not want myself to have",
-          "B": "Hide or deny one's identity or expression",
-          "C": "Change your identity or expression",
+          "A": "Pressure to adopt an identity or expression I did not want",
+          "B": "Pressure to hide or reject my identity or expression",
+          "C": "Pressure to change my identity or expression",
           "D": "There was no such pressure",
           "E": "I don't know",
           "F": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Вы чувствовали давление, заставляющее вас принять, скрыть, отвергнуть или изменить свою гендерную идентичность или гендерное самовыражение?",
+        "title": "Вы чувствовали давление, заставляющее Вас принять, скрыть, отвергнуть или изменить свою гендерную идентичность или гендерное самовыражение?",
         "time": "В любой момент жизни.",
         "choices": {
-          "A": "Принятие идентичности или самовыражения, которого я не хотел бы иметь.",
-          "B": "Скрывать или отрицать свою личность или самовыражение.",
-          "C": "Измените свою личность или самовыражение.",
+          "A": "Давление с целью принятия идентичности или самовыражения, которых я не выбираю",
+          "B": "Давление с целью скрыть или отвергнуть свою идентичность или самовыражение",
+          "C": "Давление с целью изменить свою идентичность или самовыражение",
           "D": "Такого давления не было.",
           "E": "Я не знаю",
           "F": "Я не хочу отвечать."
@@ -214,13 +214,13 @@
         }
       },
       "ru": {
-        "title": "Как вы думаете, откуда взялось это давление?",
+        "title": "Как Вы думаете, откуда взялось это давление?",
         "time": "В любой момент жизни.",
         "choices": {
           "A": "Родители или другие члены семьи",
-          "B": "Партнер",
-          "C": "Друзья или коллеги",
-          "D": "Общинная или религиозная среда",
+          "B": "Партнёр",
+          "C": "Друзья или сверстники",
+          "D": "Сообщество или религиозная среда",
           "E": "Медицинские или другие специалисты",
           "F": "СМИ или социальные сети",
           "G": "Другой источник",
@@ -304,33 +304,33 @@
         }
       },
       "en": {
-        "title": "What gender expression or transition-related changes have you made?",
+        "title": "What changes have you made in connection with gender expression or transition?",
         "time": "At any time in life.",
         "choices": {
-          "A": "Change of name or address",
+          "A": "Changed my name or how people address me",
           "B": "Change in clothing, appearance, or social role",
           "C": "Change of documents",
           "D": "Hormone therapy",
           "E": "Surgical treatment",
-          "F": "Stopping the change or returning to the previous manifestation",
+          "F": "Stopped the changes or returned to my previous gender expression",
           "G": "Other changes",
-          "H": "There are no such changes.",
+          "H": "I have made no such changes",
           "I": "I don't know",
           "J": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Какие изменения, связанные с гендерной идентичностью или трансгендерным переходом, вы внесли?",
+        "title": "Какие изменения, связанные с гендерным самовыражением или переходом, Вы предприняли?",
         "time": "В любой момент жизни.",
         "choices": {
-          "A": "Изменение имени или адреса",
+          "A": "Смена имени или формы обращения",
           "B": "Изменение в одежде, внешности или социальной роли.",
           "C": "Изменение документов",
           "D": "Гормональная терапия",
           "E": "Хирургическое лечение",
-          "F": "Прекращение изменений или возвращение к предыдущему проявлению",
+          "F": "Прекращение изменений или возвращение к прежнему гендерному самовыражению",
           "G": "Другие изменения",
-          "H": "Никаких подобных изменений не произошло.",
+          "H": "Таких изменений не было",
           "I": "Я не знаю",
           "J": "Я не хочу отвечать."
         }
@@ -409,7 +409,7 @@
         "choices": {
           "A": "Totally my choice",
           "B": "Mostly my choice",
-          "C": "Mixed experience: my desire and the pressure of others",
+          "C": "Both my own wishes and pressure from others",
           "D": "Mostly due to pressure from others",
           "E": "Does not apply to me",
           "F": "Difficult to say",
@@ -417,12 +417,12 @@
         }
       },
       "ru": {
-        "title": "В какой степени эти изменения были вашим собственным свободным выбором?",
+        "title": "В какой степени эти изменения были Вашим собственным свободным выбором?",
         "time": "В ходе описанных изменений.",
         "choices": {
           "A": "Это исключительно мой выбор.",
           "B": "В основном мой выбор",
-          "C": "Смешанные чувства: мое желание и давление окружающих.",
+          "C": "И моё собственное желание, и давление со стороны других",
           "D": "В основном из-за давления со стороны окружающих.",
           "E": "Ко мне это не относится",
           "F": "Трудно сказать",
@@ -496,30 +496,30 @@
         }
       },
       "en": {
-        "title": "How did your feelings change after changing your name, address, appearance, or social role?",
+        "title": "How did your well-being change after you changed your name, how people address you, your appearance, or your social role?",
         "time": "After social changes.",
         "choices": {
           "A": "Significantly improved",
           "B": "Slightly improved",
           "C": "Did not change significantly",
-          "D": "Slightly worse",
+          "D": "Worsened slightly",
           "E": "Significantly worsened",
-          "F": "Mixed or different at different times",
+          "F": "Mixed, or different at different times",
           "G": "Does not apply to me",
           "H": "Difficult to say",
           "I": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Как изменились ваши чувства после смены имени, адреса, внешности или социальной роли?",
+        "title": "Как изменилось Ваше самочувствие после смены имени, формы обращения, внешности или социальной роли?",
         "time": "После социальных изменений.",
         "choices": {
-          "A": "Значительно улучшено",
-          "B": "Немного улучшено",
-          "C": "Значительных изменений не произошло.",
-          "D": "Немного хуже",
+          "A": "Значительно улучшилось",
+          "B": "Немного улучшилось",
+          "C": "Существенно не изменилось",
+          "D": "Немного ухудшилось",
           "E": "Значительно ухудшилось",
-          "F": "Смешанные или разные в разное время",
+          "F": "Изменилось неоднозначно или по-разному в разное время",
           "G": "Ко мне это не относится",
           "H": "Трудно сказать",
           "I": "Я не хочу отвечать."
@@ -596,30 +596,30 @@
         }
       },
       "en": {
-        "title": "How did your feelings change after hormone therapy?",
+        "title": "How did your well-being change after you started hormone therapy?",
         "time": "After starting hormone therapy.",
         "choices": {
           "A": "Significantly improved",
           "B": "Slightly improved",
           "C": "Did not change significantly",
-          "D": "Slightly worse",
+          "D": "Worsened slightly",
           "E": "Significantly worsened",
-          "F": "Mixed or different at different times",
+          "F": "Mixed, or different at different times",
           "G": "Does not apply to me",
           "H": "Difficult to say",
           "I": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Как изменилось ваше самочувствие после гормональной терапии?",
+        "title": "Как изменилось Ваше самочувствие после начала гормональной терапии?",
         "time": "После начала гормональной терапии.",
         "choices": {
-          "A": "Значительно улучшено",
-          "B": "Немного улучшено",
-          "C": "Значительных изменений не произошло.",
-          "D": "Немного хуже",
+          "A": "Значительно улучшилось",
+          "B": "Немного улучшилось",
+          "C": "Существенно не изменилось",
+          "D": "Немного ухудшилось",
           "E": "Значительно ухудшилось",
-          "F": "Смешанные или разные в разное время",
+          "F": "Изменилось неоднозначно или по-разному в разное время",
           "G": "Ко мне это не относится",
           "H": "Трудно сказать",
           "I": "Я не хочу отвечать."
@@ -696,30 +696,30 @@
         }
       },
       "en": {
-        "title": "How did your feeling change after surgical treatment?",
+        "title": "How did your well-being change after surgical treatment?",
         "time": "After surgical treatment.",
         "choices": {
           "A": "Significantly improved",
           "B": "Slightly improved",
           "C": "Did not change significantly",
-          "D": "Slightly worse",
+          "D": "Worsened slightly",
           "E": "Significantly worsened",
-          "F": "Mixed or different at different times",
+          "F": "Mixed, or different at different times",
           "G": "Does not apply to me",
           "H": "Difficult to say",
           "I": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Как изменилось ваше самочувствие после хирургического лечения?",
+        "title": "Как изменилось Ваше самочувствие после хирургического лечения?",
         "time": "После хирургического лечения.",
         "choices": {
-          "A": "Значительно улучшено",
-          "B": "Немного улучшено",
-          "C": "Значительных изменений не произошло.",
-          "D": "Немного хуже",
+          "A": "Значительно улучшилось",
+          "B": "Немного улучшилось",
+          "C": "Существенно не изменилось",
+          "D": "Немного ухудшилось",
           "E": "Значительно ухудшилось",
-          "F": "Смешанные или разные в разное время",
+          "F": "Изменилось неоднозначно или по-разному в разное время",
           "G": "Ко мне это не относится",
           "H": "Трудно сказать",
           "I": "Я не хочу отвечать."
@@ -796,30 +796,30 @@
         }
       },
       "en": {
-        "title": "How did your feelings change after stopping the changes or returning to your previous expression?",
-        "time": "After the change is stopped.",
+        "title": "How did your well-being change after you stopped making changes or returned to your previous gender expression?",
+        "time": "After stopping the changes.",
         "choices": {
           "A": "Significantly improved",
           "B": "Slightly improved",
           "C": "Did not change significantly",
-          "D": "Slightly worse",
+          "D": "Worsened slightly",
           "E": "Significantly worsened",
-          "F": "Mixed or different at different times",
+          "F": "Mixed, or different at different times",
           "G": "Does not apply to me",
           "H": "Difficult to say",
           "I": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Как изменились ваши чувства после прекращения изменений или возвращения к прежнему способу их выражения?",
+        "title": "Как изменилось Ваше самочувствие после прекращения изменений или возвращения к прежнему гендерному самовыражению?",
         "time": "После прекращения изменений.",
         "choices": {
-          "A": "Значительно улучшено",
-          "B": "Немного улучшено",
-          "C": "Значительных изменений не произошло.",
-          "D": "Немного хуже",
+          "A": "Значительно улучшилось",
+          "B": "Немного улучшилось",
+          "C": "Существенно не изменилось",
+          "D": "Немного ухудшилось",
           "E": "Значительно ухудшилось",
-          "F": "Смешанные или разные в разное время",
+          "F": "Изменилось неоднозначно или по-разному в разное время",
           "G": "Ко мне это не относится",
           "H": "Трудно сказать",
           "I": "Я не хочу отвечать."
@@ -894,7 +894,7 @@
         }
       },
       "en": {
-        "title": "When did the change that you most want to discuss happen?",
+        "title": "When did the changes you most want to discuss now take place?",
         "time": "Currently.",
         "choices": {
           "A": "Within the last month (inclusive)",
@@ -908,7 +908,7 @@
         }
       },
       "ru": {
-        "title": "Когда произошли изменения, которые вы больше всего хотите обсудить?",
+        "title": "Когда произошли изменения, которые Вы больше всего хотите обсудить?",
         "time": "В настоящее время.",
         "choices": {
           "A": "В течение последнего месяца (включительно)",
@@ -988,7 +988,7 @@
         }
       },
       "en": {
-        "title": "What else could have affected your feelings at that time?",
+        "title": "What else might have affected your well-being at that time?",
         "time": "During the described changes.",
         "choices": {
           "A": "Support or acceptance",
@@ -1002,11 +1002,11 @@
         }
       },
       "ru": {
-        "title": "Что ещё могло повлиять на ваши чувства в тот момент?",
+        "title": "Что ещё могло повлиять на Ваше самочувствие в тот период?",
         "time": "В ходе описанных изменений.",
         "choices": {
           "A": "Поддержка или принятие",
-          "B": "Отказ, дискриминация или конфликт",
+          "B": "Отвержение, дискриминация или конфликты",
           "C": "Преимущества или побочные эффекты лечения",
           "D": "Другие проблемы со здоровьем или принимаемые лекарства",
           "E": "Изменения в работе, жилье или финансовом положении",
@@ -1084,7 +1084,7 @@
         }
       },
       "ru": {
-        "title": "Вам сейчас нужна поддержка или личная беседа с врачом по этому вопросу?",
+        "title": "Хотите ли Вы сейчас получить поддержку или обсудить эту тему с врачом наедине?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Нет",

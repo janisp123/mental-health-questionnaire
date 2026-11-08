@@ -55,7 +55,7 @@ Drive folder read on this session: HTML modified 14:18, PDF 13:57. Read access w
 | 6 | S13 — Family, social context and caregiving | 70 | DONE locally |
 | 7 | S12 — Relationships and emotional patterns | 42 | DONE |
 | 8 | S14 — Eating, appearance and health concerns | 49 | DONE |
-| 9 | S15 — Sexuality and reproductive health | 47 | IN PROGRESS (29/47) |
+| 9 | S15 — Sexuality and reproductive health | 47 | DONE |
 | 10 | S07 — Intrusive thoughts and repetitive habits | 45 | TODO |
 | 11 | S08 — Trauma, loss and life changes | 48 | TODO |
 | 12 | S02 — Mood and energy | 38 | TODO |
@@ -338,3 +338,9 @@ Reviewed all 10 questions and answer labels in module 26. Distinguished asking f
 ### 2026-11-08 · S15 checkpoint 2 · module 27
 
 Reviewed 19 questions about hormonal and reproductive health. Fixed the Russian psychosis response that attributed the experience to the specialist, the cycle response that incorrectly referred to commitments, and the family-history note that referred to the respondent instead of relatives. Clarified the postpartum time ranges and who is in the respondent's care. Preserved Latvian records, conditions, IDs and answer codes. Source integrity, frozen Latvian parity, source adapter, locale catalogs and full offline HTML build passed. S15 is at 29 of 47 questions. Next: modules 34 and 40. The reviewer build remains at S14.
+
+### 2026-11-08 · S15 complete · modules 34 and 40
+
+Reviewed the remaining 18 questions, completing all 47 in S15. Corrected form of address versus physical address, gender expression versus identity, peers versus coworkers, and elapsed duration versus future duration. Preserved voluntariness, Latvian records, IDs, options and branching. Source integrity, frozen Latvian parity, source adapter, locale catalogs, full HTML build and Chromium offline journey passed. Inspected the built HTML for all 47 S15 questions and key corrected labels.
+
+Repository reviewer HTML: SHA-256 `d8173b058cdd1575caa110e058df793ff4177d0c1ea46b712bbae8b0e2c9200f`. The existing trilingual PDF guide remains applicable. The owner copies the HTML to the shared Drive folder. Next: S07.
