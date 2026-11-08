@@ -274,7 +274,7 @@
       "section": 39,
       "name": "182_MODULE_39_LV_EN_RU_v16.json",
       "question_count": 7,
-      "sha256": "338eaadf1ab18963a0145c45ccb3751a9b2a27dc14882ef0d8aee42d797521b1",
+      "sha256": "2500ebe9b1bc33468ec59970b63e5f04e28612a8705e5488255791a7f77707d6",
       "first_id": "M39_01"
     },
     {
@@ -330,14 +330,14 @@
       "section": 47,
       "name": "182_MODULE_47_LV_EN_RU_v16.json",
       "question_count": 6,
-      "sha256": "869bd3c56634d8b2574e99f7ab6ca339a8f9fda116768c191eefa3d7e7752f9d",
+      "sha256": "7496ee15a3368d1275b5e9abe95a118893398343fbe6e1d719f7e7c70be233a2",
       "first_id": "M47_01"
     },
     {
       "section": 48,
       "name": "182_MODULE_48_LV_EN_RU_v16.json",
       "question_count": 3,
-      "sha256": "57cb88a75c707ede4cf1d8fdd95fb828fc1ca10a5fe30175ce10d956afbc350d",
+      "sha256": "873c38a5bb453136032fb545e9cf569c2fae5e2798a2355627387f37ef1befd3",
       "first_id": "M48_01"
     }
   ],

@@ -50,11 +50,11 @@
         "time": "Currently.",
         "help": "The answers do not constitute a diagnosis. Sexual orientation, gender identity, and mutually acceptable sexual interests are not, in themselves, mental disorders. Physical complaints should not be automatically explained by psychological causes.",
         "choices": {
-          "A": "Difficulty controlling urine or bowel movements",
-          "B": "Unusual, persistent dissatisfaction with the ownership of a body part",
+          "A": "Difficulty controlling urination or bowel movements",
+          "B": "Unusual, persistent dissatisfaction with a body part being part of your own body",
           "C": "Sexual urges or behaviors that cause distress or concern about consent and safety",
-          "D": "Unexplained seizures, weakness, or sensory disturbances",
-          "E": "Difficulty accurately telling your doctor your health history",
+          "D": "Unexplained episodes, weakness, or changes in sensation",
+          "E": "Difficulty giving your doctor an accurate health history",
           "F": "Another sensitive issue",
           "G": "None of the above",
           "H": "I don't know",
@@ -62,16 +62,16 @@
         }
       },
       "ru": {
-        "title": "Хотели бы вы поговорить наедине со специалистом по какому-либо из этих вопросов?",
+        "title": "Хотели бы Вы поговорить наедине со специалистом по какому-либо из этих вопросов?",
         "time": "В настоящее время.",
         "help": "Ответы не являются диагнозом. Сексуальная ориентация, гендерная идентичность и взаимоприемлемые сексуальные интересы сами по себе не являются психическими расстройствами. Физические жалобы не следует автоматически объяснять психологическими причинами.",
         "choices": {
           "A": "Трудности с контролем мочеиспускания или дефекации.",
-          "B": "Необычное, устойчивое недовольство обладанием частью тела.",
-          "C": "Сексуальные влечения или поведение, вызывающие беспокойство или опасения по поводу согласия и безопасности.",
-          "D": "Необъяснимые судороги, слабость или нарушения чувствительности.",
+          "B": "Необычное, стойкое недовольство тем, что какая-то часть тела принадлежит Вам",
+          "C": "Сексуальные влечения или поведение, которые причиняют страдания или вызывают опасения по поводу согласия и безопасности",
+          "D": "Необъяснимые приступы, слабость или нарушения чувствительности",
           "E": "Трудности с точным изложением истории болезни вашему врачу.",
-          "F": "Ещё один деликатный вопрос",
+          "F": "Другой деликатный вопрос",
           "G": "Ничего из перечисленного",
           "H": "Я не знаю",
           "I": "Я не хочу отвечать."
@@ -134,7 +134,7 @@
         }
       },
       "en": {
-        "title": "Did this difficulty start suddenly or is there a recent significant change?",
+        "title": "Did this difficulty start suddenly, or has it changed significantly recently?",
         "time": "The last days or weeks.",
         "choices": {
           "A": "No",
@@ -144,7 +144,7 @@
         }
       },
       "ru": {
-        "title": "Эти трудности возникли внезапно или произошли значительные изменения в последнее время?",
+        "title": "Эта трудность началась внезапно или заметно изменилась в последнее время?",
         "time": "Последние дни или недели.",
         "choices": {
           "A": "Нет",
@@ -208,7 +208,7 @@
         }
       },
       "ru": {
-        "title": "Вам в настоящее время нужна помощь для защиты себя или других лиц в связи с этой проблемой?",
+        "title": "Нужна ли Вам сейчас помощь, чтобы из-за этой проблемы защитить себя или кого-то ещё?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Нет",

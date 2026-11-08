@@ -107,23 +107,23 @@
         }
       },
       "en": {
-        "title": "What is happening again?",
+        "title": "What repeats?",
         "time": "Currently.",
         "choices": {
           "A": "Movements",
           "B": "Sounds or words",
-          "C": "Both movement and sound",
+          "C": "Both movements and sounds",
           "D": "I don't know",
           "E": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Что опять происходит?",
+        "title": "Что именно повторяется?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Движения",
           "B": "Звуки или слова",
-          "C": "И движение, и звук",
+          "C": "И движения, и звуки",
           "D": "Я не знаю",
           "E": "Я не хочу отвечать."
         }
@@ -184,18 +184,18 @@
         "title": "When did it first start?",
         "time": "Currently.",
         "choices": {
-          "A": "Childhood up to 18 years",
+          "A": "In childhood, before age 18",
           "B": "In adulthood",
           "C": "I don't know",
           "D": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Когда это началось?",
+        "title": "Когда это впервые началось?",
         "time": "В настоящее время.",
         "choices": {
-          "A": "Детский возраст до 18 лет",
-          "B": "Взрослая жизнь",
+          "A": "В детстве, до 18 лет",
+          "B": "Во взрослом возрасте",
           "C": "Я не знаю",
           "D": "Я не хочу отвечать."
         }
@@ -251,7 +251,7 @@
         }
       },
       "en": {
-        "title": "Did the onset or exacerbation coincide with changes in medications, substance use, or health?",
+        "title": "Did these movements or sounds start or become more pronounced around the time of a change in medication, substance use, or health?",
         "time": "Currently.",
         "choices": {
           "A": "No",
@@ -261,7 +261,7 @@
         }
       },
       "ru": {
-        "title": "Совпадало ли начало или обострение заболевания с изменениями в приеме лекарств, употреблении психоактивных веществ или состоянии здоровья?",
+        "title": "Совпало ли появление или усиление этих движений или звуков с изменениями в приёме лекарств, употреблении веществ или состоянии здоровья?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Нет",
@@ -329,21 +329,21 @@
         }
       },
       "en": {
-        "title": "How much does it cause pain, injury, or interfere with daily life?",
+        "title": "To what extent do these movements or sounds cause pain or injury, or interfere with daily life?",
         "time": "Currently.",
         "choices": {
           "A": "Not at all",
           "B": "A little",
           "C": "Moderately",
-          "D": "Severely",
-          "E": "Very severely",
+          "D": "A lot",
+          "E": "Very much",
           "F": "Does not apply to me",
           "G": "I don't know",
           "H": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Насколько сильно это причиняет боль, травму или мешает повседневной жизни?",
+        "title": "Насколько эти движения или звуки причиняют боль, приводят к травмам или мешают повседневной жизни?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Совсем нет",
@@ -440,7 +440,7 @@
           "A": "Менее месяца",
           "B": "1–3 месяца",
           "C": "Более 3 месяцев, но менее года",
-          "D": "год или более",
+          "D": "Год или дольше",
           "E": "Таких трудностей нет.",
           "F": "Я не знаю / Я не помню",
           "G": "Я не хочу отвечать."

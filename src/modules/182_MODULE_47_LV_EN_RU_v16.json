@@ -36,7 +36,7 @@
         }
       },
       "en": {
-        "title": "Do you have recurring, uncontrollable urges to steal unnecessary things or set objects on fire?",
+        "title": "Do you repeatedly feel an urge to steal things you do not need or to set objects on fire, and find it hard to control that urge?",
         "time": "Last 12 months.",
         "help": "Details do not need to be described. A single action does not determine the diagnosis.",
         "choices": {
@@ -47,7 +47,7 @@
         }
       },
       "ru": {
-        "title": "У вас бывают повторяющиеся, неконтролируемые порывы красть ненужные вещи или поджигать предметы?",
+        "title": "Возникает ли у Вас снова и снова желание украсть ненужные вещи или поджечь предметы, и трудно ли сдерживать это желание?",
         "time": "Последние 12 месяцев.",
         "help": "Нет необходимости описывать детали. Одно действие не определяет диагноз.",
         "choices": {
@@ -112,23 +112,23 @@
         }
       },
       "en": {
-        "title": "Which tendency applies to you?",
+        "title": "Which urge applies to you?",
         "time": "Last 12 months.",
         "choices": {
-          "A": "Stealing things that are not needed for use or profit",
-          "B": "Set objects on fire",
+          "A": "An urge to steal things I don’t need for use or profit",
+          "B": "An urge to set objects on fire",
           "C": "Both",
           "D": "I don't know",
           "E": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Какая тенденция относится к вам?",
+        "title": "Какое из этих желаний относится к Вам?",
         "time": "Последние 12 месяцев.",
         "choices": {
-          "A": "Кража вещей, которые не нужны для использования или получения прибыли.",
-          "B": "Поджечь предметы",
-          "C": "Обе",
+          "A": "Желание украсть вещи, которые мне не нужны ни для использования, ни для заработка",
+          "B": "Желание поджечь предметы",
+          "C": "И то и другое",
           "D": "Я не знаю",
           "E": "Я не хочу отвечать."
         }
@@ -186,7 +186,7 @@
         }
       },
       "en": {
-        "title": "Does tension build before the action, but there is temporary relief afterward?",
+        "title": "Does tension build before you act, followed by brief relief?",
         "time": "Last 12 months.",
         "choices": {
           "A": "No",
@@ -260,19 +260,19 @@
         }
       },
       "en": {
-        "title": "Under what circumstances do these tendencies or actions arise?",
+        "title": "In what circumstances do these urges or actions occur?",
         "time": "Last 12 months.",
         "choices": {
           "A": "Under the influence of substances",
           "B": "During periods of markedly increased energy",
-          "C": "With a pre-thought-out practical purpose",
-          "D": "Also outside the above circumstances",
+          "C": "With a practical aim planned in advance",
+          "D": "Also in other circumstances",
           "E": "I do not know / difficult to say",
           "F": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "При каких обстоятельствах возникают эти тенденции или действия?",
+        "title": "В каких обстоятельствах появляются эти желания или происходят такие действия?",
         "time": "Последние 12 месяцев.",
         "choices": {
           "A": "Под воздействием веществ",
@@ -410,21 +410,21 @@
         }
       },
       "en": {
-        "title": "How much do these tendencies or actions cause problems in your daily life?",
+        "title": "How much do these urges or actions cause problems in your daily life?",
         "time": "The past 28 days.",
         "choices": {
           "A": "Not at all",
           "B": "A little",
           "C": "Moderately",
-          "D": "Severely",
-          "E": "Very severely",
+          "D": "A lot",
+          "E": "Very much",
           "F": "Does not apply to me",
           "G": "I do not know / difficult to say",
           "H": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Насколько эти склонности или действия создают проблемы в вашей повседневной жизни?",
+        "title": "Насколько эти желания или действия создают проблемы в Вашей повседневной жизни?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Совсем нет",

@@ -56,7 +56,7 @@ Drive folder read on this session: HTML modified 14:18, PDF 13:57. Read access w
 | 7 | S12 — Relationships and emotional patterns | 42 | DONE |
 | 8 | S14 — Eating, appearance and health concerns | 49 | DONE |
 | 9 | S15 — Sexuality and reproductive health | 47 | DONE |
-| 10 | S07 — Intrusive thoughts and repetitive habits | 45 | IN PROGRESS (29/45) |
+| 10 | S07 — Intrusive thoughts and repetitive habits | 45 | DONE |
 | 11 | S08 — Trauma, loss and life changes | 48 | TODO |
 | 12 | S02 — Mood and energy | 38 | TODO |
 | 13 | S03 — Anxiety, panic-like episodes and stress | 40 | TODO |
@@ -352,3 +352,9 @@ Reviewed all 17 questions and answer labels. Preserved the distinction between h
 ### 2026-11-08 · S07 checkpoint 2 · module 29
 
 Reviewed all 12 questions about repetitive habits. Clarified skin picking, hair pulling, interference with everyday activities and exact duration boundaries. Preserved the frozen Latvian records, IDs, answer codes and branching. Source integrity, Latvian parity, source adapter, locale catalogs and the full offline HTML build passed. S07 is at 29 of 45 questions. Next: modules 39, 47 and 48, then browser checks and the reviewer HTML refresh.
+
+### 2026-11-08 · S07 complete · modules 39, 47 and 48
+
+Reviewed the remaining 16 questions, completing all 45 in S07. Clarified age of onset, movements and sounds, and urges that are hard to control. The translation no longer treats the movements as an established disease or limits unexplained episodes to convulsions. Preserved the Latvian source, answer codes and branching. Source integrity, frozen Latvian parity, source adapter, locale catalogs, full HTML build and Chromium offline journey passed. Inspected the built HTML for all 45 S07 questions and key corrected labels.
+
+Repository reviewer HTML: SHA-256 `fefb5156df1bb3c924393708ca6230584e898572d80c8329a3f4bc3ad45c40c2`. The existing trilingual PDF guide remains applicable. The owner copies the HTML to the shared Drive folder. Next: S08.
