@@ -3,4 +3,13 @@
 .report-identity{margin:0 0 8pt}.report-identity p{margin:2pt 0}.write-in{display:inline-block;width:75mm;height:12pt;border-bottom:1px solid #555;vertical-align:baseline}.write-in-date{width:35mm}.report-counts{font-weight:700}
 .feedback-report pre{font:inherit;white-space:pre-wrap;overflow-wrap:anywhere;margin:0}
 @media screen{.feedback-report{display:block;padding:14px;border-radius:9px}.report-page .report-actions a{overflow-wrap:anywhere}}
+/* Keep vertical space in the report, where browser headers and footers cannot use it. */
+@page questionnaire-report{size:A4;margin:0 12mm}
+@media print{
+ main:has(.report-page){
+  page:questionnaire-report;
+  padding:12mm 0;
+  box-decoration-break:clone;
+ }
+}
 @media print{.report-page{border:0;border-radius:0;padding:0;margin:0;background:#fff;color:#111}.report-page>h2,.report-actions{display:none!important}.report-preview{display:block;border:0;border-radius:0;padding:0}}

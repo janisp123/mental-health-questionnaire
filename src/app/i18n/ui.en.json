@@ -95,6 +95,7 @@
     "guideBody": "Open the downloaded HTML file in a browser; it will not work in preview mode. A single choice is saved in the open questionnaire; for multiple choices or text, press “Save & Next”. Save progress to a file before taking a break. You can keep the file on your phone or computer. It is not encrypted, so share it only with people you trust or healthcare professionals. Do not post it on social media or anywhere public. You decide what to discuss with a professional. For an accuracy review, skip questions that seem fine; flag questions that seem incorrect or unclear and choose a reason. At the end, prepare the report and select “Print / save PDF” to return it for review. On a PC, hold Ctrl and scroll the mouse wheel up or down to make the text larger or smaller. On the results screen, you can choose a report language separately from the questionnaire language. You can review the project feedback report, save it as a PDF and email it to the project address.",
     "notesTitle": "Latest changes and future plans",
     "notesHistory": [
+      "08.11.2026 14:01 Riga time — removed the local questionnaire file path from printed reports.",
       "08.11.2026 13:56 Riga time — project feedback can be previewed and saved as a PDF.",
       "08.11.2026 13:47 Riga time — added a report language choice on the results screen.",
       "08.11.2026 13:37 Riga time — grouped the ten latest changes and future plans in one section.",
@@ -103,8 +104,7 @@
       "08.11.2026 13:27 Riga time — added a use statement to the footer.",
       "08.11.2026 13:17 Riga time — clarified the intended use in the footer.",
       "08.11.2026 13:11 Riga time — added PC zoom instructions.",
-      "08.11.2026 13:07 Riga time — the Latvian interface now uses formal address throughout.",
-      "08.11.2026 13:04 Riga time — updated the feedback invitation and added a contributor heading."
+      "08.11.2026 13:07 Riga time — the Latvian interface now uses formal address throughout."
     ],
     "coverageNote": "Counts cover applicable questions. Answers hidden by changed conditions remain in the saved file but are not included here.",
     "autoHint": "Choose one answer to save it in the open questionnaire and continue.",

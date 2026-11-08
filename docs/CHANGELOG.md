@@ -482,3 +482,7 @@ The results screen lets patients choose the clinician report language independen
 ### 2026-11-08 · Project feedback PDF
 
 Replaced the clipboard button with a visible feedback report and Print / save PDF. The report displays the project email and instructions for manually sending the PDF. Tested that flagged comments and the contact address appear while synthetic questionnaire answers stay out. The screen, feedback, locale, report, offline Chromium and build checks passed. Verified PDFs in all three languages from the packaged reviewer HTML, SHA-256 `28b5e7160b7a1f4a3e0ca7d0efddd1eb2ccfc36f00924f103d176b67e814f5c7`.
+
+### 2026-11-08 · Keep local file paths out of PDFs
+
+The clinician and feedback print layouts preserve spacing inside each page instead of giving the browser space for its automatic headers and footers. Reproduced the path in the previous HTML and verified its absence in both rebuilt PDFs, including all pages with browser headers and footers enabled. The locale, full build and offline Chromium checks passed. Reviewer HTML SHA-256 `98b50ec80c665ec5bb7c4d476f706f824949ab0c6f0cb4eb0d9d99d93a45ab39`.
