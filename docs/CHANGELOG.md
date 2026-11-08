@@ -458,3 +458,7 @@ Removed the translation draft notices from the reviewer HTML. Added the Ctrl and
 ### 2026-11-08 · Questionnaire footer wording
 
 Kept the question counts, removed the reference-language and technical-review wording from the footer, and added the non-diagnostic and professional interpretation note. Moved the creator credit inline. The locale catalog and build checks passed. Verified the footer offline in all three languages. Reviewer HTML SHA-256 `04e478523d7a9126a34ab1ef0ec2b2bd1c0808b0dddeffdb47c1400abb956fda`.
+
+### 2026-11-08 · Free non-commercial use wording
+
+Added a localized statement after the inline creator credit that anyone can use the questionnaire for free for non-commercial purposes. The locale and build checks passed. Verified placement in the offline reviewer HTML in all three languages. Reviewer HTML SHA-256 `2f6b6a4a443c3c4dd0a8fd0c57659944c9f154a1d334f6c08e8e733429ba4488`.
