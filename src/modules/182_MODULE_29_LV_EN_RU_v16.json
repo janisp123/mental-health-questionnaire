@@ -37,7 +37,7 @@
         }
       },
       "en": {
-        "title": "Do you repeatedly pick your skin until it develops wounds or visible changes?",
+        "title": "Do you repeatedly pick at your skin to the point of causing sores or visible changes?",
         "time": "The past 28 days.",
         "choices": {
           "A": "No",
@@ -48,12 +48,12 @@
         }
       },
       "ru": {
-        "title": "Ковыряете ли вы кожу повторно до ран или видимых изменений?",
+        "title": "Бывает ли, что Вы снова и снова ковыряете кожу до появления ранок или заметных изменений?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -107,7 +107,7 @@
         }
       },
       "en": {
-        "title": "Over the past 28 days, did you repeatedly pull out hair or eyebrows to the point of hair loss or skin damage?",
+        "title": "Over the past 28 days, did you repeatedly pull out hair from your head or eyebrows, leaving patches of missing hair or damaging your skin?",
         "time": "The past 28 days.",
         "choices": {
           "A": "No",
@@ -118,12 +118,12 @@
         }
       },
       "ru": {
-        "title": "Выдёргивали ли вы за последние 28 дней волосы или брови повторно, так что появлялись участки без волос или повреждения кожи?",
+        "title": "За последние 28 дней Вы неоднократно выдёргивали волосы на голове или бровях до появления участков без волос или повреждений кожи?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -193,7 +193,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -263,7 +263,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -325,7 +325,7 @@
         "time": "The past 28 days.",
         "choices": {
           "A": "Skin picking",
-          "B": "Pulling out hair or eyebrows",
+          "B": "Pulling out hair from my head or eyebrows",
           "C": "Accumulating possessions or difficulty parting with them",
           "D": "Another repetitive habit",
           "E": "No difficulties of this kind",
@@ -338,8 +338,8 @@
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Ковыряние кожи",
-          "B": "Выдёргивание волос или бровей",
-          "C": "Накопление вещей или трудности с расставанием с ними",
+          "B": "Выдёргивание волос на голове или бровях",
+          "C": "Накопление вещей или трудности, когда нужно с ними расстаться",
           "D": "Другая повторяющаяся привычка",
           "E": "Таких трудностей нет",
           "F": "Трудно сказать",
@@ -410,12 +410,12 @@
         }
       },
       "ru": {
-        "title": "Пытались ли вы уменьшить эту привычку, но безуспешно?",
+        "title": "Пытались ли Вы реже делать то, что описали, но у Вас не получилось?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -469,7 +469,7 @@
         }
       },
       "en": {
-        "title": "Does the habit become more pronounced during stress?",
+        "title": "Does this habit become more pronounced when you are stressed?",
         "time": "The past 28 days.",
         "choices": {
           "A": "No",
@@ -485,7 +485,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -539,7 +539,7 @@
         }
       },
       "en": {
-        "title": "Over the past 28 days, did the selected habit cause physical injury?",
+        "title": "Over the past 28 days, did the habit you selected cause a physical injury?",
         "time": "The past 28 days.",
         "choices": {
           "A": "No",
@@ -555,7 +555,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -609,7 +609,7 @@
         }
       },
       "en": {
-        "title": "Does this habit delay or interfere with your work, study or sleep?",
+        "title": "Does this habit interfere with your work, studies, or sleep?",
         "time": "The past 28 days.",
         "choices": {
           "A": "No",
@@ -625,7 +625,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -690,12 +690,12 @@
         }
       },
       "ru": {
-        "title": "Скрываете ли вы эту привычку от близких?",
+        "title": "Скрываете ли Вы эту привычку от близких?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -771,8 +771,8 @@
         "choices": {
           "A": "Такой привычки нет",
           "B": "Менее 15 минут",
-          "C": "От 15 минут до менее 1 часа",
-          "D": "От 1 часа до менее 3 часов",
+          "C": "15 минут или больше, но меньше 1 часа",
+          "D": "1 час или больше, но меньше 3 часов",
           "E": "3 часа или больше",
           "F": "Трудно сказать",
           "G": "Не хочу отвечать."
@@ -843,8 +843,8 @@
           "A": "Not at all",
           "B": "A little",
           "C": "Moderately",
-          "D": "Severely",
-          "E": "Very severely",
+          "D": "A lot",
+          "E": "Very much",
           "F": "Does not apply to me",
           "G": "Difficult to say",
           "H": "Prefer not to answer."

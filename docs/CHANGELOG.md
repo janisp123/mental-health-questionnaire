@@ -56,7 +56,7 @@ Drive folder read on this session: HTML modified 14:18, PDF 13:57. Read access w
 | 7 | S12 — Relationships and emotional patterns | 42 | DONE |
 | 8 | S14 — Eating, appearance and health concerns | 49 | DONE |
 | 9 | S15 — Sexuality and reproductive health | 47 | DONE |
-| 10 | S07 — Intrusive thoughts and repetitive habits | 45 | IN PROGRESS (17/45) |
+| 10 | S07 — Intrusive thoughts and repetitive habits | 45 | IN PROGRESS (29/45) |
 | 11 | S08 — Trauma, loss and life changes | 48 | TODO |
 | 12 | S02 — Mood and energy | 38 | TODO |
 | 13 | S03 — Anxiety, panic-like episodes and stress | 40 | TODO |
@@ -348,3 +348,7 @@ Repository reviewer HTML: SHA-256 `d8173b058cdd1575caa110e058df793ff4177d0c1ea46
 ### 2026-11-08 · S07 checkpoint 1 · module 09
 
 Reviewed all 17 questions and answer labels. Preserved the distinction between helpful routines and actions the respondent feels compelled to repeat, clarified day counts and time boundaries, and improved formal Russian address. Frozen Latvian records, IDs, option codes and branching are unchanged. Source integrity, Latvian parity, source adapter, locale catalogs and full offline HTML build passed. The reviewer package remains at S15. Next: module 29.
+
+### 2026-11-08 · S07 checkpoint 2 · module 29
+
+Reviewed all 12 questions about repetitive habits. Clarified skin picking, hair pulling, interference with everyday activities and exact duration boundaries. Preserved the frozen Latvian records, IDs, answer codes and branching. Source integrity, Latvian parity, source adapter, locale catalogs and the full offline HTML build passed. S07 is at 29 of 45 questions. Next: modules 39, 47 and 48, then browser checks and the reviewer HTML refresh.
