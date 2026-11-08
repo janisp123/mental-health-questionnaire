@@ -16,17 +16,20 @@ const escape = value => String(value ?? "").replace(/&/g,"&amp;").replace(/</g,"
 const results = screens.results({
   label,btn,escape,counts:{answered:2,skipped:1,unanswered:3,completed:3},
   selected:"",feedbackText:"Synthetic project feedback only",
+  reportLanguageOptions:'<option value="lv">Latviešu</option>',
 });
 assert.match(results,/Completed <b>3<\/b>/);
 assert.doesNotMatch(results,/Open|unanswered|Synthetic section|review@example\.test/);
 assert.match(results,/Synthetic project feedback only/);
 assert.match(results,/data-act="copyFeedback"/);
 assert.match(results,/data-act="doctor"/);
+assert.match(results,/<select id="report-language"><option value="lv">Latviešu<\/option><\/select>/);
 
 const report = screens.reportPage({
-  heading:"Doctor report",markup:"<p>Synthetic report</p>",label,btn,escape,
+  heading:"Doctor report",locale:"lv",markup:"<p>Synthetic report</p>",btn,escape,
 });
 assert.match(report,/Synthetic report/);
+assert.match(report,/class="report-preview" lang="lv"/);
 assert.match(report,/data-act="print"/);
 assert.match(report,/data-act="back"/);
 assert.match(report,/data-act="sections"/);

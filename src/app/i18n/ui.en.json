@@ -22,6 +22,7 @@
     "saveBackup": "Save progress to file",
     "restoreBackup": "Resume from file",
     "specialist": "Prepare report for clinician",
+    "reportLanguage": "Report language",
     "copyDoctor": "Copy report for clinician",
     "print": "Print / save PDF",
     "downloadReport": "Download readable report (.html)",
@@ -93,9 +94,10 @@
     "dismissSupport": "Close message",
     "tools": "File and questionnaire actions",
     "guideTitle": "How to use this questionnaire",
-    "guideBody": "Open the downloaded HTML file in a browser; it will not work in preview mode. A single choice is saved in the open questionnaire; for multiple choices or text, press “Save & Next”. Save progress to a file before taking a break. You can keep the file on your phone or computer. It is not encrypted, so share it only with people you trust or healthcare professionals. Do not post it on social media or anywhere public. You decide what to discuss with a professional. For an accuracy review, skip questions that seem fine; flag questions that seem incorrect or unclear and choose a reason. At the end, prepare the report and select “Print / save PDF” to return it for review. On a PC, hold Ctrl and scroll the mouse wheel up or down to make the text larger or smaller.",
+    "guideBody": "Open the downloaded HTML file in a browser; it will not work in preview mode. A single choice is saved in the open questionnaire; for multiple choices or text, press “Save & Next”. Save progress to a file before taking a break. You can keep the file on your phone or computer. It is not encrypted, so share it only with people you trust or healthcare professionals. Do not post it on social media or anywhere public. You decide what to discuss with a professional. For an accuracy review, skip questions that seem fine; flag questions that seem incorrect or unclear and choose a reason. At the end, prepare the report and select “Print / save PDF” to return it for review. On a PC, hold Ctrl and scroll the mouse wheel up or down to make the text larger or smaller. On the results screen, you can choose a report language separately from the questionnaire language.",
     "notesTitle": "Latest changes and future plans",
     "notesHistory": [
+      "08.11.2026 13:47 Riga time — added a report language choice on the results screen.",
       "08.11.2026 13:37 Riga time — grouped the ten latest changes and future plans in one section.",
       "08.11.2026 13:33 Riga time — added the project’s future plans.",
       "08.11.2026 13:29 Riga time — the footer says the questionnaire is free for everyone to use.",
@@ -104,8 +106,7 @@
       "08.11.2026 13:11 Riga time — added PC zoom instructions.",
       "08.11.2026 13:07 Riga time — the Latvian interface now uses formal address throughout.",
       "08.11.2026 13:04 Riga time — updated the feedback invitation and added a contributor heading.",
-      "08.11.2026 13:01 Riga time — added a creator credit at the end of the footer.",
-      "08.11.2026 12:59 Riga time — simplified the Feedback and acknowledgements section to the contact line."
+      "08.11.2026 13:01 Riga time — added a creator credit at the end of the footer."
     ],
     "coverageNote": "Counts cover applicable questions. Answers hidden by changed conditions remain in the saved file but are not included here.",
     "autoHint": "Choose one answer to save it in the open questionnaire and continue.",

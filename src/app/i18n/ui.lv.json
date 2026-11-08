@@ -22,6 +22,7 @@
     "saveBackup": "Saglabāt progresu failā",
     "restoreBackup": "Turpināt no faila",
     "specialist": "Sagatavot pārskatu speciālistam",
+    "reportLanguage": "Pārskata valoda",
     "copyDoctor": "Kopēt pārskatu speciālistam",
     "print": "Drukāt / saglabāt PDF",
     "downloadReport": "Lejupielādēt lasāmu pārskatu (.html)",
@@ -93,9 +94,10 @@
     "dismissSupport": "Aizvērt ziņu",
     "tools": "Faila un anketas darbības",
     "guideTitle": "Kā lietot anketu",
-    "guideBody": "Atveriet lejupielādēto HTML failu pārlūkā. Priekšskatījumā tas nedarbojas. Vienas atbildes izvēle tiek saglabāta atvērtajā anketā. Vairākām atbildēm un teksta laukiem nospiediet “Saglabāt un tālāk”. Pirms pauzes saglabājiet progresu failā. Saglabāto failu varat turēt savā ierīcē. Tas nav šifrēts, tāpēc kopīgojiet to tikai ar uzticamiem cilvēkiem vai veselības aprūpes speciālistu. Neievietojiet to sociālajos tīklos vai citviet publiski. Jūs izvēlaties, ko pārrunāt ar speciālistu. Precizitātes pārskatīšanai izlaidiet jautājumus, kas šķiet atbilstoši. Kļūdainos vai neskaidros jautājumus atzīmējiet un izvēlieties iemeslu. Beigās sagatavojiet pārskatu un izvēlieties “Drukāt / saglabāt PDF”, lai nosūtītu PDF pārskatīšanai. Datorā turiet nospiestu Ctrl taustiņu un ritiniet peles ritenīti uz augšu vai leju, lai palielinātu vai samazinātu teksta izmēru.",
+    "guideBody": "Atveriet lejupielādēto HTML failu pārlūkā. Priekšskatījumā tas nedarbojas. Vienas atbildes izvēle tiek saglabāta atvērtajā anketā. Vairākām atbildēm un teksta laukiem nospiediet “Saglabāt un tālāk”. Pirms pauzes saglabājiet progresu failā. Saglabāto failu varat turēt savā ierīcē. Tas nav šifrēts, tāpēc kopīgojiet to tikai ar uzticamiem cilvēkiem vai veselības aprūpes speciālistu. Neievietojiet to sociālajos tīklos vai citviet publiski. Jūs izvēlaties, ko pārrunāt ar speciālistu. Precizitātes pārskatīšanai izlaidiet jautājumus, kas šķiet atbilstoši. Kļūdainos vai neskaidros jautājumus atzīmējiet un izvēlieties iemeslu. Beigās sagatavojiet pārskatu un izvēlieties “Drukāt / saglabāt PDF”, lai nosūtītu PDF pārskatīšanai. Datorā turiet nospiestu Ctrl taustiņu un ritiniet peles ritenīti uz augšu vai leju, lai palielinātu vai samazinātu teksta izmēru. Rezultātu ekrānā varat izvēlēties pārskata valodu neatkarīgi no anketas valodas.",
     "notesTitle": "Pēdējās izmaiņas un turpmākie plāni",
     "notesHistory": [
+      "08.11.2026 13:47 pēc Rīgas laika — rezultātu ekrānā pievienota pārskata valodas izvēle.",
       "08.11.2026 13:37 pēc Rīgas laika — vienuviet apkopotas desmit jaunākās izmaiņas un turpmākie plāni.",
       "08.11.2026 13:33 pēc Rīgas laika — pievienoti projekta turpmākie plāni.",
       "08.11.2026 13:29 pēc Rīgas laika — kājenē norādīts, ka ikviens var izmantot anketu bez maksas.",
@@ -104,8 +106,7 @@
       "08.11.2026 13:11 pēc Rīgas laika — pievienota norāde par teksta izmēra maiņu datorā.",
       "08.11.2026 13:07 pēc Rīgas laika — latviešu saskarnē lietota pieklājīga uzruna “Jūs”.",
       "08.11.2026 13:04 pēc Rīgas laika — precizēts aicinājums sniegt atsauksmes un pievienots pateicību virsraksts.",
-      "08.11.2026 13:01 pēc Rīgas laika — kājenes beigās pievienota norāde par anketas autoru.",
-      "08.11.2026 12:59 pēc Rīgas laika — sadaļā “Atsauksmes un pateicības” atstāta saziņas informācija."
+      "08.11.2026 13:01 pēc Rīgas laika — kājenes beigās pievienota norāde par anketas autoru."
     ],
     "coverageNote": "Skaits aptver piemērojamos jautājumus. Mainītu nosacījumu dēļ paslēptās atbildes paliek progresa failā, bet šeit nav iekļautas.",
     "autoHint": "Izvēlieties vienu atbildi, lai saglabātu to atvērtajā anketā un turpinātu.",

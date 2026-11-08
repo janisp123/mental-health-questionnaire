@@ -22,6 +22,7 @@ Updated 8 November 2026, Riga time. Active branch: `develop`.
 - The footer shows question counts, professional interpretation wording, the inline creator credit and a statement that the questionnaire is free for everyone to use. Verified in the rebuilt reviewer HTML.
 - The Latvian HTML interface uses polite address. All 712 frozen Latvian questions were screened for informal address and source parity passed. The PDF guide now uses formal Latvian address.
 - Reviewer HTML and PDF include PC zoom instructions in all three languages. The HTML omits the translation draft notices.
+- The results screen offers a separate report language. Offline Chromium verified all three report languages, unchanged answers and PDF output.
 - Next action: run the physical Android journey and obtain human language and clinical review.
 
 ## Reviewer package

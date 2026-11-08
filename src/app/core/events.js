@@ -18,6 +18,7 @@ root.QuestionnaireEvents = {
   app.addEventListener("change",event=>{
    const element=event.target;
    if(element.id==="language"){handlers.language(element.value);return;}
+   if(element.id==="report-language"){handlers.reportLanguage(element.value);return;}
    if(element.hasAttribute("data-med-field")){handlers.medicineChange();return;}
    if(element.hasAttribute("data-module")){handlers.moduleChange();return;}
    if(element.id==="restore"){handlers.restore(element.files[0]);return;}

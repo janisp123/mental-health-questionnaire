@@ -474,3 +474,7 @@ Added professional review and follow-up revisions, and additional translations b
 ### 2026-11-08 · Latest changes and future plans
 
 Moved the future plans beneath the ten latest dated updates in the expandable updates panel. Feedback and acknowledgements have their own panel. The locale, feedback, layout and build checks passed. Verified order and mobile-width layout in all three languages in the offline reviewer HTML, SHA-256 `fcf6d557acba6577c183a3b15dc446f88d22d2394e69cf9e44185c11cb211da4`.
+
+### 2026-11-08 · Separate clinician report language
+
+The results screen lets patients choose the clinician report language independently of the questionnaire language. It defaults to the current questionnaire language. Question and answer labels are rendered in the chosen language, and typed text stays as entered. Screen, event, locale, full offline journey and build checks passed. Verified all three report languages and generated PDFs from the packaged HTML, SHA-256 `39f562880a83b55257b3f355a1174136ea8e2dbb8278abadf8f923cd114338f4`.

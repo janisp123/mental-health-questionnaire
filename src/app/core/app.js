@@ -10,6 +10,7 @@ const {groups,optionalIds,byId,all}=model;
 let pendingSingleAnswer=null;
 const app=document.getElementById("app");
 const report=window.QuestionnaireReports;
+const languageNames={lv:"Latviešu",en:"English",ru:"Русский"};
 let state={lang:"lv",screen:"start",currentId:null,answers:{},feedback:{},feedbackOpen:false,selected:[],sectionDraft:[],sectionConfirmed:false,pendingSectionEnd:null,notice:"",draft:null};
 function ui(){return data.ui[state.lang];}
 function esc(s){return report.esc(s);}
@@ -22,9 +23,11 @@ function active(){return model.active(state);}
 function current(){return model.current(state);}
 function isSafety(q){return model.isSafety(q);}
 function countGroup(group){return model.countGroup(state,group);}
+function languageOptions(selected){
+ return Object.entries(languageNames).map(([id,name])=>'<option value="'+id+'"'+(id===selected?" selected":"")+">"+name+"</option>").join("");
+}
 function header(){
- const opts=["lv","en","ru"].map(id=>'<option value="'+id+'"'+(id===state.lang?" selected":"")+">"+({lv:"Latviešu",en:"English",ru:"Русский"}[id])+"</option>").join("");
- return '<header>'+(state.screen==="start"?'<h1>'+label("project")+'</h1>':"")+'<label class="lang">'+label("language")+' <select id="language">'+opts+'</select></label></header>';
+ return '<header>'+(state.screen==="start"?'<h1>'+label("project")+'</h1>':"")+'<label class="lang">'+label("language")+' <select id="language">'+languageOptions(state.lang)+'</select></label></header>';
 }
 function supportLinks(includeEmergency){
  const line='<a href="tel:116123">'+label("supportLink")+'</a>';
@@ -125,13 +128,13 @@ function renderResults(){
  const selected="";
  const feedbackText=report.projectFeedbackText(all,state.feedback,state.lang,data.ui,data.presentation.feedbackContactEmail,data.version);
  return window.QuestionnaireScreens.results({
-  label,escape:esc,btn,counts:v,selected,feedbackText,
+  label,escape:esc,btn,counts:v,selected,feedbackText,reportLanguageOptions:languageOptions(state.reportLang??state.lang),
  });
 }
 function renderReport(){
- const q=reportQuestions(),u=ui();
- const markup=report.doctorMarkup(q,state.answers,state.selected,state.lang,u,data.groups,data.presentation,state.feedback,all,data.ui);
- return window.QuestionnaireScreens.reportPage({heading:u.doctorHeading,markup,escape:esc,label,btn});
+ const locale=state.reportLang??state.lang;
+ const markup=report.doctorMarkup(reportQuestions(),state.answers,state.selected,locale,data.ui[locale],data.groups,data.presentation,state.feedback,all,data.ui);
+ return window.QuestionnaireScreens.reportPage({heading:ui().doctorHeading,locale,markup,escape:esc,label,btn});
 }
 function renderSectionComplete(){
  return '<section class="card"><h2>'+label("sectionCompleteTitle")+'</h2><p>'+label("sectionCompleteBody")+'</p>'+btn("saveAndContinue","saveAndContinue","primary")+btn("continueWithoutSaving","continueWithoutSaving")+'</section>';
@@ -271,6 +274,7 @@ function restore(file){
    state.sectionConfirmed=restored.sectionConfirmed;
    state.support=null;state.supportSeen=[];
    if(restored.lang)state.lang=restored.lang;
+   state.reportLang=null;
    state.currentId=restored.currentId;
    if(state.reviewQueue)state.currentId=state.reviewQueue[0];
    const pending=active().find(q=>groups.get(q.module).required&&!state.answers[q.id]);
@@ -371,6 +375,7 @@ window.QuestionnaireEvents.bind(app,{
   if(next)setQuestion(next.id);
  },
  language:value=>{state.lang=value;state.notice="";render();},
+ reportLanguage:value=>{if(Object.hasOwn(languageNames,value))state.reportLang=value;},
  medicineChange:readMedicineControls,
  moduleChange:()=>{state.sectionDraft=Array.from(app.querySelectorAll("[data-module]:checked"),el=>el.dataset.module);render();},
  restore,

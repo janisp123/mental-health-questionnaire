@@ -231,11 +231,19 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert "Synthetic question note" in project_feedback
     assert "SYNTHETIC NAME" not in project_feedback
     assert "SYNTHETIC MEDICINE" not in project_feedback
+    report_language = page.get_by_role("combobox", name="Report language")
+    assert report_language.input_value() == "en"
+    report_language.select_option("lv")
+    assert page.locator("#language").input_value() == "en"
     act(page, "doctor")
     report = page.locator(".report-preview").evaluate("(el) => el.textContent")
     assert "SYNTHETIC NAME" in report
     assert "SYNTHETIC MEDICINE" in report
-    report_locale = page.locator("html").get_attribute("lang")
+    assert page.locator("html").get_attribute("lang") == "en"
+    report_locale = page.locator(".report-preview").get_attribute("lang")
+    assert report_locale == "lv"
+    assert data["ui"]["lv"]["doctorHeading"] in report
+    assert question_by_id["M23_01"]["translations"]["lv"]["choices"]["B"] in report
     assert report.index("SYNTHETIC NAME") < report.index(data["ui"][report_locale]["feedbackSectionHeading"])
     assert data["ui"][report_locale]["reportCountSelected"] in report
     assert data["ui"][report_locale]["reportCountDone"] in report
