@@ -390,3 +390,9 @@ Reviewed 12 questions and preserved the seven legacy screening records in all la
 ### 2026-11-08 · S03 checkpoint 2 · module 04
 
 Reviewed 12 questions. Clarified how to count days, aligned the wording with the 28-day window, and distinguished panic-like episodes from questions that explicitly refer to panic attacks. Preserved Latvian records, IDs, answer codes and branching. Source integrity, frozen Latvian parity, source adapter, locale catalogs and full offline HTML build passed. The reviewer package remains at S02. Next: S03 module 22 and the reviewer HTML refresh.
+
+### 2026-11-08 · S03 complete · module 22
+
+Reviewed the final 16 questions, completing all 40 in S03. Clarified the day counts for exhaustion, the wording about recovery after rest, and the Russian choices about the effects of world events. Preserved the distinction between wishing for an end to uncertainty, emotional suffering or one’s life. Preserved Latvian records, IDs, answer codes and branching. Source integrity, frozen Latvian parity, source adapter, locale catalogs, full offline HTML build and Chromium offline journey passed. Checked all 40 S03 records in the reviewer HTML.
+
+Repository reviewer HTML: SHA-256 `7872e6b68f33678b2865be32408d3cdf9e7dbbcbaa647e60182de816d0448b34`. The existing trilingual PDF guide remains applicable. The owner copies the HTML to the shared Drive folder. Next: S04.
