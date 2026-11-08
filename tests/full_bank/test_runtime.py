@@ -236,11 +236,41 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     act(page, "previous")
     assert qid(page) == "M33_02"
     act(page, "results")
+    assert page.locator('[data-act="feedbackReport"]').count() == 0
+    report_language = page.get_by_role("combobox", name="Report language")
+    assert report_language.input_value() == "en"
+    report_language.select_option("lv")
+    assert page.locator("#language").input_value() == "en"
+    act(page, "doctor")
+    preview = page.locator(".report-preview")
+    assert preview.is_visible()
+    page.set_viewport_size({"width": 320, "height": 844})
+    assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
+    page.set_viewport_size({"width": 390, "height": 844})
+    report = preview.inner_text()
+    assert "SYNTHETIC NAME" in report
+    assert "SYNTHETIC MEDICINE" in report
+    assert page.locator("html").get_attribute("lang") == "en"
+    assert preview.get_attribute("lang") == "lv"
+    assert data["ui"]["lv"]["doctorHeading"] in report
+    assert question_by_id["M23_01"]["translations"]["lv"]["choices"]["B"] in report
+    assert question_by_id["M23_01"]["translations"]["en"]["title"] not in report
+    assert data["ui"]["lv"]["reportCountSelected"] in report
+    assert data["ui"]["lv"]["reportCountDone"] in report
+    assert data["ui"]["lv"]["reportCountSkip"] in report
+    assert "Synthetic question note" not in report
+    assert page.locator("#reportText").count() == 0
+    assert page.locator('[data-act="print"]').count() == 1
+    assert page.locator('[data-act="back"]').count() == 1
+    assert page.locator('[data-act="sections"]').count() == 1
+    assert page.locator('[data-act="resultScreen"]').count() == 1
+    assert page.locator('[data-act="copyDoctor"],[data-act="downloadReport"]').count() == 0
     act(page, "feedbackReport")
     feedback_preview = page.locator(".report-preview")
     assert feedback_preview.is_visible()
     project_feedback = feedback_preview.inner_text()
     assert "Synthetic question note" in project_feedback
+    assert question_by_id["M23_01"]["translations"]["en"]["title"] in project_feedback
     assert "SYNTHETIC NAME" not in project_feedback
     assert "SYNTHETIC MEDICINE" not in project_feedback
     assert data["presentation"]["feedbackContactEmail"] in project_feedback
@@ -249,30 +279,12 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert not page.locator('[data-act="print"]').is_visible()
     assert len(page.pdf(format="A4")) > 1000
     page.emulate_media(media="screen")
-    act(page, "resultScreen")
-    report_language = page.get_by_role("combobox", name="Report language")
-    assert report_language.input_value() == "en"
-    report_language.select_option("lv")
-    assert page.locator("#language").input_value() == "en"
     act(page, "doctor")
-    report = page.locator(".report-preview").evaluate("(el) => el.textContent")
-    assert "SYNTHETIC NAME" in report
-    assert "SYNTHETIC MEDICINE" in report
-    assert page.locator("html").get_attribute("lang") == "en"
-    report_locale = page.locator(".report-preview").get_attribute("lang")
-    assert report_locale == "lv"
-    assert data["ui"]["lv"]["doctorHeading"] in report
-    assert question_by_id["M23_01"]["translations"]["lv"]["choices"]["B"] in report
-    assert report.index("SYNTHETIC NAME") < report.index(data["ui"][report_locale]["feedbackSectionHeading"])
-    assert data["ui"][report_locale]["reportCountSelected"] in report
-    assert data["ui"][report_locale]["reportCountDone"] in report
-    assert data["ui"][report_locale]["reportCountSkip"] in report
-    assert "Synthetic question note" in report
-    assert page.locator("#reportText").count() == 0
-    assert page.locator('[data-act="print"]').count() == 1
-    assert page.locator('[data-act="back"]').count() == 1
-    assert page.locator('[data-act="sections"]').count() == 1
-    assert page.locator('[data-act="copyDoctor"],[data-act="downloadReport"]').count() == 0
+    assert preview.get_attribute("lang") == "lv"
+    assert preview.inner_text() == report
+    act(page, "resultScreen")
+    assert report_language.input_value() == "lv"
+    act(page, "doctor")
     page.emulate_media(media="print")
     assert page.locator(".report-preview").is_visible()
     assert not page.locator("footer").is_visible()

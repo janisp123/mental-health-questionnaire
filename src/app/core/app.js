@@ -137,8 +137,9 @@ function renderReport(){
   return window.QuestionnaireScreens.reportPage({locale:state.lang,markup:'<pre>'+esc(text)+'</pre>',escape:esc,label,btn,feedbackEmail});
  }
  const locale=state.reportLang??state.lang;
- const markup=report.doctorMarkup(reportQuestions(),state.answers,state.selected,locale,data.ui[locale],data.groups,data.presentation,state.feedback,all,data.ui);
- return window.QuestionnaireScreens.reportPage({heading:ui().doctorHeading,locale,markup,escape:esc,label,btn});
+ const markup=report.doctorMarkup(reportQuestions(),state.answers,locale,data.ui[locale],data.presentation);
+ return window.QuestionnaireScreens.reportPage({heading:ui().doctorHeading,locale,markup,escape:esc,label,btn,
+  hasFeedback:Object.keys(state.feedback).length>0});
 }
 function renderSectionComplete(){
  return '<section class="card"><h2>'+label("sectionCompleteTitle")+'</h2><p>'+label("sectionCompleteBody")+'</p>'+btn("saveAndContinue","saveAndContinue","primary")+btn("continueWithoutSaving","continueWithoutSaving")+'</section>';
@@ -146,7 +147,9 @@ function renderSectionComplete(){
 function render(){
  const keepSupportFocus=document.activeElement?.id==="support-message";
  document.documentElement.lang=state.lang;
- document.title=state.screen==="report"&&state.reportView==="feedback"?ui().feedbackProjectHeading:ui().project;
+ if(state.screen==="report"){
+  document.title=state.reportView==="feedback"?ui().feedbackProjectHeading:data.ui[state.reportLang??state.lang].doctorHeading;
+ }else document.title=ui().project;
  const body=state.screen==="start"?renderStart():state.screen==="selector"?renderSelector():state.screen==="question"?renderQuestion():state.screen==="sectionComplete"?renderSectionComplete():state.screen==="report"?renderReport():renderResults();
  app.innerHTML='<main>'+(state.screen==="report"?"":header()+supportCard())+(state.notice?'<p role="status" class="notice">'+esc(state.notice)+'</p>':"")+body+(state.screen==="sectionComplete"||state.screen==="report"?"":footer())+navigation()+'</main>';
  if(state.focusSupport||keepSupportFocus){document.getElementById('support-message')?.focus({preventScroll:true});state.focusSupport=false;}
@@ -325,7 +328,7 @@ function action(key){
  if(key==="end"){skipRest();return;}
  if(key==="sections"){showSections();return;}
  if(key==="results"){state.screen="results";render();return;}
- if(key==="doctor"||key==="feedbackReport"){
+ if(key==="doctor"||(key==="feedbackReport"&&state.screen==="report"&&Object.keys(state.feedback).length)){
    state.reportView=key==="doctor"?"doctor":"feedback";
    state.screen="report";state.notice="";render();window.scrollTo(0,0);return;
  }
@@ -342,10 +345,7 @@ function action(key){
    }return;
  }
  if(key==="backup"){downloadBackup();state.notice=u.backupSaved;render();return;}
- if(key==="print"){
-   if(state.screen!=="report"){state.reportView="doctor";state.screen="report";render();}
-   window.print();return;
- }
+ if(key==="print"&&state.screen==="report")window.print();
 }
 function singleAnswer(code){
  const q=current();if(!q||q.multi||q.type==="shortText")return;

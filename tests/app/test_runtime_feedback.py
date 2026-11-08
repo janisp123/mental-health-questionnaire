@@ -68,12 +68,16 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert not contact.is_visible()
     panel.locator("summary").click()
     assert contact.is_visible()
-    act(page, "feedbackReport")
-    assert page.locator(".report-preview").is_visible()
-    assert page.locator('.report-page a[href="mailto:test@example.invalid"]').is_visible()
+    assert page.locator('[data-act="feedbackReport"]').count() == 0
+    act(page, "doctor")
+    preview = page.locator(".report-preview")
+    assert preview.is_visible()
+    assert "Option A" in preview.inner_text()
+    assert "Synthetic feedback only" not in preview.inner_text()
     assert page.locator('[data-act="print"]').is_visible()
+    assert page.locator('[data-act="feedbackReport"]').count() == 0
     act(page, "resultScreen")
-    assert page.locator('[data-act="feedbackReport"]').is_visible()
+    assert page.locator('[data-act="doctor"]').is_visible()
     assert not errors, errors
     assert not network, network
     browser.close()

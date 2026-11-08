@@ -73,27 +73,23 @@ function identityText(ui,identity={}) {
 function countText(counts,ui) {
  return [ui.reportCountSelected+": "+counts.selected,ui.reportCountDone+": "+counts.answered,ui.reportCountSkip+": "+counts.skipped].join(" · ");
 }
-function doctorText(questions,answers,selected,locale,ui,groups,presentation,feedback={},allQuestions=questions,catalogs={lv:ui,en:ui,ru:ui},identity={}) {
+function doctorText(questions,answers,locale,ui,presentation,identity={}) {
  const counts=counters(questions,answers);
- const items=feedbackEntries(allQuestions,feedback,catalogs);
- const responses=entries(questions,answers,locale,presentation,catalogs[locale]?.medicine).map(e=>e.plain);
- return [identityText(ui,identity),"",ui.doctorHeading,ui.doctorDisclaimer,countText(counts,ui),"",...responses,
-  ...(items.length?["","",ui.feedbackSectionHeading,...items.map(item=>item.plain)]:[])].join("\n");
+ const responses=entries(questions,answers,locale,presentation,ui.medicine).map(e=>e.plain);
+ return [identityText(ui,identity),"",ui.doctorHeading,ui.doctorDisclaimer,countText(counts,ui),"",...responses].join("\n");
 }
-function doctorMarkup(questions,answers,selected,locale,ui,groups,presentation,feedback={},allQuestions=questions,catalogs={lv:ui,en:ui,ru:ui},identity={}) {
+function doctorMarkup(questions,answers,locale,ui,presentation,identity={}) {
  const counts=counters(questions,answers);
- const items=feedbackEntries(allQuestions,feedback,catalogs);
  const name=[identity.name,identity.surname].map(value=>String(value||"").trim()).filter(Boolean).join(" ");
  const nameValue=name?esc(name):'<span class="write-in"></span>';
  const dateHtml='<p><strong>'+esc(ui.reportDate)+':</strong> <span class="write-in write-in-date"></span></p>';
  const summary="<p class=\"report-counts\">"+esc(countText(counts,ui))+"</p>";
- const responses=entries(questions,answers,locale,presentation,catalogs[locale]?.medicine).map(e=>e.html.replace(/\n/g,"<br>")).join("");
- const feedbackHtml=items.length?"<hr><h2>"+esc(ui.feedbackSectionHeading)+"</h2>"+items.map(item=>item.html).join(""):"";
- return '<div class="report-identity"><p><strong>'+esc(ui.reportName)+':</strong> '+nameValue+'</p>'+dateHtml+'</div><h1>'+esc(ui.doctorHeading)+'</h1><p>'+esc(ui.doctorDisclaimer)+'</p>'+summary+'<hr>'+responses+feedbackHtml;
+ const responses=entries(questions,answers,locale,presentation,ui.medicine).map(e=>e.html.replace(/\n/g,"<br>")).join("");
+ return '<div class="report-identity"><p><strong>'+esc(ui.reportName)+':</strong> '+nameValue+'</p>'+dateHtml+'</div><h1>'+esc(ui.doctorHeading)+'</h1><p>'+esc(ui.doctorDisclaimer)+'</p>'+summary+'<hr>'+responses;
 }
-function doctorHtml(questions,answers,selected,locale,ui,groups,presentation,feedback={},allQuestions=questions,catalogs={lv:ui,en:ui,ru:ui},identity={}) {
+function doctorHtml(questions,answers,locale,ui,presentation,identity={}) {
  return '<!doctype html><html lang="'+esc(locale)+'"><head><meta charset="utf-8"><title>'+esc(ui.doctorHeading)+
- '</title><style>@page{size:A4;margin:12mm}body{font:10pt/1.3 Arial,sans-serif;color:#000;background:#fff;margin:0 auto;max-width:186mm}p{margin:0 0 5pt}hr{border:0;border-top:1px solid #777;margin:7pt 0}strong{font-weight:700}.write-in{display:inline-block;width:75mm;height:12pt;border-bottom:1px solid #555;vertical-align:baseline}.write-in-date{width:35mm}.report-identity{margin-bottom:10pt}.report-counts{font-weight:700}</style></head><body>'+doctorMarkup(questions,answers,selected,locale,ui,groups,presentation,feedback,allQuestions,catalogs,identity)+'</body></html>';
+ '</title><style>@page{size:A4;margin:12mm}body{font:10pt/1.3 Arial,sans-serif;color:#000;background:#fff;margin:0 auto;max-width:186mm}p{margin:0 0 5pt}hr{border:0;border-top:1px solid #777;margin:7pt 0}strong{font-weight:700}.write-in{display:inline-block;width:75mm;height:12pt;border-bottom:1px solid #555;vertical-align:baseline}.write-in-date{width:35mm}.report-identity{margin-bottom:10pt}.report-counts{font-weight:700}</style></head><body>'+doctorMarkup(questions,answers,locale,ui,presentation,identity)+'</body></html>';
 }
 window.QuestionnaireReports={entries,medicineValues,feedbackEntries,projectFeedbackText,readable,counters,doctorText,doctorMarkup,doctorHtml,esc};
 })();

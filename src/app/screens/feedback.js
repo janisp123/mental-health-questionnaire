@@ -10,6 +10,6 @@ screens.feedback = function ({q,t,state,ui,label,escape,btn}) {
   ["other",label("feedbackOther")]];
  return '<fieldset id="question-feedback" class="feedback-panel"><legend>'+label("feedbackTitle")+'</legend>'+choices.map(([key,text])=>
   '<label class="choice feedback-choice"><input type="checkbox" data-feedback-reason="'+escape(key)+'"'+(selected.has(key)?' checked':'')+'> <span>'+text+'</span></label>'
- ).join("")+'<label class="field-label">'+label("feedbackComment")+' <textarea id="feedback-comment" maxlength="500">'+escape(saved.comment||"")+'</textarea></label><p class="muted">'+label("optionalText")+'</p><p class="muted">'+label("feedbackPrivacy")+'</p>'+btn("feedbackContinue","feedbackContinue","primary-inline")+(state.feedback[q.id]?btn("removeFeedback","removeFeedback"):"")+'</fieldset>';
+ ).join("")+'<label class="field-label">'+label("feedbackComment")+' <textarea id="feedback-comment" aria-describedby="feedback-privacy" maxlength="500">'+escape(saved.comment||"")+'</textarea></label><p class="muted">'+label("optionalText")+'</p><p id="feedback-privacy" class="muted">'+label("feedbackPrivacy")+'</p>'+btn("feedbackContinue","feedbackContinue","primary-inline")+(state.feedback[q.id]?btn("removeFeedback","removeFeedback"):"")+'</fieldset>';
 };
 })(globalThis);

@@ -2,7 +2,7 @@
 .report-preview h1{font-size:17pt;margin:0 0 7pt}.report-preview h2{font-size:12pt;margin:9pt 0 4pt}.report-preview p{margin:3pt 0}.report-preview hr{border:0;border-top:1px solid #999;margin:7pt 0}
 .report-identity{margin:0 0 8pt}.report-identity p{margin:2pt 0}.write-in{display:inline-block;width:75mm;height:12pt;border-bottom:1px solid #555;vertical-align:baseline}.write-in-date{width:35mm}.report-counts{font-weight:700}
 .feedback-report pre{font:inherit;white-space:pre-wrap;overflow-wrap:anywhere;margin:0}
-@media screen{.feedback-report{display:block;padding:14px;border-radius:9px}.report-page .report-actions a{overflow-wrap:anywhere}}
+@media screen{.report-preview{display:block;padding:14px;border-radius:9px}.report-preview .write-in{max-width:100%}.report-page .report-actions a{overflow-wrap:anywhere}}
 /* Keep vertical space in the report, where browser headers and footers cannot use it. */
 @page questionnaire-report{size:A4;margin:0 12mm}
 @media print{

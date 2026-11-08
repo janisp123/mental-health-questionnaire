@@ -1,18 +1,23 @@
 /* Report rules are explicit and must never produce a score or coded export. */
 const fs=require('fs'),vm=require('vm'),assert=require('assert');
 const cp=require('child_process');
-const data=JSON.parse(cp.execFileSync('python',['-c','import sys,json;sys.path.insert(0,"tools");from build_questionnaire import build_bundle;print(json.dumps(build_bundle()))'],{maxBuffer:8e6}));
+const data=JSON.parse(cp.execFileSync('python',['-c','import sys,json;from pathlib import Path;sys.path.insert(0,"tools");from build_questionnaire import build_bundle;print(json.dumps(build_bundle(config_path=Path("src/questionnaire/candidates/v0.2.1-review.json"))))'],{maxBuffer:8e6}));
 const context={window:{}};vm.runInNewContext(fs.readFileSync('src/app/reports/reports.js','utf8'),context);
 const r=context.window.QuestionnaireReports,qs=data.groups.flatMap(g=>g.questions),q=id=>qs.find(q=>q.id===id);
-const answers={M33_01:{kind:'text',value:'Synthetic'},M06_02:{kind:'choice',codes:['B'],status:'answered'},M06_01:{kind:'choice',codes:['A'],status:'answered'},M02_09:{kind:'choice',codes:['A'],status:'answered'},M23_11:{kind:'choice',codes:['A'],status:'answered'},M02_20:{kind:'skip',status:'skipped'}};
+const answers={M33_01:{kind:'text',value:'PRIVATE_MEDICAL_SENTINEL'},M06_02:{kind:'choice',codes:['B'],status:'answered'},M06_01:{kind:'choice',codes:['A'],status:'answered'},M02_09:{kind:'choice',codes:['A'],status:'answered'},M23_11:{kind:'choice',codes:['A'],status:'answered'},M02_20:{kind:'skip',status:'skipped'}};
 assert.deepEqual(Object.keys(data.presentation).sort(),['boldAnswers','feedbackContactEmail','purpose','questions','schema','topicOrder']);
 assert(!/"[^"]*weight[^"]*"\s*:/i.test(JSON.stringify(data)));
-for(const lang of ['lv','en','ru']){
+for(const lang of Object.keys(data.ui)){
  const entries=r.entries(qs,answers,lang,data.presentation);
  assert.deepEqual(entries.map(e=>e.id),['M23_11','M33_01','M02_09','M06_01','M06_02']);
- const plain=r.doctorText(qs,answers,[],lang,data.ui[lang],data.groups,data.presentation);
- const html=r.doctorHtml(qs,answers,[],lang,data.ui[lang],data.groups,data.presentation);
+ const plain=r.doctorText(qs,answers,lang,data.ui[lang],data.presentation);
+ const html=r.doctorHtml(qs,answers,lang,data.ui[lang],data.presentation);
  assert(plain.includes(q('M06_02').translations[lang].choices.B));
+ assert(plain.includes('PRIVATE_MEDICAL_SENTINEL'));
+ assert(!plain.includes(q('M02_01').translations[lang].title));
+ assert(!html.includes(q('M02_01').translations[lang].title));
+ assert(!plain.includes('Synthetic wording note'));
+ assert(!html.includes('Synthetic wording note'));
  assert(!/M06_02|\[B\]|\bweight\b|risk score/i.test(plain));
  assert(!/Unanswered|Nav atbildēts|Без ответа/i.test(plain));
  assert(plain.includes(data.ui[lang].reportCountSelected+': '+qs.length));
@@ -43,11 +48,6 @@ assert(!projectText.includes('PRIVATE_MEDICAL_SENTINEL'));
 const emptyFeedback=r.projectFeedbackText(qs,{},'en',data.ui,'janis.paegle.email@gmail.com','v0.2');
 assert(emptyFeedback.includes(data.ui.en.feedbackNone));
 assert(emptyFeedback.includes('janis.paegle.email@gmail.com'));
-const doctorWithFeedback=r.doctorText(qs,answers,[], 'en',data.ui.en, data.groups,data.presentation,feedback,qs);
-const lastAnswer=r.entries(qs,answers,'en',data.presentation).map(e=>e.plain).at(-1);
-assert(doctorWithFeedback.indexOf(data.ui.en.feedbackSectionHeading)>doctorWithFeedback.lastIndexOf(lastAnswer));
-assert(!doctorWithFeedback.includes('janis.paegle.email@gmail.com'));
-assert(doctorWithFeedback.includes(data.ui.en.reportDate+': ____________________'));
 const html=cp.execFileSync('python',['-c','import sys;sys.path.insert(0,"tools");from build_questionnaire import make_html;print(make_html())'],{encoding:'utf8',maxBuffer:8e6});
 for(const word of ['Prepare answers for AI','Copy coded answers for AI','DECODING KEY','aiInstruction','copyAI'])assert(!html.includes(word),word);
-console.log('PASS: one doctor report, explicit answer-code bold rules, normal-to-sensitive order, three locales, no AI export or weights.');
+console.log('PASS: clinician answers and project feedback stay separate; localized reports preserve order and explicit emphasis.');
