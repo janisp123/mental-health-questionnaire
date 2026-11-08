@@ -58,7 +58,7 @@ Drive folder read on this session: HTML modified 14:18, PDF 13:57. Read access w
 | 9 | S15 — Sexuality and reproductive health | 47 | DONE |
 | 10 | S07 — Intrusive thoughts and repetitive habits | 45 | DONE |
 | 11 | S08 — Trauma, loss and life changes | 48 | DONE |
-| 12 | S02 — Mood and energy | 38 | TODO |
+| 12 | S02 — Mood and energy | 38 | IN PROGRESS (21/38) |
 | 13 | S03 — Anxiety, panic-like episodes and stress | 40 | TODO |
 | 14 | S04 — Wellbeing, safety and unusual experiences | 44 | TODO |
 | 15 | S05 — Anger and impulses | 36 | TODO |
@@ -372,3 +372,7 @@ Reviewed the remaining 14 questions of module 10. Corrected day-count units, the
 Reviewed the final 20 questions, completing all 48 in S08. Corrected the grief day count, timing of difficulties after an event, the distinction between observing oneself and being observed, and episodes around falling asleep or waking rather than difficulty sleeping. Preserved the Latvian source, IDs, answer codes and branching. Source integrity, frozen Latvian parity, source adapter, locale catalogs, full HTML build and Chromium offline journey passed. Inspected all 48 S08 records in the build and checked the corrected wording at the artifact boundary.
 
 Repository reviewer HTML: SHA-256 `54aec5d8b8477d959031001b1ede5c5babb533921676ba89f72ab708c7a3fd2c`. The existing trilingual PDF guide remains applicable. The owner copies the HTML to the shared Drive folder. Next: S02.
+
+### 2026-11-08 · S02 checkpoint 1 · module 02
+
+Reviewed 21 questions in module 02. Preserved the first nine legacy screening records in all languages. The source and reuse conditions for named instruments still need confirmation before a translated release. Corrected elapsed duration boundaries, the day-count answers, concurrent events versus causal claims, and low mood versus a diagnosis of depression. Preserved all Latvian records, IDs, answer codes and branching. Source integrity, frozen Latvian parity, source adapter, locale catalogs and full offline HTML build passed. Reviewer package remains at S08. Next: module 05.
