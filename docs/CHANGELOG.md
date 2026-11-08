@@ -396,3 +396,7 @@ Reviewed 12 questions. Clarified how to count days, aligned the wording with the
 Reviewed the final 16 questions, completing all 40 in S03. Clarified the day counts for exhaustion, the wording about recovery after rest, and the Russian choices about the effects of world events. Preserved the distinction between wishing for an end to uncertainty, emotional suffering or one’s life. Preserved Latvian records, IDs, answer codes and branching. Source integrity, frozen Latvian parity, source adapter, locale catalogs, full offline HTML build and Chromium offline journey passed. Checked all 40 S03 records in the reviewer HTML.
 
 Repository reviewer HTML: SHA-256 `7872e6b68f33678b2865be32408d3cdf9e7dbbcbaa647e60182de816d0448b34`. The existing trilingual PDF guide remains applicable. The owner copies the HTML to the shared Drive folder. Next: S04.
+
+### 2026-11-08 · S04 checkpoint · module 06
+
+Reviewed 25 questions. Preserved the distinctions among current thoughts, intent, plan, and intentional self-harm with or without a wish to die. Corrected the one-month boundary in both recency questions and clarified the wording about distress and medical care. Latvian records, answer codes, order and conditions were preserved. Source integrity, frozen Latvian parity, source adapter, locale catalogs and offline HTML build passed. Next: module 21.
