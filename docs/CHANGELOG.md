@@ -386,3 +386,7 @@ Repository reviewer HTML: SHA-256 `a6055cc039433ad4eecc71de86c8b326ee953fefb5d7e
 ### 2026-11-08 · S03 checkpoint 1 · module 03
 
 Reviewed 12 questions and preserved the seven legacy screening records in all languages. Clarified how anxiety affects daily life, the count of days when necessary tasks were put off or left undone, and the Russian duration ranges. Preserved Latvian records, IDs, answer codes and branching. Source integrity, frozen Latvian parity, source adapter, locale catalogs and full offline HTML build passed. The reviewer package remains at S02. Next: S03 module 04, then module 22.
+
+### 2026-11-08 · S03 checkpoint 2 · module 04
+
+Reviewed 12 questions. Clarified how to count days, aligned the wording with the 28-day window, and distinguished panic-like episodes from questions that explicitly refer to panic attacks. Preserved Latvian records, IDs, answer codes and branching. Source integrity, frozen Latvian parity, source adapter, locale catalogs and full offline HTML build passed. The reviewer package remains at S02. Next: S03 module 22 and the reviewer HTML refresh.
