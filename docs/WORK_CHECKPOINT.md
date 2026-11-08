@@ -11,8 +11,8 @@ Updated 8 November 2026, Riga time. Active branch: `develop`.
 - S14 complete: 49 questions across modules 20, 28, 36, 37, 44 and 45. Source integrity, frozen LV parity, locale catalogs, full offline build and Chromium journey passed. Verified total: 414 of 712 questions across eight sections.
 - S15 complete: 47 questions across modules 26, 27, 34 and 40. Source integrity, frozen LV parity, locale catalogs, full offline build and Chromium journey passed. Verified total: 461 of 712 questions across nine sections.
 - S07 complete: 45 questions in modules 09, 29, 39, 47 and 48. Source integrity, frozen LV parity, locale catalogs, full offline build and Chromium journey passed. Verified total: 506 of 712 questions across ten sections.
-- S08 in progress: reviewed M10_01 through M10_14 (14 of 48 questions). Source integrity, frozen LV parity, source adapter, locale catalogs and the full offline HTML build passed.
-- Next action: review M10_15 through M10_28, then S08 modules 35, 41 and 42. Run browser checks and refresh reviewer HTML when S08 is complete. Then proceed to S02, S03, S04, and S05.
+- S08 in progress: module 10 reviewed (28 of 48 questions). Source integrity, frozen LV parity, source adapter, locale catalogs and the full offline HTML build passed.
+- Next action: audit S08 modules 35, 41 and 42. Run browser checks and refresh reviewer HTML when S08 is complete. Then proceed to S02, S03, S04, and S05.
 
 ## Reviewer package
 

@@ -57,7 +57,7 @@ Drive folder read on this session: HTML modified 14:18, PDF 13:57. Read access w
 | 8 | S14 — Eating, appearance and health concerns | 49 | DONE |
 | 9 | S15 — Sexuality and reproductive health | 47 | DONE |
 | 10 | S07 — Intrusive thoughts and repetitive habits | 45 | DONE |
-| 11 | S08 — Trauma, loss and life changes | 48 | IN PROGRESS (14/48) |
+| 11 | S08 — Trauma, loss and life changes | 48 | IN PROGRESS (28/48) |
 | 12 | S02 — Mood and energy | 38 | TODO |
 | 13 | S03 — Anxiety, panic-like episodes and stress | 40 | TODO |
 | 14 | S04 — Wellbeing, safety and unusual experiences | 44 | TODO |
@@ -362,3 +362,7 @@ Repository reviewer HTML: SHA-256 `fefb5156df1bb3c924393708ca6230584e898572d80c8
 ### 2026-11-08 · S08 checkpoint 1 · M10_01–M10_14
 
 Reviewed the first 14 questions in module 10. Corrected the inclusive one-month boundary, the response meaning more than half of the days, and the distinction between a threat to life and a serious medical situation. Preserved the Latvian source, IDs, answer codes and branching. Source integrity, frozen Latvian parity, source adapter, locale catalogs and full offline HTML build passed. Reviewer package remains at S07. Next: M10_15–M10_28.
+
+### 2026-11-08 · S08 checkpoint 2 · M10_15–M10_28
+
+Reviewed the remaining 14 questions of module 10. Corrected day-count units, the rolling-month label, elapsed duration, and persistent difficulties with closeness versus sexual intimacy. Clarified the distinction between the respondent's actions and the actions of others. Preserved Latvian source, IDs, options and branching. Source integrity, Latvian parity, source adapter, locale catalogs and full offline HTML build passed. S08 is at 28 of 48 questions. Next: modules 35, 41 and 42. Reviewer package remains at S07.
