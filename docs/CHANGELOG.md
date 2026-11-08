@@ -55,7 +55,7 @@ Drive folder read on this session: HTML modified 14:18, PDF 13:57. Read access w
 | 6 | S13 — Family, social context and caregiving | 70 | DONE locally |
 | 7 | S12 — Relationships and emotional patterns | 42 | DONE |
 | 8 | S14 — Eating, appearance and health concerns | 49 | DONE |
-| 9 | S15 — Sexuality and reproductive health | 47 | IN PROGRESS (10/47) |
+| 9 | S15 — Sexuality and reproductive health | 47 | IN PROGRESS (29/47) |
 | 10 | S07 — Intrusive thoughts and repetitive habits | 45 | TODO |
 | 11 | S08 — Trauma, loss and life changes | 48 | TODO |
 | 12 | S02 — Mood and energy | 38 | TODO |
@@ -334,3 +334,7 @@ Repository reviewer HTML: SHA-256 `0668b4d7a97c11708db1cef236a0c70b9f0b9cfb8e302
 ### 2026-11-08 · S15 checkpoint 1 · module 26
 
 Reviewed all 10 questions and answer labels in module 26. Distinguished asking for a separate conversation from the following question that explicitly asks for a private conversation. Clarified questions about personal distress and quality of life and used formal Russian address. Preserved the frozen Latvian records, IDs, options and branching. Source integrity, Latvian parity, source adapter, locale catalogs and the full offline build passed. The reviewer build remains at S14. Next: module 27.
+
+### 2026-11-08 · S15 checkpoint 2 · module 27
+
+Reviewed 19 questions about hormonal and reproductive health. Fixed the Russian psychosis response that attributed the experience to the specialist, the cycle response that incorrectly referred to commitments, and the family-history note that referred to the respondent instead of relatives. Clarified the postpartum time ranges and who is in the respondent's care. Preserved Latvian records, conditions, IDs and answer codes. Source integrity, frozen Latvian parity, source adapter, locale catalogs and full offline HTML build passed. S15 is at 29 of 47 questions. Next: modules 34 and 40. The reviewer build remains at S14.
