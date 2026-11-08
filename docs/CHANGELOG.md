@@ -57,7 +57,7 @@ Drive folder read on this session: HTML modified 14:18, PDF 13:57. Read access w
 | 8 | S14 — Eating, appearance and health concerns | 49 | DONE |
 | 9 | S15 — Sexuality and reproductive health | 47 | DONE |
 | 10 | S07 — Intrusive thoughts and repetitive habits | 45 | DONE |
-| 11 | S08 — Trauma, loss and life changes | 48 | TODO |
+| 11 | S08 — Trauma, loss and life changes | 48 | IN PROGRESS (14/48) |
 | 12 | S02 — Mood and energy | 38 | TODO |
 | 13 | S03 — Anxiety, panic-like episodes and stress | 40 | TODO |
 | 14 | S04 — Wellbeing, safety and unusual experiences | 44 | TODO |
@@ -358,3 +358,7 @@ Reviewed all 12 questions about repetitive habits. Clarified skin picking, hair 
 Reviewed the remaining 16 questions, completing all 45 in S07. Clarified age of onset, movements and sounds, and urges that are hard to control. The translation no longer treats the movements as an established disease or limits unexplained episodes to convulsions. Preserved the Latvian source, answer codes and branching. Source integrity, frozen Latvian parity, source adapter, locale catalogs, full HTML build and Chromium offline journey passed. Inspected the built HTML for all 45 S07 questions and key corrected labels.
 
 Repository reviewer HTML: SHA-256 `fefb5156df1bb3c924393708ca6230584e898572d80c8329a3f4bc3ad45c40c2`. The existing trilingual PDF guide remains applicable. The owner copies the HTML to the shared Drive folder. Next: S08.
+
+### 2026-11-08 · S08 checkpoint 1 · M10_01–M10_14
+
+Reviewed the first 14 questions in module 10. Corrected the inclusive one-month boundary, the response meaning more than half of the days, and the distinction between a threat to life and a serious medical situation. Preserved the Latvian source, IDs, answer codes and branching. Source integrity, frozen Latvian parity, source adapter, locale catalogs and full offline HTML build passed. Reviewer package remains at S07. Next: M10_15–M10_28.
