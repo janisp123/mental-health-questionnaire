@@ -15,7 +15,8 @@ Updated 8 November 2026, Riga time. Active branch: `develop`.
 - S02 complete: 38 questions in modules 02 and 05. The first nine legacy screening records were preserved. Source integrity, frozen LV parity, locale catalogs, full offline build and Chromium journey passed. Verified total: 592 of 712 questions across twelve sections.
 - S03 complete: 40 questions in modules 03, 04 and 22. Seven legacy screening records were preserved. Source integrity, frozen Latvian parity, locale catalogs, offline HTML build and Chromium journey passed. Total audited: 632 of 712 across thirteen sections.
 - S04 complete: 44 questions in modules 06 and 21. Source integrity, frozen Latvian parity, locale catalogs, offline HTML build and Chromium journey passed. Total audited: 676 of 712 across fourteen sections.
-- Next action: audit S05 module 18.
+- S05 complete: 36 questions in module 18. Source integrity, frozen Latvian parity, locale catalogs, offline HTML build and Chromium journey passed. Translation audit complete: 712 of 712 questions across all 15 sections.
+- Next action: share the refreshed reviewer HTML and existing PDF guide for human language and clinical review. Run the offline journey on an Android device before release.
 
 ## Reviewer package
 

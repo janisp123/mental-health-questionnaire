@@ -406,3 +406,11 @@ Reviewed 25 questions. Preserved the distinctions among current thoughts, intent
 Reviewed the final 19 questions. Clarified wording about dreams versus wakefulness, the timing of unusual experiences, and the distinction between low mood and a diagnosis. Preserved Latvian records, answer codes, order and conditions. Source integrity, frozen Latvian parity, source adapter, locale catalogs, offline build and Chromium offline journey passed. Checked all 44 S04 records in the reviewer HTML. Next: S05.
 
 Repository reviewer HTML: SHA-256 `8446c5e06b1d00f56da3a768e0d98b3541dea060430893efae2fbd26075b7e2b`. The existing trilingual PDF guide remains applicable. The owner copies the HTML to the shared Drive folder.
+
+### 2026-11-08 · S05 and full-bank translation audit complete · module 18
+
+Reviewed the last 36 questions. Corrected day counts, one-month boundaries, the time window for urges, the distinction among urges, unwanted thoughts, plans and current intent, and answer labels about who was affected by an action. Compared all 80 S04 and S05 records against the pre-batch source and verified unchanged Latvian records, IDs, branching and answer codes. Source integrity, frozen Latvian parity, source adapter, locale catalogs, full offline HTML build and Chromium offline journey passed. Verified all 80 S04 and S05 questions in the final reviewer HTML.
+
+All 712 questions across 15 sections have passed the translation audit. English and Russian remain drafts pending human language and clinical review. Actual Android device testing is outstanding.
+
+Repository reviewer HTML: SHA-256 `9e93741ebbd74c83191e6c2c3dca59059d31713c5c8287946f5672935272a3d8`. The existing trilingual PDF guide remains applicable. The owner copies the HTML to the shared Drive folder.

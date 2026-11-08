@@ -35,7 +35,7 @@
         }
       },
       "en": {
-        "title": "Are you currently preparing to physically harm another person? Do not give operational details in the questionnaire.",
+        "title": "Are you currently preparing to physically harm another person? You do not need to give details in the questionnaire.",
         "time": "Currently.",
         "choices": {
           "A": "No",
@@ -45,12 +45,12 @@
         }
       },
       "ru": {
-        "title": "Готовитесь ли вы сейчас причинить физический вред другому человеку? Подробности подготовки в анкете не нужны.",
+        "title": "Готовитесь ли Вы сейчас причинить физический вред другому человеку? Подробности подготовки в анкете не нужны.",
         "time": "В настоящее время.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать."
         }
       },
@@ -105,27 +105,27 @@
         }
       },
       "en": {
-        "title": "How often do minor inconveniences make you irritable?",
+        "title": "On how many days did minor inconveniences make you irritable?",
         "time": "The past 28 days.",
         "choices": {
           "A": "On no days",
-          "B": "On 1-3 days",
-          "C": "On 4-10 days",
-          "D": "On 11-20 days",
-          "E": "On 21-28 days",
+          "B": "On 1–3 days",
+          "C": "On 4–10 days",
+          "D": "On 11–20 days",
+          "E": "On 21–28 days",
           "F": "Difficult to say",
           "G": "Prefer not to answer."
         }
       },
       "ru": {
-        "title": "Как часто небольшие неудобства вызывают у вас раздражение?",
+        "title": "В течение скольких дней небольшие неудобства вызывали у Вас раздражение?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Ни в один из дней",
-          "B": "В течение 1-3 дней",
-          "C": "В течение 4-10 дней",
-          "D": "В течение 11-20 дней",
-          "E": "В течение 21-28 дней",
+          "B": "В течение 1–3 дней",
+          "C": "В течение 4–10 дней",
+          "D": "В течение 11–20 дней",
+          "E": "В течение 21–28 дней",
           "F": "Трудно сказать",
           "G": "Не хочу отвечать."
         }
@@ -187,27 +187,27 @@
         }
       },
       "en": {
-        "title": "How often do you raise your voice or shout during arguments?",
+        "title": "On how many days did you raise your voice or shout during arguments?",
         "time": "The past 28 days.",
         "choices": {
           "A": "On no days",
-          "B": "On 1-3 days",
-          "C": "On 4-10 days",
-          "D": "On 11-20 days",
-          "E": "On 21-28 days",
+          "B": "On 1–3 days",
+          "C": "On 4–10 days",
+          "D": "On 11–20 days",
+          "E": "On 21–28 days",
           "F": "Difficult to say",
           "G": "Prefer not to answer."
         }
       },
       "ru": {
-        "title": "Как часто вы повышаете голос или кричите во время ссор?",
+        "title": "В течение скольких дней Вы повышали голос или кричали во время ссор?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Ни в один из дней",
-          "B": "В течение 1-3 дней",
-          "C": "В течение 4-10 дней",
-          "D": "В течение 11-20 дней",
-          "E": "В течение 21-28 дней",
+          "B": "В течение 1–3 дней",
+          "C": "В течение 4–10 дней",
+          "D": "В течение 11–20 дней",
+          "E": "В течение 21–28 дней",
           "F": "Трудно сказать",
           "G": "Не хочу отвечать."
         }
@@ -269,27 +269,27 @@
         }
       },
       "en": {
-        "title": "How often do you repeatedly reproach or criticise people close to you?",
+        "title": "On how many days did you repeatedly reproach or criticise people close to you?",
         "time": "The past 28 days.",
         "choices": {
           "A": "On no days",
-          "B": "On 1-3 days",
-          "C": "On 4-10 days",
-          "D": "On 11-20 days",
-          "E": "On 21-28 days",
+          "B": "On 1–3 days",
+          "C": "On 4–10 days",
+          "D": "On 11–20 days",
+          "E": "On 21–28 days",
           "F": "Difficult to say",
           "G": "Prefer not to answer."
         }
       },
       "ru": {
-        "title": "Как часто вы многократно упрекаете или критикуете близких?",
+        "title": "В течение скольких дней Вы неоднократно упрекали или критиковали близких?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Ни в один из дней",
-          "B": "В течение 1-3 дней",
-          "C": "В течение 4-10 дней",
-          "D": "В течение 11-20 дней",
-          "E": "В течение 21-28 дней",
+          "B": "В течение 1–3 дней",
+          "C": "В течение 4–10 дней",
+          "D": "В течение 11–20 дней",
+          "E": "В течение 21–28 дней",
           "F": "Трудно сказать",
           "G": "Не хочу отвечать."
         }
@@ -358,12 +358,12 @@
         }
       },
       "ru": {
-        "title": "За последние 28 дней жалели ли вы после вспышек гнева о сказанном или сделанном?",
+        "title": "За последние 28 дней жалели ли Вы после вспышек гнева о сказанном или сделанном?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -417,7 +417,7 @@
         }
       },
       "en": {
-        "title": "When angry, do you find it difficult to stop and calm down?",
+        "title": "When you were angry, was it hard to stop and calm down?",
         "time": "The past 28 days.",
         "choices": {
           "A": "No",
@@ -428,12 +428,12 @@
         }
       },
       "ru": {
-        "title": "Трудно ли вам остановиться и успокоиться во время гнева?",
+        "title": "Было ли Вам трудно остановиться и успокоиться, когда Вы злились?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -498,12 +498,12 @@
         }
       },
       "ru": {
-        "title": "Били или бросали ли вы когда-либо предметы в гневе?",
+        "title": "Били или бросали ли Вы когда-либо предметы в гневе?",
         "time": "В любой момент жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -557,7 +557,7 @@
         }
       },
       "en": {
-        "title": "Have you ever intentionally physically hurt another person, in anger, conflict or other circumstances? Do not count accidents, consensual sport or medical care.",
+        "title": "Have you ever intentionally caused physical harm to another person, whether in anger, during a conflict or in other circumstances? Do not count accidents, sports with mutual consent, or medical care.",
         "time": "At any time in life.",
         "choices": {
           "A": "No",
@@ -573,7 +573,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -638,12 +638,12 @@
         }
       },
       "ru": {
-        "title": "Боялись ли вы за последние 28 дней, что в гневе можете физически навредить ребёнку или другому человеку, о котором заботитесь?",
+        "title": "Боялись ли Вы за последние 28 дней, что в гневе можете физически навредить ребёнку или другому человеку, о котором заботитесь?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -697,7 +697,7 @@
         }
       },
       "en": {
-        "title": "Do conflicts affect your mood for a long time afterwards?",
+        "title": "Did conflicts continue to affect your mood long afterwards?",
         "time": "The past 28 days.",
         "choices": {
           "A": "No",
@@ -708,12 +708,12 @@
         }
       },
       "ru": {
-        "title": "Влияют ли конфликты на ваше настроение ещё долго после их завершения?",
+        "title": "Продолжали ли конфликты влиять на Ваше настроение ещё долго после того, как закончились?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -784,7 +784,7 @@
         }
       },
       "ru": {
-        "title": "Что, по вашему мнению, усиливало гнев за последние 28 дней? Можно выбрать несколько ответов.",
+        "title": "Что, по Вашему мнению, усиливало гнев за последние 28 дней? Можно выбрать несколько ответов.",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Алкоголь или другие опьяняющие вещества",
@@ -865,7 +865,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -925,7 +925,7 @@
         }
       },
       "en": {
-        "title": "How much do difficulties with anger and impulsivity interfere with your life?",
+        "title": "How much did difficulties with anger and impulsivity interfere with your life?",
         "time": "The past 28 days.",
         "choices": {
           "A": "Not at all",
@@ -939,7 +939,7 @@
         }
       },
       "ru": {
-        "title": "Насколько трудности с гневом и импульсивностью мешают вашей жизни?",
+        "title": "Насколько трудности с гневом и импульсивностью мешали Вашей жизни?",
         "time": "Последние 28 дней.",
         "choices": {
           "A": "Совсем нет",
@@ -1020,7 +1020,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать."
         }
       },
@@ -1087,7 +1087,7 @@
         "time": "Time since the most recent episode described.",
         "choices": {
           "A": "Within the past 24 hours",
-          "B": "More than 24 hours ago, but less than 1 month ago",
+          "B": "More than 24 hours ago, but no more than 1 month ago",
           "C": "More than 1 month but not more than 1 year ago",
           "D": "More than 1 year ago, but no more than 5 years ago",
           "E": "More than 5 years ago",
@@ -1101,8 +1101,8 @@
         "time": "Время с последнего указанного эпизода.",
         "choices": {
           "A": "За последние 24 часа",
-          "B": "Более 24 часов назад, но менее месяца назад",
-          "C": "Более месяца, но не более года назад",
+          "B": "Более 24 часов назад, но не более 1 месяца назад",
+          "C": "Более 1 месяца назад, но не более 1 года назад",
           "D": "Более года назад, но не более 5 лет назад",
           "E": "Более 5 лет назад",
           "F": "Такого не было",
@@ -1185,7 +1185,7 @@
         }
       },
       "ru": {
-        "title": "Сколько вам было лет, когда вы впервые причинили животному такой вред?",
+        "title": "Сколько Вам было лет, когда Вы впервые причинили животному такой вред?",
         "time": "Возраст при первом указанном эпизоде.",
         "choices": {
           "A": "Младше 12 лет",
@@ -1259,7 +1259,7 @@
         }
       },
       "en": {
-        "title": "How do you understand your reasons or circumstances during that episode? Select all that apply.",
+        "title": "Looking back at that episode, what reasons or circumstances help explain what happened? Select all that apply.",
         "time": "The most recent animal-harm episode described. You may skip; no graphic details are requested.",
         "choices": {
           "A": "Anger / frustration",
@@ -1273,12 +1273,12 @@
         }
       },
       "ru": {
-        "title": "Как вы понимаете свои причины или обстоятельства в том эпизоде? Выберите всё подходящее.",
+        "title": "Если вспомнить тот случай, какие причины или обстоятельства помогают объяснить произошедшее? Выберите всё подходящее.",
         "time": "Последний указанный эпизод причинения вреда животному. Можно пропустить; подробности травм не нужны.",
         "choices": {
           "A": "Злость / раздражение",
           "B": "Желание наказать или контролировать",
-          "C": "Давление других или подражание",
+          "C": "Давление других людей или подражание им",
           "D": "Любопытство или непонимание последствий в то время",
           "E": "Желание получить удовольствие от страдания или вреда",
           "F": "Другая причина / обстоятельства",
@@ -1349,12 +1349,12 @@
         }
       },
       "ru": {
-        "title": "Есть ли у вас сейчас желание травмировать или мучить животное?",
+        "title": "Есть ли у Вас сейчас желание травмировать или мучить животное?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать."
         }
       },
@@ -1434,7 +1434,7 @@
         }
       },
       "ru": {
-        "title": "Как на вас влияли сообщения о насильственных нападениях, например стрельбе в школах? Выберите всё подходящее.",
+        "title": "Как на Вас повлияли сообщения о насильственных нападениях, например о стрельбе в школах? Выберите всё подходящее.",
         "time": "За последние 28 дней. Ответы не используются для классификации людей. Нежелательные мысли отличаются от желания их осуществить.",
         "choices": {
           "A": "Не видел(а) таких сообщений / заметного влияния нет",
@@ -1442,7 +1442,7 @@
           "C": "Страх / тревога",
           "D": "Злость из-за случившегося",
           "E": "Эмоциональное онемение или избегание новостей",
-          "F": "Нежелательные пугающие мысли о вреде, которые я не хочу осуществлять",
+          "F": "Нежелательные, пугающие мысли о причинении вреда, которые я не хочу воплощать в действия",
           "G": "Восхищение нападавшим или желание быть похожим на него",
           "H": "Желание самому/самой причинить подобный вред",
           "I": "Другая реакция",
@@ -1509,7 +1509,7 @@
         }
       },
       "en": {
-        "title": "Have you made or sent threats to physically harm another person? Do not count clearly mutually understood fictional play or role-play.",
+        "title": "Have you made or sent threats to physically harm another person? Do not count make-believe or role-play that both sides clearly understood as such.",
         "time": "Last 12 months.",
         "choices": {
           "A": "No",
@@ -1519,12 +1519,12 @@
         }
       },
       "ru": {
-        "title": "Высказывали или отправляли ли вы угрозы физически навредить другому человеку? Не учитывайте вымышленную игру или ролевую ситуацию, которую обе стороны ясно понимали как таковую.",
+        "title": "Высказывали или отправляли ли Вы угрозы физически навредить другому человеку? Не учитывайте вымышленную игру или ролевую ситуацию, которую обе стороны ясно понимали как таковую.",
         "time": "Последние 12 месяцев.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать."
         }
       },
@@ -1598,7 +1598,7 @@
         }
       },
       "ru": {
-        "title": "Что помогает вам не действовать под влиянием желания навредить человеку или животному? Выберите всё подходящее.",
+        "title": "Что помогает Вам не действовать под влиянием желания навредить человеку или животному? Выберите всё подходящее.",
         "time": "В настоящее время.",
         "choices": {
           "A": "Таких желаний нет",
@@ -1680,7 +1680,7 @@
         }
       },
       "en": {
-        "title": "What were the circumstances of the most recent time you intentionally physically hurt another person? Select all that apply.",
+        "title": "What were the circumstances the last time you intentionally caused physical harm to another person? Select all that apply.",
         "time": "The most recent episode of intentional physical harm to another person described.",
         "choices": {
           "A": "Immediate defence of myself or someone else against an attack",
@@ -1693,8 +1693,8 @@
         }
       },
       "ru": {
-        "title": "При каких обстоятельствах вы в последний раз намеренно физически навредили другому человеку? Выберите всё подходящее.",
-        "time": "Последний указанный эпизод намеренного физического вреда другому человеку.",
+        "title": "При каких обстоятельствах Вы в последний раз намеренно причинили физический вред другому человеку? Выберите всё подходящее.",
+        "time": "Последний указанный случай намеренного причинения физического вреда другому человеку.",
         "choices": {
           "A": "Непосредственная защита себя или другого от нападения",
           "B": "Гнев или конфликт",
@@ -1844,10 +1844,10 @@
         }
       },
       "en": {
-        "title": "How often were there sudden outbursts of anger with shouting, damaging objects, or aggression?",
+        "title": "How often did you have sudden outbursts of anger involving shouting, damaging objects or aggression?",
         "time": "The last 3 months.",
         "choices": {
-          "A": "There was no",
+          "A": "No such outbursts",
           "B": "Less than once a month",
           "C": "1–3 times a month",
           "D": "About once a week",
@@ -1860,7 +1860,7 @@
         "title": "Как часто случались внезапные вспышки гнева с криками, порчей предметов или агрессией?",
         "time": "Последние 3 месяца.",
         "choices": {
-          "A": "Не было никакого",
+          "A": "Таких вспышек не было",
           "B": "Реже одного раза в месяц",
           "C": "1–3 раза в месяц",
           "D": "Примерно раз в неделю",
@@ -1924,13 +1924,13 @@
         }
       },
       "en": {
-        "title": "How did these outbreaks usually start?",
+        "title": "How did these outbursts usually start?",
         "time": "The last 3 months.",
         "choices": {
-          "A": "Suddenly, without prior plan",
-          "B": "Mostly premeditated to achieve something",
-          "C": "Miscellaneous",
-          "D": "There were no such outbreaks",
+          "A": "Suddenly, without a prior plan",
+          "B": "Usually planned in advance to achieve something",
+          "C": "It varied",
+          "D": "There were no such outbursts",
           "E": "I don't know",
           "F": "I don't want to answer."
         }
@@ -1940,9 +1940,9 @@
         "time": "Последние 3 месяца.",
         "choices": {
           "A": "Внезапно, без предварительного плана",
-          "B": "В основном, это заранее спланировано для достижения какой-либо цели.",
-          "C": "Разнообразный",
-          "D": "Таких вспышек не было.",
+          "B": "Как правило, вспышки были заранее продуманы, чтобы чего-то добиться",
+          "C": "По-разному",
+          "D": "Таких вспышек не было",
           "E": "Я не знаю",
           "F": "Я не хочу отвечать."
         }
@@ -1996,7 +1996,7 @@
         }
       },
       "en": {
-        "title": "Do you think the reaction was much stronger than what happened?",
+        "title": "Did you feel that your reaction was much stronger than the situation warranted?",
         "time": "The last 3 months.",
         "choices": {
           "A": "No",
@@ -2006,7 +2006,7 @@
         }
       },
       "ru": {
-        "title": "Как вы думаете, реакция была гораздо сильнее, чем то, что произошло?",
+        "title": "Была ли Ваша реакция, по Вашему мнению, гораздо сильнее, чем того требовала ситуация?",
         "time": "Последние 3 месяца.",
         "choices": {
           "A": "Нет",
@@ -2061,9 +2061,9 @@
         }
       },
       "en": {
-        "title": "Have you ever felt the urge to physically harm another person, even when you didn't intend to?",
+        "title": "Did you feel an urge to physically harm another person, even if you had no plans to act on it?",
         "time": "The past 28 days.",
-        "help": "Distinguish a desire from an unwanted, frightening thought that you don't want to act on. The current intention is asked separately.",
+        "help": "Distinguish the urge from an unwanted, frightening thought that you do not want to act on. A separate question asks about current intent.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -2072,9 +2072,9 @@
         }
       },
       "ru": {
-        "title": "Вы когда-нибудь испытывали непреодолимое желание причинить физический вред другому человеку, даже если не имели такого намерения?",
+        "title": "Возникало ли у Вас желание причинить физический вред другому человеку, даже если Вы не планировали этого делать?",
         "time": "Последние 28 дней.",
-        "help": "Отличите желание от нежелательной, пугающей мысли, которую вы не хотите воплощать в жизнь. Текущее намерение оговаривается отдельно.",
+        "help": "Отличайте желание от нежелательной, пугающей мысли, которую Вы не хотите воплощать в действия. О текущем намерении спрашивается отдельно.",
         "choices": {
           "A": "Нет",
           "B": "Да",
@@ -2136,9 +2136,9 @@
         }
       },
       "en": {
-        "title": "Did the specific idea of ​​physically harming a person seem acceptable or justifiable to you at that moment?",
+        "title": "Did that specific thought of physically harming someone seem acceptable or justifiable to you at the time?",
         "time": "The past 28 days.",
-        "help": "This is about your own personal experience, not general beliefs about self-defense. The response itself does not imply an intention to act.",
+        "help": "Answer about the urge you experienced. General views on self-defence are outside the scope of this question. The answer alone does not indicate intent to act.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -2147,9 +2147,9 @@
         }
       },
       "ru": {
-        "title": "Показалась ли вам в тот момент сама мысль о причинении физического вреда человеку приемлемой или оправданной?",
+        "title": "Показалась ли Вам в тот момент сама мысль о причинении физического вреда человеку приемлемой или оправданной?",
         "time": "Последние 28 дней.",
-        "help": "Речь идёт о вашем личном опыте, а не об общих представлениях о самообороне. Сам ответ не подразумевает намерения действовать.",
+        "help": "Речь о желании, которое Вы сами испытали. Общие взгляды на самооборону здесь не учитываются. Сам по себе ответ не говорит о намерении действовать.",
         "choices": {
           "A": "Нет",
           "B": "Да",
@@ -2205,9 +2205,9 @@
         }
       },
       "en": {
-        "title": "Are you worried that you might lose control and physically harm someone?",
+        "title": "Were you worried that you might lose control and physically harm someone?",
         "time": "The past 28 days.",
-        "help": "Fear of losing control is not the same as intent to harm. The specialist will clarify the answer along with the rest of the experience.",
+        "help": "Fear of losing control differs from intent to harm. A professional will discuss your answer in the context of your other experiences.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -2216,9 +2216,9 @@
         }
       },
       "ru": {
-        "title": "Вы опасаетесь, что можете потерять контроль и причинить кому-нибудь физический вред?",
+        "title": "Беспокоились ли Вы, что можете потерять контроль и причинить кому-либо физический вред?",
         "time": "Последние 28 дней.",
-        "help": "Страх потерять контроль — это не то же самое, что намерение причинить вред. Специалист уточнит этот вопрос, а также расскажет обо всём остальном, что произошло.",
+        "help": "Страх потерять контроль отличается от намерения причинить вред. Специалист уточнит Ваш ответ с учётом других описанных Вами переживаний.",
         "choices": {
           "A": "Нет",
           "B": "Да",
@@ -2278,9 +2278,9 @@
         }
       },
       "en": {
-        "title": "Have you hit, pushed, or grabbed your partner, child, or other family member?",
+        "title": "Have you hit or pushed a partner, child or other family member, or grabbed them hard enough to hurt?",
         "time": "Last 12 months.",
-        "help": "Don't include accidents or coordinated sports activities. You can explain the circumstances later in the conversation; you don't need to mention the person's name here.",
+        "help": "Do not count accidents or sports with mutual consent. You can explain the circumstances in a later conversation. You do not need to name the person here.",
         "choices": {
           "A": "No",
           "B": "Once",
@@ -2291,9 +2291,9 @@
         }
       },
       "ru": {
-        "title": "Вы когда-нибудь били, толкали или хватали своего партнера, ребенка или другого члена семьи?",
+        "title": "Случалось ли Вам ударить или толкнуть партнёра, ребёнка или другого члена семьи либо схватить кого-то из них так, что стало больно?",
         "time": "Последние 12 месяцев.",
-        "help": "Не стоит упоминать несчастные случаи или скоординированные спортивные мероприятия. Обстоятельства можно объяснить позже в разговоре; здесь не нужно называть имя собеседника.",
+        "help": "Не учитывайте несчастные случаи или занятия спортом по взаимному согласию. Обстоятельства можно объяснить позже в разговоре. Имя человека здесь указывать не нужно.",
         "choices": {
           "A": "Нет",
           "B": "Один раз",
@@ -2365,27 +2365,27 @@
         }
       },
       "en": {
-        "title": "Which person was this physical act directed against?",
+        "title": "Who was this physical action directed at?",
         "time": "Last 12 months.",
         "help": "",
         "choices": {
-          "A": "Children's",
-          "B": "An adult who is dependent on the care of others",
-          "C": "Partners or former partners",
+          "A": "A child",
+          "B": "An adult who depends on others for care",
+          "C": "A partner or former partner",
           "D": "Another family member",
           "E": "I do not know / difficult to say",
           "F": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Против кого именно был направлен этот акт физического насилия?",
+        "title": "На кого было направлено это физическое действие?",
         "time": "Последние 12 месяцев.",
         "help": "",
         "choices": {
-          "A": "Детский",
-          "B": "Взрослый человек, зависящий от заботы других.",
-          "C": "Партнеры или бывшие партнеры",
-          "D": "Ещё один член семьи",
+          "A": "На ребёнка",
+          "B": "На взрослого, который нуждается в уходе других людей",
+          "C": "На партнёра или бывшего партнёра",
+          "D": "На другого члена семьи",
           "E": "Не знаю / трудно сказать",
           "F": "Я не хочу отвечать."
         }
@@ -2450,12 +2450,12 @@
         }
       },
       "en": {
-        "title": "When was the last time this physical action occurred?",
-        "time": "Time since action.",
+        "title": "When did this last happen?",
+        "time": "Time since the most recent occurrence.",
         "help": "",
         "choices": {
           "A": "Within the past 24 hours",
-          "B": "2-7 days ago",
+          "B": "2–7 days ago",
           "C": "8–28 days ago",
           "D": "Earlier in the last 12 months",
           "E": "I do not know / difficult to say",
@@ -2463,12 +2463,12 @@
         }
       },
       "ru": {
-        "title": "Когда в последний раз происходило подобное физическое действие?",
-        "time": "Время, прошедшее с момента совершения действия.",
+        "title": "Когда это произошло в последний раз?",
+        "time": "Время с последнего случая.",
         "help": "",
         "choices": {
           "A": "В течение последних 24 часов",
-          "B": "2-7 дней назад",
+          "B": "2–7 дней назад",
           "C": "8–28 дней назад",
           "D": "Ранее за последние 12 месяцев",
           "E": "Не знаю / трудно сказать",
@@ -2542,7 +2542,7 @@
         }
       },
       "ru": {
-        "title": "Кто-нибудь нуждается в медицинской помощи после этого инцидента?",
+        "title": "Нужна ли кому-либо медицинская помощь сейчас после этого действия?",
         "time": "В настоящее время.",
         "help": "",
         "choices": {
@@ -2606,27 +2606,27 @@
       "en": {
         "title": "Have you humiliated, intimidated, or controlled a family member with any of these actions?",
         "time": "Last 12 months.",
-        "help": "Answer for a specific action. This answer alone is not a conclusion about the person; the circumstances, repetition, and impact are also important.",
+        "help": "Answer about specific actions. This answer alone does not tell us what kind of person someone is. The circumstances, how often it happened, and its impact also matter.",
         "choices": {
-          "A": "Repeatedly ridiculed, belittled, or called names",
-          "B": "Deny or limit access to money, communication, or support to control",
-          "C": "Threatened to abandon a person in care without help",
-          "D": "I damaged objects to intimidate people.",
+          "A": "I repeatedly mocked, belittled or called the person names",
+          "B": "I denied or limited access to money, communication or support to control the person",
+          "C": "I threatened to leave someone in my care without help",
+          "D": "I damaged objects to intimidate the person",
           "E": "None of the above",
           "F": "I do not know / difficult to say",
           "G": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Вы когда-либо унижали, запугивали или контролировали члена своей семьи с помощью каких-либо из этих действий?",
+        "title": "Унижали, запугивали или контролировали ли Вы члена семьи каким-либо из перечисленных способов?",
         "time": "Последние 12 месяцев.",
-        "help": "Ответ на конкретное действие. Сам по себе этот ответ не является выводом о человеке; обстоятельства, повторение и последствия также важны.",
+        "help": "Отвечайте о конкретных действиях. Один ответ не позволяет сделать вывод о человеке. Важны также обстоятельства, повторяемость и последствия.",
         "choices": {
-          "A": "Неоднократно высмеивали, унижали или обзывали.",
-          "B": "Запретить или ограничить доступ к деньгам, общению или поддержке для контроля",
-          "C": "Угрожал оставить человека, находящегося под опекой, без посторонней помощи.",
-          "D": "Я повреждал предметы, чтобы запугать людей.",
-          "E": "Ни один из вышеперечисленных",
+          "A": "Неоднократные насмешки, унижения или обзывания",
+          "B": "Лишение или ограничение доступа к деньгам, общению или поддержке с целью контроля",
+          "C": "Угрозы оставить человека, нуждающегося в уходе, без помощи",
+          "D": "Порча предметов с целью запугать человека",
+          "E": "Ничего из перечисленного",
           "F": "Не знаю / трудно сказать",
           "G": "Я не хочу отвечать."
         }
@@ -2698,13 +2698,13 @@
         }
       },
       "en": {
-        "title": "Which person was the humiliation, intimidation, or control described above directed against?",
+        "title": "Who experienced the humiliation, intimidation or control described above?",
         "time": "Last 12 months.",
         "help": "",
         "choices": {
-          "A": "Children's",
-          "B": "An adult who is dependent on the care of others",
-          "C": "Partners or former partners",
+          "A": "A child",
+          "B": "An adult who depends on others for care",
+          "C": "A partner or former partner",
           "D": "Another family member",
           "E": "I do not know / difficult to say",
           "F": "I don't want to answer."
@@ -2715,10 +2715,10 @@
         "time": "Последние 12 месяцев.",
         "help": "",
         "choices": {
-          "A": "Детский",
-          "B": "Взрослый человек, зависящий от заботы других.",
-          "C": "Партнеры или бывшие партнеры",
-          "D": "Ещё один член семьи",
+          "A": "На ребёнка",
+          "B": "На взрослого, который нуждается в уходе других людей",
+          "C": "На партнёра или бывшего партнёра",
+          "D": "На другого члена семьи",
           "E": "Не знаю / трудно сказать",
           "F": "Я не хочу отвечать."
         }
@@ -2790,7 +2790,7 @@
         }
       },
       "ru": {
-        "title": "Были ли ваши угрозы направлены против партнера, ребенка или другого члена семьи?",
+        "title": "Были ли угрозы, которые Вы высказали или отправили, направлены против партнёра, ребёнка или другого члена семьи?",
         "time": "Последние 12 месяцев.",
         "help": "",
         "choices": {
