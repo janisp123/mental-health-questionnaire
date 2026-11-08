@@ -1,6 +1,6 @@
 # Mental health questionnaire
 
-Free, non-commercial, offline questionnaire to help adults organize information before an appointment with a mental-health professional. It is not a diagnostic tool, screening score, or substitute for professional assessment.
+Free offline questionnaire to help adults organize information before an appointment with a mental-health professional. Anyone can use it for free, including clinicians during paid appointments. It is not a diagnostic tool, screening score, or substitute for professional assessment.
 
 ## Current development build
 
