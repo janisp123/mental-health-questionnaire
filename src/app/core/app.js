@@ -54,9 +54,9 @@ function toolbar(){
 }
 function footer(){
  const email=esc(data.presentation.feedbackContactEmail);
- const contact=(state.screen==="start"||state.screen==="results")&&email
-  ? '<p>'+label("feedbackContactLabel")+' <a href="mailto:'+email+'">'+email+'</a></p>' : "";
- return '<footer>'+contact+'<details><summary>'+label("tools")+'</summary>'+toolbar()+'</details><details id="support-details"><summary>'+label("supportMenu")+'</summary><p>'+label("supportBody")+'</p>'+supportLinks()+'</details><details><summary>'+label("guideTitle")+'</summary><p>'+label("guideBody")+'</p></details><details><summary>'+label("notesTitle")+'</summary><p>'+label("notesBody")+'</p></details><details><summary>'+label("legal")+'</summary>'+ui().legalBody.split("\n\n").map(text=>'<p>'+esc(text)+'</p>').join("")+'</details><details><summary>'+label("helpers")+'</summary><p>'+label("credits")+'</p></details><p class="muted">'+label("statusNote")+' · '+label("footer")+'</p></footer>';
+ const contact=email
+  ? '<p>'+label("projectFeedbackInvitation")+' <a href="mailto:'+email+'">'+email+'</a></p>' : "";
+ return '<footer><details><summary>'+label("tools")+'</summary>'+toolbar()+'</details><details id="support-details"><summary>'+label("supportMenu")+'</summary><p>'+label("supportBody")+'</p>'+supportLinks()+'</details><details><summary>'+label("guideTitle")+'</summary><p>'+label("guideBody")+'</p></details><details><summary>'+label("notesTitle")+'</summary><p>'+label("notesBody")+'</p></details><details><summary>'+label("legal")+'</summary>'+ui().legalBody.split("\n\n").map(text=>'<p>'+esc(text)+'</p>').join("")+'</details><details><summary>'+label("helpers")+'</summary><p>'+label("projectByline")+'</p>'+contact+'<p>'+label("credits")+'</p></details><p class="muted">'+label("statusNote")+' · '+label("footer")+'</p></footer>';
 }
 function renderStart(){
  return window.QuestionnaireScreens.start({label,btn});

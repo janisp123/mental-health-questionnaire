@@ -426,3 +426,7 @@ The toolbar landmark now uses the same localized name as the visible tools headi
 ### 2026-11-08 · Visible project feedback email
 
 The start and results screens show the configured project feedback address as a mail link. The focused feedback and layout checks, locale catalogs, full HTML build and offline Chromium journey passed. Verified both screens in LV, EN and RU at 320 px on the packaged reviewer HTML, SHA-256 `0f04ffda95e88c28d7f4dc1e67c25d5fe43bce0ce8cb5c9828e8a490bfd613e7`.
+
+### 2026-11-08 · Help, feedback and acknowledgements
+
+Grouped the creator byline, project feedback email and acknowledgements in the last expandable section in Latvian, English and Russian. The feedback, layout, locale, build and full offline Chromium checks passed. Verified the collapsed and expanded states on the start and results screens in the packaged HTML at 320 px. Reviewer HTML SHA-256 `8dca22bab083603f9b882a7e1bde51b468b4577e0fd7da6242eb5c740b560166`.

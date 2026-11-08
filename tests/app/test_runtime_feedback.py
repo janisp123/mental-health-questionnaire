@@ -15,11 +15,16 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     write_fixture(html_path)
     browser = launch(pw)
     page, errors, network = open_page(browser, html_path)
-    contact = page.get_by_role("link", name="test@example.invalid", exact=True)
+    panel = page.locator("footer details").last
+    contact = panel.locator('a[href="mailto:test@example.invalid"]')
     for locale in ("lv", "en", "ru"):
         page.select_option("#language", locale)
+        assert not panel.evaluate("(details) => details.open")
+        assert not page.locator('a[href="mailto:test@example.invalid"]').is_visible()
+        panel.locator("summary").click()
         assert contact.is_visible()
-        assert contact.get_attribute("href") == "mailto:test@example.invalid"
+        assert contact.inner_text() == "test@example.invalid"
+        assert "Janis Paegle" in panel.inner_text()
     page.select_option("#language", "en")
     page.locator('[data-act="start"]').click()
     page.locator('[data-module="S01"]').check()
@@ -48,6 +53,8 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert "SYN_01" not in removed["feedback"]
     assert removed["answers"]["SYN_01"]["codes"] == ["A"]
     act(page, "results")
+    assert not contact.is_visible()
+    panel.locator("summary").click()
     assert contact.is_visible()
     assert page.locator('[data-act="copyFeedback"]').is_visible()
     assert not errors, errors
