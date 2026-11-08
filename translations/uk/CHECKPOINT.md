@@ -5,7 +5,7 @@ Updated 8 November 2026, Riga time. Branch `develop`.
 | Scope | Status |
 | --- | --- |
 | Questionnaire source | Latvian v16 in `src/modules/`, baseline `f25a6c1` |
-| Question text | 173 of 712 translated and structurally checked |
+| Question text | 216 of 712 translated and structurally checked |
 | Interface | 126 of 126 keys drafted. Keys, types, placeholders and dated entries checked against Latvian. |
 | Reviewer README | Ukrainian text drafted in `README_REVIEW.uk.md`. Button labels checked against `ui.json`. |
 | Medication form | All 32 strings drafted. Nested keys, saved answer codes and clinician report labels checked. |
@@ -15,7 +15,7 @@ Updated 8 November 2026, Riga time. Branch `develop`.
 
 ## Next batch
 
-Start S06 with module **07** (attention and activity). Then modules 08, 25 and 46.
+Start S10 with module **15** (nicotine, alcohol and other substances).
 
 ## Checkpoint history
 
@@ -29,3 +29,4 @@ Start S06 with module **07** (attention and activity). Then modules 08, 25 and 4
 - 2026-11-08 · Drafted all 23 questions in S01 module 01. Checked clinical-history wording and inclusive time boundaries against Latvian. Diagnosis names require human review.
 - 2026-11-08 · Drafted modules 14 and 30, completing S01. Checked all 61 S01 records. Flag M14_21 for a fluent and clinical comparison: Ukrainian uses the involuntary-movement meaning of the existing English wording. Emergency, medication and neurological wording also needs clinical review.
 - 2026-11-08 · Drafted all 50 S09 questions across modules 11, 12 and 13. Checked response counts, inclusive and exclusive time boundaries, and distinctions between sleepiness, fatigue and pain. Flag sleep-related safety wording for clinical review.
+- 2026-11-08 · Drafted all 43 S06 questions in modules 07, 08, 25 and 46. Checked childhood versus current time windows, missing choice codes in the source and the distinction between speech and language.
