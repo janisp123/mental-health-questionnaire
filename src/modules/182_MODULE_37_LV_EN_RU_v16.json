@@ -45,7 +45,7 @@
         }
       },
       "ru": {
-        "title": "Беспокойство по поводу внешности отнимает много времени или вызывает значительный стресс?",
+        "title": "Занимает ли беспокойство о внешности много времени или причиняет значительные страдания?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Нет",
@@ -115,24 +115,24 @@
         "time": "Currently.",
         "choices": {
           "A": "Face or skin",
-          "B": "For hair",
-          "C": "What part of the body?",
-          "D": "Muscularity or body composition",
+          "B": "Hair",
+          "C": "A part of the body",
+          "D": "Muscularity or build",
           "E": "Weight or body shape",
-          "F": "Other appearance features",
+          "F": "Another feature of my appearance",
           "G": "I don't want to specify"
         }
       },
       "ru": {
-        "title": "Что вас больше всего беспокоит?",
+        "title": "Что Вас больше всего беспокоит?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Лицо или кожа",
-          "B": "Для волос",
-          "C": "Какую часть тела?",
-          "D": "Мышечная масса или состав тела",
+          "B": "Волосы",
+          "C": "Какая-либо часть тела",
+          "D": "Мускулатура или телосложение",
           "E": "Вес или форма тела",
-          "F": "Другие особенности внешнего вида",
+          "F": "Другая особенность внешности",
           "G": "Я не хочу уточнять."
         }
       },
@@ -285,14 +285,14 @@
         }
       },
       "en": {
-        "title": "What are you doing about these concerns?",
+        "title": "What do you do because of these worries?",
         "time": "Currently.",
         "choices": {
-          "A": "I double-check my appearance.",
+          "A": "I repeatedly check my appearance.",
           "B": "I avoid mirrors or photographs.",
-          "C": "Features of the appearance of skis",
+          "C": "I hide the feature I’m worried about.",
           "D": "I compare myself to others.",
-          "E": "I repeatedly seek confirmation or cosmetic help",
+          "E": "I repeatedly seek reassurance or cosmetic help.",
           "F": "I avoid people.",
           "G": "None of the above",
           "H": "I don't know",
@@ -300,14 +300,14 @@
         }
       },
       "ru": {
-        "title": "Что вы предпринимаете в связи с этими опасениями?",
+        "title": "Что Вы делаете из-за этих переживаний?",
         "time": "В настоящее время.",
         "choices": {
-          "A": "Я ещё раз проверяю свой внешний вид.",
-          "B": "Я избегаю зеркал и фотографий.",
-          "C": "Особенности внешнего вида лыж",
+          "A": "Я неоднократно проверяю свою внешность.",
+          "B": "Я избегаю зеркал или фотографий.",
+          "C": "Я скрываю особенность внешности, которая меня беспокоит.",
           "D": "Я сравниваю себя с другими.",
-          "E": "Я неоднократно обращаюсь за подтверждением или косметической помощью.",
+          "E": "Я неоднократно ищу заверений или обращаюсь за косметической помощью.",
           "F": "Я избегаю людей.",
           "G": "Ничего из перечисленного",
           "H": "Я не знаю",
@@ -389,15 +389,15 @@
           "A": "Not at all",
           "B": "A little",
           "C": "Moderately",
-          "D": "Severely",
-          "E": "Very severely",
+          "D": "A lot",
+          "E": "Very much",
           "F": "Does not apply to me",
           "G": "I don't know",
           "H": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Насколько эти проблемы мешают вашей работе, учебе или личным отношениям?",
+        "title": "Насколько эти переживания мешают Вашей работе, учёбе или отношениям?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Совсем нет",

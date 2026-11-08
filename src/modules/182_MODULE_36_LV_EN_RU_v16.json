@@ -45,7 +45,7 @@
         }
       },
       "ru": {
-        "title": "Вы ограничиваете количество или разнообразие потребляемой пищи по причинам, не связанным со снижением веса?",
+        "title": "Ограничиваете ли Вы количество или разнообразие еды по причинам, не связанным со снижением веса?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Нет",
@@ -119,21 +119,21 @@
           "A": "Taste, smell, texture or appearance",
           "B": "Fear of choking or vomiting",
           "C": "Little interest in food",
-          "D": "Pain, swallowing, or other physical difficulties",
-          "E": "Food inaccessibility",
+          "D": "Pain, difficulty swallowing, or other physical difficulties",
+          "E": "Lack of access to food",
           "F": "Other reason",
           "G": "I don't know",
           "H": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Что затрудняет прием пищи?",
+        "title": "Что затрудняет приём пищи?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Вкус, запах, текстура или внешний вид",
-          "B": "Страх подавиться или вырвать",
+          "B": "Страх подавиться или страх рвоты",
           "C": "Мало интереса к еде",
-          "D": "Боль, затруднения при глотании или другие физические проблемы.",
+          "D": "Боль, трудности с глотанием или другие физические трудности",
           "E": "Недоступность продуктов питания",
           "F": "Другая причина",
           "G": "Я не знаю",
@@ -199,7 +199,7 @@
         }
       },
       "en": {
-        "title": "Is the range of foods gradually becoming narrower?",
+        "title": "Is the range of foods you eat gradually getting smaller?",
         "time": "Currently.",
         "choices": {
           "A": "No",
@@ -209,7 +209,7 @@
         }
       },
       "ru": {
-        "title": "Ассортимент продуктов питания постепенно сужается?",
+        "title": "Становится ли постепенно всё меньше продуктов, которые Вы едите?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Нет",
@@ -275,12 +275,12 @@
         }
       },
       "en": {
-        "title": "What effects have you observed?",
+        "title": "What consequences have you noticed?",
         "time": "Currently.",
         "choices": {
           "A": "Unplanned weight loss",
-          "B": "The doctor diagnosed a nutritional deficiency",
-          "C": "Special dietary products are needed to ensure adequate nutrition intake",
+          "B": "A doctor found a nutrient deficiency",
+          "C": "I need special nutrition products to get enough nourishment",
           "D": "Difficulty eating with others",
           "E": "No effects observed",
           "F": "I don't know",
@@ -288,14 +288,14 @@
         }
       },
       "ru": {
-        "title": "Какие эффекты вы наблюдали?",
+        "title": "Какие последствия Вы заметили?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Незапланированная потеря веса",
-          "B": "Врач диагностировал дефицит питательных веществ.",
-          "C": "Для обеспечения адекватного потребления питательных веществ необходимы специальные диетические продукты.",
-          "D": "Трудности с приемом пищи в компании других людей.",
-          "E": "Никаких эффектов не наблюдалось.",
+          "B": "Врач выявил дефицит питательных веществ",
+          "C": "Мне нужны специальные продукты, чтобы получать достаточно питания",
+          "D": "Трудно есть вместе с другими людьми",
+          "E": "Не замечаю последствий",
           "F": "Я не знаю",
           "G": "Я не хочу отвечать."
         }
@@ -365,7 +365,7 @@
         }
       },
       "en": {
-        "title": "How long will these eating difficulties last?",
+        "title": "How long have these eating difficulties been going on?",
         "time": "Currently.",
         "choices": {
           "A": "Less than a month",
@@ -379,7 +379,7 @@
         }
       },
       "ru": {
-        "title": "Как долго будут продолжаться эти проблемы с питанием?",
+        "title": "Как долго продолжаются эти трудности с питанием?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Менее месяца",
@@ -465,15 +465,15 @@
           "A": "Not at all",
           "B": "A little",
           "C": "Moderately",
-          "D": "Severely",
-          "E": "Very severely",
+          "D": "A lot",
+          "E": "Very much",
           "F": "Does not apply to me",
           "G": "I don't know",
           "H": "I don't want to answer."
         }
       },
       "ru": {
-        "title": "Насколько эти трудности ограничивают вашу повседневную жизнь?",
+        "title": "Насколько эти трудности ограничивают Вашу повседневную жизнь?",
         "time": "В настоящее время.",
         "choices": {
           "A": "Совсем нет",
