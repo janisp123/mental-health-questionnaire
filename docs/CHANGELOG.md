@@ -438,3 +438,7 @@ Renamed the final expandable section in all three languages. The locale, feedbac
 ### 2026-11-08 · Simplified feedback section
 
 Kept the contact invitation and clickable email as the only text in the final expandable section. The browser feedback regression, locale check and full-bank build passed. Verified both start and results screens in all three languages in the reviewer HTML, SHA-256 `8f61ab9fd66dde19eaf764b13deceb0a83d4e0180988a96b2a9f9c859d3474c6`.
+
+### 2026-11-08 · Footer creator credit
+
+Added “made by Janis Paegle 2026” as the final line of the questionnaire footer. Confirmed inherited font styling and final placement in the reviewer HTML in all three locales. The locale, feedback and full-bank build checks passed. Reviewer HTML SHA-256 `b7e48c2ab3a48d1e14be0fa976089d6bd308ca81028abdb9ba3eef4f452193e4`.
