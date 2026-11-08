@@ -382,3 +382,7 @@ Reviewed 21 questions in module 02. Preserved the first nine legacy screening re
 Reviewed all 17 module 05 questions, completing all 38 in S02. Clarified the instruction to use the same episode in linked answers, preserved the exact duration boundaries, and distinguished low mood from a diagnosis while making clear that the reported features occurred at the same time. Preserved the Latvian source, IDs, answer codes and branching. Source integrity, frozen Latvian parity, source adapter, locale catalogs, full HTML build and Chromium offline journey passed. Inspected all 38 S02 records in the build and checked the corrected timing wording.
 
 Repository reviewer HTML: SHA-256 `a6055cc039433ad4eecc71de86c8b326ee953fefb5d7e3ebe8416cd443430fd5`. The existing trilingual PDF guide remains applicable. The owner copies the HTML to the shared Drive folder. Next: S03.
+
+### 2026-11-08 · S03 checkpoint 1 · module 03
+
+Reviewed 12 questions and preserved the seven legacy screening records in all languages. Clarified how anxiety affects daily life, the count of days when necessary tasks were put off or left undone, and the Russian duration ranges. Preserved Latvian records, IDs, answer codes and branching. Source integrity, frozen Latvian parity, source adapter, locale catalogs and full offline HTML build passed. The reviewer package remains at S02. Next: S03 module 04, then module 22.
