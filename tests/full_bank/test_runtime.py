@@ -149,11 +149,23 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
 
     # Multi-select is manually saved; single-select saves once even on a double tap.
     assert qid(page) == "M23_11"
-    page.locator('input[name="answer"][value="A"]').check()
-    choose(page, "B")
+    assert page.locator(".selection-hint").inner_text() == data["ui"]["en"]["multiHint"]
+    choose(page, "A")
+    choose(page, "M")
+    assert page.locator('input[name="answer"]:checked').count() == 1
+    assert page.locator('input[name="answer"][value="M"]').is_checked()
+    for code in ("A", "B", "C", "D"):
+        choose(page, code)
+    assert not page.locator('input[name="answer"][value="M"]').is_checked()
+    assert page.locator('input[name="answer"]:checked').count() == 4
     assert backup(page)["answers"] == {}
     act(page, "save")
     assert qid(page) == "M23_01"
+    checklist_backup = backup(page)
+    assert checklist_backup["answers"]["M23_11"]["codes"] == ["A", "B", "C", "D"]
+    restore(page, checklist_backup)
+    assert qid(page) == "M23_01"
+    assert backup(page)["answers"]["M23_11"]["codes"] == ["A", "B", "C", "D"]
     page.locator('input[name="answer"][value="B"]').locator("..").dblclick(delay=40)
     page.wait_for_timeout(1400)
     assert qid(page) == "M23_02"

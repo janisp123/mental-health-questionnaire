@@ -35,11 +35,16 @@ source_by_id = {
     for question in group["questions"]
 }
 assert set(by_id) == set(source_by_id)
+assert source_by_id["M23_11"]["maxChoices"] == 3
+assert "maxChoices" not in by_id["M23_11"]
 for question_id, source_question in source_by_id.items():
     grouped_question = dict(by_id[question_id])
     assert grouped_question["sourceModule"] == source_question["module"]
     grouped_question["module"] = grouped_question["sourceModule"]
-    assert grouped_question == source_question
+    expected = dict(source_question)
+    if question_id == "M23_11":
+        del expected["maxChoices"]
+    assert grouped_question == expected
 positions = {question["id"]: index for index, question in enumerate(questions)}
 for question in questions:
     for language in ("lv", "en", "ru"):

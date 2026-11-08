@@ -26,6 +26,7 @@ Updated 8 November 2026, Riga time. Active branch: `develop`.
 - Results offers a separate feedback PDF preview with email instructions. Verified the printed PDF in all three languages with no questionnaire answers.
 - Report print layout keeps the local file path out of clinician and feedback PDFs. Verified multipage output with Chromium headers and footers enabled.
 - Fixed the gap between the section picker’s bottom buttons. Verified at phone widths in Chromium and added a device retest to the checklist.
+- The improvement goals checklist accepts all 12 applicable choices. Verified exclusivity, save and restore in offline Chromium.
 - Next action: run the physical Android journey and obtain human language and clinical review.
 
 ## Reviewer package

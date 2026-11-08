@@ -490,3 +490,7 @@ The clinician and feedback print layouts preserve spacing inside each page inste
 ### 2026-11-08 · Mobile section picker button spacing
 
 Reused the shared action-row spacing for Continue and Back. Reproduced the touching buttons in Latvian before the fix. The screen, layout, locale and build checks passed. Verified a visible gap at 320 and 390 px in all three languages in the reviewer HTML, SHA-256 `01acf4a8d9771cbd79a2b4ca5b1a0f89e13a4a8bc16946f4a0a0575ceb8aba46`.
+
+### 2026-11-08 · Improvement goals checklist
+
+Removed the three-choice limit from M23_11 in the built questionnaire. The frozen source, answer codes and mutually exclusive choices are preserved. Source parity, locale, build and offline Chromium checks passed. Verified selecting, saving and restoring all 12 applicable choices at phone width. Reviewer HTML SHA-256 `2764a577fa532a5af171c4914a83494393e1d114078197a0c4628a3edc7977a4`.

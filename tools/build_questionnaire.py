@@ -178,6 +178,8 @@ def build_bundle():
         if qid not in by_id:
             raise ValueError("Presentation references an unknown question: " + qid)
         q = by_id[qid]
+        if "allowAllChoices" in rule and (rule["allowAllChoices"] is not True or not q.get("maxChoices")):
+            raise ValueError("Expected a capped question for allowAllChoices: " + qid)
         if "labels" in rule and set(rule["labels"]) != set(LANGS):
             raise ValueError("Missing report label language: " + qid)
         if any(code not in q["choiceCodes"] or level not in ("support", "emergency")
@@ -225,6 +227,8 @@ def build_bundle():
                 question = dict(source_question)
                 question["sourceModule"] = module_id
                 question["module"] = section_id
+                if presentation["questions"].get(question["id"], {}).get("allowAllChoices"):
+                    del question["maxChoices"]
                 questions.append(question)
         if len(questions) < 30:
             raise ValueError("Each user-facing section must contain at least 30 source questions: " + section_id)
