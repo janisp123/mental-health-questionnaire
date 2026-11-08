@@ -5,7 +5,7 @@ require("../../src/app/screens/report-page.js");
 const screens = globalThis.QuestionnaireScreens;
 const labels = {
   countDone:"Completed", results:"Finished", doctorDisclaimer:"Review with a professional",
-  noneFlagged:"No feedback yet", specialist:"Doctor report", feedbackProjectCopy:"Copy project feedback",
+  noneFlagged:"No feedback yet", specialist:"Doctor report", feedbackProjectReport:"Prepare feedback report",
   back:"Back", editSections:"Edit sections", new:"Start over", print:"Print / save PDF", backToAnswers:"Back to answers",
 };
 const label = key => labels[key] || key;
@@ -14,14 +14,14 @@ const btn = (action,key,cls="") =>
 const escape = value => String(value ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;");
 
 const results = screens.results({
-  label,btn,escape,counts:{answered:2,skipped:1,unanswered:3,completed:3},
-  selected:"",feedbackText:"Synthetic project feedback only",
+  label,btn,counts:{answered:2,skipped:1,unanswered:3,completed:3},
+  selected:"",
   reportLanguageOptions:'<option value="lv">Latviešu</option>',
 });
 assert.match(results,/Completed <b>3<\/b>/);
 assert.doesNotMatch(results,/Open|unanswered|Synthetic section|review@example\.test/);
-assert.match(results,/Synthetic project feedback only/);
-assert.match(results,/data-act="copyFeedback"/);
+assert.match(results,/data-act="feedbackReport"/);
+assert.doesNotMatch(results,/copyFeedback|<textarea/);
 assert.match(results,/data-act="doctor"/);
 assert.match(results,/<select id="report-language"><option value="lv">Latviešu<\/option><\/select>/);
 

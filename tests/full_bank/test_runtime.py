@@ -224,13 +224,20 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     act(page, "previous")
     assert qid(page) == "M33_02"
     act(page, "results")
-    page.evaluate('window.__copied=null;Object.defineProperty(navigator,"clipboard",{value:{writeText:async t=>{window.__copied=t}},configurable:true})')
-    act(page, "copyFeedback")
-    page.wait_for_function("window.__copied!==null")
-    project_feedback = page.evaluate("window.__copied")
+    act(page, "feedbackReport")
+    feedback_preview = page.locator(".report-preview")
+    assert feedback_preview.is_visible()
+    project_feedback = feedback_preview.inner_text()
     assert "Synthetic question note" in project_feedback
     assert "SYNTHETIC NAME" not in project_feedback
     assert "SYNTHETIC MEDICINE" not in project_feedback
+    assert data["presentation"]["feedbackContactEmail"] in project_feedback
+    page.emulate_media(media="print")
+    assert feedback_preview.is_visible()
+    assert not page.locator('[data-act="print"]').is_visible()
+    assert len(page.pdf(format="A4")) > 1000
+    page.emulate_media(media="screen")
+    act(page, "resultScreen")
     report_language = page.get_by_role("combobox", name="Report language")
     assert report_language.input_value() == "en"
     report_language.select_option("lv")

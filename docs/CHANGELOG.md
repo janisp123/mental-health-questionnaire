@@ -478,3 +478,7 @@ Moved the future plans beneath the ten latest dated updates in the expandable up
 ### 2026-11-08 · Separate clinician report language
 
 The results screen lets patients choose the clinician report language independently of the questionnaire language. It defaults to the current questionnaire language. Question and answer labels are rendered in the chosen language, and typed text stays as entered. Screen, event, locale, full offline journey and build checks passed. Verified all three report languages and generated PDFs from the packaged HTML, SHA-256 `39f562880a83b55257b3f355a1174136ea8e2dbb8278abadf8f923cd114338f4`.
+
+### 2026-11-08 · Project feedback PDF
+
+Replaced the clipboard button with a visible feedback report and Print / save PDF. The report displays the project email and instructions for manually sending the PDF. Tested that flagged comments and the contact address appear while synthetic questionnaire answers stay out. The screen, feedback, locale, report, offline Chromium and build checks passed. Verified PDFs in all three languages from the packaged reviewer HTML, SHA-256 `28b5e7160b7a1f4a3e0ca7d0efddd1eb2ccfc36f00924f103d176b67e814f5c7`.
