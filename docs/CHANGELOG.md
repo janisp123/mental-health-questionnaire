@@ -422,3 +422,7 @@ Tested reviewer artifact at c09987a. All 23 active checks passed on Windows. Add
 ### 2026-11-08 · Localized toolbar accessibility label
 
 The toolbar landmark now uses the same localized name as the visible tools heading. The regression reproduced the Latvian failure before the fix and passed in all three languages after it. Locale catalogs, project index, full HTML build and offline Chromium journey passed. Verified all three toolbar labels in the packaged HTML, SHA-256 `d2b45db8346d9a9da08617eb299185a56881636bae4ff0577fd03f729a901d71`. Next: physical Android testing and human review.
+
+### 2026-11-08 · Visible project feedback email
+
+The start and results screens show the configured project feedback address as a mail link. The focused feedback and layout checks, locale catalogs, full HTML build and offline Chromium journey passed. Verified both screens in LV, EN and RU at 320 px on the packaged reviewer HTML, SHA-256 `0f04ffda95e88c28d7f4dc1e67c25d5fe43bce0ce8cb5c9828e8a490bfd613e7`.
