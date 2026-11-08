@@ -25,6 +25,7 @@ Updated 8 November 2026, Riga time. Active branch: `develop`.
 - The results screen offers a separate report language. Offline Chromium verified all three report languages, unchanged answers and PDF output.
 - Results offers a separate feedback PDF preview with email instructions. Verified the printed PDF in all three languages with no questionnaire answers.
 - Report print layout keeps the local file path out of clinician and feedback PDFs. Verified multipage output with Chromium headers and footers enabled.
+- Fixed the gap between the section picker’s bottom buttons. Verified at phone widths in Chromium and added a device retest to the checklist.
 - Next action: run the physical Android journey and obtain human language and clinical review.
 
 ## Reviewer package

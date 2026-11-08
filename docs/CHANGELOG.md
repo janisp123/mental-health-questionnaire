@@ -486,3 +486,7 @@ Replaced the clipboard button with a visible feedback report and Print / save PD
 ### 2026-11-08 · Keep local file paths out of PDFs
 
 The clinician and feedback print layouts preserve spacing inside each page instead of giving the browser space for its automatic headers and footers. Reproduced the path in the previous HTML and verified its absence in both rebuilt PDFs, including all pages with browser headers and footers enabled. The locale, full build and offline Chromium checks passed. Reviewer HTML SHA-256 `98b50ec80c665ec5bb7c4d476f706f824949ab0c6f0cb4eb0d9d99d93a45ab39`.
+
+### 2026-11-08 · Mobile section picker button spacing
+
+Reused the shared action-row spacing for Continue and Back. Reproduced the touching buttons in Latvian before the fix. The screen, layout, locale and build checks passed. Verified a visible gap at 320 and 390 px in all three languages in the reviewer HTML, SHA-256 `01acf4a8d9771cbd79a2b4ca5b1a0f89e13a4a8bc16946f4a0a0575ceb8aba46`.

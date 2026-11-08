@@ -23,6 +23,15 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert "3 questions" in page.locator(".card").inner_text()
     assert not re.search(r"\b0/\d+\b", page.locator(".card").inner_text())
     assert not page.locator(".section-progress").count()
+    page.set_viewport_size({"width": 320, "height": 844})
+    for locale in ("lv", "en", "ru"):
+        page.select_option("#language", locale)
+        confirm = page.locator('[data-act="confirm"]').bounding_box()
+        cancel = page.locator('[data-act="cancel"]').bounding_box()
+        horizontal_gap = cancel["x"] - (confirm["x"] + confirm["width"])
+        vertical_gap = cancel["y"] - (confirm["y"] + confirm["height"])
+        assert max(horizontal_gap, vertical_gap) >= 8, f"Section buttons touch in {locale}"
+    page.select_option("#language", "en")
     page.locator('[data-module="S01"]').check()
     page.locator('[data-act="confirm"]').click()
     page.wait_for_selector(".question-nav")
