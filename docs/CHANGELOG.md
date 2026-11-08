@@ -58,7 +58,7 @@ Drive folder read on this session: HTML modified 14:18, PDF 13:57. Read access w
 | 9 | S15 — Sexuality and reproductive health | 47 | DONE |
 | 10 | S07 — Intrusive thoughts and repetitive habits | 45 | DONE |
 | 11 | S08 — Trauma, loss and life changes | 48 | DONE |
-| 12 | S02 — Mood and energy | 38 | IN PROGRESS (21/38) |
+| 12 | S02 — Mood and energy | 38 | DONE |
 | 13 | S03 — Anxiety, panic-like episodes and stress | 40 | TODO |
 | 14 | S04 — Wellbeing, safety and unusual experiences | 44 | TODO |
 | 15 | S05 — Anger and impulses | 36 | TODO |
@@ -376,3 +376,9 @@ Repository reviewer HTML: SHA-256 `54aec5d8b8477d959031001b1ede5c5babb533921676b
 ### 2026-11-08 · S02 checkpoint 1 · module 02
 
 Reviewed 21 questions in module 02. Preserved the first nine legacy screening records in all languages. The source and reuse conditions for named instruments still need confirmation before a translated release. Corrected elapsed duration boundaries, the day-count answers, concurrent events versus causal claims, and low mood versus a diagnosis of depression. Preserved all Latvian records, IDs, answer codes and branching. Source integrity, frozen Latvian parity, source adapter, locale catalogs and full offline HTML build passed. Reviewer package remains at S08. Next: module 05.
+
+### 2026-11-08 · S02 complete · module 05
+
+Reviewed all 17 module 05 questions, completing all 38 in S02. Clarified the instruction to use the same episode in linked answers, preserved the exact duration boundaries, and distinguished low mood from a diagnosis while making clear that the reported features occurred at the same time. Preserved the Latvian source, IDs, answer codes and branching. Source integrity, frozen Latvian parity, source adapter, locale catalogs, full HTML build and Chromium offline journey passed. Inspected all 38 S02 records in the build and checked the corrected timing wording.
+
+Repository reviewer HTML: SHA-256 `a6055cc039433ad4eecc71de86c8b326ee953fefb5d7e3ebe8416cd443430fd5`. The existing trilingual PDF guide remains applicable. The owner copies the HTML to the shared Drive folder. Next: S03.

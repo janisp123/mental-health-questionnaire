@@ -284,8 +284,8 @@
     },
     {
       "path": "src/modules/182_MODULE_05_LV_EN_RU_v16.json",
-      "git_blob_sha1": "99d2ba5c4774a7c2182dca095a1498427708f000",
-      "bytes": 46952,
+      "git_blob_sha1": "a99b997756d7be370d1b3d6aa4b7e667b2f586c9",
+      "bytes": 47901,
       "role": "question-module"
     },
     {
@@ -554,7 +554,7 @@
     },
     {
       "path": "tests/fixtures/181_MODULE_INDEX_v16.json",
-      "git_blob_sha1": "dd7d21bedc9c3f0d36c812a905fa39e840261e2d",
+      "git_blob_sha1": "4fa9103be039da5fa7347331ad011e9cd02e81c5",
       "bytes": 11906,
       "role": "reference-test-data"
     },

@@ -48,12 +48,12 @@
         }
       },
       "ru": {
-        "title": "Был ли в вашей жизни период, явно отличавшийся от обычного состояния, с необычно высокой энергией или активностью одновременно с приподнятым либо выраженно раздражительным настроением?",
+        "title": "Был ли в Вашей жизни явно необычный для Вас период, когда у Вас было необычно много энергии или Вы были необычно активны, а настроение одновременно было приподнятым или Вы были особенно раздражительны?",
         "time": "В любой момент жизни.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -115,7 +115,7 @@
       },
       "en": {
         "title": "During that same episode, did you sleep much less than usual yet still not feel tired?",
-        "time": "Choose one lifetime episode of distinct energy, activity and mood changes; refer to the SAME episode in every linked answer.",
+        "time": "Choose one episode from any time in your life when your energy, activity and mood were clearly different from usual. Answer all related questions about that same episode.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -125,12 +125,12 @@
         }
       },
       "ru": {
-        "title": "Во время этого же эпизода спали ли вы намного меньше обычного, но при этом не чувствовали усталости?",
-        "time": "Выберите один эпизод необычных изменений энергии, активности и настроения за всю жизнь; во всех связанных ответах описывайте ОДИН И ТОТ ЖЕ эпизод.",
+        "title": "Во время этого же эпизода спали ли Вы намного меньше обычного, но при этом не чувствовали усталости?",
+        "time": "Выберите один эпизод из Вашей жизни, когда энергия, активность и настроение заметно отличались от обычных. Во всех связанных ответах описывайте один и тот же эпизод.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -192,7 +192,7 @@
       },
       "en": {
         "title": "During that same episode, did you talk more or faster than usual?",
-        "time": "Choose one lifetime episode of distinct energy, activity and mood changes; refer to the SAME episode in every linked answer.",
+        "time": "Choose one episode from any time in your life when your energy, activity and mood were clearly different from usual. Answer all related questions about that same episode.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -202,12 +202,12 @@
         }
       },
       "ru": {
-        "title": "Во время этого же эпизода говорили ли вы больше или быстрее обычного?",
-        "time": "Выберите один эпизод необычных изменений энергии, активности и настроения за всю жизнь; во всех связанных ответах описывайте ОДИН И ТОТ ЖЕ эпизод.",
+        "title": "Во время этого же эпизода говорили ли Вы больше или быстрее обычного?",
+        "time": "Выберите один эпизод из Вашей жизни, когда энергия, активность и настроение заметно отличались от обычных. Во всех связанных ответах описывайте один и тот же эпизод.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -269,7 +269,7 @@
       },
       "en": {
         "title": "During that same episode, were your thoughts racing unusually fast?",
-        "time": "Choose one lifetime episode of distinct energy, activity and mood changes; refer to the SAME episode in every linked answer.",
+        "time": "Choose one episode from any time in your life when your energy, activity and mood were clearly different from usual. Answer all related questions about that same episode.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -280,11 +280,11 @@
       },
       "ru": {
         "title": "Во время этого же эпизода мысли проносились необычно быстро?",
-        "time": "Выберите один эпизод необычных изменений энергии, активности и настроения за всю жизнь; во всех связанных ответах описывайте ОДИН И ТОТ ЖЕ эпизод.",
+        "time": "Выберите один эпизод из Вашей жизни, когда энергия, активность и настроение заметно отличались от обычных. Во всех связанных ответах описывайте один и тот же эпизод.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -346,7 +346,7 @@
       },
       "en": {
         "title": "During that same episode, were you much more active than usual?",
-        "time": "Choose one lifetime episode of distinct energy, activity and mood changes; refer to the SAME episode in every linked answer.",
+        "time": "Choose one episode from any time in your life when your energy, activity and mood were clearly different from usual. Answer all related questions about that same episode.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -356,12 +356,12 @@
         }
       },
       "ru": {
-        "title": "Во время этого же эпизода были ли вы намного активнее обычного?",
-        "time": "Выберите один эпизод необычных изменений энергии, активности и настроения за всю жизнь; во всех связанных ответах описывайте ОДИН И ТОТ ЖЕ эпизод.",
+        "title": "Во время этого же эпизода были ли Вы намного активнее обычного?",
+        "time": "Выберите один эпизод из Вашей жизни, когда энергия, активность и настроение заметно отличались от обычных. Во всех связанных ответах описывайте один и тот же эпизод.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -424,8 +424,8 @@
         }
       },
       "en": {
-        "title": "What unusually risky behaviour occurred during that same episode? Select all that apply.",
-        "time": "Choose one lifetime episode of distinct energy, activity and mood changes; refer to the SAME episode in every linked answer.",
+        "title": "What unusually risky things did you do during that same episode? Select all that apply.",
+        "time": "Choose one episode from any time in your life when your energy, activity and mood were clearly different from usual. Answer all related questions about that same episode.",
         "choices": {
           "A": "Unusually large or uncontrolled spending",
           "B": "Risky sexual behaviour",
@@ -436,8 +436,8 @@
         }
       },
       "ru": {
-        "title": "Какие необычно рискованные действия были во время этого же эпизода? Можно выбрать несколько ответов.",
-        "time": "Выберите один эпизод необычных изменений энергии, активности и настроения за всю жизнь; во всех связанных ответах описывайте ОДИН И ТОТ ЖЕ эпизод.",
+        "title": "Что необычно рискованного Вы делали во время этого же эпизода? Можно выбрать несколько ответов.",
+        "time": "Выберите один эпизод из Вашей жизни, когда энергия, активность и настроение заметно отличались от обычных. Во всех связанных ответах описывайте один и тот же эпизод.",
         "choices": {
           "A": "Необычно большие или неконтролируемые траты",
           "B": "Рискованное сексуальное поведение",
@@ -510,7 +510,7 @@
       },
       "en": {
         "title": "How long did the episode you have chosen for this section last?",
-        "time": "Choose one lifetime episode of distinct energy, activity and mood changes; refer to the SAME episode in every linked answer.",
+        "time": "Choose one episode from any time in your life when your energy, activity and mood were clearly different from usual. Answer all related questions about that same episode.",
         "choices": {
           "A": "Less than 1 day",
           "B": "From 1 day to less than 4 days",
@@ -522,13 +522,13 @@
         }
       },
       "ru": {
-        "title": "Сколько длился выбранный вами эпизод, о котором вы отвечаете в этом разделе?",
-        "time": "Выберите один эпизод необычных изменений энергии, активности и настроения за всю жизнь; во всех связанных ответах описывайте ОДИН И ТОТ ЖЕ эпизод.",
+        "title": "Сколько длился выбранный Вами эпизод, о котором Вы отвечаете в этом разделе?",
+        "time": "Выберите один эпизод из Вашей жизни, когда энергия, активность и настроение заметно отличались от обычных. Во всех связанных ответах описывайте один и тот же эпизод.",
         "choices": {
           "A": "Менее 1 дня",
-          "B": "От 1 дня до менее 4 дней",
-          "C": "От 4 дней до менее 7 дней",
-          "D": "От 7 дней до менее 14 дней",
+          "B": "1 день или больше, но меньше 4 дней",
+          "C": "4 дня или больше, но меньше 7 дней",
+          "D": "7 дней или больше, но меньше 14 дней",
           "E": "14 дней или дольше",
           "F": "Не помню / трудно сказать",
           "G": "Не хочу отвечать."
@@ -595,7 +595,7 @@
       },
       "en": {
         "title": "Did other people notice changes in your behaviour during that same episode?",
-        "time": "Choose one lifetime episode of distinct energy, activity and mood changes; refer to the SAME episode in every linked answer.",
+        "time": "Choose one episode from any time in your life when your energy, activity and mood were clearly different from usual. Answer all related questions about that same episode.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -605,12 +605,12 @@
         }
       },
       "ru": {
-        "title": "Замечали ли окружающие изменения в вашем поведении во время этого же эпизода?",
-        "time": "Выберите один эпизод необычных изменений энергии, активности и настроения за всю жизнь; во всех связанных ответах описывайте ОДИН И ТОТ ЖЕ эпизод.",
+        "title": "Замечали ли окружающие изменения в Вашем поведении во время этого же эпизода?",
+        "time": "Выберите один эпизод из Вашей жизни, когда энергия, активность и настроение заметно отличались от обычных. Во всех связанных ответах описывайте один и тот же эпизод.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -672,7 +672,7 @@
       },
       "en": {
         "title": "Was that episode followed by a period of markedly low mood?",
-        "time": "Choose one lifetime episode of distinct energy, activity and mood changes; refer to the SAME episode in every linked answer.",
+        "time": "Choose one episode from any time in your life when your energy, activity and mood were clearly different from usual. Answer all related questions about that same episode.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -683,11 +683,11 @@
       },
       "ru": {
         "title": "Следовал ли после этого эпизода период выраженной подавленности?",
-        "time": "Выберите один эпизод необычных изменений энергии, активности и настроения за всю жизнь; во всех связанных ответах описывайте ОДИН И ТОТ ЖЕ эпизод.",
+        "time": "Выберите один эпизод из Вашей жизни, когда энергия, активность и настроение заметно отличались от обычных. Во всех связанных ответах описывайте один и тот же эпизод.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -749,7 +749,7 @@
       },
       "en": {
         "title": "Did that episode cause serious difficulties at work, in relationships or with finances?",
-        "time": "Choose one lifetime episode of distinct energy, activity and mood changes; refer to the SAME episode in every linked answer.",
+        "time": "Choose one episode from any time in your life when your energy, activity and mood were clearly different from usual. Answer all related questions about that same episode.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -760,11 +760,11 @@
       },
       "ru": {
         "title": "Привёл ли этот эпизод к серьёзным трудностям на работе, в отношениях или финансах?",
-        "time": "Выберите один эпизод необычных изменений энергии, активности и настроения за всю жизнь; во всех связанных ответах описывайте ОДИН И ТОТ ЖЕ эпизод.",
+        "time": "Выберите один эпизод из Вашей жизни, когда энергия, активность и настроение заметно отличались от обычных. Во всех связанных ответах описывайте один и тот же эпизод.",
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -834,7 +834,7 @@
         "choices": {
           "A": "Нет",
           "B": "Да",
-          "C": "Я не знаю / Я не уверен",
+          "C": "Не знаю / нет уверенности",
           "D": "Я не хочу отвечать.",
           "E": "Ко мне не относится."
         }
@@ -886,7 +886,7 @@
         }
       },
       "en": {
-        "title": "During the past 14 days, have you had a clearly unusual period of increased energy or activity together with elevated or markedly irritable mood?",
+        "title": "In the past 14 days, have you had a period clearly different from usual with unusually high energy or activity and, at the same time, an elevated or markedly irritable mood?",
         "time": "The past 14 days.",
         "choices": {
           "A": "No",
@@ -896,7 +896,7 @@
         }
       },
       "ru": {
-        "title": "Был ли за последние 14 дней явно необычный для вас период повышенной энергии или активности одновременно с приподнятым либо выраженно раздражительным настроением?",
+        "title": "Был ли за последние 14 дней явно необычный для Вас период, когда у Вас было необычно много энергии или Вы были необычно активны, а настроение одновременно было приподнятым или Вы были особенно раздражительны?",
         "time": "За последние 14 дней.",
         "choices": {
           "A": "Нет",
@@ -970,8 +970,8 @@
           "A": "Not at all",
           "B": "A little",
           "C": "Moderately",
-          "D": "Severely",
-          "E": "Very severely",
+          "D": "A lot",
+          "E": "Very much",
           "F": "Does not apply to me",
           "G": "I don't know",
           "H": "I don't want to answer."
@@ -1052,7 +1052,7 @@
       },
       "en": {
         "title": "Did you feel unusually powerful, especially capable, or invulnerable during the episode of heightened energy described above?",
-        "time": "The same episode you answered in this section.",
+        "time": "The same episode you described in this section.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -1061,8 +1061,8 @@
         }
       },
       "ru": {
-        "title": "Вы чувствовали себя необычайно сильными, особенно способными или неуязвимыми во время описанного выше эпизода повышенной энергии?",
-        "time": "Тот же эпизод, на который вы ответили в этом разделе.",
+        "title": "Возникало ли у Вас во время описанного эпизода повышенной энергии ощущение необычайной силы, особых способностей или неуязвимости?",
+        "time": "Тот же эпизод, о котором Вы отвечали в этом разделе.",
         "choices": {
           "A": "Нет",
           "B": "Да",
@@ -1115,7 +1115,7 @@
         }
       },
       "en": {
-        "title": "Was there a combination of depression or hopelessness and unusually high energy, rapid thinking, or a decreased need for sleep during one episode?",
+        "title": "Have you had an episode when you felt low or hopeless at the same time as you had unusually high energy, unusually fast thoughts, or less need for sleep?",
         "time": "At any time in life.",
         "choices": {
           "A": "No",
@@ -1125,7 +1125,7 @@
         }
       },
       "ru": {
-        "title": "Наблюдалось ли в одном из эпизодов сочетание депрессии или безнадежности и необычайно высокой активности, быстрого мышления или сниженной потребности во сне?",
+        "title": "Был ли у Вас эпизод, когда подавленность или безнадёжность возникали одновременно с необычно высокой энергией, ускоренным течением мыслей или сниженной потребностью во сне?",
         "time": "В любой момент жизни.",
         "choices": {
           "A": "Нет",
@@ -1189,7 +1189,7 @@
         }
       },
       "ru": {
-        "title": "Заметные изменения в уровне энергии или настроении начались после начала приема лекарств, изменения дозировки или употребления психоактивных веществ?",
+        "title": "Начались ли выраженные изменения энергии или настроения после начала приёма лекарства, изменения дозы или употребления веществ?",
         "time": "В любой момент жизни.",
         "choices": {
           "A": "Нет",
@@ -1246,7 +1246,7 @@
       "en": {
         "title": "Have periods of high and low mood been recurring for several years, even if each one did not seem very severe individually?",
         "time": "At any time in life.",
-        "help": "This question does not diagnose bipolar disorder. Daily mood swings are not the same as a single episode of mania or hypomania.",
+        "help": "This question does not diagnose bipolar disorder. Day-to-day mood changes are not the same as a distinct episode of mania or hypomania.",
         "choices": {
           "A": "No",
           "B": "Yes",
@@ -1257,7 +1257,7 @@
       "ru": {
         "title": "Периоды подъема и спада настроения повторялись на протяжении нескольких лет, даже если каждый из них по отдельности не казался очень сильным?",
         "time": "В любой момент жизни.",
-        "help": "Этот вопрос не позволяет диагностировать биполярное расстройство. Ежедневные перепады настроения — это не то же самое, что единичный эпизод мании или гипомании.",
+        "help": "Этот вопрос не позволяет диагностировать биполярное расстройство. Повседневные колебания настроения — это не то же самое, что отдельный эпизод мании или гипомании.",
         "choices": {
           "A": "Нет",
           "B": "Да",
