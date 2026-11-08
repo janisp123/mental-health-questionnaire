@@ -454,3 +454,7 @@ Updated the welcome screen, controls, help, support and privacy text to use form
 ### 2026-11-08 · Reviewer notices and PC zoom instructions
 
 Removed the translation draft notices from the reviewer HTML. Added the Ctrl and mouse wheel instructions to the HTML and trilingual PDF guide and updated the PDF’s Latvian address to match the app. Verified the HTML offline in all three languages and visually checked the three A4 PDF pages. Reviewer HTML SHA-256 `f29cb584ad62fbb37ab1d983236d9c27dc14dae24e05f05ae71acf076179b054` and PDF SHA-256 `17b84900179dfff97f47b375e91824ce11d6cf1b439f315ba0486a0cdbd9a8bc`.
+
+### 2026-11-08 · Questionnaire footer wording
+
+Kept the question counts, removed the reference-language and technical-review wording from the footer, and added the non-diagnostic and professional interpretation note. Moved the creator credit inline. The locale catalog and build checks passed. Verified the footer offline in all three languages. Reviewer HTML SHA-256 `04e478523d7a9126a34ab1ef0ec2b2bd1c0808b0dddeffdb47c1400abb956fda`.
