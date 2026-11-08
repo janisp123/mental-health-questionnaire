@@ -5,7 +5,7 @@ Updated 8 November 2026, Riga time. Branch `develop`.
 | Scope | Status |
 | --- | --- |
 | Questionnaire source | Latvian v16 in `src/modules/`, baseline `f25a6c1` |
-| Question text | 506 of 712 translated and structurally checked |
+| Question text | 554 of 712 translated and structurally checked |
 | Interface | 126 of 126 keys drafted. Keys, types, placeholders and dated entries checked against Latvian. |
 | Reviewer README | Ukrainian text drafted in `README_REVIEW.uk.md`. Button labels checked against `ui.json`. |
 | Medication form | All 32 strings drafted. Nested keys, saved answer codes and clinician report labels checked. |
@@ -15,7 +15,7 @@ Updated 8 November 2026, Riga time. Branch `develop`.
 
 ## Next batch
 
-Start S08 with module **10** (trauma), then modules 35, 41 and 42.
+Start S02 with module **02** (mood), then module 05. Flag legacy screening items for source, reuse and human review.
 
 ## Checkpoint history
 
@@ -40,3 +40,4 @@ Start S08 with module **10** (trauma), then modules 35, 41 and 42.
 - 2026-11-08 · Drafted the remaining 21 S14 questions in modules 36, 37, 44 and 45. Checked duration boundaries and distinctions between eating restrictions, body-image concerns and physical symptoms. S14 is complete.
 - 2026-11-08 · Drafted all 47 S15 questions in modules 26, 27, 34 and 40. Checked cycle and postpartum boundaries, distinctions between personal and family history, and gender and sexuality wording. Flag pregnancy and postpartum safety wording for clinical review.
 - 2026-11-08 · Drafted all 45 S07 questions in modules 09, 29, 39, 47 and 48. Checked distinctions among routines, compulsions, repeated urges and current safety concerns.
+- 2026-11-08 · Drafted all 48 S08 questions in modules 10, 35, 41 and 42. Checked event timing, bereavement and dissociation language, and marked trauma and current danger wording for human review.
