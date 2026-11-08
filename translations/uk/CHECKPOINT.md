@@ -5,7 +5,7 @@ Updated 8 November 2026, Riga time. Branch `develop`.
 | Scope | Status |
 | --- | --- |
 | Questionnaire source | Latvian v16 in `src/modules/`, baseline `f25a6c1` |
-| Question text | 273 of 712 translated and structurally checked |
+| Question text | 298 of 712 translated and structurally checked |
 | Interface | 126 of 126 keys drafted. Keys, types, placeholders and dated entries checked against Latvian. |
 | Reviewer README | Ukrainian text drafted in `README_REVIEW.uk.md`. Button labels checked against `ui.json`. |
 | Medication form | All 32 strings drafted. Nested keys, saved answer codes and clinician report labels checked. |
@@ -15,7 +15,7 @@ Updated 8 November 2026, Riga time. Branch `develop`.
 
 ## Next batch
 
-Continue S13 with module **32**. Start with positions 1–10 and continue in module order.
+Continue S13 module **32** at position **26** (M32_27). Export positions 26–50, merge into the existing file, and run the module completion check.
 
 ## Checkpoint history
 
@@ -32,3 +32,4 @@ Continue S13 with module **32**. Start with positions 1–10 and continue in mod
 - 2026-11-08 · Drafted all 43 S06 questions in modules 07, 08, 25 and 46. Checked childhood versus current time windows, missing choice codes in the source and the distinction between speech and language.
 - 2026-11-08 · Drafted all 37 S10 questions in module 15. Checked numeric ranges, standard-drink examples, different substance-use periods and current versus past withdrawal prompts against Latvian. Clinical review of the safety wording remains pending.
 - 2026-11-08 · Drafted all 20 caregiving and safety questions in module 31. Checked the distinctions among hardship, unmet needs, thoughts, wishes, and intent. Flag M31_09–10 and M31_14–20 for clinical review.
+- 2026-11-08 · Drafted the first 25 questions in module 32, through M32_26. Checked family and living context, age bands, and inclusive boundaries for event recency. The remaining 25 questions are pending.
