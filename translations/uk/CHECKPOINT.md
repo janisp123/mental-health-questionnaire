@@ -5,7 +5,7 @@ Updated 8 November 2026, Riga time. Branch `develop`.
 | Scope | Status |
 | --- | --- |
 | Questionnaire source | Latvian v16 in `src/modules/`, baseline `f25a6c1` |
-| Question text | 31 of 712 translated and structurally checked |
+| Question text | 62 of 712 translated and structurally checked |
 | Interface | 126 of 126 keys drafted. Keys, types, placeholders and dated entries checked against Latvian. |
 | Reviewer README | Ukrainian text drafted in `README_REVIEW.uk.md`. Button labels checked against `ui.json`. |
 | Medication form | All 32 strings drafted. Nested keys, saved answer codes and clinician report labels checked. |
@@ -15,7 +15,7 @@ Updated 8 November 2026, Riga time. Branch `develop`.
 
 ## Next batch
 
-Translate all 9 questions in module **43** (S11). Then continue with modules 16 and 17.
+Start S01 module **01**. Export positions 1–10 first, then continue in module order.
 
 ## Checkpoint history
 
@@ -25,3 +25,4 @@ Translate all 9 questions in module **43** (S11). Then continue with modules 16 
 - 2026-11-08 · Drafted all 32 medication form strings. Checked nested keys and tested saving a synthetic entry and rendering its Ukrainian labels in the clinician report.
 - 2026-11-08 · Drafted module and section titles, legacy titles and question-specific report labels. Checked all IDs against their source catalogs. Next is the first question batch.
 - 2026-11-08 · S11 modules 23 and 33 complete (21 and 10 questions). Checked every ID, answer code and source hash. Review the wording about privacy, sensitive identity and readiness for help with a fluent reviewer.
+- 2026-11-08 · Drafted S11 modules 43, 16 and 17, completing all five source modules for S11. Checked all 62 records, including digital-use duration boundaries and the distinction between lifetime and past-year gambling.
