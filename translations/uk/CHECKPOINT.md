@@ -5,7 +5,7 @@ Updated 8 November 2026, Riga time. Branch `develop`.
 | Scope | Status |
 | --- | --- |
 | Questionnaire source | Latvian v16 in `src/modules/`, baseline `f25a6c1` |
-| Question text | 365 of 712 translated and structurally checked |
+| Question text | 393 of 712 translated and structurally checked |
 | Interface | 126 of 126 keys drafted. Keys, types, placeholders and dated entries checked against Latvian. |
 | Reviewer README | Ukrainian text drafted in `README_REVIEW.uk.md`. Button labels checked against `ui.json`. |
 | Medication form | All 32 strings drafted. Nested keys, saved answer codes and clinician report labels checked. |
@@ -15,7 +15,7 @@ Updated 8 November 2026, Riga time. Branch `develop`.
 
 ## Next batch
 
-Start S14 with module **20** (eating and body changes), then 28, 36, 37, 44 and 45.
+Continue S14 with modules **36**, **37**, **44** and **45**.
 
 ## Checkpoint history
 
@@ -36,3 +36,4 @@ Start S14 with module **20** (eating and body changes), then 28, 36, 37, 44 and 
 - 2026-11-08 · Drafted the final 25 questions in module 32, completing S13 with 70 questions. Verified all 50 module 32 IDs and codes with the completion check. Flag childhood harm and bullying questions for human review.
 - 2026-11-08 · Drafted all 19 questions in S12 module 19. Checked privacy and recency wording and made small wording corrections in module 32. Flag M19_07–08 and M19_13–15 for safety review.
 - 2026-11-08 · Drafted the remaining 23 S12 questions in modules 24 and 38. Checked age and duration boundaries, the distinction between ongoing patterns and episodes, and the wording around real threats and loss.
+- 2026-11-08 · Drafted 28 S14 questions in modules 20 and 28. Checked the wording on eating patterns, loss of control and worries about health. The remaining four S14 modules are pending.
