@@ -302,3 +302,7 @@ All 70 S13 questions and 423 option labels per language reviewed. Corrected mean
 ### 2026-11-08 · S13 repository synchronization
 
 Verified S13 source checkpoint: `eecfc0f`. The repository review package is in `MH_Public_version`. The HTML is the exact build from the 24/24 local checks (SHA-256 `2975ab219d501726874e76dd5529edf4c5a86ae177c1825ac40b114660c4ec0c`); the existing trilingual guide remains applicable (SHA-256 `8613fd1ce73767ada568d464541862a0f5398f048840f6e6e281bda98b7851d0`). The owner copies the two files to the shared Drive folder. Next translation audit: S12.
+
+### 2026-11-08 · S12 checkpoint 1 · module 19
+
+Audited all 19 module 19 questions and their English and Russian options and time notes. Corrected the Russian day counts and formal address, clarified controlling behavior and privacy wording, and preserved the Latvian records, answer codes and ordering, and questionnaire logic. Updated module integrity metadata and all three in-app change notes. Source integrity, frozen Latvian parity, the source adapter, UI catalogs, and the full offline HTML build passed. S12 remains in progress. Next: module 24, then module 38 and section-level browser verification. The reviewer package still represents S13.
