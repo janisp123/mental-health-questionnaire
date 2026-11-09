@@ -28,3 +28,7 @@ Updated 9 November 2026. Migration DONE. Sole active source: `main`. Promotion P
 For the next requested feature, branch from current main and follow `docs/FEATURE_DEVELOPMENT.md`. Build with the ordinary four-language configuration and preserve saved-data/module contracts. Migration and reviewer synchronization are complete; human language/clinical review and physical-device downloaded-file testing remain outstanding.
 
 Distribution snapshot tag: `review/v0.2.2` pins the promoted application/package. Older product branches are historical; PR #1 was closed as superseded by PR #2, with its fixes preserved in main ancestry.
+
+## Latest documentation maintenance
+
+9 November 2026: README now foregrounds v0.2.2, current features/downloads, CI and a preview. RELEASE_POLICY describes the implemented CI/package gates and actual answer-saving behavior, with human/device/clinical gates clearly separate. This maintenance changes no application or distributed file bytes; existing Drive readback records remain valid.
