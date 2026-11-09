@@ -1,0 +1,206 @@
+{
+  "source_commit": "cd854fa8315443e7fca8c5a86cbd12152b1b9fbc",
+  "base_main": "e4c9e88",
+  "package_version": "0.2.3-review+full-bank",
+  "checks": {
+    "load_mode": "memory",
+    "suite": "all",
+    "results": [
+      {
+        "test": "tools/verify_project_index.py",
+        "exit": 0,
+        "seconds": 0.06,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_answer_flow.js",
+        "exit": 0,
+        "seconds": 0.03,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_build_manifest.py",
+        "exit": 0,
+        "seconds": 0.03,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_events.js",
+        "exit": 0,
+        "seconds": 0.03,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_model.js",
+        "exit": 0,
+        "seconds": 0.04,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_question_screens.js",
+        "exit": 0,
+        "seconds": 0.03,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_recovery.js",
+        "exit": 0,
+        "seconds": 0.04,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_report_screens.js",
+        "exit": 0,
+        "seconds": 0.03,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_runtime_answers.py",
+        "exit": 0,
+        "seconds": 4.96,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/app/test_runtime_feedback.py",
+        "exit": 0,
+        "seconds": 4.41,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/app/test_runtime_layout.py",
+        "exit": 0,
+        "seconds": 1.89,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/app/test_runtime_recovery.py",
+        "exit": 0,
+        "seconds": 3.64,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/app/test_screens.js",
+        "exit": 0,
+        "seconds": 0.03,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_ui_catalogs.py",
+        "exit": 0,
+        "seconds": 0.03,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_build.py",
+        "exit": 0,
+        "seconds": 0.38,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_full_groups.py",
+        "exit": 0,
+        "seconds": 0.13,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_layout.py",
+        "exit": 0,
+        "seconds": 0.09,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_layout_sweep.py",
+        "exit": 0,
+        "seconds": 5.27,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/full_bank/test_medicine_report.js",
+        "exit": 0,
+        "seconds": 0.14,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_module_titles.py",
+        "exit": 0,
+        "seconds": 0.04,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_multilingual_qa.py",
+        "exit": 0,
+        "seconds": 9.42,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/full_bank/test_reports.js",
+        "exit": 0,
+        "seconds": 0.3,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_runtime.py",
+        "exit": 0,
+        "seconds": 29.45,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/full_bank/test_source_adapter.py",
+        "exit": 0,
+        "seconds": 0.1,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_source_audit.py",
+        "exit": 0,
+        "seconds": 0.05,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_translation_packs.py",
+        "exit": 0,
+        "seconds": 0.32,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/package/test_review_package.py",
+        "exit": 0,
+        "seconds": 2.34,
+        "browser_load_mode": null
+      },
+      {
+        "test": "translations/test_workspace.py",
+        "exit": 0,
+        "seconds": 0.07,
+        "browser_load_mode": null
+      }
+    ],
+    "passed": 28,
+    "failed": 0
+  },
+  "pdf_pages": 1,
+  "guide_link_annotations": 4,
+  "link_target": "https://github.com/janisp123/mental-health-questionnaire",
+  "clinician_pdf_source_link_absent": true,
+  "metadata_edit": {
+    "description": "HTTP403 Resource not accessible by integration",
+    "topics": "HTTP403 Resource not accessible by integration",
+    "changed": false
+  },
+  "package_files": [
+    {
+      "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.3_REVIEW_BUILD.html",
+      "bytes": 1532081,
+      "sha256": "2ea357d37748529682f4c0a86ce1a618afdb5599d38d84a0fc253f44ecc9aa81"
+    },
+    {
+      "name": "188_README_LV_EN_RU_UK_v0.2.3_REVIEW_BUILD.pdf",
+      "bytes": 49955,
+      "sha256": "defc5d5fe6271b98a0c3fe5fd01521b75eaf3d6415237b4ecb47bdf1fcf03627"
+    }
+  ],
+  "limits": [
+    "Managed-browser local run used explicit memory mode; GitHub CI uses real offline file opening.",
+    "Human language/clinical review and physical-device testing remain outstanding."
+  ]
+}
