@@ -1,3 +1,8 @@
 /* Reserve the navigation viewport: content scrolls above it, never underneath. */
 main:has(.question-nav){height:calc(100dvh - 80px - env(safe-area-inset-bottom,0px));overflow-y:auto;padding-bottom:24px}
 @media print{main:has(.question-nav){height:auto;overflow:visible}}
+/* Long localized options must not impose a minimum width on the medicine form. */
+.medicine-card{min-inline-size:0;max-width:100%;overflow-wrap:anywhere}
+.medicine-card select,.medicine-card input,.medicine-card~.field-label textarea{display:block;width:100%;min-width:0;max-width:100%}
+/* Leave room for the feedback flag even when a title contains long words. */
+.question-title-row h2{min-width:0;overflow-wrap:anywhere}

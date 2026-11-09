@@ -71,6 +71,8 @@ jobs:
           fi
       - name: Run complete offline browser journey
         run: python tests/full_bank/test_runtime.py
+      - name: Check four-language candidate layouts and feedback drafts
+        run: python tests/full_bank/test_candidate_qa.py
       - name: Upload technical-review build (not a release)
         if: success()
         uses: actions/upload-artifact@v4

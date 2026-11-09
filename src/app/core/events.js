@@ -22,6 +22,7 @@ root.QuestionnaireEvents = {
    if(element.hasAttribute("data-med-field")){handlers.medicineChange();return;}
    if(element.hasAttribute("data-module")){handlers.moduleChange();return;}
    if(element.id==="restore"){handlers.restore(element.files[0]);return;}
+   if(element.hasAttribute("data-feedback-reason")){handlers.feedbackChange?.();return;}
    if(element.name==="answer")handlers.answerChange(event);
   });
   app.addEventListener("input",event=>{
@@ -29,6 +30,7 @@ root.QuestionnaireEvents = {
    if(element.id==="shortText")handlers.shortTextInput(element.value);
    if(element.hasAttribute("data-med-field"))handlers.medicineChange();
    if(element.id==="medicineDiscussion")handlers.medicineDiscussionInput(element.value);
+   if(element.id==="feedback-comment")handlers.feedbackChange?.();
   });
  }
 };

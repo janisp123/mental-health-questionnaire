@@ -4,7 +4,7 @@
 const screens = root.QuestionnaireScreens = root.QuestionnaireScreens || {};
 screens.feedback = function ({q,t,state,ui,label,escape,btn}) {
  if(!state.feedbackOpen)return "";
- const saved=state.feedback[q.id]||{reasons:[],comment:""},selected=new Set(saved.reasons||[]);
+ const saved=(state.feedbackDraft?.forId===q.id?state.feedbackDraft:state.feedback[q.id])||{reasons:[],comment:""},selected=new Set(saved.reasons||[]);
  const choices=[["question",label("feedbackQuestion")],["language",label("feedbackLanguage")],
   ...q.choiceCodes.map(code=>["answer:"+code,escape(ui.feedbackAnswerPrefix+" "+code+" — "+(t.choices[code]||code))]),
   ["other",label("feedbackOther")]];

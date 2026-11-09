@@ -138,7 +138,7 @@ function renderReport(){
  }
  const locale=state.reportLang??state.lang;
  const markup=report.doctorMarkup(reportQuestions(),state.answers,locale,data.ui[locale],data.presentation);
- return window.QuestionnaireScreens.reportPage({heading:ui().doctorHeading,locale,markup,escape:esc,label,btn,
+ return window.QuestionnaireScreens.reportPage({heading:data.ui[locale].doctorHeading,locale,markup,escape:esc,label,btn,
   hasFeedback:Object.keys(state.feedback).length>0});
 }
 function renderSectionComplete(){
@@ -155,7 +155,7 @@ function render(){
  if(state.focusSupport||keepSupportFocus){document.getElementById('support-message')?.focus({preventScroll:true});state.focusSupport=false;}
 }
 function clearPendingSingleAnswer(){if(pendingSingleAnswer)clearTimeout(pendingSingleAnswer.timer);pendingSingleAnswer=null;}
-function setQuestion(id){clearPendingSingleAnswer();state.currentId=id;state.pendingSectionEnd=null;state.draft=null;state.feedbackOpen=false;state.screen="question";state.notice="";render();window.scrollTo(0,0);}
+function setQuestion(id){clearPendingSingleAnswer();state.currentId=id;state.pendingSectionEnd=null;state.draft=null;state.feedbackDraft=null;state.feedbackOpen=false;state.screen="question";state.notice="";render();window.scrollTo(0,0);}
 function advance(){
  const destination=flow.next(state,active());
  if(destination.id){setQuestion(destination.id);return;}
@@ -277,7 +277,7 @@ function restore(file){
    state.reviewQueue=restored.reviewQueue;
    state.reviewReturn=restored.reviewReturn;
    state.answers=restored.answers;
-   state.feedback=restored.feedback;state.feedbackOpen=false;
+   state.feedback=restored.feedback;state.feedbackDraft=null;state.feedbackOpen=false;
    state.selected=restored.selected;
    state.sectionConfirmed=restored.sectionConfirmed;
    state.support=null;state.supportSeen=[];
@@ -314,13 +314,13 @@ function action(key){
   if(!reasons.length){state.notice=ui().feedbackChooseReason;render();return;}
   const comment=(document.getElementById("feedback-comment")?.value||"").trim().slice(0,500);
   state.feedback[currentQuestion.id]={reasons,comment,language:state.lang,version:data.version,updatedAt:new Date().toISOString()};
-  state.feedbackOpen=false;state.notice="";
+  state.feedbackDraft=null;state.feedbackOpen=false;state.notice="";
   if(!state.answers[currentQuestion.id])state.answers[currentQuestion.id]={kind:"skip",savedAt:new Date().toISOString(),status:"skipped"};
   advanceAfterSave();
   return;
  }
  if(key==="removeFeedback"){
-  if(current())delete state.feedback[state.currentId];state.feedbackOpen=false;state.notice="";render();return;
+  if(current())delete state.feedback[state.currentId];state.feedbackDraft=null;state.feedbackOpen=false;state.notice="";render();return;
  }
  if(key==="skip"){skip();return;}
  if(key==="previous"){previous();return;}
@@ -370,6 +370,11 @@ window.QuestionnaireEvents.bind(app,{
  },
  language:value=>{if(Object.hasOwn(languageNames,value)){state.lang=value;state.notice="";render();}},
  reportLanguage:value=>{if(Object.hasOwn(languageNames,value))state.reportLang=value;},
+ feedbackChange:()=>{
+  state.feedbackDraft={forId:state.currentId,
+   reasons:Array.from(app.querySelectorAll('[data-feedback-reason]:checked'),el=>el.dataset.feedbackReason),
+   comment:document.getElementById("feedback-comment")?.value||""};
+ },
  medicineChange:readMedicineControls,
  moduleChange:()=>{state.sectionDraft=Array.from(app.querySelectorAll("[data-module]:checked"),el=>el.dataset.module);render();},
  restore,

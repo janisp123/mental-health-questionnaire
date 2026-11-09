@@ -95,6 +95,7 @@
     "guideBody": "Atveriet lejupielādēto HTML failu pārlūkā. Priekšskatījumā tas nedarbojas. Vienas atbildes izvēle tiek saglabāta atvērtajā anketā. Vairākām atbildēm un teksta laukiem nospiediet “Saglabāt un tālāk”. Pirms pauzes saglabājiet progresu failā. Saglabāto failu varat turēt savā ierīcē. Tas nav šifrēts, tāpēc kopīgojiet to tikai ar uzticamiem cilvēkiem vai veselības aprūpes speciālistu. Neievietojiet to sociālajos tīklos vai citviet publiski. Jūs izvēlaties, ko pārrunāt ar speciālistu. Precizitātes pārskatīšanai izlaidiet jautājumus, kas šķiet atbilstoši. Kļūdainos vai neskaidros jautājumus atzīmējiet un izvēlieties iemeslu. Beigās izvēlieties “Sagatavot pārskatu”, lai apskatītu pārskatu speciālistam un saglabātu to PDF formātā. Datorā turiet nospiestu Ctrl taustiņu un ritiniet peles ritenīti uz augšu vai leju, lai palielinātu vai samazinātu teksta izmēru. Rezultātu ekrānā varat izvēlēties pārskata valodu neatkarīgi no anketas valodas. Ja atzīmējāt kādu problēmu, no speciālista pārskata ekrāna varat atvērt atsevišķu atsauksmju pārskatu un saglabāt to PDF formātā.",
     "notesTitle": "Pēdējās izmaiņas un turpmākie plāni",
     "notesHistory": [
+      "09.11.2026. 09:28 — Novērsta zāļu formas un garu jautājumu virsrakstu pārplūde tālruņos. Mainot valodu, iesāktās atsauksmes saglabājas. Pārskata virsraksts atbilst izvēlētajai pārskata valodai.",
       "08.11.2026 20:47 pēc Rīgas laika — pārskats speciālistam un atsauksmes tiek saglabāti atsevišķos PDF failos.",
       "08.11.2026 18:41 pēc Rīgas laika — uzlabojumu mērķu jautājumā var atlasīt visas atbilstošās atbildes.",
       "08.11.2026 18:23 pēc Rīgas laika — sadaļu izvēles ekrānā pievienota atstarpe starp apakšējām pogām.",
@@ -103,8 +104,7 @@
       "08.11.2026 13:47 pēc Rīgas laika — rezultātu ekrānā pievienota pārskata valodas izvēle.",
       "08.11.2026 13:37 pēc Rīgas laika — vienuviet apkopotas desmit jaunākās izmaiņas un turpmākie plāni.",
       "08.11.2026 13:33 pēc Rīgas laika — pievienoti projekta turpmākie plāni.",
-      "08.11.2026 13:29 pēc Rīgas laika — kājenē norādīts, ka ikviens var izmantot anketu bez maksas.",
-      "08.11.2026 13:27 pēc Rīgas laika — kājenē pievienota norāde par anketas lietošanu."
+      "08.11.2026 13:29 pēc Rīgas laika — kājenē norādīts, ka ikviens var izmantot anketu bez maksas."
     ],
     "coverageNote": "Skaits aptver piemērojamos jautājumus. Mainītu nosacījumu dēļ paslēptās atbildes paliek progresa failā, bet šeit nav iekļautas.",
     "autoHint": "Izvēlieties vienu atbildi, lai saglabātu to atvērtajā anketā un turpinātu.",

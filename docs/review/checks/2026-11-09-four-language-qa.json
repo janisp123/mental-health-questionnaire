@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-09",
+  "base_commit": "9f62ed84f35137e110695c48c23bbe0a97c735cb",
+  "candidate": "v0.2.1-reports",
+  "html_sha256": "4bbcccbdfd06a124bb28d13fd843e23e303464c0e05796a4d403dad3848a82b7",
+  "regressions_before": {
+    "tests": 4,
+    "subtest_failures": 17
+  },
+  "regressions_after": {
+    "tests": 4,
+    "failures": 0,
+    "review_suggestions_added": true
+  },
+  "scripts": [
+    {
+      "test": "tools/verify_project_index.py",
+      "exit": 0,
+      "seconds": 0.1,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/full_bank/test_build.py",
+      "exit": 0,
+      "seconds": 0.2,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/full_bank/test_candidate_qa.py",
+      "exit": 0,
+      "seconds": 6.4,
+      "mode": "in-memory HTML; file navigation untested"
+    },
+    {
+      "test": "tests/full_bank/test_full_groups.py",
+      "exit": 0,
+      "seconds": 0.1,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/full_bank/test_layout.py",
+      "exit": 0,
+      "seconds": 0.0,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/full_bank/test_medicine_report.js",
+      "exit": 0,
+      "seconds": 0.1,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/full_bank/test_module_titles.py",
+      "exit": 0,
+      "seconds": 0.0,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/full_bank/test_reports.js",
+      "exit": 0,
+      "seconds": 0.2,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/full_bank/test_runtime.py",
+      "exit": 0,
+      "seconds": 30.3,
+      "mode": "in-memory HTML; file navigation untested"
+    },
+    {
+      "test": "tests/full_bank/test_source_adapter.py",
+      "exit": 0,
+      "seconds": 0.1,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/full_bank/test_source_audit.py",
+      "exit": 0,
+      "seconds": 0.1,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/full_bank/test_translation_packs.py",
+      "exit": 0,
+      "seconds": 0.4,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/app/test_answer_flow.js",
+      "exit": 0,
+      "seconds": 0.1,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/app/test_build_manifest.py",
+      "exit": 0,
+      "seconds": 0.0,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/app/test_events.js",
+      "exit": 0,
+      "seconds": 0.0,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/app/test_model.js",
+      "exit": 0,
+      "seconds": 0.0,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/app/test_question_screens.js",
+      "exit": 0,
+      "seconds": 0.0,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/app/test_recovery.js",
+      "exit": 0,
+      "seconds": 0.0,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/app/test_report_screens.js",
+      "exit": 0,
+      "seconds": 0.0,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/app/test_runtime_answers.py",
+      "exit": 0,
+      "seconds": 5.3,
+      "mode": "in-memory HTML; file navigation untested"
+    },
+    {
+      "test": "tests/app/test_runtime_feedback.py",
+      "exit": 0,
+      "seconds": 4.5,
+      "mode": "in-memory HTML; file navigation untested"
+    },
+    {
+      "test": "tests/app/test_runtime_layout.py",
+      "exit": 0,
+      "seconds": 1.7,
+      "mode": "in-memory HTML; file navigation untested"
+    },
+    {
+      "test": "tests/app/test_runtime_recovery.py",
+      "exit": 0,
+      "seconds": 3.3,
+      "mode": "in-memory HTML; file navigation untested"
+    },
+    {
+      "test": "tests/app/test_screens.js",
+      "exit": 0,
+      "seconds": 0.0,
+      "mode": "direct"
+    },
+    {
+      "test": "tests/app/test_ui_catalogs.py",
+      "exit": 0,
+      "seconds": 0.0,
+      "mode": "direct"
+    },
+    {
+      "test": "translations/test_workspace.py",
+      "exit": 0,
+      "seconds": 0.1,
+      "mode": "direct"
+    }
+  ],
+  "question_layout_sweep": {
+    "tested": 2848,
+    "failures": []
+  },
+  "sampled_screen_layouts": 112,
+  "sampled_screen_overflows": 0,
+  "network_requests": 0,
+  "javascript_errors": 0,
+  "pdf_checks": "Synthetic patient text in clinician PDF only; feedback comment in feedback PDF only; no printed local paths.",
+  "limits": [
+    "Chromium policy blocked file:// navigation; browser runs used test-only in-memory HTML loading.",
+    "No physical Android/iOS tests or clinical/human translation review."
+  ],
+  "review": "Separate code reviewer found no blocking issues. Two optional coverage suggestions were added and the focused browser tests reran successfully."
+}

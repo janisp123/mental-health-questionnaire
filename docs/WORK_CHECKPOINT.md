@@ -1,6 +1,15 @@
 # Resume checkpoint
 
-Updated 8 November 2026, Riga time. Active branch: `develop`.
+Updated 9 November 2026, Riga time. Active fix branch: `codex/fix-four-language-qa`, based on `codex/four-language-candidate` at `9f62ed84f35137e110695c48c23bbe0a97c735cb`.
+
+## Four-language QA fix checkpoint
+
+- Owner requested the four fixes found in the 9 November audit. Implementation and local verification are complete on the dedicated fix branch; main and the shared reviewer files remain unchanged.
+- Medication widths, seven Russian heading/flag layouts, unsaved feedback across language changes and the independent report heading locale are corrected.
+- All 26 active scripts passed; the four new browser regressions pass after failing on the baseline. Browser checks used in-memory HTML because this managed Chromium blocks file navigation.
+- The four-language `v0.2.1-reports` HTML rebuild has SHA-256 `4bbcccbdfd06a124bb28d13fd843e23e303464c0e05796a4d403dad3848a82b7`. The 2,848-layout sweep and 112 sampled screens have no overflow; PDF data separation and offline behavior passed.
+- Evidence: `docs/review/checks/2026-11-09-four-language-qa.json`. Independent review found no blockers. The latest changelog entry records the fix details. Check the GitHub branch/PR for synchronization; a local checkpoint alone does not imply a push.
+- Next action: integrate the verified fix branch into the four-language candidate, then run physical-phone downloaded-file testing and human language/clinical review before promotion.
 
 ## Translation audit
 
