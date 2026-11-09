@@ -1,6 +1,22 @@
 # Mental health questionnaire — four languages
 
-Free offline questionnaire for adults preparing for a mental-health appointment. The current application includes Latvian, English, Russian and Ukrainian: 712 questions from 48 source modules, arranged into 15 optional sections. Latvian is the reference and initial language. It does not diagnose or calculate a screening score.
+[![Multilingual checks](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml/badge.svg?branch=main)](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml)
+
+**Current version: v0.2.2 · Latvian / English / Russian / Ukrainian · 712 questions · 15 optional sections.**
+
+Free offline questionnaire for adults preparing for a mental-health appointment. All four languages are included in one HTML file. Latvian is the reference and initial language. It does not diagnose or calculate a screening score.
+
+**[Open the current review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb)** · [Current files and checksums](MH_Public_version/manifest.json) · [Version snapshot](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.2)
+
+![Current questionnaire in English, showing its offline introduction and language selector](docs/images/questionnaire-current.png)
+
+## What the current version includes
+
+- One shared application with complete LV/EN/RU/UK question and interface packs.
+- Optional sections, medication details, and explicit progress-file download/import, including older three-language progress files.
+- A clinician report language chosen independently of the questionnaire language, plus a separate project-feedback report.
+- Phone layout fixes and preservation of unfinished feedback when switching languages.
+- Repeatable HTML/PDF/ZIP packaging, source/checksum records, main-based CI, and archived rollback packages.
 
 ## Current files
 
@@ -25,7 +41,7 @@ python tools/verify_review_package.py dist/review-0.2.2 --with-zip
 
 The normal HTML output is `dist/QUESTIONNAIRE_LV_EN_RU_UK_NOT_RELEASED.html`. Package destinations are never overwritten. CI runs the same checks on PRs to main and on main, then uploads the matching four-language package.
 
-Read [feature/module contracts](docs/FEATURE_DEVELOPMENT.md), [architecture](docs/QUESTIONNAIRE_ARCHITECTURE.md) and [current checkpoint](docs/WORK_CHECKPOINT.md) before working. For a managed browser that blocks file navigation, explicitly use `--load-mode memory` and record that limitation.
+Read [feature/module contracts](docs/FEATURE_DEVELOPMENT.md), [architecture](docs/QUESTIONNAIRE_ARCHITECTURE.md), [release policy](docs/RELEASE_POLICY.md) and [current checkpoint](docs/WORK_CHECKPOINT.md) before working. For a managed browser that blocks file navigation, explicitly use `--load-mode memory` and record that limitation.
 
 ## Review and contribution
 

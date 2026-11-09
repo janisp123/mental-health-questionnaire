@@ -23,7 +23,7 @@ These rules apply to future development work in this repository, particularly lo
 - `main` is the sole active four-language source. Start short-lived feature/fix branches from current main; use checked PRs to integrate. Older develop/candidate branches are historical. Read `docs/FEATURE_DEVELOPMENT.md` for stable module/data contracts.
 - Before significant edits, inspect the relevant parts of `docs/FILE_INDEX.md`, `project-manifest.json`, and the active entry at the end of `docs/CHANGELOG.md`. Do not load or print those whole files by default.
 - Work on one module and language at a time wherever possible. Preserve original IDs, answer codes, validation logic and backup compatibility.
-- Do not silently modify the public Google Drive Latvian release, the frozen v16 reference baselines, or the original Drive archive.
+- Do not silently modify the current four-language Google Drive review package, the frozen v16 reference baselines, or the original Drive archive. Follow `docs/RELEASE_POLICY.md` for deliberate, readback-verified reviewer updates.
 - Never publish questionnaire responses or identifiable patient information to this public repository.
 - EN, RU and UK translations remain drafts until human review and release-gate requirements are satisfied.
 - Do not claim an untested feature, translation or release passed verification.
