@@ -1,6 +1,6 @@
 # Current working checkpoint
 
-Updated 9 November 2026. Owner approved the four-language main migration. Integration branch: `codex/promote-four-language-main`; main promotion and Drive synchronization are pending in this checkpoint.
+Updated 9 November 2026. Migration DONE. Sole active source: `main`. Promotion PR #2 merged as `1a68d31f385208263be79de5da8c27e3df90354a`; its tree exactly matches the checked head `505187b9b127fe375dafab9b3e341cf4d863ac3b`.
 
 ## Active product
 
@@ -11,10 +11,10 @@ Updated 9 November 2026. Owner approved the four-language main migration. Integr
 
 ## Verification and artifacts
 
-- `python tools/run_checks.py --load-mode memory`: 28 checks pass, including 5,696 question/locale/phone-width renders and legacy recovery import. Direct file opening is blocked in this managed Chromium; GitHub CI is configured to run real offline file opening.
+- All 28 maintained scripts pass locally in explicit memory mode, including 5,696 question/locale/phone-width renders and legacy recovery import. Both final GitHub workflows passed with real offline file opening (runs 42586610302 and 42586610292). Physical-device testing is separate.
 - `MH_Public_version/manifest.json` records the exact repository HTML/PDF hashes and source commit/tree. Package source commit: `e2ce2fa86749012e8336eccca9c89898df3df69f`; source was clean when built.
 - Package CLI tests verify byte-identical repeated HTML/PDF/ZIP builds and refusal to overwrite. PDF has one A4 page and was visually inspected.
-- New package is verified locally; Drive still contains the verified four-language v0.2.1 pair until promotion/update readback is recorded.
+- Repository and Drive contain the same verified four-language v0.2.2 HTML/PDF pair. Both downloads matched exact hashes; existing IDs, folder and sharing are preserved. Evidence: `docs/review/checks/2026-11-09-main-drive-sync.json`.
 
 ## History and rollback
 
@@ -25,4 +25,6 @@ Updated 9 November 2026. Owner approved the four-language main migration. Integr
 
 ## Next action
 
-Complete independent review and GitHub checks, merge the migration into main, verify the resulting tree, then update the same two Drive file IDs with the checked package and record readback hashes. Preserve all sharing settings and reviewer links. Human language/clinical review and physical-device downloaded-file testing remain outstanding.
+For the next requested feature, branch from current main and follow `docs/FEATURE_DEVELOPMENT.md`. Build with the ordinary four-language configuration and preserve saved-data/module contracts. Migration and reviewer synchronization are complete; human language/clinical review and physical-device downloaded-file testing remain outstanding.
+
+Distribution snapshot tag: `review/v0.2.2` pins the promoted application/package. Older product branches are historical; PR #1 was closed as superseded by PR #2, with its fixes preserved in main ancestry.

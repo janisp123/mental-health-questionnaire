@@ -591,21 +591,23 @@
     "folder_url": "https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
     "purpose": "PROFESSIONAL_TECHNICAL_REVIEW_CANDIDATE_NOT_PUBLIC_RELEASE",
     "reference_language": "lv",
-    "version": "0.2.1",
-    "source_commit": "46b138eb10921e0ab02b2b8ba7b5a08465a7f127",
+    "version": "0.2.2",
+    "source_commit": "e2ce2fa86749012e8336eccca9c89898df3df69f",
     "verified_date": "2026-11-09",
     "auto_sync": false,
-    "synchronization": "Four-language v0.2.1 was verified in Drive; v0.2.2 repository package awaits main promotion and deliberate readback-verified update.",
+    "synchronization": "VERIFIED: both current Drive files downloaded byte-identical to the main-promoted repository package; IDs, parents and sharing preserved.",
     "files": [
       {
         "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
-        "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.1_REVIEW_BUILD.html",
-        "sha256": "4bbcccbdfd06a124bb28d13fd843e23e303464c0e05796a4d403dad3848a82b7"
+        "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.2_REVIEW_BUILD.html",
+        "sha256": "8e700bf8cf23b689f44a02c7c11e688284bff5d353408c37d33ff92042433cc9",
+        "bytes": 1531023
       },
       {
         "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
-        "name": "188_README_LV_EN_RU_UK_v0.2.1_REVIEW_BUILD.pdf",
-        "sha256": "262cf6ec898e37b59490ef374318ec7d500361f46ae84893e8781a71fa885a25"
+        "name": "188_README_LV_EN_RU_UK_v0.2.2_REVIEW_BUILD.pdf",
+        "sha256": "adbfe1f41acbdfc7275ae0068afff0379bbd37fa9a3b212d1166966d2e3bade1",
+        "bytes": 48320
       }
     ],
     "source_modules": 48,
@@ -617,6 +619,8 @@
       "ru",
       "uk"
     ],
-    "source_readme": "docs/review/GUIDE_LV_EN_RU_UK.md"
+    "source_readme": "docs/review/GUIDE_LV_EN_RU_UK.md",
+    "promotion_commit": "1a68d31f385208263be79de5da8c27e3df90354a",
+    "last_built_date": "2026-11-09"
   }
 }
