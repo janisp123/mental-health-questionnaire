@@ -54,7 +54,7 @@
       "pilot_prototype": "archive/pilot/",
       "three_language_review": "archive/three-language/v0.2.0/manifest.json",
       "four_language_baseline": "archive/four-language/v0.2.1/manifest.json",
-      "previous_four_language_package": "archive/four-language/v0.2.3/manifest.json"
+      "previous_four_language_package": "archive/four-language/v0.2.4/manifest.json"
     },
     "development_build": {
       "status": "TECHNICAL_REVIEW_BUILD_NOT_RELEASED",
@@ -593,10 +593,10 @@
     "purpose": "PROFESSIONAL_TECHNICAL_REVIEW_CANDIDATE_NOT_PUBLIC_RELEASE",
     "reference_language": "lv",
     "version": "0.2.4",
-    "source_commit": "3a8f9227bda6a85b509703c17cf10b1b37de514e",
+    "source_commit": "ef965b39f241bc0515dbc505232baf536796e7be",
     "verified_date": "2026-11-09",
     "auto_sync": false,
-    "synchronization": "VERIFIED: v0.2.4 creator-credit link HTML and unchanged guide PDF read back byte-identical; existing IDs, folder and sharing preserved.",
+    "synchronization": "PENDING: opening-instructions-only PDF checked locally; Drive remains the prior v0.2.4 pair until checked merge and readback.",
     "files": [
       {
         "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
@@ -607,8 +607,8 @@
       {
         "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
         "name": "188_README_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.pdf",
-        "sha256": "defc5d5fe6271b98a0c3fe5fd01521b75eaf3d6415237b4ecb47bdf1fcf03627",
-        "bytes": 49955
+        "sha256": "6b0cfe0f3eaab3ed5360fd665053c2054e586596b6edba527e9595069b1141d4",
+        "bytes": 47977
       }
     ],
     "source_modules": 48,

@@ -1,0 +1,17 @@
+{
+  "schema": "questionnaire-archive-v1",
+  "origin": "Verified v0.2.4 before opening-instructions-only guide revision",
+  "source_commit": "3a8f9227bda6a85b509703c17cf10b1b37de514e",
+  "files": [
+    {
+      "path": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.html",
+      "bytes": 1532252,
+      "sha256": "8d3dba5b3652b0d137f9c19cbfa30b9aec541dc779a576e243c09c8b89ab0b91"
+    },
+    {
+      "path": "188_README_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.pdf",
+      "bytes": 49955,
+      "sha256": "defc5d5fe6271b98a0c3fe5fd01521b75eaf3d6415237b4ecb47bdf1fcf03627"
+    }
+  ]
+}
