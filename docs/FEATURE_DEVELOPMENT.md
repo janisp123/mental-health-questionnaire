@@ -21,7 +21,7 @@ There is one active application, built from main. Its initial locale is Latvian 
 1. Describe its input, output, saved-data effects and existing behavior it must preserve.
 2. Add a focused failing regression at the relevant module boundary. Use real renderers/runtime and synthetic data.
 3. Add the module or component to the explicit order in `src/app/build.json`; connect it through the existing coordinator/event interface.
-4. Add wording for every active locale. Read the language style guide. Shared user-facing changes require an update note in all active catalogs.
+4. Add wording for every active locale. Read the language style guide. Shared user-facing changes require an update note in all active catalogs. Follow the [audience and privacy rules](../AGENTS.md#audience-and-privacy-in-update-notes): describe patient/doctor-relevant changes only; repository-only maintenance does not create an app entry.
 5. If adding an answer kind, update validation, save/restore, reports and synthetic legacy/current fixtures together. Preserve question IDs/codes and add an explicit version migration if the saved representation changes.
 6. Run focused checks, then `python tools/run_checks.py` for shared behavior changes. Build/verify the package and review its PDF before distribution.
 
