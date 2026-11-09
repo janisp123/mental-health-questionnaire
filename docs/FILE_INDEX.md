@@ -9,6 +9,7 @@ For interrupted work, start with [`docs/WORK_CHECKPOINT.md`](WORK_CHECKPOINT.md)
 1. **Current version pointers and full machine-verifiable list:** [`project-manifest.json`](../project-manifest.json). Treat this as authoritative for which file/version is current; it pins the Git blob SHA1 and size of all **79 imported original files**.
 2. **New work progress:** [`docs/CHANGELOG.md`](CHANGELOG.md). Register tasks before editing; checkpoint every verified batch.
 3. **Release policy:** [`docs/RELEASE_POLICY.md`](RELEASE_POLICY.md). A successful source import does NOT certify behavior, translations or clinical validity.
+4. **Pending Codex task queue:** [`docs/TD_LIST.md`](TD_LIST.md). Owner-approved tasks only; check for conflicts before implementing. It is not the changelog.
 
 ## Current source, per type
 
