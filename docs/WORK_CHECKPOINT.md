@@ -32,3 +32,9 @@ Distribution snapshot tag: `review/v0.2.2` pins the promoted application/package
 ## Latest documentation maintenance
 
 9 November 2026: README now foregrounds v0.2.2, current features/downloads, CI and a preview. RELEASE_POLICY describes the implemented CI/package gates and actual answer-saving behavior, with human/device/clinical gates clearly separate. This maintenance changes no application or distributed file bytes; existing Drive readback records remain valid.
+
+## TD coordination
+
+- Pending requests from the owner go in [the central TD list](TD_LIST.md) on `main`. Read it together with `AGENTS.md` and this checkpoint when starting TD work; follow its conflict preflight before making changes.
+- The former task to promote `main` for employer visibility is already substantially fulfilled by v0.2.2 and the updated README, so it is not an open TD task. The source-link-in-app-and-guide task remains queued for four languages.
+- This documentation-only coordination change does not alter the current v0.2.2 reviewer HTML/PDF or their distributed hashes.
