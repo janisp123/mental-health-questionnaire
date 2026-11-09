@@ -1,0 +1,251 @@
+{
+  "schema": "pilot-module-locale-v1",
+  "module": "opening",
+  "lang": "en",
+  "source_version": "LV-v16",
+  "status": "DRAFT_NOT_RELEASED",
+  "title": "Opening questions and safety",
+  "questions": {
+    "M33_01": {
+      "title": "Name (optional)",
+      "time": "Currently.",
+      "help": "Please provide your first and last name only if you plan to share your results with a specialist. If you are completing the questionnaire only for yourself, you can leave these fields blank. Responses are not automatically sent to the project author or specialist; if you save them, the data may remain on your device and in downloaded files.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I do not know / difficult to say",
+        "D": "I don't want to answer."
+      }
+    },
+    "M33_02": {
+      "title": "Last name (optional)",
+      "time": "Currently.",
+      "help": "Please provide your first and last name only if you plan to share your results with a specialist. If you are completing the questionnaire only for yourself, you can leave these fields blank. Responses are not automatically sent to the project author or specialist; if you save them, the data may remain on your device and in downloaded files.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I do not know / difficult to say",
+        "D": "I don't want to answer."
+      }
+    },
+    "M32_02": {
+      "title": "Which age group are you in?",
+      "time": "Currently.",
+      "choices": {
+        "A": "18-24",
+        "B": "25-34",
+        "C": "35-44",
+        "D": "45-54",
+        "E": "55-64",
+        "F": "65 or older",
+        "G": "Prefer not to answer."
+      }
+    },
+    "M33_04": {
+      "title": "How would you describe your gender identity?",
+      "time": "Currently.",
+      "choices": {
+        "A": "Man",
+        "B": "Woman",
+        "C": "Non-binary identity",
+        "D": "Other characteristics",
+        "E": "I'm not sure.",
+        "F": "I don't want to answer."
+      }
+    },
+    "M33_09": {
+      "title": "How do you fill out the questionnaire?",
+      "time": "Currently.",
+      "choices": {
+        "A": "Independently",
+        "B": "With the help of another person, I choose the answers myself/themselves",
+        "C": "Another person answers for me.",
+        "D": "I don't want to answer."
+      }
+    },
+    "M06_01": {
+      "title": "Are you thinking about suicide right now?",
+      "time": "Currently.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "Prefer not to answer."
+      },
+      "summaryLabel": "Suicidal thoughts"
+    },
+    "M06_02": {
+      "title": "Do you currently intend to die by suicide?",
+      "time": "Currently.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "Prefer not to answer."
+      },
+      "summaryLabel": "Intention to commit suicide"
+    },
+    "M06_02P": {
+      "title": "Do you currently have a specific plan for suicide?",
+      "time": "Currently.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "Prefer not to answer."
+      },
+      "summaryLabel": "A specific suicide plan"
+    },
+    "M06_23": {
+      "title": "Do you have an urge to harm yourself right now, whether or not you want to die?",
+      "time": "Currently.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know",
+        "D": "I don't want to answer."
+      },
+      "summaryLabel": "Desire to harm oneself"
+    },
+    "M06_03": {
+      "title": "Are you currently able to keep yourself safe?",
+      "time": "Currently.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "Prefer not to answer."
+      },
+      "summaryLabel": "Able to take care of your own safety"
+    },
+    "M06_10": {
+      "title": "Do you currently intend to physically harm another person?",
+      "time": "Currently.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "Prefer not to answer."
+      },
+      "summaryLabel": "Intent to physically harm another"
+    },
+    "M18_20": {
+      "title": "Are you currently preparing to physically harm another person? Do not give operational details in the questionnaire.",
+      "time": "Currently.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "I don't want to answer."
+      },
+      "summaryLabel": "Preparing to physically harm another"
+    },
+    "M06_11": {
+      "title": "Do you currently feel physically safe at home?",
+      "time": "Currently.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "Prefer not to answer."
+      },
+      "summaryLabel": "Feel physically safe at home"
+    },
+    "M31_09": {
+      "title": "Is the physical safety of a child or another person in your care currently at risk?",
+      "time": "Currently.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "Prefer not to answer."
+      },
+      "summaryLabel": "Child/caregiver's physical safety is at risk"
+    },
+    "M31_10": {
+      "title": "Are you currently experiencing threats or violence at home?",
+      "time": "Currently.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "Prefer not to answer."
+      },
+      "summaryLabel": "Currently experiencing threats/violence at home"
+    },
+    "M06_13": {
+      "title": "Do you need immediate help to stay safe?",
+      "time": "Currently.",
+      "choices": {
+        "A": "No",
+        "B": "Yes",
+        "C": "I don't know / I'm not sure",
+        "D": "Prefer not to answer."
+      },
+      "summaryLabel": "Immediate security assistance needed"
+    },
+    "M33_06": {
+      "title": "What is your main reason for completing this questionnaire?",
+      "time": "Currently.",
+      "choices": {
+        "A": "I would like to receive help with current difficulties.",
+        "B": "Preparing for a specialist consultation",
+        "C": "I want to better understand how I feel.",
+        "D": "I'm filling it out of curiosity.",
+        "E": "The questionnaire was recommended by a specialist or other person",
+        "F": "Other reason / hard to say",
+        "G": "I don't want to answer."
+      }
+    },
+    "M33_07": {
+      "title": "Why did you choose to fill out the questionnaire right now?",
+      "time": "Currently.",
+      "choices": {
+        "A": "The difficulties began recently.",
+        "B": "Previous difficulties have worsened or returned",
+        "C": "The difficulties have been going on for a long time; I want to finally discuss them.",
+        "D": "They have started to interfere more with everyday life",
+        "E": "A significant life event has occurred",
+        "F": "Someone has expressed concern about my feelings or behavior.",
+        "G": "I would like to review my current treatment.",
+        "H": "Now is the time or willingness to seek help",
+        "I": "No particular reason; I want to check how I'm feeling.",
+        "J": "Other reason / hard to say",
+        "K": "I don't want to answer."
+      }
+    },
+    "M33_08": {
+      "title": "Do you think a specialist could help you with any difficulties you are currently experiencing?",
+      "time": "Currently.",
+      "choices": {
+        "A": "Yes",
+        "B": "Possibly, but I'm not sure.",
+        "C": "I don't think it would help, although the difficulties are",
+        "D": "I don't feel the need for help right now.",
+        "E": "Difficult to say",
+        "F": "I don't want to answer."
+      }
+    },
+    "M23_11": {
+      "title": "What would you most like to improve?",
+      "time": "Currently.",
+      "choices": {
+        "A": "Sleep",
+        "B": "Fatigue or energy",
+        "C": "Mood or motivation",
+        "D": "Anxiety or panic",
+        "E": "Attention or memory",
+        "F": "Effects of medicines",
+        "G": "Workload or caring responsibilities",
+        "H": "Anger or impulse control",
+        "I": "Substance use or other habits that are difficult to control",
+        "J": "Pain or physical health",
+        "K": "Relationships or sexual health",
+        "L": "Another goal I will discuss at the appointment",
+        "M": "No priority at present",
+        "N": "I do not know yet",
+        "O": "Prefer not to answer."
+      }
+    }
+  }
+}

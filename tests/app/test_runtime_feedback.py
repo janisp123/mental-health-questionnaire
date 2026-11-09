@@ -1,0 +1,85 @@
+"""Focused browser check for feedback independence, recovery, and removal."""
+import tempfile
+import sys
+from pathlib import Path
+
+from playwright.sync_api import sync_playwright
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "full_bank"))
+from browser_helpers import act, backup, choose, launch, open_page, restore
+from runtime_fixture import write_fixture, LOCALES
+
+
+with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
+    html_path = Path(tmp) / "synthetic.html"
+    write_fixture(html_path)
+    browser = launch(pw)
+    page, errors, network = open_page(browser, html_path)
+    ui = page.locator("#questionnaire-data").evaluate("el => JSON.parse(el.textContent).ui")
+    notes = page.locator("#project-updates")
+    panel = page.locator("footer details").last
+    contact = panel.locator('a[href="mailto:test@example.invalid"]')
+    for locale in LOCALES:
+        page.select_option("#language", locale)
+        notes.locator("summary").click()
+        assert notes.locator("ol li").count() == 10
+        assert notes.locator("ol li").all_inner_texts() == ui[locale]["notesHistory"]
+        assert notes.locator("ul li").all_inner_texts() == [
+            ui[locale]["projectPlanReview"], ui[locale]["projectPlanLanguages"]
+        ]
+        assert not panel.evaluate("(details) => details.open")
+        assert not page.locator('a[href="mailto:test@example.invalid"]').is_visible()
+        panel.locator("summary").click()
+        assert panel.locator("li").count() == 0
+        assert contact.is_visible()
+        assert contact.inner_text() == "test@example.invalid"
+        assert panel.locator("p").all_inner_texts() == [
+            ui[locale]["projectFeedbackInvitation"] + " test@example.invalid",
+            ui[locale]["projectContributors"],
+        ]
+    page.select_option("#language", "en")
+    page.locator('[data-act="start"]').click()
+    page.locator('[data-module="S01"]').check()
+    page.locator('[data-act="confirm"]').click()
+    choose(page, "A")
+    act(page, "previous")
+    act(page, "feedback")
+    page.locator('[data-feedback-reason="question"]').check()
+    page.locator('[data-feedback-reason="answer:B"]').check()
+    page.locator("#feedback-comment").fill("Synthetic feedback only")
+    act(page, "feedbackContinue")
+
+    saved = backup(page)
+    assert saved["answers"]["SYN_01"]["codes"] == ["A"]
+    assert saved["feedback"]["SYN_01"]["reasons"] == ["question", "answer:B"]
+    assert saved["feedback"]["SYN_01"]["comment"] == "Synthetic feedback only"
+    restore(page, saved)
+    restored = backup(page)
+    assert restored["answers"] == saved["answers"]
+    assert restored["feedback"] == saved["feedback"]
+
+    act(page, "previous")
+    act(page, "feedback")
+    act(page, "removeFeedback")
+    removed = backup(page)
+    assert "SYN_01" not in removed["feedback"]
+    assert removed["answers"]["SYN_01"]["codes"] == ["A"]
+    act(page, "results")
+    assert not contact.is_visible()
+    panel.locator("summary").click()
+    assert contact.is_visible()
+    assert page.locator('[data-act="feedbackReport"]').count() == 0
+    act(page, "doctor")
+    preview = page.locator(".report-preview")
+    assert preview.is_visible()
+    assert "Option A" in preview.inner_text()
+    assert "Synthetic feedback only" not in preview.inner_text()
+    assert page.locator('[data-act="print"]').is_visible()
+    assert page.locator('[data-act="feedbackReport"]').count() == 0
+    act(page, "resultScreen")
+    assert page.locator('[data-act="doctor"]').is_visible()
+    assert not errors, errors
+    assert not network, network
+    browser.close()
+
+print("PASS: synthetic feedback saves independently, round-trips, and can be removed.")

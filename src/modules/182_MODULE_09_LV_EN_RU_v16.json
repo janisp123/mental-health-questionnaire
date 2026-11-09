@@ -1,0 +1,1366 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 9,
+  "count": 17,
+  "entries": [
+    {
+      "order": 147,
+      "lv": {
+        "id": "M09_01",
+        "title": "Vai atkārtoti uzmācas domas, kuras nevēlaties, bet grūti apturēt?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 9,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do unwanted thoughts keep coming into your mind and feel difficult to stop?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Возникают ли у Вас снова и снова нежелательные мысли, которые трудно остановить?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 148,
+      "lv": {
+        "id": "M09_02",
+        "title": "Cik bieži šīs domas rada lielu trauksmi?",
+        "profile": "P17",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M09_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nevienā dienā",
+          "B": "1–3 dienās",
+          "C": "4–10 dienās",
+          "D": "11–20 dienās",
+          "E": "21–28 dienās",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 9,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often do these thoughts cause intense anxiety?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No days",
+          "B": "On 1–3 days",
+          "C": "On 4–10 days",
+          "D": "On 11–20 days",
+          "E": "On 21–28 days",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто эти мысли вызывают сильную тревогу?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Ни одного дня",
+          "B": "1–3 дня",
+          "C": "4–10 дней",
+          "D": "11–20 дней",
+          "E": "21–28 дней",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 149,
+      "lv": {
+        "id": "M09_03",
+        "title": "Vai atkārtoti pārbaudāt durvis, ierīces vai citus priekšmetus?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 9,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you repeatedly check doors, appliances or other objects?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Проверяете ли Вы многократно двери, приборы или другие предметы?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 150,
+      "lv": {
+        "id": "M09_04",
+        "title": "Vai atkārtoti mazgājaties, tīrāt vai kārtojat tāpēc, ka izjūtat spiedienu to darīt pat tad, ja tas traucē?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 9,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you repeatedly wash, clean or arrange things because you feel compelled to do so, even when it gets in the way?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Моетесь ли Вы, убираете или раскладываете вещи снова и снова, потому что чувствуете необходимость это делать, даже если это Вам мешает?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 151,
+      "lv": {
+        "id": "M09_05",
+        "title": "Vai trauksmes mazināšanai jūtaties spiests/-a atkārtot darbības vai domās skaitīt, lūgties, pārskatīt vai neitralizēt domas?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 9,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "To reduce anxiety, do you feel compelled to repeat actions or mentally count, pray, review things or neutralise thoughts?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Чтобы уменьшить тревогу, чувствуете ли Вы необходимость повторять действия, мысленно считать, молиться, что-то перепроверять или нейтрализовать мысли?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 152,
+      "lv": {
+        "id": "M09_06",
+        "title": "Vai bieži lūdzat citiem atkārtoti jūs nomierināt vai apliecināt, ka ar vienu un to pašu jautājumu viss ir kārtībā?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 9,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you often ask others to reassure you or tell you that everything is all right about the same concern, even after asking before?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Часто ли Вы снова просите других успокоить Вас или подтвердить, что всё в порядке, по поводу одного и того же?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 153,
+      "lv": {
+        "id": "M09_07",
+        "title": "Vai pēdējās 28 dienās izjutāt izteiktu diskomfortu, ja nevarējāt veikt atkārtotu darbību, kuru jutāties spiests/-a veikt? Nedomājiet tikai par neizdevušos ierastas, vērtīgas rutīnas ievērošanu.",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 9,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "In the past 28 days, did you feel very uncomfortable if you couldn’t do a repetitive action you felt compelled to do? Don’t count simply being unable to follow a familiar, useful routine.",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "За последние 28 дней испытывали ли Вы сильный дискомфорт, если не могли выполнить повторяющееся действие, которое чувствовали необходимость выполнять? Не учитывайте ситуации, когда просто не удалось следовать привычному и полезному распорядку.",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 154,
+      "lv": {
+        "id": "M09_08",
+        "title": "Cik laika dienā kopā aizņem uzmācīgas nevēlamas domas vai atkārtotas darbības, kuras jūtaties spiests/-a veikt? Neiekļaujiet noderīgu rutīnu, ja nejūtaties spiests/-a to veikt.",
+        "profile": "P31",
+        "multi": false,
+        "time": "Pēdējo 28 dienu laikā: parastais laiks dienās, kad šī pieredze vai paradums notika.",
+        "context": null,
+        "choices": {
+          "A": "Šādu domu vai rituālu nav",
+          "B": "Mazāk nekā 15 minūtes",
+          "C": "No 15 minūtēm līdz mazāk nekā 1 stundai",
+          "D": "No 1 stundas līdz mazāk nekā 3 stundām",
+          "E": "3 stundas vai vairāk",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 9,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How much time per day do intrusive unwanted thoughts or repetitive actions that feel compulsory take in total? Do not include useful routines unless they feel compulsory.",
+        "time": "Over the past 28 days: usual time spent on days when this experience or habit occurred.",
+        "choices": {
+          "A": "I do not have these thoughts or rituals",
+          "B": "Less than 15 minutes",
+          "C": "From 15 minutes to less than 1 hour",
+          "D": "From 1 hour to less than 3 hours",
+          "E": "3 hours or more",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Сколько времени в день в сумме занимают нежелательные навязчивые мысли или повторяющиеся действия, которые Вы чувствуете необходимость выполнять? Не учитывайте полезные привычки, если не чувствуете необходимости им следовать.",
+        "time": "За последние 28 дней: обычная продолжительность в те дни, когда возникало это переживание или привычное действие.",
+        "choices": {
+          "A": "Таких мыслей или ритуалов нет",
+          "B": "Менее 15 минут",
+          "C": "15 минут или больше, но меньше 1 часа",
+          "D": "1 час или больше, но меньше 3 часов",
+          "E": "3 часа или больше",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 155,
+      "lv": {
+        "id": "M09_09",
+        "title": "Kā vērtējat šo uzmācīgo domu vai darbību nepieciešamību, ja jūtaties spiests/-a tās atkārtot?",
+        "profile": "P32",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Šādu domu vai rituālu nav",
+          "B": "Parasti saprotu, ka tie ir pārmērīgi vai nevajadzīgi",
+          "C": "Dažreiz šaubos, vai tie ir nepieciešami",
+          "D": "Parasti uzskatu, ka tie ir nepieciešami",
+          "E": "Grūti pateikt",
+          "F": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 9,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "When you feel compelled to repeat these intrusive thoughts or actions, how necessary do they seem to you?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "I do not have these thoughts or rituals",
+          "B": "I usually understand that they are excessive or unnecessary",
+          "C": "I sometimes doubt whether they are necessary",
+          "D": "I usually believe they are necessary",
+          "E": "Difficult to say",
+          "F": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько необходимыми Вам кажутся эти навязчивые мысли или действия, если Вы чувствуете необходимость их повторять?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Таких мыслей или ритуалов нет",
+          "B": "Обычно понимаю, что они чрезмерны или не нужны",
+          "C": "Иногда сомневаюсь, нужны ли они",
+          "D": "Обычно считаю, что они необходимы",
+          "E": "Трудно сказать",
+          "F": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 156,
+      "lv": {
+        "id": "M09_10",
+        "title": "Cik ļoti šīs grūtības ietekmē ikdienu?",
+        "profile": "P07",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 9,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much do these difficulties affect everyday life?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "A lot",
+          "E": "Very much",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько эти трудности влияют на повседневную жизнь?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 157,
+      "lv": {
+        "id": "M09_11",
+        "title": "Vai agrāk bijuši periodi ar uzmācīgām nevēlamām domām vai atkārtotām darbībām, kuras jutāties spiests/-a veikt un kuras vēlāk mazinājās?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 9,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you had periods of unwanted intrusive thoughts or repetitive actions you felt compelled to do, which later eased?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Бывали ли у Вас раньше периоды нежелательных навязчивых мыслей или повторяющихся действий, которые Вы чувствовали необходимость выполнять и которые затем ослабевали?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 158,
+      "lv": {
+        "id": "M09_12",
+        "title": "Vai izvairāties no situācijām, kas izraisa šīs domas?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 9,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you avoid situations that trigger these thoughts?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Избегаете ли Вы ситуаций, вызывающих эти мысли?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 159,
+      "lv": {
+        "id": "M09_13",
+        "title": "Ko jums sniedz ikdienas rutīna vai uzdevumu saraksti? Izvēlieties visu atbilstošo.",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": true,
+        "time": "Pēdējās 28 dienās.",
+        "choices": {
+          "A": "Neizmantoju rutīnu / sarakstus",
+          "B": "Prieku",
+          "C": "Sasnieguma / jēgas izjūtu",
+          "D": "Paredzamību / stabilitāti",
+          "E": "Kontroles izjūtu, kad citas problēmas šķiet nepārvaramas",
+          "F": "Trauksmes mazināšanos",
+          "G": "Izjūtu, ka novēršu kādu notikumu, no kura baidos",
+          "H": "Izjūtu, ka viss beidzot ir “pareizi”",
+          "I": "Citu ieguvumu",
+          "J": "Nezinu",
+          "K": "Nevēlos atbildēt"
+        },
+        "exclusive": "AJK",
+        "incompatible": [],
+        "context": null,
+        "section": 9,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "answered",
+          "J": "uncertain",
+          "K": "refused"
+        }
+      },
+      "en": {
+        "title": "What do your daily routines or checklists provide? Select all that apply.",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "I do not use routines / checklists",
+          "B": "Enjoyment",
+          "C": "A sense of achievement or purpose",
+          "D": "Predictability / stability",
+          "E": "A sense of control when other problems feel unmanageable",
+          "F": "Relief from anxiety",
+          "G": "A feeling that I’m preventing an event I fear",
+          "H": "A sense that things are finally “right”",
+          "I": "Other benefit",
+          "J": "I don't know",
+          "K": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Что Вам дают ежедневные привычные действия или списки дел? Выберите всё подходящее.",
+        "time": "За последние 28 дней.",
+        "choices": {
+          "A": "Не использую привычный распорядок / списки",
+          "B": "Удовольствие",
+          "C": "Чувство достижения / смысла",
+          "D": "Предсказуемость / стабильность",
+          "E": "Чувство контроля, когда другие проблемы кажутся неразрешимыми",
+          "F": "Облегчение тревоги",
+          "G": "Ощущение, что я предотвращаю пугающее событие",
+          "H": "Ощущение, что всё наконец «правильно»",
+          "I": "Другая польза",
+          "J": "Я не знаю",
+          "K": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 160,
+      "lv": {
+        "id": "M09_14",
+        "title": "Ko jūtat, ja nevarat izpildīt rutīnu vai ikdienas sarakstu? Izvēlieties visu atbilstošo.",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": true,
+        "time": "Pēdējās 28 dienās.",
+        "choices": {
+          "A": "Nelielu vai nekādu diskomfortu / rutīnas nav",
+          "B": "Vilšanos",
+          "C": "Vainu",
+          "D": "Nevērtīgumu / neveiksmes izjūtu",
+          "E": "Trauksmi / spriedzi",
+          "F": "Kontroles zudumu",
+          "G": "Bailes, ka notiks kas slikts",
+          "H": "Nepabeigtības / nepareizības izjūtu",
+          "I": "Citas izjūtas",
+          "J": "Nezinu",
+          "K": "Nevēlos atbildēt"
+        },
+        "exclusive": "AJK",
+        "incompatible": [],
+        "context": null,
+        "section": 9,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "answered",
+          "J": "uncertain",
+          "K": "refused"
+        }
+      },
+      "en": {
+        "title": "How do you feel if you can’t follow your routine or finish the tasks on your daily list? Select all that apply.",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Little or no distress / no routine",
+          "B": "Disappointment",
+          "C": "Guilt",
+          "D": "Worthlessness / feeling I have failed",
+          "E": "Anxiety / tension",
+          "F": "Loss of control",
+          "G": "Fear something bad will happen",
+          "H": "A feeling of incompleteness / things not being right",
+          "I": "Other feeling",
+          "J": "I don't know",
+          "K": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Что Вы чувствуете, если не можете следовать привычному распорядку или выполнить дела из ежедневного списка? Выберите все подходящие варианты.",
+        "time": "За последние 28 дней.",
+        "choices": {
+          "A": "Небольшой дискомфорт или его отсутствие / распорядка нет",
+          "B": "Разочарование",
+          "C": "Вину",
+          "D": "Никчёмность / чувство неудачи",
+          "E": "Тревогу / напряжение",
+          "F": "Потерю контроля",
+          "G": "Страх, что случится плохое",
+          "H": "Ощущение незавершённости / что всё неправильно",
+          "I": "Другое чувство",
+          "J": "Я не знаю",
+          "K": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 161,
+      "lv": {
+        "id": "M09_15",
+        "title": "Vai vajadzības gadījumā varat atlikt, saīsināt vai pielāgot rutīnu?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējās 28 dienās.",
+        "choices": {
+          "A": "Rutīnas nav",
+          "B": "Jā, bez lielām grūtībām",
+          "C": "Jā, bet ar jūtamu diskomfortu",
+          "D": "Tikai ar lielām grūtībām",
+          "E": "Parasti nevaru",
+          "F": "Mainīgi / nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 9,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "When necessary, can you postpone, shorten or adapt your routine?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No routine",
+          "B": "Yes, with little difficulty",
+          "C": "Yes, but with noticeable distress",
+          "D": "Only with great difficulty",
+          "E": "Usually cannot",
+          "F": "Variable / don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Можете ли Вы при необходимости отложить, сократить или изменить привычный распорядок?",
+        "time": "За последние 28 дней.",
+        "choices": {
+          "A": "Распорядка нет",
+          "B": "Да, без особых трудностей",
+          "C": "Да, но с заметным дискомфортом",
+          "D": "Только с большим трудом",
+          "E": "Обычно не могу",
+          "F": "По-разному / не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 162,
+      "lv": {
+        "id": "M09_16",
+        "title": "Vai pēc rutīnas uzdevuma pabeigšanas jūtaties spiests/-a to atkārtot, līdz tas šķiet “pareizi”, pārsniedzot praktiski nepieciešamo?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējās 28 dienās.",
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 9,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "After completing a routine task, do you feel compelled to repeat it until it feels “right”, beyond what the task practically requires?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "После выполнения привычного действия чувствуете ли Вы необходимость повторять его, пока оно не покажется «правильным», сверх практической необходимости?",
+        "time": "За последние 28 дней.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 163,
+      "lv": {
+        "id": "M09_17",
+        "title": "Kā rutīna kopumā ietekmē jūsu dzīvi?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējās 28 dienās.",
+        "choices": {
+          "A": "Rutīnas nav",
+          "B": "Pārsvarā palīdz pašsajūtai / pienākumiem",
+          "C": "Gan palīdz, gan traucē",
+          "D": "Pārsvarā traucē pienākumiem, attiecībām vai atpūtai",
+          "E": "Ne palīdz, ne traucē",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 9,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "Overall, how do your routines affect your life?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No routine",
+          "B": "Mostly helps me feel better or manage responsibilities",
+          "C": "Both helps and interferes",
+          "D": "Mostly interferes with responsibilities, relationships or rest",
+          "E": "Neither helps nor interferes",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как привычный распорядок в целом влияет на Вашу жизнь?",
+        "time": "За последние 28 дней.",
+        "choices": {
+          "A": "Распорядка нет",
+          "B": "В основном помогает мне лучше себя чувствовать или справляться с обязанностями",
+          "C": "И помогает, и мешает",
+          "D": "В основном мешает обязанностям, отношениям или отдыху",
+          "E": "Не помогает и не мешает",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

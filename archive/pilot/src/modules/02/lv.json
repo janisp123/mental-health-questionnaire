@@ -1,0 +1,254 @@
+{
+  "schema": "pilot-module-locale-v1",
+  "module": "02",
+  "lang": "lv",
+  "source_version": "LV-v16",
+  "status": "REFERENCE",
+  "concern": "Nomāktība, intereses zudums vai garastāvokļa pārmaiņas",
+  "title": "02 · Nomāktība un garastāvoklis",
+  "questions": {
+    "M02_01": {
+      "title": "Interešu un dzīvesprieka trūkums",
+      "time": "Pēdējās 2 nedēļas.",
+      "choices": {
+        "A": "Nemaz",
+        "B": "Dažas dienas",
+        "C": "Vairāk par nedēļu",
+        "D": "Gandrīz katru dienu."
+      }
+    },
+    "M02_02": {
+      "title": "Slikts/nomākts garastāvoklis, nospiestība vai bezcerības sajūta",
+      "time": "Pēdējās 2 nedēļas.",
+      "choices": {
+        "A": "Nemaz",
+        "B": "Dažas dienas",
+        "C": "Vairāk par nedēļu",
+        "D": "Gandrīz katru dienu."
+      }
+    },
+    "M02_03": {
+      "title": "Grūtības iemigt, caurs/trausls miegs vai pārāk ilga gulēšana",
+      "time": "Pēdējās 2 nedēļas.",
+      "choices": {
+        "A": "Nemaz",
+        "B": "Dažas dienas",
+        "C": "Vairāk par nedēļu",
+        "D": "Gandrīz katru dienu."
+      }
+    },
+    "M02_04": {
+      "title": "Nogurums vai enerģijas trūkums",
+      "time": "Pēdējās 2 nedēļas.",
+      "choices": {
+        "A": "Nemaz",
+        "B": "Dažas dienas",
+        "C": "Vairāk par nedēļu",
+        "D": "Gandrīz katru dienu."
+      }
+    },
+    "M02_05": {
+      "title": "Pazemināta ēstgriba vai pārēšanās",
+      "time": "Pēdējās 2 nedēļas.",
+      "choices": {
+        "A": "Nemaz",
+        "B": "Dažas dienas",
+        "C": "Vairāk par nedēļu",
+        "D": "Gandrīz katru dienu."
+      }
+    },
+    "M02_06": {
+      "title": "Neapmierinātība ar sevi – sajūta, ka esat neveiksminieks/-ce vai arī esat pievīlis/-usi savas vai ģimenes cerības",
+      "time": "Pēdējās 2 nedēļas.",
+      "choices": {
+        "A": "Nemaz",
+        "B": "Dažas dienas",
+        "C": "Vairāk par nedēļu",
+        "D": "Gandrīz katru dienu."
+      }
+    },
+    "M02_07": {
+      "title": "Grūtības koncentrēties, piemēram, lasīt avīzi vai skatīties TV",
+      "time": "Pēdējās 2 nedēļas.",
+      "choices": {
+        "A": "Nemaz",
+        "B": "Dažas dienas",
+        "C": "Vairāk par nedēļu",
+        "D": "Gandrīz katru dienu."
+      }
+    },
+    "M02_08": {
+      "title": "Kustības un runa bija tik lēna, ka citi cilvēki to varēja pamanīt. Vai pretēji – bijāt tik satraukts/satraukta un rosīgs/rosīga, ka kustību aktivitāte kļuva lielāka nekā parasti",
+      "time": "Pēdējās 2 nedēļas.",
+      "choices": {
+        "A": "Nemaz",
+        "B": "Dažas dienas",
+        "C": "Vairāk par nedēļu",
+        "D": "Gandrīz katru dienu."
+      }
+    },
+    "M02_09": {
+      "title": "Domas, ka labāk būtu nomirt vai kaut kā nodarīt sev pāri",
+      "time": "Pēdējās 2 nedēļas.",
+      "choices": {
+        "A": "Nemaz",
+        "B": "Dažas dienas",
+        "C": "Vairāk par nedēļu",
+        "D": "Gandrīz katru dienu."
+      }
+    },
+    "M02_10": {
+      "title": "Cik ļoti pēdējo 14 dienu laikā iepriekš minētās grūtības traucēja darbam, mājas pienākumiem vai attiecībām?",
+      "time": "Pēdējās 14 dienas.",
+      "choices": {
+        "A": "Nemaz",
+        "B": "Nedaudz",
+        "C": "Vidēji",
+        "D": "Stipri",
+        "E": "Ļoti stipri",
+        "F": "Neattiecas uz mani",
+        "G": "Grūti pateikt",
+        "H": "Nevēlos atbildēt."
+      }
+    },
+    "M02_11": {
+      "title": "Vai šādi nomāktības periodi ir atkārtojušies vairākas reizes dzīvē?",
+      "time": "Jebkurā dzīves laikā.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt",
+        "E": "Neattiecas uz mani."
+      }
+    },
+    "M02_12": {
+      "title": "Cik ilgi ilga vai turpinās pēdējā nomāktības vai prieka zuduma epizode?",
+      "time": "Pēdējās norādītās epizodes kopējais ilgums.",
+      "choices": {
+        "A": "Nav bijusi šāda epizode",
+        "B": "Mazāk nekā 2 nedēļas",
+        "C": "No 2 nedēļām līdz mazāk nekā 1 mēnesim",
+        "D": "No 1 mēneša līdz mazāk nekā 3 mēnešiem",
+        "E": "No 3 mēnešiem līdz mazāk nekā 6 mēnešiem",
+        "F": "No 6 mēnešiem līdz mazāk nekā 1 gadam",
+        "G": "1 gadu vai ilgāk",
+        "H": "Mainīgi; nav iespējams norādīt vienu ilgumu",
+        "I": "Grūti pateikt",
+        "J": "Nevēlos atbildēt."
+      }
+    },
+    "M02_13": {
+      "title": "Vai pēdējo 14 dienu laikā prieka zudums saglabājās arī agrāk patīkamās situācijās?",
+      "time": "Pēdējās 14 dienas.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt",
+        "E": "Neattiecas uz mani."
+      }
+    },
+    "M02_14": {
+      "title": "Cik dienās pēdējo 28 dienu laikā jutāties emocionāli tukši?",
+      "time": "Pēdējās 28 dienas.",
+      "choices": {
+        "A": "Nevienā dienā",
+        "B": "1–3 dienās",
+        "C": "4–10 dienās",
+        "D": "11–20 dienās",
+        "E": "21–28 dienās",
+        "F": "Grūti pateikt",
+        "G": "Nevēlos atbildēt."
+      }
+    },
+    "M02_15": {
+      "title": "Cik lielā mērā jūs nomāca domas, ka dzīvei trūkst jēgas vai mērķa?",
+      "time": "Pēdējās 14 dienās.",
+      "choices": {
+        "A": "Nemaz",
+        "B": "Nedaudz",
+        "C": "Mēreni",
+        "D": "Stipri",
+        "E": "Ārkārtīgi stipri",
+        "F": "Nezinu",
+        "G": "Nevēlos atbildēt"
+      }
+    },
+    "M02_16": {
+      "title": "Kā jūsu garastāvoklis parasti atšķīrās no rīta un vakarā?",
+      "time": "Pēdējās 2 nedēļas.",
+      "choices": {
+        "A": "No rīta sliktāks, vakarā labāks",
+        "B": "No rīta labāks, vakarā sliktāks",
+        "C": "Ievērojami mainījās, bet bez vienota modeļa",
+        "D": "Bija samērā līdzīgs visas dienas laikā",
+        "E": "Grūti pateikt",
+        "F": "Nevēlos atbildēt"
+      }
+    },
+    "M02_17": {
+      "title": "Cik izteikta parasti bija garastāvokļa atšķirība starp rītu un vakaru?",
+      "time": "Pēdējās 2 nedēļas.",
+      "choices": {
+        "A": "Nebija atšķirības",
+        "B": "Neliela",
+        "C": "Vidēja",
+        "D": "Izteikta",
+        "E": "Ļoti izteikta",
+        "F": "Grūti pateikt",
+        "G": "Nevēlos atbildēt"
+      }
+    },
+    "M02_18": {
+      "title": "Cik dienās novērojāt šādas garastāvokļa pārmaiņas dienas gaitā?",
+      "time": "Pēdējās 2 nedēļas.",
+      "choices": {
+        "A": "Nevienā",
+        "B": "1–3 dienās",
+        "C": "4–7 dienās",
+        "D": "8–11 dienās",
+        "E": "12–14 dienās",
+        "F": "Grūti pateikt",
+        "G": "Nevēlos atbildēt"
+      }
+    },
+    "M02_19": {
+      "title": "Ar ko, jūsuprāt, sakrita garastāvokļa pārmaiņas dienas gaitā?",
+      "time": "Pēdējās 2 nedēļas.",
+      "choices": {
+        "A": "Miega kvalitāti vai pamošanos",
+        "B": "Sāpēm vai fizisku pašsajūtu",
+        "C": "Zāļu lietošanas laiku",
+        "D": "Maltītēm",
+        "E": "Darba vai aprūpes pienākumiem",
+        "F": "Saskarsmi ar cilvēkiem",
+        "G": "Kofeīnu, alkoholu vai citām vielām",
+        "H": "Pārmaiņas bija bez man saprotama iemesla",
+        "I": "Nav šādu pārmaiņu",
+        "J": "Nezinu",
+        "K": "Nevēlos atbildēt"
+      }
+    },
+    "M02_20": {
+      "title": "Vai nomāktība vai prieka zudums ir bijis lielāko daļu dienu vismaz divus gadus, arī starp izteiktākām epizodēm?",
+      "time": "Jebkurā dzīves laikā.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / grūti pateikt",
+        "D": "Nevēlos atbildēt"
+      }
+    },
+    "M02_21": {
+      "title": "Vai izteiktas garastāvokļa grūtības atkārtojušās vienā un tajā pašā gadalaikā vismaz divus gadus?",
+      "time": "Pēdējie gadi.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / grūti pateikt",
+        "D": "Nevēlos atbildēt"
+      }
+    }
+  }
+}

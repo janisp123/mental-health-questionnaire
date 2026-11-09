@@ -1,0 +1,52 @@
+name: Multilingual Questionnaire Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  full-questionnaire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned review dependencies and browser tooling
+        run: python -m pip install -r tools/review-requirements.txt playwright
+      - name: Prepare desktop Chromium
+        run: |
+          if command -v google-chrome >/dev/null; then
+            echo "QUESTIONNAIRE_BROWSER=$(command -v google-chrome)" >> "$GITHUB_ENV"
+          else
+            python -m playwright install --with-deps chromium
+          fi
+      - name: Run all active checks with real offline file opening
+        run: python tools/run_checks.py
+      - name: Build and verify matching four-language HTML/PDF/ZIP
+        run: |
+          python tools/build_review_package.py
+          python tools/verify_review_package.py dist/review --with-zip
+      - name: Upload current multilingual technical-review package
+        uses: actions/upload-artifact@v4
+        with:
+          name: QUESTIONNAIRE_LV_EN_RU_UK_REVIEW
+          path: dist/review/
+          retention-days: 14
+      - name: Retain test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: questionnaire-checks
+          path: dist/checks/
+          retention-days: 14

@@ -1,0 +1,931 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 8,
+  "count": 12,
+  "entries": [
+    {
+      "order": 135,
+      "lv": {
+        "id": "M08_01",
+        "title": "Cik bieži ir grūti saprast netiešus mājienus vai sociālos signālus?",
+        "profile": "P27",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 8,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often do you find it difficult to understand indirect hints or social cues?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вам трудно понимать намёки или социальные сигналы?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 136,
+      "lv": {
+        "id": "M08_02",
+        "title": "Cik bieži pēc sarunām jūtaties sociāli izsmelts/-a?",
+        "profile": "P27",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 8,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often do you feel socially exhausted after conversations?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто после разговоров вы чувствуете сильную усталость от общения?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 137,
+      "lv": {
+        "id": "M08_03",
+        "title": "Vai grūtības uzturēt savstarpēju sarunu bija bērnībā un turpinās arī tagad?",
+        "profile": "P29",
+        "multi": false,
+        "time": "Bērnība līdz 18 gadu vecumam un pašreizējais stāvoklis.",
+        "context": null,
+        "choices": {
+          "A": "Nē, ne bērnībā, ne tagad",
+          "B": "Tikai bērnībā",
+          "C": "Tikai tagad",
+          "D": "Gan bērnībā, gan tagad",
+          "E": "Neatceros / grūti pateikt",
+          "F": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 8,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "Were difficulties with back-and-forth conversation present in childhood, and are they still present now?",
+        "time": "Childhood before age 18 and your current situation.",
+        "choices": {
+          "A": "No, neither in childhood nor now",
+          "B": "Only in childhood",
+          "C": "Only now",
+          "D": "Both in childhood and now",
+          "E": "I do not remember / difficult to say",
+          "F": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Было ли вам трудно поддерживать диалог в детстве, и сохраняются ли эти трудности сейчас?",
+        "time": "Детство до 18 лет и нынешнее состояние.",
+        "choices": {
+          "A": "Нет, ни в детстве, ни сейчас",
+          "B": "Только в детстве",
+          "C": "Только сейчас",
+          "D": "И в детстве, и сейчас",
+          "E": "Не помню / трудно сказать",
+          "F": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 138,
+      "lv": {
+        "id": "M08_04",
+        "title": "Vai jums ir īpaši intensīvas, ilgstošas intereses par šauriem tematiem?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 8,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you have particularly intense, lasting interests in narrow topics?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Есть ли у вас особенно сильные и длительные интересы к узким темам?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 139,
+      "lv": {
+        "id": "M08_05",
+        "title": "Cik bieži negaidītas ikdienas plāna izmaiņas rada izteiktu stresu?",
+        "profile": "P27",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 8,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often do unexpected changes to your daily plans cause marked stress?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто неожиданные изменения повседневных планов вызывают сильный стресс?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 140,
+      "lv": {
+        "id": "M08_06",
+        "title": "Kuri kairinājumi pēdējo 6 mēnešu laikā radījuši izteiktu diskomfortu? Var izvēlēties vairākas atbildes.",
+        "profile": "P30",
+        "multi": true,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Trokšņi",
+          "B": "Gaisma",
+          "C": "Smaržas",
+          "D": "Pieskārieni vai apģērba sajūta",
+          "E": "Citi kairinājumi",
+          "F": "Neviens no minētajiem",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "FGH",
+        "incompatible": [],
+        "section": 8,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "Which sensory experiences have caused marked discomfort over the past 6 months? Select all that apply.",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "Noise",
+          "B": "Light",
+          "C": "Smells",
+          "D": "Touch or the feel of clothing",
+          "E": "Other sensory experiences",
+          "F": "None of the above",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Какие ощущения вызывали выраженный дискомфорт за последние 6 месяцев? Можно выбрать несколько ответов.",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Шум",
+          "B": "Свет",
+          "C": "Запахи",
+          "D": "Прикосновения или ощущение одежды на теле",
+          "E": "Другие раздражители",
+          "F": "Ничего из перечисленного",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 141,
+      "lv": {
+        "id": "M08_07",
+        "title": "Vai sabiedrībā apzināti atdarināt citu cilvēku uzvedību, lai iekļautos?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 8,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "In social situations, do you consciously copy other people's behaviour to fit in?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Копируете ли вы сознательно поведение других людей в обществе, чтобы вписаться?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 142,
+      "lv": {
+        "id": "M08_08",
+        "title": "Vai bērnībā bija grūtības iegūt vai noturēt draugus?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Bērnība līdz 18 gadu vecumam.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 8,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Did you find it difficult to make or keep friends in childhood?",
+        "time": "Childhood before age 18.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Было ли вам трудно заводить друзей или сохранять дружеские отношения в детстве?",
+        "time": "Детство до 18 лет.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 143,
+      "lv": {
+        "id": "M08_09",
+        "title": "Vai kāds agrāk atzīmēja atšķirības jūsu valodas vai sociālajā attīstībā?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Bērnība līdz 18 gadu vecumam.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 8,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Has anyone previously noted differences in your language or social development?",
+        "time": "Childhood before age 18.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Отмечал ли кто-нибудь раньше особенности вашего речевого или социального развития?",
+        "time": "Детство до 18 лет.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 144,
+      "lv": {
+        "id": "M08_10",
+        "title": "Vai izmantojat atkārtotas kustības vai ieradumus, lai nomierinātos?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 8,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you use repetitive movements or habits to calm yourself?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Используете ли вы повторяющиеся движения или привычные действия, чтобы успокоиться?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 145,
+      "lv": {
+        "id": "M08_11",
+        "title": "Cik ļoti šīs īpatnības ietekmē darbu, attiecības vai ikdienas dzīvi?",
+        "profile": "P07",
+        "multi": false,
+        "time": "Pēdējie 6 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 8,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much do these characteristics affect work, relationships or daily life?",
+        "time": "The past 6 months.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько эти особенности влияют на работу, отношения или повседневную жизнь?",
+        "time": "Последние 6 месяцев.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 146,
+      "lv": {
+        "id": "M08_12",
+        "title": "Vai kādam radiniekam diagnosticēti autiskā spektra traucējumi?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jums zināmā radinieku dzīves vēsture.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 8,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Has a relative been diagnosed with autism spectrum disorder?",
+        "time": "Your relatives' lifetime history, as far as you know.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Диагностировали ли кому-либо из родственников расстройство аутистического спектра?",
+        "time": "История жизни родственников, насколько вам известно.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    }
+  ]
+}

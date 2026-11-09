@@ -1,0 +1,545 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 39,
+  "count": 7,
+  "entries": [
+    {
+      "order": 655,
+      "lv": {
+        "id": "M39_01",
+        "title": "Vai atkārtojas kustības vai skaņas, kuras ir grūti kontrolēt?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 39,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Are there repetitive movements or sounds that are difficult to control?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Есть ли повторяющиеся движения или звуки, которые трудно контролировать?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 656,
+      "lv": {
+        "id": "M39_02",
+        "title": "Kas atkārtojas?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M39_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Kustības",
+          "B": "Skaņas vai vārdi",
+          "C": "Gan kustības, gan skaņas",
+          "D": "Nezinu",
+          "E": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 39,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "uncertain",
+          "E": "refused"
+        }
+      },
+      "en": {
+        "title": "What repeats?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Movements",
+          "B": "Sounds or words",
+          "C": "Both movements and sounds",
+          "D": "I don't know",
+          "E": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Что именно повторяется?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Движения",
+          "B": "Звуки или слова",
+          "C": "И движения, и звуки",
+          "D": "Я не знаю",
+          "E": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 657,
+      "lv": {
+        "id": "M39_03",
+        "title": "Kad tas pirmoreiz sākās?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M39_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Bērnībā līdz 18 gadiem",
+          "B": "Pieaugušā vecumā",
+          "C": "Nezinu",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 39,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "When did it first start?",
+        "time": "Currently.",
+        "choices": {
+          "A": "In childhood, before age 18",
+          "B": "In adulthood",
+          "C": "I don't know",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда это впервые началось?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "В детстве, до 18 лет",
+          "B": "Во взрослом возрасте",
+          "C": "Я не знаю",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 658,
+      "lv": {
+        "id": "M39_04",
+        "title": "Vai sākums vai pastiprināšanās sakrita ar zāļu, vielu lietošanas vai veselības pārmaiņām?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M39_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 39,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Did these movements or sounds start or become more pronounced around the time of a change in medication, substance use, or health?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Совпало ли появление или усиление этих движений или звуков с изменениями в приёме лекарств, употреблении веществ или состоянии здоровья?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 659,
+      "lv": {
+        "id": "M39_05",
+        "title": "Cik ļoti tas rada sāpes, savainojumus vai traucē ikdienai?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M39_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 39,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "To what extent do these movements or sounds cause pain or injury, or interfere with daily life?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "A lot",
+          "E": "Very much",
+          "F": "Does not apply to me",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько эти движения или звуки причиняют боль, приводят к травмам или мешают повседневной жизни?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 660,
+      "lv": {
+        "id": "M39_06",
+        "title": "Cik ilgs laiks pagājis kopš pirmās atkārtoto kustību vai skaņu parādīšanās?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Laiks kopš sākuma, arī ja bijuši pārtraukumi.",
+        "context": {
+          "id": "M39_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Mazāk nekā mēnesi",
+          "B": "1–3 mēnešus",
+          "C": "Vairāk nekā 3 mēnešus, bet mazāk nekā gadu",
+          "D": "Gadu vai ilgāk",
+          "E": "Šādu grūtību nav",
+          "F": "Nezinu / neatceros",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 39,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How long has it been since the first appearance of repetitive movements or sounds?",
+        "time": "Time since start, even if there have been interruptions.",
+        "choices": {
+          "A": "Less than a month",
+          "B": "1–3 months",
+          "C": "More than 3 months but less than a year",
+          "D": "A year or more",
+          "E": "There are no such difficulties.",
+          "F": "I don't know / I don't remember",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сколько времени прошло с момента первого появления повторяющихся движений или звуков?",
+        "time": "Время, прошедшее с начала, даже с учетом возможных перерывов.",
+        "choices": {
+          "A": "Менее месяца",
+          "B": "1–3 месяца",
+          "C": "Более 3 месяцев, но менее года",
+          "D": "Год или дольше",
+          "E": "Таких трудностей нет.",
+          "F": "Я не знаю / Я не помню",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 661,
+      "lv": {
+        "id": "M39_07",
+        "title": "Vai šo kustību vai skaņu biežums laika gaitā palielinās un samazinās?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Kopš sākuma.",
+        "context": {
+          "id": "M39_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 39,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Does the frequency of these movements or sounds increase and decrease over time?",
+        "time": "Since the beginning.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Увеличивается и уменьшается ли частота этих движений или звуков с течением времени?",
+        "time": "С самого начала.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

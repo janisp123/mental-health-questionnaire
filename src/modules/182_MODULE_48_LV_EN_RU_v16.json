@@ -1,0 +1,240 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 48,
+  "count": 3,
+  "entries": [
+    {
+      "order": 709,
+      "lv": {
+        "id": "M48_01",
+        "title": "Vai par kādu no šīm tēmām vēlaties privāti runāt ar speciālistu?",
+        "profile": "CUSTOM12",
+        "multi": true,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Urīna vai vēdera izejas kontroles grūtības",
+          "B": "Neparasta, noturīga neapmierinātība ar ķermeņa daļas piederību sev",
+          "C": "Seksuālas tieksmes vai uzvedība, kas rada ciešanas vai bažas par piekrišanu un drošību",
+          "D": "Neskaidras lēkmes, vājums vai jušanas traucējumi",
+          "E": "Grūtības precīzi izstāstīt ārstam savu veselības vēsturi",
+          "F": "Cits sensitīvs jautājums",
+          "G": "Neviens no minētajiem",
+          "H": "Nezinu",
+          "I": "Nevēlos atbildēt"
+        },
+        "exclusive": "GHI",
+        "incompatible": [],
+        "section": 48,
+        "help": "Atbildes nenosaka diagnozi. Seksuālā orientācija, dzimumidentitāte un savstarpēji pieņemamas seksuālas intereses pašas par sevi nav psihiski traucējumi. Fiziskas sūdzības nedrīkst automātiski skaidrot ar psiholoģiskiem cēloņiem.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "uncertain",
+          "I": "refused"
+        }
+      },
+      "en": {
+        "title": "Would you like to speak privately with a specialist about any of these topics?",
+        "time": "Currently.",
+        "help": "The answers do not constitute a diagnosis. Sexual orientation, gender identity, and mutually acceptable sexual interests are not, in themselves, mental disorders. Physical complaints should not be automatically explained by psychological causes.",
+        "choices": {
+          "A": "Difficulty controlling urination or bowel movements",
+          "B": "Unusual, persistent dissatisfaction with a body part being part of your own body",
+          "C": "Sexual urges or behaviors that cause distress or concern about consent and safety",
+          "D": "Unexplained episodes, weakness, or changes in sensation",
+          "E": "Difficulty giving your doctor an accurate health history",
+          "F": "Another sensitive issue",
+          "G": "None of the above",
+          "H": "I don't know",
+          "I": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Хотели бы Вы поговорить наедине со специалистом по какому-либо из этих вопросов?",
+        "time": "В настоящее время.",
+        "help": "Ответы не являются диагнозом. Сексуальная ориентация, гендерная идентичность и взаимоприемлемые сексуальные интересы сами по себе не являются психическими расстройствами. Физические жалобы не следует автоматически объяснять психологическими причинами.",
+        "choices": {
+          "A": "Трудности с контролем мочеиспускания или дефекации.",
+          "B": "Необычное, стойкое недовольство тем, что какая-то часть тела принадлежит Вам",
+          "C": "Сексуальные влечения или поведение, которые причиняют страдания или вызывают опасения по поводу согласия и безопасности",
+          "D": "Необъяснимые приступы, слабость или нарушения чувствительности",
+          "E": "Трудности с точным изложением истории болезни вашему врачу.",
+          "F": "Другой деликатный вопрос",
+          "G": "Ничего из перечисленного",
+          "H": "Я не знаю",
+          "I": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 710,
+      "lv": {
+        "id": "M48_02",
+        "title": "Vai šī grūtība sākās pēkšņi vai ir nesena būtiska pārmaiņa?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējās dienas vai nedēļas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 48,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Did this difficulty start suddenly, or has it changed significantly recently?",
+        "time": "The last days or weeks.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Эта трудность началась внезапно или заметно изменилась в последнее время?",
+        "time": "Последние дни или недели.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 711,
+      "lv": {
+        "id": "M48_03",
+        "title": "Vai šī jautājuma dēļ pašlaik vajadzīga palīdzība, lai pasargātu sevi vai kādu citu?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 48,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you currently need help to protect yourself or someone else because of this issue?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Нужна ли Вам сейчас помощь, чтобы из-за этой проблемы защитить себя или кого-то ещё?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

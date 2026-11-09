@@ -1,0 +1,1489 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 13,
+  "count": 18,
+  "entries": [
+    {
+      "order": 224,
+      "lv": {
+        "id": "M13_01",
+        "title": "Vai pēdējo 7 dienu laikā jums ir bijušas sāpes?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pēdējās 7 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you had pain over the past 7 days?",
+        "time": "The past 7 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Были ли у вас боли за последние 7 дней?",
+        "time": "Последние 7 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 225,
+      "lv": {
+        "id": "M13_02",
+        "title": "Kāds bija jūsu parastais sāpju stiprums pēdējo 7 dienu laikā?",
+        "profile": "P37",
+        "multi": false,
+        "time": "Pēdējās 7 dienas.",
+        "context": null,
+        "choices": {
+          "A": "0 — sāpju nav",
+          "B": "1–2 no 10",
+          "C": "3–4 no 10",
+          "D": "5–6 no 10",
+          "E": "7–8 no 10",
+          "F": "9–10 no 10",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "What was your usual pain intensity over the past 7 days?",
+        "time": "The past 7 days.",
+        "choices": {
+          "A": "0 - no pain",
+          "B": "1-2 out of 10",
+          "C": "3-4 out of 10",
+          "D": "5-6 out of 10",
+          "E": "7-8 out of 10",
+          "F": "9-10 out of 10",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Какой обычно была интенсивность боли за последние 7 дней?",
+        "time": "Последние 7 дней.",
+        "choices": {
+          "A": "0 - боли нет",
+          "B": "1-2 из 10",
+          "C": "3-4 из 10",
+          "D": "5-6 из 10",
+          "E": "7-8 из 10",
+          "F": "9-10 из 10",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 226,
+      "lv": {
+        "id": "M13_03",
+        "title": "Kāds bija stiprākais sāpju līmenis pēdējo 7 dienu laikā?",
+        "profile": "P37",
+        "multi": false,
+        "time": "Pēdējās 7 dienas.",
+        "context": null,
+        "choices": {
+          "A": "0 — sāpju nav",
+          "B": "1–2 no 10",
+          "C": "3–4 no 10",
+          "D": "5–6 no 10",
+          "E": "7–8 no 10",
+          "F": "9–10 no 10",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "What was your worst pain intensity in the past week?",
+        "time": "The past 7 days.",
+        "choices": {
+          "A": "0 - no pain",
+          "B": "1-2 out of 10",
+          "C": "3-4 out of 10",
+          "D": "5-6 out of 10",
+          "E": "7-8 out of 10",
+          "F": "9-10 out of 10",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Какой была самая сильная боль за последнюю неделю?",
+        "time": "Последние 7 дней.",
+        "choices": {
+          "A": "0 - боли нет",
+          "B": "1-2 из 10",
+          "C": "3-4 из 10",
+          "D": "5-6 из 10",
+          "E": "7-8 из 10",
+          "F": "9-10 из 10",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 227,
+      "lv": {
+        "id": "M13_04",
+        "title": "Cik ļoti sāpes traucē ikdienas aktivitātēm?",
+        "profile": "P07",
+        "multi": false,
+        "time": "Pēdējās 7 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much does pain interfere with daily activities?",
+        "time": "The past 7 days.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько боль мешает повседневным занятиям?",
+        "time": "Последние 7 дней.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 228,
+      "lv": {
+        "id": "M13_05",
+        "title": "Cik bieži sāpes apgrūtināja iemigšanu?",
+        "profile": "CUSTOM-PAIN-SLEEP",
+        "multi": false,
+        "time": "Pēdējās 7 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often did pain make it difficult to fall asleep?",
+        "time": "The past 7 days.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто боль мешала вам заснуть?",
+        "time": "Последние 7 дней.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 229,
+      "lv": {
+        "id": "M13_06",
+        "title": "Vai pēdējo 7 dienu laikā sāpju dēļ samazinājāt darba apjomu vai fizisko aktivitāti?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 7 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Over the past 7 days, did you reduce work or physical activity because of pain?",
+        "time": "The past 7 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "За последние 7 дней сокращали ли вы работу или физическую активность из-за боли?",
+        "time": "Последние 7 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 230,
+      "lv": {
+        "id": "M13_07",
+        "title": "Vai sāpju dēļ pieaug trauksme vai nomāktība?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 7 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Does pain increase anxiety or low mood?",
+        "time": "The past 7 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Усиливаются ли из-за боли тревога или подавленность?",
+        "time": "Последние 7 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 231,
+      "lv": {
+        "id": "M13_10",
+        "title": "Vai sāpju dēļ esat saņēmis/-usi rehabilitāciju vai fizioterapiju?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you received rehabilitation or physiotherapy for pain?",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Получали ли вы реабилитацию или физиотерапию по поводу боли?",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 232,
+      "lv": {
+        "id": "M13_11",
+        "title": "Vai sāpes ierobežo bērnu aprūpi vai mājas pienākumus?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 7 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Does pain limit your ability to care for children or do household tasks?",
+        "time": "The past 7 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Ограничивает ли боль возможность ухаживать за детьми или выполнять домашние обязанности?",
+        "time": "Последние 7 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 233,
+      "lv": {
+        "id": "M13_12",
+        "title": "Kā sāpes kopumā mainījušās pēdējo 3 mēnešu laikā?",
+        "profile": "P39",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Sāpju šajā laikā nav bijis",
+          "B": "Mazinājušās",
+          "C": "Būtiski nav mainījušās",
+          "D": "Pastiprinājušās",
+          "E": "Ir gan uzlabojumi, gan pasliktinājumi",
+          "F": "Sāpes sākās šajā periodā; vēl grūti salīdzināt",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "Overall, how has your pain changed over the past 3 months?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "I had no pain during this period",
+          "B": "It has decreased",
+          "C": "It has not changed significantly",
+          "D": "It has increased",
+          "E": "There have been both improvements and setbacks",
+          "F": "The pain began during this period; it is too early to compare",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как в целом изменилась боль за последние 3 месяца?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "В этот период боли не было",
+          "B": "Уменьшилась",
+          "C": "Существенно не изменилась",
+          "D": "Усилилась",
+          "E": "Были и улучшения, и ухудшения",
+          "F": "Боль началась в этот период; пока трудно сравнить",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 234,
+      "lv": {
+        "id": "M13_13",
+        "title": "Cik ilgi sāpes kopumā ilgst vai atkārtojas?",
+        "profile": "P23",
+        "multi": false,
+        "time": "Pašreizējā atkārtoto vai nepārejošo sāpju modeļa kopējais ilgums.",
+        "context": null,
+        "choices": {
+          "A": "Pašlaik nav šādu grūtību",
+          "B": "Mazāk nekā 2 nedēļas",
+          "C": "No 2 nedēļām līdz mazāk nekā 1 mēnesim",
+          "D": "No 1 mēneša līdz mazāk nekā 3 mēnešiem",
+          "E": "No 3 mēnešiem līdz mazāk nekā 6 mēnešiem",
+          "F": "No 6 mēnešiem līdz mazāk nekā 1 gadam",
+          "G": "1 gadu vai ilgāk",
+          "H": "Mainīgi; nav iespējams norādīt vienu ilgumu",
+          "I": "Grūti pateikt",
+          "J": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "uncertain",
+          "J": "refused"
+        }
+      },
+      "en": {
+        "title": "How long has the pain lasted or kept recurring overall?",
+        "time": "The total duration of the current pattern of recurring or persistent pain.",
+        "choices": {
+          "A": "I do not currently have these difficulties",
+          "B": "Less than 2 weeks",
+          "C": "From 2 weeks to less than 1 month",
+          "D": "From 1 month to less than 3 months",
+          "E": "From 3 months to less than 6 months",
+          "F": "From 6 months to less than 1 year",
+          "G": "1 year or longer",
+          "H": "Variable; I cannot give a single duration",
+          "I": "Difficult to say",
+          "J": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как долго в целом продолжается или повторяется боль?",
+        "time": "Общая продолжительность нынешней повторяющейся или постоянной боли.",
+        "choices": {
+          "A": "Сейчас таких трудностей нет",
+          "B": "Менее 2 недель",
+          "C": "От 2 недель до менее 1 месяца",
+          "D": "От 1 месяца до менее 3 месяцев",
+          "E": "От 3 месяцев до менее 6 месяцев",
+          "F": "От 6 месяцев до менее 1 года",
+          "G": "1 год или дольше",
+          "H": "По-разному; не могу указать одну продолжительность",
+          "I": "Трудно сказать",
+          "J": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 235,
+      "lv": {
+        "id": "M13_14",
+        "title": "Cik dienas jums bija sāpes?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējās 7 dienās.",
+        "choices": {
+          "A": "Nevienu dienu",
+          "B": "1–2 dienas",
+          "C": "3–4 dienas",
+          "D": "5–6 dienas",
+          "E": "Visas 7 dienas",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "On how many days did you have pain?",
+        "time": "The past 7 days.",
+        "choices": {
+          "A": "On no days",
+          "B": "On 1–2 days",
+          "C": "On 3–4 days",
+          "D": "On 5–6 days",
+          "E": "On all 7 days",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сколько дней у вас была боль?",
+        "time": "За последние 7 дней.",
+        "choices": {
+          "A": "Ни одного дня",
+          "B": "1–2 дня",
+          "C": "3–4 дня",
+          "D": "5–6 дней",
+          "E": "Все 7 дней",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 236,
+      "lv": {
+        "id": "M13_15",
+        "title": "Vai dienās ar sāpēm tās bija periodiskas vai pastāvēja lielāko daļu laika?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējās 7 dienās.",
+        "choices": {
+          "A": "Sāpju nebija",
+          "B": "Atsevišķas īsas sāpju epizodes ar nesāpīgiem starplaikiem",
+          "C": "Ilgstošas vai bieži atkārtotas sāpes, bet ar ievērojamiem nesāpīgiem starplaikiem",
+          "D": "Sāpes lielāko daļu laika, tikai ar īsiem nesāpīgiem starplaikiem",
+          "E": "Pastāvīgas sāpes bez nesāpīgiem starplaikiem",
+          "F": "Mainīgi / nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "On days with pain, was it intermittent or present most of the time?",
+        "time": "The past 7 days.",
+        "choices": {
+          "A": "No pain",
+          "B": "Occasional brief episodes with pain-free intervals",
+          "C": "Prolonged or frequently recurring pain, with substantial pain-free intervals",
+          "D": "Pain most of the time, with only brief pain-free intervals",
+          "E": "Constant, without pain-free intervals",
+          "F": "It varies / I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "В дни с болью она возникала периодически или присутствовала большую часть времени?",
+        "time": "За последние 7 дней.",
+        "choices": {
+          "A": "Боли не было",
+          "B": "Отдельные краткие эпизоды с промежутками без боли",
+          "C": "Длительная или часто повторяющаяся боль со значительными промежутками без боли",
+          "D": "Боль большую часть времени, лишь с короткими промежутками без боли",
+          "E": "Постоянная боль без промежутков",
+          "F": "По-разному / не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 237,
+      "lv": {
+        "id": "M13_16",
+        "title": "Kur jums bija sāpes? Izvēlieties visu atbilstošo.",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": true,
+        "time": "Pēdējās 7 dienās.",
+        "choices": {
+          "A": "Sāpju nebija",
+          "B": "Muguras lejasdaļā",
+          "C": "Kaklā / muguras augšdaļā",
+          "D": "Rokās / plaukstās",
+          "E": "Kājās / pēdās",
+          "F": "Galvā / sejā",
+          "G": "Vēderā / iegurnī",
+          "H": "Citā vietā",
+          "I": "Daudzās ķermeņa vietās",
+          "J": "Nezinu",
+          "K": "Nevēlos atbildēt"
+        },
+        "exclusive": "AJK",
+        "incompatible": [],
+        "context": null,
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "answered",
+          "J": "uncertain",
+          "K": "refused"
+        }
+      },
+      "en": {
+        "title": "Where have you had pain? Select all that apply.",
+        "time": "The past 7 days.",
+        "choices": {
+          "A": "No pain",
+          "B": "Lower back",
+          "C": "Neck / upper back",
+          "D": "Arms / hands",
+          "E": "Legs / feet",
+          "F": "Head / face",
+          "G": "Abdomen / pelvis",
+          "H": "Other location",
+          "I": "Widespread pain",
+          "J": "I don't know",
+          "K": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Где у вас была боль? Выберите всё подходящее.",
+        "time": "За последние 7 дней.",
+        "choices": {
+          "A": "Боли не было",
+          "B": "В пояснице",
+          "C": "В шее / верхней части спины",
+          "D": "В руках / кистях",
+          "E": "В ногах / стопах",
+          "F": "В голове / лице",
+          "G": "В животе / области таза",
+          "H": "В другом месте",
+          "I": "Во многих частях тела",
+          "J": "Я не знаю",
+          "K": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 238,
+      "lv": {
+        "id": "M13_17",
+        "title": "Cik bieži sāpes jūs pamodināja no miega?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējās 7 dienās.",
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often did you wake from sleep because of pain?",
+        "time": "The past 7 days.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вы просыпались из-за боли?",
+        "time": "За последние 7 дней.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 239,
+      "lv": {
+        "id": "M13_18",
+        "title": "Cik bieži gultā vajadzēja mainīt pozu sāpju vai fiziska diskomforta dēļ?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējās 7 dienās.",
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often did you need to change position in bed because of pain or physical discomfort?",
+        "time": "The past 7 days.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вам приходилось менять положение в постели из-за боли или физического дискомфорта?",
+        "time": "За последние 7 дней.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 240,
+      "lv": {
+        "id": "M13_19",
+        "title": "Cik lielā mērā sāpes mazināja spēju izbaudīt dzīvi?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējās 7 dienās.",
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Mēreni",
+          "D": "Stipri",
+          "E": "Ārkārtīgi stipri",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How much did pain reduce your enjoyment of life?",
+        "time": "The past 7 days.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Extremely",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько боль мешала вам получать удовольствие от жизни?",
+        "time": "За последние 7 дней.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Крайне сильно",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 241,
+      "lv": {
+        "id": "M13_20",
+        "title": "Cik bieži jūs pārņēma bezcerība saistībā ar dzīvi sāpēs?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējās 7 dienās.",
+        "choices": {
+          "A": "Nekad",
+          "B": "Reti",
+          "C": "Dažreiz",
+          "D": "Bieži",
+          "E": "Ļoti bieži",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 13,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often did you feel hopeless about living with pain?",
+        "time": "The past 7 days.",
+        "choices": {
+          "A": "Never",
+          "B": "Rarely",
+          "C": "Sometimes",
+          "D": "Often",
+          "E": "Very often",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вы чувствовали безнадёжность из-за жизни с болью?",
+        "time": "За последние 7 дней.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Редко",
+          "C": "Иногда",
+          "D": "Часто",
+          "E": "Очень часто",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

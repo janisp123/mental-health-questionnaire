@@ -1,0 +1,44 @@
+{
+  "schema": "medicine-list-ui-v1",
+  "lang": "lv",
+  "strings": {
+    "help": "Katrām zālēm pievienojiet atsevišķu ierakstu. Iekļaujiet būtiskas agrāk lietotas zāles arī tad, ja pašlaik nelietojat nevienas. Pārrakstiet informāciju no iepakojuma vai rakstiet “nezinu”; neminiet. Uztura bagātinātāji šeit nav jāuzskaita. Pārmaiņas saglabājas tikai pēc “Saglabāt un tālāk”. Ja nav pievienojamu detaļu, izlaidiet jautājumu.",
+    "add": "Pievienot citas zāles",
+    "remove": "Noņemt šo ierakstu",
+    "discussion": "Ko vēlaties pajautāt psihiatram par zālēm? (nav obligāti)",
+    "empty": "Ievadiet vismaz vienu detaļu vai izlaidiet jautājumu.",
+    "limit": "Varat pievienot līdz 50 zāļu ierakstiem.",
+    "select": "Ierakstiet tikai zināmo. Visi lauki ir brīvprātīgi.",
+    "entry": "Zāles",
+    "notes": "Jautājumi psihiatram",
+    "fields": {
+      "name": "Precīzs zāļu nosaukums",
+      "status": "Pašlaik lietotas vai agrāk lietotas zāles",
+      "strength": "Stiprums / forma, ja zināms",
+      "dose": "Faktiski lietotais daudzums vienā reizē",
+      "schedule": "Cik bieži un kad lietojat (arī pēc vajadzības)",
+      "duration": "Cik ilgi lietojat / aptuvenais sākuma datums",
+      "doseDuration": "Cik ilgi lietojat šo devu",
+      "reason": "Kādam nolūkam lietojat",
+      "benefit": "Vai šīs zāles palīdzēja?",
+      "effects": "Kas uzlabojās, pasliktinājās vai radīja blakusparādības?",
+      "changes": "Simptomi vai pārmaiņas pēc zāļu sākšanas, devas maiņas, izlaišanas vai pārtraukšanas; laiks, ja zināms",
+      "stoppedWhen": "Kad un kā pārtraucāt (uzreiz / pakāpeniski), ja attiecas",
+      "stopReason": "Kāpēc pārtraucāt, ja attiecas"
+    },
+    "status": {
+      "current": "Lietoju pašlaik",
+      "past": "Lietoju agrāk / pārtraucu",
+      "unknown": "Nezinu / neesmu pārliecināts/-a"
+    },
+    "benefits": {
+      "A": "Izteikts uzlabojums",
+      "B": "Neliels uzlabojums",
+      "C": "Nav pamanāmu pārmaiņu",
+      "D": "Pasliktinājās",
+      "E": "Vēl par agru spriest",
+      "F": "Neesmu pārliecināts/-a",
+      "G": "Nevēlos atbildēt"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "questionnaire-archive-v1",
+  "archived": "2026-11-09",
+  "files": [
+    {
+      "path": "repository-reviewer/188_README_LV_EN_RU_v0.2.0_REVIEW_BUILD.pdf",
+      "origin": "repository-reviewer",
+      "original_name": "188_README_LV_EN_RU_v0.2.0_REVIEW_BUILD.pdf",
+      "drive_file_id": null,
+      "bytes": 95910,
+      "sha256": "17b84900179dfff97f47b375e91824ce11d6cf1b439f315ba0486a0cdbd9a8bc"
+    },
+    {
+      "path": "repository-reviewer/187_Questionnaire_FULL_712Q_v0.2.0_REVIEW_BUILD.html",
+      "origin": "repository-reviewer",
+      "original_name": "187_Questionnaire_FULL_712Q_v0.2.0_REVIEW_BUILD.html",
+      "drive_file_id": null,
+      "bytes": 1164841,
+      "sha256": "2764a577fa532a5af171c4914a83494393e1d114078197a0c4628a3edc7977a4"
+    },
+    {
+      "path": "drive-before-replacement/187_Questionnaire_FULL_712Q_v0.2.0_REVIEW_BUILD.html",
+      "origin": "drive-before-replacement",
+      "original_name": "187_Questionnaire_FULL_712Q_v0.2.0_REVIEW_BUILD.html",
+      "drive_file_id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "bytes": 1164730,
+      "sha256": "98b50ec80c665ec5bb7c4d476f706f824949ab0c6f0cb4eb0d9d99d93a45ab39"
+    },
+    {
+      "path": "drive-before-replacement/188_README_LV_EN_RU_v0.2.0_REVIEW_BUILD.pdf",
+      "origin": "drive-before-replacement",
+      "original_name": "188_README_LV_EN_RU_v0.2.0_REVIEW_BUILD.pdf",
+      "drive_file_id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "bytes": 95910,
+      "sha256": "17b84900179dfff97f47b375e91824ce11d6cf1b439f315ba0486a0cdbd9a8bc"
+    }
+  ]
+}

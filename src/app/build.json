@@ -1,0 +1,25 @@
+{
+  "schema": "questionnaire-app-build-v1",
+  "styles": [
+    "styles/base.css",
+    "styles/reports.css",
+    "styles/navigation.css",
+    "styles/feedback.css",
+    "styles/safe-area.css"
+  ],
+  "scripts": [
+    "core/model.js",
+    "core/recovery.js",
+    "core/answer-flow.js",
+    "core/events.js",
+    "reports/reports.js",
+    "screens/start.js",
+    "screens/section-selector.js",
+    "screens/question.js",
+    "screens/medicine.js",
+    "screens/feedback.js",
+    "screens/results.js",
+    "screens/report-page.js",
+    "core/app.js"
+  ]
+}

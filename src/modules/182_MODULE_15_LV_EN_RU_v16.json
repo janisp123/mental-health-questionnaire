@@ -1,0 +1,2939 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 15,
+  "count": 37,
+  "entries": [
+    {
+      "order": 254,
+      "lv": {
+        "id": "M15_01",
+        "title": "Kāds ir jūsu nikotīna lietošanas statuss?",
+        "profile": "P44",
+        "multi": false,
+        "time": "Pašreizējā lietošana un iepriekšēja lietošana dzīves laikā; nav noteikts minimālais atturēšanās ilgums.",
+        "context": null,
+        "choices": {
+          "A": "Nekad neesmu lietojis/-usi",
+          "B": "Pašlaik lietoju katru dienu",
+          "C": "Pašlaik lietoju, bet ne katru dienu",
+          "D": "Lietoju agrāk, bet pašlaik nelietoju",
+          "E": "Nezinu / grūti pateikt",
+          "F": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "What is your current nicotine use status?",
+        "time": "Current and past lifetime use; no minimum period of abstinence is defined.",
+        "choices": {
+          "A": "I have never used it",
+          "B": "I currently use it every day",
+          "C": "I currently use it, but not every day",
+          "D": "I used it previously, but not now",
+          "E": "I do not know / difficult to say",
+          "F": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Какова ваша нынешняя ситуация с употреблением никотина?",
+        "time": "Нынешнее и прошлое употребление за всю жизнь; минимальный срок воздержания не задан.",
+        "choices": {
+          "A": "Никогда не употреблял(а)",
+          "B": "Сейчас употребляю ежедневно",
+          "C": "Сейчас употребляю, но не ежедневно",
+          "D": "Употреблял(а) раньше, сейчас не употребляю",
+          "E": "Не знаю / трудно сказать",
+          "F": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 255,
+      "lv": {
+        "id": "M15_02",
+        "title": "Cik ilgi dzīvē kopumā lietojāt nikotīnu?",
+        "profile": "P45",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": {
+          "id": "M15_01",
+          "hideValues": [
+            "A",
+            "F"
+          ]
+        },
+        "choices": {
+          "A": "Nekad neesmu lietojis/-usi nikotīnu",
+          "B": "Mazāk nekā 1 gadu",
+          "C": "No 1 gada līdz mazāk nekā 4 gadiem",
+          "D": "No 4 gadiem līdz mazāk nekā 10 gadiem",
+          "E": "No 10 gadiem līdz mazāk nekā 20 gadiem",
+          "F": "20 gadus vai ilgāk",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How long in total have you used nicotine over your lifetime?",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "I have never used nicotine",
+          "B": "Less than 1 year",
+          "C": "From 1 year to less than 4 years",
+          "D": "From 4 years to less than 10 years",
+          "E": "From 10 years to less than 20 years",
+          "F": "20 years or longer",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Как долго в общей сложности вы употребляли никотин за всю жизнь?",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Никогда не употреблял(а) никотин",
+          "B": "Менее 1 года",
+          "C": "От 1 года до менее 4 лет",
+          "D": "От 4 лет до менее 10 лет",
+          "E": "От 10 лет до менее 20 лет",
+          "F": "20 лет или дольше",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 256,
+      "lv": {
+        "id": "M15_03",
+        "title": "Vai esat vairākkārt mēģinājis/-usi atmest nikotīnu?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": {
+          "id": "M15_01",
+          "hideValues": [
+            "A",
+            "F"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you tried to quit nicotine several times?",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Пытались ли вы несколько раз отказаться от никотина?",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 257,
+      "lv": {
+        "id": "M15_04",
+        "title": "Vai nikotīna pārtraukšanas laikā ievērojami mainījās garastāvoklis vai nogurums?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": {
+          "id": "M15_01",
+          "hideValues": [
+            "A",
+            "F"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Did your mood or fatigue change significantly when you stopped using nicotine?",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Значительно ли менялись настроение или усталость при отказе от никотина?",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 258,
+      "lv": {
+        "id": "M15_05",
+        "title": "Cik dienās parastā nedēļā pēdējo 3 mēnešu laikā lietojāt alkoholu?",
+        "profile": "P46",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Šajos 3 mēnešos nelietoju",
+          "B": "Retāk nekā 1 dienu nedēļā",
+          "C": "1–2 dienās nedēļā",
+          "D": "3–4 dienās nedēļā",
+          "E": "5–7 dienās nedēļā",
+          "F": "Ļoti mainīgi / grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "In a typical week over the past 3 months, on how many days did you drink alcohol?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "I did not drink alcohol during these 3 months",
+          "B": "Less than 1 day per week",
+          "C": "On 1-2 days per week",
+          "D": "On 3-4 days per week",
+          "E": "On 5-7 days per week",
+          "F": "Highly variable / difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Сколько дней в обычную неделю за последние 3 месяца вы употребляли алкоголь?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "В эти 3 месяца алкоголь не употреблял(а)",
+          "B": "Реже 1 дня в неделю",
+          "C": "В течение 1-2 дней в неделю",
+          "D": "В течение 3-4 дней в неделю",
+          "E": "В течение 5-7 дней в неделю",
+          "F": "Очень по-разному / трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 259,
+      "lv": {
+        "id": "M15_06",
+        "title": "Vai dzīves laikā bijis periods, kad bija grūti kontrolēt alkohola lietošanu?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you ever had a period when it was difficult to control your alcohol use?",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Был ли в вашей жизни период, когда было трудно контролировать употребление алкоголя?",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 260,
+      "lv": {
+        "id": "M15_07",
+        "title": "Vai dzīves laikā alkohola lietošana radījusi problēmas veselībā, attiecībās vai pienākumu veikšanā?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Has alcohol use ever caused problems with your health, relationships or responsibilities?",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Вызывало ли употребление алкоголя когда-либо проблемы со здоровьем, отношениями или выполнением обязанностей?",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 261,
+      "lv": {
+        "id": "M15_08",
+        "title": "Cik kofeīnu saturošu dzērienu parasti izdzērāt vienā dienā pēdējo 28 dienu laikā?",
+        "profile": "P47",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nevienu",
+          "B": "Mazāk nekā 1 dienā",
+          "C": "1 dienā",
+          "D": "2 dienā",
+          "E": "3–4 dienā",
+          "F": "5 vai vairāk dienā",
+          "G": "Ļoti mainīgi / nezinu",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "Over the past 28 days, how many caffeinated drinks did you usually have per day?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "None",
+          "B": "Less than 1 per day",
+          "C": "1 per day",
+          "D": "2 per day",
+          "E": "3-4 per day",
+          "F": "5 or more per day",
+          "G": "Highly variable / I do not know",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Сколько напитков с кофеином вы обычно выпивали в день за последние 28 дней?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Ни одного напитка",
+          "B": "Менее 1 в день",
+          "C": "1 в день",
+          "D": "2 в день",
+          "E": "3-4 в день",
+          "F": "5 или больше в день",
+          "G": "Очень по-разному / не знаю",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 262,
+      "lv": {
+        "id": "M15_09",
+        "title": "Vai kofeīna samazināšana izraisa galvassāpes, nogurumu vai aizkaitināmību?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Does reducing caffeine cause headaches, fatigue or irritability?",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Вызывает ли сокращение кофеина головную боль, усталость или раздражительность?",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 263,
+      "lv": {
+        "id": "M15_10",
+        "title": "Vai dzīves laikā esat lietojis/-usi kanabisu vai citas apreibinošas vielas ārpus ārsta norādītās ārstēšanas?",
+        "profile": "P48",
+        "multi": false,
+        "time": "Dzīves laikā un atsevišķi pēdējo 3 mēnešu laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā, bet ne pēdējos 3 mēnešos",
+          "C": "Jā, arī pēdējos 3 mēnešos",
+          "D": "Nezinu / neesmu pārliecināts/-a",
+          "E": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "uncertain",
+          "E": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you ever used cannabis or other intoxicating substances outside treatment prescribed by a doctor?",
+        "time": "Over your lifetime and, separately, in the past 3 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes, but not in the past 3 months",
+          "C": "Yes, including in the past 3 months",
+          "D": "I don't know / I'm not sure",
+          "E": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Употребляли ли вы когда-либо каннабис или другие опьяняющие вещества вне назначенного врачом лечения?",
+        "time": "За всю жизнь и отдельно за последние 3 месяца.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да, но не за последние 3 месяца",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Не знаю / трудно сказать",
+          "E": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 264,
+      "lv": {
+        "id": "M15_11",
+        "title": "Vai dzīves laikā bija grūti kontrolēt šo vielu lietošanu?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": {
+          "id": "M15_10",
+          "hideValues": [
+            "A",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you ever found it difficult to control your use of these substances?",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Было ли вам когда-либо трудно контролировать употребление этих веществ?",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 265,
+      "lv": {
+        "id": "M15_13",
+        "title": "Vai kādreiz vielu lietošanas vai to lietošanas pārtraukšanas laikā radās panika, aizdomīgums vai neparasta uzvedība?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you ever experienced panic, suspiciousness, or unusual behaviour while using or stopping substances?",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Возникали ли когда-либо паника, подозрительность или необычное поведение при употреблении веществ или отказе от них?",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 266,
+      "lv": {
+        "id": "M15_14",
+        "title": "Vai vielu lietošanas dēļ bija jāmeklē profesionāla palīdzība?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you needed professional help because of substance use?",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Приходилось ли обращаться за профессиональной помощью из-за употребления веществ?",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 267,
+      "lv": {
+        "id": "M15_15",
+        "title": "Dienās, kad lietojāt alkoholu, cik šādu 10 g alkohola dzērienu parasti izdzērāt?",
+        "choices": {
+          "A": "Nelietoju alkoholu",
+          "B": "Mazāk par vienu šādu dzērienu",
+          "C": "1–2",
+          "D": "3–4",
+          "E": "5–6",
+          "F": "7–9",
+          "G": "10 vai vairāk",
+          "H": "Mainīgi / nevaru novērtēt",
+          "I": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-CONTEXT-ADDITION-1",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši. Par vienu dzērienu šeit uzskata apmēram 10 g tīra alkohola: aptuveni 250 ml 5% alus, 100 ml 12% vīna vai 30 ml 40% stiprā dzēriena. Parasta glāze vai pudele var būt vairāk par vienu šādu dzērienu.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": {
+          "id": "M15_05",
+          "hideValues": [
+            "A",
+            "G"
+          ]
+        },
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "uncertain",
+          "I": "refused"
+        }
+      },
+      "en": {
+        "title": "On days when you drank alcohol, how many of these 10 g alcohol drinks did you usually have?",
+        "time": "The past 3 months. One drink here means about 10 g of pure alcohol: approximately 250 ml of 5% beer, 100 ml of 12% wine or 30 ml of 40% spirits. An ordinary glass or bottle may contain more than one such drink.",
+        "choices": {
+          "A": "I did not drink alcohol",
+          "B": "Less than one such drink",
+          "C": "1–2",
+          "D": "3–4",
+          "E": "5–6",
+          "F": "7–9",
+          "G": "10 or more",
+          "H": "Varies / cannot estimate",
+          "I": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "В дни употребления алкоголя сколько таких напитков по 10 г алкоголя вы обычно выпивали?",
+        "time": "За последние 3 месяца. Один напиток здесь означает около 10 г чистого алкоголя: примерно 250 мл пива 5%, 100 мл вина 12% или 30 мл крепкого напитка 40%. Обычный бокал или бутылка может содержать больше одного такого напитка.",
+        "choices": {
+          "A": "Алкоголь не употреблял(а)",
+          "B": "Менее одного такого напитка",
+          "C": "1–2",
+          "D": "3–4",
+          "E": "5–6",
+          "F": "7–9",
+          "G": "10 или больше",
+          "H": "По-разному / не могу оценить",
+          "I": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "manual_draft",
+          "choices.D": "manual_draft",
+          "choices.E": "manual_draft",
+          "choices.F": "manual_draft",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "manual_draft",
+          "choices.D": "manual_draft",
+          "choices.E": "manual_draft",
+          "choices.F": "manual_draft",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 268,
+      "lv": {
+        "id": "M15_16",
+        "title": "Cik dzeršanas reizēs izdzērāt 6 vai vairāk šādu dzērienu (apmēram 60 g tīra alkohola)?",
+        "choices": {
+          "A": "Nevienu reizi",
+          "B": "1–2 reizes",
+          "C": "3–5 reizes",
+          "D": "6–12 reizes",
+          "E": "13 reizes vai vairāk",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-CONTEXT-ADDITION-1",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši. Par vienu dzērienu šeit uzskata apmēram 10 g tīra alkohola: aptuveni 250 ml 5% alus, 100 ml 12% vīna vai 30 ml 40% stiprā dzēriena. Parasta glāze vai pudele var būt vairāk par vienu šādu dzērienu.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": {
+          "id": "M15_05",
+          "hideValues": [
+            "A",
+            "G"
+          ]
+        },
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How many times did you drink 6 or more of these drinks on one occasion (about 60 g of pure alcohol)?",
+        "time": "The past 3 months. One drink here means about 10 g of pure alcohol: approximately 250 ml of 5% beer, 100 ml of 12% wine or 30 ml of 40% spirits. An ordinary glass or bottle may contain more than one such drink.",
+        "choices": {
+          "A": "On no occasions",
+          "B": "1–2 occasions",
+          "C": "3–5 occasions",
+          "D": "6–12 occasions",
+          "E": "13 occasions or more",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сколько раз вы выпивали за один раз 6 или больше таких напитков (около 60 г чистого алкоголя)?",
+        "time": "За последние 3 месяца. Один напиток здесь означает около 10 г чистого алкоголя: примерно 250 мл пива 5%, 100 мл вина 12% или 30 мл крепкого напитка 40%. Обычный бокал или бутылка может содержать больше одного такого напитка.",
+        "choices": {
+          "A": "Ни разу",
+          "B": "1–2 раза",
+          "C": "3–5 раз",
+          "D": "6–12 раз",
+          "E": "13 раз или больше",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 269,
+      "lv": {
+        "id": "M15_17",
+        "title": "Vai pēc alkohola lietošanas samazināšanas vai pārtraukšanas esat piedzīvojis/-usi trīci, svīšanu, sliktu dūšu vai izteiktu nemieru, ko saistījāt ar pārtraukšanu?",
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu",
+          "D": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-CONTEXT-ADDITION-1",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā. Ja pēc alkohola lietošanas samazināšanas jūtaties slikti, sazinieties ar ārstu; šī anketa nesniedz atmešanas plānu.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "After reducing or stopping alcohol, have you experienced shaking, sweating, nausea or marked agitation that you associated with withdrawal?",
+        "time": "At any time in your life. If you feel unwell after reducing alcohol, contact a clinician; this questionnaire does not provide a withdrawal plan.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "После сокращения или прекращения употребления алкоголя были ли дрожь, потливость, тошнота или выраженное возбуждение, которые вы связывали с отменой?",
+        "time": "За всю жизнь. Если после сокращения употребления алкоголя вам плохо, обратитесь к врачу; анкета не даёт плана отмены.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 270,
+      "lv": {
+        "id": "M15_18",
+        "title": "Vai pēc alkohola lietošanas samazināšanas vai pārtraukšanas kādreiz bijuši krampji, izteikts apjukums vai halucinācijas?",
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu",
+          "D": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-CONTEXT-ADDITION-1",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you ever had seizures, severe confusion or hallucinations after reducing or stopping alcohol?",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Были ли когда-нибудь судороги, выраженная спутанность сознания или галлюцинации после сокращения или прекращения употребления алкоголя?",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 271,
+      "lv": {
+        "id": "M15_19",
+        "title": "Vai pēc nesenas alkohola lietošanas samazināšanas vai pārtraukšanas pašlaik ir krampji, izteikts apjukums vai halucinācijas?",
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu",
+          "D": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-CONTEXT-ADDITION-1",
+        "multi": false,
+        "time": "Pašlaik. Šādu pašreizēju simptomu gadījumā meklējiet neatliekamo medicīnisko palīdzību (112 vai vietējais ārkārtas numurs). Negaidiet anketas pabeigšanu.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Are you currently having seizures, severe confusion or hallucinations after recently reducing or stopping alcohol?",
+        "time": "Right now. For these current symptoms, seek emergency medical help (112 or your local emergency number). Do not wait to finish the questionnaire.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Есть ли сейчас судороги, выраженная спутанность сознания или галлюцинации после недавнего сокращения или прекращения употребления алкоголя?",
+        "time": "Прямо сейчас. При таких нынешних симптомах нужна экстренная медицинская помощь (112 или местный экстренный номер). Не ждите завершения анкеты.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 272,
+      "lv": {
+        "id": "M15_20",
+        "title": "Kuras apreibinošās vielas esat lietojis/-usi ārpus ārsta norādītās ārstēšanas? Izvēlieties visu atbilstošo.",
+        "choices": {
+          "A": "Nevienu",
+          "B": "Kanabisu",
+          "C": "Stimulantus, piemēram, amfetamīnu vai kokaīnu",
+          "D": "Opioīdus",
+          "E": "Nomierinošus vai miega līdzekļus ārpus norādījumiem",
+          "F": "Halucinogēnus vai disociatīvas vielas",
+          "G": "Citas vai nezināmas vielas",
+          "H": "Neatceros / nezinu",
+          "I": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-CONTEXT-ADDITION-1",
+        "multi": true,
+        "time": "Jebkurā dzīves laikā. Zāļu nosaukumus un devas šeit neatkārtojiet; tie ir zāļu sarakstā.",
+        "exclusive": "AHI",
+        "incompatible": [],
+        "context": {
+          "id": "M15_10",
+          "hideValues": [
+            "A",
+            "E"
+          ]
+        },
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "uncertain",
+          "I": "refused"
+        }
+      },
+      "en": {
+        "title": "Which intoxicating substances have you used outside treatment directed by a doctor? Select all that apply.",
+        "time": "At any time in your life. Do not repeat medicine names or doses here; use the medicine list for those.",
+        "choices": {
+          "A": "None",
+          "B": "Cannabis",
+          "C": "Stimulants such as amphetamine or cocaine",
+          "D": "Opioids",
+          "E": "Sedatives or sleeping medicines outside instructions",
+          "F": "Hallucinogens or dissociative substances",
+          "G": "Other or unidentified substances",
+          "H": "I don't remember / I don't know",
+          "I": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Какие опьяняющие вещества вы употребляли вне назначенного врачом лечения? Выберите всё подходящее.",
+        "time": "За всю жизнь. Не повторяйте здесь названия и дозы лекарств; для этого есть список лекарств.",
+        "choices": {
+          "A": "Ничего из перечисленного",
+          "B": "Каннабис",
+          "C": "Стимуляторы, например амфетамин или кокаин",
+          "D": "Опиоиды",
+          "E": "Успокоительные или снотворные не по инструкции",
+          "F": "Галлюциногены или диссоциативные вещества",
+          "G": "Другие или неизвестные вещества",
+          "H": "Я не помню / Я не знаю",
+          "I": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 273,
+      "lv": {
+        "id": "M15_21",
+        "title": "Cik dienas parastā nedēļā lietojāt kādu no šīm vielām? Neskaitiet alkoholu, nikotīnu vai kofeīnu.",
+        "choices": {
+          "A": "Nevienu dienu",
+          "B": "Retāk nekā 1 dienu nedēļā",
+          "C": "1–2 dienas nedēļā",
+          "D": "3–4 dienas nedēļā",
+          "E": "5–7 dienas nedēļā",
+          "F": "Mainīgi / nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-CONTEXT-ADDITION-1",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": {
+          "id": "M15_10",
+          "hideValues": [
+            "A",
+            "E"
+          ]
+        },
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "On how many days in a typical week did you use any of these substances? Exclude alcohol, nicotine and caffeine.",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "On no days",
+          "B": "Less than 1 day per week",
+          "C": "1–2 days per week",
+          "D": "3–4 days per week",
+          "E": "5–7 days per week",
+          "F": "It varies / I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сколько дней в обычную неделю вы употребляли какие-либо из этих веществ? Не учитывайте алкоголь, никотин и кофеин.",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Ни одного дня",
+          "B": "Реже 1 дня в неделю",
+          "C": "1–2 дня в неделю",
+          "D": "3–4 дня в неделю",
+          "E": "5–7 дней в неделю",
+          "F": "По-разному / не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 274,
+      "lv": {
+        "id": "M15_22",
+        "title": "Vai pēc citu vielu samazināšanas vai pārtraukšanas bijuši fiziski abstinences simptomi vai stipra tieksme atkal lietot? Neskaitiet alkoholu, nikotīnu vai kofeīnu.",
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu",
+          "D": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-CONTEXT-ADDITION-1",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": {
+          "id": "M15_10",
+          "hideValues": [
+            "A",
+            "E"
+          ]
+        },
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "After reducing or stopping other substances, have you had physical withdrawal symptoms or a strong craving to use again? Exclude alcohol, nicotine and caffeine.",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "После сокращения или прекращения других веществ были ли физические симптомы отмены или сильная тяга употребить снова? Не учитывайте алкоголь, никотин и кофеин.",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 275,
+      "lv": {
+        "id": "M15_23",
+        "title": "Cik bieži lietojāt kanabisu?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "1–2 reizes",
+          "C": "Aptuveni reizi mēnesī",
+          "D": "Aptuveni reizi nedēļā",
+          "E": "Vairākas dienas nedēļā",
+          "F": "Katru vai gandrīz katru dienu",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How often did you use cannabis?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "Never",
+          "B": "1–2 occasions",
+          "C": "About once a month",
+          "D": "About once a week",
+          "E": "Several days a week",
+          "F": "Every day or almost every day",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вы употребляли каннабис?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Никогда",
+          "B": "1–2 раза",
+          "C": "Примерно раз в месяц",
+          "D": "Примерно раз в неделю",
+          "E": "Несколько дней в неделю",
+          "F": "Каждый день или почти каждый день",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 276,
+      "lv": {
+        "id": "M15_24",
+        "title": "Cik bieži lietojāt stimulējošas vielas ārpus ārsta norādījumiem?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "1–2 reizes",
+          "C": "Aptuveni reizi mēnesī",
+          "D": "Aptuveni reizi nedēļā",
+          "E": "Vairākas dienas nedēļā",
+          "F": "Katru vai gandrīz katru dienu",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How often did you use stimulants other than as directed by a doctor?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "Never",
+          "B": "1–2 occasions",
+          "C": "About once a month",
+          "D": "About once a week",
+          "E": "Several days a week",
+          "F": "Every day or almost every day",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вы употребляли стимуляторы не по назначению или с нарушением указаний врача?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Никогда",
+          "B": "1–2 раза",
+          "C": "Примерно раз в месяц",
+          "D": "Примерно раз в неделю",
+          "E": "Несколько дней в неделю",
+          "F": "Каждый день или почти каждый день",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 277,
+      "lv": {
+        "id": "M15_25",
+        "title": "Cik bieži lietojāt opioīdus ārpus ārsta norādījumiem?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "1–2 reizes",
+          "C": "Aptuveni reizi mēnesī",
+          "D": "Aptuveni reizi nedēļā",
+          "E": "Vairākas dienas nedēļā",
+          "F": "Katru vai gandrīz katru dienu",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How often did you use opioids other than as directed by a doctor?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "Never",
+          "B": "1–2 occasions",
+          "C": "About once a month",
+          "D": "About once a week",
+          "E": "Several days a week",
+          "F": "Every day or almost every day",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вы принимали опиоиды не по назначению или с нарушением указаний врача?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Никогда",
+          "B": "1–2 раза",
+          "C": "Примерно раз в месяц",
+          "D": "Примерно раз в неделю",
+          "E": "Несколько дней в неделю",
+          "F": "Каждый день или почти каждый день",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 278,
+      "lv": {
+        "id": "M15_26",
+        "title": "Cik bieži lietojāt nomierinošus vai miega līdzekļus ārpus ārsta norādījumiem?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "1–2 reizes",
+          "C": "Aptuveni reizi mēnesī",
+          "D": "Aptuveni reizi nedēļā",
+          "E": "Vairākas dienas nedēļā",
+          "F": "Katru vai gandrīz katru dienu",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How often did you use sedatives or sleeping medicines other than as directed by a doctor?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "Never",
+          "B": "1–2 occasions",
+          "C": "About once a month",
+          "D": "About once a week",
+          "E": "Several days a week",
+          "F": "Every day or almost every day",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вы принимали успокоительные или снотворные средства не по назначению или с нарушением указаний врача?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Никогда",
+          "B": "1–2 раза",
+          "C": "Примерно раз в месяц",
+          "D": "Примерно раз в неделю",
+          "E": "Несколько дней в неделю",
+          "F": "Каждый день или почти каждый день",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 279,
+      "lv": {
+        "id": "M15_27",
+        "title": "Cik bieži lietojāt citas apreibinošas vielas?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nekad",
+          "B": "1–2 reizes",
+          "C": "Aptuveni reizi mēnesī",
+          "D": "Aptuveni reizi nedēļā",
+          "E": "Vairākas dienas nedēļā",
+          "F": "Katru vai gandrīz katru dienu",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How often did you use other intoxicating substances?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "Never",
+          "B": "1–2 occasions",
+          "C": "About once a month",
+          "D": "About once a week",
+          "E": "Several days a week",
+          "F": "Every day or almost every day",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто вы употребляли другие вещества, вызывающие опьянение?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Никогда",
+          "B": "1–2 раза",
+          "C": "Примерно раз в месяц",
+          "D": "Примерно раз в неделю",
+          "E": "Несколько дней в неделю",
+          "F": "Каждый день или почти каждый день",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 280,
+      "lv": {
+        "id": "M15_28",
+        "title": "Kad pēdējo reizi lietojāt kanabisu?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Pēdējās 24 stundās",
+          "B": "Pirms 2–7 dienām",
+          "C": "Pirms 8–30 dienām",
+          "D": "Pirms 1–3 mēnešiem",
+          "E": "Senāk nekā pirms 3 mēnešiem",
+          "F": "Nekad",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "When was the last time you used cannabis?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Within the past 24 hours",
+          "B": "2-7 days ago",
+          "C": "8-30 days ago",
+          "D": "1-3 months ago",
+          "E": "More than 3 months ago",
+          "F": "Never",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда вы в последний раз употребляли каннабис?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "За последние 24 часа",
+          "B": "2-7 дней назад",
+          "C": "8-30 дней назад",
+          "D": "1-3 месяца назад",
+          "E": "Более 3 месяцев назад",
+          "F": "Никогда",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 281,
+      "lv": {
+        "id": "M15_29",
+        "title": "Kad pēdējo reizi lietojāt stimulējošas vielas ārpus ārsta norādījumiem?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Pēdējās 24 stundās",
+          "B": "Pirms 2–7 dienām",
+          "C": "Pirms 8–30 dienām",
+          "D": "Pirms 1–3 mēnešiem",
+          "E": "Senāk nekā pirms 3 mēnešiem",
+          "F": "Nekad",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "When did you last use stimulants other than as directed by a doctor?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Within the past 24 hours",
+          "B": "2-7 days ago",
+          "C": "8-30 days ago",
+          "D": "1-3 months ago",
+          "E": "More than 3 months ago",
+          "F": "Never",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда вы в последний раз употребляли стимуляторы не по назначению или с нарушением указаний врача?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "За последние 24 часа",
+          "B": "2-7 дней назад",
+          "C": "8-30 дней назад",
+          "D": "1-3 месяца назад",
+          "E": "Более 3 месяцев назад",
+          "F": "Никогда",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 282,
+      "lv": {
+        "id": "M15_30",
+        "title": "Kad pēdējo reizi lietojāt opioīdus ārpus ārsta norādījumiem?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Pēdējās 24 stundās",
+          "B": "Pirms 2–7 dienām",
+          "C": "Pirms 8–30 dienām",
+          "D": "Pirms 1–3 mēnešiem",
+          "E": "Senāk nekā pirms 3 mēnešiem",
+          "F": "Nekad",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "When did you last use opioids other than as directed by a doctor?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Within the past 24 hours",
+          "B": "2-7 days ago",
+          "C": "8-30 days ago",
+          "D": "1-3 months ago",
+          "E": "More than 3 months ago",
+          "F": "Never",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда вы в последний раз принимали опиоиды не по назначению или с нарушением указаний врача?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "За последние 24 часа",
+          "B": "2-7 дней назад",
+          "C": "8-30 дней назад",
+          "D": "1-3 месяца назад",
+          "E": "Более 3 месяцев назад",
+          "F": "Никогда",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 283,
+      "lv": {
+        "id": "M15_31",
+        "title": "Kad pēdējo reizi lietojāt nomierinošus vai miega līdzekļus ārpus ārsta norādījumiem?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Pēdējās 24 stundās",
+          "B": "Pirms 2–7 dienām",
+          "C": "Pirms 8–30 dienām",
+          "D": "Pirms 1–3 mēnešiem",
+          "E": "Senāk nekā pirms 3 mēnešiem",
+          "F": "Nekad",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "When did you last use sedatives or sleeping medicines other than as directed by a doctor?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Within the past 24 hours",
+          "B": "2-7 days ago",
+          "C": "8-30 days ago",
+          "D": "1-3 months ago",
+          "E": "More than 3 months ago",
+          "F": "Never",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда вы в последний раз принимали успокоительные или снотворные средства не по назначению или с нарушением указаний врача?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "За последние 24 часа",
+          "B": "2-7 дней назад",
+          "C": "8-30 дней назад",
+          "D": "1-3 месяца назад",
+          "E": "Более 3 месяцев назад",
+          "F": "Никогда",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 284,
+      "lv": {
+        "id": "M15_32",
+        "title": "Kad pēdējo reizi lietojāt citas apreibinošas vielas?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Pēdējās 24 stundās",
+          "B": "Pirms 2–7 dienām",
+          "C": "Pirms 8–30 dienām",
+          "D": "Pirms 1–3 mēnešiem",
+          "E": "Senāk nekā pirms 3 mēnešiem",
+          "F": "Nekad",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "When was the last time you used other intoxicating substances?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Within the past 24 hours",
+          "B": "2-7 days ago",
+          "C": "8-30 days ago",
+          "D": "1-3 months ago",
+          "E": "More than 3 months ago",
+          "F": "Never",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда вы в последний раз употребляли другие одурманивающие вещества?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "За последние 24 часа",
+          "B": "2-7 дней назад",
+          "C": "8-30 дней назад",
+          "D": "1-3 месяца назад",
+          "E": "Более 3 месяцев назад",
+          "F": "Никогда",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 285,
+      "lv": {
+        "id": "M15_33",
+        "title": "Vai lietojāt vairāk vielas vai ilgāk, nekā bijāt plānojis/-usi?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši. Iekļaujiet alkoholu un citas apreibinošas vielas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Did you use more of the substance or for longer than you had planned?",
+        "time": "Last 3 months. Include alcohol and other intoxicants.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Вы использовали больше вещества или дольше, чем планировали?",
+        "time": "За последние 3 месяца. Включая алкоголь и другие одурманивающие вещества.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 286,
+      "lv": {
+        "id": "M15_34",
+        "title": "Vai stipra tieksme lietot apgrūtināja citas darbības?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši. Iekļaujiet alkoholu un citas apreibinošas vielas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Did the strong urge to use make other activities difficult?",
+        "time": "Last 3 months. Include alcohol and other intoxicants.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Затрудняло ли сильное желание употребить другие дела?",
+        "time": "За последние 3 месяца. Включая алкоголь и другие одурманивающие вещества.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 287,
+      "lv": {
+        "id": "M15_35",
+        "title": "Vai lietošana turpinājās, lai gan apzinājāties kaitējumu veselībai, attiecībām vai pienākumiem?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši. Iekļaujiet alkoholu un citas apreibinošas vielas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Did you continue using despite knowing it was harming your health, relationships, or responsibilities?",
+        "time": "Last 3 months. Include alcohol and other intoxicants.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Продолжали ли вы употреблять, несмотря на то, что знали о вреде для здоровья, отношений или выполнения обязанностей?",
+        "time": "За последние 3 месяца. Включая алкоголь и другие одурманивающие вещества.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 288,
+      "lv": {
+        "id": "M15_36",
+        "title": "Kuras vielas saistījāt ar iepriekš minēto kontroles zudumu, tieksmi vai kaitējumu?",
+        "profile": "CUSTOM12",
+        "multi": true,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Alkoholu",
+          "B": "Kanabisu",
+          "C": "Stimulantiem, arī kokaīnu",
+          "D": "Opioīdiem",
+          "E": "Nomierinošiem vai miega līdzekļiem",
+          "F": "Citām vai nezināmām vielām",
+          "G": "Vairākām vielām kopā",
+          "H": "Neattiecas uz mani",
+          "I": "Nezinu",
+          "J": "Nevēlos atbildēt"
+        },
+        "exclusive": "HIJ",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "uncertain",
+          "J": "refused"
+        }
+      },
+      "en": {
+        "title": "Which substances did you associate with the loss of control, craving, or harm mentioned above?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "Alcohol",
+          "B": "Cannabis",
+          "C": "Stimulants, including cocaine",
+          "D": "Opioids",
+          "E": "Sedatives or sleeping pills",
+          "F": "Other or unknown substances",
+          "G": "Several substances together",
+          "H": "Does not apply to me",
+          "I": "I don't know",
+          "J": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "С какими веществами вы связывали потерю контроля, тягу или вред, упомянутые выше?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Алкоголь",
+          "B": "Каннабис",
+          "C": "Стимуляторы, включая кокаин",
+          "D": "Опиоиды",
+          "E": "Седативные средства или снотворное",
+          "F": "Другие или неизвестные вещества",
+          "G": "Несколько веществ одновременно",
+          "H": "Ко мне это не относится",
+          "I": "Я не знаю",
+          "J": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 289,
+      "lv": {
+        "id": "M15_37",
+        "title": "Vai kādreiz bijusi iespējama pārdozēšana ar apziņas vai elpošanas traucējumiem?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Has there ever been a possible overdose with impaired consciousness or breathing?",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Были ли когда-либо случаи возможной передозировки с нарушением сознания или дыхания?",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 290,
+      "lv": {
+        "id": "M15_38",
+        "title": "Vai vienā reizē lietojāt alkoholu kopā ar opioīdiem, nomierinošiem vai miega līdzekļiem?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 15,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you used alcohol with opioids, sedatives, or sleeping pills at the same time?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Вы употребляли алкоголь одновременно с опиоидами, седативными средствами или снотворным?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

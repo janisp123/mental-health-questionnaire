@@ -1,0 +1,323 @@
+"""Offline browser regression for the complete questionnaire and its 15 user sections."""
+import json
+import tempfile
+from pathlib import Path
+
+from playwright.sync_api import sync_playwright
+from browser_helpers import act, backup, choose, launch, open_page, qid, restore
+import build_questionnaire as build
+
+
+def skip_until(page, target):
+    for _ in range(120):
+        if qid(page) == target:
+            return
+        act(page, "skip")
+    raise AssertionError(f"Could not reach {target} inside the selected section")
+
+
+with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
+    html_path = Path(tmp) / "questionnaire.html"
+    html_path.write_text(build.make_html(), encoding="utf-8")
+    browser = launch(pw)
+    page, errors, network = open_page(browser, html_path)
+
+    data = page.locator("#questionnaire-data").evaluate("el => JSON.parse(el.textContent)")
+    assert "izlaidiet jautājumus, kas šķiet atbilstoši" in data["ui"]["lv"]["guideBody"].lower()
+    assert "skip questions that seem fine" in data["ui"]["en"]["guideBody"].lower()
+    assert "пропускайте подходящие вопросы" in data["ui"]["ru"]["guideBody"].lower()
+    assert len(data["groups"]) == 15
+    questions = [q for group in data["groups"] for q in group["questions"]]
+    assert len(questions) == 712
+    assert len({q["id"] for q in questions}) == 712
+    question_by_id = {q["id"]: q for q in questions}
+    assert question_by_id["M23_21"]["translations"]["en"]["choices"]["A"] == "A conversation and assessment"
+    assert question_by_id["M23_21"]["translations"]["ru"]["choices"]["A"] == "Беседа и оценка состояния"
+    assert question_by_id["M16_13"]["translations"]["en"]["choices"]["F"] == "Another activity"
+    assert question_by_id["M16_13"]["translations"]["ru"]["choices"]["F"] == "Другой вид деятельности"
+    assert question_by_id["M43_01"]["translations"]["ru"]["title"].startswith("Сколько дней за последние 28 дней")
+    assert question_by_id["M43_04"]["translations"]["ru"]["choices"]["C"] == "Сон и отдых"
+    assert question_by_id["M33_07"]["translations"]["en"]["choices"]["H"] == "I now have an opportunity to seek help or feel ready to do so."
+    assert question_by_id["M33_07"]["translations"]["ru"]["choices"]["H"] == "Сейчас есть возможность или готовность обратиться за помощью."
+    assert question_by_id["M33_08"]["translations"]["en"]["choices"]["C"] == "I don't think it would help, although I am experiencing difficulties."
+    assert question_by_id["M23_25"]["translations"]["ru"]["choices"]["C"] == "Существенно не изменились"
+    assert question_by_id["M33_05"]["translations"]["ru"]["choices"]["A"] == "Гетеросексуальная ориентация"
+    first_section_russian = [
+        text for q in questions if q["module"] == "S11"
+        for text in q["translations"]["ru"].get("choices", {}).values()
+    ]
+    assert "Я не знаю / Я не уверен" not in first_section_russian
+    assert "Я не уверен." not in first_section_russian
+
+    # S13: translation parity covers all 70 questions; key safety, caregiver and bullying wording is exact.
+    s13_questions = [q for q in questions if q["module"] == "S13"]
+    assert len(s13_questions) == 70
+    s13_russian = [
+        text for q in s13_questions
+        for text in q["translations"]["ru"].get("choices", {}).values()
+    ]
+    assert "Я не знаю / Я не уверен" not in s13_russian
+    assert question_by_id["M31_08"]["translations"]["en"]["title"] == "Have your caregiving responsibilities made you feel that you can no longer continue providing care without additional help?"
+    assert "без дополнительной помощи" in question_by_id["M31_08"]["translations"]["ru"]["title"]
+    assert "чтобы наказать или принудить" in question_by_id["M31_17"]["translations"]["ru"]["choices"]["G"]
+    assert "медицинская помощь" not in question_by_id["M31_17"]["translations"]["ru"]["title"]
+    assert question_by_id["M31_20"]["translations"]["ru"]["title"].startswith("Если у Вас возникала мысль")
+    assert question_by_id["M32_26"]["translations"]["en"]["choices"]["B"] == "More than 24 hours ago, but no more than 1 month ago"
+    assert question_by_id["M32_26"]["translations"]["ru"]["choices"]["B"] == "Более 24 часов назад, но не более месяца назад"
+    assert "учебном заведении" in question_by_id["M32_35"]["translations"]["ru"]["title"]
+    assert question_by_id["M32_36"]["translations"]["ru"]["title"] == "С какими действиями в свой адрес Вы сталкивались?"
+    assert "другого человека" in question_by_id["M32_39"]["translations"]["ru"]["title"]
+    assert question_by_id["M32_40"]["translations"]["ru"]["title"] == "Кто так с Вами обращался?"
+    assert "за последние 6 месяцев" in question_by_id["M32_41"]["translations"]["ru"]["title"].lower()
+    assert question_by_id["M32_45"]["translations"]["ru"]["title"].startswith("Видели ли Вы")
+    assert "отстранением от учебы" not in question_by_id["M32_46"]["translations"]["ru"]["title"]
+
+    s01_questions = [q for q in questions if q["module"] == "S01"]
+    assert len(s01_questions) == 61
+    assert question_by_id["M01_09"]["translations"]["en"]["choices"]["B"] == "More than 24 hours ago, but no more than 1 month ago"
+    assert question_by_id["M01_17"]["translations"]["en"]["choices"]["M"] == "I have no diagnosis from this list."
+    assert question_by_id["M01_17"]["translations"]["ru"]["choices"]["G"] == "Расстройство аутистического спектра"
+    assert question_by_id["M01_25"]["translations"]["ru"]["title"] == "Почему завершился последний курс такой помощи?"
+    assert question_by_id["M01_22"]["translations"]["ru"]["choices"]["E"] == "Самочувствие меняется"
+    assert question_by_id["M14_17"]["translations"]["ru"]["title"] == "Как часто за последние 4 недели вы пропускали запланированный приём дозы регулярно принимаемого лекарства?"
+    assert question_by_id["M14_18"]["translations"]["ru"]["choices"]["E"] == "Не чувствовал(а) необходимости или сомневался(ась) в пользе."
+    assert question_by_id["M30_13"]["translations"]["ru"]["title"] == "Появились ли у вас внезапно прямо сейчас или только что слабость в лице или руке, нарушение речи либо выраженная потеря зрения?"
+    assert question_by_id["M30_17"]["translations"]["en"]["time"] == "The past 28 days. New or worsening difficulties with hand movements should be assessed by a doctor. Sudden weakness, speech or vision changes require emergency help (112 or your local emergency number); do not wait to finish."
+    assert question_by_id["M30_20"]["translations"]["ru"]["choices"]["C"] == "Более 24 часов назад, но не более месяца назад"
+    assert question_by_id["M30_25"]["translations"]["en"]["title"] == "Is the person now barely moving or not speaking, staying frozen for a long time, or unable to take in fluids, with these symptoms starting suddenly?"
+
+    s09_questions = [q for q in questions if q["module"] == "S09"]
+    assert len(s09_questions) == 50
+    assert question_by_id["M11_17"]["translations"]["en"]["title"] == "On work or study days compared with days off, does your usual sleep onset or wake-up time differ by more than two hours?"
+    assert question_by_id["M11_17"]["translations"]["ru"]["title"] == "Обычно ли время, когда вы засыпаете или просыпаетесь, отличается более чем на два часа в рабочие или учебные дни по сравнению с выходными?"
+    assert question_by_id["M12_11"]["translations"]["en"]["choices"]["B"] == "More than 24 hours ago, but no more than 1 month ago"
+    assert question_by_id["M12_11"]["translations"]["ru"]["choices"]["B"] == "Более 24 часов назад, но не более 1 месяца назад"
+    assert question_by_id["M13_10"]["translations"]["en"]["time"] == "At any point in your life."
+    assert question_by_id["M13_10"]["translations"]["ru"]["time"] == "Когда-либо в жизни."
+    assert question_by_id["M13_10"]["translations"]["ru"]["choices"]["C"] == "Не знаю / трудно сказать."
+    s06_questions = [q for q in questions if q["module"] == "S06"]
+    assert len(s06_questions) == 43
+    assert question_by_id["M25_03"]["translations"]["ru"]["title"] == "Было ли вам значительно труднее выполнять математические вычисления, чем вашим сверстникам?"
+    assert question_by_id["M46_01"]["translations"]["en"]["title"] == "Have you had difficulties with speech or language, motor coordination, or independent daily activities, either in childhood or currently?"
+    assert question_by_id["M46_02"]["translations"]["ru"]["choices"]["C"] == "Координация движений и практические действия"
+    assert question_by_id["M46_04"]["translations"]["en"]["choices"]["A"] == "About the same since childhood"
+    assert question_by_id["M46_05"]["translations"]["ru"]["time"] == "Когда-либо в жизни."
+    s06_russian_answers = [
+        answer for q in s06_questions
+        for answer in q["translations"]["ru"].get("choices", {}).values()
+    ]
+    assert "Я не знаю / Я не уверен" not in s06_russian_answers
+    assert "Я не уверен." not in s06_russian_answers
+    s10_questions = [q for q in questions if q["module"] == "S10"]
+    assert len(s10_questions) == 37
+    assert question_by_id["M15_08"]["translations"]["en"]["choices"]["A"] == "None"
+    assert question_by_id["M15_08"]["translations"]["ru"]["choices"]["A"] == "Ни одного напитка"
+    assert question_by_id["M15_20"]["translations"]["en"]["choices"]["A"] == "None"
+    assert question_by_id["M15_16"]["translations"]["en"]["title"] == "How many times did you drink 6 or more of these drinks on one occasion (about 60 g of pure alcohol)?"
+    assert question_by_id["M15_34"]["translations"]["ru"]["title"] == "Затрудняло ли сильное желание употребить другие дела?"
+    assert question_by_id["M15_36"]["translations"]["en"]["choices"]["F"] == "Other or unknown substances"
+    assert question_by_id["M15_36"]["translations"]["ru"]["choices"]["G"] == "Несколько веществ одновременно"
+    assert question_by_id["M15_26"]["translations"]["en"]["title"] == "How often did you use sedatives or sleeping medicines other than as directed by a doctor?"
+    s10_russian_answers = [
+        answer for q in s10_questions
+        for answer in q["translations"]["ru"].get("choices", {}).values()
+    ]
+    assert "Я не знаю / Я не уверен" not in s10_russian_answers
+    assert "Я не уверен." not in s10_russian_answers
+    assert question_by_id["M13_15"]["translations"]["ru"]["choices"]["F"] == "По-разному / не знаю"
+    s09_russian_answers = [
+        answer for q in s09_questions
+        for answer in q["translations"]["ru"].get("choices", {}).values()
+    ]
+    assert "Я не знаю / Я не уверен" not in s09_russian_answers
+    assert "Я не уверен." not in s09_russian_answers
+    s01_russian_answers = [
+        answer for q in s01_questions
+        for answer in q["translations"]["ru"].get("choices", {}).values()
+    ]
+    assert "Я не знаю / Я не уверен" not in s01_russian_answers
+    assert "Я не уверен." not in s01_russian_answers
+
+    # Start opens a short section picker; select-all chooses every group and continues.
+    page.locator('[data-act="start"]').click()
+    assert page.locator(".question-nav").count() == 0
+    assert page.locator("input[data-module]").count() == 15
+    assert all(group["questionCount"] >= 30 for group in data["groups"])
+    page.locator('[data-act="all"]').click()
+    assert qid(page) == "M23_11"
+    assert len(backup(page)["selected"]) == 15
+
+    # Multi-select is manually saved; single-select saves once even on a double tap.
+    assert qid(page) == "M23_11"
+    assert page.locator(".selection-hint").inner_text() == data["ui"]["en"]["multiHint"]
+    choose(page, "A")
+    choose(page, "M")
+    assert page.locator('input[name="answer"]:checked').count() == 1
+    assert page.locator('input[name="answer"][value="M"]').is_checked()
+    for code in ("A", "B", "C", "D"):
+        choose(page, code)
+    assert not page.locator('input[name="answer"][value="M"]').is_checked()
+    assert page.locator('input[name="answer"]:checked').count() == 4
+    assert backup(page)["answers"] == {}
+    act(page, "save")
+    assert qid(page) == "M23_01"
+    checklist_backup = backup(page)
+    assert checklist_backup["answers"]["M23_11"]["codes"] == ["A", "B", "C", "D"]
+    restore(page, checklist_backup)
+    assert qid(page) == "M23_01"
+    assert backup(page)["answers"]["M23_11"]["codes"] == ["A", "B", "C", "D"]
+    page.locator('input[name="answer"][value="B"]').locator("..").dblclick(delay=40)
+    page.wait_for_timeout(1400)
+    assert qid(page) == "M23_02"
+    assert backup(page)["answers"]["M23_01"]["codes"] == ["B"]
+
+    # Feedback is separate from a saved medical answer and survives recovery.
+    act(page, "previous")
+    act(page, "feedback")
+    page.locator('[data-feedback-reason="question"]').check()
+    page.locator("#feedback-comment").fill("Synthetic question note")
+    act(page, "feedbackContinue")
+    saved = backup(page)
+    assert saved["answers"]["M23_01"]["codes"] == ["B"]
+    assert saved["feedback"]["M23_01"]["reasons"] == ["question"]
+    assert saved["feedback"]["M23_01"]["comment"] == "Synthetic question note"
+    restore(page, saved)
+    round_trip = backup(page)
+    assert round_trip["answers"] == saved["answers"]
+    assert round_trip["feedback"] == saved["feedback"]
+
+    # A real conditional follow-up appears for an applicable parent answer.
+    act(page, "sections")
+    page.locator('[data-jump="S01"]').click()
+    skip_until(page, "M01_01")
+    for question_number in range(1, 8):
+        choose(page, "A")
+        assert qid(page) == f"M01_{question_number + 1:02d}"
+    choose(page, "B")
+    assert qid(page) == "M01_09"
+    choose(page, "A")
+    assert qid(page) == "M01_10"
+
+    # The full-bank safety rules still produce the gentle support message.
+    act(page, "sections")
+    page.locator('[data-jump="S03"]').click()
+    skip_until(page, "M06_01")
+    assert qid(page) == "M06_01"
+    choose(page, "B")
+    assert page.locator("#support-message").is_visible()
+    assert page.locator('#support-message a[href="tel:116123"]').is_visible()
+    support_text = page.locator("#support-message").inner_text()
+    assert "116123" in support_text and "116 123" not in support_text
+    act(page, "dismissSupport")
+
+    # Reach the real medication-list item via ordinary section navigation.
+    act(page, "sections")
+    page.locator('[data-jump="S01"]').click()
+    skip_until(page, "M14_01")
+    choose(page, "B")
+    assert qid(page) == "M14_02", f"Expected medication form next, got {qid(page)}"
+    page.locator('[data-med-index="0"][data-med-field="name"]').fill("SYNTHETIC MEDICINE")
+    act(page, "save")
+    assert backup(page)["answers"]["M14_02"]["kind"] == "medicine"
+
+    # Text questions are manually saved and remain in the clinician report.
+    act(page, "sections")
+    page.locator('[data-jump="S11"]').click()
+    skip_until(page, "M33_01")
+    page.locator("#shortText").fill("SYNTHETIC NAME")
+    act(page, "save")
+    assert qid(page) == "M33_02"
+    skip_box = page.locator('.question-nav [data-act="skip"]').bounding_box()
+    assert abs(skip_box["x"] + skip_box["width"] / 2 - 195) < 2
+    assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
+    act(page, "skip")
+    assert qid(page) != "M33_02"
+    assert backup(page)["answers"]["M33_02"]["kind"] == "skip"
+    act(page, "previous")
+    assert qid(page) == "M33_02"
+    act(page, "results")
+    assert page.locator('[data-act="feedbackReport"]').count() == 0
+    report_language = page.get_by_role("combobox", name="Report language")
+    assert report_language.input_value() == "en"
+    report_language.select_option("lv")
+    assert page.locator("#language").input_value() == "en"
+    act(page, "doctor")
+    preview = page.locator(".report-preview")
+    assert preview.is_visible()
+    page.set_viewport_size({"width": 320, "height": 844})
+    assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
+    page.set_viewport_size({"width": 390, "height": 844})
+    report = preview.inner_text()
+    assert "SYNTHETIC NAME" in report
+    assert "SYNTHETIC MEDICINE" in report
+    assert page.locator("html").get_attribute("lang") == "en"
+    assert preview.get_attribute("lang") == "lv"
+    assert data["ui"]["lv"]["doctorHeading"] in report
+    assert question_by_id["M23_01"]["translations"]["lv"]["choices"]["B"] in report
+    assert question_by_id["M23_01"]["translations"]["en"]["title"] not in report
+    assert data["ui"]["lv"]["reportCountSelected"] in report
+    assert data["ui"]["lv"]["reportCountDone"] in report
+    assert data["ui"]["lv"]["reportCountSkip"] in report
+    assert "Synthetic question note" not in report
+    assert page.locator("#reportText").count() == 0
+    assert page.locator('[data-act="print"]').count() == 1
+    assert page.locator('[data-act="back"]').count() == 1
+    assert page.locator('[data-act="sections"]').count() == 1
+    assert page.locator('[data-act="resultScreen"]').count() == 1
+    assert page.locator('[data-act="copyDoctor"],[data-act="downloadReport"]').count() == 0
+    act(page, "feedbackReport")
+    feedback_preview = page.locator(".report-preview")
+    assert feedback_preview.is_visible()
+    project_feedback = feedback_preview.inner_text()
+    assert "Synthetic question note" in project_feedback
+    assert question_by_id["M23_01"]["translations"]["en"]["title"] in project_feedback
+    assert "SYNTHETIC NAME" not in project_feedback
+    assert "SYNTHETIC MEDICINE" not in project_feedback
+    assert data["presentation"]["feedbackContactEmail"] in project_feedback
+    page.emulate_media(media="print")
+    assert feedback_preview.is_visible()
+    assert not page.locator('[data-act="print"]').is_visible()
+    assert len(page.pdf(format="A4")) > 1000
+    page.emulate_media(media="screen")
+    act(page, "doctor")
+    assert preview.get_attribute("lang") == "lv"
+    assert preview.inner_text() == report
+    act(page, "resultScreen")
+    assert report_language.input_value() == "lv"
+    act(page, "doctor")
+    page.emulate_media(media="print")
+    assert page.locator(".report-preview").is_visible()
+    assert not page.locator("footer").is_visible()
+    pdf_path = Path(tmp) / "doctor-report.pdf"
+    page.pdf(path=str(pdf_path), format="A4")
+    assert pdf_path.stat().st_size > 1000
+    page.emulate_media(media="screen")
+    assert not page.locator('[data-act="ai"]').count()
+    assert not errors, errors
+    assert not network, network
+
+    # Saving is user-initiated; ten ordinary skips must not trigger a download.
+    recovery_page, recovery_errors, recovery_network = open_page(browser, html_path)
+    recovery_downloads = []
+    recovery_page.on("download", lambda download: recovery_downloads.append(download.suggested_filename))
+    recovery_page.locator('[data-act="start"]').click()
+    recovery_page.locator('[data-act="all"]').click()
+    first = questions[0]
+    for language in ("lv", "ru", "uk", "en"):
+        recovery_page.select_option("#language", language)
+        assert recovery_page.locator(".question h2").inner_text() == first["translations"][language]["title"]
+    for _ in range(10):
+        act(recovery_page, "skip")
+    assert recovery_downloads == [], recovery_downloads
+    ten_skips = backup(recovery_page)
+    assert recovery_downloads == ["questionnaire-recovery.json"]
+    assert len(ten_skips["answers"]) == 10
+    assert all(answer["kind"] == "skip" for answer in ten_skips["answers"].values())
+    restore(recovery_page, ten_skips)
+    assert backup(recovery_page)["answers"] == ten_skips["answers"]
+    assert not recovery_errors, recovery_errors
+    assert not recovery_network, recovery_network
+    recovery_page.close()
+    browser.close()
+
+print("PASS: full offline runtime includes selection, answer types, conditions, support, feedback/recovery, skip/back, copy/print, four locales, and manual progress saving. Android device UNVERIFIED.")

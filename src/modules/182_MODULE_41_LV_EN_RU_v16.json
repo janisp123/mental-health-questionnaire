@@ -1,0 +1,499 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 41,
+  "count": 6,
+  "entries": [
+    {
+      "order": 668,
+      "lv": {
+        "id": "M41_01",
+        "title": "Vai pēc konkrēta saspringta notikuma vai dzīves pārmaiņām sākās emocionālas vai ikdienas grūtības?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 41,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Did emotional or everyday difficulties begin after a specific stressful event or life change?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Начались ли эмоциональные или повседневные трудности после конкретного стрессового события или жизненной перемены?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 669,
+      "lv": {
+        "id": "M41_02",
+        "title": "Ar kādu pārmaiņu grūtības saistītas?",
+        "profile": "CUSTOM12",
+        "multi": true,
+        "time": "Pēdējie 12 mēneši.",
+        "context": {
+          "id": "M41_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Attiecību pārtraukšanu vai konfliktu",
+          "B": "Darba zaudējumu vai pārmaiņām",
+          "C": "Slimību vai aprūpi",
+          "D": "Finansiālām vai mājokļa grūtībām",
+          "E": "Pārcelšanos vai migrāciju",
+          "F": "Citām pārmaiņām",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "GH",
+        "incompatible": [],
+        "section": 41,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "What kind of change are these difficulties linked to?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "Relationship breakdown or conflict",
+          "B": "Job loss or change",
+          "C": "Illness or caregiving",
+          "D": "Financial or housing difficulties",
+          "E": "Relocation or migration",
+          "F": "Other changes",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "С какой переменой связаны эти трудности?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Разрыв отношений или конфликт",
+          "B": "Потеря или смена работы",
+          "C": "Болезнь или уход за другим человеком",
+          "D": "Финансовые или жилищные трудности",
+          "E": "Переезд или миграция",
+          "F": "Другие изменения",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 670,
+      "lv": {
+        "id": "M41_03",
+        "title": "Cik drīz pēc notikuma sākās grūtības?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Šī notikuma un grūtību sākuma laiks.",
+        "context": {
+          "id": "M41_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Mēneša laikā",
+          "B": "Vēlāk nekā pēc mēneša",
+          "C": "Grūtības bija jau iepriekš",
+          "D": "Nezinu",
+          "E": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 41,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "uncertain",
+          "E": "refused"
+        }
+      },
+      "en": {
+        "title": "How soon after the event did the difficulties begin?",
+        "time": "When this event happened and when the difficulties began.",
+        "choices": {
+          "A": "Within one month of the event",
+          "B": "More than one month after the event",
+          "C": "The difficulties were already present before the event",
+          "D": "I don't know",
+          "E": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как скоро после события начались трудности?",
+        "time": "Когда произошло событие и когда начались трудности.",
+        "choices": {
+          "A": "В течение месяца после события",
+          "B": "Более чем через месяц после события",
+          "C": "Трудности были ещё до события",
+          "D": "Я не знаю",
+          "E": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 671,
+      "lv": {
+        "id": "M41_04",
+        "title": "Cik bieži domas par notikumu aizņem uzmanību tā, ka grūti pievērsties citam?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M41_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nevienā dienā",
+          "B": "1–3 dienās",
+          "C": "4–10 dienās",
+          "D": "11–20 dienās",
+          "E": "21–28 dienās",
+          "F": "Nezinu / grūti pateikt",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 41,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often do thoughts about the event take up so much of your attention that it is hard to focus on anything else?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No days",
+          "B": "On 1–3 days",
+          "C": "On 4–10 days",
+          "D": "On 11–20 days",
+          "E": "On 21–28 days",
+          "F": "I do not know / difficult to say",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто мысли об этом событии настолько занимают Ваше внимание, что Вам трудно сосредоточиться на чём-либо другом?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Ни одного дня",
+          "B": "1–3 дня",
+          "C": "4–10 дней",
+          "D": "11–20 дней",
+          "E": "21–28 дней",
+          "F": "Не знаю / трудно сказать",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 672,
+      "lv": {
+        "id": "M41_05",
+        "title": "Cik ļoti pēc pārmaiņām ir grūti atgriezties pie ikdienas pienākumiem?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M41_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Nezinu / grūti pateikt",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 41,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How difficult is it to return to your daily duties after the change?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Very difficult",
+          "E": "Extremely difficult",
+          "F": "Does not apply to me",
+          "G": "I do not know / difficult to say",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько сложно вернуться к повседневным обязанностям после изменений?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Не знаю / трудно сказать",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 673,
+      "lv": {
+        "id": "M41_06",
+        "title": "Vai notikums vai tā praktiskās sekas joprojām turpinās?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M41_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 41,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Is the event or its practical consequences still ongoing?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Продолжается ли это событие или его практические последствия?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

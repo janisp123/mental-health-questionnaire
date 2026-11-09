@@ -1,0 +1,462 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 43,
+  "count": 5,
+  "entries": [
+    {
+      "order": 682,
+      "lv": {
+        "id": "M43_01",
+        "title": "Cik dienās bija vismaz viena nodarbe, kas šķita vērtīga vai patīkama?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nevienā dienā",
+          "B": "1–3 dienās",
+          "C": "4–10 dienās",
+          "D": "11–20 dienās",
+          "E": "21–28 dienās",
+          "F": "Nezinu / grūti pateikt",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 43,
+        "help": "Individuāli sagatavoti labsajūtas jautājumi. Tā nav WHO-5 skala; kopvērtējums netiek aprēķināts.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How many days did you have at least one activity that seemed worthwhile or enjoyable?",
+        "time": "The past 28 days.",
+        "help": "Individually prepared well-being questions. This is not a WHO-5 scale; no overall score is calculated.",
+        "choices": {
+          "A": "On no days",
+          "B": "On 1-3 days",
+          "C": "On 4-10 days",
+          "D": "On 11-20 days",
+          "E": "On 21-28 days",
+          "F": "I do not know / difficult to say",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сколько дней за последние 28 дней у вас было хотя бы одно занятие, которое казалось вам значимым или приятным?",
+        "time": "Последние 28 дней.",
+        "help": "Индивидуально составленные вопросы о благополучии. Это не шкала ВОЗ-5; общий балл не рассчитывается.",
+        "choices": {
+          "A": "Ни в один из дней",
+          "B": "В течение 1-3 дней",
+          "C": "В течение 4-10 дней",
+          "D": "В течение 11-20 дней",
+          "E": "В течение 21-28 дней",
+          "F": "Не знаю / трудно сказать",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 683,
+      "lv": {
+        "id": "M43_02",
+        "title": "Cik dienās jutāt, ka spējat ietekmēt vismaz nelielu savas ikdienas daļu?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nevienā dienā",
+          "B": "1–3 dienās",
+          "C": "4–10 dienās",
+          "D": "11–20 dienās",
+          "E": "21–28 dienās",
+          "F": "Nezinu / grūti pateikt",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 43,
+        "help": "Individuāli sagatavoti labsajūtas jautājumi. Tā nav WHO-5 skala; kopvērtējums netiek aprēķināts.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How many days did you feel like you were able to influence at least a small part of your daily life?",
+        "time": "The past 28 days.",
+        "help": "Individually prepared well-being questions. This is not a WHO-5 scale; no overall score is calculated.",
+        "choices": {
+          "A": "On no days",
+          "B": "On 1-3 days",
+          "C": "On 4-10 days",
+          "D": "On 11-20 days",
+          "E": "On 21-28 days",
+          "F": "I do not know / difficult to say",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сколько дней вы чувствовали, что смогли повлиять хотя бы на небольшую часть своей повседневной жизни?",
+        "time": "Последние 28 дней.",
+        "help": "Индивидуально составленные вопросы о благополучии. Это не шкала ВОЗ-5; общий балл не рассчитывается.",
+        "choices": {
+          "A": "Ни в один из дней",
+          "B": "В течение 1-3 дней",
+          "C": "В течение 4-10 дней",
+          "D": "В течение 11-20 дней",
+          "E": "В течение 21-28 дней",
+          "F": "Не знаю / трудно сказать",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 684,
+      "lv": {
+        "id": "M43_03",
+        "title": "Cik dienās bija pieejams jums pieņemams emocionāls vai praktisks atbalsts?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nevienā dienā",
+          "B": "1–3 dienās",
+          "C": "4–10 dienās",
+          "D": "11–20 dienās",
+          "E": "21–28 dienās",
+          "F": "Nezinu / grūti pateikt",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 43,
+        "help": "Individuāli sagatavoti labsajūtas jautājumi. Tā nav WHO-5 skala; kopvērtējums netiek aprēķināts.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "On how many days was acceptable emotional or practical support available to you?",
+        "time": "The past 28 days.",
+        "help": "Individually prepared well-being questions. This is not a WHO-5 scale; no overall score is calculated.",
+        "choices": {
+          "A": "On no days",
+          "B": "On 1-3 days",
+          "C": "On 4-10 days",
+          "D": "On 11-20 days",
+          "E": "On 21-28 days",
+          "F": "I do not know / difficult to say",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "В течение скольких дней вам была доступна приемлемая эмоциональная или практическая поддержка?",
+        "time": "Последние 28 дней.",
+        "help": "Индивидуально составленные вопросы о благополучии. Это не шкала ВОЗ-5; общий балл не рассчитывается.",
+        "choices": {
+          "A": "Ни в один из дней",
+          "B": "В течение 1-3 дней",
+          "C": "В течение 4-10 дней",
+          "D": "В течение 11-20 дней",
+          "E": "В течение 21-28 дней",
+          "F": "Не знаю / трудно сказать",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 685,
+      "lv": {
+        "id": "M43_04",
+        "title": "Kas pašlaik visvairāk palīdz atgūties?",
+        "profile": "CUSTOM12",
+        "multi": true,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Tuvinieku atbalsts",
+          "B": "Profesionāla palīdzība",
+          "C": "Miegs un atpūta",
+          "D": "Kustības vai būšana ārā",
+          "E": "Rutīna un mazi paveicami uzdevumi",
+          "F": "Intereses, radošums vai garīgā dzīve",
+          "G": "Cits atbalsts",
+          "H": "Nezinu",
+          "I": "Nevēlos atbildēt"
+        },
+        "exclusive": "HI",
+        "incompatible": [],
+        "section": 43,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "uncertain",
+          "I": "refused"
+        }
+      },
+      "en": {
+        "title": "What is currently helping you recover the most?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Support from loved ones",
+          "B": "Professional help",
+          "C": "Sleep and rest",
+          "D": "Movement or being outdoors",
+          "E": "Routine and small tasks to accomplish",
+          "F": "Interests, creativity or spiritual life",
+          "G": "Other support",
+          "H": "I don't know",
+          "I": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Что сейчас больше всего помогает вам восстановиться?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Поддержка близких",
+          "B": "Профессиональная помощь",
+          "C": "Сон и отдых",
+          "D": "Движение или пребывание на открытом воздухе",
+          "E": "Рутинные и небольшие задачи для выполнения",
+          "F": "Интересы, творчество или духовная жизнь",
+          "G": "Другая поддержка",
+          "H": "Я не знаю",
+          "I": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 686,
+      "lv": {
+        "id": "M43_05",
+        "title": "Kādu pārmaiņu visvairāk vēlētos pamanīt tuvākajā laikā?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Nākamās nedēļas.",
+        "context": null,
+        "choices": {
+          "A": "Vieglāk veikt ikdienas pienākumus",
+          "B": "Labāk gulēt",
+          "C": "Vairāk prieka vai intereses",
+          "D": "Mazāk baiļu vai ciešanu",
+          "E": "Drošākas attiecības",
+          "F": "Labāk pārvaldīt impulsus",
+          "G": "Citu pārmaiņu",
+          "H": "Nezinu",
+          "I": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 43,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "uncertain",
+          "I": "refused"
+        }
+      },
+      "en": {
+        "title": "What change would you most like to see in the near future?",
+        "time": "Next weeks.",
+        "choices": {
+          "A": "Easier to perform daily tasks",
+          "B": "Better sleep",
+          "C": "More joy or interest",
+          "D": "Less fear or suffering",
+          "E": "Safer relationships",
+          "F": "Better impulse control",
+          "G": "Other changes",
+          "H": "I don't know",
+          "I": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Какие изменения вы больше всего хотели бы увидеть в ближайшем будущем?",
+        "time": "В ближайшие недели.",
+        "choices": {
+          "A": "Проще выполнять повседневные задачи",
+          "B": "Лучший сон",
+          "C": "Больше радости или интереса",
+          "D": "Меньше страха или страданий",
+          "E": "Более безопасные отношения",
+          "F": "Лучший контроль над импульсами",
+          "G": "Другие изменения",
+          "H": "Я не знаю",
+          "I": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

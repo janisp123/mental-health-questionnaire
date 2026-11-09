@@ -1,0 +1,1694 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 23,
+  "count": 21,
+  "entries": [
+    {
+      "order": 19,
+      "lv": {
+        "id": "M23_11",
+        "title": "Ko visvairāk vēlētos uzlabot?",
+        "profile": "P55",
+        "multi": true,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Miegs",
+          "B": "Nogurums vai enerģija",
+          "C": "Garastāvoklis vai motivācija",
+          "D": "Trauksme vai panika",
+          "E": "Uzmanība vai atmiņa",
+          "F": "Zāļu ietekme",
+          "G": "Darba vai aprūpes slodze",
+          "H": "Dusmas vai impulsu kontrole",
+          "I": "Vielu lietošana vai citi grūti kontrolējami paradumi",
+          "J": "Sāpes vai fiziskā veselība",
+          "K": "Attiecības vai seksuālā veselība",
+          "L": "Cits mērķis, ko apspriedīšu vizītē",
+          "M": "Pašlaik nav šādas prioritātes",
+          "N": "Vēl nezinu",
+          "O": "Nevēlos atbildēt."
+        },
+        "exclusive": "MNO",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "answered",
+          "J": "answered",
+          "K": "answered",
+          "L": "answered",
+          "M": "answered",
+          "N": "uncertain",
+          "O": "refused"
+        },
+        "maxChoices": 3
+      },
+      "en": {
+        "title": "What would you most like to improve?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Sleep",
+          "B": "Fatigue or energy",
+          "C": "Mood or motivation",
+          "D": "Anxiety or panic",
+          "E": "Attention or memory",
+          "F": "Effects of medicines",
+          "G": "Workload or caring responsibilities",
+          "H": "Anger or impulse control",
+          "I": "Substance use or other habits that are difficult to control",
+          "J": "Pain or physical health",
+          "K": "Relationships or sexual health",
+          "L": "Another goal I will discuss at the appointment",
+          "M": "No priority at present",
+          "N": "I do not know yet",
+          "O": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Что бы вы больше всего хотели улучшить?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Сон",
+          "B": "Усталость или энергия",
+          "C": "Настроение или мотивация",
+          "D": "Тревога или паника",
+          "E": "Внимание или память",
+          "F": "Действие лекарств",
+          "G": "Рабочая нагрузка или обязанности по уходу",
+          "H": "Гнев или контроль импульсов",
+          "I": "Употребление веществ или другие трудно контролируемые привычки",
+          "J": "Боль или физическое здоровье",
+          "K": "Отношения или сексуальное здоровье",
+          "L": "Другая цель, которую обсужу на приёме",
+          "M": "Сейчас такого приоритета нет",
+          "N": "Пока не знаю",
+          "O": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "manual_draft",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "manual_draft",
+          "choices.K": "legacy_exact",
+          "choices.L": "legacy_exact",
+          "choices.M": "legacy_exact",
+          "choices.N": "legacy_exact",
+          "choices.O": "legacy_exact"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "manual_draft",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "manual_draft",
+          "choices.K": "legacy_exact",
+          "choices.L": "legacy_exact",
+          "choices.M": "legacy_exact",
+          "choices.N": "legacy_exact",
+          "choices.O": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 422,
+      "lv": {
+        "id": "M23_01",
+        "title": "Cik ļoti pašsajūtas grūtības traucē pildīt darba pienākumus?",
+        "profile": "P07",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much do difficulties with your wellbeing interfere with your work responsibilities?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько трудности с самочувствием мешают выполнять рабочие обязанности?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 423,
+      "lv": {
+        "id": "M23_02",
+        "title": "Cik ļoti pašsajūtas grūtības traucē rūpēties par mājsaimniecību?",
+        "profile": "P07",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much do difficulties with your wellbeing interfere with managing your household?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько трудности с самочувствием мешают вести домашнее хозяйство?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 424,
+      "lv": {
+        "id": "M23_03",
+        "title": "Cik ļoti pašsajūtas grūtības traucē rūpēties par bērniem vai apgādājamiem?",
+        "profile": "P07",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much do difficulties with your wellbeing interfere with caring for children or dependants?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько трудности с самочувствием мешают заботиться о детях или других людях на вашем попечении?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 425,
+      "lv": {
+        "id": "M23_04",
+        "title": "Cik ļoti pašsajūtas grūtības ierobežo tikšanos ar cilvēkiem?",
+        "profile": "P07",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much do difficulties with your wellbeing limit meeting other people?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько трудности с самочувствием ограничивают встречи с людьми?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 426,
+      "lv": {
+        "id": "M23_05",
+        "title": "Cik ļoti pašsajūtas grūtības traucē pašaprūpei un higiēnai?",
+        "profile": "P07",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much do difficulties with your wellbeing interfere with self-care and hygiene?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько трудности с самочувствием мешают уходу за собой и гигиене?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 427,
+      "lv": {
+        "id": "M23_06",
+        "title": "Vai ir aktivitātes, kas jums joprojām sagādā patiesu prieku?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Are there activities that still give you genuine pleasure?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Есть ли занятия, которые по-прежнему приносят вам настоящее удовольствие?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / не могу сказать уверенно.",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 428,
+      "lv": {
+        "id": "M23_07",
+        "title": "Vai jums ir cilvēki, kuru dēļ jūtaties saistīts/-a ar dzīvi?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Are there people who help you feel connected to life?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Есть ли люди, благодаря которым вы чувствуете связь с жизнью?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / не могу сказать уверенно.",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 429,
+      "lv": {
+        "id": "M23_08",
+        "title": "Vai zināt, kādas darbības palīdz mazināt krīzi vai trauksmi?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you know what actions help you cope with a crisis or reduce anxiety?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Знаете ли вы, какие действия помогают справиться с кризисом или уменьшить тревогу?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / не могу сказать уверенно.",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 430,
+      "lv": {
+        "id": "M23_09",
+        "title": "Vai psihiskā veselība ir pasliktinājusi spēju pārvaldīt naudu vai dokumentus?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Has your mental health reduced your ability to manage money or paperwork?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Ухудшилась ли из-за проблем с психическим здоровьем ваша способность распоряжаться деньгами или заниматься документами?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / не могу сказать уверенно.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 431,
+      "lv": {
+        "id": "M23_10",
+        "title": "Vai salīdzinājumā ar iepriekšējo gadu funkcionējat ievērojami sliktāk?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Is your ability to function significantly worse than it was last year?",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Стало ли вам значительно труднее справляться с повседневной жизнью по сравнению с прошлым годом?",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / не могу сказать уверенно.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 432,
+      "lv": {
+        "id": "M23_15",
+        "title": "Vai ir bijusi sarežģīta palīdzības saņemšanas vai saziņas pieredze, par kuru ārstam būtu jāzina?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Was there a difficult experience with care or communication that your doctor should know about?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Был ли трудный опыт получения помощи или общения, о котором врачу следует знать?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / не могу сказать уверенно.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 433,
+      "lv": {
+        "id": "M23_17",
+        "title": "Vai vēlaties apspriest iespējamas miega izmeklēšanas vai medicīnisko analīžu nepieciešamību?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Would you like to discuss whether sleep investigations or medical tests might be needed?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Хотите ли вы обсудить необходимость исследования сна или медицинских анализов?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / не могу сказать уверенно.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 434,
+      "lv": {
+        "id": "M23_18",
+        "title": "Vai būtu lietderīgi pārrunāt darba vai aprūpes slodzes pielāgošanu?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Would it be helpful to discuss adjusting your workload or caring responsibilities?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Было бы полезно обсудить изменение рабочей нагрузки или нагрузки по уходу за другими?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / не могу сказать уверенно.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 435,
+      "lv": {
+        "id": "M23_19",
+        "title": "Vai ir sensitīvi jautājumi, kurus vēlaties apspriest ar ārstu bez ģimenes klātbūtnes?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Are there sensitive topics you would like to discuss with your doctor without family members present?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Есть ли деликатные вопросы, которые вы хотите обсудить с врачом без присутствия семьи?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / не могу сказать уверенно.",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 436,
+      "lv": {
+        "id": "M23_20",
+        "title": "Vai jums ir pieejami iepriekšējie medicīniskie izraksti, ko parādīt ārstam?",
+        "profile": "CUSTOM-YN",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you have previous medical records available to show your doctor?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Есть ли у вас прежние медицинские выписки, которые можно показать врачу?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / не могу сказать уверенно.",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 437,
+      "lv": {
+        "id": "M23_21",
+        "title": "Kādu palīdzību pašlaik būtu gatavs/-a apsvērt?",
+        "profile": "CUSTOM-v11",
+        "multi": true,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Sarunu un izvērtēšanu",
+          "B": "Psihoterapiju vai psihologa konsultācijas",
+          "C": "Zāļu ārstēšanu",
+          "D": "Miega vai fiziskās veselības izmeklēšanu",
+          "E": "Darba vai sociālu atbalstu",
+          "F": "Vēlos vispirms pārrunāt iespējas",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "GH",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "What kind of help would you be willing to consider right now?",
+        "time": "Currently.",
+        "choices": {
+          "A": "A conversation and assessment",
+          "B": "Psychotherapy or psychological consultations",
+          "C": "Drug treatment",
+          "D": "Sleep or physical health assessment",
+          "E": "Job or social support",
+          "F": "I would like to discuss the options first.",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Какую помощь вы были бы готовы рассмотреть прямо сейчас?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Беседа и оценка состояния",
+          "B": "Психотерапия или психологические консультации",
+          "C": "Медикаментозное лечение",
+          "D": "Обследование сна или физического состояния",
+          "E": "Работа или социальная поддержка",
+          "F": "Сначала хотелось бы обсудить возможные варианты.",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 438,
+      "lv": {
+        "id": "M23_22",
+        "title": "Kas varētu apgrūtināt palīdzības saņemšanu?",
+        "profile": "CUSTOM-v11",
+        "multi": true,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Izmaksas",
+          "B": "Transports vai attālums",
+          "C": "Darba grafiks",
+          "D": "Bērnu vai tuvinieku aprūpe",
+          "E": "Valoda vai saziņa",
+          "F": "Bailes no nosodījuma",
+          "G": "Iepriekšēja negatīva pieredze",
+          "H": "Bažas par blakusparādībām",
+          "I": "Cits šķērslis",
+          "J": "Nav šķēršļu",
+          "K": "Nezinu",
+          "L": "Nevēlos atbildēt"
+        },
+        "exclusive": "JKL",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "answered",
+          "J": "answered",
+          "K": "uncertain",
+          "L": "refused"
+        }
+      },
+      "en": {
+        "title": "What could make it difficult to get help?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Costs",
+          "B": "Transportation or distance",
+          "C": "Work schedule",
+          "D": "Childcare or care responsibilities for family members",
+          "E": "Language or communication",
+          "F": "Fear of being judged",
+          "G": "Previous negative experience",
+          "H": "Concerns about side effects",
+          "I": "Another obstacle",
+          "J": "No obstacles",
+          "K": "I don't know",
+          "L": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Что может затруднить получение помощи?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Затраты",
+          "B": "Транспорт или расстояние",
+          "C": "График работы",
+          "D": "Уход за детьми или близкими",
+          "E": "Язык или общение",
+          "F": "Страх, что меня осудят",
+          "G": "Предыдущий негативный опыт",
+          "H": "Опасения по поводу побочных эффектов",
+          "I": "Еще одно препятствие",
+          "J": "Никаких препятствий",
+          "K": "Я не знаю",
+          "L": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed",
+          "choices.L": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed",
+          "choices.L": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 439,
+      "lv": {
+        "id": "M23_23",
+        "title": "Vai vēlaties, lai ārsts ar jūsu atļauju uzklausa arī uzticama cilvēka novērojumus?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Jā",
+          "B": "Iespējams, vispirms pārrunājot ar mani",
+          "C": "Nē",
+          "D": "Nav šāda cilvēka",
+          "E": "Nezinu",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you want the doctor to also listen to the observations of a trusted person, with your permission?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Yes",
+          "B": "Perhaps by discussing it with me first",
+          "C": "No",
+          "D": "There is no such person.",
+          "E": "I don't know",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Вы хотите, чтобы врач с вашего разрешения также выслушал мнение доверенного лица?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Да",
+          "B": "Возможно, сначала стоит обсудить это со мной.",
+          "C": "Нет",
+          "D": "У меня нет такого человека.",
+          "E": "Я не знаю",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 440,
+      "lv": {
+        "id": "M23_24",
+        "title": "Vai ikdienas pamatvajadzību nodrošināšanai pašlaik nepieciešama cita cilvēka palīdzība?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā, reizēm",
+          "C": "Jā, katru dienu",
+          "D": "Jā, gandrīz nepārtraukti",
+          "E": "Nezinu",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you currently need help from another person to meet your basic daily needs?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes, sometimes",
+          "C": "Yes, every day",
+          "D": "Yes, almost continuously",
+          "E": "I don't know",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Вам в настоящее время требуется помощь другого человека для удовлетворения ваших основных повседневных потребностей?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да, иногда",
+          "C": "Да, каждый день",
+          "D": "Да, почти непрерывно.",
+          "E": "Я не знаю",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 441,
+      "lv": {
+        "id": "M23_25",
+        "title": "Kā ikdienas spējas mainījušās kopš iepriekšējās vizītes vai pēdējā mēneša?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Salīdzinājums ar iepriekšējo vizīti vai pēdējo mēnesi.",
+        "context": null,
+        "choices": {
+          "A": "Būtiski uzlabojušās",
+          "B": "Nedaudz uzlabojušās",
+          "C": "Būtiski nav mainījušās",
+          "D": "Nedaudz pasliktinājušās",
+          "E": "Būtiski pasliktinājušās",
+          "F": "Nav salīdzinājuma / nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 23,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How have your daily abilities changed since your last visit or in the last month?",
+        "time": "Comparison with the previous visit or the last month.",
+        "choices": {
+          "A": "Significantly improved",
+          "B": "Slightly improved",
+          "C": "No significant change",
+          "D": "Slightly worsened",
+          "E": "Significantly worsened",
+          "F": "No basis for comparison / I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как изменились ваши возможности в повседневной жизни с момента вашего последнего визита или за последний месяц?",
+        "time": "Сравнение с предыдущим визитом или с прошлым месяцем.",
+        "choices": {
+          "A": "Значительно улучшились",
+          "B": "Немного улучшились",
+          "C": "Существенно не изменились",
+          "D": "Немного ухудшились",
+          "E": "Значительно ухудшились",
+          "F": "Нет подходящего сравнения / не знаю",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

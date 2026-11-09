@@ -1,0 +1,42 @@
+name: App Component Checks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/app/**'
+      - 'src/questionnaire/build.json'
+      - 'translations/**'
+      - 'tests/app/**'
+      - 'tests/full_bank/browser_helpers.py'
+      - 'tools/build_questionnaire.py'
+      - 'tools/run_checks.py'
+      - '.github/workflows/app-component-checks.yml'
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  app-components:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prepare browser tooling
+        run: |
+          python -m pip install playwright
+          if command -v google-chrome >/dev/null; then
+            echo "QUESTIONNAIRE_BROWSER=$(command -v google-chrome)" >> "$GITHUB_ENV"
+          else
+            python -m playwright install --with-deps chromium
+          fi
+      - name: Test focused app behaviors in all active languages
+        run: python tools/run_checks.py --suite app

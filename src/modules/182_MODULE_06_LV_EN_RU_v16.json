@@ -1,0 +1,1865 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 6,
+  "count": 25,
+  "entries": [
+    {
+      "order": 5,
+      "lv": {
+        "id": "M06_01",
+        "title": "Vai šobrīd domājat par pašnāvību?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Are you thinking about suicide right now?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Думаете ли Вы о самоубийстве прямо сейчас?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 6,
+      "lv": {
+        "id": "M06_02",
+        "title": "Vai šobrīd jums ir nodoms izdarīt pašnāvību?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you currently intend to die by suicide?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Есть ли у Вас прямо сейчас намерение совершить самоубийство?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 7,
+      "lv": {
+        "id": "M06_02P",
+        "title": "Vai šobrīd jums ir konkrēts plāns, kā izdarīt pašnāvību?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you currently have a specific plan for how you would die by suicide?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Есть ли у Вас сейчас конкретный план совершения самоубийства?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 8,
+      "lv": {
+        "id": "M06_23",
+        "title": "Vai pašlaik izjūtat vēlmi kaitēt sev neatkarīgi no tā, vai vēlaties nomirt?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pašlaik.",
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you have an urge to harm yourself right now, whether or not you want to die?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Есть ли у Вас прямо сейчас желание причинить себе вред независимо от желания умереть?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 9,
+      "lv": {
+        "id": "M06_03",
+        "title": "Vai pašlaik spējat parūpēties par savu drošību?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Are you currently able to keep yourself safe?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Можете ли Вы сейчас обеспечить собственную безопасность?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 10,
+      "lv": {
+        "id": "M06_10",
+        "title": "Vai šobrīd ir nodoms nodarīt fizisku kaitējumu citam cilvēkam?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you currently intend to physically harm another person?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Есть ли у Вас сейчас намерение причинить физический вред другому человеку?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 12,
+      "lv": {
+        "id": "M06_11",
+        "title": "Vai mājās šobrīd jūtaties fiziski droši?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you currently feel physically safe at home?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Чувствуете ли Вы сейчас себя дома в физической безопасности?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 15,
+      "lv": {
+        "id": "M06_13",
+        "title": "Vai jums vajadzīga tūlītēja palīdzība, lai saglabātu drošību?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you need immediate help to stay safe?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Нужна ли Вам немедленная помощь, чтобы оставаться в безопасности?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 105,
+      "lv": {
+        "id": "M06_04",
+        "title": "Vai pēdējās divās nedēļās esat vēlējies/-usies, kaut būtu miris/-usi?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pēdējās 14 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Over the past two weeks, have you wished you were dead?",
+        "time": "The past 14 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Бывало ли за последние две недели, что Вам хотелось умереть?",
+        "time": "Последние 14 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 106,
+      "lv": {
+        "id": "M06_05",
+        "title": "Vai pēdējās divās nedēļās esat domājis/-usi par apzinātu sevis savainošanu?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pēdējās 14 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Over the past two weeks, have you thought about deliberately injuring yourself?",
+        "time": "The past 14 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Думали ли Вы за последние две недели о том, чтобы намеренно себя травмировать?",
+        "time": "Последние 14 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 107,
+      "lv": {
+        "id": "M06_06",
+        "title": "Vai esat kādreiz apzināti savainojis/-usi vai saindējis/-usi sevi, piemēram, griežot, apdedzinot vai sitot sevi, neatkarīgi no tā, vai vēlējāties nomirt?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you ever intentionally injured or poisoned yourself, for example by cutting, burning or hitting yourself, whether or not you wanted to die?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Вы когда-нибудь намеренно травмировали или отравляли себя, например наносили себе порезы, ожоги или удары, независимо от того, хотели ли Вы умереть?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 108,
+      "lv": {
+        "id": "M06_07",
+        "title": "Kad jūs pēdējo reizi apzināti nodarījāt sev kaitējumu neatkarīgi no tā, vai vēlējāties nomirt?",
+        "profile": "P18",
+        "multi": false,
+        "time": "Laiks kopš pēdējās apzināta paškaitējuma epizodes.",
+        "context": {
+          "id": "M06_06",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Pēdējo 24 stundu laikā",
+          "B": "Pirms vairāk nekā 24 stundām, bet ne vairāk kā 1 mēneša",
+          "C": "Pirms vairāk nekā 1 mēneša, bet ne vairāk kā 1 gada",
+          "D": "Pirms vairāk nekā 1 gada, bet ne vairāk kā 5 gadiem",
+          "E": "Pirms vairāk nekā 5 gadiem",
+          "F": "Tas nav noticis",
+          "G": "Neatceros / nezinu",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "When did you last intentionally harm yourself, whether or not you wanted to die?",
+        "time": "Time since the most recent intentional self-harm.",
+        "choices": {
+          "A": "Within the past 24 hours",
+          "B": "More than 24 hours ago, but no more than 1 month ago",
+          "C": "More than 1 month but not more than 1 year ago",
+          "D": "More than 1 year ago, but no more than 5 years ago",
+          "E": "More than 5 years ago",
+          "F": "This has not happened",
+          "G": "I don't remember / I don't know",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда Вы в последний раз намеренно причиняли себе вред независимо от того, хотели ли Вы умереть?",
+        "time": "Время с последнего эпизода намеренного причинения себе вреда.",
+        "choices": {
+          "A": "В течение последних 24 часов",
+          "B": "Более 24 часов назад, но не более 1 месяца назад",
+          "C": "Более 1 месяца назад, но не более 1 года назад",
+          "D": "Более года назад, но не более 5 лет назад",
+          "E": "Более 5 лет назад",
+          "F": "Такого не было",
+          "G": "Я не помню / Я не знаю",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 109,
+      "lv": {
+        "id": "M06_08",
+        "title": "Vai dzīves laikā esat mēģinājis/-usi izdarīt pašnāvību?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you ever attempted suicide?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Были ли у Вас когда-либо попытки самоубийства?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 110,
+      "lv": {
+        "id": "M06_09",
+        "title": "Kad notika pēdējais mēģinājums izdarīt pašnāvību?",
+        "profile": "P18",
+        "multi": false,
+        "time": "Laiks kopš pēdējā pašnāvības mēģinājuma.",
+        "context": {
+          "id": "M06_08",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Pēdējo 24 stundu laikā",
+          "B": "Pirms vairāk nekā 24 stundām, bet ne vairāk kā 1 mēneša",
+          "C": "Pirms vairāk nekā 1 mēneša, bet ne vairāk kā 1 gada",
+          "D": "Pirms vairāk nekā 1 gada, bet ne vairāk kā 5 gadiem",
+          "E": "Pirms vairāk nekā 5 gadiem",
+          "F": "Tas nav noticis",
+          "G": "Neatceros / nezinu",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "When was your most recent suicide attempt?",
+        "time": "Time since the most recent suicide attempt.",
+        "choices": {
+          "A": "Within the past 24 hours",
+          "B": "More than 24 hours ago, but no more than 1 month ago",
+          "C": "More than 1 month but not more than 1 year ago",
+          "D": "More than 1 year ago, but no more than 5 years ago",
+          "E": "More than 5 years ago",
+          "F": "This has not happened",
+          "G": "I don't remember / I don't know",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда была Ваша последняя попытка самоубийства?",
+        "time": "Время с последней попытки самоубийства.",
+        "choices": {
+          "A": "В течение последних 24 часов",
+          "B": "Более 24 часов назад, но не более 1 месяца назад",
+          "C": "Более 1 месяца назад, но не более 1 года назад",
+          "D": "Более года назад, но не более 5 лет назад",
+          "E": "Более 5 лет назад",
+          "F": "Такого не было",
+          "G": "Я не помню / Я не знаю",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 111,
+      "lv": {
+        "id": "M06_12",
+        "title": "Vai jums ir kāds uzticams cilvēks, kam varat pateikt, ja kļūst ļoti slikti?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Is there someone you trust whom you can tell if you feel very unwell?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Есть ли у Вас человек, которому Вы доверяете и можете рассказать, если Вам станет очень плохо?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 112,
+      "lv": {
+        "id": "M06_14",
+        "title": "Vai pēdējo 14 dienu laikā ir bijušas nevēlamas, biedējošas domas par kaitējumu citiem, kuras nevēlaties īstenot?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pēdējās 14 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Over the past 14 days, have you had unwanted, frightening thoughts about harming others that you do not want to act on?",
+        "time": "The past 14 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Были ли у Вас за последние 14 дней нежелательные, пугающие мысли о том, чтобы навредить другим, хотя Вы не хотите этого делать?",
+        "time": "Последние 14 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 113,
+      "lv": {
+        "id": "M06_15",
+        "title": "Vai šīs epizodes laikā jūs vēlējāties nomirt?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējā apzināta paškaitējuma epizode.",
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Pretrunīgas vai mainīgas izjūtas",
+          "D": "Tobrīd nevarēju saprast",
+          "E": "Neatceros",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": {
+          "id": "M06_06",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "During that episode, did you want to die?",
+        "time": "The most recent episode of intentional self-harm.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "Mixed or changing feelings",
+          "D": "I could not tell at the time",
+          "E": "I cannot remember",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Хотели ли Вы умереть во время этого эпизода?",
+        "time": "Последний эпизод намеренного причинения себе вреда.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Смешанные или меняющиеся чувства",
+          "D": "Тогда не мог(ла) понять",
+          "E": "Не помню",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 114,
+      "lv": {
+        "id": "M06_16",
+        "title": "Ko jūs šīs epizodes laikā cerējāt panākt ar paškaitējumu? Izvēlieties visu atbilstošo.",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": true,
+        "time": "Pēdējā apzināta paškaitējuma epizode.",
+        "choices": {
+          "A": "Mazināt emocionālās ciešanas / spriedzi",
+          "B": "Pārtraukt emocionālu nejutīgumu / kaut ko sajust",
+          "C": "Sodīt sevi",
+          "D": "Paust ciešanas vai vajadzību pēc palīdzības",
+          "E": "Atgūt kontroles izjūtu",
+          "F": "Nomirt",
+          "G": "Cits iemesls",
+          "H": "Skaidra iemesla nebija / nezinu",
+          "I": "Nevēlos atbildēt"
+        },
+        "exclusive": "HI",
+        "incompatible": [],
+        "context": {
+          "id": "M06_06",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "uncertain",
+          "I": "refused"
+        }
+      },
+      "en": {
+        "title": "What did you hope to achieve by harming yourself during that episode? Select all that apply.",
+        "time": "The most recent episode of intentional self-harm.",
+        "choices": {
+          "A": "Relieve emotional distress / tension",
+          "B": "Stop emotional numbness / feel something",
+          "C": "Punish myself",
+          "D": "Express distress or a need for help",
+          "E": "Regain a sense of control",
+          "F": "Die",
+          "G": "Other reason",
+          "H": "There was no clear reason / I don't know",
+          "I": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Чего Вы надеялись достичь, причиняя себе вред в тот раз? Выберите всё подходящее.",
+        "time": "Последний эпизод намеренного причинения себе вреда.",
+        "choices": {
+          "A": "Уменьшить душевную боль / напряжение",
+          "B": "Избавиться от ощущения, что ничего не чувствую / хоть что-то почувствовать",
+          "C": "Наказать себя",
+          "D": "Выразить страдание или потребность в помощи",
+          "E": "Вернуть чувство контроля",
+          "F": "Умереть",
+          "G": "Другая причина",
+          "H": "Ясной причины не было / не знаю",
+          "I": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 115,
+      "lv": {
+        "id": "M06_17",
+        "title": "Kā tūlīt pēc tam mainījās jūsu emocionālās ciešanas?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējā apzināta paškaitējuma epizode.",
+        "choices": {
+          "A": "Ciešanas mazinājās",
+          "B": "Nemainījās",
+          "C": "Ciešanas pieauga",
+          "D": "Pretrunīgas izjūtas / mainīgi",
+          "E": "Neatceros / nezinu",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": {
+          "id": "M06_06",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "How did your emotional distress change immediately afterwards?",
+        "time": "The most recent episode of intentional self-harm.",
+        "choices": {
+          "A": "Less distress",
+          "B": "No change",
+          "C": "More distress",
+          "D": "Mixed feelings / varied",
+          "E": "I don't remember / I don't know",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как изменилось Ваше эмоциональное состояние сразу после этого?",
+        "time": "Последний эпизод намеренного причинения себе вреда.",
+        "choices": {
+          "A": "Эмоциональная боль уменьшилась",
+          "B": "Без изменений",
+          "C": "Эмоциональная боль усилилась",
+          "D": "Противоречивые чувства / по-разному",
+          "E": "Я не помню / Я не знаю",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 116,
+      "lv": {
+        "id": "M06_18",
+        "title": "Ja pēc tam jutāt atvieglojumu, cik ilgi tas saglabājās?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējā apzināta paškaitējuma epizode.",
+        "choices": {
+          "A": "Atvieglojuma nebija",
+          "B": "Mazāk par 1 stundu",
+          "C": "No 1 stundas līdz nepilnai dienai",
+          "D": "1 dienu vai ilgāk",
+          "E": "Mainīgi / nezinu",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": {
+          "id": "M06_06",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "If you felt relief afterwards, how long did it last?",
+        "time": "The most recent episode of intentional self-harm.",
+        "choices": {
+          "A": "No relief",
+          "B": "Less than 1 hour",
+          "C": "1 hour to less than 1 day",
+          "D": "1 day or longer",
+          "E": "Variable / don't know",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Если после этого Вы почувствовали облегчение, как долго оно длилось?",
+        "time": "Последний эпизод намеренного причинения себе вреда.",
+        "choices": {
+          "A": "Облегчения не было",
+          "B": "Менее 1 часа",
+          "C": "1 час или дольше, но меньше суток",
+          "D": "Сутки или дольше",
+          "E": "По-разному / не знаю",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 117,
+      "lv": {
+        "id": "M06_19",
+        "title": "Cik atsevišķu apzināta paškaitējuma epizožu jums bijis dzīves laikā?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "choices": {
+          "A": "Nekad",
+          "B": "Vienu reizi",
+          "C": "2–5 reizes",
+          "D": "6–10 reizes",
+          "E": "Vairāk nekā 10 reizes",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": {
+          "id": "M06_06",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How many separate episodes of intentional self-harm have you had in your lifetime?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "None",
+          "B": "Once",
+          "C": "2–5 times",
+          "D": "6–10 times",
+          "E": "More than 10 times",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сколько отдельных эпизодов намеренного причинения себе вреда было за всю жизнь?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Ни одного эпизода",
+          "B": "Один раз",
+          "C": "2–5 раз",
+          "D": "6–10 раз",
+          "E": "Более 10 раз",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 118,
+      "lv": {
+        "id": "M06_20",
+        "title": "Cik atsevišķu apzināta paškaitējuma epizožu jums bijis pēdējās 28 dienās?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējās 28 dienās.",
+        "choices": {
+          "A": "Nekad",
+          "B": "Vienu reizi",
+          "C": "2–5 reizes",
+          "D": "6–10 reizes",
+          "E": "Vairāk nekā 10 reizes",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": {
+          "id": "M06_06",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How many separate episodes of intentional self-harm have you had in the past 28 days?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "None",
+          "B": "Once",
+          "C": "2–5 times",
+          "D": "6–10 times",
+          "E": "More than 10 times",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сколько отдельных эпизодов намеренного причинения себе вреда было за последние 28 дней?",
+        "time": "За последние 28 дней.",
+        "choices": {
+          "A": "Ни одного эпизода",
+          "B": "Один раз",
+          "C": "2–5 раз",
+          "D": "6–10 раз",
+          "E": "Более 10 раз",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 119,
+      "lv": {
+        "id": "M06_21",
+        "title": "Vai apzināta paškaitējuma dēļ kādreiz radās savainojums vai saindēšanās, kam bija nepieciešama medicīniska pārbaude vai ārstēšana, neatkarīgi no tā, vai to saņēmāt?",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "context": {
+          "id": "M06_06",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Has any intentional self-harm caused an injury or poisoning that needed medical assessment or treatment, whether or not you received it?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Приводило ли когда-нибудь намеренное причинение себе вреда к травме или отравлению, требовавшим медицинского обследования или лечения, независимо от того, получили ли Вы помощь?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Я не знаю",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 120,
+      "lv": {
+        "id": "M06_22",
+        "title": "Kādu medicīnisko palīdzību saņēmāt pēc paškaitējuma? Izvēlieties visu atbilstošo.",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": true,
+        "time": "Jebkurā dzīves laikā.",
+        "choices": {
+          "A": "Medicīnisko palīdzību nesaņēmu",
+          "B": "Ambulatoru pārbaudi / ārstēšanu",
+          "C": "Palīdzību neatliekamās palīdzības nodaļā / no brigādes",
+          "D": "Ārstēšanu stacionārā",
+          "E": "Citu medicīnisko palīdzību",
+          "F": "Neatceros / nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "AFG",
+        "incompatible": [],
+        "context": {
+          "id": "M06_06",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "What medical care did you receive after self-harm? Select all that apply.",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No medical care",
+          "B": "Outpatient assessment / treatment",
+          "C": "Emergency department / ambulance care",
+          "D": "Inpatient treatment",
+          "E": "Other medical care",
+          "F": "I don't remember / I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Какую медицинскую помощь Вы получали после причинения себе вреда? Выберите всё подходящее.",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Медицинской помощи не получал(а)",
+          "B": "Амбулаторное обследование / лечение",
+          "C": "Помощь в приёмном отделении / скорую помощь",
+          "D": "Лечение в стационаре",
+          "E": "Другую медицинскую помощь",
+          "F": "Я не помню / Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 121,
+      "lv": {
+        "id": "M06_24",
+        "title": "Kas varētu palīdzēt saglabāt drošību, ja pieaugtu vēlme kaitēt sev? Izvēlieties visu atbilstošo.",
+        "profile": "CUSTOM-CONTEXT-1",
+        "multi": true,
+        "time": "Pašlaik.",
+        "choices": {
+          "A": "Sazināšanās ar uzticamu cilvēku",
+          "B": "Sazināšanās ar veselības aprūpes speciālistu",
+          "C": "Saskaņota drošības plāna izmantošana",
+          "D": "Atrašanās kopā ar citu cilvēku",
+          "E": "Kaitējošu priekšmetu pieejamības mazināšana ar atbalstu",
+          "F": "Cits atbalsts / pārvarēšanas paņēmieni",
+          "G": "Nezinu, kas palīdzētu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "GH",
+        "incompatible": [],
+        "context": null,
+        "section": 6,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "What could help you stay safe if urges to harm yourself increase? Select all that apply.",
+        "time": "Currently.",
+        "choices": {
+          "A": "Contacting someone I trust",
+          "B": "Contacting a healthcare professional",
+          "C": "Using an agreed safety plan",
+          "D": "Being with another person",
+          "E": "Getting support to make harmful items harder to access",
+          "F": "Other support / coping steps",
+          "G": "I do not know what would help",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Что могло бы помочь Вам оставаться в безопасности, если желание причинить себе вред усилится? Выберите всё подходящее.",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Связаться с человеком, которому доверяю",
+          "B": "Связаться с медицинским специалистом",
+          "C": "Использовать согласованный план безопасности",
+          "D": "Побыть с другим человеком",
+          "E": "С помощью другого человека ограничить доступ к опасным предметам",
+          "F": "Другая поддержка / способы справиться",
+          "G": "Не знаю, что помогло бы",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

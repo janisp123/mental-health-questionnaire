@@ -1,0 +1,370 @@
+{
+  "schema": "module-index-v1",
+  "source_version": "LV-v16",
+  "section_count": 48,
+  "question_count": 712,
+  "module_files": [
+    {
+      "section": 1,
+      "name": "182_MODULE_01_LV_EN_RU_v16.json",
+      "question_count": 23,
+      "sha256": "c2cbc413d8d51c53bb8556290131e8967c53a571786cd6e6ee3e0c1efcbaa7d9",
+      "first_id": "M01_01"
+    },
+    {
+      "section": 2,
+      "name": "182_MODULE_02_LV_EN_RU_v16.json",
+      "question_count": 21,
+      "sha256": "cc8b66c5b2713270082e70dc4021bd98b542011405c72fc2345cff2753413920",
+      "first_id": "M02_01"
+    },
+    {
+      "section": 3,
+      "name": "182_MODULE_03_LV_EN_RU_v16.json",
+      "question_count": 12,
+      "sha256": "4e78dcf81a7570b49c835f8104ca9077b53d705edc5f9d6229817c25ccaffb3a",
+      "first_id": "M03_01"
+    },
+    {
+      "section": 4,
+      "name": "182_MODULE_04_LV_EN_RU_v16.json",
+      "question_count": 12,
+      "sha256": "98f3709b635ea7c581e8d6edc71c8fc30db784ebb7e1c2d70688f01ccd532dbe",
+      "first_id": "M04_01"
+    },
+    {
+      "section": 5,
+      "name": "182_MODULE_05_LV_EN_RU_v16.json",
+      "question_count": 17,
+      "sha256": "903b2cb6adeedaf19fd1d7077dc62f43f9066ec0d121147b1faeb641c032b697",
+      "first_id": "M05_01"
+    },
+    {
+      "section": 6,
+      "name": "182_MODULE_06_LV_EN_RU_v16.json",
+      "question_count": 25,
+      "sha256": "fd460350e2b41118f9349818c1c6142ec49156505fa8688d4717aad581215b26",
+      "first_id": "M06_01"
+    },
+    {
+      "section": 7,
+      "name": "182_MODULE_07_LV_EN_RU_v16.json",
+      "question_count": 13,
+      "sha256": "eee3c343c5d5d1048bec37d4ae2e6bedba908d6cc52bf29b1f04fad8e5d72872",
+      "first_id": "M07_01"
+    },
+    {
+      "section": 8,
+      "name": "182_MODULE_08_LV_EN_RU_v16.json",
+      "question_count": 12,
+      "sha256": "14c5496b486bef772cd5d71b0f4e3b93c47876f828352dacb5bdc92170eb8766",
+      "first_id": "M08_01"
+    },
+    {
+      "section": 9,
+      "name": "182_MODULE_09_LV_EN_RU_v16.json",
+      "question_count": 17,
+      "sha256": "109f428545c8df87f268ccafaf0b080b75b808c52f0e9e3acd15bdd6e344a332",
+      "first_id": "M09_01"
+    },
+    {
+      "section": 10,
+      "name": "182_MODULE_10_LV_EN_RU_v16.json",
+      "question_count": 28,
+      "sha256": "2c3123e81ca6bb46f19650460258f5450e7f3f0832a43178ee7603ab7b7cf9c1",
+      "first_id": "M10_01"
+    },
+    {
+      "section": 11,
+      "name": "182_MODULE_11_LV_EN_RU_v16.json",
+      "question_count": 17,
+      "sha256": "a35abacc469c3f56139b8d653235c09bade58c622a9d6240bae173923097e9ca",
+      "first_id": "M11_01"
+    },
+    {
+      "section": 12,
+      "name": "182_MODULE_12_LV_EN_RU_v16.json",
+      "question_count": 15,
+      "sha256": "e5b496f23e654630270d817cf89ca98cfe5b9bce948015f813834924689c28d0",
+      "first_id": "M12_01"
+    },
+    {
+      "section": 13,
+      "name": "182_MODULE_13_LV_EN_RU_v16.json",
+      "question_count": 18,
+      "sha256": "2a3db54cab6509e0996ca1d0dae33fd8de0e52ba41af39cb9128d72811ea98b0",
+      "first_id": "M13_01"
+    },
+    {
+      "section": 14,
+      "name": "182_MODULE_14_LV_EN_RU_v16.json",
+      "question_count": 12,
+      "sha256": "eb7ae921c28e900015f157f87cfc0151d2effc4c5d03594ed36faf95673e58d8",
+      "first_id": "M14_01"
+    },
+    {
+      "section": 15,
+      "name": "182_MODULE_15_LV_EN_RU_v16.json",
+      "question_count": 37,
+      "sha256": "3ade387f58dea0aa5776178a510b8263c0f594d2c181deae7eda4f081b105f6a",
+      "first_id": "M15_01"
+    },
+    {
+      "section": 16,
+      "name": "182_MODULE_16_LV_EN_RU_v16.json",
+      "question_count": 14,
+      "sha256": "47bc975ff586adc95dcb774a1178cd88b5832911cb586d98d082a0e0f626cc99",
+      "first_id": "M16_01"
+    },
+    {
+      "section": 17,
+      "name": "182_MODULE_17_LV_EN_RU_v16.json",
+      "question_count": 12,
+      "sha256": "a3231dbf66dbc73061a35d0e865d3a43a1d1e477d9608730cbcd122b39ce6be6",
+      "first_id": "M17_01"
+    },
+    {
+      "section": 18,
+      "name": "182_MODULE_18_LV_EN_RU_v16.json",
+      "question_count": 36,
+      "sha256": "ede988132154410ed22bdf1bead2f85190564b892d6f080f114268a61441ec9c",
+      "first_id": "M18_20"
+    },
+    {
+      "section": 19,
+      "name": "182_MODULE_19_LV_EN_RU_v16.json",
+      "question_count": 19,
+      "sha256": "3ed886ae11e374533a1d0895be0a3e92020d77b3b811acc9da41d537db17b90b",
+      "first_id": "M19_01"
+    },
+    {
+      "section": 20,
+      "name": "182_MODULE_20_LV_EN_RU_v16.json",
+      "question_count": 16,
+      "sha256": "78b755bd3f2fe1e1d9c2ea1a2f7aac85e1d0fefe4012bac984da975cfdcfccff",
+      "first_id": "M20_01"
+    },
+    {
+      "section": 21,
+      "name": "182_MODULE_21_LV_EN_RU_v16.json",
+      "question_count": 19,
+      "sha256": "5eac92d825d7f8a091f50dc9c626e8cf5ded4ab8a13456541c6459aa05e2acd6",
+      "first_id": "M21_01"
+    },
+    {
+      "section": 22,
+      "name": "182_MODULE_22_LV_EN_RU_v16.json",
+      "question_count": 16,
+      "sha256": "bab6eb989ad34ded5225f473a475723535de3f07449df1b07989dfc5f55bbe71",
+      "first_id": "M22_01"
+    },
+    {
+      "section": 23,
+      "name": "182_MODULE_23_LV_EN_RU_v16.json",
+      "question_count": 21,
+      "sha256": "a6f873e8e18d50b1ebb546039d1dc12428b706f4bd84a00126059c5b561d93d4",
+      "first_id": "M23_11"
+    },
+    {
+      "section": 24,
+      "name": "182_MODULE_24_LV_EN_RU_v16.json",
+      "question_count": 17,
+      "sha256": "b4d729a29aa691b8eac6c4eaa297ac2210e860f1c1f1b65fe48d282bede586e3",
+      "first_id": "M24_01"
+    },
+    {
+      "section": 25,
+      "name": "182_MODULE_25_LV_EN_RU_v16.json",
+      "question_count": 12,
+      "sha256": "bac4df5817a77e7dfca581e5fb93daf053576c774bace8b444e74e021afa9a63",
+      "first_id": "M25_01"
+    },
+    {
+      "section": 26,
+      "name": "182_MODULE_26_LV_EN_RU_v16.json",
+      "question_count": 10,
+      "sha256": "4e0c15adbcfc5a351f030c16cf885cfeab5be4b69b3c9271e7259d3a45630d58",
+      "first_id": "M26_01"
+    },
+    {
+      "section": 27,
+      "name": "182_MODULE_27_LV_EN_RU_v16.json",
+      "question_count": 19,
+      "sha256": "55de7df022c3d2dc21caca1043ee45375cc767c5d064b7c6b02032b98c2da6e0",
+      "first_id": "M27_01"
+    },
+    {
+      "section": 28,
+      "name": "182_MODULE_28_LV_EN_RU_v16.json",
+      "question_count": 12,
+      "sha256": "c10290dcd9baa7fc43aaeaccf0003892e396c6c9099dd8dd6378978d0558f897",
+      "first_id": "M28_01"
+    },
+    {
+      "section": 29,
+      "name": "182_MODULE_29_LV_EN_RU_v16.json",
+      "question_count": 12,
+      "sha256": "566979a069f805fddb32584035794223866bd386f22227baab8ebd8cb83965a3",
+      "first_id": "M29_01"
+    },
+    {
+      "section": 30,
+      "name": "182_MODULE_30_LV_EN_RU_v16.json",
+      "question_count": 26,
+      "sha256": "6bdcbbd4dc62b55c133c9bf02f790daed2938b1d3cc9c10a22971f74005adb29",
+      "first_id": "M30_01"
+    },
+    {
+      "section": 31,
+      "name": "182_MODULE_31_LV_EN_RU_v16.json",
+      "question_count": 20,
+      "sha256": "7806fa2d033806f2faee86d97096fc80ec1d9b6ed907d132450c5355b314a6ba",
+      "first_id": "M31_09"
+    },
+    {
+      "section": 32,
+      "name": "182_MODULE_32_LV_EN_RU_v16.json",
+      "question_count": 50,
+      "sha256": "6dd03afead03b52eddf4c852c09859d3d5be1a9e79b60217949664378e2583f1",
+      "first_id": "M32_01"
+    },
+    {
+      "section": 33,
+      "name": "182_MODULE_33_LV_EN_RU_v16.json",
+      "question_count": 10,
+      "sha256": "298c8eab09a736ee673424fef6c125ea9e81160239fe76df756884e6896da80e",
+      "first_id": "M33_01"
+    },
+    {
+      "section": 34,
+      "name": "182_MODULE_34_LV_EN_RU_v16.json",
+      "question_count": 12,
+      "sha256": "a3d806b6710171c9ee07ff9076498e27ef9d157b54478907b8f1de3bbf7f3e88",
+      "first_id": "M34_01"
+    },
+    {
+      "section": 35,
+      "name": "182_MODULE_35_LV_EN_RU_v16.json",
+      "question_count": 6,
+      "sha256": "1b85c043bbd303130c4975f48d735d79c6b4bff9b67e77a0ef230e7624423029",
+      "first_id": "M35_01"
+    },
+    {
+      "section": 36,
+      "name": "182_MODULE_36_LV_EN_RU_v16.json",
+      "question_count": 6,
+      "sha256": "76c93019b1468a9d95e60c5c5749b07b6cf66bff760906771b78cd862dfe3260",
+      "first_id": "M36_01"
+    },
+    {
+      "section": 37,
+      "name": "182_MODULE_37_LV_EN_RU_v16.json",
+      "question_count": 5,
+      "sha256": "507e7ee516f137f901971990f9f6ba225c6b06c2d69f01509f1787bbf1685452",
+      "first_id": "M37_01"
+    },
+    {
+      "section": 38,
+      "name": "182_MODULE_38_LV_EN_RU_v16.json",
+      "question_count": 6,
+      "sha256": "4457ca99a42e9a224447c155379fd3a42296135c278963295a0f70e6727a931e",
+      "first_id": "M38_01"
+    },
+    {
+      "section": 39,
+      "name": "182_MODULE_39_LV_EN_RU_v16.json",
+      "question_count": 7,
+      "sha256": "2500ebe9b1bc33468ec59970b63e5f04e28612a8705e5488255791a7f77707d6",
+      "first_id": "M39_01"
+    },
+    {
+      "section": 40,
+      "name": "182_MODULE_40_LV_EN_RU_v16.json",
+      "question_count": 6,
+      "sha256": "4a297b6f409ffe99ca319a99811b02afeee48983c16eed73ff7d22517228c064",
+      "first_id": "M40_01"
+    },
+    {
+      "section": 41,
+      "name": "182_MODULE_41_LV_EN_RU_v16.json",
+      "question_count": 6,
+      "sha256": "0eff2035bff7ae084f8db853e1dc5232d68dba22b002db5c22bab74f3c5209c6",
+      "first_id": "M41_01"
+    },
+    {
+      "section": 42,
+      "name": "182_MODULE_42_LV_EN_RU_v16.json",
+      "question_count": 8,
+      "sha256": "5bc6092128b1769e4ee763a9d07c8302d082e052cf6964b417d8402ccfb3a6bc",
+      "first_id": "M42_01"
+    },
+    {
+      "section": 43,
+      "name": "182_MODULE_43_LV_EN_RU_v16.json",
+      "question_count": 5,
+      "sha256": "32ac797b8b901b167cf405560d4e32cb412bf2628da21f706fa0218d4e977843",
+      "first_id": "M43_01"
+    },
+    {
+      "section": 44,
+      "name": "182_MODULE_44_LV_EN_RU_v16.json",
+      "question_count": 5,
+      "sha256": "e3d358efaee07135a650cbc50cd48c4ecffd2bff3819fc76fba1e2edd7af8b56",
+      "first_id": "M44_01"
+    },
+    {
+      "section": 45,
+      "name": "182_MODULE_45_LV_EN_RU_v16.json",
+      "question_count": 5,
+      "sha256": "012f08ddb6d9315d824b398d65d4460ea0d10acfca80b83d59d5cc43964de9cd",
+      "first_id": "M45_01"
+    },
+    {
+      "section": 46,
+      "name": "182_MODULE_46_LV_EN_RU_v16.json",
+      "question_count": 6,
+      "sha256": "8ae34001d1b57a16b3fabfe2be44269524aaa8e6f584b466bcc46fe02b97d7a3",
+      "first_id": "M46_01"
+    },
+    {
+      "section": 47,
+      "name": "182_MODULE_47_LV_EN_RU_v16.json",
+      "question_count": 6,
+      "sha256": "7496ee15a3368d1275b5e9abe95a118893398343fbe6e1d719f7e7c70be233a2",
+      "first_id": "M47_01"
+    },
+    {
+      "section": 48,
+      "name": "182_MODULE_48_LV_EN_RU_v16.json",
+      "question_count": 3,
+      "sha256": "873c38a5bb453136032fb545e9cf569c2fae5e2798a2355627387f37ef1befd3",
+      "first_id": "M48_01"
+    }
+  ],
+  "html_files": {
+    "lv": {
+      "name": "162_Sagatavosanas_vizitei_LV_v16.html",
+      "sha256": "1edd2e3248789b8bf41671f4910ad087624f8703ae01461a45122c96a6d8791b"
+    },
+    "en": {
+      "name": "172_Questionnaire_EN_v16_DRAFT_NOT_RELEASED.html",
+      "sha256": "26395d34dea657fb7a15fa5498c7b28b2ed6e0b828ec111aee5a498772554eea"
+    },
+    "ru": {
+      "name": "172_Questionnaire_RU_v16_DRAFT_NOT_RELEASED.html",
+      "sha256": "b8fb5a37c11f598a92ae86c5c959b750b975e65b24ecc60ae417fd6bff4b2c7d"
+    }
+  },
+  "catalog_files": {
+    "en": {
+      "name": "170_QUESTION_BANK_EN_v16_DRAFT.json",
+      "sha256": "65ede702b6075c466bdc519cb851af9a16ccda44a8cd8fa1669aa7f9c2528f68"
+    },
+    "ru": {
+      "name": "170_QUESTION_BANK_RU_v16_DRAFT.json",
+      "sha256": "647912dc70bab5ff66f39fd0850b6d7de436c47fbd5085f4612795cbebcfa640"
+    }
+  },
+  "roundtrip_question_data_verified": true,
+  "notes": "Question data only; the surrounding interface/report/export JavaScript remains in each current HTML. No professional translation validation. These files are a read-only staging baseline until a revised build passes full testing."
+}

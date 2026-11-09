@@ -1,0 +1,6 @@
+{
+  "schema": "questionnaire-build-v1",
+  "version": "legacy-three-language-test",
+  "baseline": "LV-v16",
+  "translationPacks": {}
+}

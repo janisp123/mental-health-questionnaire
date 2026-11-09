@@ -1,0 +1,48 @@
+# Project working rules for AI development
+
+These rules apply to future development work in this repository, particularly long or multi-file tasks.
+
+## Resume before starting
+
+- Read `docs/WORK_CHECKPOINT.md` first when present. It records the last verified section, exact next action, local-versus-remote synchronization state and outstanding blockers. Then consult the referenced section audit/test evidence and `docs/CHANGELOG.md`.
+- A local checkpoint does not imply that changes reached GitHub or Drive. State the actual synchronization status, and never restart completed sections solely because the chat history is missing.
+
+## Progress updates — visible to the user
+
+- While actively working, send a brief user-visible progress message **approximately once per minute**, even if there is no major milestone. When practical, send updates more frequently (about every 20 seconds) during lengthy tool operations.
+- Use a clear, short update such as **"Still working — finished 2/5 sections; checking translations next."**
+- Show actual progress and the next step. If nothing changed, say **"Still working — no new checkpoint yet; currently checking X."**
+- Report blockers immediately. Do not hide errors, imply that work was finished, or repeat a meaningless success message.
+- At every durable completed batch, record the exact Git commit or file checkpoint in `docs/CHANGELOG.md` before starting the next batch. Mark completed stages only after readback and verification.
+- If the conversation or tool execution ends, **do not claim that monitoring or development continues in the background**. A chat assistant cannot guarantee a timed heartbeat, predict usage limits, or send messages once it is no longer actively running.
+- At the end of a work period, clearly state **DONE / PARTIAL / BLOCKED**, what changed, what remains, and the exact next action.
+- If a task is interrupted, the GitHub changelog should make it possible to continue without rereading unrelated files.
+
+## Development safety and source of truth
+
+- `main` is the sole active four-language source. Start short-lived feature/fix branches from current main; use checked PRs to integrate. Older develop/candidate branches are historical. Read `docs/FEATURE_DEVELOPMENT.md` for stable module/data contracts.
+- Before significant edits, inspect the relevant parts of `docs/FILE_INDEX.md`, `project-manifest.json`, and the active entry at the end of `docs/CHANGELOG.md`. Do not load or print those whole files by default.
+- Work on one module and language at a time wherever possible. Preserve original IDs, answer codes, validation logic and backup compatibility.
+- Do not silently modify the public Google Drive Latvian release, the frozen v16 reference baselines, or the original Drive archive.
+- Never publish questionnaire responses or identifiable patient information to this public repository.
+- EN, RU and UK translations remain drafts until human review and release-gate requirements are satisfied.
+- Do not claim an untested feature, translation or release passed verification.
+- When user-facing questionnaire text or behavior changes, prepend a dated entry to the in-app notesHistory list in all active locales (currently LV/EN/RU/UK) together and retain the latest ten entries. Use Riga local time and verify the visible text and all active catalogs before committing.
+- Before editing user-facing wording or translations, read `docs/LANGUAGE_STYLE_GUIDE.md` and apply its LV/RU/EN/UK address and tone conventions. Preserve frozen source question content unless explicitly asked to edit the question bank.
+
+## Review package and document output
+
+- Choose document formats for the intended reader and delivery channel; do not assume a file called `README` should be Markdown.
+- A professional-review package contains the self-contained questionnaire HTML and a concise, readable PDF guide. Keep editable Markdown source in the repository or private project documentation; do not put it in the reviewer folder unless requested.
+- Before sharing a PDF, render it and inspect the page visually at normal reading size. Check that text is legible, page breaks are clean, and the instructions match the current build and button labels.
+- Keep the reviewer folder limited to the current files intended for reviewers. After replacing a deliverable, verify the folder contents and update its current-state/archive index so filenames and formats agree.
+- The user tests the current questionnaire from the Google Drive review folder. After every verified implementation batch intended for user testing, rebuild the HTML and matching PDF from the verified main-based source commit, deliberately replace the Drive files in place for a reviewer distribution update, and verify both uploaded files by readback before handing off. Do not defer Drive refresh until a major release.
+- Clearly label technical review status and limitations. Never imply clinical validation, human translation review, or device testing that has not happened.
+
+## Keep each work session focused
+
+- Read the active changelog checkpoint with `tail` or a narrow line range. Search older history with `rg` only when the current task depends on it. Preserve the existing task ID and exact next action in handoffs.
+- Query only the relevant `current_versions` fields from `project-manifest.json`; avoid printing the full imported-file hash inventory. Run `tools/verify_project_index.py` when source/index integrity is affected or specifically required.
+- Start with focused tests. Run `python tools/run_checks.py` for shared runtime, locale or source-data changes. Build with `python tools/build_review_package.py --output-dir dist/review-<version>` and verify with `python tools/verify_review_package.py <folder> --with-zip`; the package refuses existing output directories. Explicit `--load-mode memory` is a documented managed-browser fallback, never proof of file/device testing.
+- For CI, inspect run status and failed step summaries first. Fetch logs for the failing step when available; fetch complete job logs only if the failure cannot be diagnosed from that step.
+- Avoid repeating successful checks after documentation-only edits. Record the exact commit, verification performed, any unverified areas, and one next action in the changelog.

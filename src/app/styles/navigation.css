@@ -1,0 +1,9 @@
+/* Stable navigation: answer-tap lock never disables Skip. */
+main{padding-bottom:calc(120px + env(safe-area-inset-bottom,0px))}
+header{border:0;margin:0;padding:0}.lang{justify-content:flex-end}
+.question-nav{position:fixed;bottom:0;left:0;right:0;z-index:10;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);gap:8px;padding:10px max(10px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line)}
+.question-nav button{min-width:0;font-size:15px;padding:10px 4px;overflow-wrap:anywhere}
+.question-nav [data-act=skip]{background:var(--accent);color:#10251c}
+.support-card{border:1px solid var(--accent);border-radius:12px;padding:16px;margin:16px 0;background:#203b36;color:#eef8f4}
+a{color:var(--accent);text-underline-offset:3px}a:focus-visible{outline:3px solid var(--accent)}
+.support-card a,footer a{display:inline-block;min-height:44px;padding:8px 0}

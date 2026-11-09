@@ -1,0 +1,2823 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 18,
+  "count": 36,
+  "entries": [
+    {
+      "order": 11,
+      "lv": {
+        "id": "M18_20",
+        "title": "Vai pašlaik gatavojaties fiziski kaitēt citam cilvēkam? Detaļas anketā nav jānorāda.",
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-HARM-CONTEXT-1",
+        "multi": false,
+        "time": "Pašlaik.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Are you currently preparing to physically harm another person? You do not need to give details in the questionnaire.",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Готовитесь ли Вы сейчас причинить физический вред другому человеку? Подробности подготовки в анкете не нужны.",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 317,
+      "lv": {
+        "id": "M18_01",
+        "title": "Cik bieži kļūstat aizkaitināms/-a nelielu neērtību dēļ?",
+        "profile": "P17",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nevienā dienā",
+          "B": "1–3 dienās",
+          "C": "4–10 dienās",
+          "D": "11–20 dienās",
+          "E": "21–28 dienās",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "On how many days did minor inconveniences make you irritable?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "On no days",
+          "B": "On 1–3 days",
+          "C": "On 4–10 days",
+          "D": "On 11–20 days",
+          "E": "On 21–28 days",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "В течение скольких дней небольшие неудобства вызывали у Вас раздражение?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Ни в один из дней",
+          "B": "В течение 1–3 дней",
+          "C": "В течение 4–10 дней",
+          "D": "В течение 11–20 дней",
+          "E": "В течение 21–28 дней",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 318,
+      "lv": {
+        "id": "M18_02",
+        "title": "Cik bieži paceļat balsi vai kliedzat strīdos?",
+        "profile": "P17",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nevienā dienā",
+          "B": "1–3 dienās",
+          "C": "4–10 dienās",
+          "D": "11–20 dienās",
+          "E": "21–28 dienās",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "On how many days did you raise your voice or shout during arguments?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "On no days",
+          "B": "On 1–3 days",
+          "C": "On 4–10 days",
+          "D": "On 11–20 days",
+          "E": "On 21–28 days",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "В течение скольких дней Вы повышали голос или кричали во время ссор?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Ни в один из дней",
+          "B": "В течение 1–3 дней",
+          "C": "В течение 4–10 дней",
+          "D": "В течение 11–20 дней",
+          "E": "В течение 21–28 дней",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 319,
+      "lv": {
+        "id": "M18_03",
+        "title": "Cik bieži atkārtoti pārmetat vai kritizējat tuviniekus?",
+        "profile": "P17",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nevienā dienā",
+          "B": "1–3 dienās",
+          "C": "4–10 dienās",
+          "D": "11–20 dienās",
+          "E": "21–28 dienās",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "On how many days did you repeatedly reproach or criticise people close to you?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "On no days",
+          "B": "On 1–3 days",
+          "C": "On 4–10 days",
+          "D": "On 11–20 days",
+          "E": "On 21–28 days",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "В течение скольких дней Вы неоднократно упрекали или критиковали близких?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Ни в один из дней",
+          "B": "В течение 1–3 дней",
+          "C": "В течение 4–10 дней",
+          "D": "В течение 11–20 дней",
+          "E": "В течение 21–28 дней",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 320,
+      "lv": {
+        "id": "M18_04",
+        "title": "Vai pēc dusmu epizodēm pēdējo 28 dienu laikā nožēlojāt sacīto vai izdarīto?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Over the past 28 days, did you regret what you said or did after episodes of anger?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "За последние 28 дней жалели ли Вы после вспышек гнева о сказанном или сделанном?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 321,
+      "lv": {
+        "id": "M18_05",
+        "title": "Vai dusmu laikā ir grūti apstāties un nomierināties?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "When you were angry, was it hard to stop and calm down?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Было ли Вам трудно остановиться и успокоиться, когда Вы злились?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 322,
+      "lv": {
+        "id": "M18_06",
+        "title": "Vai dzīves laikā dusmās sitāt vai metāt priekšmetus?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you ever hit or thrown objects in anger?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Били или бросали ли Вы когда-либо предметы в гневе?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 323,
+      "lv": {
+        "id": "M18_07",
+        "title": "Vai esat kādreiz apzināti fiziski kaitējis/-usi citam cilvēkam — dusmās, konfliktā vai citos apstākļos? Neskaitiet negadījumus, saskaņotu sporta aktivitāti vai medicīnisku aprūpi.",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you ever intentionally caused physical harm to another person, whether in anger, during a conflict or in other circumstances? Do not count accidents, sports with mutual consent, or medical care.",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Вы когда-нибудь намеренно физически вредили другому человеку — в гневе, конфликте или при других обстоятельствах? Не учитывайте несчастные случаи, спорт по взаимному согласию или медицинскую помощь.",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 324,
+      "lv": {
+        "id": "M18_08",
+        "title": "Vai pēdējo 28 dienu laikā baidījāties, ka dusmās varētu fiziski kaitēt bērnam vai citai aprūpējamai personai?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Over the past 28 days, were you afraid you might physically harm a child or another person in your care when angry?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Боялись ли Вы за последние 28 дней, что в гневе можете физически навредить ребёнку или другому человеку, о котором заботитесь?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 325,
+      "lv": {
+        "id": "M18_09",
+        "title": "Vai konflikti pēc tam ilgstoši ietekmē garastāvokli?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Did conflicts continue to affect your mood long afterwards?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Продолжали ли конфликты влиять на Ваше настроение ещё долго после того, как закончились?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 326,
+      "lv": {
+        "id": "M18_10",
+        "title": "Kas pēdējo 28 dienu laikā, jūsuprāt, pastiprināja dusmas? Var izvēlēties vairākas atbildes.",
+        "profile": "P51",
+        "multi": true,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Alkohols vai citas apreibinošas vielas",
+          "B": "Miega trūkums",
+          "C": "Pārslodze",
+          "D": "Citi apstākļi",
+          "E": "Neviens no minētajiem",
+          "F": "Grūti pateikt",
+          "G": "Nevēlos atbildēt."
+        },
+        "exclusive": "EFG",
+        "incompatible": [],
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "What do you think intensified your anger over the past 28 days? Select all that apply.",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Alcohol or other intoxicating substances",
+          "B": "Lack of sleep",
+          "C": "Overload",
+          "D": "Other circumstances",
+          "E": "None of the above",
+          "F": "Difficult to say",
+          "G": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Что, по Вашему мнению, усиливало гнев за последние 28 дней? Можно выбрать несколько ответов.",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Алкоголь или другие опьяняющие вещества",
+          "B": "Нехватка сна",
+          "C": "Перегрузка",
+          "D": "Другие обстоятельства",
+          "E": "Ничего из перечисленного",
+          "F": "Трудно сказать",
+          "G": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 327,
+      "lv": {
+        "id": "M18_11",
+        "title": "Vai impulsīvas rīcības dēļ ir bijušas problēmas darbā vai attiecībās?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Has impulsive behaviour caused problems at work or in relationships?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Возникали ли из-за импульсивных поступков проблемы на работе или в отношениях?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 328,
+      "lv": {
+        "id": "M18_12",
+        "title": "Cik ļoti dusmu un impulsivitātes grūtības traucē dzīvei?",
+        "profile": "P07",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much did difficulties with anger and impulsivity interfere with your life?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько трудности с гневом и импульсивностью мешали Вашей жизни?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 329,
+      "lv": {
+        "id": "M18_13",
+        "title": "Vai esat apzināti nodarījis/-usi dzīvniekam, arī mājdzīvniekam vai savvaļas dzīvniekam, sāpes vai savainojumu? Neskaitiet negadījumus, nepieciešamu veterināro aprūpi, humānu dzīvnieku aprūpi vai tūlītēju aizsardzību pret uzbrukumu.",
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-HARM-CONTEXT-1",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā. Šī sadaļa apkopo pieredzi sarunai ar ārstu; tā nenosaka, vai cilvēks ir bīstams, un neparedz vardarbību. Pagātnes rīcība, emocionāls nejutīgums, ziņu interese vai nevēlamas domas nav pašreizēja nodoma pierādījums. Ņemiet vērā laiku, kontekstu, atkārtošanos un pašreizējās vajadzības. Ja baidāties, ka varat tūlīt kaitēt kādam vai dzīvniekam, pārtrauciet anketu, attālinieties no iespējamā cietušā un meklējiet tūlītēju palīdzību; ārkārtas situācijā zvaniet 112.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you deliberately caused an animal, including a pet or wild animal, pain or injury? Do not count accidents, necessary veterinary care, humane animal care or immediate protection against an attack.",
+        "time": "At any time in your life. This section gathers history for a clinician; it does not determine whether someone is dangerous or predict violence. Past acts, emotional numbness, interest in news or unwanted thoughts are not proof of current intent. Consider timing, context, repetition and current needs. If you fear you may imminently harm someone or an animal, stop the questionnaire, move away from the potential victim and seek immediate help; call 112 or your local emergency number in an emergency.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Вы намеренно причиняли животному, в том числе домашнему или дикому, боль или травму? Не учитывайте несчастные случаи, необходимую ветеринарную помощь, гуманное обращение при уходе за животными или непосредственную защиту от нападения.",
+        "time": "За всю жизнь. Этот раздел собирает сведения для врача; он не определяет, опасен ли человек, и не предсказывает насилие. Прошлые поступки, эмоциональное онемение, интерес к новостям или нежелательные мысли не доказывают нынешнего намерения. Учитывайте время, контекст, повторение и текущие потребности. Если боитесь, что можете немедленно навредить человеку или животному, прекратите анкету, отойдите от потенциального пострадавшего и срочно обратитесь за помощью; в экстренной ситуации звоните 112 или по местному экстренному номеру.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 330,
+      "lv": {
+        "id": "M18_14",
+        "title": "Kad pēdējo reizi notika šāda apzināta kaitēšana dzīvniekam?",
+        "choices": {
+          "A": "Pēdējās 24 stundās",
+          "B": "Pirms vairāk nekā 24 stundām, bet ne vairāk kā 1 mēneša",
+          "C": "Pirms vairāk nekā 1 mēneša, bet ne vairāk kā 1 gada",
+          "D": "Pirms vairāk nekā 1 gada, bet ne vairāk kā 5 gadiem",
+          "E": "Pirms vairāk nekā 5 gadiem",
+          "F": "Tas nav noticis",
+          "G": "Neatceros / nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-HARM-CONTEXT-1",
+        "multi": false,
+        "time": "Laiks kopš pēdējās norādītās epizodes.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": {
+          "id": "M18_13",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "When did this kind of deliberate harm to an animal most recently happen?",
+        "time": "Time since the most recent episode described.",
+        "choices": {
+          "A": "Within the past 24 hours",
+          "B": "More than 24 hours ago, but no more than 1 month ago",
+          "C": "More than 1 month but not more than 1 year ago",
+          "D": "More than 1 year ago, but no more than 5 years ago",
+          "E": "More than 5 years ago",
+          "F": "This has not happened",
+          "G": "I don't remember / I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда в последний раз происходило такое намеренное причинение вреда животному?",
+        "time": "Время с последнего указанного эпизода.",
+        "choices": {
+          "A": "За последние 24 часа",
+          "B": "Более 24 часов назад, но не более 1 месяца назад",
+          "C": "Более 1 месяца назад, но не более 1 года назад",
+          "D": "Более года назад, но не более 5 лет назад",
+          "E": "Более 5 лет назад",
+          "F": "Такого не было",
+          "G": "Я не помню / Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 331,
+      "lv": {
+        "id": "M18_15",
+        "title": "Cik gadu jums bija, kad pirmo reizi šādi kaitējāt dzīvniekam?",
+        "choices": {
+          "A": "Mazāk par 12 gadiem",
+          "B": "12–17 gadi",
+          "C": "18 gadi vai vairāk",
+          "D": "Tas nav noticis",
+          "E": "Neatceros / nezinu",
+          "F": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-HARM-CONTEXT-1",
+        "multi": false,
+        "time": "Vecums pirmās norādītās epizodes laikā.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": {
+          "id": "M18_13",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "How old were you when you first harmed an animal in this way?",
+        "time": "Age at the first episode described.",
+        "choices": {
+          "A": "Under 12",
+          "B": "12–17",
+          "C": "18 or older",
+          "D": "This has not happened",
+          "E": "I don't remember / I don't know",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сколько Вам было лет, когда Вы впервые причинили животному такой вред?",
+        "time": "Возраст при первом указанном эпизоде.",
+        "choices": {
+          "A": "Младше 12 лет",
+          "B": "12–17 лет",
+          "C": "18 лет или старше",
+          "D": "Такого не было",
+          "E": "Я не помню / Я не знаю",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 332,
+      "lv": {
+        "id": "M18_16",
+        "title": "Kā jūs saprotat savus iemeslus vai apstākļus šīs epizodes laikā? Izvēlieties visu atbilstošo.",
+        "choices": {
+          "A": "Dusmas / neapmierinātība",
+          "B": "Vēlme sodīt vai kontrolēt",
+          "C": "Citu cilvēku spiediens vai atdarināšana",
+          "D": "Ziņkārība vai seku neizpratne tajā laikā",
+          "E": "Vēlme izbaudīt ciešanas vai kaitējumu",
+          "F": "Cits iemesls / apstākļi",
+          "G": "Neatceros / nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-HARM-CONTEXT-1",
+        "multi": true,
+        "time": "Pēdējā norādītā kaitējuma dzīvniekam epizode. Varat izlaist; grafiskas detaļas nav jānorāda.",
+        "exclusive": "GH",
+        "incompatible": [],
+        "context": {
+          "id": "M18_13",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "Looking back at that episode, what reasons or circumstances help explain what happened? Select all that apply.",
+        "time": "The most recent animal-harm episode described. You may skip; no graphic details are requested.",
+        "choices": {
+          "A": "Anger / frustration",
+          "B": "Wanting to punish or control",
+          "C": "Pressure from others or copying others",
+          "D": "Curiosity or not understanding the consequences at the time",
+          "E": "Wanting to enjoy suffering or harm",
+          "F": "Other reason / circumstances",
+          "G": "I don't remember / I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Если вспомнить тот случай, какие причины или обстоятельства помогают объяснить произошедшее? Выберите всё подходящее.",
+        "time": "Последний указанный эпизод причинения вреда животному. Можно пропустить; подробности травм не нужны.",
+        "choices": {
+          "A": "Злость / раздражение",
+          "B": "Желание наказать или контролировать",
+          "C": "Давление других людей или подражание им",
+          "D": "Любопытство или непонимание последствий в то время",
+          "E": "Желание получить удовольствие от страдания или вреда",
+          "F": "Другая причина / обстоятельства",
+          "G": "Я не помню / Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 333,
+      "lv": {
+        "id": "M18_17",
+        "title": "Vai pašlaik izjūtat vēlmi savainot vai mocīt dzīvnieku?",
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-HARM-CONTEXT-1",
+        "multi": false,
+        "time": "Pašlaik.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you currently feel an urge to injure or torment an animal?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Есть ли у Вас сейчас желание травмировать или мучить животное?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 334,
+      "lv": {
+        "id": "M18_18",
+        "title": "Kā jūs ietekmējušas ziņas par vardarbīgiem uzbrukumiem, piemēram, apšaudēm skolās? Izvēlieties visu atbilstošo.",
+        "choices": {
+          "A": "Šādas ziņas neesmu redzējis/-usi / nav manāmas ietekmes",
+          "B": "Skumjas vai līdzjūtība cietušajiem",
+          "C": "Bailes / satraukums",
+          "D": "Dusmas par notikušo",
+          "E": "Emocionāls nejutīgums vai izvairīšanās no ziņām",
+          "F": "Nevēlamas, biedējošas domas par kaitējumu, ko nevēlos īstenot",
+          "G": "Apbrīna par uzbrucēju vai vēlme viņam līdzināties",
+          "H": "Vēlme pašam/-ai izdarīt līdzīgu kaitējumu",
+          "I": "Cita reakcija",
+          "J": "Nezinu",
+          "K": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-HARM-CONTEXT-1",
+        "multi": true,
+        "time": "Pēdējās 28 dienās. Atbildes netiek izmantotas cilvēku klasificēšanai. Nevēlamas domas atšķiras no vēlmes tās īstenot.",
+        "exclusive": "AJK",
+        "incompatible": [],
+        "context": null,
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "answered",
+          "J": "uncertain",
+          "K": "refused"
+        }
+      },
+      "en": {
+        "title": "How have reports of violent attacks, such as school shootings, affected you? Select all that apply.",
+        "time": "The past 28 days. Answers are not used to classify people. Unwanted thoughts differ from wanting to act on them.",
+        "choices": {
+          "A": "I have not seen such reports / no noticeable effect",
+          "B": "Sadness or compassion for victims",
+          "C": "Fear / anxiety",
+          "D": "Anger about what happened",
+          "E": "Emotional numbness or avoiding the news",
+          "F": "Unwanted, frightening thoughts of harm that I do not want to act on",
+          "G": "Admiration for an attacker or wanting to be like them",
+          "H": "Wanting to carry out similar harm myself",
+          "I": "Another reaction",
+          "J": "I don't know",
+          "K": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как на Вас повлияли сообщения о насильственных нападениях, например о стрельбе в школах? Выберите всё подходящее.",
+        "time": "За последние 28 дней. Ответы не используются для классификации людей. Нежелательные мысли отличаются от желания их осуществить.",
+        "choices": {
+          "A": "Не видел(а) таких сообщений / заметного влияния нет",
+          "B": "Печаль или сочувствие пострадавшим",
+          "C": "Страх / тревога",
+          "D": "Злость из-за случившегося",
+          "E": "Эмоциональное онемение или избегание новостей",
+          "F": "Нежелательные, пугающие мысли о причинении вреда, которые я не хочу воплощать в действия",
+          "G": "Восхищение нападавшим или желание быть похожим на него",
+          "H": "Желание самому/самой причинить подобный вред",
+          "I": "Другая реакция",
+          "J": "Я не знаю",
+          "K": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "legacy_exact",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 335,
+      "lv": {
+        "id": "M18_19",
+        "title": "Vai esat izteicis/-usi vai nosūtījis/-usi draudus fiziski kaitēt citam cilvēkam? Neskaitiet skaidri abpusēji saprotamu izdomātu spēli vai lomu tēlojumu.",
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-HARM-CONTEXT-1",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": null,
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you made or sent threats to physically harm another person? Do not count make-believe or role-play that both sides clearly understood as such.",
+        "time": "Last 12 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Высказывали или отправляли ли Вы угрозы физически навредить другому человеку? Не учитывайте вымышленную игру или ролевую ситуацию, которую обе стороны ясно понимали как таковую.",
+        "time": "Последние 12 месяцев.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 336,
+      "lv": {
+        "id": "M18_21",
+        "title": "Kas palīdz jums neīstenot vēlmi kaitēt cilvēkam vai dzīvniekam? Izvēlieties visu atbilstošo.",
+        "choices": {
+          "A": "Šādu vēlmju nav",
+          "B": "Aiziešana no konflikta / distances ievērošana",
+          "C": "Sazināšanās ar uzticamu cilvēku",
+          "D": "Profesionālas palīdzības meklēšana",
+          "E": "Pašnomierināšanās paņēmieni vai saskaņots drošības plāns",
+          "F": "Bīstamu priekšmetu pieejamības mazināšana ar atbalstu",
+          "G": "Citi paņēmieni",
+          "H": "Nezinu, kas palīdzētu",
+          "I": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-HARM-CONTEXT-1",
+        "multi": true,
+        "time": "Pašlaik.",
+        "exclusive": "AHI",
+        "incompatible": [],
+        "context": null,
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "uncertain",
+          "I": "refused"
+        }
+      },
+      "en": {
+        "title": "What helps you avoid acting on an urge to harm a person or animal? Select all that apply.",
+        "time": "Currently.",
+        "choices": {
+          "A": "I do not have such urges",
+          "B": "Leaving a conflict / keeping distance",
+          "C": "Contacting someone I trust",
+          "D": "Seeking professional help",
+          "E": "Calming strategies or an agreed safety plan",
+          "F": "Reducing access to dangerous items with support",
+          "G": "Other steps",
+          "H": "I do not know what would help",
+          "I": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Что помогает Вам не действовать под влиянием желания навредить человеку или животному? Выберите всё подходящее.",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Таких желаний нет",
+          "B": "Выйти из конфликта / держаться на расстоянии",
+          "C": "Связаться с человеком, которому доверяю",
+          "D": "Обратиться за профессиональной помощью",
+          "E": "Способы успокоиться или согласованный план безопасности",
+          "F": "С помощью другого человека ограничить доступ к опасным предметам",
+          "G": "Другие способы",
+          "H": "Не знаю, что помогло бы",
+          "I": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact",
+          "choices.I": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 337,
+      "lv": {
+        "id": "M18_22",
+        "title": "Kādi apstākļi bija pēdējā epizodē, kad apzināti fiziski kaitējāt citam cilvēkam? Izvēlieties visu atbilstošo.",
+        "choices": {
+          "A": "Tūlītēja sevis vai cita aizsardzība pret uzbrukumu",
+          "B": "Dusmas vai konflikts",
+          "C": "Vēlme sodīt, iebiedēt vai kontrolēt",
+          "D": "Citu cilvēku spiediens",
+          "E": "Citi apstākļi",
+          "F": "Neatceros / nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-HARM-CONTEXT-1",
+        "multi": true,
+        "time": "Pēdējā norādītā apzināta fiziska kaitējuma citam cilvēkam epizode.",
+        "exclusive": "FG",
+        "incompatible": [],
+        "context": {
+          "id": "M18_07",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "What were the circumstances the last time you intentionally caused physical harm to another person? Select all that apply.",
+        "time": "The most recent episode of intentional physical harm to another person described.",
+        "choices": {
+          "A": "Immediate defence of myself or someone else against an attack",
+          "B": "Anger or conflict",
+          "C": "Wanting to punish, intimidate or control",
+          "D": "Pressure from others",
+          "E": "Other circumstances",
+          "F": "I don't remember / I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "При каких обстоятельствах Вы в последний раз намеренно причинили физический вред другому человеку? Выберите всё подходящее.",
+        "time": "Последний указанный случай намеренного причинения физического вреда другому человеку.",
+        "choices": {
+          "A": "Непосредственная защита себя или другого от нападения",
+          "B": "Гнев или конфликт",
+          "C": "Желание наказать, запугать или контролировать",
+          "D": "Давление других",
+          "E": "Другие обстоятельства",
+          "F": "Я не помню / Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 338,
+      "lv": {
+        "id": "M18_23",
+        "title": "Cik atsevišķu šāda apzināta kaitējuma dzīvniekam epizožu jums bijis dzīves laikā?",
+        "choices": {
+          "A": "Nevienas",
+          "B": "Viena",
+          "C": "2–5",
+          "D": "Vairāk par 5",
+          "E": "Neatceros / nezinu",
+          "F": "Nevēlos atbildēt"
+        },
+        "profile": "CUSTOM-HARM-CONTEXT-1",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "exclusive": "",
+        "incompatible": [],
+        "context": {
+          "id": "M18_13",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "How many separate episodes of this kind of deliberate harm to an animal have occurred in your lifetime?",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "None",
+          "B": "One",
+          "C": "2–5",
+          "D": "More than 5",
+          "E": "I don't remember / I don't know",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сколько отдельных эпизодов такого намеренного причинения вреда животному было за всю жизнь?",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Ни одного",
+          "B": "Один",
+          "C": "2–5",
+          "D": "Более 5",
+          "E": "Я не помню / Я не знаю",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "manual_draft",
+          "choices.D": "legacy_exact",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "manual_draft",
+          "choices.D": "legacy_exact",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 339,
+      "lv": {
+        "id": "M18_24",
+        "title": "Cik bieži bija pēkšņi dusmu uzliesmojumi ar kliegšanu, priekšmetu bojāšanu vai agresiju?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nebija",
+          "B": "Retāk nekā reizi mēnesī",
+          "C": "1–3 reizes mēnesī",
+          "D": "Aptuveni reizi nedēļā",
+          "E": "Vairākas reizes nedēļā",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "How often did you have sudden outbursts of anger involving shouting, damaging objects or aggression?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "No such outbursts",
+          "B": "Less than once a month",
+          "C": "1–3 times a month",
+          "D": "About once a week",
+          "E": "Several times a week",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто случались внезапные вспышки гнева с криками, порчей предметов или агрессией?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Таких вспышек не было",
+          "B": "Реже одного раза в месяц",
+          "C": "1–3 раза в месяц",
+          "D": "Примерно раз в неделю",
+          "E": "Несколько раз в неделю",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 340,
+      "lv": {
+        "id": "M18_25",
+        "title": "Kā parasti sākās šie uzliesmojumi?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Pēkšņi, bez iepriekšēja plāna",
+          "B": "Galvenokārt iepriekš pārdomāti, lai kaut ko panāktu",
+          "C": "Dažādi",
+          "D": "Šādu uzliesmojumu nebija",
+          "E": "Nezinu",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "How did these outbursts usually start?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "Suddenly, without a prior plan",
+          "B": "Usually planned in advance to achieve something",
+          "C": "It varied",
+          "D": "There were no such outbursts",
+          "E": "I don't know",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как обычно начинались эти вспышки?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Внезапно, без предварительного плана",
+          "B": "Как правило, вспышки были заранее продуманы, чтобы чего-то добиться",
+          "C": "По-разному",
+          "D": "Таких вспышек не было",
+          "E": "Я не знаю",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 341,
+      "lv": {
+        "id": "M18_26",
+        "title": "Vai reakcija, jūsuprāt, bija daudz spēcīgāka, nekā atbilda notikušajam?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Did you feel that your reaction was much stronger than the situation warranted?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Была ли Ваша реакция, по Вашему мнению, гораздо сильнее, чем того требовала ситуация?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 342,
+      "lv": {
+        "id": "M18_27",
+        "title": "Vai esat jutis/-usi vēlmi fiziski kaitēt citam cilvēkam, arī tad, ja neplānojāt to darīt?",
+        "profile": "CUSTOM14",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "help": "Atšķiriet vēlmi no nevēlamas, biedējošas domas, kuru nevēlaties īstenot. Par pašreizējo nodomu tiek jautāts atsevišķi.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Did you feel an urge to physically harm another person, even if you had no plans to act on it?",
+        "time": "The past 28 days.",
+        "help": "Distinguish the urge from an unwanted, frightening thought that you do not want to act on. A separate question asks about current intent.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Возникало ли у Вас желание причинить физический вред другому человеку, даже если Вы не планировали этого делать?",
+        "time": "Последние 28 дней.",
+        "help": "Отличайте желание от нежелательной, пугающей мысли, которую Вы не хотите воплощать в действия. О текущем намерении спрашивается отдельно.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 343,
+      "lv": {
+        "id": "M18_28",
+        "title": "Vai konkrētā doma fiziski kaitēt cilvēkam jums tajā brīdī šķita pieņemama vai attaisnojama?",
+        "profile": "CUSTOM14",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M18_27",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "help": "Runa ir par jūsu paša/-as pieredzēto vēlmi, nevis vispārīgiem uzskatiem par pašaizsardzību. Atbilde pati par sevi nenozīmē nodomu rīkoties.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Did that specific thought of physically harming someone seem acceptable or justifiable to you at the time?",
+        "time": "The past 28 days.",
+        "help": "Answer about the urge you experienced. General views on self-defence are outside the scope of this question. The answer alone does not indicate intent to act.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Показалась ли Вам в тот момент сама мысль о причинении физического вреда человеку приемлемой или оправданной?",
+        "time": "Последние 28 дней.",
+        "help": "Речь о желании, которое Вы сами испытали. Общие взгляды на самооборону здесь не учитываются. Сам по себе ответ не говорит о намерении действовать.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 344,
+      "lv": {
+        "id": "M18_29",
+        "title": "Vai esat uztraucies/-usies, ka varētu zaudēt kontroli un fiziski kaitēt kādam?",
+        "profile": "CUSTOM14",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "help": "Bailes zaudēt kontroli nav tas pats, kas nodoms kaitēt. Atbildi speciālists precizēs kopā ar pārējo pieredzi.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Were you worried that you might lose control and physically harm someone?",
+        "time": "The past 28 days.",
+        "help": "Fear of losing control differs from intent to harm. A professional will discuss your answer in the context of your other experiences.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Беспокоились ли Вы, что можете потерять контроль и причинить кому-либо физический вред?",
+        "time": "Последние 28 дней.",
+        "help": "Страх потерять контроль отличается от намерения причинить вред. Специалист уточнит Ваш ответ с учётом других описанных Вами переживаний.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 345,
+      "lv": {
+        "id": "M18_30",
+        "title": "Vai esat sitis/-usi, grūdis/-usi vai sāpīgi satvēris/-usi partneri, bērnu vai citu ģimenes locekli?",
+        "profile": "CUSTOM14",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Vienu reizi",
+          "C": "2–5 reizes",
+          "D": "6 vai vairāk reizes",
+          "E": "Nezinu / grūti pateikt",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "help": "Neskaitiet negadījumus vai saskaņotu sporta aktivitāti. Vēlāk sarunā varat izskaidrot apstākļus; šeit nav jānorāda personas vārds.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you hit or pushed a partner, child or other family member, or grabbed them hard enough to hurt?",
+        "time": "Last 12 months.",
+        "help": "Do not count accidents or sports with mutual consent. You can explain the circumstances in a later conversation. You do not need to name the person here.",
+        "choices": {
+          "A": "No",
+          "B": "Once",
+          "C": "2–5 times",
+          "D": "6 or more times",
+          "E": "I do not know / difficult to say",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Случалось ли Вам ударить или толкнуть партнёра, ребёнка или другого члена семьи либо схватить кого-то из них так, что стало больно?",
+        "time": "Последние 12 месяцев.",
+        "help": "Не учитывайте несчастные случаи или занятия спортом по взаимному согласию. Обстоятельства можно объяснить позже в разговоре. Имя человека здесь указывать не нужно.",
+        "choices": {
+          "A": "Нет",
+          "B": "Один раз",
+          "C": "2–5 раз",
+          "D": "6 или более раз",
+          "E": "Не знаю / трудно сказать",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 346,
+      "lv": {
+        "id": "M18_31",
+        "title": "Pret kuru cilvēku bija vērsta šī fiziskā rīcība?",
+        "profile": "CUSTOM14",
+        "multi": true,
+        "time": "Pēdējie 12 mēneši.",
+        "context": {
+          "id": "M18_30",
+          "hideValues": [
+            "A",
+            "F"
+          ]
+        },
+        "choices": {
+          "A": "Bērnu",
+          "B": "Pieaugušo, kurš atkarīgs no citu aprūpes",
+          "C": "Partneri vai bijušo partneri",
+          "D": "Citu ģimenes locekli",
+          "E": "Nezinu / grūti pateikt",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "EF",
+        "incompatible": [],
+        "section": 18,
+        "help": "",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "Who was this physical action directed at?",
+        "time": "Last 12 months.",
+        "help": "",
+        "choices": {
+          "A": "A child",
+          "B": "An adult who depends on others for care",
+          "C": "A partner or former partner",
+          "D": "Another family member",
+          "E": "I do not know / difficult to say",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "На кого было направлено это физическое действие?",
+        "time": "Последние 12 месяцев.",
+        "help": "",
+        "choices": {
+          "A": "На ребёнка",
+          "B": "На взрослого, который нуждается в уходе других людей",
+          "C": "На партнёра или бывшего партнёра",
+          "D": "На другого члена семьи",
+          "E": "Не знаю / трудно сказать",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 347,
+      "lv": {
+        "id": "M18_32",
+        "title": "Kad pēdējo reizi notika šī fiziskā rīcība?",
+        "profile": "CUSTOM14",
+        "multi": false,
+        "time": "Laiks kopš rīcības.",
+        "context": {
+          "id": "M18_30",
+          "hideValues": [
+            "A",
+            "F"
+          ]
+        },
+        "choices": {
+          "A": "Pēdējo 24 stundu laikā",
+          "B": "Pirms 2–7 dienām",
+          "C": "Pirms 8–28 dienām",
+          "D": "Agrāk pēdējo 12 mēnešu laikā",
+          "E": "Nezinu / grūti pateikt",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "help": "",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "When did this last happen?",
+        "time": "Time since the most recent occurrence.",
+        "help": "",
+        "choices": {
+          "A": "Within the past 24 hours",
+          "B": "2–7 days ago",
+          "C": "8–28 days ago",
+          "D": "Earlier in the last 12 months",
+          "E": "I do not know / difficult to say",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда это произошло в последний раз?",
+        "time": "Время с последнего случая.",
+        "help": "",
+        "choices": {
+          "A": "В течение последних 24 часов",
+          "B": "2–7 дней назад",
+          "C": "8–28 дней назад",
+          "D": "Ранее за последние 12 месяцев",
+          "E": "Не знаю / трудно сказать",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 348,
+      "lv": {
+        "id": "M18_33",
+        "title": "Vai pēc šīs rīcības kādam pašlaik vajadzīga medicīniska palīdzība?",
+        "profile": "CUSTOM14",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M18_30",
+          "hideValues": [
+            "A",
+            "F"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "help": "",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Does anyone currently need medical attention after this action?",
+        "time": "Currently.",
+        "help": "",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Нужна ли кому-либо медицинская помощь сейчас после этого действия?",
+        "time": "В настоящее время.",
+        "help": "",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 349,
+      "lv": {
+        "id": "M18_34",
+        "title": "Vai esat pazemojis/-usi, iebiedējis/-usi vai kontrolējis/-usi ģimenes locekli ar kādu no šīm darbībām?",
+        "profile": "CUSTOM14",
+        "multi": true,
+        "time": "Pēdējie 12 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Atkārtoti izsmēju, noniecināju vai apsaukāju",
+          "B": "Liedzu vai ierobežoju pieeju naudai, saziņai vai atbalstam, lai kontrolētu",
+          "C": "Draudēju pamest aprūpējamu cilvēku bez palīdzības",
+          "D": "Bojāju priekšmetus, lai cilvēku iebiedētu",
+          "E": "Nekas no minētā",
+          "F": "Nezinu / grūti pateikt",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "EFG",
+        "incompatible": [],
+        "section": 18,
+        "help": "Atbildiet par konkrētu rīcību. Šī atbilde viena pati nav secinājums par cilvēku; svarīgi arī apstākļi, atkārtošanās un ietekme.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you humiliated, intimidated, or controlled a family member with any of these actions?",
+        "time": "Last 12 months.",
+        "help": "Answer about specific actions. This answer alone does not tell us what kind of person someone is. The circumstances, how often it happened, and its impact also matter.",
+        "choices": {
+          "A": "I repeatedly mocked, belittled or called the person names",
+          "B": "I denied or limited access to money, communication or support to control the person",
+          "C": "I threatened to leave someone in my care without help",
+          "D": "I damaged objects to intimidate the person",
+          "E": "None of the above",
+          "F": "I do not know / difficult to say",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Унижали, запугивали или контролировали ли Вы члена семьи каким-либо из перечисленных способов?",
+        "time": "Последние 12 месяцев.",
+        "help": "Отвечайте о конкретных действиях. Один ответ не позволяет сделать вывод о человеке. Важны также обстоятельства, повторяемость и последствия.",
+        "choices": {
+          "A": "Неоднократные насмешки, унижения или обзывания",
+          "B": "Лишение или ограничение доступа к деньгам, общению или поддержке с целью контроля",
+          "C": "Угрозы оставить человека, нуждающегося в уходе, без помощи",
+          "D": "Порча предметов с целью запугать человека",
+          "E": "Ничего из перечисленного",
+          "F": "Не знаю / трудно сказать",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 350,
+      "lv": {
+        "id": "M18_35",
+        "title": "Pret kuru cilvēku bija vērsta iepriekš aprakstītā pazemošana, iebiedēšana vai kontrole?",
+        "profile": "CUSTOM14",
+        "multi": true,
+        "time": "Pēdējie 12 mēneši.",
+        "context": {
+          "id": "M18_34",
+          "showValues": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "hideValues": []
+        },
+        "choices": {
+          "A": "Bērnu",
+          "B": "Pieaugušo, kurš atkarīgs no citu aprūpes",
+          "C": "Partneri vai bijušo partneri",
+          "D": "Citu ģimenes locekli",
+          "E": "Nezinu / grūti pateikt",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "EF",
+        "incompatible": [],
+        "section": 18,
+        "help": "",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "Who experienced the humiliation, intimidation or control described above?",
+        "time": "Last 12 months.",
+        "help": "",
+        "choices": {
+          "A": "A child",
+          "B": "An adult who depends on others for care",
+          "C": "A partner or former partner",
+          "D": "Another family member",
+          "E": "I do not know / difficult to say",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "На кого именно были направлены описанные выше унижения, запугивание или контроль?",
+        "time": "Последние 12 месяцев.",
+        "help": "",
+        "choices": {
+          "A": "На ребёнка",
+          "B": "На взрослого, который нуждается в уходе других людей",
+          "C": "На партнёра или бывшего партнёра",
+          "D": "На другого члена семьи",
+          "E": "Не знаю / трудно сказать",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 351,
+      "lv": {
+        "id": "M18_36",
+        "title": "Vai jūsu izteiktie vai nosūtītie draudi bija vērsti pret partneri, bērnu vai citu ģimenes locekli?",
+        "profile": "CUSTOM14",
+        "multi": false,
+        "time": "Pēdējie 12 mēneši.",
+        "context": {
+          "id": "M18_19",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 18,
+        "help": "",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Were the threats you made or sent directed at a partner, child, or other family member?",
+        "time": "Last 12 months.",
+        "help": "",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Были ли угрозы, которые Вы высказали или отправили, направлены против партнёра, ребёнка или другого члена семьи?",
+        "time": "Последние 12 месяцев.",
+        "help": "",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

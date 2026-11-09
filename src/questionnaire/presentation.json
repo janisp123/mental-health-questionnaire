@@ -1,0 +1,293 @@
+{
+  "schema": "questionnaire-presentation-v1",
+  "purpose": "Explicit answer-code allowlist for bold clinician-report text. No score or severity calculation. Review mappings against the frozen source.",
+  "feedbackContactEmail": "janis.paegle.email@gmail.com",
+  "questions": {
+    "M02_01": {},
+    "M02_02": {},
+    "M02_03": {},
+    "M02_04": {},
+    "M02_05": {},
+    "M02_06": {
+      "labels": {
+        "lv": "Mazvērtības, neveiksmes vai vainas izjūta par sevi/ģimeni",
+        "en": "Feeling worthless, a failure, or having let yourself/family down",
+        "ru": "Чувство собственной никчёмности, неудачи или вины перед собой/семьёй"
+      }
+    },
+    "M02_07": {},
+    "M02_08": {
+      "labels": {
+        "lv": "Citiem pamanāms kustību/runas lēnums vai izteikts nemiers",
+        "en": "Noticeably slowed movement/speech or marked restlessness",
+        "ru": "Заметная окружающим замедленность движений/речи или выраженное беспокойство"
+      }
+    },
+    "M02_09": {
+      "support": {
+        "B": "support",
+        "C": "support",
+        "D": "support"
+      }
+    },
+    "M02_10": {
+      "labels": {
+        "lv": "Nomāktības simptomu ietekme uz darbu, mājas pienākumiem vai attiecībām",
+        "en": "Impact of low-mood symptoms on work, home duties or relationships",
+        "ru": "Влияние симптомов подавленности на работу, домашние обязанности или отношения"
+      }
+    },
+    "M02_11": {
+      "labels": {
+        "lv": "Atkārtoti nomāktības periodi dzīves laikā",
+        "en": "Repeated periods of low mood during life",
+        "ru": "Повторные периоды подавленности в течение жизни"
+      }
+    },
+    "M02_12": {
+      "labels": {
+        "lv": "Pēdējā nomāktības vai prieka zuduma perioda ilgums",
+        "en": "Duration of most recent low-mood/loss-of-pleasure episode",
+        "ru": "Длительность последнего периода подавленности/утраты удовольствия"
+      }
+    },
+    "M02_13": {
+      "labels": {
+        "lv": "Prieka zudums arī agrāk patīkamās situācijās",
+        "en": "Loss of pleasure even in previously enjoyable situations",
+        "ru": "Утрата удовольствия даже в ранее приятных ситуациях"
+      }
+    },
+    "M02_14": {},
+    "M02_15": {},
+    "M02_16": {},
+    "M02_17": {
+      "labels": {
+        "lv": "Garastāvokļa atšķirības stiprums starp rītu un vakaru",
+        "en": "Size of morning–evening mood difference",
+        "ru": "Выраженность разницы настроения утром и вечером"
+      }
+    },
+    "M02_18": {
+      "labels": {
+        "lv": "Dienas ar garastāvokļa izmaiņām dienas gaitā",
+        "en": "Days with mood changes during the day",
+        "ru": "Дни с изменениями настроения в течение дня"
+      }
+    },
+    "M02_19": {
+      "labels": {
+        "lv": "Paša saskatītie diennakts garastāvokļa izmaiņu iemesli",
+        "en": "Perceived reasons for mood changes during the day",
+        "ru": "Предполагаемые самим человеком причины изменений настроения в течение дня"
+      }
+    },
+    "M02_20": {},
+    "M02_21": {},
+    "M21_01": {},
+    "M21_02": {},
+    "M21_03": {},
+    "M21_04": {},
+    "M21_05": {
+      "labels": {
+        "lv": "Vai neparastas uztveres/pārliecības pieredzes biedēja vai traucēja rīkoties",
+        "en": "Unusual perceptions/beliefs causing fear or interfering with action",
+        "ru": "Пугали ли необычные восприятия/убеждения или мешали действовать"
+      }
+    },
+    "M21_06": {
+      "labels": {
+        "lv": "Neparastas uztveres vai pārliecības pieredžu apstākļi",
+        "en": "Circumstances of unusual perceptions or beliefs",
+        "ru": "Обстоятельства необычных восприятий или убеждений"
+      }
+    },
+    "M21_07": {},
+    "M21_08": {},
+    "M21_09": {},
+    "M21_10": {},
+    "M21_11": {
+      "labels": {
+        "lv": "Neatliekamas palīdzības meklēšana neparastu uztveres/pārliecības pieredžu dēļ",
+        "en": "Emergency help previously sought for unusual perceptions/beliefs",
+        "ru": "Обращение за экстренной помощью из-за необычных восприятий/убеждений"
+      }
+    },
+    "M21_12": {},
+    "M21_13": {},
+    "M21_14": {
+      "labels": {
+        "lv": "Neparastas uztveres vai pārliecības pieredzes",
+        "en": "Unusual perceptions or beliefs experienced",
+        "ru": "Пережитые необычные восприятия или убеждения"
+      }
+    },
+    "M21_15": {
+      "labels": {
+        "lv": "Pašlaik vajadzīga palīdzība pretoties balsīm/pieredzēm, kas mudina apdraudēt sevi vai citus",
+        "en": "Currently needs help resisting voices/experiences urging dangerous actions toward self or others",
+        "ru": "Сейчас нужна помощь, чтобы противостоять голосам/переживаниям, побуждающим к опасным действиям против себя или других"
+      },
+      "support": {
+        "B": "emergency"
+      }
+    },
+    "M21_16": {},
+    "M21_17": {},
+    "M21_18": {},
+    "M21_19": {
+      "labels": {
+        "lv": "Neparastas uztveres/pārliecības pieredžu saistība ar garastāvokli",
+        "en": "Timing of unusual perceptions/beliefs relative to mood",
+        "ru": "Связь необычных восприятий/убеждений с настроением"
+      }
+    },
+    "M33_01": {},
+    "M33_02": {},
+    "M32_02": {},
+    "M33_04": {},
+    "M33_09": {},
+    "M06_01": {
+      "support": {
+        "B": "support",
+        "C": "support"
+      }
+    },
+    "M06_02": {
+      "support": {
+        "B": "emergency",
+        "C": "support"
+      }
+    },
+    "M06_02P": {
+      "support": {
+        "B": "emergency",
+        "C": "support"
+      }
+    },
+    "M06_23": {
+      "labels": {
+        "lv": "Pašreizēja vēlme sev kaitēt neatkarīgi no vēlmes nomirt",
+        "en": "Current urge to self-harm, with or without wanting to die",
+        "ru": "Нынешний позыв навредить себе независимо от желания умереть"
+      },
+      "support": {
+        "B": "support",
+        "C": "support"
+      }
+    },
+    "M06_03": {
+      "support": {
+        "A": "emergency",
+        "C": "support"
+      }
+    },
+    "M06_10": {
+      "support": {
+        "B": "emergency",
+        "C": "support"
+      }
+    },
+    "M18_20": {
+      "labels": {
+        "lv": "Pašreizēja gatavošanās fiziski kaitēt citam",
+        "en": "Currently preparing to physically harm another person",
+        "ru": "Подготовка сейчас к физическому причинению вреда другому человеку"
+      },
+      "support": {
+        "B": "emergency",
+        "C": "support"
+      }
+    },
+    "M06_11": {
+      "support": {
+        "A": "emergency",
+        "C": "support"
+      }
+    },
+    "M31_09": {
+      "support": {
+        "B": "emergency",
+        "C": "support"
+      }
+    },
+    "M31_10": {
+      "support": {
+        "B": "emergency",
+        "C": "support"
+      }
+    },
+    "M06_13": {
+      "support": {
+        "B": "emergency",
+        "C": "support"
+      }
+    },
+    "M33_06": {},
+    "M33_07": {},
+    "M33_08": {},
+    "M23_11": {
+      "allowAllChoices": true
+    }
+  },
+  "topicOrder": [
+    "S11",
+    "S01",
+    "S09",
+    "S06",
+    "S10",
+    "S13",
+    "S12",
+    "S14",
+    "S15",
+    "S07",
+    "S08",
+    "S02",
+    "S03",
+    "S04",
+    "S05"
+  ],
+  "boldAnswers": {
+    "M02_09": [
+      "B",
+      "C",
+      "D"
+    ],
+    "M21_15": [
+      "B"
+    ],
+    "M06_01": [
+      "B"
+    ],
+    "M06_02": [
+      "B"
+    ],
+    "M06_02P": [
+      "B"
+    ],
+    "M06_23": [
+      "B"
+    ],
+    "M06_03": [
+      "A"
+    ],
+    "M06_10": [
+      "B"
+    ],
+    "M18_20": [
+      "B"
+    ],
+    "M06_11": [
+      "A"
+    ],
+    "M31_09": [
+      "B"
+    ],
+    "M31_10": [
+      "B"
+    ],
+    "M06_13": [
+      "B"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "medicine-list-ui-v1",
+  "lang": "en",
+  "strings": {
+    "help": "Add a separate entry for each medication. Include any relevant past medications, even if you are not currently taking any. Copy the information from the package or write “don’t know”; do not mention. Dietary supplements do not need to be listed here. Changes are only saved after “Save and continue.” If there are no details to add, skip the question.",
+    "add": "Add other medications",
+    "remove": "Remove this entry",
+    "discussion": "What would you like to ask your psychiatrist about medication? (optional)",
+    "empty": "Please enter at least one detail or skip the question.",
+    "limit": "You can add up to 50 medication records.",
+    "select": "Enter only what you know. All fields are optional.",
+    "entry": "Medicine",
+    "notes": "Questions for a psychiatrist",
+    "fields": {
+      "name": "Exact name of the medicine",
+      "status": "Current or past medications",
+      "strength": "Strength/shape, if known",
+      "dose": "Actual amount used at one time",
+      "schedule": "How often and when do you use it (also as needed)",
+      "duration": "How long have you been taking it/approximate start date",
+      "doseDuration": "How long have you been taking this dose?",
+      "reason": "What do you use it for?",
+      "benefit": "Did this medicine help?",
+      "effects": "What improved, worsened, or caused side effects?",
+      "changes": "Symptoms or changes after starting, changing, skipping, or stopping medication; timing, if known",
+      "stoppedWhen": "When and how you stopped (immediately/gradually), if applicable",
+      "stopReason": "Why did you stop, if applicable?"
+    },
+    "status": {
+      "current": "Currently using",
+      "past": "I used it before / stopped using it",
+      "unknown": "I don't know / I'm not sure"
+    },
+    "benefits": {
+      "A": "Marked improvement",
+      "B": "Slight improvement",
+      "C": "No noticeable changes",
+      "D": "Worsened",
+      "E": "It's too early to judge.",
+      "F": "I'm not sure.",
+      "G": "I don't want to answer."
+    }
+  }
+}

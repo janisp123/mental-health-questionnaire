@@ -1,0 +1,843 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 14,
+  "count": 12,
+  "entries": [
+    {
+      "order": 242,
+      "lv": {
+        "id": "M14_01",
+        "title": "Vai pašlaik lietojat kādas zāles, tostarp recepšu, bezrecepšu vai pēc vajadzības lietojamas zāles?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 14,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Are you currently taking any medicines, including prescription, over-the-counter or as-needed medicines?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Принимаете ли вы сейчас какие-либо лекарства, в том числе рецептурные, безрецептурные или по мере необходимости?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "manual_draft",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "manual_draft",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 243,
+      "lv": {
+        "id": "M14_02",
+        "title": "Kādas zāles lietojat pašlaik vai esat lietojis/-usi agrāk, par kurām vēlaties informēt psihiatru?",
+        "profile": "MEDICINE-LIST-1",
+        "multi": false,
+        "time": "Pašreizējās un būtiskas agrāk lietotas zāles. Norādiet faktisko lietošanu; tas nav ārstēšanas ieteikums.",
+        "context": null,
+        "choices": {},
+        "exclusive": "",
+        "incompatible": [],
+        "type": "medicineList",
+        "section": 14,
+        "answerStatus": {}
+      },
+      "en": {
+        "title": "Which medicines do you currently take or have taken previously that you would like your psychiatrist to know about?",
+        "time": "Current and significant previously used medicines. Record how they were actually taken; this is not treatment advice.",
+        "choices": {}
+      },
+      "ru": {
+        "title": "Какие лекарства вы принимаете сейчас или принимали ранее и о которых хотели бы сообщить психиатру?",
+        "time": "Текущие и ранее применявшиеся значимые лекарства. Укажите фактический приём; это не рекомендация по лечению.",
+        "choices": {}
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "manual_draft",
+          "time": "manual_draft"
+        },
+        "ru": {
+          "title": "manual_draft",
+          "time": "manual_draft"
+        }
+      }
+    },
+    {
+      "order": 244,
+      "lv": {
+        "id": "M14_03",
+        "title": "Vai jums ir veiktas asins analīzes, lai pārbaudītu vitamīnu vai minerālvielu trūkumu?",
+        "profile": "CUSTOM-YN",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā. Analīzes nav priekšnoteikums šīs anketas aizpildīšanai.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 14,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you had blood tests to check for vitamin or mineral deficiencies?",
+        "time": "At any time in your life. Testing is not required to complete this questionnaire.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Сдавали ли вы анализы крови, чтобы проверить наличие дефицита витаминов или минералов?",
+        "time": "В течение жизни. Для заполнения анкеты сдавать анализы не требуется.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "manual_draft",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "manual_draft",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 245,
+      "lv": {
+        "id": "M14_04",
+        "title": "Ja tika konstatēts trūkums, vai veicat pasākumus tā novēršanai?",
+        "profile": "DEFICIENCY-ACTION-1",
+        "multi": false,
+        "time": "Pašlaik. Jautājums ir par jūsu rīcību, nevis ārstēšanas efektivitāti.",
+        "context": {
+          "id": "M14_03",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Jā",
+          "B": "Daļēji",
+          "C": "Nē",
+          "D": "Trūkums netika konstatēts",
+          "E": "Vēl gaidu rezultātus / neesmu tos pārrunājis/-usi ar ārstu",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 14,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "If a deficiency was found, are you taking steps to address it?",
+        "time": "Right now. This asks about your actions, not whether treatment has been effective.",
+        "choices": {
+          "A": "Yes",
+          "B": "Partly",
+          "C": "No",
+          "D": "No deficiency was identified",
+          "E": "Results pending / not yet discussed with a clinician",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Если был выявлен дефицит, принимаете ли вы меры для его устранения?",
+        "time": "Сейчас. Вопрос о ваших действиях, а не об эффективности лечения.",
+        "choices": {
+          "A": "Да",
+          "B": "Частично",
+          "C": "Нет",
+          "D": "Дефицит не выявлен",
+          "E": "Результаты ещё не готовы / не обсуждены с врачом",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "manual_draft",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "manual_draft",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 246,
+      "lv": {
+        "id": "M14_09",
+        "title": "Vai kādreiz esat lietojis/-usi zāles citādi, nekā norādīts, piemēram, lielākā devā vai lai mainītu pašsajūtu?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 14,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you ever taken medicines differently from the instructions, for example at a higher dose or to change how you feel?",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Принимали ли вы когда-либо лекарства не по инструкции, например в большей дозе или чтобы изменить своё самочувствие?",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "manual_draft",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "manual_draft",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 247,
+      "lv": {
+        "id": "M14_16",
+        "title": "Vai ir bijusi zāļu alerģija vai cita smaga reakcija uz zālēm, par kuru ārstam jāzina?",
+        "profile": "P08",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 14,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you had a medicine allergy or another severe reaction to a medicine that your doctor should know about?",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Была ли у вас аллергия на лекарство или другая тяжёлая реакция, о которой врачу следует знать?",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать.",
+          "D": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 248,
+      "lv": {
+        "id": "M14_17",
+        "title": "Cik bieži pēdējās 4 nedēļās izlaidāt paredzētu regulāro zāļu devu?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pēdējās 4 nedēļas. Neattiecas uz zālēm tikai pēc vajadzības.",
+        "context": null,
+        "choices": {
+          "A": "Nevienu reizi",
+          "B": "1–2 reizes",
+          "C": "Aptuveni reizi nedēļā",
+          "D": "Vairākas reizes nedēļā",
+          "E": "Gandrīz katru dienu",
+          "F": "Neattiecas uz mani",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 14,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How often have you missed a scheduled dose of your regular medication in the past 4 weeks?",
+        "time": "Last 4 weeks. Does not apply to medications only as needed.",
+        "choices": {
+          "A": "On no occasions",
+          "B": "1–2 occasions",
+          "C": "About once a week",
+          "D": "Several times a week",
+          "E": "Almost every day",
+          "F": "Does not apply to me",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как часто за последние 4 недели вы пропускали запланированный приём дозы регулярно принимаемого лекарства?",
+        "time": "Последние 4 недели. Не относится к лекарствам, принимаемым только по мере необходимости.",
+        "choices": {
+          "A": "Ни разу",
+          "B": "1–2 раза",
+          "C": "Примерно раз в неделю",
+          "D": "Несколько раз в неделю",
+          "E": "Почти каждый день",
+          "F": "Ко мне это не относится",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 249,
+      "lv": {
+        "id": "M14_18",
+        "title": "Kādi bija devu izlaišanas vai ārstēšanas pārtraukšanas iemesli?",
+        "profile": "CUSTOM-v11",
+        "multi": true,
+        "time": "Pēdējās 4 nedēļas.",
+        "context": null,
+        "choices": {
+          "A": "Aizmirsu",
+          "B": "Blakusparādības",
+          "C": "Cena vai zāļu nepieejamība",
+          "D": "Neskaidri norādījumi",
+          "E": "Nejutu vajadzību vai šaubījos par ieguvumu",
+          "F": "Tā norādīja ārsts",
+          "G": "Cits iemesls",
+          "H": "Neattiecas uz mani",
+          "I": "Nezinu",
+          "J": "Nevēlos atbildēt"
+        },
+        "exclusive": "HIJ",
+        "incompatible": [],
+        "section": 14,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "uncertain",
+          "J": "refused"
+        }
+      },
+      "en": {
+        "title": "What were the reasons for skipping doses or stopping treatment?",
+        "time": "The last 4 weeks.",
+        "choices": {
+          "A": "Forgot",
+          "B": "Side effects",
+          "C": "Price or unavailability of the medicine",
+          "D": "Unclear instructions",
+          "E": "I didn't feel the need or doubted the benefit",
+          "F": "That's what the doctor said",
+          "G": "Other reason",
+          "H": "Does not apply to me",
+          "I": "I don't know",
+          "J": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Каковы были причины пропуска доз или прекращения лечения?",
+        "time": "Последние 4 недели.",
+        "choices": {
+          "A": "Забыл(а).",
+          "B": "Побочные эффекты",
+          "C": "Цена или недоступность лекарства",
+          "D": "Неясные инструкции",
+          "E": "Не чувствовал(а) необходимости или сомневался(ась) в пользе.",
+          "F": "Так сказал врач.",
+          "G": "Другая причина",
+          "H": "Ко мне это не относится",
+          "I": "Я не знаю",
+          "J": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 250,
+      "lv": {
+        "id": "M14_19",
+        "title": "Vai lietojat uztura bagātinātājus, augu līdzekļus vai citus produktus, par kuriem ārstam būtu jāzina?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā; parādīšu iepakojumu vai sarakstu",
+          "C": "Nezinu",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 14,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Are you taking any supplements, herbal remedies, or other products that your doctor should know about?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes; I will show you the packaging or list",
+          "C": "I don't know",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Принимаете ли вы какие-либо пищевые добавки, растительные препараты или другие средства, о которых должен знать ваш врач?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да; я покажу вам упаковку или список.",
+          "C": "Я не знаю",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 251,
+      "lv": {
+        "id": "M14_20",
+        "title": "Vai pēc zāļu sākšanas vai devas palielināšanas radās mokošs iekšējs nemiers un vajadzība nepārtraukti kustēties?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 14,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Did you experience distressing inner restlessness and a need to keep moving after starting the medication or increasing the dose?",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Испытывали ли вы мучительное внутреннее беспокойство и потребность постоянно двигаться после начала приёма препарата или повышения дозы?",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 252,
+      "lv": {
+        "id": "M14_21",
+        "title": "Vai pēc zāļu sākšanas, maiņas vai pārtraukšanas radās jaunas patvaļīgas kustības, stīvums vai trīce?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 14,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Did new involuntary movements, stiffness, or tremors occur after starting, changing, or stopping medication?",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Возникали ли новые непроизвольные движения, скованность или тремор после начала, изменения или прекращения приема лекарств?",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 253,
+      "lv": {
+        "id": "M14_22",
+        "title": "Vai pēc devas samazināšanas, izlaistām devām vai zāļu pārtraukšanas parādījās jaunas pašsajūtas grūtības?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 14,
+        "help": "Saistība laikā nepierāda cēloni. Nemainiet zāles, balstoties tikai uz anketu; pārrunājiet to ar ārstu.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Did new difficulties in feeling well appear after dose reduction, missed doses, or discontinuation of the medication?",
+        "time": "The last 3 months.",
+        "help": "A temporal association does not prove causation. Do not change medications based solely on the questionnaire; discuss this with your doctor.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Появились ли новые проблемы с самочувствием после снижения дозы, пропуска приема или прекращения приема препарата?",
+        "time": "Последние 3 месяца.",
+        "help": "Временная взаимосвязь не доказывает причинно-следственную связь. Не следует менять лекарственную терапию, основываясь исключительно на результатах анкетирования; обсудите это со своим врачом.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

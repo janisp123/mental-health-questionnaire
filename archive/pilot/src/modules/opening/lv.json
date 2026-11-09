@@ -1,0 +1,251 @@
+{
+  "schema": "pilot-module-locale-v1",
+  "module": "opening",
+  "lang": "lv",
+  "source_version": "LV-v16",
+  "status": "REFERENCE",
+  "title": "Sākuma jautājumi un drošība",
+  "questions": {
+    "M33_01": {
+      "title": "Vārds (nav obligāts)",
+      "time": "Pašlaik.",
+      "help": "Vārdu un uzvārdu norādiet tikai tad, ja plānojat rezultātus nodot speciālistam. Ja anketu aizpildāt tikai sev, šos laukus varat atstāt tukšus. Atbildes netiek automātiski nosūtītas projekta autoram vai speciālistam; saglabājot tās, dati var palikt jūsu ierīcē un lejupielādētajos failos.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / grūti pateikt",
+        "D": "Nevēlos atbildēt"
+      }
+    },
+    "M33_02": {
+      "title": "Uzvārds (nav obligāts)",
+      "time": "Pašlaik.",
+      "help": "Vārdu un uzvārdu norādiet tikai tad, ja plānojat rezultātus nodot speciālistam. Ja anketu aizpildāt tikai sev, šos laukus varat atstāt tukšus. Atbildes netiek automātiski nosūtītas projekta autoram vai speciālistam; saglabājot tās, dati var palikt jūsu ierīcē un lejupielādētajos failos.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / grūti pateikt",
+        "D": "Nevēlos atbildēt"
+      }
+    },
+    "M32_02": {
+      "title": "Kādai vecuma grupai piederat?",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "18–24",
+        "B": "25–34",
+        "C": "35–44",
+        "D": "45–54",
+        "E": "55–64",
+        "F": "65 vai vairāk",
+        "G": "Nevēlos atbildēt."
+      }
+    },
+    "M33_04": {
+      "title": "Kā raksturojat savu dzimumidentitāti?",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "Vīrietis",
+        "B": "Sieviete",
+        "C": "Nebināra identitāte",
+        "D": "Cits raksturojums",
+        "E": "Neesmu pārliecināts/-a",
+        "F": "Nevēlos atbildēt"
+      }
+    },
+    "M33_09": {
+      "title": "Kā aizpildāt anketu?",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "Patstāvīgi",
+        "B": "Ar cita cilvēka palīdzību, atbildes izvēlos pats/-i",
+        "C": "Cits cilvēks atbild manā vietā",
+        "D": "Nevēlos atbildēt"
+      }
+    },
+    "M06_01": {
+      "title": "Vai šobrīd domājat par pašnāvību?",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt."
+      },
+      "summaryLabel": "Pašnāvības domas"
+    },
+    "M06_02": {
+      "title": "Vai šobrīd jums ir nodoms izdarīt pašnāvību?",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt."
+      },
+      "summaryLabel": "Nodoms izdarīt pašnāvību"
+    },
+    "M06_02P": {
+      "title": "Vai šobrīd jums ir konkrēts plāns, kā izdarīt pašnāvību?",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt."
+      },
+      "summaryLabel": "Konkrēts pašnāvības plāns"
+    },
+    "M06_23": {
+      "title": "Vai pašlaik izjūtat vēlmi kaitēt sev neatkarīgi no tā, vai vēlaties nomirt?",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu",
+        "D": "Nevēlos atbildēt"
+      },
+      "summaryLabel": "Vēlme kaitēt sev"
+    },
+    "M06_03": {
+      "title": "Vai pašlaik spējat parūpēties par savu drošību?",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt."
+      },
+      "summaryLabel": "Spēj parūpēties par savu drošību"
+    },
+    "M06_10": {
+      "title": "Vai šobrīd ir nodoms nodarīt fizisku kaitējumu citam cilvēkam?",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt."
+      },
+      "summaryLabel": "Nodoms fiziski kaitēt citam"
+    },
+    "M18_20": {
+      "title": "Vai pašlaik gatavojaties fiziski kaitēt citam cilvēkam? Detaļas anketā nav jānorāda.",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt"
+      },
+      "summaryLabel": "Gatavošanās fiziski kaitēt citam"
+    },
+    "M06_11": {
+      "title": "Vai mājās šobrīd jūtaties fiziski droši?",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt."
+      },
+      "summaryLabel": "Mājās jūtas fiziski droši"
+    },
+    "M31_09": {
+      "title": "Vai šobrīd ir apdraudēta bērna vai citas aprūpējamas personas fiziskā drošība?",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt."
+      },
+      "summaryLabel": "Bērna/aprūpējamā fiziskā drošība apdraudēta"
+    },
+    "M31_10": {
+      "title": "Vai šobrīd mājās piedzīvojat draudus vai vardarbību?",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt."
+      },
+      "summaryLabel": "Pašlaik mājās piedzīvo draudus/vardarbību"
+    },
+    "M06_13": {
+      "title": "Vai jums vajadzīga tūlītēja palīdzība, lai saglabātu drošību?",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt."
+      },
+      "summaryLabel": "Vajadzīga tūlītēja palīdzība drošībai"
+    },
+    "M33_06": {
+      "title": "Kāds ir jūsu galvenais iemesls šīs anketas aizpildīšanai?",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "Vēlos saņemt palīdzību pašreizējām grūtībām",
+        "B": "Gatavojos speciālista konsultācijai",
+        "C": "Vēlos labāk izprast savu pašsajūtu",
+        "D": "Aizpildu ziņkārības dēļ",
+        "E": "Anketu ieteica speciālists vai cits cilvēks",
+        "F": "Cits iemesls / grūti pateikt",
+        "G": "Nevēlos atbildēt"
+      }
+    },
+    "M33_07": {
+      "title": "Kāpēc izvēlējāties aizpildīt anketu tieši tagad?",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "Grūtības sākušās nesen",
+        "B": "Iepriekšējās grūtības pastiprinājušās vai atgriezušās",
+        "C": "Grūtības turpinās ilgi; vēlos beidzot tās pārrunāt",
+        "D": "Tās sākušas vairāk traucēt ikdienai",
+        "E": "Noticis nozīmīgs dzīves notikums",
+        "F": "Kāds paudis bažas par manu pašsajūtu vai uzvedību",
+        "G": "Vēlos pārskatīt pašreizējo ārstēšanu",
+        "H": "Tagad ir iespēja vai gatavība meklēt palīdzību",
+        "I": "Nav īpaša iemesla; vēlos pārbaudīt savu pašsajūtu",
+        "J": "Cits iemesls / grūti pateikt",
+        "K": "Nevēlos atbildēt"
+      }
+    },
+    "M33_08": {
+      "title": "Vai, jūsuprāt, speciālists pašlaik varētu jums palīdzēt ar kādām grūtībām?",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "Jā",
+        "B": "Iespējams, bet neesmu pārliecināts/-a",
+        "C": "Nedomāju, ka palīdzētu, lai gan grūtības ir",
+        "D": "Pašlaik nejūtu vajadzību pēc palīdzības",
+        "E": "Grūti pateikt",
+        "F": "Nevēlos atbildēt"
+      }
+    },
+    "M23_11": {
+      "title": "Ko visvairāk vēlētos uzlabot?",
+      "time": "Pašlaik.",
+      "choices": {
+        "A": "Miegs",
+        "B": "Nogurums vai enerģija",
+        "C": "Garastāvoklis vai motivācija",
+        "D": "Trauksme vai panika",
+        "E": "Uzmanība vai atmiņa",
+        "F": "Zāļu ietekme",
+        "G": "Darba vai aprūpes slodze",
+        "H": "Dusmas vai impulsu kontrole",
+        "I": "Vielu lietošana vai citi grūti kontrolējami paradumi",
+        "J": "Sāpes vai fiziskā veselība",
+        "K": "Attiecības vai seksuālā veselība",
+        "L": "Cits mērķis, ko apspriedīšu vizītē",
+        "M": "Pašlaik nav šādas prioritātes",
+        "N": "Vēl nezinu",
+        "O": "Nevēlos atbildēt."
+      }
+    }
+  }
+}

@@ -1,0 +1,468 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 46,
+  "count": 6,
+  "entries": [
+    {
+      "order": 697,
+      "lv": {
+        "id": "M46_01",
+        "title": "Vai bērnībā vai pašlaik ir bijušas runas, valodas, kustību koordinācijas vai patstāvīgas ikdienas grūtības?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Bērnībā vai pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 46,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you had difficulties with speech or language, motor coordination, or independent daily activities, either in childhood or currently?",
+        "time": "In childhood or now.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Были ли у вас в детстве или есть сейчас трудности с речью или языком, координацией движений либо самостоятельным выполнением повседневных дел?",
+        "time": "В детстве или сейчас.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 698,
+      "lv": {
+        "id": "M46_02",
+        "title": "Kādas grūtības bijušas?",
+        "profile": "CUSTOM12",
+        "multi": true,
+        "time": "Bērnībā vai pašlaik.",
+        "context": {
+          "id": "M46_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Runas izruna vai plūdums",
+          "B": "Valodas saprašana vai domu izteikšana",
+          "C": "Kustību koordinācija un praktiskas darbības",
+          "D": "Ikdienas prasmju apgūšana un patstāvība",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "FG",
+        "incompatible": [],
+        "section": 46,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "What difficulties have you had?",
+        "time": "In childhood or now.",
+        "choices": {
+          "A": "Pronunciation or fluency of speech",
+          "B": "Understanding language or expressing thoughts",
+          "C": "Coordination of movements and practical activities",
+          "D": "Learning everyday skills and independence",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "С какими трудностями вы столкнулись?",
+        "time": "В детстве или сейчас.",
+        "choices": {
+          "A": "Произношение или беглость речи",
+          "B": "Понимание языка или выражение мыслей",
+          "C": "Координация движений и практические действия",
+          "D": "Освоение повседневных навыков и самостоятельности",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 699,
+      "lv": {
+        "id": "M46_03",
+        "title": "Vai noteiktās situācijās nespējat runāt, lai gan citur spējat un zināt vajadzīgo valodu?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Bērnībā vai pašlaik.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 46,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Are you unable to speak in certain situations, even though you can and know the necessary language in other situations?",
+        "time": "In childhood or now.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Бывает ли, что в определённых ситуациях вы не можете говорить, хотя в других ситуациях способны говорить и знаете нужный язык?",
+        "time": "В детстве или сейчас.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 700,
+      "lv": {
+        "id": "M46_04",
+        "title": "Kā grūtības mainījušās?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Dzīves gaitā.",
+        "context": {
+          "id": "M46_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Saglabājas līdzīgi kopš bērnības",
+          "B": "Ar atbalstu mazinājušās",
+          "C": "Pieaugušā vecumā pastiprinājušās",
+          "D": "Sākās tikai pieaugušā vecumā",
+          "E": "Nezinu",
+          "F": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 46,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "uncertain",
+          "F": "refused"
+        }
+      },
+      "en": {
+        "title": "How have the difficulties changed?",
+        "time": "Over the course of your life.",
+        "choices": {
+          "A": "About the same since childhood",
+          "B": "Lessened with support",
+          "C": "Worsened in adulthood",
+          "D": "Started only in adulthood",
+          "E": "I don't know",
+          "F": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как изменились эти трудности?",
+        "time": "На протяжении жизни.",
+        "choices": {
+          "A": "Примерно такие же, как в детстве",
+          "B": "Уменьшились при поддержке",
+          "C": "Усилились во взрослом возрасте",
+          "D": "Начались только во взрослом возрасте",
+          "E": "Я не знаю",
+          "F": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 701,
+      "lv": {
+        "id": "M46_05",
+        "title": "Vai ir pieejami agrāki attīstības, logopēda, skolas vai psihologa izvērtējumi?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": {
+          "id": "M46_01",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 46,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do you have access to any previous developmental assessments or evaluations from a speech therapist, school, or psychologist?",
+        "time": "At any point in your life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Есть ли у вас прежние заключения об оценке развития или результаты обследований логопеда, школы или психолога?",
+        "time": "Когда-либо в жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 702,
+      "lv": {
+        "id": "M46_06",
+        "title": "Cik ļoti šīs grūtības pašlaik traucē ikdienai?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": null,
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Nezinu / grūti pateikt",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 46,
+        "help": "Ņemiet vērā arī grūtības runāt noteiktās situācijās. Ja šādu grūtību nav, izvēlieties “Nemaz” vai “Neattiecas uz mani”.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much do these difficulties currently interfere with your daily life?",
+        "time": "The past 28 days.",
+        "help": "Also note any difficulty speaking in certain situations. If you have no such difficulty, select “Not at all” or “Does not apply to me.”",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "Severely",
+          "E": "Very severely",
+          "F": "Does not apply to me",
+          "G": "I do not know / difficult to say",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько сильно эти трудности мешают вашей повседневной жизни в настоящее время?",
+        "time": "Последние 28 дней.",
+        "help": "Также отметьте любые трудности, с которыми вы можете столкнуться при разговоре в определенных ситуациях. Если у вас нет таких трудностей, выберите «Совсем нет» или «Ко мне это не относится».",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Не знаю / трудно сказать",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2393 @@
+{
+  "schema": "question-module-bundle-v1",
+  "source_version": "LV-v16",
+  "published_status": {
+    "lv": "v16",
+    "en": "draft-not-reviewed",
+    "ru": "draft-not-reviewed"
+  },
+  "section": 10,
+  "count": 28,
+  "entries": [
+    {
+      "order": 164,
+      "lv": {
+        "id": "M10_01",
+        "title": "Vai esat kādreiz piedzīvojis/-usi ļoti biedējošu vai smagu notikumu? Pats notikums nav jāapraksta.",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you ever experienced a very frightening or distressing event? You do not need to describe the event.",
+        "time": "At any time in life.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Переживали ли Вы когда-нибудь очень пугающее или тяжёлое событие? Описывать само событие не нужно.",
+        "time": "В любой момент жизни.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 165,
+      "lv": {
+        "id": "M10_02",
+        "title": "Vai ir nevēlamas atmiņas par smagu notikumu?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you have unwanted memories of a distressing event?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Возникают ли нежелательные воспоминания о тяжёлом событии?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 166,
+      "lv": {
+        "id": "M10_03",
+        "title": "Vai šis notikums atkārtojas sapņos vai murgos?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Does this event recur in dreams or nightmares?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Повторяется ли это событие во снах или кошмарах?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 167,
+      "lv": {
+        "id": "M10_04",
+        "title": "Vai izvairāties no atgādinājumiem par notikušo?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you avoid reminders of what happened?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Избегаете ли Вы напоминаний о случившемся?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 168,
+      "lv": {
+        "id": "M10_05",
+        "title": "Vai dažkārt jūtaties tā, it kā notikums atkal notiktu?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Do you sometimes feel as though the event is happening again?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Бывает ли ощущение, будто событие происходит снова?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 169,
+      "lv": {
+        "id": "M10_06",
+        "title": "Vai pēc notikuma pastāvīgi jūtaties īpaši modrs/-a vai apdraudēts/-a?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Since the event, have you felt constantly on high alert or in danger?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Чувствуете ли Вы после этого события, что постоянно находитесь настороже или в опасности?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 170,
+      "lv": {
+        "id": "M10_07",
+        "title": "Vai pēc šī notikuma kļuva grūtāk uzticēties cilvēkiem?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Did it become harder to trust people after this event?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Стало ли после этого события труднее доверять людям?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 171,
+      "lv": {
+        "id": "M10_08",
+        "title": "Vai pēc šī notikuma ir bijušas miega vai garastāvokļa grūtības?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you experienced sleep or mood difficulties since this event?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Возникали ли после этого события трудности со сном или настроением?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 172,
+      "lv": {
+        "id": "M10_09",
+        "title": "Kad notika izvēlētais notikums, kura sekas aprakstāt šajā sadaļā?",
+        "profile": "P18",
+        "multi": false,
+        "time": "Laiks kopš viena izvēlētā smagā notikuma.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Pēdējo 24 stundu laikā",
+          "B": "Pirms vairāk nekā 24 stundām, bet ne vairāk kā 1 mēneša",
+          "C": "Pirms vairāk nekā 1 mēneša, bet ne vairāk kā 1 gada",
+          "D": "Pirms vairāk nekā 1 gada, bet ne vairāk kā 5 gadiem",
+          "E": "Pirms vairāk nekā 5 gadiem",
+          "F": "Tas nav noticis",
+          "G": "Neatceros / nezinu",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "When did the event whose effects you are describing in this section happen?",
+        "time": "Time since the one distressing event you selected.",
+        "choices": {
+          "A": "Within the past 24 hours",
+          "B": "More than 24 hours ago, but no more than 1 month ago",
+          "C": "More than 1 month but not more than 1 year ago",
+          "D": "More than 1 year ago, but no more than 5 years ago",
+          "E": "More than 5 years ago",
+          "F": "This has not happened",
+          "G": "I don't remember / I don't know",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда произошло выбранное событие, последствия которого Вы описываете в этом разделе?",
+        "time": "Время, прошедшее с выбранного тяжёлого события.",
+        "choices": {
+          "A": "В течение последних 24 часов",
+          "B": "Более 24 часов назад, но не более месяца назад",
+          "C": "Более месяца, но не более года назад",
+          "D": "Более года назад, но не более 5 лет назад",
+          "E": "Более 5 лет назад",
+          "F": "Такого не было",
+          "G": "Я не помню / Я не знаю",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 173,
+      "lv": {
+        "id": "M10_10",
+        "title": "Vai pēc notikuma kādu laiku nespējāt strādāt vai veikt ikdienas pienākumus?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā laikā pēc tā paša izvēlētā notikuma.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "After the event, was there a period when you were unable to work or carry out daily responsibilities?",
+        "time": "At any time after that same selected event.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Был ли после события период, когда Вы не могли работать или выполнять повседневные обязанности?",
+        "time": "В любое время после того же выбранного события.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 174,
+      "lv": {
+        "id": "M10_11",
+        "title": "Vai esat saņēmis/-usi profesionālu palīdzību pēc traumatiska notikuma?",
+        "profile": "P05",
+        "multi": false,
+        "time": "Jebkurā laikā pēc tā paša izvēlētā notikuma.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / neesmu pārliecināts/-a",
+          "D": "Nevēlos atbildēt",
+          "E": "Neattiecas uz mani."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused",
+          "E": "answered"
+        }
+      },
+      "en": {
+        "title": "Have you received professional help after a traumatic event?",
+        "time": "At any time after that same selected event.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I don't know / I'm not sure",
+          "D": "I don't want to answer.",
+          "E": "Not applicable to me."
+        }
+      },
+      "ru": {
+        "title": "Получали ли Вы профессиональную помощь после травмирующего события?",
+        "time": "В любое время после того же выбранного события.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / нет уверенности",
+          "D": "Я не хочу отвечать.",
+          "E": "Ко мне не относится."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 175,
+      "lv": {
+        "id": "M10_12",
+        "title": "Cik lielā mērā ar traumatisku pieredzi saistītie simptomi traucē šobrīd?",
+        "profile": "P07",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Grūti pateikt",
+          "H": "Nevēlos atbildēt."
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "To what extent are symptoms related to a traumatic experience interfering with your life now?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "A lot",
+          "E": "Very much",
+          "F": "Does not apply to me",
+          "G": "Difficult to say",
+          "H": "Prefer not to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько симптомы, связанные с травмирующим опытом, мешают Вам сейчас?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Трудно сказать",
+          "H": "Не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        },
+        "ru": {
+          "title": "legacy_exact",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "legacy_exact"
+        }
+      }
+    },
+    {
+      "order": 176,
+      "lv": {
+        "id": "M10_13",
+        "title": "Kāda pieredze ir saistīta ar grūtībām, ko vēlaties pārrunāt?",
+        "profile": "CUSTOM-v11",
+        "multi": true,
+        "time": "Jebkurā dzīves laikā. Grafiskas detaļas nav jāapraksta.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Karadarbība vai militārs dienests bīstamos apstākļos",
+          "B": "Fizisks uzbrukums vai vardarbība",
+          "C": "Seksuāla vardarbība",
+          "D": "Nopietns negadījums, ugunsgrēks vai katastrofa",
+          "E": "Dzīvības apdraudējums vai smaga medicīniska situācija",
+          "F": "Cita cilvēka nāves vai smaga savainojuma redzēšana",
+          "G": "Tuvinieka vardarbīga vai pēkšņa nāve",
+          "H": "Atkārtota saskare ar traumatiskiem notikumiem darbā",
+          "I": "Cita pieredze",
+          "J": "Nevēlos norādīt notikuma veidu",
+          "K": "Neattiecas uz mani",
+          "L": "Nezinu"
+        },
+        "exclusive": "JKL",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "answered",
+          "I": "answered",
+          "J": "refused",
+          "K": "answered",
+          "L": "uncertain"
+        }
+      },
+      "en": {
+        "title": "What experiences are related to the difficulties you want to discuss?",
+        "time": "At any time in your life. You do not need to describe graphic details.",
+        "choices": {
+          "A": "War or military service in dangerous conditions",
+          "B": "Physical assault or violence",
+          "C": "Sexual violence",
+          "D": "Serious accident, fire or disaster",
+          "E": "A threat to life or a serious medical situation",
+          "F": "Witnessing another person’s death or serious injury",
+          "G": "Violent or sudden death of a loved one",
+          "H": "Repeated exposure to traumatic events at work",
+          "I": "Other experiences",
+          "J": "I do not want to specify the type of event.",
+          "K": "Does not apply to me",
+          "L": "I don't know"
+        }
+      },
+      "ru": {
+        "title": "Какой опыт связан с трудностями, которые Вы хотите обсудить?",
+        "time": "В любой период жизни. Описывать тяжёлые подробности не нужно.",
+        "choices": {
+          "A": "Боевые действия или военная служба в опасных условиях",
+          "B": "Физическое нападение или насилие",
+          "C": "Сексуальное насилие",
+          "D": "Серьёзный несчастный случай, пожар или катастрофа",
+          "E": "Угроза жизни или серьёзная медицинская ситуация",
+          "F": "Смерть или тяжёлая травма другого человека, которую я видел(а)",
+          "G": "Насильственная или внезапная смерть близкого человека",
+          "H": "Неоднократное столкновение с травмирующими событиями на работе",
+          "I": "Другой опыт",
+          "J": "Я не хочу уточнять тип события.",
+          "K": "Ко мне это не относится",
+          "L": "Я не знаю"
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed",
+          "choices.L": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed",
+          "choices.J": "sheet_unreviewed",
+          "choices.K": "sheet_unreviewed",
+          "choices.L": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 177,
+      "lv": {
+        "id": "M10_14",
+        "title": "Vai pēc notikuma jutāt emocionālu nejutīgumu vai atsvešinātību no citiem?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pēdējais mēnesis.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nekad",
+          "B": "Dažas dienas",
+          "C": "Vairāk nekā pusi dienu",
+          "D": "Gandrīz katru dienu",
+          "E": "Neattiecas uz mani",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "Did you feel emotionally numb or alienated from others after the event?",
+        "time": "The past month.",
+        "choices": {
+          "A": "Never",
+          "B": "Several days",
+          "C": "On more than half of the days",
+          "D": "Almost every day",
+          "E": "Does not apply to me",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Вы чувствовали эмоциональное оцепенение или отчуждение от окружающих после этого события?",
+        "time": "За последний месяц.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Несколько дней",
+          "C": "Более чем в половине дней",
+          "D": "Почти каждый день",
+          "E": "Ко мне это не относится",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 178,
+      "lv": {
+        "id": "M10_15",
+        "title": "Vai pēc notikuma jūs apgrūtināja vainas sajūta vai sevis vai citu vainošana?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pēdējais mēnesis.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nekad",
+          "B": "Dažas dienas",
+          "C": "Vairāk nekā pusi dienu",
+          "D": "Gandrīz katru dienu",
+          "E": "Neattiecas uz mani",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "Were you troubled by feelings of guilt or blaming yourself or others after the event?",
+        "time": "The past month.",
+        "choices": {
+          "A": "Never",
+          "B": "Several days",
+          "C": "On more than half of the days",
+          "D": "Almost every day",
+          "E": "Does not apply to me",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Беспокоило ли Вас после события чувство вины или то, что Вы винили себя или других?",
+        "time": "За последний месяц.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Несколько дней",
+          "C": "Более чем в половине дней",
+          "D": "Почти каждый день",
+          "E": "Ко мне это не относится",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 179,
+      "lv": {
+        "id": "M10_16",
+        "title": "Vai bija izteikta izbīļa reakcija uz pēkšņām skaņām vai kustībām?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pēdējais mēnesis.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nekad",
+          "B": "Dažas dienas",
+          "C": "Vairāk nekā pusi dienu",
+          "D": "Gandrīz katru dienu",
+          "E": "Neattiecas uz mani",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "Did you startle strongly at sudden sounds or movements?",
+        "time": "The past month.",
+        "choices": {
+          "A": "Never",
+          "B": "Several days",
+          "C": "On more than half of the days",
+          "D": "Almost every day",
+          "E": "Does not apply to me",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сильно ли Вы вздрагивали от внезапных звуков или движений?",
+        "time": "За последний месяц.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Несколько дней",
+          "C": "Более чем в половине дней",
+          "D": "Почти каждый день",
+          "E": "Ко мне это не относится",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 180,
+      "lv": {
+        "id": "M10_17",
+        "title": "Vai atgādinājumi par notikumu izraisīja spēcīgu ķermeņa reakciju, piemēram, sirdsklauves, svīšanu vai trīci?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pēdējais mēnesis.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nekad",
+          "B": "Dažas dienas",
+          "C": "Vairāk nekā pusi dienu",
+          "D": "Gandrīz katru dienu",
+          "E": "Neattiecas uz mani",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "Did reminders of the event cause a strong bodily reaction, such as heart palpitations, sweating, or trembling?",
+        "time": "The past month.",
+        "choices": {
+          "A": "Never",
+          "B": "Several days",
+          "C": "On more than half of the days",
+          "D": "Almost every day",
+          "E": "Does not apply to me",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Вызывали ли напоминания о событии сильную физическую реакцию, например сильное сердцебиение, потливость или дрожь?",
+        "time": "За последний месяц.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Несколько дней",
+          "C": "Более чем в половине дней",
+          "D": "Почти каждый день",
+          "E": "Ко мне это не относится",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 181,
+      "lv": {
+        "id": "M10_18",
+        "title": "Cik ilgi turpinās ar šo notikumu saistītie simptomi?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Mazāk nekā mēnesi",
+          "B": "1–5 mēnešus",
+          "C": "6–11 mēnešus",
+          "D": "1–2 gadus",
+          "E": "Ilgāk nekā 2 gadus",
+          "F": "Neattiecas uz mani",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How long have the symptoms related to this event been going on?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Less than a month",
+          "B": "1–5 months",
+          "C": "6–11 months",
+          "D": "1–2 years",
+          "E": "More than 2 years",
+          "F": "Does not apply to me",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Как долго сохраняются симптомы, связанные с этим событием?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Менее месяца",
+          "B": "1–5 месяцев",
+          "C": "6–11 месяцев",
+          "D": "1–2 года",
+          "E": "Более 2 лет",
+          "F": "Ко мне это не относится",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 182,
+      "lv": {
+        "id": "M10_19",
+        "title": "Kad pēc notikuma sākās būtiskas grūtības?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Pirmo 7 dienu laikā pēc notikuma",
+          "B": "Vēlāk nekā pēc 7 dienām, bet pirmā mēneša laikā",
+          "C": "Pēc 1–6 mēnešiem",
+          "D": "Vairāk nekā 6 mēnešus vēlāk",
+          "E": "Notikumi atkārtojās; nevar nodalīt",
+          "F": "Neattiecas uz mani",
+          "G": "Nezinu",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "When did significant difficulties begin after the event?",
+        "time": "Currently.",
+        "choices": {
+          "A": "Within the first 7 days after the event",
+          "B": "More than 7 days after the event, but within the first month",
+          "C": "1–6 months after the event",
+          "D": "More than 6 months later",
+          "E": "The events happened repeatedly, so I can’t separate them",
+          "F": "Does not apply to me",
+          "G": "I don't know",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Когда после этого события начались серьёзные трудности?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "В течение первых 7 дней после события",
+          "B": "Более чем через 7 дней после события, но в течение первого месяца",
+          "C": "Через 1–6 месяцев",
+          "D": "Спустя более чем 6 месяцев",
+          "E": "События повторялись, и я не могу их разграничить",
+          "F": "Ко мне это не относится",
+          "G": "Я не знаю",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 183,
+      "lv": {
+        "id": "M10_20",
+        "title": "Vai apdraudošā situācija turpinās pašlaik?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pašlaik.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Does the threatening situation continue at present?",
+        "time": "Currently.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сохраняется ли в настоящее время угрожающая ситуация?",
+        "time": "В настоящее время.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 184,
+      "lv": {
+        "id": "M10_21",
+        "title": "Vai pēc notikuma ir grūti atgūt uzticēšanos sev vai citiem vai izjūtat ilgstošu kaunu?",
+        "profile": "CUSTOM-v11",
+        "multi": false,
+        "time": "Pēdējais mēnesis.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nekad",
+          "B": "Dažas dienas",
+          "C": "Vairāk nekā pusi dienu",
+          "D": "Gandrīz katru dienu",
+          "E": "Neattiecas uz mani",
+          "F": "Nezinu",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "Is it difficult to regain trust in yourself or others after the event, or do you experience lasting shame?",
+        "time": "The past month.",
+        "choices": {
+          "A": "Never",
+          "B": "Several days",
+          "C": "On more than half of the days",
+          "D": "Almost every day",
+          "E": "Does not apply to me",
+          "F": "I don't know",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сложно ли восстановить доверие к себе или другим после произошедшего, или Вы испытываете длительное чувство стыда?",
+        "time": "За последний месяц.",
+        "choices": {
+          "A": "Никогда",
+          "B": "Несколько дней",
+          "C": "Более чем в половине дней",
+          "D": "Почти каждый день",
+          "E": "Ко мне это не относится",
+          "F": "Я не знаю",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "legacy_exact",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 185,
+      "lv": {
+        "id": "M10_22",
+        "title": "Vai pēc smagās pieredzes bieži ir grūti nomierināt ļoti spēcīgas emocijas?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nevienā dienā",
+          "B": "1–3 dienās",
+          "C": "4–10 dienās",
+          "D": "11–20 dienās",
+          "E": "21–28 dienās",
+          "F": "Nezinu / grūti pateikt",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "After the difficult experience, do you often find it hard to settle very strong emotions?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No days",
+          "B": "On 1–3 days",
+          "C": "On 4–10 days",
+          "D": "On 11–20 days",
+          "E": "On 21–28 days",
+          "F": "I do not know / difficult to say",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Часто ли Вам трудно справиться с очень сильными эмоциями после этого тяжёлого опыта?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Ни одного дня",
+          "B": "1–3 дня",
+          "C": "4–10 дней",
+          "D": "11–20 дней",
+          "E": "21–28 дней",
+          "F": "Не знаю / трудно сказать",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 186,
+      "lv": {
+        "id": "M10_23",
+        "title": "Vai pēc smagās pieredzes ilgstoši jūtaties nevērtīgs/-a vai dziļi bojāts/-a kā cilvēks?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nevienā dienā",
+          "B": "1–3 dienās",
+          "C": "4–10 dienās",
+          "D": "11–20 dienās",
+          "E": "21–28 dienās",
+          "F": "Nezinu / grūti pateikt",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you had a lasting feeling of being worthless or deeply damaged as a person since the difficult experience?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No days",
+          "B": "On 1–3 days",
+          "C": "On 4–10 days",
+          "D": "On 11–20 days",
+          "E": "On 21–28 days",
+          "F": "I do not know / difficult to say",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Сохраняется ли у Вас после этого тяжёлого опыта ощущение, что Вы ничего не стоите или что с Вами как с человеком что-то глубоко не так?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Ни одного дня",
+          "B": "1–3 дня",
+          "C": "4–10 дней",
+          "D": "11–20 дней",
+          "E": "21–28 дней",
+          "F": "Не знаю / трудно сказать",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 187,
+      "lv": {
+        "id": "M10_24",
+        "title": "Vai pēc smagās pieredzes ir ilgstoši grūti just tuvību un uzturēt attiecības?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nevienā dienā",
+          "B": "1–3 dienās",
+          "C": "4–10 dienās",
+          "D": "11–20 dienās",
+          "E": "21–28 dienās",
+          "F": "Nezinu / grūti pateikt",
+          "G": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "uncertain",
+          "G": "refused"
+        }
+      },
+      "en": {
+        "title": "Since the difficult experience, has it been hard for a long time to feel close to others and maintain relationships?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "No days",
+          "B": "On 1–3 days",
+          "C": "On 4–10 days",
+          "D": "On 11–20 days",
+          "E": "On 21–28 days",
+          "F": "I do not know / difficult to say",
+          "G": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Трудно ли Вам уже долгое время после этого тяжёлого опыта чувствовать близость с другими людьми и поддерживать отношения?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Ни одного дня",
+          "B": "1–3 дня",
+          "C": "4–10 дней",
+          "D": "11–20 дней",
+          "E": "21–28 дней",
+          "F": "Не знаю / трудно сказать",
+          "G": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "legacy_exact",
+          "choices.G": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 188,
+      "lv": {
+        "id": "M10_25",
+        "title": "Vai šīs emociju, pašvērtējuma vai tuvības grūtības parādās dažādās dzīves situācijās, ne tikai pie konkrēta atgādinājuma?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējie 3 mēneši.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Do these difficulties with emotions, self-esteem, or feeling close to others occur in different situations, even without a specific reminder?",
+        "time": "The last 3 months.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Возникают ли эти трудности с эмоциями, самооценкой или близостью с другими людьми в разных жизненных ситуациях, а не только при конкретном напоминании?",
+        "time": "Последние 3 месяца.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 189,
+      "lv": {
+        "id": "M10_26",
+        "title": "Cik ļoti šīs emociju, pašvērtējuma un attiecību grūtības traucē ikdienai?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M10_01",
+          "hideValues": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        "choices": {
+          "A": "Nemaz",
+          "B": "Nedaudz",
+          "C": "Vidēji",
+          "D": "Stipri",
+          "E": "Ļoti stipri",
+          "F": "Neattiecas uz mani",
+          "G": "Nezinu / grūti pateikt",
+          "H": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "uncertain",
+          "H": "refused"
+        }
+      },
+      "en": {
+        "title": "How much do these emotional, self-esteem, and relationship difficulties interfere with everyday life?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Not at all",
+          "B": "A little",
+          "C": "Moderately",
+          "D": "A lot",
+          "E": "Very much",
+          "F": "Does not apply to me",
+          "G": "I do not know / difficult to say",
+          "H": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Насколько эти эмоциональные трудности, проблемы с самооценкой и межличностными отношениями мешают повседневной жизни?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Совсем нет",
+          "B": "Немного",
+          "C": "Умеренно",
+          "D": "Сильно",
+          "E": "Очень сильно",
+          "F": "Ко мне это не относится",
+          "G": "Не знаю / трудно сказать",
+          "H": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "legacy_exact",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "legacy_exact",
+          "choices.D": "legacy_exact",
+          "choices.E": "legacy_exact",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 190,
+      "lv": {
+        "id": "M10_27",
+        "title": "Vai pieredzējāt notikumu, savu rīcību vai citu cilvēku rīcību, kas bija dziļā pretrunā jūsu vērtībām?",
+        "profile": "CUSTOM12",
+        "multi": false,
+        "time": "Jebkurā dzīves laikā.",
+        "context": null,
+        "choices": {
+          "A": "Nē",
+          "B": "Jā",
+          "C": "Nezinu / grūti pateikt",
+          "D": "Nevēlos atbildēt"
+        },
+        "exclusive": "",
+        "incompatible": [],
+        "section": 10,
+        "help": "Notikuma detaļas nav jāapraksta. Morāls ievainojums nav atsevišķa diagnoze.",
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "uncertain",
+          "D": "refused"
+        }
+      },
+      "en": {
+        "title": "Have you experienced an event, done something yourself, or seen others act in a way that was deeply at odds with your values?",
+        "time": "At any time in life.",
+        "help": "The details of the incident do not need to be described. Moral injury is not a separate diagnosis.",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "I do not know / difficult to say",
+          "D": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Было ли в Вашей жизни событие, Ваш собственный поступок или поступок других людей, который глубоко противоречил Вашим ценностям?",
+        "time": "В любой момент жизни.",
+        "help": "Подробности инцидента описывать не нужно. Моральная травма не является отдельным диагнозом.",
+        "choices": {
+          "A": "Нет",
+          "B": "Да",
+          "C": "Не знаю / трудно сказать",
+          "D": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "sheet_unreviewed",
+          "help": "sheet_unreviewed",
+          "choices.A": "legacy_exact",
+          "choices.B": "legacy_exact",
+          "choices.C": "legacy_exact",
+          "choices.D": "sheet_unreviewed"
+        }
+      }
+    },
+    {
+      "order": 191,
+      "lv": {
+        "id": "M10_28",
+        "title": "Kādas ar šo vērtību konfliktu saistītas grūtības vēlaties pārrunāt?",
+        "profile": "CUSTOM12",
+        "multi": true,
+        "time": "Pēdējās 28 dienas.",
+        "context": {
+          "id": "M10_27",
+          "hideValues": [
+            "A",
+            "D"
+          ]
+        },
+        "choices": {
+          "A": "Vainas izjūtu",
+          "B": "Kaunu",
+          "C": "Nodevības sajūtu",
+          "D": "Uzticēšanās zudumu",
+          "E": "Grūtības sev vai citiem piedot",
+          "F": "Dzīves jēgas vai pārliecības maiņu",
+          "G": "Neviens no minētajiem",
+          "H": "Nezinu",
+          "I": "Nevēlos atbildēt"
+        },
+        "exclusive": "GHI",
+        "incompatible": [],
+        "section": 10,
+        "answerStatus": {
+          "A": "answered",
+          "B": "answered",
+          "C": "answered",
+          "D": "answered",
+          "E": "answered",
+          "F": "answered",
+          "G": "answered",
+          "H": "uncertain",
+          "I": "refused"
+        }
+      },
+      "en": {
+        "title": "What difficulties related to this conflict with your values would you like to discuss?",
+        "time": "The past 28 days.",
+        "choices": {
+          "A": "Feelings of guilt",
+          "B": "Shame",
+          "C": "Feeling of betrayal",
+          "D": "Loss of trust",
+          "E": "Difficulty forgiving yourself or others",
+          "F": "A change in the meaning of life or beliefs",
+          "G": "None of the above",
+          "H": "I don't know",
+          "I": "I don't want to answer."
+        }
+      },
+      "ru": {
+        "title": "Какие трудности, связанные с этим конфликтом ценностей, Вы хотели бы обсудить?",
+        "time": "Последние 28 дней.",
+        "choices": {
+          "A": "Чувство вины",
+          "B": "Стыд",
+          "C": "Чувство предательства",
+          "D": "Потеря доверия",
+          "E": "Трудности с прощением себя или других.",
+          "F": "Изменение смысла жизни или убеждений.",
+          "G": "Ничего из перечисленного",
+          "H": "Я не знаю",
+          "I": "Я не хочу отвечать."
+        }
+      },
+      "translation_provenance": {
+        "en": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        },
+        "ru": {
+          "title": "sheet_unreviewed",
+          "time": "legacy_exact",
+          "choices.A": "sheet_unreviewed",
+          "choices.B": "sheet_unreviewed",
+          "choices.C": "sheet_unreviewed",
+          "choices.D": "sheet_unreviewed",
+          "choices.E": "sheet_unreviewed",
+          "choices.F": "sheet_unreviewed",
+          "choices.G": "legacy_exact",
+          "choices.H": "sheet_unreviewed",
+          "choices.I": "sheet_unreviewed"
+        }
+      }
+    }
+  ]
+}

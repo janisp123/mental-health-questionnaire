@@ -1,0 +1,621 @@
+{
+  "schema": "pilot-module-logic-v1",
+  "group": "opening",
+  "reference": "LV-v16",
+  "source_modules": [
+    6,
+    18,
+    23,
+    31,
+    33
+  ],
+  "questions": [
+    {
+      "order": 0,
+      "id": "M33_01",
+      "profile": "CUSTOM-v11",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "type": "shortText",
+      "section": 33,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 33
+    },
+    {
+      "order": 1,
+      "id": "M33_02",
+      "profile": "CUSTOM-v11",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "type": "shortText",
+      "section": 33,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 33
+    },
+    {
+      "order": 2,
+      "id": "M32_02",
+      "profile": "P02",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 33,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "answered",
+        "D": "answered",
+        "E": "answered",
+        "F": "answered",
+        "G": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "originModule": 33
+    },
+    {
+      "order": 3,
+      "id": "M33_04",
+      "profile": "CUSTOM-v11",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 33,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "answered",
+        "D": "answered",
+        "E": "uncertain",
+        "F": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "originModule": 33
+    },
+    {
+      "order": 4,
+      "id": "M33_09",
+      "profile": "CUSTOM-v11",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 33,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "answered",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 33
+    },
+    {
+      "order": 5,
+      "id": "M06_01",
+      "profile": "P08",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 6,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 6,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "order": 6,
+      "id": "M06_02",
+      "profile": "P08",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 6,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 6,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "order": 7,
+      "id": "M06_02P",
+      "profile": "P08",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 6,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 6,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "order": 8,
+      "id": "M06_23",
+      "profile": "CUSTOM-CONTEXT-1",
+      "multi": false,
+      "exclusive": "",
+      "incompatible": [],
+      "context": null,
+      "section": 6,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 6,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "order": 9,
+      "id": "M06_03",
+      "profile": "P08",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 6,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 6,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "A"
+      ],
+      "discussCodes": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "order": 10,
+      "id": "M06_10",
+      "profile": "P08",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 6,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 6,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "order": 11,
+      "id": "M18_20",
+      "profile": "CUSTOM-HARM-CONTEXT-1",
+      "multi": false,
+      "exclusive": "",
+      "incompatible": [],
+      "context": null,
+      "section": 18,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 18,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "order": 12,
+      "id": "M06_11",
+      "profile": "P08",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 6,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 6,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "A"
+      ],
+      "discussCodes": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "order": 13,
+      "id": "M31_09",
+      "profile": "P08",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 31,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 31,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "order": 14,
+      "id": "M31_10",
+      "profile": "P08",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 31,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 31,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "order": 15,
+      "id": "M06_13",
+      "profile": "P08",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 6,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "uncertain",
+        "D": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "originModule": 6,
+      "safetyRequired": true,
+      "urgentCodes": [
+        "B"
+      ],
+      "discussCodes": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "order": 16,
+      "id": "M33_06",
+      "profile": "CUSTOM-v11",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 33,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "answered",
+        "D": "answered",
+        "E": "answered",
+        "F": "uncertain",
+        "G": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "originModule": 33
+    },
+    {
+      "order": 17,
+      "id": "M33_07",
+      "profile": "CUSTOM-v11",
+      "multi": true,
+      "context": null,
+      "exclusive": "IK",
+      "incompatible": [],
+      "section": 33,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "answered",
+        "D": "answered",
+        "E": "answered",
+        "F": "answered",
+        "G": "answered",
+        "H": "answered",
+        "I": "answered",
+        "J": "uncertain",
+        "K": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "originModule": 33
+    },
+    {
+      "order": 18,
+      "id": "M33_08",
+      "profile": "CUSTOM-v11",
+      "multi": false,
+      "context": null,
+      "exclusive": "",
+      "incompatible": [],
+      "section": 33,
+      "answerStatus": {
+        "A": "answered",
+        "B": "uncertain",
+        "C": "answered",
+        "D": "answered",
+        "E": "uncertain",
+        "F": "refused"
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "originModule": 33
+    },
+    {
+      "order": 19,
+      "id": "M23_11",
+      "profile": "P55",
+      "multi": true,
+      "context": null,
+      "exclusive": "MNO",
+      "incompatible": [],
+      "section": 23,
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "answered",
+        "D": "answered",
+        "E": "answered",
+        "F": "answered",
+        "G": "answered",
+        "H": "answered",
+        "I": "answered",
+        "J": "answered",
+        "K": "answered",
+        "L": "answered",
+        "M": "answered",
+        "N": "uncertain",
+        "O": "refused"
+      },
+      "maxChoices": 3,
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O"
+      ],
+      "originModule": 23
+    }
+  ]
+}

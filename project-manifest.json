@@ -1,0 +1,622 @@
+{
+  "schema": "mental-health-questionnaire-current-index-v2",
+  "updated_date": "2026-11-09",
+  "repository": "janisp123/mental-health-questionnaire",
+  "development_branch": "main",
+  "distribution_branch": "main",
+  "status": "FOUR_LANGUAGE_TECHNICAL_REVIEW",
+  "single_source_of_truth": "GitHub main contains the sole active four-language application; use short-lived feature branches and versioned distribution snapshots.",
+  "active_changelog": "docs/CHANGELOG.md",
+  "current_versions": {
+    "questionnaire": {
+      "reference_language": "lv",
+      "version": "v16",
+      "sections": 48,
+      "questions": 712,
+      "modules_dir": "src/modules/",
+      "pattern": "182_MODULE_XX_LV_EN_RU_v16.json",
+      "source_index": "tests/fixtures/181_MODULE_INDEX_v16.json",
+      "translation_status": {
+        "en": "DRAFT_NOT_RELEASED",
+        "ru": "DRAFT_NOT_RELEASED"
+      }
+    },
+    "application": {
+      "current_reference_html": "reference/baseline/html/162_Sagatavosanas_vizitei_LV_v16.html",
+      "status": "FROZEN_V16_BEHAVIORAL_REFERENCE",
+      "note": "Use this frozen file as the behavioral reference. Edit shared interface/runtime in src/app/, question content in src/modules/, and questionnaire presentation in src/questionnaire/."
+    },
+    "english": {
+      "html": "reference/baseline/html/172_Questionnaire_EN_v16_DRAFT_NOT_RELEASED.html",
+      "readme": "reference/baseline/readme/174_README_EN_v16_DRAFT.md",
+      "info": "reference/baseline/information/178_Information_EN_v16_DRAFT.pdf",
+      "status": "DRAFT_NOT_RELEASED"
+    },
+    "russian": {
+      "html": "reference/baseline/html/172_Questionnaire_RU_v16_DRAFT_NOT_RELEASED.html",
+      "readme": "reference/baseline/readme/174_README_RU_v16_DRAFT.md",
+      "info": "reference/baseline/information/179_Information_RU_v16_DRAFT.pdf",
+      "status": "DRAFT_NOT_RELEASED"
+    },
+    "latvian_docs": {
+      "readme": "reference/baseline/readme/163_README_LV_v16.md",
+      "info": "reference/baseline/information/177_Informacija_LV_v16.pdf"
+    },
+    "translation_working_dir": "src/i18n/working/",
+    "source_tools": [
+      "tools/183_MODULE_TOOLS_v16.py",
+      "tools/186_RELEASE_GATE_CHECK_v1.py"
+    ],
+    "release_gate": "docs/RELEASE_POLICY.md",
+    "archive": {
+      "old_drive_changelog": "docs/drive-original/166_CHANGELOG_LV.md",
+      "old_versions_dir": "reference/history/",
+      "pilot_prototype": "archive/pilot/",
+      "three_language_review": "archive/three-language/v0.2.0/manifest.json",
+      "four_language_baseline": "archive/four-language/v0.2.1/manifest.json"
+    },
+    "development_build": {
+      "status": "TECHNICAL_REVIEW_BUILD_NOT_RELEASED",
+      "version": "0.2.2-review+full-bank",
+      "sections": 15,
+      "questions": 712,
+      "reference_language": "lv",
+      "translation_status": {
+        "en": "DRAFT_NOT_REVIEWED",
+        "ru": "DRAFT_NOT_REVIEWED",
+        "uk": "DRAFT_NOT_REVIEWED"
+      },
+      "question_sources": "src/modules/",
+      "builder": "tools/build_questionnaire.py",
+      "build_config": "src/questionnaire/build.json",
+      "app_source_manifest": "src/app/build.json",
+      "application_core": "src/app/core/",
+      "screen_components": "src/app/screens/",
+      "design_styles": "src/app/styles/",
+      "reports": "src/app/reports/",
+      "interface": "src/app/i18n/",
+      "layout": "src/questionnaire/layout.json",
+      "presentation_metadata": "src/questionnaire/presentation.json",
+      "tests": "tests/full_bank/",
+      "component_tests": "tests/app/",
+      "ci": ".github/workflows/questionnaire-checks.yml",
+      "component_ci": ".github/workflows/app-component-checks.yml",
+      "architecture": "docs/QUESTIONNAIRE_ARCHITECTURE.md",
+      "artifact": "dist/QUESTIONNAIRE_LV_EN_RU_UK_NOT_RELEASED.html",
+      "recovery_schema": "mental-pilot-recovery-v1 (retained for compatibility)",
+      "source_modules": 48,
+      "note": "15 user-facing sections group all 48 source modules; each group contains 36–70 original questions. Source questions remain unchanged.",
+      "languages": [
+        "lv",
+        "en",
+        "ru",
+        "uk"
+      ],
+      "review_guide": "docs/review/GUIDE_LV_EN_RU_UK.md",
+      "package_builder": "tools/build_review_package.py",
+      "package_verifier": "tools/verify_review_package.py",
+      "check_runner": "tools/run_checks.py",
+      "review_package": "MH_Public_version/manifest.json",
+      "feature_contracts": "docs/FEATURE_DEVELOPMENT.md"
+    }
+  },
+  "import_validation": {
+    "original_drive_file_count": 79,
+    "imported_and_blob_verified": 79,
+    "verified_section_count": 48,
+    "verified_question_count": 712,
+    "three_reference_banks_equal": true,
+    "source_snapshot_commit": "24d25c992cd866daf0589e16b4c4a1a9b8b7d63f",
+    "aggregate_git_blob_hash_inventory_check": "FNV64 dd1f152ec361cb5a (sorted paths and exact Git SHA1s)",
+    "scope": "SOURCE BYTE INTEGRITY ONLY; not browser, medical, translation or release approval"
+  },
+  "files": [
+    {
+      "path": "docs/drive-original/00_CURRENT_STATE.md",
+      "git_blob_sha1": "355e044fe64e24e8d4cf2621308c980ce9bba22a",
+      "bytes": 3729,
+      "role": "historical-documentation"
+    },
+    {
+      "path": "docs/drive-original/165_Translation_plan_EN_RU_v16.md",
+      "git_blob_sha1": "8636d7ac75db33eba6c3187a6e6d0146d5440387",
+      "bytes": 6263,
+      "role": "historical-documentation"
+    },
+    {
+      "path": "docs/drive-original/166_CHANGELOG_LV.md",
+      "git_blob_sha1": "2375aaf04ec84dee1db83e901171c15cf78ad326",
+      "bytes": 33955,
+      "role": "historical-documentation"
+    },
+    {
+      "path": "docs/drive-original/167_TRANSLATION_AUDIT_v16.md",
+      "git_blob_sha1": "d0ab115a782d1bdff3be995d7029e9eafcded368",
+      "bytes": 4412,
+      "role": "historical-documentation"
+    },
+    {
+      "path": "docs/drive-original/180_ARCHIVE_INDEX_2026-11-05.md",
+      "git_blob_sha1": "6ceb34681b498d067165de103470b1e6522e80f8",
+      "bytes": 4869,
+      "role": "historical-documentation"
+    },
+    {
+      "path": "docs/drive-original/184_MODULE_WORKFLOW_v16.md",
+      "git_blob_sha1": "9ed8cecb296c8379990249464858995d5cf975b8",
+      "bytes": 4807,
+      "role": "historical-documentation"
+    },
+    {
+      "path": "docs/drive-original/185_RELEASE_GATE_v1.md",
+      "git_blob_sha1": "7e8cfe095d551a91ed921a8034014a8c7c57bff2",
+      "bytes": 6927,
+      "role": "historical-documentation"
+    },
+    {
+      "path": "reference/baseline/html/162_Sagatavosanas_vizitei_LV_v16.html",
+      "git_blob_sha1": "c05c84fe25702a3011b13a974f0da93d693a0733",
+      "bytes": 924807,
+      "role": "frozen-baseline"
+    },
+    {
+      "path": "reference/baseline/html/172_Questionnaire_EN_v16_DRAFT_NOT_RELEASED.html",
+      "git_blob_sha1": "8618cf9e09980c06fbb34d51e203e275b5dad29d",
+      "bytes": 919159,
+      "role": "frozen-baseline"
+    },
+    {
+      "path": "reference/baseline/html/172_Questionnaire_RU_v16_DRAFT_NOT_RELEASED.html",
+      "git_blob_sha1": "eb68e322f48e7cc72df61020694cdc49898fd8d4",
+      "bytes": 1219524,
+      "role": "frozen-baseline"
+    },
+    {
+      "path": "reference/baseline/information/177_Informacija_LV_v16.pdf",
+      "git_blob_sha1": "f741a2e31c6ff21ef9c4599d2931399b079013da",
+      "bytes": 53099,
+      "role": "frozen-baseline"
+    },
+    {
+      "path": "reference/baseline/information/178_Information_EN_v16_DRAFT.pdf",
+      "git_blob_sha1": "9729bcde7c92b4fd4df8900bdd700dc1e8785dfe",
+      "bytes": 52234,
+      "role": "frozen-baseline"
+    },
+    {
+      "path": "reference/baseline/information/179_Information_RU_v16_DRAFT.pdf",
+      "git_blob_sha1": "a2523b21cc60ca6fba3996828e2d5a7e2bec934d",
+      "bytes": 64240,
+      "role": "frozen-baseline"
+    },
+    {
+      "path": "reference/baseline/readme/163_README_LV_v16.md",
+      "git_blob_sha1": "cd2988849855b00119caf301e7c9d100c6eea1a1",
+      "bytes": 14583,
+      "role": "frozen-baseline"
+    },
+    {
+      "path": "reference/baseline/readme/174_README_EN_v16_DRAFT.md",
+      "git_blob_sha1": "acb9304cfe6fbe7c2ddc7ca687875434fba13d0f",
+      "bytes": 13292,
+      "role": "frozen-baseline"
+    },
+    {
+      "path": "reference/baseline/readme/174_README_RU_v16_DRAFT.md",
+      "git_blob_sha1": "aedaf635bba0bfb28353e5828ca5ac8f9167a870",
+      "bytes": 25543,
+      "role": "frozen-baseline"
+    },
+    {
+      "path": "reference/history/118_Questionnaire_English_FULL_v9.html",
+      "git_blob_sha1": "09c51421bca4e6246d2769a44310f85bf43cb258",
+      "bytes": 413454,
+      "role": "historical-only"
+    },
+    {
+      "path": "reference/history/119_Questionnaire_Russian_FULL_v9.html",
+      "git_blob_sha1": "1e57d424fbbdeb42d81ac388db52f4a05b092b00",
+      "bytes": 597855,
+      "role": "historical-only"
+    },
+    {
+      "path": "reference/history/129_English info.pdf",
+      "git_blob_sha1": "a9f49b1d6c06e6a1b22d8e708a9f3acbd754036b",
+      "bytes": 48561,
+      "role": "historical-only"
+    },
+    {
+      "path": "reference/history/131_Russian info.pdf",
+      "git_blob_sha1": "4bb6e9f0c6b97c52a548d31af7da85616309fe08",
+      "bytes": 57026,
+      "role": "historical-only"
+    },
+    {
+      "path": "reference/history/147_Informacija_LV_v14.pdf",
+      "git_blob_sha1": "97a324e73587bff11917f98cd34c6b2b1012cae1",
+      "bytes": 55051,
+      "role": "historical-only"
+    },
+    {
+      "path": "reference/history/169_RECOVERY_MANIFEST_v16.json",
+      "git_blob_sha1": "361e00682dfcb15ca11da209db6d07bfac9990bf",
+      "bytes": 3093,
+      "role": "historical-only"
+    },
+    {
+      "path": "src/i18n/working/168_Translation_memory_recovered_v16.json",
+      "git_blob_sha1": "7f92f451402d17df0befb161c471ce1283ab0a25",
+      "bytes": 763575,
+      "role": "translation-working"
+    },
+    {
+      "path": "src/i18n/working/170_QUESTION_BANK_EN_v16_DRAFT.json",
+      "git_blob_sha1": "44222771ccc989bd8c100113b2bedaa03d5f2133",
+      "bytes": 569259,
+      "role": "translation-working"
+    },
+    {
+      "path": "src/i18n/working/170_QUESTION_BANK_RU_v16_DRAFT.json",
+      "git_blob_sha1": "342e2346376d9bf738c4ea041c47c8509f72cb31",
+      "bytes": 701511,
+      "role": "translation-working"
+    },
+    {
+      "path": "src/i18n/working/171_Translation_overrides_v16.json",
+      "git_blob_sha1": "fdee27e7a7522c7691072d54ef2724d13d70bc27",
+      "bytes": 3688,
+      "role": "translation-working"
+    },
+    {
+      "path": "src/i18n/working/Temporary translation workspace — questionnaire text only.csv",
+      "git_blob_sha1": "397b54374474bf82f18b9a62a9fdd2812ecae008",
+      "bytes": 333383,
+      "role": "translation-working"
+    },
+    {
+      "path": "src/modules/182_MODULE_01_LV_EN_RU_v16.json",
+      "git_blob_sha1": "039c46d4615c596abda1a493cfeab096a0b65b23",
+      "bytes": 68744,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_02_LV_EN_RU_v16.json",
+      "git_blob_sha1": "81c222d105ff3bae040eb8141484db428a29eb9b",
+      "bytes": 51719,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_03_LV_EN_RU_v16.json",
+      "git_blob_sha1": "3068a45cf96468581daa3c75dbf62d93f1787a00",
+      "bytes": 27527,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_04_LV_EN_RU_v16.json",
+      "git_blob_sha1": "97916fbaeda1becc788874f631767848a9bc7a69",
+      "bytes": 30736,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_05_LV_EN_RU_v16.json",
+      "git_blob_sha1": "a99b997756d7be370d1b3d6aa4b7e667b2f586c9",
+      "bytes": 47901,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_06_LV_EN_RU_v16.json",
+      "git_blob_sha1": "419f502ce3be8c0ea4b99bbbf48fb99d7465b576",
+      "bytes": 61409,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_07_LV_EN_RU_v16.json",
+      "git_blob_sha1": "2b79fdd99f80835826030e8472fcce534146b823",
+      "bytes": 32838,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_08_LV_EN_RU_v16.json",
+      "git_blob_sha1": "d2a1f626acddfad9343cffafd741df31e2538b5f",
+      "bytes": 29785,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_09_LV_EN_RU_v16.json",
+      "git_blob_sha1": "3a6fa961c63cbe4ba303255d8c6f257ec564e637",
+      "bytes": 48150,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_10_LV_EN_RU_v16.json",
+      "git_blob_sha1": "02c3607a79d952c56a5ffc97ea395e53f1a28dab",
+      "bytes": 78472,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_11_LV_EN_RU_v16.json",
+      "git_blob_sha1": "2b63d33395ae8d589256260e41aa4706ccf97ac0",
+      "bytes": 44133,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_12_LV_EN_RU_v16.json",
+      "git_blob_sha1": "63916cb7ff565828dfac491d7508c0a4d53d31ca",
+      "bytes": 38170,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_13_LV_EN_RU_v16.json",
+      "git_blob_sha1": "dd07ca08c63f4d404ca795fd58d5529507823e52",
+      "bytes": 47625,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_14_LV_EN_RU_v16.json",
+      "git_blob_sha1": "999f086843deb3ae1bf11afed40816a9c29ef20f",
+      "bytes": 29748,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_15_LV_EN_RU_v16.json",
+      "git_blob_sha1": "698a34a03f50262eb715b73f4c06e75648911c01",
+      "bytes": 101687,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_16_LV_EN_RU_v16.json",
+      "git_blob_sha1": "144010a637b429a37e27ccb2b826294f35dfeab5",
+      "bytes": 35798,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_17_LV_EN_RU_v16.json",
+      "git_blob_sha1": "59c22c61560f74324706c91e70d1d6f2ca89f10e",
+      "bytes": 29814,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_18_LV_EN_RU_v16.json",
+      "git_blob_sha1": "b9ae66dc1fbd62460129bb4f6c18ff1595b1c9d1",
+      "bytes": 102311,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_19_LV_EN_RU_v16.json",
+      "git_blob_sha1": "b368c7ed30779c7914652c469763ea4d4e3da5e6",
+      "bytes": 54476,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_20_LV_EN_RU_v16.json",
+      "git_blob_sha1": "f9f7c184ca14a89d14a40a8c12c38c536451ff02",
+      "bytes": 39074,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_21_LV_EN_RU_v16.json",
+      "git_blob_sha1": "5bec72ac3cb45e1e6cf74bc6b95289b96c58c5b9",
+      "bytes": 47810,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_22_LV_EN_RU_v16.json",
+      "git_blob_sha1": "7cf4ce56dd0e38e79269b58e5db2aa67677c6fc0",
+      "bytes": 40613,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_23_LV_EN_RU_v16.json",
+      "git_blob_sha1": "7683428f37b69ecca326abbec8fc092ea1f41b87",
+      "bytes": 56311,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_24_LV_EN_RU_v16.json",
+      "git_blob_sha1": "8cf51bd9520c91b42d9c7bf1bedc3b9cb3be3a9f",
+      "bytes": 43548,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_25_LV_EN_RU_v16.json",
+      "git_blob_sha1": "41304ef10d7bb99c6329e6df8de495c5df7f9b46",
+      "bytes": 27725,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_26_LV_EN_RU_v16.json",
+      "git_blob_sha1": "eb7988d30090f4d3f7f43fc66fe94fb1b7a3716b",
+      "bytes": 23389,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_27_LV_EN_RU_v16.json",
+      "git_blob_sha1": "bc02853e59a90164f5422394e4550debe5473837",
+      "bytes": 52806,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_28_LV_EN_RU_v16.json",
+      "git_blob_sha1": "3c477ce25585c612c6e544b2ae5950f8e23de339",
+      "bytes": 28369,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_29_LV_EN_RU_v16.json",
+      "git_blob_sha1": "5f019bc48945a27a7fe6cf4b94288e53309805de",
+      "bytes": 29163,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_30_LV_EN_RU_v16.json",
+      "git_blob_sha1": "2c41fab7cbc2438d699ef15b9000d8af464fd829",
+      "bytes": 64734,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_31_LV_EN_RU_v16.json",
+      "git_blob_sha1": "1cb9c0a41ecc5a487ea56df887b79e3caf55642e",
+      "bytes": 56171,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_32_LV_EN_RU_v16.json",
+      "git_blob_sha1": "8aa76b07221e1e546ad1c5a95073cb695a38743a",
+      "bytes": 135280,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_33_LV_EN_RU_v16.json",
+      "git_blob_sha1": "7a754b27ef222f2c1f8128578dd786405484d4c8",
+      "bytes": 31109,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_34_LV_EN_RU_v16.json",
+      "git_blob_sha1": "272776407086b7be406b30fa42c39bd29f6b2d1e",
+      "bytes": 40864,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_35_LV_EN_RU_v16.json",
+      "git_blob_sha1": "5d65fc62738aa07d45d1e30ef13b644fdb50e276",
+      "bytes": 16955,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_36_LV_EN_RU_v16.json",
+      "git_blob_sha1": "6a3f781cfd8a5042650247ecc845e5005e6f33a6",
+      "bytes": 16335,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_37_LV_EN_RU_v16.json",
+      "git_blob_sha1": "0ae5d2aaee499dc76a6c0dfb3f5dcc1a750b65f0",
+      "bytes": 14004,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_38_LV_EN_RU_v16.json",
+      "git_blob_sha1": "7f8048328c1c969beb27a32583db3313eee15e25",
+      "bytes": 15913,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_39_LV_EN_RU_v16.json",
+      "git_blob_sha1": "4decf0616445437b10e8d542322314b03450cde4",
+      "bytes": 16805,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_40_LV_EN_RU_v16.json",
+      "git_blob_sha1": "400ed89c068b91933719a38e09553ef6599ab3b4",
+      "bytes": 15251,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_41_LV_EN_RU_v16.json",
+      "git_blob_sha1": "ce82801911b95a6a2738b9776048f74e7a62bd2d",
+      "bytes": 16013,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_42_LV_EN_RU_v16.json",
+      "git_blob_sha1": "82d32997fa778d2c08efb621cff0f51d162625f8",
+      "bytes": 21845,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_43_LV_EN_RU_v16.json",
+      "git_blob_sha1": "297f18e28198f10a8f0f254d585eae85de575355",
+      "bytes": 16911,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_44_LV_EN_RU_v16.json",
+      "git_blob_sha1": "2260b264749383ce643335df7a148e919440e4b4",
+      "bytes": 12953,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_45_LV_EN_RU_v16.json",
+      "git_blob_sha1": "16f76343afcd77d20a2f07fe67399b01b123d7b7",
+      "bytes": 11931,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_46_LV_EN_RU_v16.json",
+      "git_blob_sha1": "92399ed1ac589a38be760a02cd8b02784f35e4d2",
+      "bytes": 15987,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_47_LV_EN_RU_v16.json",
+      "git_blob_sha1": "60adc5f1c9d86c2c5abe924151ad5b3f4eb951fa",
+      "bytes": 15317,
+      "role": "question-module"
+    },
+    {
+      "path": "src/modules/182_MODULE_48_LV_EN_RU_v16.json",
+      "git_blob_sha1": "ce797f5d4115fb8ab124a8730de8cd8648e5a79e",
+      "bytes": 9632,
+      "role": "question-module"
+    },
+    {
+      "path": "tests/fixtures/173_DRAFT_BUILD_REPORT_v16.json",
+      "git_blob_sha1": "b7c6f4c2a8e85a3e0a8fba59016eae9d6017dd97",
+      "bytes": 1056,
+      "role": "reference-test-data"
+    },
+    {
+      "path": "tests/fixtures/181_MODULE_INDEX_v16.json",
+      "git_blob_sha1": "10c322fc39a0df23543d0adbbfb422b77a2a75da",
+      "bytes": 11906,
+      "role": "reference-test-data"
+    },
+    {
+      "path": "tools/183_MODULE_TOOLS_v16.py",
+      "git_blob_sha1": "ee7d07cc5c47e7fc25d1585f53ab8c3d76c22e1c",
+      "bytes": 4348,
+      "role": "development-tool"
+    },
+    {
+      "path": "tools/186_RELEASE_GATE_CHECK_v1.py",
+      "git_blob_sha1": "a89d73088fb88a895cc2d43168dff161cff0767d",
+      "bytes": 9448,
+      "role": "development-tool"
+    }
+  ],
+  "review_distribution": {
+    "provider": "Google Drive",
+    "folder_url": "https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+    "purpose": "PROFESSIONAL_TECHNICAL_REVIEW_CANDIDATE_NOT_PUBLIC_RELEASE",
+    "reference_language": "lv",
+    "version": "0.2.1",
+    "source_commit": "46b138eb10921e0ab02b2b8ba7b5a08465a7f127",
+    "verified_date": "2026-11-09",
+    "auto_sync": false,
+    "synchronization": "Four-language v0.2.1 was verified in Drive; v0.2.2 repository package awaits main promotion and deliberate readback-verified update.",
+    "files": [
+      {
+        "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+        "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.1_REVIEW_BUILD.html",
+        "sha256": "4bbcccbdfd06a124bb28d13fd843e23e303464c0e05796a4d403dad3848a82b7"
+      },
+      {
+        "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+        "name": "188_README_LV_EN_RU_UK_v0.2.1_REVIEW_BUILD.pdf",
+        "sha256": "262cf6ec898e37b59490ef374318ec7d500361f46ae84893e8781a71fa885a25"
+      }
+    ],
+    "source_modules": 48,
+    "sections": 15,
+    "questions": 712,
+    "languages": [
+      "lv",
+      "en",
+      "ru",
+      "uk"
+    ],
+    "source_readme": "docs/review/GUIDE_LV_EN_RU_UK.md"
+  }
+}

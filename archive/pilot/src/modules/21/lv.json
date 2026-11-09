@@ -1,0 +1,226 @@
+{
+  "schema": "pilot-module-locale-v1",
+  "lang": "lv",
+  "source_version": "LV-v16",
+  "status": "REFERENCE",
+  "module": "21",
+  "title": "21 · Neparastas pieredzes",
+  "questions": {
+    "M21_01": {
+      "title": "Vai esat dzirdējis/-usi balsis, kuras citi cilvēki nedzird un kurām nav skaidra ārēja avota?",
+      "time": "Jebkurā dzīves laikā.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt",
+        "E": "Neattiecas uz mani."
+      }
+    },
+    "M21_02": {
+      "title": "Vai redzējāt ko tādu, ko apkārtējie nevarēja novērot?",
+      "time": "Jebkurā dzīves laikā.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt",
+        "E": "Neattiecas uz mani."
+      }
+    },
+    "M21_03": {
+      "title": "Vai dzīves laikā bijusi noturīga pārliecība, ka kāds cenšas jums kaitēt, kuras pamatu vēlaties apspriest ar ārstu?",
+      "time": "Jebkurā dzīves laikā.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt",
+        "E": "Neattiecas uz mani."
+      }
+    },
+    "M21_04": {
+      "title": "Vai dzīves laikā bijusi sajūta, ka kāds ārējs spēks ietekmē vai kontrolē jūsu domas?",
+      "time": "Jebkurā dzīves laikā.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt",
+        "E": "Neattiecas uz mani."
+      }
+    },
+    "M21_05": {
+      "title": "Vai šīs pieredzes kādreiz radījušas bailes vai traucējušas rīkoties?",
+      "time": "Jebkurā dzīves laikā.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt",
+        "E": "Neattiecas uz mani."
+      }
+    },
+    "M21_06": {
+      "title": "Kādos apstākļos radušās iepriekš minētās neparastās uztveres vai pārliecības pieredzes? Var izvēlēties vairākas atbildes.",
+      "time": "Jebkurā dzīves laikā.",
+      "choices": {
+        "A": "Tikai iemiegot vai mostoties",
+        "B": "Pēc izteikta miega trūkuma",
+        "C": "Vielu lietošanas vai pārtraukšanas laikā",
+        "E": "Arī pilnā nomodā bez minētajiem apstākļiem",
+        "F": "Šādu pieredžu nav bijis",
+        "G": "Neatceros / nezinu",
+        "H": "Nevēlos atbildēt."
+      }
+    },
+    "M21_07": {
+      "title": "Vai mēdzat justies atdalīts/-a no sava ķermeņa vai apkārtējās pasaules?",
+      "time": "Jebkurā dzīves laikā.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt",
+        "E": "Neattiecas uz mani."
+      }
+    },
+    "M21_08": {
+      "title": "Vai dzīves laikā bijuši nomoda periodi, par kuriem vēlāk neatcerējāties savas darbības?",
+      "time": "Jebkurā dzīves laikā.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt",
+        "E": "Neattiecas uz mani."
+      }
+    },
+    "M21_09": {
+      "title": "Vai reizēm grūti atšķirt sapni no nomoda tūlīt pēc pamošanās?",
+      "time": "Jebkurā dzīves laikā.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt",
+        "E": "Neattiecas uz mani."
+      }
+    },
+    "M21_10": {
+      "title": "Vai citi cilvēki ir pauduši bažas par pēkšņām izmaiņām jūsu domāšanā?",
+      "time": "Jebkurā dzīves laikā.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt",
+        "E": "Neattiecas uz mani."
+      }
+    },
+    "M21_11": {
+      "title": "Vai kādreiz ar šādiem simptomiem esat vērsies/-usies pēc neatliekamas palīdzības?",
+      "time": "Jebkurā dzīves laikā.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / neesmu pārliecināts/-a",
+        "D": "Nevēlos atbildēt",
+        "E": "Neattiecas uz mani."
+      }
+    },
+    "M21_12": {
+      "title": "Cik ļoti neparasta uztvere vai atmiņas pārrāvumi ietekmē ikdienu?",
+      "time": "Pēdējās 28 dienas.",
+      "choices": {
+        "A": "Nemaz",
+        "B": "Nedaudz",
+        "C": "Vidēji",
+        "D": "Stipri",
+        "E": "Ļoti stipri",
+        "F": "Neattiecas uz mani",
+        "G": "Grūti pateikt",
+        "H": "Nevēlos atbildēt."
+      }
+    },
+    "M21_13": {
+      "title": "Kad pēdējoreiz bija neparastas uztveres vai pārliecības pieredze, par kuru atbildējāt šajā sadaļā?",
+      "time": "Laiks kopš pēdējās norādītās neparastās pieredzes.",
+      "choices": {
+        "A": "Pēdējo 24 stundu laikā",
+        "B": "Pirms vairāk nekā 24 stundām, bet ne vairāk kā 1 mēneša",
+        "C": "Pirms vairāk nekā 1 mēneša, bet ne vairāk kā 1 gada",
+        "D": "Pirms vairāk nekā 1 gada, bet ne vairāk kā 5 gadiem",
+        "E": "Pirms vairāk nekā 5 gadiem",
+        "F": "Tas nav noticis",
+        "G": "Neatceros / nezinu",
+        "H": "Nevēlos atbildēt."
+      }
+    },
+    "M21_14": {
+      "title": "Kura no šīm pieredzēm bijusi pēdējās 14 dienās? Izvēlieties visu atbilstošo.",
+      "choices": {
+        "A": "Neviena",
+        "B": "Balsis bez skaidra ārēja avota, ko citi nedzird",
+        "C": "Redzētais, ko citi neredz",
+        "D": "Noturīga pārliecība par apdraudējumu, kuras pamatu vēlaties pārrunāt",
+        "E": "Sajūta, ka ārējs spēks kontrolē domas",
+        "F": "Nezinu",
+        "G": "Nevēlos atbildēt"
+      },
+      "time": "Pēdējās 14 dienās. Reālu vardarbību vai diskrimināciju nedrīkst automātiski skaidrot kā maldīgu pārliecību."
+    },
+    "M21_15": {
+      "title": "Vai pašlaik vajadzīga palīdzība, lai pretotos balsīm vai neparastai pieredzei, kas mudina uz jums vai citiem bīstamu rīcību?",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu",
+        "D": "Nevēlos atbildēt"
+      },
+      "time": "Pašlaik."
+    },
+    "M21_16": {
+      "title": "Vai citi ir pamanījuši, ka jūsu runai kļuvis grūti izsekot vai domas bieži pārtrūkst?",
+      "time": "Pēdējie 3 mēneši.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / grūti pateikt",
+        "D": "Nevēlos atbildēt"
+      }
+    },
+    "M21_17": {
+      "title": "Vai salīdzinājumā ar savu ierasto stāvokli daudz mazāk runājat vai izrādāt emocijas?",
+      "time": "Pēdējie 3 mēneši.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / grūti pateikt",
+        "D": "Nevēlos atbildēt"
+      }
+    },
+    "M21_18": {
+      "title": "Vai salīdzinājumā ar agrāko ir būtiski grūtāk sākt darbības, kaut arī vēlētos tās veikt?",
+      "time": "Pēdējie 3 mēneši.",
+      "choices": {
+        "A": "Nē",
+        "B": "Jā",
+        "C": "Nezinu / grūti pateikt",
+        "D": "Nevēlos atbildēt"
+      }
+    },
+    "M21_19": {
+      "title": "Kad neparastās uztveres vai pārliecības pieredzes rodas attiecībā pret garastāvokli?",
+      "time": "Jebkurā dzīves laikā.",
+      "choices": {
+        "A": "Tikai izteikti nomāktā periodā",
+        "B": "Tikai izteikti paaugstinātas enerģijas periodā",
+        "C": "Arī ārpus šādiem periodiem",
+        "D": "Nav šādu pieredžu",
+        "E": "Nezinu",
+        "F": "Nevēlos atbildēt"
+      }
+    }
+  }
+}
