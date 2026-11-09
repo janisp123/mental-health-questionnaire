@@ -7,6 +7,14 @@ These rules apply to future development work in this repository, particularly lo
 - Read `docs/WORK_CHECKPOINT.md` first when present. It records the last verified section, exact next action, local-versus-remote synchronization state and outstanding blockers. Then consult the referenced section audit/test evidence and `docs/CHANGELOG.md`.
 - A local checkpoint does not imply that changes reached GitHub or Drive. State the actual synchronization status, and never restart completed sections solely because the chat history is missing.
 
+## Pending TD work and conflicts
+
+- `docs/TD_LIST.md` on **main** is the sole active backlog of owner-approved tasks for later Codex implementation. `docs/FUTURE_IDEAS.md` is not a task list and `docs/CHANGELOG.md` records completed work. Do not add new tasks to historical `develop`.
+- When explicitly asked to work through TD, read the current `docs/WORK_CHECKPOINT.md` and relevant code/release instructions first. Before implementation, compare each task with active work, latest `main`, existing features, other TD tasks, release gates, privacy/safety rules and any pending unsynchronized changes.
+- **If material conflict, ambiguity or overwrite risk exists, stop that task and explain the precise conflict, impact and safe alternatives to the project owner; wait for a decision before changing implementation or deciding how to reconcile the conflict.** Keep the task pending. Do not silently override the checkpoint, merge/rewrite branches, or publish an unapproved release.
+- If a task is already complete or obsolete, report the evidence and avoid repeating it. Unrelated clearly safe, already authorized tasks can proceed.
+- For non-conflicting tasks, follow the main-based short-lived branch and checked-PR workflow. Record finished changes in the changelog and remove the corresponding TD task only after verification. TD updates alone do not start background work.
+
 ## Progress updates — visible to the user
 
 - While actively working, send a brief user-visible progress message **approximately once per minute**, even if there is no major milestone. When practical, send updates more frequently (about every 20 seconds) during lengthy tool operations.
