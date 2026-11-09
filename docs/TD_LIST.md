@@ -16,6 +16,8 @@
   - Requires the repository owner to edit About manually, or an integration with the appropriate repository-settings permissions. Do not mark complete until metadata readback confirms the change.
   - Proposed description: “Free offline pre-appointment questionnaire in Latvian, English, Russian and Ukrainian. HTML/CSS/JavaScript, Python tooling and automated tests. Technical-review project; not a diagnostic tool.”
   - Proposed topics: `offline-first`, `questionnaire`, `mental-health`, `javascript`, `python`, `multilingual`, `playwright`, `github-actions`, `ai-assisted-development`.
+  - Rechecked 9 November 2026 during repository documentation maintenance: both authenticated edits still return HTTP 403. Metadata readback must confirm completion; file/PR write access does not grant this integration settings access.
+  - Manual completion: open the repository in a desktop browser (or use the phone browser's desktop-site mode), select the gear beside **About**, paste the description/topics above and save. Verify the public About panel before removing this task.
 
 ## Already resolved during branch migration (not a pending task)
 

@@ -34,6 +34,7 @@ For interrupted work, start with [`docs/WORK_CHECKPOINT.md`](WORK_CHECKPOINT.md)
 | Release-evidence verifier | `tools/186_RELEASE_GATE_CHECK_v1.py` | Checks evidence metadata; is not an automated browser or clinical test |
 | Active development status and checkpoints | `docs/CHANGELOG.md` | Short, authoritative current state and next action; keep this file focused on active work. |
 | Archived development history | `docs/history/CHANGELOG_HISTORY_2026-11-06.md` | Previous chronological pilot/full-build log, preserved for historical lookup; do not treat old IN_PROGRESS entries as current. |
+| Previous detailed working checkpoint | `docs/history/WORK_CHECKPOINT_2026-11-09_before-download-cleanup.md` | Exact checkpoint before current-state cleanup. Its release summaries are historical; use `docs/WORK_CHECKPOINT.md` to resume work. |
 | Historical Drive change log | `docs/drive-original/166_CHANGELOG_LV.md` | Frozen prior history, **never update during development** |
 | Older artifacts | `reference/history/` | Six outdated reference versions; not build inputs unless specifically needed |
 

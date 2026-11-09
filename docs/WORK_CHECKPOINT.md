@@ -1,72 +1,31 @@
 # Current working checkpoint
 
-README PDF link maintenance: changed the guide link to a direct GitHub file download, bypassing the repository preview. The endpoint returned HTTP 200 and the exact current 49,212-byte PDF. This documentation-only change alters no app/guide/package bytes and requires no Drive update. Phone-specific link handling has not been reproduced locally.
+Updated 9 November 2026. `main` is the sole active source. This file describes current state; previous release narratives belong in [history](history/WORK_CHECKPOINT_2026-11-09_before-download-cleanup.md) and the [changelog](CHANGELOG.md).
 
-Guide notice revision DONE: the four-language privacy/medical-purpose PDF and unchanged v0.2.4 HTML were downloaded from Drive and verified byte-identical. Current evidence: `docs/review/checks/2026-11-09-medical-purpose-guide-drive-sync.json`. Earlier readback records describe their original revisions.
+## Product and package
 
-Updated 9 November 2026. Migration DONE. Sole active source: `main`. Promotion PR #2 merged as `1a68d31f385208263be79de5da8c27e3df90354a`; its tree exactly matches the checked head `505187b9b127fe375dafab9b3e341cf4d863ac3b`.
+- Application: **v0.2.4**, LV/EN/RU/UK, 712 questions, 48 immutable source modules and 15 optional sections. Latvian is the reference and initial language. This is a technical-review project; human language/clinical review and physical-phone downloaded-file testing remain pending.
+- Build configuration: `src/questionnaire/build.json`. Preserve question IDs/codes and the `mental-pilot-recovery-v1` saved-data contract; follow [feature/module contracts](FEATURE_DEVELOPMENT.md).
+- Current HTML/PDF files, hashes and clean build provenance: [package manifest](../MH_Public_version/manifest.json). Package source: `1c928a49c5f3475bcc04e9e5992b8bf2dd1185b2`.
+- Current snapshot: [`review/v0.2.4-guide-medical-purpose`](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.4-guide-medical-purpose). Earlier tags and [archived packages](../archive/four-language/) preserve rollback; older product branches are historical.
 
-## Active product
+## Distribution and audience
 
-- Sole maintained product: LV/EN/RU/UK, 712 questions, 48 immutable source modules, 15 sections. Latvian remains the reference and initial language.
-- Default configuration: `src/questionnaire/build.json`, technical-review version `0.2.4-review+full-bank`.
-- Source history includes old main, develop’s two future-idea documentation changes, the four-language fixes and the approved plan.
-- Stable feature/module contracts: `docs/FEATURE_DEVELOPMENT.md`. Extend focused modules and current APIs; preserve IDs and saved-data compatibility.
+- Repository and [Drive review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb) contain the same verified HTML/PDF pair. Both were downloaded back byte-identical, with IDs, folder and sharing preserved. [Current readback record](review/checks/2026-11-09-medical-purpose-guide-drive-sync.json).
+- The one-page PDF contains opening instructions plus privacy, visit-preparation/non-diagnostic purpose and professional-interpretation notices in all four languages. It has no GitHub link, AI attribution or version-status prose.
+- The app footer links GitHub immediately after `made by Janis Paegle`. AI-assisted implementation attribution remains in repository documentation. Follow the [audience/privacy and attribution rules](../AGENTS.md).
+- README directs users to Drive for the HTML download, a direct PDF download, and explicit opening steps. GitHub HTML links are labelled as source; raw GitHub HTML is served as plain text. Phone-specific opening behavior remains unverified.
+- No app, guide, package or Drive bytes change during this repository documentation maintenance; no distribution update is pending.
 
-## Verification and artifacts
+## Verification evidence
 
-- All 28 maintained scripts pass locally in explicit memory mode, including 5,696 question/locale/phone-width renders and legacy recovery import. Both final GitHub workflows passed with real offline file opening (runs 42586610302 and 42586610292). Physical-device testing is separate.
-- `MH_Public_version/manifest.json` records the exact repository HTML/PDF hashes and source commit/tree. Package source commit: `1c928a49c5f3475bcc04e9e5992b8bf2dd1185b2`; source was clean when built.
-- Package CLI tests verify byte-identical repeated HTML/PDF/ZIP builds and refusal to overwrite. PDF has one A4 page and was visually inspected.
-- Repository and Drive contain the same verified four-language v0.2.4 HTML/PDF pair. Both downloads matched exact hashes; existing IDs, folder and sharing are preserved. Evidence: `docs/review/checks/2026-11-09-medical-purpose-guide-drive-sync.json`.
+- Current product/package PR #14: checked head `c534254a9d4448fcd9c379f104478df270ef54f6`, merge `6819c21b06c0c6307f9191b8f84a706aa6d05fc7`; trees matched.
+- Full CI [42602725439](https://github.com/janisp123/mental-health-questionnaire/actions/runs/42602725439) and app CI [42602725470](https://github.com/janisp123/mental-health-questionnaire/actions/runs/42602725470) passed with real offline file opening. The maintained suite includes 28 scripts, seven package tests and 5,696 question/locale/phone-width renders.
+- Local product checks used explicitly labelled memory loading. The PDF was rendered and visually inspected. Structural/automated checks do not establish translation accuracy, clinical validation or physical-device compatibility.
+- Standard verification/publication steps: [release policy](RELEASE_POLICY.md). Do not republish unchanged artifacts for repository-only edits.
 
-## History and rollback
+## Blocker and next action
 
-- Immutable tags `archive/main-before-four-language-2026-11-09`, `archive/develop-before-four-language-2026-11-09` and `archive/candidate-before-four-language-2026-11-09` preserve branch tips.
-- Old repository and old Drive three-language packages are separate under `archive/three-language/v0.2.0/` with hashes/provenance. The exact distributed four-language v0.2.1 pair is under `archive/four-language/v0.2.1/`.
-- Legacy Latvian downloads remain at their original URLs and are explicitly historical.
-- Previous detailed checkpoint: `docs/history/WORK_CHECKPOINT_2026-11-09_before-main.md`.
+The sole pending approved [TD item](TD_LIST.md) is the repository About description/topics. Both authenticated settings edits still returned **HTTP 403: Resource not accessible by integration** on 9 November 2026; settings remain unchanged. Approved description/topics and manual steps are in TD. Completion needs owner action or an integration with settings access, followed by metadata readback.
 
-## Next action
-
-For the next requested feature, branch from current main and follow `docs/FEATURE_DEVELOPMENT.md`. Build with the ordinary four-language configuration and preserve saved-data/module contracts. Migration and reviewer synchronization are complete; human language/clinical review and physical-device downloaded-file testing remain outstanding.
-
-Distribution snapshot tag: `review/v0.2.4-guide-medical-purpose` pins the current application/package; prior `review/v0.2.4-guide-instructions` and `review/v0.2.4` snapshots are preserved. Older product branches are historical; PR #1 was closed as superseded by PR #2, with its fixes preserved in main ancestry.
-
-## Latest documentation maintenance
-
-9 November 2026: README now foregrounds v0.2.2, current features/downloads, CI and a preview. RELEASE_POLICY describes the implemented CI/package gates and actual answer-saving behavior, with human/device/clinical gates clearly separate. This maintenance changes no application or distributed file bytes; existing Drive readback records remain valid.
-
-## TD coordination
-
-- Pending requests from the owner go in [the central TD list](TD_LIST.md) on `main`. Read it together with `AGENTS.md` and this checkpoint when starting TD work; follow its conflict preflight before making changes.
-- The former task to promote `main` for employer visibility is already substantially fulfilled by v0.2.2 and the updated README, so it is not an open TD task. The four-language source-link task and README portfolio improvements are completed via PR #7; only integration-denied repository metadata editing remains in TD.
-- This documentation-only coordination change does not alter the current v0.2.2 reviewer HTML/PDF or their distributed hashes.
-
-
-## Prior TD completion (v0.2.3)
-
-PR #7 merged as `7684de605c5cbf619cf4ecee05ebfb676a351abd`. All 28 maintained scripts pass locally in explicit memory mode; both GitHub workflows passed with real file opening at head `ec4f4b0` (runs 42597279496 and 42597279500). The checked merge tree is identical. The app About and one-page companion guide have localized explicit GitHub links in all four languages; clinician answer PDFs exclude the link. Guide PDF has four actual repository URI annotations. README documents the actual stack and owner versus AI-assisted roles. Both v0.2.3 Drive files read back byte-identical with IDs/sharing preserved. Prior v0.2.2 package is archived. Current source is `cd854fa`; current package manifest and TD-drive-sync record hold exact hashes.
-
-Completed TD entries were removed after verification. The sole remaining TD item is GitHub About description/topics: authenticated edits returned403 “Resource not accessible by integration.” No metadata change is assumed. Next TD action requires owner/settings access; do not repeat completed app/PDF/README work. Human language/clinical and physical-device review remain pending.
-
-
-## Current creator credit and attribution
-
-Owner clarified: AI/Codex attribution belongs in GitHub documentation only, not downloaded app/guide files. The app now displays `made by Janis Paegle GitHub 2026` with only GitHub linked immediately after the name; localized accessible labels and report exclusion remain. The old duplicate About link was removed. Current UI/catalog scan and PDF text/metadata contain no AI/Codex disclosure. The accurate repository README attribution remains intact.
-
-PR #9 merged as `20b5adb765f8dbe3c949518a7edf9bf736e31ab6` after both GitHub workflows passed with real offline file opening (42599111309 and 42599111111). The merge tree equals checked head b602d25. All 28 local scripts passed in explicit memory mode. Both v0.2.4 Drive files read back byte-identical, preserving IDs/sharing. The guide PDF bytes are unchanged from the previously checked guide; only its versioned filename was aligned. Current source is 3a8f922. Verification/provenance: `docs/review/checks/2026-11-09-opening-guide-drive-sync.json`.
-
-No new TD task was created: this was an explicit owner revision to the completed source-link placement. The sole repository-settings permission blocker remains unchanged.
-
-## Update-note audience policy
-
-The current v0.2.4 HTML was downloaded from Drive and its embedded update notes reviewed in LV/EN/RU/UK; no personal coordination or career-related entries were present. [AGENTS.md](../AGENTS.md#audience-and-privacy-in-update-notes) now limits app notes to patient/doctor-relevant changes and prohibits publishing private conversations or motives in public logs without explicit publication authorization. Feature and release instructions reference this rule. This documentation-only change adds no app note, changes no product bytes and requires no Drive replacement. The existing TD blocker and pending human/device reviews remain unchanged.
-
-## Opening-instructions guide revision
-
-The guide now contains HTML download/browser-opening instructions only in all four languages, with no external links or review-status statements. Seven package tests, exact-source package/ZIP verification and source-index integrity pass. The one-page PDF was rendered and visually checked. Application HTML remains `8d3dba5b3652b0d137f9c19cbfa30b9aec541dc779a576e243c09c8b89ab0b91`; new guide PDF is `6b0cfe0f3eaab3ed5360fd665053c2054e586596b6edba527e9595069b1141d4`. Prior v0.2.4 pair is preserved in `archive/four-language/v0.2.4/`. New package source: `ef965b3`; application version remains v0.2.4. No app entry is added. PR #12 merged as `fd2765b9c844321db81075e75c79e3567404ab9e` after full/app CI passed (42601226659 / 42601226670), with an identical checked merge tree. Replaced only the same Drive PDF ID; both files read back byte-identical and folder/sharing remain unchanged. Snapshot: `review/v0.2.4-guide-instructions`; previous `review/v0.2.4` tag is preserved. Next: start the next requested task from main; no further guide publication is pending.
-
-## Privacy and medical-purpose guide revision
-
-Added the privacy, visit-preparation/non-diagnostic purpose and professional-interpretation statements in LV/EN/RU/UK. Seven package tests and complete current-source HTML/PDF/ZIP verification pass; the one-page PDF was rendered and visually checked. App HTML, version, questions and notes are unchanged. Package source: `1c928a49c5f3475bcc04e9e5992b8bf2dd1185b2`; PDF SHA256: `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`. Prior pair preserved under `archive/four-language/v0.2.4-guide-instructions/`. PR #14 merged as `6819c21b06c0c6307f9191b8f84a706aa6d05fc7` after full/app CI passed (42602725439 / 42602725470), with an identical checked merge tree. Replaced the same Drive PDF ID; both downloads match repository bytes, with folder/sharing unchanged. Snapshot: `review/v0.2.4-guide-medical-purpose`. Next: start the next requested task from main; no guide publication is pending.
+For the next task, start from current `main`, read `AGENTS.md` and the relevant feature/release instructions, and use a short-lived branch with checked PR integration. Do not repeat completed package or Drive work. Keep this checkpoint current; link earlier details instead of appending another release narrative.

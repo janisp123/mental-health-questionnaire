@@ -642,3 +642,13 @@ PR #14 merged as `6819c21b06c0c6307f9191b8f84a706aa6d05fc7`; tree matches checke
 ### 2026-11-09 · Direct README PDF download
 
 The README guide link previously opened GitHub's repository file preview. Changed it to the direct raw-file endpoint and added a short download/PDF-viewer instruction with a mobile-browser fallback. The direct endpoint returned HTTP 200, `application/octet-stream`, a valid PDF header and 49,212 bytes exactly matching the current package (SHA256 `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`). This bypasses the preview; phone-specific link handling remains unverified. Documentation-only branch from main `3b4ac1187cdc09653db22eaa41a534b18d3a453f`; no app, guide, package, in-app note or Drive change. Next: merge after PR checks pass.
+
+### 2026-11-09 · Repository downloads and checkpoint maintenance
+
+Moved the README download/opening steps above the technical overview. Drive is the primary HTML download route; PDF uses the direct file endpoint. Labelled the GitHub HTML link as source and documented browser/PDF-viewer opening, progress-file handling and the actual phone-testing limit. Both raw HTML endpoints returned HTTP 200 and exact artifact bytes with `text/plain`, so they are not presented as a running app.
+
+Preserved the previous working checkpoint byte-for-byte in `docs/history/WORK_CHECKPOINT_2026-11-09_before-download-cleanup.md` and replaced the active file with current product/package pointers, synchronization, applicable evidence, blocker and next action. Added a standing rule against accumulating old release summaries in the active checkpoint; FILE_INDEX points to the archive.
+
+Retried the approved About description/topics via the authenticated API; both still returned HTTP 403 “Resource not accessible by integration.” Current description/topics remain unchanged. TD retains this one blocked item with copy-ready text and manual steps. This documentation-only work branches from `e31cbd9be2841b2dd64a1dd6afbf20af3e90a48c`; app, guide, questions, package, in-app notes and Drive are unchanged. Next: verify links/archive and merge after PR checks pass.
+
+Verification: changed documentation links resolve; current package/source pointers agree; checkpoint shortened from 1,181 to 439 words; archived checkpoint matches the original bytes exactly; `git diff --check` passes. Metadata readback confirms the original description and empty topics remain unchanged. Only Markdown files are changed.
