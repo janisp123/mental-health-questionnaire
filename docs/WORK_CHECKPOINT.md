@@ -1,5 +1,7 @@
 # Current working checkpoint
 
+README PDF link maintenance: changed the guide link to a direct GitHub file download, bypassing the repository preview. The endpoint returned HTTP 200 and the exact current 49,212-byte PDF. This documentation-only change alters no app/guide/package bytes and requires no Drive update. Phone-specific link handling has not been reproduced locally.
+
 Guide notice revision DONE: the four-language privacy/medical-purpose PDF and unchanged v0.2.4 HTML were downloaded from Drive and verified byte-identical. Current evidence: `docs/review/checks/2026-11-09-medical-purpose-guide-drive-sync.json`. Earlier readback records describe their original revisions.
 
 Updated 9 November 2026. Migration DONE. Sole active source: `main`. Promotion PR #2 merged as `1a68d31f385208263be79de5da8c27e3df90354a`; its tree exactly matches the checked head `505187b9b127fe375dafab9b3e341cf4d863ac3b`.
