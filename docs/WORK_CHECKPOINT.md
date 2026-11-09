@@ -33,3 +33,6 @@ Updated 8 November 2026, Riga time. Active branch: `develop`.
 
 - The repository reviewer copies are kept under `MH_Public_version`. The shared Google Drive folder is updated separately by the owner.
 - Human language and clinical review and physical Android testing are outstanding.
+## Approved pending tasks
+
+- See [central project TODO](TODO.md) for queued Codex implementation tasks. The GitHub-link attribution task is pending; no application or PDF edits have been made. This backlog does not supersede the current Android/human review next action above.
