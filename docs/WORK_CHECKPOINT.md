@@ -1,6 +1,6 @@
 # Current working checkpoint
 
-Guide notice revision IN PROGRESS: the new four-language privacy/medical-purpose PDF is checked locally; Drive still has the opening-instructions guide pending checked merge and readback. Earlier readback records describe their original revisions.
+Guide notice revision DONE: the four-language privacy/medical-purpose PDF and unchanged v0.2.4 HTML were downloaded from Drive and verified byte-identical. Current evidence: `docs/review/checks/2026-11-09-medical-purpose-guide-drive-sync.json`. Earlier readback records describe their original revisions.
 
 Updated 9 November 2026. Migration DONE. Sole active source: `main`. Promotion PR #2 merged as `1a68d31f385208263be79de5da8c27e3df90354a`; its tree exactly matches the checked head `505187b9b127fe375dafab9b3e341cf4d863ac3b`.
 
@@ -14,9 +14,9 @@ Updated 9 November 2026. Migration DONE. Sole active source: `main`. Promotion P
 ## Verification and artifacts
 
 - All 28 maintained scripts pass locally in explicit memory mode, including 5,696 question/locale/phone-width renders and legacy recovery import. Both final GitHub workflows passed with real offline file opening (runs 42586610302 and 42586610292). Physical-device testing is separate.
-- `MH_Public_version/manifest.json` records the exact repository HTML/PDF hashes and source commit/tree. Package source commit: `3a8f9227bda6a85b509703c17cf10b1b37de514e`; source was clean when built.
+- `MH_Public_version/manifest.json` records the exact repository HTML/PDF hashes and source commit/tree. Package source commit: `1c928a49c5f3475bcc04e9e5992b8bf2dd1185b2`; source was clean when built.
 - Package CLI tests verify byte-identical repeated HTML/PDF/ZIP builds and refusal to overwrite. PDF has one A4 page and was visually inspected.
-- Repository and Drive contain the same verified four-language v0.2.4 HTML/PDF pair. Both downloads matched exact hashes; existing IDs, folder and sharing are preserved. Evidence: `docs/review/checks/2026-11-09-opening-guide-drive-sync.json`.
+- Repository and Drive contain the same verified four-language v0.2.4 HTML/PDF pair. Both downloads matched exact hashes; existing IDs, folder and sharing are preserved. Evidence: `docs/review/checks/2026-11-09-medical-purpose-guide-drive-sync.json`.
 
 ## History and rollback
 
@@ -29,7 +29,7 @@ Updated 9 November 2026. Migration DONE. Sole active source: `main`. Promotion P
 
 For the next requested feature, branch from current main and follow `docs/FEATURE_DEVELOPMENT.md`. Build with the ordinary four-language configuration and preserve saved-data/module contracts. Migration and reviewer synchronization are complete; human language/clinical review and physical-device downloaded-file testing remain outstanding.
 
-Distribution snapshot tag: `review/v0.2.4` pins the current application/package; `review/v0.2.3` preserves its predecessor. Older product branches are historical; PR #1 was closed as superseded by PR #2, with its fixes preserved in main ancestry.
+Distribution snapshot tag: `review/v0.2.4-guide-medical-purpose` pins the current application/package; prior `review/v0.2.4-guide-instructions` and `review/v0.2.4` snapshots are preserved. Older product branches are historical; PR #1 was closed as superseded by PR #2, with its fixes preserved in main ancestry.
 
 ## Latest documentation maintenance
 
@@ -67,4 +67,4 @@ The guide now contains HTML download/browser-opening instructions only in all fo
 
 ## Privacy and medical-purpose guide revision
 
-Added the privacy, visit-preparation/non-diagnostic purpose and professional-interpretation statements in LV/EN/RU/UK. Seven package tests and complete current-source HTML/PDF/ZIP verification pass; the one-page PDF was rendered and visually checked. App HTML, version, questions and notes are unchanged. Package source: `1c928a49c5f3475bcc04e9e5992b8bf2dd1185b2`; PDF SHA256: `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`. Prior pair preserved under `archive/four-language/v0.2.4-guide-instructions/`. Next: merge after PR checks, replace the existing Drive PDF and verify both downloads/sharing.
+Added the privacy, visit-preparation/non-diagnostic purpose and professional-interpretation statements in LV/EN/RU/UK. Seven package tests and complete current-source HTML/PDF/ZIP verification pass; the one-page PDF was rendered and visually checked. App HTML, version, questions and notes are unchanged. Package source: `1c928a49c5f3475bcc04e9e5992b8bf2dd1185b2`; PDF SHA256: `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`. Prior pair preserved under `archive/four-language/v0.2.4-guide-instructions/`. PR #14 merged as `6819c21b06c0c6307f9191b8f84a706aa6d05fc7` after full/app CI passed (42602725439 / 42602725470), with an identical checked merge tree. Replaced the same Drive PDF ID; both downloads match repository bytes, with folder/sharing unchanged. Snapshot: `review/v0.2.4-guide-medical-purpose`. Next: start the next requested task from main; no guide publication is pending.

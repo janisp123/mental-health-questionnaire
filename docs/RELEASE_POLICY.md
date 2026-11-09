@@ -57,7 +57,7 @@ For a guide-only revision, retain the unchanged application version and HTML byt
 
 ## Evidence and historical material
 
-Current package/provenance: [repository manifest](../MH_Public_version/manifest.json). Latest verified reviewer synchronization: [Drive readback record](review/checks/2026-11-09-opening-guide-drive-sync.json). Ongoing status: [working checkpoint](WORK_CHECKPOINT.md). Rollback provenance: [three-language archive](../archive/three-language/v0.2.0/README.md) and [four-language v0.2.1 snapshot](../archive/four-language/v0.2.1/manifest.json).
+Current package/provenance: [repository manifest](../MH_Public_version/manifest.json). Latest verified reviewer synchronization: [Drive readback record](review/checks/2026-11-09-medical-purpose-guide-drive-sync.json). Ongoing status: [working checkpoint](WORK_CHECKPOINT.md). Rollback provenance: [three-language archive](../archive/three-language/v0.2.0/README.md) and [four-language v0.2.1 snapshot](../archive/four-language/v0.2.1/manifest.json).
 
 `docs/drive-original/`, historical checkpoints and `tools/186_RELEASE_GATE_CHECK_v1.py` preserve earlier policy/evidence formats. They do not override this current workflow or replace actual current test runs. No import/reconciliation task remains pending merely because an archived document describes one.
 
