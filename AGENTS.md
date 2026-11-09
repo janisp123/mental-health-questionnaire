@@ -7,6 +7,14 @@ These rules apply to future development work in this repository, particularly lo
 - Read `docs/WORK_CHECKPOINT.md` first when present. It records the last verified section, exact next action, local-versus-remote synchronization state and outstanding blockers. Then consult the referenced section audit/test evidence and `docs/CHANGELOG.md`.
 - A local checkpoint does not imply that changes reached GitHub or Drive. State the actual synchronization status, and never restart completed sections solely because the chat history is missing.
 
+## TD task conflict check — before implementation
+
+- Read `docs/TD_LIST.md` alongside the current checkpoint, release policy and relevant project rules **before starting any queued TD task**.
+- For each task, check for conflicts with work already in progress, other TD items, the current source of truth, branch/release restrictions, privacy or safety requirements, or unverified assumptions.
+- **If there is any material conflict, ambiguity affecting existing work, or risk of overwriting/removing changes, tell the project owner before making implementation changes to that task.** Explain what conflicts, the likely consequence, and the safe options; request a decision. Do not silently prioritize a TD item over active work, override safety/release rules, force-merge, or rewrite history to make the task fit.
+- Record the blocked task and reason in the work checkpoint if needed. Leave it pending in TD until the owner resolves the conflict. Unrelated, clearly safe tasks may proceed if already authorized.
+- Example: bringing `main` up to date for portfolio visibility must not be mistaken for approval to publish an unvalidated medical release. Check release gates and ask before any promotion that would violate them.
+
 ## Progress updates — visible to the user
 
 - While actively working, send a brief user-visible progress message **approximately once per minute**, even if there is no major milestone. When practical, send updates more frequently (about every 20 seconds) during lengthy tool operations.
