@@ -1,8 +1,10 @@
 """Regressions for the four-language current app's phone layout and locale changes."""
 import json
+import io
 import tempfile
 import unittest
 from pathlib import Path
+from pypdf import PdfReader
 
 from playwright.sync_api import sync_playwright
 from browser_helpers import act, backup, launch, open_page, restore
@@ -148,6 +150,34 @@ class CandidateQATests(unittest.TestCase):
         readback = backup(self.page)
         self.assertEqual(readback["answers"], ukrainian["answers"])
         self.assertEqual(readback["feedback"], ukrainian["feedback"])
+
+    def test_source_link_is_localized_in_about_and_absent_from_answer_report_pdf(self):
+        source = "https://github.com/janisp123/mental-health-questionnaire"
+        labels = {"lv": "Pirmkods un izstrāde (GitHub)", "en": "Source code and development (GitHub)",
+                  "ru": "Исходный код и разработка (GitHub)", "uk": "Початковий код і розробка (GitHub)"}
+        for lang, label in labels.items():
+            self.page.select_option("#language", lang)
+            about = self.page.locator("#project-information")
+            self.assertEqual(about.count(), 1)
+            about.locator("summary").click()
+            link = about.get_by_role("link", name=label, exact=True)
+            self.assertTrue(link.is_visible())
+            self.assertEqual(link.get_attribute("href"), source)
+            self.assertEqual(link.get_attribute("target"), "_blank")
+            self.assertIn("noreferrer", link.get_attribute("rel"))
+            self.assertIn("noopener", link.get_attribute("rel"))
+        act(self.page, "start")
+        act(self.page, "all")
+        self.assertEqual(self.page.locator(".question a[data-project-source]").count(), 0)
+        act(self.page, "results")
+        act(self.page, "doctor")
+        self.assertNotIn("github.com/janisp123", self.page.locator(".report-preview").inner_text())
+        reader = PdfReader(io.BytesIO(self.page.pdf(format="A4")))
+        for page in reader.pages:
+            self.assertNotIn("github.com/janisp123", page.extract_text())
+            for reference in page.get("/Annots", []):
+                annotation = reference.get_object()
+                self.assertNotEqual(annotation.get("/A", {}).get("/URI"), source)
 
 
 if __name__ == "__main__":

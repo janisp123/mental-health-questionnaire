@@ -1,11 +1,13 @@
 """Exercise the real package CLI, byte reproducibility and overwrite guard."""
 import hashlib
+import io
 import json
 import subprocess
 import sys
 import tempfile
 import unittest
 import zipfile
+from pypdf import PdfReader
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -15,6 +17,18 @@ from build_review_package import guide_pdf
 
 
 class ReviewPackageTests(unittest.TestCase):
+    def test_current_four_language_guide_has_clickable_repository_links(self):
+        guide = (ROOT / "docs/review/GUIDE_LV_EN_RU_UK.md").read_text(encoding="utf-8")
+        reader = PdfReader(io.BytesIO(guide_pdf(guide)))
+        self.assertEqual(len(reader.pages), 1)
+        targets = []
+        for page in reader.pages:
+            for reference in page.get("/Annots", []):
+                annotation = reference.get_object()
+                if annotation.get("/Subtype") == "/Link":
+                    targets.append(annotation.get("/A", {}).get("/URI"))
+        self.assertEqual(targets, ["https://github.com/janisp123/mental-health-questionnaire"] * 4)
+
     def run_builder(self, destination):
         return subprocess.run([sys.executable, str(ROOT / "tools/build_review_package.py"),
                                "--output-dir", str(destination)], cwd=ROOT, capture_output=True, text=True)

@@ -57,7 +57,7 @@
     },
     "development_build": {
       "status": "TECHNICAL_REVIEW_BUILD_NOT_RELEASED",
-      "version": "0.2.2-review+full-bank",
+      "version": "0.2.3-review+full-bank",
       "sections": 15,
       "questions": 712,
       "reference_language": "lv",
@@ -595,7 +595,7 @@
     "source_commit": "e2ce2fa86749012e8336eccca9c89898df3df69f",
     "verified_date": "2026-11-09",
     "auto_sync": false,
-    "synchronization": "VERIFIED: both current Drive files downloaded byte-identical to the main-promoted repository package; IDs, parents and sharing preserved.",
+    "synchronization": "Drive v0.2.2 remains verified; source-link v0.2.3 awaits checked merge and readback-verified replacement.",
     "files": [
       {
         "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",

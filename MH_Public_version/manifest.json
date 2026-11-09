@@ -1,8 +1,8 @@
 {
   "schema": "questionnaire-review-package-v1",
-  "version": "0.2.2-review+full-bank",
-  "source_commit": "e2ce2fa86749012e8336eccca9c89898df3df69f",
-  "source_tree": "f8468623b0254976ba9f3d98b3c8b6ab040f0387",
+  "version": "0.2.3-review+full-bank",
+  "source_commit": "cd854fa8315443e7fca8c5a86cbd12152b1b9fbc",
+  "source_tree": "59c6ec29e1d9227d74d96cfc3e5819681c2ec28e",
   "source_dirty": false,
   "build_epoch": 1794182400,
   "pdf_timestamp_mode": "reportlab-invariant",
@@ -16,20 +16,20 @@
   "guide_source": "docs/review/GUIDE_LV_EN_RU_UK.md",
   "files": [
     {
-      "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.2_REVIEW_BUILD.html",
-      "bytes": 1531023,
-      "sha256": "8e700bf8cf23b689f44a02c7c11e688284bff5d353408c37d33ff92042433cc9"
+      "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.3_REVIEW_BUILD.html",
+      "bytes": 1532081,
+      "sha256": "2ea357d37748529682f4c0a86ce1a618afdb5599d38d84a0fc253f44ecc9aa81"
     },
     {
-      "name": "188_README_LV_EN_RU_UK_v0.2.2_REVIEW_BUILD.pdf",
-      "bytes": 48320,
-      "sha256": "adbfe1f41acbdfc7275ae0068afff0379bbd37fa9a3b212d1166966d2e3bade1"
+      "name": "188_README_LV_EN_RU_UK_v0.2.3_REVIEW_BUILD.pdf",
+      "bytes": 49955,
+      "sha256": "defc5d5fe6271b98a0c3fe5fd01521b75eaf3d6415237b4ecb47bdf1fcf03627"
     }
   ],
   "zip": {
-    "name": "QUESTIONNAIRE_LV_EN_RU_UK_v0.2.2_REVIEW_BUILD.zip",
-    "bytes": 323482,
-    "sha256": "914603104f75405b8fafd2b32b9a9e2f5e3637c9bea912b02a373c336f4a3073"
+    "name": "QUESTIONNAIRE_LV_EN_RU_UK_v0.2.3_REVIEW_BUILD.zip",
+    "bytes": 324835,
+    "sha256": "15413f711b1c95b510dce93ec108ef8f1f5ead7720a3f779c39fa75bbf30b198"
   },
   "status": "TECHNICAL_REVIEW_NOT_CLINICALLY_VALIDATED"
 }
