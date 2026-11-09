@@ -1,19 +1,17 @@
-# Project TODO — approved pending work
+# Project TODO
 
-This is the central list of approved, pending implementation tasks on `develop`. Unlike [FUTURE_IDEAS.md](FUTURE_IDEAS.md), entries here are intended for implementation when work resumes. Do not treat them as completed without testing. Follow [WORK_CHECKPOINT.md](WORK_CHECKPOINT.md) for the current in-progress action and avoid interrupting a release-blocking test or review.
+This is a **running list of tasks requested for later**, especially when Codex usage is available. Add new tasks here when the project owner asks. This file is **not a changelog**, progress diary, or archive of completed work.
 
-## Pending
+- Keep entries short, actionable, and unchecked until verified.
+- When a task is finished, remove it from this list and record the implementation details in `docs/CHANGELOG.md`.
+- The current in-progress action and handoff stay in `docs/WORK_CHECKPOINT.md`. Future possibilities that are **not** approved tasks stay in `docs/FUTURE_IDEAS.md`.
 
-- [ ] **Add a GitHub source link to project information and the PDF user guide.**
-  - **Why:** Help clinicians, contributors, and potential employers inspect the project's source code, documentation, and development history.
-  - **Link:** https://github.com/janisp123/mental-health-questionnaire (the current working code is on the `develop` branch).
-  - **In-app:** Include a small, accessible, localized "Source code and development" link within the project information/about area (LV, EN, RU), not in the questionnaire question flow.
-  - **PDF:** Add the clickable link discreetly to the **project/reviewer information PDF guide** in all three languages. Update the maintained Markdown source (`docs/review/README_LV_EN_RU_v0.2.0.md` or its current successor) before regenerating the corresponding PDF.
-  - **Do not add** the GitHub link to the patient/clinician answer report PDF; keep that focused on the respondent's answers. Do not modify the frozen v16 references.
-  - **Safety and claims:** Keep the existing disclaimer that the questionnaire is not a clinically validated diagnostic tool. Do not make the offline app automatically request the network or send user answers when it displays the link; following the external link must be a deliberate user action.
-  - **Acceptance checks:** Review link text and destinations in LV/EN/RU, verify the built HTML still functions offline, render and visually inspect the PDF, run relevant checks, and record the completed work in `docs/CHANGELOG.md`. Refresh shared reviewer artifacts as required by `AGENTS.md` when the change is implemented.
-  - **Status:** Pending; documentation task recorded 2026-11-09. No application or PDF changes made yet.
+## To do
 
-## Completed
-
-Move an item here only after implementation and verification, with a reference to the changelog or commit.
+- [ ] **Add the project's GitHub link to the in-app project information and the trilingual PDF user guide.**
+  - Link: https://github.com/janisp123/mental-health-questionnaire (current working code: `develop`).
+  - Add a small, localized source-code/development link in the app's project information (LV, EN, RU).
+  - Update the maintained trilingual reviewer-guide source and regenerate the guide PDF with a clickable link.
+  - **Do not** add the link to the patient's/doctor's answer report PDF or modify frozen reference files.
+  - Keep the non-diagnostic disclaimer; opening GitHub must require a deliberate click and must not transmit answers.
+  - Verify links, translations, offline operation, PDF appearance, and relevant automated tests before marking complete.
