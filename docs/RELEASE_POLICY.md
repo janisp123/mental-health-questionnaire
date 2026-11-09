@@ -36,7 +36,7 @@ Human language/clinical review and physical-phone downloaded-file testing remain
 
 1. Use a short-lived branch from current main. Preserve question IDs, codes, conditions and the `mental-pilot-recovery-v1` import contract, or supply an explicit tested migration for an approved change.
 2. Run focused checks and `python tools/run_checks.py` for shared runtime, language, source or packaging changes. Syntax checks alone are insufficient.
-3. Update all active locales and their change notes when user-facing wording/behavior changes. Obtain human review where the claim or wording requires it.
+3. Update all active locales and their change notes when user-facing wording/behavior changes. Read the notes in every locale against the [audience and privacy rules](../AGENTS.md#audience-and-privacy-in-update-notes). Keep private coordination and repository-only work out of app notes and the downloadable guide; repository-only maintenance does not require a reviewer package. Obtain human review where the claim or wording requires it.
 4. Inspect failed/unknown checks and resolve them before claiming verification. Never manufacture or reuse unrelated PASS evidence.
 5. Merge the checked head through a PR. If the resulting product tree differs, verify the affected behavior again before distribution.
 

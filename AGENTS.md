@@ -38,6 +38,14 @@ These rules apply to future development work in this repository, particularly lo
 - When user-facing questionnaire text or behavior changes, prepend a dated entry to the in-app notesHistory list in all active locales (currently LV/EN/RU/UK) together and retain the latest ten entries. Use Riga local time and verify the visible text and all active catalogs before committing.
 - Before editing user-facing wording or translations, read `docs/LANGUAGE_STYLE_GUIDE.md` and apply its LV/RU/EN/UK address and tone conventions. Preserve frozen source question content unless explicitly asked to edit the question bank.
 
+## Audience and privacy in update notes
+
+- The application's `notesHistory` is for patients and doctors. Include only concise descriptions of changes relevant to using the questionnaire, guide or reports.
+- Keep employer/portfolio/career goals, repository presentation or settings, branch/CI logistics, AI development workflow and private project coordination out of the application's update list and downloadable guide.
+- Repository-only maintenance does not require an in-app update entry or a new reviewer package. Do not add an app entry announcing this rule or a cleanup of private information.
+- Public repository logs may record neutral technical outcomes. Do not copy private conversations, prompts, personal motives or owner decisions into public files unless explicitly authorized for publication. Permission to implement a request is not permission to publish the conversation behind it.
+- Before publishing, read the actual update notes in every active locale and confirm they fit the intended audience. A keyword scan alone is insufficient; preserve unrelated clinical and privacy wording.
+
 ## Attribution and creator-credit preference
 
 - Keep accurate AI/Codex implementation attribution in repository documentation only. Do not add authorship/AI-assistance disclosures to the downloadable questionnaire UI, user guide, reports or their metadata.

@@ -612,3 +612,9 @@ PR #9 merged as `20b5adb765f8dbe3c949518a7edf9bf736e31ab6` after full/app GitHub
 Current app UI and guide PDF text/metadata contain no AI/Codex attribution. Truthful AI-assisted implementation information remains in the repository README only. AGENTS records this owner preference to prevent future accidental product disclosure; frozen questions are unchanged.
 
 Drive HTML replaced in place and PDF versioned name aligned without changing its bytes. Both downloaded files match the checked v0.2.4 package: HTML `8d3dba5b3652b0d137f9c19cbfa30b9aec541dc779a576e243c09c8b89ab0b91`; PDF `defc5d5fe6271b98a0c3fe5fd01521b75eaf3d6415237b4ecb47bdf1fcf03627`. IDs/folder/sharing are unchanged; exact v0.2.3 is archived and review/v0.2.4 pins the new product snapshot. Evidence: `docs/review/checks/2026-11-09-credit-link-drive-sync.json`. Existing permission-blocked repository settings TD item is unchanged.
+
+### 2026-11-09 · Update-note audience policy
+
+Added standing audience/privacy rules to AGENTS and linked them from feature/release instructions. App update notes describe patient/doctor-relevant product changes; repository-only maintenance does not create an app entry or reviewer distribution. Public technical logs must not reproduce private conversations or motives without explicit publication authorization.
+
+Reviewed the embedded update notes in all four locales in the current Drive HTML; no prohibited entries were found. No application, guide, question-bank or package bytes changed, and no in-app entry was added. Work branches from main checkpoint `80b9172ab5ab77ace14a22ed41a0b11a5a741755`. Verification: relative documentation links and `git diff --check` pass; `verify_review_package.py MH_Public_version` confirms exact current-source HTML/PDF and checksums. Downloaded Drive HTML is byte-identical to the repository artifact. Next: merge this documentation change only after its PR checks pass; no Drive update is required.

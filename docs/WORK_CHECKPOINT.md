@@ -54,3 +54,7 @@ Owner clarified: AI/Codex attribution belongs in GitHub documentation only, not 
 PR #9 merged as `20b5adb765f8dbe3c949518a7edf9bf736e31ab6` after both GitHub workflows passed with real offline file opening (42599111309 and 42599111111). The merge tree equals checked head b602d25. All 28 local scripts passed in explicit memory mode. Both v0.2.4 Drive files read back byte-identical, preserving IDs/sharing. The guide PDF bytes are unchanged from the previously checked guide; only its versioned filename was aligned. Current source is 3a8f922. Verification/provenance: `docs/review/checks/2026-11-09-credit-link-drive-sync.json`.
 
 No new TD task was created: this was an explicit owner revision to the completed source-link placement. The sole repository-settings permission blocker remains unchanged.
+
+## Update-note audience policy
+
+The current v0.2.4 HTML was downloaded from Drive and its embedded update notes reviewed in LV/EN/RU/UK; no personal coordination or career-related entries were present. [AGENTS.md](../AGENTS.md#audience-and-privacy-in-update-notes) now limits app notes to patient/doctor-relevant changes and prohibits publishing private conversations or motives in public logs without explicit publication authorization. Feature and release instructions reference this rule. This documentation-only change adds no app note, changes no product bytes and requires no Drive replacement. The existing TD blocker and pending human/device reviews remain unchanged.
