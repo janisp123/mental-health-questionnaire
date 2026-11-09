@@ -6,6 +6,8 @@ This is a **running list of tasks requested for later**, especially when Codex u
 - When a task is finished, remove it from this list and record the implementation details in `docs/CHANGELOG.md`.
 - The current in-progress action and handoff stay in `docs/WORK_CHECKPOINT.md`. Future possibilities that are **not** approved tasks stay in `docs/FUTURE_IDEAS.md`.
 
+**Preflight rule for Codex:** Before starting a TD task, compare it with current work, project rules, release gates, and other TD tasks. If it conflicts or might overwrite work, **report the exact conflict and safe options to the owner and wait for their decision before implementing that task**. Do not silently resolve or bypass the conflict. Leave blocked items unchecked.
+
 ## To do
 
 - [ ] **Add the project's GitHub link to the in-app project information and the trilingual PDF user guide.**
