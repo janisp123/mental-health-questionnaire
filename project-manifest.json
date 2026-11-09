@@ -596,7 +596,7 @@
     "source_commit": "1c928a49c5f3475bcc04e9e5992b8bf2dd1185b2",
     "verified_date": "2026-11-09",
     "auto_sync": false,
-    "synchronization": "PENDING: privacy/medical-purpose guide checked locally; Drive remains the opening-instructions guide until checked merge and readback.",
+    "synchronization": "VERIFIED: privacy/medical-purpose PDF and unchanged v0.2.4 HTML read back byte-identical; existing IDs, folder and sharing preserved.",
     "files": [
       {
         "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
@@ -621,7 +621,7 @@
       "uk"
     ],
     "source_readme": "docs/review/GUIDE_LV_EN_RU_UK.md",
-    "promotion_commit": "fd2765b9c844321db81075e75c79e3567404ab9e",
+    "promotion_commit": "6819c21b06c0c6307f9191b8f84a706aa6d05fc7",
     "last_built_date": "2026-11-09"
   }
 }

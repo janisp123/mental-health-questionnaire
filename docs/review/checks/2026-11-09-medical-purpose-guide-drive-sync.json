@@ -1,0 +1,35 @@
+{
+  "verified_at": "2026-11-09T10:44:11.181755+00:00",
+  "main_merge": "6819c21b06c0c6307f9191b8f84a706aa6d05fc7",
+  "checked_head": "c534254a9d4448fcd9c379f104478df270ef54f6",
+  "merge_tree_matches_checked_head": true,
+  "source_commit": "1c928a49c5f3475bcc04e9e5992b8bf2dd1185b2",
+  "files": [
+    {
+      "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.html",
+      "bytes": 1532252,
+      "sha256": "8d3dba5b3652b0d137f9c19cbfa30b9aec541dc779a576e243c09c8b89ab0b91",
+      "verified_byte_identical": true
+    },
+    {
+      "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "name": "188_README_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.pdf",
+      "bytes": 49212,
+      "sha256": "b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9",
+      "verified_byte_identical": true
+    }
+  ],
+  "folder_id": "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+  "ids_folder_sharing_preserved": true,
+  "guide_only_revision": true,
+  "html_bytes_unchanged": true,
+  "pdf_pages": 1,
+  "pdf_link_annotations": 0,
+  "pdf_content": "Opening instructions and privacy, non-diagnostic visit-preparation purpose, professional-only interpretation notice in LV/EN/RU/UK",
+  "ci_runs": {
+    "full": 42602725439,
+    "app": 42602725470,
+    "conclusion": "success"
+  }
+}
