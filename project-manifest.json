@@ -54,7 +54,7 @@
       "pilot_prototype": "archive/pilot/",
       "three_language_review": "archive/three-language/v0.2.0/manifest.json",
       "four_language_baseline": "archive/four-language/v0.2.1/manifest.json",
-      "previous_four_language_package": "archive/four-language/v0.2.2/manifest.json"
+      "previous_four_language_package": "archive/four-language/v0.2.3/manifest.json"
     },
     "development_build": {
       "status": "TECHNICAL_REVIEW_BUILD_NOT_RELEASED",
@@ -592,21 +592,21 @@
     "folder_url": "https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
     "purpose": "PROFESSIONAL_TECHNICAL_REVIEW_CANDIDATE_NOT_PUBLIC_RELEASE",
     "reference_language": "lv",
-    "version": "0.2.3",
-    "source_commit": "cd854fa8315443e7fca8c5a86cbd12152b1b9fbc",
+    "version": "0.2.4",
+    "source_commit": "3a8f9227bda6a85b509703c17cf10b1b37de514e",
     "verified_date": "2026-11-09",
     "auto_sync": false,
-    "synchronization": "Drive v0.2.3 remains verified; v0.2.4 creator-credit placement awaits checked publication.",
+    "synchronization": "VERIFIED: v0.2.4 creator-credit link HTML and unchanged guide PDF read back byte-identical; existing IDs, folder and sharing preserved.",
     "files": [
       {
         "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
-        "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.3_REVIEW_BUILD.html",
-        "sha256": "2ea357d37748529682f4c0a86ce1a618afdb5599d38d84a0fc253f44ecc9aa81",
-        "bytes": 1532081
+        "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.html",
+        "sha256": "8d3dba5b3652b0d137f9c19cbfa30b9aec541dc779a576e243c09c8b89ab0b91",
+        "bytes": 1532252
       },
       {
         "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
-        "name": "188_README_LV_EN_RU_UK_v0.2.3_REVIEW_BUILD.pdf",
+        "name": "188_README_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.pdf",
         "sha256": "defc5d5fe6271b98a0c3fe5fd01521b75eaf3d6415237b4ecb47bdf1fcf03627",
         "bytes": 49955
       }
@@ -621,7 +621,7 @@
       "uk"
     ],
     "source_readme": "docs/review/GUIDE_LV_EN_RU_UK.md",
-    "promotion_commit": "7684de605c5cbf619cf4ecee05ebfb676a351abd",
+    "promotion_commit": "20b5adb765f8dbe3c949518a7edf9bf736e31ab6",
     "last_built_date": "2026-11-09"
   }
 }

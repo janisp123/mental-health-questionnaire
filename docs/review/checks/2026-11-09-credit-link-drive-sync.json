@@ -1,0 +1,34 @@
+{
+  "verified_at": "2026-11-09T10:16:18.382578+00:00",
+  "main_merge": "20b5adb765f8dbe3c949518a7edf9bf736e31ab6",
+  "checked_head": "b602d2543e46efac2c0f88ebcaa866c6b5e08e4f",
+  "merge_tree_matches_checked_head": true,
+  "source_commit": "3a8f9227bda6a85b509703c17cf10b1b37de514e",
+  "files": [
+    {
+      "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.html",
+      "bytes": 1532252,
+      "sha256": "8d3dba5b3652b0d137f9c19cbfa30b9aec541dc779a576e243c09c8b89ab0b91",
+      "verified_byte_identical": true
+    },
+    {
+      "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "name": "188_README_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.pdf",
+      "bytes": 49955,
+      "sha256": "defc5d5fe6271b98a0c3fe5fd01521b75eaf3d6415237b4ecb47bdf1fcf03627",
+      "verified_byte_identical": true
+    }
+  ],
+  "folder_id": "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+  "ids_folder_sharing_preserved": true,
+  "guide_bytes_unchanged_pdf_renamed_in_place": true,
+  "ci_runs": {
+    "full": 42599111309,
+    "app": 42599111111,
+    "conclusion": "success"
+  },
+  "creator_credit": "made by Janis Paegle GitHub 2026",
+  "app_and_guide_have_no_ai_codex_disclosure": true,
+  "repo_readme_retains_accurate_ai_attribution": true
+}

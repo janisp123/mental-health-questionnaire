@@ -38,6 +38,12 @@ These rules apply to future development work in this repository, particularly lo
 - When user-facing questionnaire text or behavior changes, prepend a dated entry to the in-app notesHistory list in all active locales (currently LV/EN/RU/UK) together and retain the latest ten entries. Use Riga local time and verify the visible text and all active catalogs before committing.
 - Before editing user-facing wording or translations, read `docs/LANGUAGE_STYLE_GUIDE.md` and apply its LV/RU/EN/UK address and tone conventions. Preserve frozen source question content unless explicitly asked to edit the question bank.
 
+## Attribution and creator-credit preference
+
+- Keep accurate AI/Codex implementation attribution in repository documentation only. Do not add authorship/AI-assistance disclosures to the downloadable questionnaire UI, user guide, reports or their metadata.
+- In the app footer, keep the short GitHub link immediately after “made by Janis Paegle” and before the year. Preserve localized accessible labels, deliberate HTTPS navigation, no-referrer and noopener/noreferrer. Do not duplicate the source link in About or insert it into clinician answer reports.
+- This preference concerns product attribution; do not edit frozen question content or remove unrelated research/clinical wording based on a keyword search.
+
 ## Review package and document output
 
 - Choose document formats for the intended reader and delivery channel; do not assume a file called `README` should be Markdown.
