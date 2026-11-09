@@ -598,3 +598,9 @@ Owner clarified that AI/Codex attribution belongs in GitHub documentation only, 
 ### 2026-11-09 · Creator-credit placement — focused verification passed
 
 The new placement regression failed on v0.2.3, then passed after moving the existing link from the About details to a short GitHub anchor immediately after “made by Janis Paegle,” before the year. Localized accessible names, explicit HTTPS navigation, no-referrer and noopener/noreferrer are preserved. All four app UI views and extracted PDF guide text contain no AI/Codex disclosure; the truthful attribution remains only in repository documentation. Seven package and six multilingual QA tests pass, including clinician-PDF exclusion. Companion guide wording/links are unchanged; previous v0.2.3 bytes are archived before v0.2.4 generation.
+
+### 2026-11-09 · Creator-credit publication verification
+
+All 28 maintained scripts pass for clean source `3a8f9227bda6a85b509703c17cf10b1b37de514e`. The app displays “made by Janis Paegle GitHub 2026,” with only GitHub linked immediately after the name and no duplicate About link. Accessible source labels remain localized in all four languages. App UI/catalog scan and extracted guide text/metadata contain no AI/Codex attribution; the repository README retains the accurate AI-assisted implementation section. The guide PDF bytes are unchanged from the previously visually checked v0.2.3 guide. Existing report-PDF exclusion and offline checks pass. Screenshot updated to match visible credit. Evidence: `docs/review/checks/2026-11-09-creator-credit.json`.
+
+New v0.2.4 HTML hash: `8d3dba5b3652b0d137f9c19cbfa30b9aec541dc779a576e243c09c8b89ab0b91`; guide PDF hash remains `defc5d5fe6271b98a0c3fe5fd01521b75eaf3d6415237b4ecb47bdf1fcf03627`. Current Drive remains verified v0.2.3 pending checked merge and readback-verified replacement.
