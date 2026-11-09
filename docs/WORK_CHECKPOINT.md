@@ -1,6 +1,6 @@
 # Current working checkpoint
 
-Guide revision DONE: the opening-instructions-only PDF and unchanged v0.2.4 HTML were downloaded from Drive and verified byte-identical to the checked repository pair. Current readback: `docs/review/checks/2026-11-09-opening-guide-drive-sync.json`.
+Guide notice revision IN PROGRESS: the new four-language privacy/medical-purpose PDF is checked locally; Drive still has the opening-instructions guide pending checked merge and readback. Earlier readback records describe their original revisions.
 
 Updated 9 November 2026. Migration DONE. Sole active source: `main`. Promotion PR #2 merged as `1a68d31f385208263be79de5da8c27e3df90354a`; its tree exactly matches the checked head `505187b9b127fe375dafab9b3e341cf4d863ac3b`.
 
@@ -64,3 +64,7 @@ The current v0.2.4 HTML was downloaded from Drive and its embedded update notes 
 ## Opening-instructions guide revision
 
 The guide now contains HTML download/browser-opening instructions only in all four languages, with no external links or review-status statements. Seven package tests, exact-source package/ZIP verification and source-index integrity pass. The one-page PDF was rendered and visually checked. Application HTML remains `8d3dba5b3652b0d137f9c19cbfa30b9aec541dc779a576e243c09c8b89ab0b91`; new guide PDF is `6b0cfe0f3eaab3ed5360fd665053c2054e586596b6edba527e9595069b1141d4`. Prior v0.2.4 pair is preserved in `archive/four-language/v0.2.4/`. New package source: `ef965b3`; application version remains v0.2.4. No app entry is added. PR #12 merged as `fd2765b9c844321db81075e75c79e3567404ab9e` after full/app CI passed (42601226659 / 42601226670), with an identical checked merge tree. Replaced only the same Drive PDF ID; both files read back byte-identical and folder/sharing remain unchanged. Snapshot: `review/v0.2.4-guide-instructions`; previous `review/v0.2.4` tag is preserved. Next: start the next requested task from main; no further guide publication is pending.
+
+## Privacy and medical-purpose guide revision
+
+Added the privacy, visit-preparation/non-diagnostic purpose and professional-interpretation statements in LV/EN/RU/UK. Seven package tests and complete current-source HTML/PDF/ZIP verification pass; the one-page PDF was rendered and visually checked. App HTML, version, questions and notes are unchanged. Package source: `1c928a49c5f3475bcc04e9e5992b8bf2dd1185b2`; PDF SHA256: `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`. Prior pair preserved under `archive/four-language/v0.2.4-guide-instructions/`. Next: merge after PR checks, replace the existing Drive PDF and verify both downloads/sharing.
