@@ -9,6 +9,9 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "tools"))
+from verify_review_package import verify
+from build_review_package import guide_pdf
 
 
 class ReviewPackageTests(unittest.TestCase):
@@ -61,6 +64,46 @@ class ReviewPackageTests(unittest.TestCase):
             self.assertIn("Output directory already exists", result.stderr)
             self.assertEqual(sentinel.read_text(), "previous package")
             self.assertEqual(list(folder.iterdir()), [sentinel])
+
+    def test_verifier_rejects_stale_runtime_even_with_matching_recorded_checksum(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp) / "review"
+            self.assertEqual(self.run_builder(folder).returncode, 0)
+            manifest = json.loads((folder / "manifest.json").read_text())
+            manifest["source_dirty"] = False
+            record = next(item for item in manifest["files"] if item["name"].endswith(".html"))
+            path = folder / record["name"]
+            path.write_bytes(path.read_bytes().replace(b"<script>", b'<script>throw new Error("synthetic stale runtime");', 1))
+            record.update(bytes=path.stat().st_size, sha256=hashlib.sha256(path.read_bytes()).hexdigest())
+            (folder / "manifest.json").write_text(json.dumps(manifest))
+            with self.assertRaisesRegex(AssertionError, "runtime/styles differ"):
+                verify(folder)
+
+    def test_verifier_rejects_stale_guide_even_with_matching_recorded_checksum(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp) / "review"
+            self.assertEqual(self.run_builder(folder).returncode, 0)
+            manifest = json.loads((folder / "manifest.json").read_text())
+            manifest["source_dirty"] = False
+            record = next(item for item in manifest["files"] if item["name"].endswith(".pdf"))
+            path = folder / record["name"]
+            path.write_bytes(guide_pdf("# English\n\nSynthetic obsolete guide instructions."))
+            record.update(bytes=path.stat().st_size, sha256=hashlib.sha256(path.read_bytes()).hexdigest())
+            (folder / "manifest.json").write_text(json.dumps(manifest))
+            with self.assertRaisesRegex(AssertionError, "PDF differs from current guide"):
+                verify(folder)
+
+    def test_verifier_requires_one_html_and_one_pdf(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp) / "review"
+            self.assertEqual(self.run_builder(folder).returncode, 0)
+            manifest = json.loads((folder / "manifest.json").read_text())
+            html = next(item for item in manifest["files"] if item["name"].endswith(".html"))
+            (folder / "duplicate.html").write_bytes((folder / html["name"]).read_bytes())
+            manifest.update(source_dirty=False, files=[html, {**html, "name": "duplicate.html"}])
+            (folder / "manifest.json").write_text(json.dumps(manifest))
+            with self.assertRaisesRegex(AssertionError, "one HTML and one PDF"):
+                verify(folder)
 
 
 if __name__ == "__main__":

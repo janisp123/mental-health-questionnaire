@@ -1,6 +1,6 @@
 # Ukrainian translation checkpoint
 
-Updated 8 November 2026, Riga time. Branch `develop`.
+Updated 9 November 2026, Riga time. Active source: `main`; previous develop isolation notes are retained only as history.
 
 | Scope | Status |
 | --- | --- |

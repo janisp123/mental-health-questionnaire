@@ -54,7 +54,7 @@ For interrupted work, start with [`docs/WORK_CHECKPOINT.md`](WORK_CHECKPOINT.md)
 - `tools/`: existing original build helpers and new verification tools.
 - `.github/workflows/app-component-checks.yml`: focused checks for app, screen, style, locale and synthetic fixture edits.
 - `.github/workflows/questionnaire-checks.yml`: full source, build, headless Chromium and non-release artifact verification for question-bank and full-build changes.
-- `main` branch is **not** the active source tree; `develop` holds the import.
+- `main` is the sole active four-language source tree; the imported references remain frozen.
 
 ## Future ideas — not active work
 
@@ -62,7 +62,7 @@ Optional long-term possibilities are parked in [`docs/FUTURE_IDEAS.md`](FUTURE_I
 
 ## Distribution — separate from development
 
-Google Drive's [professional review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb) contains the current 712-question, 15-section technical-review candidate. The HTML and Latvian PDF were rebuilt from Git sources and replaced in place; their Drive IDs and links are preserved. SHA-256 values and source commit are recorded in `project-manifest.json`. The older Drive v16 copies were removed; frozen v16 references remain under `reference/baseline/`. Human language review is pending.
+Google Drive's [professional review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb) contains the current 712-question, 15-section technical-review candidate. The four-language HTML and PDF were rebuilt from Git sources and replaced in place; their Drive IDs and links are preserved. SHA-256 values and source commit are recorded in `project-manifest.json`. The older Drive v16 copies were removed; frozen v16 references remain under `reference/baseline/`. Human language review is pending.
 
 ## Rules for identifying the latest version
 

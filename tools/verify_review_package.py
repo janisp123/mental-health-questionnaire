@@ -7,6 +7,7 @@ import re
 import zipfile
 from pathlib import Path
 import build_questionnaire as build
+from build_review_package import guide_pdf
 
 
 def verify(folder, with_zip=False):
@@ -14,15 +15,21 @@ def verify(folder, with_zip=False):
     assert manifest["schema"] == "questionnaire-review-package-v1"
     assert manifest["source_dirty"] is False, "Package was built from uncommitted source"
     assert len(manifest["files"]) == 2
+    assert sorted(Path(record["name"]).suffix for record in manifest["files"]) == [".html", ".pdf"], "Expected one HTML and one PDF"
+    bundle = build.build_bundle()
+    config = build.read_json(build.QUESTIONNAIRE / "build.json")
+    assert manifest["version"] == bundle["version"] and manifest["languages"] == list(bundle["ui"])
     for record in manifest["files"]:
         assert Path(record["name"]).name == record["name"], "Invalid package filename"
         content = (folder / record["name"]).read_bytes()
         assert len(content) == record["bytes"] and hashlib.sha256(content).hexdigest() == record["sha256"], record["name"]
         if record["name"].endswith(".html"):
             embedded = re.search(r'<script id="questionnaire-data" type="application/json">(.*?)</script>', content.decode("utf-8"), re.S)
-            assert embedded and json.loads(embedded.group(1)) == build.build_bundle(), "Package differs from current source"
+            assert embedded and json.loads(embedded.group(1)) == bundle, "Package differs from current source"
+            assert content == build.make_html(bundle).encode("utf-8"), "HTML runtime/styles differ from current source"
         else:
             assert record["name"].endswith(".pdf") and content.startswith(b"%PDF-"), "Expected HTML/PDF pair"
+            assert content == guide_pdf((build.ROOT / config["reviewGuide"]).read_text(encoding="utf-8")), "PDF differs from current guide"
     if with_zip:
         record = manifest["zip"]
         assert Path(record["name"]).name == record["name"]
