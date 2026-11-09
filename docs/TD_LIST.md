@@ -10,22 +10,12 @@
 
 ## To do
 
-- [ ] **Add the public GitHub source link to the app's project information and the companion PDF user guide.**
-  - Link to the repository: https://github.com/janisp123/mental-health-questionnaire (current source is `main`).
-  - Add a discreet, accessible source/development link in the application's project-information/about area, with appropriate labels in **Latvian, English, Russian and Ukrainian**. Keep it out of the question flow.
-  - Update the **current** four-language guide source, `docs/review/GUIDE_LV_EN_RU_UK.md` (or verified successor), and regenerate its clickable PDF link when this is implemented.
-  - **Do not** put this link in the patient's/clinician's answer-report PDF; do not modify immutable references.
-  - Retain the disclaimer that this is a technical-review questionnaire, not a clinically validated diagnostic test. Clicking an external link must be deliberate and must never transmit answers or introduce an automatic network request into the offline app.
-  - Test link destinations, locale coverage, offline behavior and PDF readability. Use the existing build/checks and reviewer-package process; do not replace the current distributed package without the required verification and release steps.
-
-
-- [ ] **Finish employer-facing GitHub portfolio presentation (remaining polish only).**
-  - `main` is already the current four-language v0.2.2 source and its README already has a preview, downloads, build steps, CI and architecture links. **Do not redo the migration, overwrite verified artifacts, or reintroduce `develop` as active.**
-  - Review the README from a prospective IT employer's perspective. Add a succinct, accurate technology-stack overview (e.g., HTML/CSS/JavaScript, Python build tooling, automated browser testing, GitHub Actions) and a plain-English summary of the technical problems the project solves.
-  - Accurately distinguish the owner's demonstrated work (product concept, specifications, reviewing outputs, QA decisions, coordination) from code authored with AI/Codex assistance. Do not claim independent coding proficiency or team experience not evidenced.
-  - Check GitHub repository description/topics and README navigation for clarity and current links; improve presentation where permissions/tools allow. If a metadata edit is unavailable, report it rather than assuming it was changed.
-  - Retain technical-review, unvalidated translation/clinical/device limitations. Do not imply a clinically approved medical product.
-  - Verify README links, source references, and any changes before marking finished; use the normal main-based PR workflow and record completion in the changelog.
+- [ ] **Update the GitHub repository About description and topics — blocked by integration permissions.**
+  - App/PDF source links and README portfolio improvements are completed and verified in main via PR #7; do not repeat them. Completion and Drive readback evidence is in the changelog.
+  - Description and topic edits were attempted using the authenticated GitHub API. Both returned **HTTP 403: Resource not accessible by integration**; repository settings were not changed.
+  - Requires the repository owner to edit About manually, or an integration with the appropriate repository-settings permissions. Do not mark complete until metadata readback confirms the change.
+  - Proposed description: “Free offline pre-appointment questionnaire in Latvian, English, Russian and Ukrainian. HTML/CSS/JavaScript, Python tooling and automated tests. Technical-review project; not a diagnostic tool.”
+  - Proposed topics: `offline-first`, `questionnaire`, `mental-health`, `javascript`, `python`, `multilingual`, `playwright`, `github-actions`, `ai-assisted-development`.
 
 ## Already resolved during branch migration (not a pending task)
 
