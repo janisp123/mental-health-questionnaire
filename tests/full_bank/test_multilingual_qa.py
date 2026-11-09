@@ -151,16 +151,20 @@ class CandidateQATests(unittest.TestCase):
         self.assertEqual(readback["answers"], ukrainian["answers"])
         self.assertEqual(readback["feedback"], ukrainian["feedback"])
 
-    def test_source_link_is_localized_in_about_and_absent_from_answer_report_pdf(self):
+    def test_source_link_follows_creator_credit_and_is_absent_from_answer_report_pdf(self):
         source = "https://github.com/janisp123/mental-health-questionnaire"
         labels = {"lv": "Pirmkods un izstrāde (GitHub)", "en": "Source code and development (GitHub)",
                   "ru": "Исходный код и разработка (GitHub)", "uk": "Початковий код і розробка (GitHub)"}
         for lang, label in labels.items():
             self.page.select_option("#language", lang)
-            about = self.page.locator("#project-information")
-            self.assertEqual(about.count(), 1)
-            about.locator("summary").click()
-            link = about.get_by_role("link", name=label, exact=True)
+            credit = self.page.locator("footer .creator-credit")
+            self.assertEqual(credit.count(), 1)
+            self.assertEqual(credit.inner_text(), "made by Janis Paegle GitHub 2026")
+            link = credit.get_by_role("link", name=label, exact=True)
+            self.assertEqual(link.inner_text(), "GitHub")
+            self.assertEqual(self.page.locator("#project-information a[data-project-source]").count(), 0)
+            self.page.locator("footer details").evaluate_all("items => items.forEach(item => item.open = true)")
+            self.assertNotRegex(self.page.locator("#app").inner_text(), r"(?i)\b(?:AI|Codex)\b|AI-assisted|artificial intelligence")
             self.assertTrue(link.is_visible())
             self.assertEqual(link.get_attribute("href"), source)
             self.assertEqual(link.get_attribute("target"), "_blank")

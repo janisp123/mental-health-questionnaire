@@ -2,11 +2,11 @@
 
 [![Multilingual checks](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml/badge.svg?branch=main)](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml)
 
-**Current version: v0.2.3 · Latvian / English / Russian / Ukrainian · 712 questions · 15 optional sections.**
+**Current version: v0.2.4 · Latvian / English / Russian / Ukrainian · 712 questions · 15 optional sections.**
 
 Free offline questionnaire for adults preparing for a mental-health appointment. All four languages are included in one HTML file. Latvian is the reference and initial language. It does not diagnose or calculate a screening score.
 
-**[Open the current review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb)** · [Current files and checksums](MH_Public_version/manifest.json) · [Version snapshot](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.3)
+**[Open the current review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb)** · [Current files and checksums](MH_Public_version/manifest.json) · [Version snapshot](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.4)
 
 ![Current questionnaire in English, showing its offline introduction and language selector](docs/images/questionnaire-current.png)
 
@@ -38,8 +38,8 @@ This repository shows the specification, iteration and verification of an AI-ass
 
 ## Current files
 
-- [Questionnaire HTML](MH_Public_version/187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.3_REVIEW_BUILD.html)
-- [Four-language PDF guide](MH_Public_version/188_README_LV_EN_RU_UK_v0.2.3_REVIEW_BUILD.pdf)
+- [Questionnaire HTML](MH_Public_version/187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.html)
+- [Four-language PDF guide](MH_Public_version/188_README_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.pdf)
 - [Google Drive review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb)
 
 Download the HTML and open it in your browser; Drive/GitHub preview is not the questionnaire. It runs offline and sends no answers. Download progress explicitly to continue later. Clinician reports and project-feedback PDFs are separate. Recovery files may contain sensitive information; keep and share them carefully.
@@ -53,8 +53,8 @@ python -m pip install -r tools/review-requirements.txt playwright
 python -m playwright install chromium
 python tools/run_checks.py
 python tools/build_questionnaire.py
-python tools/build_review_package.py --output-dir dist/review-0.2.3
-python tools/verify_review_package.py dist/review-0.2.3 --with-zip
+python tools/build_review_package.py --output-dir dist/review-0.2.4
+python tools/verify_review_package.py dist/review-0.2.4 --with-zip
 ```
 
 The normal HTML output is `dist/QUESTIONNAIRE_LV_EN_RU_UK_NOT_RELEASED.html`. Package destinations are never overwritten. CI runs the same checks on PRs to main and on main, then uploads the matching four-language package.

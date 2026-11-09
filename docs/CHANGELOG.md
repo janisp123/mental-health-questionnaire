@@ -590,3 +590,17 @@ PR #7 merged as `7684de605c5cbf619cf4ecee05ebfb676a351abd` after both GitHub wor
 Both existing Drive file IDs were replaced in place with v0.2.3 and downloaded back byte-identical: HTML `2ea357d37748529682f4c0a86ce1a618afdb5599d38d84a0fc253f44ecc9aa81`; PDF `defc5d5fe6271b98a0c3fe5fd01521b75eaf3d6415237b4ecb47bdf1fcf03627`. Parents, sharing and links are unchanged. Exact v0.2.2 files are archived; review/v0.2.3 pins the new snapshot. Source provenance remains cd854fa; merge and CI refs are recorded separately in `docs/review/checks/2026-11-09-td-drive-sync.json`.
 
 Removed the completed source-link and broad README portfolio TD entries. Retained one precise followup: repository About description/topics. Both authenticated settings edits returned HTTP403 “Resource not accessible by integration,” so those settings are unchanged; proposed text/topics and the required owner/settings access are recorded in TD. This limitation is not a failure of app/guide/README verification. Next: owner may change those settings or enable suitable integration access, then verify metadata and remove the last TD item.
+
+### 2026-11-09 · Creator-credit source link — IN PROGRESS
+
+Owner clarified that AI/Codex attribution belongs in GitHub documentation only, not the downloadable app or guide. Current app/guide contain no such disclosure; GitHub README attribution remains intact. The owner explicitly requested the app source link immediately after “made by Janis Paegle,” superseding its former About placement. Work is isolated on a main-based branch. Add a regression for credit placement and absence of AI-disclosure wording in the app/guide, preserve report exclusion, and publish only after package/CI verification. Existing blocked repository-settings TD action is unrelated and unchanged.
+
+### 2026-11-09 · Creator-credit placement — focused verification passed
+
+The new placement regression failed on v0.2.3, then passed after moving the existing link from the About details to a short GitHub anchor immediately after “made by Janis Paegle,” before the year. Localized accessible names, explicit HTTPS navigation, no-referrer and noopener/noreferrer are preserved. All four app UI views and extracted PDF guide text contain no AI/Codex disclosure; the truthful attribution remains only in repository documentation. Seven package and six multilingual QA tests pass, including clinician-PDF exclusion. Companion guide wording/links are unchanged; previous v0.2.3 bytes are archived before v0.2.4 generation.
+
+### 2026-11-09 · Creator-credit publication verification
+
+All 28 maintained scripts pass for clean source `3a8f9227bda6a85b509703c17cf10b1b37de514e`. The app displays “made by Janis Paegle GitHub 2026,” with only GitHub linked immediately after the name and no duplicate About link. Accessible source labels remain localized in all four languages. App UI/catalog scan and extracted guide text/metadata contain no AI/Codex attribution; the repository README retains the accurate AI-assisted implementation section. The guide PDF bytes are unchanged from the previously visually checked v0.2.3 guide. Existing report-PDF exclusion and offline checks pass. Screenshot updated to match visible credit. Evidence: `docs/review/checks/2026-11-09-creator-credit.json`.
+
+New v0.2.4 HTML hash: `8d3dba5b3652b0d137f9c19cbfa30b9aec541dc779a576e243c09c8b89ab0b91`; guide PDF hash remains `defc5d5fe6271b98a0c3fe5fd01521b75eaf3d6415237b4ecb47bdf1fcf03627`. Current Drive remains verified v0.2.3 pending checked merge and readback-verified replacement.

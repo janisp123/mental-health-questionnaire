@@ -21,6 +21,8 @@ class ReviewPackageTests(unittest.TestCase):
         guide = (ROOT / "docs/review/GUIDE_LV_EN_RU_UK.md").read_text(encoding="utf-8")
         reader = PdfReader(io.BytesIO(guide_pdf(guide)))
         self.assertEqual(len(reader.pages), 1)
+        for page in reader.pages:
+            self.assertNotRegex(page.extract_text(), r"(?i)\b(?:AI|Codex)\b|AI-assisted|artificial intelligence")
         targets = []
         for page in reader.pages:
             for reference in page.get("/Annots", []):
