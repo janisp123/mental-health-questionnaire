@@ -1,6 +1,6 @@
 # Release and technical-review policy
 
-Updated 9 November 2026. `main` contains the sole active LV/EN/RU/UK application. The current distributed package is **v0.2.2, for technical review**. It is not a clinically validated release.
+Updated 9 November 2026. `main` contains the sole active LV/EN/RU/UK application. The current distributed package is **v0.2.3, for technical review**. It is not a clinically validated release.
 
 ## What is implemented
 
@@ -55,7 +55,7 @@ Ordinary source commits do not publish to Drive automatically. Documentation-onl
 
 ## Evidence and historical material
 
-Current package/provenance: [repository manifest](../MH_Public_version/manifest.json). Latest verified reviewer synchronization: [Drive readback record](review/checks/2026-11-09-main-drive-sync.json). Ongoing status: [working checkpoint](WORK_CHECKPOINT.md). Rollback provenance: [three-language archive](../archive/three-language/v0.2.0/README.md) and [four-language v0.2.1 snapshot](../archive/four-language/v0.2.1/manifest.json).
+Current package/provenance: [repository manifest](../MH_Public_version/manifest.json). Latest verified reviewer synchronization: [Drive readback record](review/checks/2026-11-09-td-drive-sync.json). Ongoing status: [working checkpoint](WORK_CHECKPOINT.md). Rollback provenance: [three-language archive](../archive/three-language/v0.2.0/README.md) and [four-language v0.2.1 snapshot](../archive/four-language/v0.2.1/manifest.json).
 
 `docs/drive-original/`, historical checkpoints and `tools/186_RELEASE_GATE_CHECK_v1.py` preserve earlier policy/evidence formats. They do not override this current workflow or replace actual current test runs. No import/reconciliation task remains pending merely because an archived document describes one.
 

@@ -1,0 +1,35 @@
+{
+  "verified_at": "2026-11-09T10:00:58.039686+00:00",
+  "main_merge": "7684de605c5cbf619cf4ecee05ebfb676a351abd",
+  "checked_head": "ec4f4b032306a7c532c6142367ce1e66404abc87",
+  "merge_tree_matches_checked_head": true,
+  "source_commit": "cd854fa8315443e7fca8c5a86cbd12152b1b9fbc",
+  "files": [
+    {
+      "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.3_REVIEW_BUILD.html",
+      "bytes": 1532081,
+      "sha256": "2ea357d37748529682f4c0a86ce1a618afdb5599d38d84a0fc253f44ecc9aa81",
+      "verified_byte_identical": true
+    },
+    {
+      "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "name": "188_README_LV_EN_RU_UK_v0.2.3_REVIEW_BUILD.pdf",
+      "bytes": 49955,
+      "sha256": "defc5d5fe6271b98a0c3fe5fd01521b75eaf3d6415237b4ecb47bdf1fcf03627",
+      "verified_byte_identical": true
+    }
+  ],
+  "folder_id": "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+  "ids_parents_sharing_preserved": true,
+  "ci_runs": {
+    "full": 42597279496,
+    "app": 42597279500,
+    "conclusion": "success"
+  },
+  "metadata_settings_edit": {
+    "description": "403 Resource not accessible by integration",
+    "topics": "403 Resource not accessible by integration",
+    "changed": false
+  }
+}
