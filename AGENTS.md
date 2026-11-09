@@ -6,6 +6,7 @@ These rules apply to future development work in this repository, particularly lo
 
 - Read `docs/WORK_CHECKPOINT.md` first when present. It records the last verified section, exact next action, local-versus-remote synchronization state and outstanding blockers. Then consult the referenced section audit/test evidence and `docs/CHANGELOG.md`.
 - A local checkpoint does not imply that changes reached GitHub or Drive. State the actual synchronization status, and never restart completed sections solely because the chat history is missing.
+- Keep `docs/WORK_CHECKPOINT.md` limited to current product/package pointers, applicable verification, actual synchronization, blockers and one next action. Put earlier completion narratives in the changelog/history and link them; do not append successive release summaries to the active checkpoint. Preserve an exact historical copy before a substantial checkpoint rewrite.
 
 ## Pending TD work and conflicts
 

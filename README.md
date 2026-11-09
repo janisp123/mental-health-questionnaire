@@ -6,7 +6,19 @@
 
 Free offline questionnaire for adults preparing for a mental-health appointment. All four languages are included in one HTML file. Latvian is the reference and initial language. It does not diagnose or calculate a screening score.
 
-**[Open the current review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb)** · [Current files and checksums](MH_Public_version/manifest.json) · [Version snapshot](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.4-guide-medical-purpose)
+## Download and open
+
+**[Download the questionnaire from Google Drive](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb)** · **[Download the PDF guide](https://raw.githubusercontent.com/janisp123/mental-health-questionnaire/refs/heads/main/MH_Public_version/188_README_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.pdf)**
+
+1. In the Drive folder, choose **Download** for the file ending in **`.html`**. The Drive preview and GitHub source viewer do not run the questionnaire.
+2. Open the downloaded HTML file in a browser. On a phone, find it in **Files → Downloads** and use **Open with → browser** if offered.
+3. Choose your language and begin. To continue later, use the app's progress-file download and keep the saved file.
+
+Open the separate **`.pdf`** guide with a PDF viewer. If the GitHub mobile app does not handle its download link, open this README in your browser.
+
+If the HTML appears as code, it is open in a source/text viewer. Choose a browser instead. If your phone offers no browser for local HTML files, use a desktop browser; physical-phone compatibility testing remains pending.
+
+The questionnaire runs offline and sends no answers. Clinician reports and project-feedback PDFs are separate. Downloaded progress files may contain sensitive information; keep and share them carefully.
 
 ![Current questionnaire in English, showing its offline introduction and language selector](docs/images/questionnaire-current.png)
 
@@ -36,15 +48,11 @@ Janis Paegle leads the product concept, requirements, prioritization, review of 
 
 This repository shows the specification, iteration and verification of an AI-assisted software product. The source history and [module contracts](docs/FEATURE_DEVELOPMENT.md) make the implementation and its boundaries inspectable. Human language/clinical review and physical-device verification remain separate requirements.
 
-## Current files
+## Source and package records
 
-- [Questionnaire HTML](MH_Public_version/187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.html)
-- [Download the four-language PDF guide](https://raw.githubusercontent.com/janisp123/mental-health-questionnaire/refs/heads/main/MH_Public_version/188_README_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.pdf)
-- [Google Drive review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb)
-
-Download the HTML and open it in your browser; Drive/GitHub preview is not the questionnaire. It runs offline and sends no answers. Download progress explicitly to continue later. Clinician reports and project-feedback PDFs are separate. Recovery files may contain sensitive information; keep and share them carefully.
-
-The PDF guide link downloads the file directly. Open the downloaded file with a PDF viewer; if the GitHub mobile app does not open the link, open the README in your browser.
+- [View the questionnaire HTML source](MH_Public_version/187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.html)
+- [Current package files, source revision and checksums](MH_Public_version/manifest.json)
+- [Version snapshot](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.4-guide-medical-purpose)
 
 ## Development
 
