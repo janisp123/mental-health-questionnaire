@@ -596,7 +596,7 @@
     "source_commit": "ef965b39f241bc0515dbc505232baf536796e7be",
     "verified_date": "2026-11-09",
     "auto_sync": false,
-    "synchronization": "PENDING: opening-instructions-only PDF checked locally; Drive remains the prior v0.2.4 pair until checked merge and readback.",
+    "synchronization": "VERIFIED: opening-instructions-only PDF and unchanged v0.2.4 HTML read back byte-identical; existing IDs, folder and sharing preserved.",
     "files": [
       {
         "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
@@ -621,7 +621,7 @@
       "uk"
     ],
     "source_readme": "docs/review/GUIDE_LV_EN_RU_UK.md",
-    "promotion_commit": "20b5adb765f8dbe3c949518a7edf9bf736e31ab6",
+    "promotion_commit": "fd2765b9c844321db81075e75c79e3567404ab9e",
     "last_built_date": "2026-11-09"
   }
 }

@@ -1,6 +1,6 @@
 # Current working checkpoint
 
-Guide revision in progress: the opening-instructions-only PDF is built from clean source `ef965b3` and verified locally; HTML is unchanged. Drive still has the prior guide pending checked PR merge and readback. See the latest changelog entry; do not treat the older synchronization record below as evidence for the revised PDF.
+Guide revision DONE: the opening-instructions-only PDF and unchanged v0.2.4 HTML were downloaded from Drive and verified byte-identical to the checked repository pair. Current readback: `docs/review/checks/2026-11-09-opening-guide-drive-sync.json`.
 
 Updated 9 November 2026. Migration DONE. Sole active source: `main`. Promotion PR #2 merged as `1a68d31f385208263be79de5da8c27e3df90354a`; its tree exactly matches the checked head `505187b9b127fe375dafab9b3e341cf4d863ac3b`.
 
@@ -16,7 +16,7 @@ Updated 9 November 2026. Migration DONE. Sole active source: `main`. Promotion P
 - All 28 maintained scripts pass locally in explicit memory mode, including 5,696 question/locale/phone-width renders and legacy recovery import. Both final GitHub workflows passed with real offline file opening (runs 42586610302 and 42586610292). Physical-device testing is separate.
 - `MH_Public_version/manifest.json` records the exact repository HTML/PDF hashes and source commit/tree. Package source commit: `3a8f9227bda6a85b509703c17cf10b1b37de514e`; source was clean when built.
 - Package CLI tests verify byte-identical repeated HTML/PDF/ZIP builds and refusal to overwrite. PDF has one A4 page and was visually inspected.
-- Repository and Drive contain the same verified four-language v0.2.4 HTML/PDF pair. Both downloads matched exact hashes; existing IDs, folder and sharing are preserved. Evidence: `docs/review/checks/2026-11-09-credit-link-drive-sync.json`.
+- Repository and Drive contain the same verified four-language v0.2.4 HTML/PDF pair. Both downloads matched exact hashes; existing IDs, folder and sharing are preserved. Evidence: `docs/review/checks/2026-11-09-opening-guide-drive-sync.json`.
 
 ## History and rollback
 
@@ -53,7 +53,7 @@ Completed TD entries were removed after verification. The sole remaining TD item
 
 Owner clarified: AI/Codex attribution belongs in GitHub documentation only, not downloaded app/guide files. The app now displays `made by Janis Paegle GitHub 2026` with only GitHub linked immediately after the name; localized accessible labels and report exclusion remain. The old duplicate About link was removed. Current UI/catalog scan and PDF text/metadata contain no AI/Codex disclosure. The accurate repository README attribution remains intact.
 
-PR #9 merged as `20b5adb765f8dbe3c949518a7edf9bf736e31ab6` after both GitHub workflows passed with real offline file opening (42599111309 and 42599111111). The merge tree equals checked head b602d25. All 28 local scripts passed in explicit memory mode. Both v0.2.4 Drive files read back byte-identical, preserving IDs/sharing. The guide PDF bytes are unchanged from the previously checked guide; only its versioned filename was aligned. Current source is 3a8f922. Verification/provenance: `docs/review/checks/2026-11-09-credit-link-drive-sync.json`.
+PR #9 merged as `20b5adb765f8dbe3c949518a7edf9bf736e31ab6` after both GitHub workflows passed with real offline file opening (42599111309 and 42599111111). The merge tree equals checked head b602d25. All 28 local scripts passed in explicit memory mode. Both v0.2.4 Drive files read back byte-identical, preserving IDs/sharing. The guide PDF bytes are unchanged from the previously checked guide; only its versioned filename was aligned. Current source is 3a8f922. Verification/provenance: `docs/review/checks/2026-11-09-opening-guide-drive-sync.json`.
 
 No new TD task was created: this was an explicit owner revision to the completed source-link placement. The sole repository-settings permission blocker remains unchanged.
 
@@ -63,4 +63,4 @@ The current v0.2.4 HTML was downloaded from Drive and its embedded update notes 
 
 ## Opening-instructions guide revision
 
-The guide now contains HTML download/browser-opening instructions only in all four languages, with no external links or review-status statements. Seven package tests, exact-source package/ZIP verification and source-index integrity pass. The one-page PDF was rendered and visually checked. Application HTML remains `8d3dba5b3652b0d137f9c19cbfa30b9aec541dc779a576e243c09c8b89ab0b91`; new guide PDF is `6b0cfe0f3eaab3ed5360fd665053c2054e586596b6edba527e9595069b1141d4`. Prior v0.2.4 pair is preserved in `archive/four-language/v0.2.4/`. New package source: `ef965b3`; application version remains v0.2.4. No app entry is added. Next: merge after PR checks, replace the same Drive PDF ID and verify both downloads and sharing.
+The guide now contains HTML download/browser-opening instructions only in all four languages, with no external links or review-status statements. Seven package tests, exact-source package/ZIP verification and source-index integrity pass. The one-page PDF was rendered and visually checked. Application HTML remains `8d3dba5b3652b0d137f9c19cbfa30b9aec541dc779a576e243c09c8b89ab0b91`; new guide PDF is `6b0cfe0f3eaab3ed5360fd665053c2054e586596b6edba527e9595069b1141d4`. Prior v0.2.4 pair is preserved in `archive/four-language/v0.2.4/`. New package source: `ef965b3`; application version remains v0.2.4. No app entry is added. PR #12 merged as `fd2765b9c844321db81075e75c79e3567404ab9e` after full/app CI passed (42601226659 / 42601226670), with an identical checked merge tree. Replaced only the same Drive PDF ID; both files read back byte-identical and folder/sharing remain unchanged. Snapshot: `review/v0.2.4-guide-instructions`; previous `review/v0.2.4` tag is preserved. Next: start the next requested task from main; no further guide publication is pending.

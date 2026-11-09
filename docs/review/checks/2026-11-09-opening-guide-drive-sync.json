@@ -1,0 +1,35 @@
+{
+  "verified_at": "2026-11-09T10:32:27.358741+00:00",
+  "main_merge": "fd2765b9c844321db81075e75c79e3567404ab9e",
+  "checked_head": "a2081b7123d12a19cc60b047f4205173b742775d",
+  "merge_tree_matches_checked_head": true,
+  "source_commit": "ef965b39f241bc0515dbc505232baf536796e7be",
+  "files": [
+    {
+      "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.html",
+      "bytes": 1532252,
+      "sha256": "8d3dba5b3652b0d137f9c19cbfa30b9aec541dc779a576e243c09c8b89ab0b91",
+      "verified_byte_identical": true
+    },
+    {
+      "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "name": "188_README_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.pdf",
+      "bytes": 47977,
+      "sha256": "6b0cfe0f3eaab3ed5360fd665053c2054e586596b6edba527e9595069b1141d4",
+      "verified_byte_identical": true
+    }
+  ],
+  "folder_id": "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+  "ids_folder_sharing_preserved": true,
+  "guide_only_revision": true,
+  "html_bytes_unchanged": true,
+  "pdf_pages": 1,
+  "pdf_link_annotations": 0,
+  "pdf_content": "HTML download and browser-opening instructions in LV/EN/RU/UK only",
+  "ci_runs": {
+    "full": 42601226659,
+    "app": 42601226670,
+    "conclusion": "success"
+  }
+}
