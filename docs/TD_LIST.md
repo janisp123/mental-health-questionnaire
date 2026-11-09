@@ -18,6 +18,15 @@
   - Retain the disclaimer that this is a technical-review questionnaire, not a clinically validated diagnostic test. Clicking an external link must be deliberate and must never transmit answers or introduce an automatic network request into the offline app.
   - Test link destinations, locale coverage, offline behavior and PDF readability. Use the existing build/checks and reviewer-package process; do not replace the current distributed package without the required verification and release steps.
 
+
+- [ ] **Finish employer-facing GitHub portfolio presentation (remaining polish only).**
+  - `main` is already the current four-language v0.2.2 source and its README already has a preview, downloads, build steps, CI and architecture links. **Do not redo the migration, overwrite verified artifacts, or reintroduce `develop` as active.**
+  - Review the README from a prospective IT employer's perspective. Add a succinct, accurate technology-stack overview (e.g., HTML/CSS/JavaScript, Python build tooling, automated browser testing, GitHub Actions) and a plain-English summary of the technical problems the project solves.
+  - Accurately distinguish the owner's demonstrated work (product concept, specifications, reviewing outputs, QA decisions, coordination) from code authored with AI/Codex assistance. Do not claim independent coding proficiency or team experience not evidenced.
+  - Check GitHub repository description/topics and README navigation for clarity and current links; improve presentation where permissions/tools allow. If a metadata edit is unavailable, report it rather than assuming it was changed.
+  - Retain technical-review, unvalidated translation/clinical/device limitations. Do not imply a clinically approved medical product.
+  - Verify README links, source references, and any changes before marking finished; use the normal main-based PR workflow and record completion in the changelog.
+
 ## Already resolved during branch migration (not a pending task)
 
 The former TD request to bring `main` up to date for employers has already been substantially fulfilled by the verified v0.2.2 four-language promotion and updated main README. It was **not** carried over as unfinished work. Any further portfolio improvements should be raised as a new, specific TD request.
