@@ -12,7 +12,7 @@ Updated 9 November 2026. Owner approved the four-language main migration. Integr
 ## Verification and artifacts
 
 - `python tools/run_checks.py --load-mode memory`: 28 checks pass, including 5,696 question/locale/phone-width renders and legacy recovery import. Direct file opening is blocked in this managed Chromium; GitHub CI is configured to run real offline file opening.
-- `MH_Public_version/manifest.json` records the exact repository HTML/PDF hashes and source commit/tree. Package source commit: `1b73a45704d6b3bf257f60294fbe5292de511d02`; source was clean when built.
+- `MH_Public_version/manifest.json` records the exact repository HTML/PDF hashes and source commit/tree. Package source commit: `e2ce2fa86749012e8336eccca9c89898df3df69f`; source was clean when built.
 - Package CLI tests verify byte-identical repeated HTML/PDF/ZIP builds and refusal to overwrite. PDF has one A4 page and was visually inspected.
 - New package is verified locally; Drive still contains the verified four-language v0.2.1 pair until promotion/update readback is recorded.
 

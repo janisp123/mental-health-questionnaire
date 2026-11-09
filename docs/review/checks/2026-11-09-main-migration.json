@@ -2,7 +2,7 @@
   "base_commit": "25ef87add2942ed8d29d90f2e70c18da1b50beeb",
   "archive_commit": "81e6510",
   "default_build_commit": "493bd15",
-  "package_source_commit": "1b73a45704d6b3bf257f60294fbe5292de511d02",
+  "package_source_commit": "e2ce2fa86749012e8336eccca9c89898df3df69f",
   "checks": {
     "load_mode": "memory",
     "suite": "all",
@@ -40,49 +40,49 @@
       {
         "test": "tests/app/test_question_screens.js",
         "exit": 0,
-        "seconds": 0.04,
+        "seconds": 0.03,
         "browser_load_mode": null
       },
       {
         "test": "tests/app/test_recovery.js",
         "exit": 0,
-        "seconds": 0.04,
+        "seconds": 0.03,
         "browser_load_mode": null
       },
       {
         "test": "tests/app/test_report_screens.js",
         "exit": 0,
-        "seconds": 0.04,
+        "seconds": 0.03,
         "browser_load_mode": null
       },
       {
         "test": "tests/app/test_runtime_answers.py",
         "exit": 0,
-        "seconds": 5.07,
+        "seconds": 5.04,
         "browser_load_mode": "memory"
       },
       {
         "test": "tests/app/test_runtime_feedback.py",
         "exit": 0,
-        "seconds": 4.3,
+        "seconds": 4.35,
         "browser_load_mode": "memory"
       },
       {
         "test": "tests/app/test_runtime_layout.py",
         "exit": 0,
-        "seconds": 1.97,
+        "seconds": 1.82,
         "browser_load_mode": "memory"
       },
       {
         "test": "tests/app/test_runtime_recovery.py",
         "exit": 0,
-        "seconds": 3.61,
+        "seconds": 3.52,
         "browser_load_mode": "memory"
       },
       {
         "test": "tests/app/test_screens.js",
         "exit": 0,
-        "seconds": 0.04,
+        "seconds": 0.03,
         "browser_load_mode": null
       },
       {
@@ -94,13 +94,13 @@
       {
         "test": "tests/full_bank/test_build.py",
         "exit": 0,
-        "seconds": 0.36,
+        "seconds": 0.34,
         "browser_load_mode": null
       },
       {
         "test": "tests/full_bank/test_full_groups.py",
         "exit": 0,
-        "seconds": 0.1,
+        "seconds": 0.12,
         "browser_load_mode": null
       },
       {
@@ -112,7 +112,7 @@
       {
         "test": "tests/full_bank/test_layout_sweep.py",
         "exit": 0,
-        "seconds": 4.97,
+        "seconds": 4.96,
         "browser_load_mode": "memory"
       },
       {
@@ -124,49 +124,49 @@
       {
         "test": "tests/full_bank/test_module_titles.py",
         "exit": 0,
-        "seconds": 0.03,
+        "seconds": 0.04,
         "browser_load_mode": null
       },
       {
         "test": "tests/full_bank/test_multilingual_qa.py",
         "exit": 0,
-        "seconds": 8.09,
+        "seconds": 8.08,
         "browser_load_mode": "memory"
       },
       {
         "test": "tests/full_bank/test_reports.js",
         "exit": 0,
-        "seconds": 0.31,
+        "seconds": 0.26,
         "browser_load_mode": null
       },
       {
         "test": "tests/full_bank/test_runtime.py",
         "exit": 0,
-        "seconds": 29.78,
+        "seconds": 29.68,
         "browser_load_mode": "memory"
       },
       {
         "test": "tests/full_bank/test_source_adapter.py",
         "exit": 0,
-        "seconds": 0.1,
+        "seconds": 0.11,
         "browser_load_mode": null
       },
       {
         "test": "tests/full_bank/test_source_audit.py",
         "exit": 0,
-        "seconds": 0.07,
+        "seconds": 0.06,
         "browser_load_mode": null
       },
       {
         "test": "tests/full_bank/test_translation_packs.py",
         "exit": 0,
-        "seconds": 0.32,
+        "seconds": 0.33,
         "browser_load_mode": null
       },
       {
         "test": "tests/package/test_review_package.py",
         "exit": 0,
-        "seconds": 1.11,
+        "seconds": 2.38,
         "browser_load_mode": null
       },
       {
@@ -184,5 +184,24 @@
   "limits": [
     "Managed Chromium requires explicit memory loading; file opening is delegated to GitHub CI.",
     "Physical device/human clinical and language review remain outstanding."
-  ]
+  ],
+  "review_corrections": [
+    "Exact regenerated HTML/PDF verification, with three negative regressions passing.",
+    "Active source/guide pointers corrected."
+  ],
+  "github_initial_ci": {
+    "head": "252e1a74eee57af86e206cbc68c564809f8bad14",
+    "full_file_opening_run": 42586109623,
+    "app_file_opening_run": 42586109371,
+    "conclusion": "success"
+  },
+  "package_tests": {
+    "total": 6,
+    "failed": 0,
+    "negative_cases": [
+      "stale runtime with valid checksum",
+      "stale PDF with valid checksum",
+      "two HTML records instead of HTML/PDF"
+    ]
+  }
 }

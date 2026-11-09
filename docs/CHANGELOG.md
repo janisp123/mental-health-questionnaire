@@ -550,3 +550,7 @@ README, AGENTS, contributor guidance, architecture, language style, Ukrainian in
 ### 2026-11-09 · Migration final review correction
 
 Independent review found no runtime/source-bank changes or archive problems, but identified a weakness in the new verifier: matching embedded data alone did not prove current JavaScript/CSS or guide content. Reproduced with three failing negative tests (stale runtime, stale PDF, two HTML files). The verifier now compares the full generated HTML and regenerated pinned PDF and requires exactly one of each; all six package tests and the current package check pass. Stale active develop/Latvian-guide instructions in FILE_INDEX and the Ukrainian checkpoint header were corrected. Full suite is rerun before promotion.
+
+### 2026-11-09 · Promotion verification checkpoint
+
+After the final review correction, all 28 maintained scripts pass again; six package tests include the three negative release-gate cases. Package bytes remain unchanged and regenerate from clean source `e2ce2fa86749012e8336eccca9c89898df3df69f`. GitHub's initial main-promotion checks passed with real file opening: Multilingual Questionnaire Checks run 42586109623 and App Component Checks run 42586109371 at head 252e1a7. The reviewed head will receive a final remote check before merge. All archived branch tips are ancestors of the integrated branch; no history was reset. Next: merge checked PR #2 and replace/read back the same Drive file IDs.
