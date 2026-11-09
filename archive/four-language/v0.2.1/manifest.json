@@ -1,0 +1,17 @@
+{
+  "schema": "questionnaire-archive-v1",
+  "source_commit": "46b138eb10921e0ab02b2b8ba7b5a08465a7f127",
+  "origin": "Verified four-language Drive package, 9 November 2026",
+  "files": [
+    {
+      "path": "QUESTIONNAIRE_LV_EN_RU_UK_v0.2.1-reports.html",
+      "bytes": 1530520,
+      "sha256": "4bbcccbdfd06a124bb28d13fd843e23e303464c0e05796a4d403dad3848a82b7"
+    },
+    {
+      "path": "README_LV_EN_RU_UK_v0.2.1.pdf",
+      "bytes": 48349,
+      "sha256": "262cf6ec898e37b59490ef374318ec7d500361f46ae84893e8781a71fa885a25"
+    }
+  ]
+}
