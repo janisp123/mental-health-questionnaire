@@ -1,6 +1,6 @@
 {
   "schema": "questionnaire-build-v1",
-  "version": "0.2.2-review+full-bank",
+  "version": "0.2.3-review+full-bank",
   "baseline": "LV-v16",
   "translationPacks": {
     "uk": "Українська"

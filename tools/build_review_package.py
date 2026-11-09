@@ -28,6 +28,18 @@ def git(*arguments):
     return subprocess.check_output(["git", *arguments], cwd=ROOT, text=True).strip()
 
 
+def guide_markup(text):
+    """Escape guide prose and render deliberate HTTPS Markdown links as PDF links."""
+    parts, position = [], 0
+    for match in re.finditer(r"\[([^\]\n]+)\]\((https://[^\s)]+)\)", text):
+        parts.append(escape(text[position:match.start()]))
+        url = escape(match.group(2), {'"': '&quot;'})
+        parts.append('<link href="' + url + '" color="#164b73"><u>' + escape(match.group(1)) + '</u></link>')
+        position = match.end()
+    parts.append(escape(text[position:]))
+    return "".join(parts).replace("\n", " ")
+
+
 def guide_pdf(source):
     if reportlab.Version != "4.4.9":
         raise ValueError("Install the pinned tools/review-requirements.txt before building the PDF")
@@ -46,7 +58,7 @@ def guide_pdf(source):
             continue
         title, *paragraphs = section.strip().split("\n\n")
         blocks = [Paragraph(escape(title), heading)]
-        blocks += [Paragraph(escape(text.strip()).replace("\n", " "), body) for text in paragraphs if text.strip()]
+        blocks += [Paragraph(guide_markup(text.strip()), body) for text in paragraphs if text.strip()]
         story += [KeepTogether(blocks), Spacer(1, 18)]
     stream = io.BytesIO()
     document = SimpleDocTemplate(stream, pagesize=A4, leftMargin=48, rightMargin=48,
