@@ -17,17 +17,22 @@ from build_review_package import guide_pdf
 
 
 class ReviewPackageTests(unittest.TestCase):
-    def test_current_four_language_guide_contains_opening_instructions_only(self):
+    def test_current_four_language_guide_contains_opening_and_medical_purpose_notice(self):
         guide = (ROOT / "docs/review/GUIDE_LV_EN_RU_UK.md").read_text(encoding="utf-8")
         reader = PdfReader(io.BytesIO(guide_pdf(guide)))
         self.assertEqual(len(reader.pages), 1)
-        text = "\n".join(page.extract_text() for page in reader.pages)
+        text = " ".join(" ".join(page.extract_text() for page in reader.pages).split())
         self.assertNotRegex(text, r"(?i)\b(?:AI|Codex|GitHub)\b|https?://|valid|техніч|техническ|тест")
         for heading in ("Latviešu", "English", "Русский", "Українська"):
             self.assertIn(heading, text)
         self.assertEqual(text.count("HTML"), 4)
         for opening in ("atveriet", "open it in your browser", "откройте", "відкрийте"):
             self.assertIn(opening, text)
+        for notice in ("neapkopo", "does not collect", "не собирает", "не збирає",
+                       "nav paredzēta", "not intended", "не предназначено", "не призначений",
+                       "tikai medicīnas speciālists", "Only a medical professional",
+                       "только медицинский специалист", "лише медичний фахівець"):
+            self.assertIn(notice, text)
         targets = []
         for page in reader.pages:
             for reference in page.get("/Annots", []):
