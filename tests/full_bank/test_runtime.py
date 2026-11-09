@@ -303,7 +303,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     recovery_page.locator('[data-act="start"]').click()
     recovery_page.locator('[data-act="all"]').click()
     first = questions[0]
-    for language in ("lv", "ru", "en"):
+    for language in ("lv", "ru", "uk", "en"):
         recovery_page.select_option("#language", language)
         assert recovery_page.locator(".question h2").inner_text() == first["translations"][language]["title"]
     for _ in range(10):
@@ -320,4 +320,4 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     recovery_page.close()
     browser.close()
 
-print("PASS: full offline runtime includes selection, answer types, conditions, support, feedback/recovery, skip/back, copy/print, three locales, and manual progress saving. Android device UNVERIFIED.")
+print("PASS: full offline runtime includes selection, answer types, conditions, support, feedback/recovery, skip/back, copy/print, four locales, and manual progress saving. Android device UNVERIFIED.")

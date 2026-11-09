@@ -1,0 +1,36 @@
+{
+  "schema": "mental-pilot-recovery-v1",
+  "version": "0.2.0-prototype+full-bank",
+  "layoutVersion": "optional-topics-v1-full-bank",
+  "lang": "en",
+  "selected": [
+    "23",
+    "33"
+  ],
+  "sectionConfirmed": true,
+  "currentId": "M23_11",
+  "answers": {
+    "M23_11": {
+      "kind": "choice",
+      "codes": [
+        "A",
+        "B"
+      ]
+    },
+    "M33_01": {
+      "kind": "text",
+      "value": "Synthetic legacy text — синтетичний запис"
+    }
+  },
+  "feedback": {
+    "M23_11": {
+      "reasons": [
+        "question"
+      ],
+      "comment": "Synthetic legacy correction",
+      "language": "ru",
+      "version": "0.2.0-prototype+full-bank",
+      "updatedAt": "2026-11-09T00:00:00Z"
+    }
+  }
+}

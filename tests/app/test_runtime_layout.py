@@ -8,7 +8,7 @@ from playwright.sync_api import sync_playwright
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "full_bank"))
 from browser_helpers import launch, open_page
-from runtime_fixture import write_fixture
+from runtime_fixture import write_fixture, LOCALES
 
 
 with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
@@ -24,7 +24,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert not re.search(r"\b0/\d+\b", page.locator(".card").inner_text())
     assert not page.locator(".section-progress").count()
     page.set_viewport_size({"width": 320, "height": 844})
-    for locale in ("lv", "en", "ru"):
+    for locale in LOCALES:
         page.select_option("#language", locale)
         confirm = page.locator('[data-act="confirm"]').bounding_box()
         cancel = page.locator('[data-act="cancel"]').bounding_box()
@@ -45,7 +45,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
         assert abs(box["y"] + box["height"] - height) < 2, f"Navigation not anchored to viewport at {width}px"
         assert nav.locator('[data-act="skip"]').bounding_box()["height"] >= 44
     assert page.locator(".feedback-flag").get_attribute("aria-label")
-    for locale in ("lv", "en", "ru"):
+    for locale in LOCALES:
         page.select_option("#language", locale)
         tools = page.locator("footer details").first
         summary = tools.locator("summary")

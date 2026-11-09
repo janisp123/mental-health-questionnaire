@@ -1,11 +1,11 @@
 {
   "schema": "mental-health-questionnaire-current-index-v2",
-  "updated_date": "2026-11-07",
+  "updated_date": "2026-11-09",
   "repository": "janisp123/mental-health-questionnaire",
-  "development_branch": "develop",
+  "development_branch": "main",
   "distribution_branch": "main",
-  "status": "FULL_QUESTIONNAIRE_TECHNICAL_BUILD_IN_PROGRESS__EN_RU_DRAFT",
-  "single_source_of_truth": "This manifest on GitHub develop; revise this index when active source paths or release status change.",
+  "status": "FOUR_LANGUAGE_TECHNICAL_REVIEW",
+  "single_source_of_truth": "GitHub main contains the sole active four-language application; use short-lived feature branches and versioned distribution snapshots.",
   "active_changelog": "docs/CHANGELOG.md",
   "current_versions": {
     "questionnaire": {
@@ -51,17 +51,20 @@
     "archive": {
       "old_drive_changelog": "docs/drive-original/166_CHANGELOG_LV.md",
       "old_versions_dir": "reference/history/",
-      "pilot_prototype": "archive/pilot/"
+      "pilot_prototype": "archive/pilot/",
+      "three_language_review": "archive/three-language/v0.2.0/manifest.json",
+      "four_language_baseline": "archive/four-language/v0.2.1/manifest.json"
     },
     "development_build": {
       "status": "TECHNICAL_REVIEW_BUILD_NOT_RELEASED",
-      "version": "0.2.0-prototype+full-bank",
+      "version": "0.2.2-review+full-bank",
       "sections": 15,
       "questions": 712,
       "reference_language": "lv",
       "translation_status": {
         "en": "DRAFT_NOT_REVIEWED",
-        "ru": "DRAFT_NOT_REVIEWED"
+        "ru": "DRAFT_NOT_REVIEWED",
+        "uk": "DRAFT_NOT_REVIEWED"
       },
       "question_sources": "src/modules/",
       "builder": "tools/build_questionnaire.py",
@@ -79,10 +82,22 @@
       "ci": ".github/workflows/questionnaire-checks.yml",
       "component_ci": ".github/workflows/app-component-checks.yml",
       "architecture": "docs/QUESTIONNAIRE_ARCHITECTURE.md",
-      "artifact": "dist/QUESTIONNAIRE_LV_EN_RU_NOT_RELEASED.html",
+      "artifact": "dist/QUESTIONNAIRE_LV_EN_RU_UK_NOT_RELEASED.html",
       "recovery_schema": "mental-pilot-recovery-v1 (retained for compatibility)",
       "source_modules": 48,
-      "note": "15 user-facing sections group all 48 source modules; each group contains 36–70 original questions. Source questions remain unchanged."
+      "note": "15 user-facing sections group all 48 source modules; each group contains 36–70 original questions. Source questions remain unchanged.",
+      "languages": [
+        "lv",
+        "en",
+        "ru",
+        "uk"
+      ],
+      "review_guide": "docs/review/GUIDE_LV_EN_RU_UK.md",
+      "package_builder": "tools/build_review_package.py",
+      "package_verifier": "tools/verify_review_package.py",
+      "check_runner": "tools/run_checks.py",
+      "review_package": "MH_Public_version/manifest.json",
+      "feature_contracts": "docs/FEATURE_DEVELOPMENT.md"
     }
   },
   "import_validation": {
@@ -576,23 +591,32 @@
     "folder_url": "https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
     "purpose": "PROFESSIONAL_TECHNICAL_REVIEW_CANDIDATE_NOT_PUBLIC_RELEASE",
     "reference_language": "lv",
-    "version": "0.2.0",
-    "source_commit": "3e024abc12c040a1024690f66c817c9d7e2b76fc",
-    "last_built_date": "2026-11-07",
+    "version": "0.2.1",
+    "source_commit": "46b138eb10921e0ab02b2b8ba7b5a08465a7f127",
+    "verified_date": "2026-11-09",
     "auto_sync": false,
+    "synchronization": "Four-language v0.2.1 was verified in Drive; v0.2.2 repository package awaits main promotion and deliberate readback-verified update.",
     "files": [
       {
-        "name": "187_Questionnaire_FULL_712Q_v0.2.0_REVIEW_BUILD.html",
-        "sha256": "31d49bc94a520e15e9d2d638e5b4e66f9a4189a00504c6cb42340ed08221f927"
+        "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+        "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.1_REVIEW_BUILD.html",
+        "sha256": "4bbcccbdfd06a124bb28d13fd843e23e303464c0e05796a4d403dad3848a82b7"
       },
       {
-        "name": "188_README_LV_EN_RU_v0.2.0_REVIEW_BUILD.pdf",
-        "sha256": "8613fd1ce73767ada568d464541862a0f5398f048840f6e6e281bda98b7851d0"
+        "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+        "name": "188_README_LV_EN_RU_UK_v0.2.1_REVIEW_BUILD.pdf",
+        "sha256": "262cf6ec898e37b59490ef374318ec7d500361f46ae84893e8781a71fa885a25"
       }
     ],
     "source_modules": 48,
     "sections": 15,
     "questions": 712,
-    "source_readme": "docs/review/README_LV_EN_RU_v0.2.0.md"
+    "languages": [
+      "lv",
+      "en",
+      "ru",
+      "uk"
+    ],
+    "source_readme": "docs/review/GUIDE_LV_EN_RU_UK.md"
   }
 }

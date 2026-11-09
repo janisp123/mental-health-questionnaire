@@ -8,3 +8,5 @@ Plan: `docs/superpowers/plans/2026-11-09-four-language-main.md`. Owner approved 
 - Tasks 2–6: pending.
 - Task 2: complete. Default four-language CLI, immutable-source audit/adapter and translation-pack tests pass. Candidate profiles are historical; no question/runtime semantics changed.
 - Task 3 builder: complete. Three package CLI tests pass. Ruling: PDF invariant timestamps use ReportLab's deterministic mode; ZIP timestamps use buildEpoch. Both are recorded explicitly, with pinned fonts/dependency.
+- Tasks 3–5: complete. Clean-source package/source verification, PDF visual/text review and immutable-source checks pass. All 28 scripts pass in memory mode; the maintained layout sweep renders 5,696 cases. Current docs/manifest distinguish repository v0.2.2 from Drive v0.2.1 until update.
+- Task 6: in progress. Independent review, remote CI, normal main merge, readback verification and distribution tagging remain.

@@ -6,6 +6,7 @@ Read this short guide before changing interface text, help, reports, or translat
 
 - **Latvian:** address one reader formally with `Jūs`, `Jums`, `Jūsu` and matching polite verb forms in interface and new reviewer text. Preserve the wording and capitalization of the frozen Latvian question bank. The Latvian Language Agency says capitalized `tu/jūs` is customary in letters and notes that use elsewhere depends on the communication context; this project chooses the respectful letter-like form for direct user-facing text.
 - **Russian:** address one reader formally with `Вы`, `Вам`, `Вас`, `Ваш` and their forms. The reference rule permits capitals in reusable questionnaires and other texts addressed to one person. Use lowercase when addressing multiple people.
+- **Ukrainian:** address one reader politely with `Ви`, `Вам`, `Вас`, `Ваш` forms; prefer gender-neutral wording when it preserves meaning. Preserve time windows, negation and uncertainty/refusal distinctions. Human review of safety wording is still required.
 - **English:** use ordinary `you/your` spelling; lowercase except where normal sentence capitalization requires it.
 
 ## Tone and editing
@@ -13,7 +14,7 @@ Read this short guide before changing interface text, help, reports, or translat
 - Be calm, welcoming, respectful, and plain. Do not open with “Don’t hurry” or use language that pressures, shames, frightens, or implies a diagnosis.
 - Explain choices and privacy directly. Make clear that any question can be skipped and that a professional makes clinical assessments.
 - Keep established wording, IDs, codes, conditions, time periods, and source attribution unchanged unless the task explicitly authorizes a question-bank edit.
-- Edit interface copy in LV/EN/RU together. EN/RU translations still require human review; automated checks only catch technical consistency.
+- Edit interface copy in all active locales (LV/EN/RU/UK) together. EN/RU/UK translations still require human review; automated checks only catch technical consistency.
 - Preserve Latvian diacritics and Russian ё where the approved wording uses it. Check punctuation, quotation marks, units, date formats, number spacing, and button labels in the rendered app.
 
 ## References

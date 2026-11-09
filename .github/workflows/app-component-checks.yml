@@ -2,13 +2,18 @@ name: App Component Checks
 
 on:
   push:
-    branches: [develop]
+    branches: [main]
     paths:
       - 'src/app/**'
+      - 'src/questionnaire/build.json'
+      - 'translations/**'
       - 'tests/app/**'
       - 'tests/full_bank/browser_helpers.py'
       - 'tools/build_questionnaire.py'
+      - 'tools/run_checks.py'
       - '.github/workflows/app-component-checks.yml'
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -25,38 +30,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Check offline app source assembly
-        run: python tests/app/test_build_manifest.py
-      - name: Check interface catalog structure
-        run: python tests/app/test_ui_catalogs.py
-      - name: Test screen renderers with synthetic content
-        run: |
-          node tests/app/test_screens.js
-          node tests/app/test_question_screens.js
-          node tests/app/test_report_screens.js
-      - name: Check isolated runtime rules
-        run: |
-          node tests/app/test_model.js
-          node tests/app/test_answer_flow.js
-          node tests/app/test_recovery.js
-          node tests/app/test_events.js
-      - name: Check app JavaScript syntax
-        run: |
-          for file in src/app/core/*.js src/app/screens/*.js src/app/reports/*.js; do
-            node --check "$file"
-          done
-      - name: Prepare focused browser check
+      - name: Prepare browser tooling
         run: |
           python -m pip install playwright
           if command -v google-chrome >/dev/null; then
-            google-chrome --version
             echo "QUESTIONNAIRE_BROWSER=$(command -v google-chrome)" >> "$GITHUB_ENV"
           else
             python -m playwright install --with-deps chromium
           fi
-      - name: Check synthetic runtime behaviors offline
-        run: |
-          python tests/app/test_runtime_answers.py
-          python tests/app/test_runtime_feedback.py
-          python tests/app/test_runtime_recovery.py
-          python tests/app/test_runtime_layout.py
+      - name: Test focused app behaviors in all active languages
+        run: python tools/run_checks.py --suite app

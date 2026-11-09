@@ -1,4 +1,4 @@
-"""Regressions for the four-language candidate's phone layout and locale changes."""
+"""Regressions for the four-language current app's phone layout and locale changes."""
 import json
 import tempfile
 import unittest
@@ -128,6 +128,26 @@ class CandidateQATests(unittest.TestCase):
                     self.assertIn("Synthetic saved feedback", self.page.locator(".report-preview").inner_text())
                 finally:
                     act(self.page, "resultScreen")
+
+    def test_three_language_progress_import_and_ukrainian_round_trip(self):
+        payload = json.loads((build.ROOT / "tests/fixtures/recovery-three-language.json").read_text(encoding="utf-8"))
+        restore(self.page, payload)
+        saved = backup(self.page)
+        self.assertEqual(saved["answers"]["M23_11"]["codes"], ["A", "B"])
+        self.assertEqual(saved["answers"]["M33_01"]["value"], "Synthetic legacy text — синтетичний запис")
+        self.assertEqual(saved["feedback"]["M23_11"]["language"], "ru")
+        self.page.select_option("#language", "uk")
+        act(self.page, "feedback")
+        self.page.locator("#feedback-comment").fill("Синтетичне зауваження")
+        act(self.page, "feedbackContinue")
+        ukrainian = backup(self.page)
+        self.assertEqual(ukrainian["lang"], "uk")
+        self.assertEqual(ukrainian["feedback"]["M23_11"]["language"], "uk")
+        self.assertEqual(ukrainian["feedback"]["M23_11"]["comment"], "Синтетичне зауваження")
+        restore(self.page, ukrainian)
+        readback = backup(self.page)
+        self.assertEqual(readback["answers"], ukrainian["answers"])
+        self.assertEqual(readback["feedback"], ukrainian["feedback"])
 
 
 if __name__ == "__main__":

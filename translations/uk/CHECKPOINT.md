@@ -11,11 +11,11 @@ Updated 8 November 2026, Riga time. Branch `develop`.
 | Medication form | All 32 strings drafted. Nested keys, saved answer codes and clinician report labels checked. |
 | Titles and report labels | 48 module titles, 15 section titles, five legacy titles and 17 question-specific report labels drafted. IDs and ordering checked. |
 | Human language review and clinical review of safety wording | Pending |
-| Integration and language selectors | Disabled by isolation from the app |
+| Integration and language selectors | Active in the default four-language app and report selector |
 
-## Next batch
+## Next action
 
-Review the complete Ukrainian translation against the Latvian source before integration. Prioritize safety language and the applicability of support-service details, standardized legacy items M02_01–M02_09 and M03_01–M03_07, and the ambiguous source wording in M14_21. Complete native-language and clinical review before adding Ukrainian to the language selector.
+Maintain the integrated pack from main. Validate wording/source hashes with `python translations/workspace.py check --complete`, run the active checks and verify report/recovery behavior after changes. Human language and clinical review remain pending; prioritize safety wording and applicability of support details. Integration is already complete and must not be repeated.
 
 ## Checkpoint history
 
@@ -45,3 +45,5 @@ Review the complete Ukrainian translation against the Latvian source before inte
 - 2026-11-08 · Drafted all 40 S03 questions in modules 03, 04 and 22. Checked panic-like episodes, time windows and the distinction between wanting uncertainty or distress to end and wanting life to end. Flag M03_01–07 and M22_16 for appropriate human review.
 - 2026-11-08 · Drafted modules 06 and 21, including current safety, self-harm, unusual experiences, and the caution about actual violence or discrimination. The Ukrainian safety wording still needs clinical and native-language review.
 - 2026-11-08 · Drafted module 18 (S05) and ran the full structural completion check for all 48 modules. Ukrainian remains in the translation workspace pending review.
+
+- 2026-11-09 · Integrated as a normal required pack in the main-based four-language build; prior isolation notes above are historical. Human review remains pending.

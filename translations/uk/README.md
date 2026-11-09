@@ -1,6 +1,6 @@
-# Ukrainian translation workspace
+# Active Ukrainian translation pack
 
-This workspace lives on `develop` and has its own [checkpoint](CHECKPOINT.md). It is outside the questionnaire builder and both language selectors. The reviewer HTML, PDF and existing Latvian, English and Russian sources are outside the scope of translation batches.
+Ukrainian is integrated into the standard four-language app and both language selectors. The current build configuration is `src/questionnaire/build.json`. This folder owns its question/UI/medicine/section/report wording; do not make another app engine. Human language and clinical review remain pending. Read `docs/FEATURE_DEVELOPMENT.md` and this folder’s checkpoint before editing.
 
 ## Translation order
 
@@ -30,4 +30,4 @@ python translations/workspace.py check
 
 ## Integration criteria
 
-Complete the question files, then translate the interface, medication form, module and section titles, report labels, and reviewer guide. Record human language review and clinical review of safety wording. Integrate in a separate change, verify the existing languages and backups, and test Ukrainian offline, including both PDF paths and Android. Enable **Українська** in the questionnaire and report selectors only after the completed pack passes those checks.
+Complete the question files, then translate the interface, medication form, module and section titles, report labels, and reviewer guide. Record human language review and clinical review of safety wording. Integrate in a separate change, verify the existing languages and backups, and test Ukrainian offline, including both PDF paths and Android. Українська is active in both selectors. Continue recording technical checks and outstanding human review separately.

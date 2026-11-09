@@ -1,22 +1,26 @@
-# Questionnaire architecture
+# Current questionnaire architecture
 
-The working build assembles the original 48 modules and 712 questions into 15 user-facing sections in one offline HTML file. Each section contains 36–70 original questions; the source modules remain separate and unchanged.
+One four-language offline application is maintained on main. The normal build assembles 712 questions from 48 unchanged source modules into 15 optional sections. Latvian is the reference and initial interface language.
 
-- `src/modules/` is the canonical LV/EN/RU question bank. LV is the reference. EN/RU translations await human review.
-- `src/app/screens/` contains separate first-page, section-picker, question, medication, feedback, completion, and report-page templates. Each accepts its data and labels from the runtime.
-- `src/app/styles/` contains ordered base, report, navigation, feedback, and safe-area styles. Change a visual area here without opening question files.
-- `src/app/core/model.js` owns question lookup, conditional visibility, active question order, and visible progress counts. `src/app/core/answer-flow.js` owns next/back and safety-review transitions. `src/app/core/recovery.js` validates and normalizes backup files. `src/app/core/events.js` delegates click/change/input events to injected coordinator callbacks. `src/app/core/app.js` coordinates page state, file selection, and screen components. `src/app/reports/` generates doctor and project-feedback reports; `src/app/i18n/` holds interface labels.
-- Recovery files are never downloaded automatically. After a user completes a section, the app recommends saving and offers “Save and continue” or “Continue without saving”; the separate “Save progress to file” control remains available.
-- `src/app/build.json` is the explicit ordered list of app styles and scripts. The component builder test uses a synthetic bundle and does not read `src/modules/`.
-- `src/questionnaire/` contains the 48 source-module titles, a separate map that groups them into 15 user-facing sections, navigation/report ordering, explicit report rules, and build metadata.
-- `tools/build_questionnaire.py` validates and combines these sources into `dist/QUESTIONNAIRE_LV_EN_RU_NOT_RELEASED.html`.
-- The `translationPacks` map in `src/questionnaire/build.json` lists additional locale codes and their display names. Empty means LV/EN/RU only. An enabled pack adds wording from `translations/<locale>/` by question ID and answer code. The builder validates completeness, Latvian source hashes, and catalog keys and placeholders before writing HTML. Section headings, report labels, UI, and medication labels load from the pack. The source bank still owns question behavior and the recovery format.
-- Run `python tools/build_questionnaire.py --translation-pack-test` from a separate worktree for an isolated comparison. It creates `dist/translation-pack-test/QUESTIONNAIRE_TRANSLATION_PACK_TEST.html` and refuses a custom destination or an existing file. This is a local test artifact. Keep the sent reviewer HTML and PDF as the comparison baseline.
-- `tests/app/` checks individual screen renderers, source assembly, event routing, model, answer-flow, recovery validation, and selected browser behaviors using synthetic content, without loading the 712-question bank.
-- `tests/full_bank/` checks source mapping, packaging, reports, offline runtime behavior, and the complete browser journey.
-- `.github/workflows/app-component-checks.yml` runs focused synthetic checks for app, screen, style, and interface-locale changes. `.github/workflows/questionnaire-checks.yml` runs the full regression for question-bank and full-build changes; it can also be started manually.
-- `archive/pilot/` holds the retired 60-question prototype and its old tests for history only.
+| Area | Responsibility |
+|---|---|
+| `src/modules/` | Frozen canonical LV/EN/RU source bank, IDs/codes/conditions; filenames describe source provenance. |
+| `translations/uk/` | Active Ukrainian question/UI/medicine/section/report pack validated against the source. |
+| `src/app/core/` | Model lookup/visibility, answer transitions, recovery validation, event routing and coordinator. |
+| `src/app/screens/` | Focused data-driven screen/answer-control renderers. |
+| `src/app/styles/` | Ordered layout, feedback, report and safe-area styles. |
+| `src/app/reports/` | Clinician answers and separately submitted project feedback. |
+| `src/app/i18n/` | Base LV/EN/RU UI and medicine catalogs. |
+| `src/questionnaire/` | The single current build config, section layout and explicit report presentation rules. |
+| `tools/` | Offline builder, deterministic package builder/verifier and maintained check runner. |
+| `MH_Public_version/` | Current HTML, matching PDF and machine-readable provenance/checksums. |
+| `archive/` | Immutable prior reviewer packages/build profiles; never default build inputs. |
+| `reference/` | Unchanged imported reference baselines and historical source records. |
 
-The HTML contains its runtime and all questions, works offline, and makes no network requests. Screen and report-page markup has focused synthetic-content tests. A compact synthetic bundle is also used for isolated browser and mobile/desktop layout checks, while the complete 15-section journey remains a separate integration gate. Automated desktop Chromium checks pass; native Android testing and clinical review remain outstanding. EN/RU content and the new interface text have not had human language review. This build is for professional review, not diagnosis or clinical validation.
+See [feature development contracts](FEATURE_DEVELOPMENT.md) before adding modules or altering saved data. Extend the explicit app build manifest and existing APIs; keep feature logic out of the coordinator when it warrants a separate module. There is no second engine for Ukrainian or for future languages.
 
-Recovery files retain the existing `mental-pilot-recovery-v1` schema to preserve compatibility with the prior prototype. The file remains local unless the user chooses to copy or share it.
+The ordinary command `python tools/build_questionnaire.py` creates `dist/QUESTIONNAIRE_LV_EN_RU_UK_NOT_RELEASED.html`. `python tools/build_review_package.py --output-dir dist/review-<version>` creates its HTML/PDF/ZIP/checksum package from committed sources. The editable guide is `docs/review/GUIDE_LV_EN_RU_UK.md`; fonts and PDF dependency are pinned. Existing package destinations are refused.
+
+`python tools/run_checks.py` runs active app/full-bank/translation/package tests and JavaScript syntax checks. CI runs on main and PRs to main. Tests distinguish immutable three-language source fidelity from four-language application completeness, and preserve legacy recovery compatibility with `mental-pilot-recovery-v1`. The layout sweep covers every question in each active language at 320/390 pixels.
+
+The app contains its runtime and question data and sends no network requests. Answers and unsubmitted feedback stay in the session; save/restore and report generation are explicit. Technical verification does not establish human language review, clinical validation or physical-device compatibility. Managed-browser memory loading is explicitly labelled in test reports.

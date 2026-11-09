@@ -7,7 +7,7 @@ from playwright.sync_api import sync_playwright
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "full_bank"))
 from browser_helpers import act, backup, choose, launch, open_page, restore
-from runtime_fixture import write_fixture
+from runtime_fixture import write_fixture, LOCALES
 
 
 with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
@@ -19,7 +19,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     notes = page.locator("#project-updates")
     panel = page.locator("footer details").last
     contact = panel.locator('a[href="mailto:test@example.invalid"]')
-    for locale in ("lv", "en", "ru"):
+    for locale in LOCALES:
         page.select_option("#language", locale)
         notes.locator("summary").click()
         assert notes.locator("ol li").count() == 10

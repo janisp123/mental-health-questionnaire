@@ -20,15 +20,15 @@ These rules apply to future development work in this repository, particularly lo
 
 ## Development safety and source of truth
 
-- Work on `develop`, not `main`, unless an approved release is being published.
+- `main` is the sole active four-language source. Start short-lived feature/fix branches from current main; use checked PRs to integrate. Older develop/candidate branches are historical. Read `docs/FEATURE_DEVELOPMENT.md` for stable module/data contracts.
 - Before significant edits, inspect the relevant parts of `docs/FILE_INDEX.md`, `project-manifest.json`, and the active entry at the end of `docs/CHANGELOG.md`. Do not load or print those whole files by default.
 - Work on one module and language at a time wherever possible. Preserve original IDs, answer codes, validation logic and backup compatibility.
 - Do not silently modify the public Google Drive Latvian release, the frozen v16 reference baselines, or the original Drive archive.
 - Never publish questionnaire responses or identifiable patient information to this public repository.
-- EN and RU translations remain drafts until human review and release-gate requirements are satisfied.
+- EN, RU and UK translations remain drafts until human review and release-gate requirements are satisfied.
 - Do not claim an untested feature, translation or release passed verification.
-- When user-facing questionnaire text or behavior changes, prepend a dated entry to the in-app notesHistory list in LV/EN/RU together and retain the latest ten entries. Use Riga local time and verify the visible text and all three catalogs before committing.
-- Before editing user-facing wording or translations, read `docs/LANGUAGE_STYLE_GUIDE.md` and apply its LV/RU/EN address and tone conventions. Preserve frozen source question content unless explicitly asked to edit the question bank.
+- When user-facing questionnaire text or behavior changes, prepend a dated entry to the in-app notesHistory list in all active locales (currently LV/EN/RU/UK) together and retain the latest ten entries. Use Riga local time and verify the visible text and all active catalogs before committing.
+- Before editing user-facing wording or translations, read `docs/LANGUAGE_STYLE_GUIDE.md` and apply its LV/RU/EN/UK address and tone conventions. Preserve frozen source question content unless explicitly asked to edit the question bank.
 
 ## Review package and document output
 
@@ -36,13 +36,13 @@ These rules apply to future development work in this repository, particularly lo
 - A professional-review package contains the self-contained questionnaire HTML and a concise, readable PDF guide. Keep editable Markdown source in the repository or private project documentation; do not put it in the reviewer folder unless requested.
 - Before sharing a PDF, render it and inspect the page visually at normal reading size. Check that text is legible, page breaks are clean, and the instructions match the current build and button labels.
 - Keep the reviewer folder limited to the current files intended for reviewers. After replacing a deliverable, verify the folder contents and update its current-state/archive index so filenames and formats agree.
-- The user tests the current questionnaire from the Google Drive review folder. After every verified implementation batch intended for user testing, rebuild the HTML and matching PDF from `develop`, replace the Drive files in place, and verify both uploaded files by readback before handing off. Do not defer Drive refresh until a major release.
+- The user tests the current questionnaire from the Google Drive review folder. After every verified implementation batch intended for user testing, rebuild the HTML and matching PDF from the verified main-based source commit, deliberately replace the Drive files in place for a reviewer distribution update, and verify both uploaded files by readback before handing off. Do not defer Drive refresh until a major release.
 - Clearly label technical review status and limitations. Never imply clinical validation, human translation review, or device testing that has not happened.
 
 ## Keep each work session focused
 
 - Read the active changelog checkpoint with `tail` or a narrow line range. Search older history with `rg` only when the current task depends on it. Preserve the existing task ID and exact next action in handoffs.
 - Query only the relevant `current_versions` fields from `project-manifest.json`; avoid printing the full imported-file hash inventory. Run `tools/verify_project_index.py` when source/index integrity is affected or specifically required.
-- Start with the focused test for the files being changed. Run the full local suite only when shared runtime behavior or source data requires it; use the GitHub workflow for the full cross-project regression pass.
+- Start with focused tests. Run `python tools/run_checks.py` for shared runtime, locale or source-data changes. Build with `python tools/build_review_package.py --output-dir dist/review-<version>` and verify with `python tools/verify_review_package.py <folder> --with-zip`; the package refuses existing output directories. Explicit `--load-mode memory` is a documented managed-browser fallback, never proof of file/device testing.
 - For CI, inspect run status and failed step summaries first. Fetch logs for the failing step when available; fetch complete job logs only if the failure cannot be diagnosed from that step.
 - Avoid repeating successful checks after documentation-only edits. Record the exact commit, verification performed, any unverified areas, and one next action in the changelog.

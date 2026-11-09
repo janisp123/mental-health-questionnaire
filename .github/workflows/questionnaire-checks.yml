@@ -1,18 +1,10 @@
-name: Offline Questionnaire Checks
+name: Multilingual Questionnaire Checks
 
 on:
   push:
-    branches: [develop]
-    paths:
-      - 'src/questionnaire/**'
-      - 'src/modules/**'
-      - 'tests/full_bank/**'
-      - 'translations/**'
-      - 'tools/build_questionnaire.py'
-      - 'tools/verify_project_index.py'
-      - 'project-manifest.json'
-      - 'docs/QUESTIONNAIRE_ARCHITECTURE.md'
-      - '.github/workflows/questionnaire-checks.yml'
+    branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -27,56 +19,34 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Verify original source files and question IDs
-        run: python tools/verify_project_index.py
-      - name: Audit all original modules and engine data shapes
-        run: python tests/full_bank/test_source_audit.py
-      - name: Verify every question maps from source unchanged
-        run: python tests/full_bank/test_source_adapter.py
-      - name: Verify all frozen localized module titles
-        run: python tests/full_bank/test_module_titles.py
-      - name: Verify all optional source groups and conditions
-        run: python tests/full_bank/test_full_groups.py
-      - name: Verify default full-bank single-file build
-        run: python tests/full_bank/test_build.py
-      - name: Verify isolated translation packs
-        run: python tests/full_bank/test_translation_packs.py
-      - name: Verify navigation and report order
-        run: python tests/full_bank/test_layout.py
-      - name: Check report semantics and medication formatting
-        run: |
-          node tests/full_bank/test_reports.js
-          node tests/full_bank/test_medicine_report.js
-      - name: Check shared JavaScript syntax
-        run: |
-          node --check src/app/core/app.js
-          node --check src/app/reports/reports.js
-      - name: Check isolated app components
-        run: |
-          python tests/app/test_build_manifest.py
-          python tests/app/test_ui_catalogs.py
-          node tests/app/test_screens.js
-          node tests/app/test_question_screens.js
-          node tests/app/test_report_screens.js
-      - name: Build complete offline HTML
-        run: python tools/build_questionnaire.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned review dependencies and browser tooling
+        run: python -m pip install -r tools/review-requirements.txt playwright
       - name: Prepare desktop Chromium
         run: |
-          python -m pip install playwright
           if command -v google-chrome >/dev/null; then
-            google-chrome --version
             echo "QUESTIONNAIRE_BROWSER=$(command -v google-chrome)" >> "$GITHUB_ENV"
           else
             python -m playwright install --with-deps chromium
           fi
-      - name: Run complete offline browser journey
-        run: python tests/full_bank/test_runtime.py
-      - name: Check four-language candidate layouts and feedback drafts
-        run: python tests/full_bank/test_candidate_qa.py
-      - name: Upload technical-review build (not a release)
-        if: success()
+      - name: Run all active checks with real offline file opening
+        run: python tools/run_checks.py
+      - name: Build and verify matching four-language HTML/PDF/ZIP
+        run: |
+          python tools/build_review_package.py
+          python tools/verify_review_package.py dist/review --with-zip
+      - name: Upload current multilingual technical-review package
         uses: actions/upload-artifact@v4
         with:
-          name: QUESTIONNAIRE_LV_EN_RU_NOT_RELEASED
-          path: dist/QUESTIONNAIRE_LV_EN_RU_NOT_RELEASED.html
+          name: QUESTIONNAIRE_LV_EN_RU_UK_REVIEW
+          path: dist/review/
+          retention-days: 14
+      - name: Retain test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: questionnaire-checks
+          path: dist/checks/
           retention-days: 14

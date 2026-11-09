@@ -4,7 +4,10 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-LOCALES = ("lv", "en", "ru")
+LOCALES = ("lv", "en", "ru", *json.loads((ROOT / "src/questionnaire/build.json").read_text())["translationPacks"])
+
+def catalog_path(stem, lang):
+    return ROOT / "src/app/i18n" / f"{stem}.{lang}.json" if lang in ("lv", "en", "ru") else ROOT / "translations" / lang / f"{stem}.json"
 
 
 def key_paths(value, prefix=""):
@@ -19,7 +22,7 @@ def key_paths(value, prefix=""):
 
 for stem in ("ui", "medicine"):
     catalogs = {
-        lang: json.loads((ROOT / "src" / "app" / "i18n" / f"{stem}.{lang}.json").read_text(encoding="utf-8"))
+        lang: json.loads(catalog_path(stem, lang).read_text(encoding="utf-8"))
         for lang in LOCALES
     }
     expected = key_paths(catalogs["lv"])
@@ -31,7 +34,7 @@ for stem in ("ui", "medicine"):
         )
 
 ui = {
-    lang: json.loads((ROOT / "src" / "app" / "i18n" / f"ui.{lang}.json").read_text(encoding="utf-8"))["strings"]
+    lang: json.loads(catalog_path("ui", lang).read_text(encoding="utf-8"))["strings"]
     for lang in LOCALES
 }
 assert all("chooseGuide" not in ui[lang] for lang in LOCALES)
@@ -40,11 +43,13 @@ for lang in LOCALES:
 support_phrases = {
     "lv": ("sešciparu", "tikai 6 cipari", "anonimitātes", "darbavietai"),
     "en": ("six-digit", "only six digits", "anonymity", "workplace"),
+    "uk": ("шестизначний", "лише 6 цифр", "анонімності", "роботодавцю"),
     "ru": ("шестизначный", "всего 6 цифр", "анонимности", "работодателя"),
 }
 privacy_phrases = {
     "lv": ("nav šifrēts", "personas datus", "klīniski validēta"),
     "en": ("not encrypted", "personal details", "not clinically validated"),
+    "uk": ("не зашифрований", "персональних даних", "клінічної валідації"),
     "ru": ("не зашифрован", "личные сведения", "клиническую проверку"),
 }
 for lang in LOCALES:
@@ -80,4 +85,4 @@ for key, text in ui["lv"].items():
 assert "Вам" in ui["ru"]["intro"] and "Вы" in ui["ru"]["guideBody"]
 assert "you" in ui["en"]["intro"] and "You" not in ui["en"]["intro"]
 
-print("PASS: LV/EN/RU catalogs align; review, privacy, support number, and current-change labels are present.")
+print("PASS: all active locale catalogs align; review, privacy, support number, and current-change labels are present.")

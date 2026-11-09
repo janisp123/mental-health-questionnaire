@@ -1,6 +1,6 @@
 # Project file index — latest verified versions
 
-**Status: SOURCE TRANSFER COMPLETE (79/79 files). The full offline questionnaire is a technical review build.**
+**Current product: LV/EN/RU/UK on main. Original source transfer remains verified (79/79 files). This is a technical-review project.**
 
 ## Where to start each time
 
@@ -28,7 +28,7 @@ For interrupted work, start with [`docs/WORK_CHECKPOINT.md`](WORK_CHECKPOINT.md)
 | Russian app snapshot | `reference/baseline/html/172_Questionnaire_RU_v16_DRAFT_NOT_RELEASED.html` | Reference draft only, **not a release** |
 | Working language resources | `src/i18n/working/` | EN/RU catalogs, memory, overrides and one CSV snapshot of the prior Google Sheet |
 | Standalone README/PDF snapshots | `reference/baseline/readme/`, `reference/baseline/information/` | Current v16 LV reference and unreviewed EN/RU documents |
-| Current technical-review README source | `docs/review/README_LV_v0.2.0.md` | Versioned Latvian source used to generate the matching one-page review PDF; update it before replacing the Drive PDF. |
+| Current technical-review README source | `docs/review/GUIDE_LV_EN_RU_UK.md` | Current four-language guide source used by the pinned package builder; update it before rebuilding the review PDF. |
 | Module reconstruction tool | `tools/183_MODULE_TOOLS_v16.py` | Rebuilds BANK data, not full UI or reports |
 | Release-evidence verifier | `tools/186_RELEASE_GATE_CHECK_v1.py` | Checks evidence metadata; is not an automated browser or clinical test |
 | Active development status and checkpoints | `docs/CHANGELOG.md` | Short, authoritative current state and next action; keep this file focused on active work. |
@@ -74,3 +74,19 @@ Google Drive's [professional review folder](https://drive.google.com/drive/folde
 6. Validate imports with `python tools/verify_project_index.py`. This is source integrity, not a user-interface, translation or clinical release approval.
 
 **Editable application:** [Questionnaire architecture and current limits](QUESTIONNAIRE_ARCHITECTURE.md). Keep interface/runtime edits in `src/app/`, question content in `src/modules/`, and navigation/report rules in `src/questionnaire/`.
+
+
+## Current multilingual working paths
+
+- `main`: sole active product; short-lived branches carry changes.
+- `src/questionnaire/build.json`: default four-language config, build epoch and current guide pointer.
+- `translations/uk/`: active validated Ukrainian pack; source LV/EN/RU module filenames remain unchanged.
+- `docs/FEATURE_DEVELOPMENT.md`: stable module/data contracts and how to add features.
+- `tools/run_checks.py`: maintained app/full-bank/translation/package suite.
+- `tools/build_review_package.py` and `tools/verify_review_package.py`: current HTML/PDF/ZIP and provenance/checksums.
+- `MH_Public_version/manifest.json`: current repository review pair and actual source/artifact hashes.
+- `archive/three-language/v0.2.0/manifest.json`: separately identified previous repository and Drive packages.
+- `archive/four-language/v0.2.1/manifest.json`: exact four-language pair distributed before main migration.
+- `downloads/README.md`: legacy URLs retained for compatibility; not the active package.
+
+The manifest's review_distribution field records actual Drive synchronization separately from the repository package. Do not claim a local build has already reached Drive.

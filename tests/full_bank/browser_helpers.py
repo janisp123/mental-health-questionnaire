@@ -64,6 +64,10 @@ def open_page(browser, path: Path):
     page.on("request", lambda request: network.append(request.url)
             if request.url.startswith(("http:", "https:")) else None)
     page.on("dialog", lambda dialog: dialog.accept())
-    page.goto(path.as_uri())
+    if os.getenv("QUESTIONNAIRE_LOAD_MODE", "file") == "memory":
+        # Explicit managed-browser fallback; it does not establish file:// compatibility.
+        page.set_content(path.read_text(encoding="utf-8"))
+    else:
+        page.goto(path.as_uri())
     page.select_option("#language", "en")
     return page, errors, network
