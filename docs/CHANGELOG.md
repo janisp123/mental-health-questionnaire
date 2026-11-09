@@ -554,3 +554,11 @@ Independent review found no runtime/source-bank changes or archive problems, but
 ### 2026-11-09 · Promotion verification checkpoint
 
 After the final review correction, all 28 maintained scripts pass again; six package tests include the three negative release-gate cases. Package bytes remain unchanged and regenerate from clean source `e2ce2fa86749012e8336eccca9c89898df3df69f`. GitHub's initial main-promotion checks passed with real file opening: Multilingual Questionnaire Checks run 42586109623 and App Component Checks run 42586109371 at head 252e1a7. The reviewed head will receive a final remote check before merge. All archived branch tips are ancestors of the integrated branch; no history was reset. Next: merge checked PR #2 and replace/read back the same Drive file IDs.
+
+### 2026-11-09 · Four-language main migration — DONE
+
+PR #2 merged as `1a68d31f385208263be79de5da8c27e3df90354a`. The merge tree exactly equals checked head `505187b9b127fe375dafab9b3e341cf4d863ac3b`. Final GitHub full/app workflows both passed with real offline file opening (42586610302, 42586610292). Local 28-script suite and 5,696-layout sweep passed; six package tests cover reproducibility and stale-package rejection. All runtime/answer/navigation/recovery/question-bank files remain unchanged from the fixed four-language baseline.
+
+The matching v0.2.2 HTML/PDF replaced the existing Drive files in place. Both downloads match repository bytes: HTML `8e700bf8cf23b689f44a02c7c11e688284bff5d353408c37d33ff92042433cc9`; PDF `adbfe1f41acbdfc7275ae0068afff0379bbd37fa9a3b212d1166966d2e3bade1`. IDs, folder and sharing are unchanged. Readback/provenance evidence is `docs/review/checks/2026-11-09-main-drive-sync.json`. The package source commit remains truthfully recorded as `e2ce2fa86749012e8336eccca9c89898df3df69f`; promotion SHA is recorded separately. PR #1 was closed as superseded, not discarded. Tag `review/v0.2.2` pins the promoted technical-review snapshot; archival tags and exact old packages preserve rollback. No branch deletion or force-push occurred.
+
+Next action: start the next requested feature from main using FEATURE_DEVELOPMENT contracts and the standard four-language check/package commands. Physical-device downloaded-file testing and human language/clinical review remain outstanding; main adoption is not clinical validation.

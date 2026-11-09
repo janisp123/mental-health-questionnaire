@@ -87,13 +87,13 @@ The manifest is machine-readable package metadata, not an extra reviewer documen
 
 **Files/refs:** new migration branch; `archive/three-language/v0.2.0/README.md` and `manifest.json`; immutable archival tags for current main/develop/candidate tips.
 
-- [ ] Refresh remote refs and inspect the unique commits; record the exact current SHAs before changing anything.
-- [ ] Create a migration branch based on the fixed four-language source. Reconcile the unique main download/readme change and both develop documentation commits explicitly. Preserve the future-ideas parking lot without adding it to the active roadmap.
-- [ ] Keep PR #1's fixes in the migration ancestry. Once the promotion PR contains them, resolve PR #1 as superseded or merge it through its original branch; record which route was used. Do not leave its work appearing unintegrated.
-- [ ] Preserve the pre-promotion branch tips with clearly named archival tags. Keep existing branches until migration verification is complete.
-- [ ] Archive the old repository reviewer files and the exact pre-replacement Drive files in separately labelled subdirectories. Add origin, original name, original Drive ID where applicable, byte size and SHA-256 to the archive manifest. Use the already downloaded backups; do not reconstruct old Drive bytes from Git.
-- [ ] Preserve the exact currently distributed four-language HTML/PDF pair as a versioned v0.2.1 snapshot before regenerating package bytes. Its PDF has generation-time metadata, so Markdown alone does not reproduce the recorded PDF hash. Verify downloads against the pinned hashes before preserving them.
-- [ ] Verify every archived file against its manifest. Record rollback commands and the archived file pair to restore in Drive.
+- [x] Refresh remote refs and inspect the unique commits; record the exact current SHAs before changing anything.
+- [x] Create a migration branch based on the fixed four-language source. Reconcile the unique main download/readme change and both develop documentation commits explicitly. Preserve the future-ideas parking lot without adding it to the active roadmap.
+- [x] Keep PR #1's fixes in the migration ancestry. Once the promotion PR contains them, resolve PR #1 as superseded or merge it through its original branch; record which route was used. Do not leave its work appearing unintegrated.
+- [x] Preserve the pre-promotion branch tips with clearly named archival tags. Keep existing branches until migration verification is complete.
+- [x] Archive the old repository reviewer files and the exact pre-replacement Drive files in separately labelled subdirectories. Add origin, original name, original Drive ID where applicable, byte size and SHA-256 to the archive manifest. Use the already downloaded backups; do not reconstruct old Drive bytes from Git.
+- [x] Preserve the exact currently distributed four-language HTML/PDF pair as a versioned v0.2.1 snapshot before regenerating package bytes. Its PDF has generation-time metadata, so Markdown alone does not reproduce the recorded PDF hash. Verify downloads against the pinned hashes before preserving them.
+- [x] Verify every archived file against its manifest. Record rollback commands and the archived file pair to restore in Drive.
 
 **Done when:** no unique branch work is lost, both historical package variants are distinguishable, and the new work can be rolled back without guessing.
 
@@ -101,12 +101,12 @@ The manifest is machine-readable package metadata, not an extra reviewer documen
 
 **Files:** `src/questionnaire/build.json`, `tools/build_questionnaire.py`, `tests/full_bank/test_build.py`, `tests/full_bank/test_translation_packs.py`, `tests/full_bank/test_source_adapter.py`, and tests using candidate-only config paths.
 
-- [ ] First add failing checks that `build_bundle()` and the ordinary CLI include LV/EN/RU/UK in the UI, all 712 questions, report selectors, medication labels and report labels.
-- [ ] Promote the fixed candidate settings into `build.json`; record the source/promotion revision. Preserve `v0.2.1-reports` as the already distributed baseline. Assign a new build identifier for any changed packaged HTML and record that it replaces the baseline; do not overwrite the historical checksum record.
-- [ ] Make Ukrainian a normal required translation pack. Missing/incomplete/stale Ukrainian data must fail the current build rather than silently dropping the language.
-- [ ] Update integration tests to use the default build. Keep a deliberately three-language test fixture only to test the loader boundary and legacy compatibility.
-- [ ] Separate source-fidelity assertions from active-locale assertions: compare frozen LV/EN/RU source content unchanged, then verify Ukrainian by ID, codes and source hash.
-- [ ] Retire redundant active candidate profiles after replacing their test dependencies. Historical profiles remain recoverable from tags; remove candidate commands from normal instructions.
+- [x] First add failing checks that `build_bundle()` and the ordinary CLI include LV/EN/RU/UK in the UI, all 712 questions, report selectors, medication labels and report labels.
+- [x] Promote the fixed candidate settings into `build.json`; record the source/promotion revision. Preserve `v0.2.1-reports` as the already distributed baseline. Assign a new build identifier for any changed packaged HTML and record that it replaces the baseline; do not overwrite the historical checksum record.
+- [x] Make Ukrainian a normal required translation pack. Missing/incomplete/stale Ukrainian data must fail the current build rather than silently dropping the language.
+- [x] Update integration tests to use the default build. Keep a deliberately three-language test fixture only to test the loader boundary and legacy compatibility.
+- [x] Separate source-fidelity assertions from active-locale assertions: compare frozen LV/EN/RU source content unchanged, then verify Ukrainian by ID, codes and source hash.
+- [x] Retire redundant active candidate profiles after replacing their test dependencies. Historical profiles remain recoverable from tags; remove candidate commands from normal instructions.
 
 **Verify:** `python tools/build_questionnaire.py` succeeds and produces the documented four-language artifact; default-build, source-adapter, translation-pack and source-audit tests pass.
 
@@ -114,12 +114,12 @@ The manifest is machine-readable package metadata, not an extra reviewer documen
 
 **Files:** new `tools/build_review_package.py` and pinned `tools/review-requirements.txt`; current guide source in `docs/review/`; `MH_Public_version/`; new package manifest and package-builder tests.
 
-- [ ] Add a failing package test: a fresh temporary output directory receives the current four-language HTML, one-page four-language PDF, checksum manifest and ZIP containing exactly the two reviewer files.
-- [ ] Build HTML through the existing builder. Generate PDF from the current editable four-language guide; pin its dependency/fonts. Normalize PDF metadata and ZIP entry order/timestamps using an explicit build epoch. Test that two builds of the same source, epoch and pinned toolchain have identical HTML/PDF/ZIP hashes; do not confuse repeatable generation with byte reproducibility.
-- [ ] Put source commit/tree, build epoch, build identifier, language list, question count, filenames and SHA-256 hashes in the package manifest. Record hashes from actual generated bytes. Distinguish the tested source commit from the final promotion merge SHA if they differ; record both and whether their source trees match.
-- [ ] Make replacement behavior explicit: do not overwrite a versioned package accidentally. Provide one documented command for a new package and a separate deliberate step for updating the current repository copies.
-- [ ] Replace the old active repository reviewer files with the current four-language pair after archiving them. Use filenames matching the manifest and guide links.
-- [ ] Extract and compare PDF text to its source and render every page for visual review. Keep HTML/PDF versions consistent.
+- [x] Add a failing package test: a fresh temporary output directory receives the current four-language HTML, one-page four-language PDF, checksum manifest and ZIP containing exactly the two reviewer files.
+- [x] Build HTML through the existing builder. Generate PDF from the current editable four-language guide; pin its dependency/fonts. Normalize PDF metadata and ZIP entry order/timestamps using an explicit build epoch. Test that two builds of the same source, epoch and pinned toolchain have identical HTML/PDF/ZIP hashes; do not confuse repeatable generation with byte reproducibility.
+- [x] Put source commit/tree, build epoch, build identifier, language list, question count, filenames and SHA-256 hashes in the package manifest. Record hashes from actual generated bytes. Distinguish the tested source commit from the final promotion merge SHA if they differ; record both and whether their source trees match.
+- [x] Make replacement behavior explicit: do not overwrite a versioned package accidentally. Provide one documented command for a new package and a separate deliberate step for updating the current repository copies.
+- [x] Replace the old active repository reviewer files with the current four-language pair after archiving them. Use filenames matching the manifest and guide links.
+- [x] Extract and compare PDF text to its source and render every page for visual review. Keep HTML/PDF versions consistent.
 
 **Done when:** one command builds both deliverables and ZIP from a clean checkout; another assistant does not have to recreate the PDF manually.
 
@@ -127,13 +127,13 @@ The manifest is machine-readable package metadata, not an extra reviewer documen
 
 **Files:** `.github/workflows/app-component-checks.yml`, `.github/workflows/questionnaire-checks.yml`, `tests/app/test_ui_catalogs.py`, `tests/app/runtime_fixture.py`, `tests/full_bank/test_candidate_qa.py`, full-bank runtime/report/recovery tests; new `tools/run_checks.py` if needed to provide one maintained command.
 
-- [ ] Parameterize relevant app, full-bank, medication and report checks over the active locale list. Include Ukrainian in synthetic fixtures where testing localization rather than frozen source mapping.
-- [ ] Promote the four regressions into ordinary full-bank QA; rename the candidate-specific test if helpful. Preserve the data-separation and unsaved-feedback assertions.
-- [ ] Add synthetic old-three-language recovery imports and current four-language round trips, including Ukrainian typed text/feedback, to the current build tests. Document that rollback to an older app cannot promise import of Ukrainian feedback.
-- [ ] Retain the 320/390 phone-width cases, desktop screens, independent report language, offline/no-network assertions and PDF separation. Automate the full layout sweep as a maintained test if runtime is reasonable.
-- [ ] Run CI on pull requests targeting main and pushes to main, with workflow_dispatch retained. Include app/style/locale changes, the package builder, guide source, pinned dependency/font inputs and package tests in the full checks' path coverage. Do not leave the full gate scoped only to develop.
-- [ ] Build and verify the ZIP and checksum manifest in CI before uploading the current multilingual package as its artifact. Add a maintained local check command so the same active suite can run from a fresh checkout.
-- [ ] Run the real file-opening journey in CI where allowed. Treat in-memory runs as a distinct test mode and retain the unresolved physical-device check; never relabel it as tested.
+- [x] Parameterize relevant app, full-bank, medication and report checks over the active locale list. Include Ukrainian in synthetic fixtures where testing localization rather than frozen source mapping.
+- [x] Promote the four regressions into ordinary full-bank QA; rename the candidate-specific test if helpful. Preserve the data-separation and unsaved-feedback assertions.
+- [x] Add synthetic old-three-language recovery imports and current four-language round trips, including Ukrainian typed text/feedback, to the current build tests. Document that rollback to an older app cannot promise import of Ukrainian feedback.
+- [x] Retain the 320/390 phone-width cases, desktop screens, independent report language, offline/no-network assertions and PDF separation. Automate the full layout sweep as a maintained test if runtime is reasonable.
+- [x] Run CI on pull requests targeting main and pushes to main, with workflow_dispatch retained. Include app/style/locale changes, the package builder, guide source, pinned dependency/font inputs and package tests in the full checks' path coverage. Do not leave the full gate scoped only to develop.
+- [x] Build and verify the ZIP and checksum manifest in CI before uploading the current multilingual package as its artifact. Add a maintained local check command so the same active suite can run from a fresh checkout.
+- [x] Run the real file-opening journey in CI where allowed. Treat in-memory runs as a distinct test mode and retain the unresolved physical-device check; never relabel it as tested.
 
 **Done when:** an ordinary change to any active language or shared screen triggers the four-language checks, and CI cannot publish a three-language “current” artifact.
 
@@ -141,25 +141,25 @@ The manifest is machine-readable package metadata, not an extra reviewer documen
 
 **Files:** `AGENTS.md`, `README.md`, `CONTRIBUTING.md`, `project-manifest.json`, `docs/FILE_INDEX.md`, `docs/QUESTIONNAIRE_ARCHITECTURE.md`, `docs/LANGUAGE_STYLE_GUIDE.md`, `docs/WORK_CHECKPOINT.md`, `docs/CHANGELOG.md`, `docs/RELEASE_POLICY.md`, `translations/uk/README.md` and `translations/uk/CHECKPOINT.md`.
 
-- [ ] Describe one active four-language app and current build command. Use main as source of truth; feature branches are for work in progress, tags identify distributed snapshots.
-- [ ] Replace instructions to work only on develop or use a special candidate. Update AGENTS to require relevant tests and updates across all active locales when shared wording changes.
-- [ ] Mark Ukrainian as integrated while preserving the actual human review status of every language. Add Ukrainian address/tone conventions to the language style guide based on the existing translation workspace rules.
-- [ ] Record verified Drive replacement, both current file IDs and hashes, current PDF source, archive locations and the actual synchronization state. Re-read Drive metadata/content when implementation reaches this step; do not assume the folder stayed unchanged.
-- [ ] Keep the short checkpoint focused on active branch/commit, current artifact, last checks and next action. Preserve historical translation audits under history with links.
-- [ ] Validate internal links, current paths and `python tools/verify_project_index.py`. Distinguish historical references to three languages from stale active instructions; do not globally replace language strings.
+- [x] Describe one active four-language app and current build command. Use main as source of truth; feature branches are for work in progress, tags identify distributed snapshots.
+- [x] Replace instructions to work only on develop or use a special candidate. Update AGENTS to require relevant tests and updates across all active locales when shared wording changes.
+- [x] Mark Ukrainian as integrated while preserving the actual human review status of every language. Add Ukrainian address/tone conventions to the language style guide based on the existing translation workspace rules.
+- [x] Record verified Drive replacement, both current file IDs and hashes, current PDF source, archive locations and the actual synchronization state. Re-read Drive metadata/content when implementation reaches this step; do not assume the folder stayed unchanged.
+- [x] Keep the short checkpoint focused on active branch/commit, current artifact, last checks and next action. Preserve historical translation audits under history with links.
+- [x] Validate internal links, current paths and `python tools/verify_project_index.py`. Distinguish historical references to three languages from stale active instructions; do not globally replace language strings.
 
 **Done when:** opening README or AGENTS unambiguously directs future work to the four-language version, and repository metadata agrees with Drive.
 
 ## Task 6 — Verify the integrated result and promote it
 
-- [ ] Run the maintained full active suite on the reconciled migration tree, then build the package from that exact tree. Record results, commit and actual artifact hashes.
-- [ ] Review the default HTML offline in four languages; test the archived progress import, medication form, long Russian titles, unsaved feedback and independent clinician language.
-- [ ] Obtain an independent review of the migration diff, including branch reconciliation, archive provenance and unchanged source/backup behavior. Correct blocking findings before promotion.
-- [ ] Open a promotion PR targeting main, with explicit archive, migration and rollback instructions. Preserve main's unique history with a normal merge; do not force-reset it to the candidate.
-- [ ] After checks pass, merge through the normal GitHub process and verify the exact resulting main revision. If that merge changes the tested tree, rerun the affected verification before distributing its package.
-- [ ] Confirm GitHub still identifies main as the default branch. Mark older long-lived branches as superseded in documentation; do not delete them as part of this migration.
-- [ ] If the promotion produces different distributed bytes, update the same two Drive IDs only after package checks. Read both files back, verify hashes/parents/sharing and update the manifest/checkpoint. Otherwise verify and retain the already current Drive pair.
-- [ ] Tag the exact distributed source snapshot with an explicitly technical-review version. Keep clinical approval and physical-device review status separate from Git adoption.
+- [x] Run the maintained full active suite on the reconciled migration tree, then build the package from that exact tree. Record results, commit and actual artifact hashes.
+- [x] Review the default HTML offline in four languages; test the archived progress import, medication form, long Russian titles, unsaved feedback and independent clinician language.
+- [x] Obtain an independent review of the migration diff, including branch reconciliation, archive provenance and unchanged source/backup behavior. Correct blocking findings before promotion.
+- [x] Open a promotion PR targeting main, with explicit archive, migration and rollback instructions. Preserve main's unique history with a normal merge; do not force-reset it to the candidate.
+- [x] After checks pass, merge through the normal GitHub process and verify the exact resulting main revision. If that merge changes the tested tree, rerun the affected verification before distributing its package.
+- [x] Confirm GitHub still identifies main as the default branch. Mark older long-lived branches as superseded in documentation; do not delete them as part of this migration.
+- [x] If the promotion produces different distributed bytes, update the same two Drive IDs only after package checks. Read both files back, verify hashes/parents/sharing and update the manifest/checkpoint. Otherwise verify and retain the already current Drive pair.
+- [x] Tag the exact distributed source snapshot with an explicitly technical-review version. Keep clinical approval and physical-device review status separate from Git adoption.
 
 **Final acceptance:** fresh main checkout; one normal four-language build; one matching HTML/PDF package; recoverable archived old versions; passing current tests; current reviewer links preserved; no remaining instructions pointing work at the old product.
 
@@ -174,6 +174,6 @@ The manifest is machine-readable package metadata, not an extra reviewer documen
 
 ## Planning status
 
-Only this plan has been written in this request. No merges, archive moves, source changes, branch deletions or Drive writes have been performed as part of planning. Next action: execute Task 1 after the owner reviews the proposed main-based workflow.
+Planning was completed before execution. The owner subsequently approved execution. All six tasks are now complete: archives and history preserved, default four-language build/package/CI established, main promoted through PR #2, and Drive synchronized by verified readback. See `docs/review/migration-progress.md` and `docs/review/checks/2026-11-09-main-drive-sync.json`. No branches were deleted.
 
 A separate read-only plan review found no blockers. Its suggestions on backup availability, packaging CI coverage and reproducibility/provenance are included above.

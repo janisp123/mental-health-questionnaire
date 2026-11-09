@@ -1,0 +1,32 @@
+{
+  "verified_at": "2026-11-09T08:35:05.626341+00:00",
+  "main_promotion_commit": "1a68d31f385208263be79de5da8c27e3df90354a",
+  "tested_head": "505187b9b127fe375dafab9b3e341cf4d863ac3b",
+  "merge_tree_matches_tested_head": true,
+  "package_source_commit": "e2ce2fa86749012e8336eccca9c89898df3df69f",
+  "source_tree": "f8468623b0254976ba9f3d98b3c8b6ab040f0387",
+  "files": [
+    {
+      "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.2_REVIEW_BUILD.html",
+      "bytes": 1531023,
+      "sha256": "8e700bf8cf23b689f44a02c7c11e688284bff5d353408c37d33ff92042433cc9",
+      "verified_byte_identical": true
+    },
+    {
+      "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "name": "188_README_LV_EN_RU_UK_v0.2.2_REVIEW_BUILD.pdf",
+      "bytes": 48320,
+      "sha256": "adbfe1f41acbdfc7275ae0068afff0379bbd37fa9a3b212d1166966d2e3bade1",
+      "verified_byte_identical": true
+    }
+  ],
+  "same_drive_ids_and_sharing": true,
+  "folder_id": "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+  "final_ci": {
+    "head": "505187b9b127fe375dafab9b3e341cf4d863ac3b",
+    "full_file_opening_run": 42586610302,
+    "app_file_opening_run": 42586610292,
+    "conclusion": "success"
+  }
+}
