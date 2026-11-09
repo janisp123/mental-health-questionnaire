@@ -15,3 +15,11 @@ This is a **running list of tasks requested for later**, especially when Codex u
   - **Do not** add the link to the patient's/doctor's answer report PDF or modify frozen reference files.
   - Keep the non-diagnostic disclaimer; opening GitHub must require a deliberate click and must not transmit answers.
   - Verify links, translations, offline operation, PDF appearance, and relevant automated tests before marking complete.
+
+- [ ] **Bring `main` up to date and make GitHub presentable to potential IT employers.**
+  - Review the differences between `develop` and `main`; promote the most recent **verified, stable** project state to `main` instead of leaving the main branch on the older Latvian v16 snapshot.
+  - First pass the relevant automated checks and release safeguards; resolve branch divergence carefully without losing current release files, history or ongoing work. Keep active experimentation on `develop`.
+  - Update the main README so a visitor immediately understands the purpose, screenshots/demo or how to try the offline app, technical stack, architecture, tests, AI-assisted development role, and honest status/limitations. Link to the technical documentation and development history.
+  - Improve repository presentation (clear description, sensible topics, current instructions and a tidy file layout) without adding misleading professional or clinical validation claims.
+  - Preserve privacy protections and do not call an unreviewed translation or clinically unvalidated questionnaire a medically approved release. If a release gate is not met, document the blocker and publish only an explicitly labeled review/portfolio state when appropriate; do not silently claim a final public release.
+  - Verify the resulting `main` branch, links and build, record the completed work in `docs/CHANGELOG.md`, then remove this item from the TD list.
