@@ -1,5 +1,7 @@
 # Current working checkpoint
 
+Guide revision in progress: the opening-instructions-only PDF is built from clean source `ef965b3` and verified locally; HTML is unchanged. Drive still has the prior guide pending checked PR merge and readback. See the latest changelog entry; do not treat the older synchronization record below as evidence for the revised PDF.
+
 Updated 9 November 2026. Migration DONE. Sole active source: `main`. Promotion PR #2 merged as `1a68d31f385208263be79de5da8c27e3df90354a`; its tree exactly matches the checked head `505187b9b127fe375dafab9b3e341cf4d863ac3b`.
 
 ## Active product
@@ -58,3 +60,7 @@ No new TD task was created: this was an explicit owner revision to the completed
 ## Update-note audience policy
 
 The current v0.2.4 HTML was downloaded from Drive and its embedded update notes reviewed in LV/EN/RU/UK; no personal coordination or career-related entries were present. [AGENTS.md](../AGENTS.md#audience-and-privacy-in-update-notes) now limits app notes to patient/doctor-relevant changes and prohibits publishing private conversations or motives in public logs without explicit publication authorization. Feature and release instructions reference this rule. This documentation-only change adds no app note, changes no product bytes and requires no Drive replacement. The existing TD blocker and pending human/device reviews remain unchanged.
+
+## Opening-instructions guide revision
+
+The guide now contains HTML download/browser-opening instructions only in all four languages, with no external links or review-status statements. Seven package tests, exact-source package/ZIP verification and source-index integrity pass. The one-page PDF was rendered and visually checked. Application HTML remains `8d3dba5b3652b0d137f9c19cbfa30b9aec541dc779a576e243c09c8b89ab0b91`; new guide PDF is `6b0cfe0f3eaab3ed5360fd665053c2054e586596b6edba527e9595069b1141d4`. Prior v0.2.4 pair is preserved in `archive/four-language/v0.2.4/`. New package source: `ef965b3`; application version remains v0.2.4. No app entry is added. Next: merge after PR checks, replace the same Drive PDF ID and verify both downloads and sharing.

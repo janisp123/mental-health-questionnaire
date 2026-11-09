@@ -53,6 +53,8 @@ For managed Chromium that blocks `file://`, `--load-mode memory` is an explicitl
 
 Ordinary source commits do not publish to Drive automatically. Documentation-only changes that do not change the app or guide do not require rebuilding or republishing an identical reviewer package.
 
+For a guide-only revision, retain the unchanged application version and HTML bytes. Identify the revised package by its new source commit and file checksums; archive the prior pair before replacing the PDF in place. The downloadable guide contains opening instructions only; technical-review status remains accurately recorded in this repository and the package manifest. Read back both files to verify the revised pair.
+
 ## Evidence and historical material
 
 Current package/provenance: [repository manifest](../MH_Public_version/manifest.json). Latest verified reviewer synchronization: [Drive readback record](review/checks/2026-11-09-credit-link-drive-sync.json). Ongoing status: [working checkpoint](WORK_CHECKPOINT.md). Rollback provenance: [three-language archive](../archive/three-language/v0.2.0/README.md) and [four-language v0.2.1 snapshot](../archive/four-language/v0.2.1/manifest.json).

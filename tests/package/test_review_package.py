@@ -17,19 +17,24 @@ from build_review_package import guide_pdf
 
 
 class ReviewPackageTests(unittest.TestCase):
-    def test_current_four_language_guide_has_clickable_repository_links(self):
+    def test_current_four_language_guide_contains_opening_instructions_only(self):
         guide = (ROOT / "docs/review/GUIDE_LV_EN_RU_UK.md").read_text(encoding="utf-8")
         reader = PdfReader(io.BytesIO(guide_pdf(guide)))
         self.assertEqual(len(reader.pages), 1)
-        for page in reader.pages:
-            self.assertNotRegex(page.extract_text(), r"(?i)\b(?:AI|Codex)\b|AI-assisted|artificial intelligence")
+        text = "\n".join(page.extract_text() for page in reader.pages)
+        self.assertNotRegex(text, r"(?i)\b(?:AI|Codex|GitHub)\b|https?://|valid|техніч|техническ|тест")
+        for heading in ("Latviešu", "English", "Русский", "Українська"):
+            self.assertIn(heading, text)
+        self.assertEqual(text.count("HTML"), 4)
+        for opening in ("atveriet", "open it in your browser", "откройте", "відкрийте"):
+            self.assertIn(opening, text)
         targets = []
         for page in reader.pages:
             for reference in page.get("/Annots", []):
                 annotation = reference.get_object()
                 if annotation.get("/Subtype") == "/Link":
                     targets.append(annotation.get("/A", {}).get("/URI"))
-        self.assertEqual(targets, ["https://github.com/janisp123/mental-health-questionnaire"] * 4)
+        self.assertEqual(targets, [])
 
     def run_builder(self, destination):
         return subprocess.run([sys.executable, str(ROOT / "tools/build_review_package.py"),

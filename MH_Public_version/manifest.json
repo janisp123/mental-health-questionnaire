@@ -1,8 +1,8 @@
 {
   "schema": "questionnaire-review-package-v1",
   "version": "0.2.4-review+full-bank",
-  "source_commit": "3a8f9227bda6a85b509703c17cf10b1b37de514e",
-  "source_tree": "71147125ec5fc5aaa40e1415e62b4b4a0529db58",
+  "source_commit": "ef965b39f241bc0515dbc505232baf536796e7be",
+  "source_tree": "9b7c6942cfda6d3a0595be39f3c1bb0996b6d13c",
   "source_dirty": false,
   "build_epoch": 1794182400,
   "pdf_timestamp_mode": "reportlab-invariant",
@@ -22,14 +22,14 @@
     },
     {
       "name": "188_README_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.pdf",
-      "bytes": 49955,
-      "sha256": "defc5d5fe6271b98a0c3fe5fd01521b75eaf3d6415237b4ecb47bdf1fcf03627"
+      "bytes": 47977,
+      "sha256": "6b0cfe0f3eaab3ed5360fd665053c2054e586596b6edba527e9595069b1141d4"
     }
   ],
   "zip": {
     "name": "QUESTIONNAIRE_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.zip",
-    "bytes": 324930,
-    "sha256": "e3ea3748cd2de5b690666498849200c6b861e02835e68f6106cbf2a4780635f3"
+    "bytes": 323649,
+    "sha256": "93d0316d41e36cb831db4a7deec196aa87c514577493afd9a58bfa52e36f96e7"
   },
   "status": "TECHNICAL_REVIEW_NOT_CLINICALLY_VALIDATED"
 }
