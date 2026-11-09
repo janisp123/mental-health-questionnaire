@@ -39,10 +39,12 @@ This repository shows the specification, iteration and verification of an AI-ass
 ## Current files
 
 - [Questionnaire HTML](MH_Public_version/187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.html)
-- [Four-language PDF guide](MH_Public_version/188_README_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.pdf)
+- [Download the four-language PDF guide](https://raw.githubusercontent.com/janisp123/mental-health-questionnaire/refs/heads/main/MH_Public_version/188_README_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.pdf)
 - [Google Drive review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb)
 
 Download the HTML and open it in your browser; Drive/GitHub preview is not the questionnaire. It runs offline and sends no answers. Download progress explicitly to continue later. Clinician reports and project-feedback PDFs are separate. Recovery files may contain sensitive information; keep and share them carefully.
+
+The PDF guide link downloads the file directly. Open the downloaded file with a PDF viewer; if the GitHub mobile app does not open the link, open the README in your browser.
 
 ## Development
 
