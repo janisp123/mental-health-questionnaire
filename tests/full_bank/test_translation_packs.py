@@ -13,20 +13,19 @@ import build_questionnaire as build
 
 class TranslationPackTests(unittest.TestCase):
     def build_with_ukrainian(self):
-        config = build.QUESTIONNAIRE / "candidates" / "v0.2.1-review.json"
-        bundle = build.build_bundle(config_path=config)
-        self.assertEqual(bundle["version"], "0.2.1-review+full-bank")
+        bundle = build.build_bundle()
+        self.assertEqual(list(bundle["ui"]), ["lv", "en", "ru", "uk"])
         return bundle
 
     def test_disabled_pack_is_never_read(self):
         with patch.object(build, "apply_translation_packs") as load:
-            default = build.build_bundle()
+            default = build.build_bundle(config_path=ROOT / "tests/fixtures/three-language-build.json")
         load.assert_not_called()
         self.assertEqual(list(default["ui"]), ["lv", "en", "ru"])
         self.assertNotIn("languageNames", default)
 
     def test_adding_pack_only_adds_localized_data(self):
-        default = build.build_bundle()
+        default = build.build_bundle(config_path=ROOT / "tests/fixtures/three-language-build.json")
         enabled = self.build_with_ukrainian()
         enabled["version"] = default["version"]
         self.assertEqual(enabled.pop("languageNames"), {"uk": "Українська"})

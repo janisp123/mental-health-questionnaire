@@ -1,7 +1,7 @@
 /* Report rules are explicit and must never produce a score or coded export. */
 const fs=require('fs'),vm=require('vm'),assert=require('assert');
 const cp=require('child_process');
-const data=JSON.parse(cp.execFileSync('python',['-c','import sys,json;from pathlib import Path;sys.path.insert(0,"tools");from build_questionnaire import build_bundle;print(json.dumps(build_bundle(config_path=Path("src/questionnaire/candidates/v0.2.1-review.json"))))'],{maxBuffer:8e6}));
+const data=JSON.parse(cp.execFileSync('python',['-c','import sys,json;from pathlib import Path;sys.path.insert(0,"tools");from build_questionnaire import build_bundle;print(json.dumps(build_bundle()))'],{maxBuffer:8e6}));
 const context={window:{}};vm.runInNewContext(fs.readFileSync('src/app/reports/reports.js','utf8'),context);
 const r=context.window.QuestionnaireReports,qs=data.groups.flatMap(g=>g.questions),q=id=>qs.find(q=>q.id===id);
 const answers={M33_01:{kind:'text',value:'PRIVATE_MEDICAL_SENTINEL'},M06_02:{kind:'choice',codes:['B'],status:'answered'},M06_01:{kind:'choice',codes:['A'],status:'answered'},M02_09:{kind:'choice',codes:['A'],status:'answered'},M23_11:{kind:'choice',codes:['A'],status:'answered'},M02_20:{kind:'skip',status:'skipped'}};

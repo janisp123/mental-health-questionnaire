@@ -14,7 +14,7 @@ class CandidateQATests(unittest.TestCase):
     def setUpClass(cls):
         cls.tmp = tempfile.TemporaryDirectory()
         cls.path = Path(cls.tmp.name) / "candidate.html"
-        cls.data = build.build_bundle(config_path=build.QUESTIONNAIRE / "candidates/v0.2.1-reports.json")
+        cls.data = build.build_bundle()
         cls.path.write_text(build.make_html(cls.data), encoding="utf-8")
         cls.pw = sync_playwright().start()
         cls.browser = launch(cls.pw)

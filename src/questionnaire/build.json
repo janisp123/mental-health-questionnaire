@@ -1,6 +1,9 @@
 {
   "schema": "questionnaire-build-v1",
-  "version": "0.2.0-prototype+full-bank",
+  "version": "0.2.2-review+full-bank",
   "baseline": "LV-v16",
-  "translationPacks": {}
+  "translationPacks": {
+    "uk": "Українська"
+  },
+  "buildEpoch": 1794182400
 }

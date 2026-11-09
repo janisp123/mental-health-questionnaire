@@ -27,7 +27,7 @@ assert len(bundle["groups"]) == 15
 assert len(questions) == 712
 assert len({question["id"] for question in questions}) == 712
 assert len({question["order"] for question in questions}) == 712
-assert all(set(question["translations"]) == {"lv", "en", "ru"} for question in questions)
+assert all(set(question["translations"]) == {"lv", "en", "ru", "uk"} for question in questions)
 by_id = {question["id"]: question for question in questions}
 source_by_id = {
     question["id"]: question
@@ -44,10 +44,14 @@ for question_id, source_question in source_by_id.items():
     expected = dict(source_question)
     if question_id == "M23_11":
         del expected["maxChoices"]
+    # Frozen sources own three locales; the active product adds Ukrainian wording.
+    grouped_question["translations"] = dict(grouped_question["translations"])
+    ukrainian = grouped_question["translations"].pop("uk")
+    assert ukrainian["title"]
     assert grouped_question == expected
 positions = {question["id"]: index for index, question in enumerate(questions)}
 for question in questions:
-    for language in ("lv", "en", "ru"):
+    for language in ("lv", "en", "ru", "uk"):
         translation = question["translations"][language]
         assert translation["title"]
         assert set(translation["choices"]) == set(question["choiceCodes"])

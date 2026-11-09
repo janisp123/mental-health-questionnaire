@@ -16,7 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 APP = ROOT / "src" / "app"
 QUESTIONNAIRE = ROOT / "src" / "questionnaire"
-LANGS = ("lv", "en", "ru")
+SOURCE_LANGS = ("lv", "en", "ru")
 
 
 def read_json(path):
@@ -50,7 +50,7 @@ def load_module_titles():
     """Load exact frozen section headings for the full-bank module selector."""
     result = {}
     expected = [f"{number:02d}" for number in range(1, 49)]
-    for lang in LANGS:
+    for lang in SOURCE_LANGS:
         catalog = read_json(QUESTIONNAIRE / "i18n" / ("module-titles." + lang + ".json"))
         titles = catalog.get("titles")
         if (catalog.get("schema") != "frozen-module-titles-v1" or catalog.get("lang") != lang
@@ -86,7 +86,7 @@ def adapt_source_entry(entry):
         q["maxChoices"] = lv["maxChoices"]
     if "help" in lv:
         q["help"] = lv["help"]
-    for lang in LANGS:
+    for lang in SOURCE_LANGS:
         source = lv if lang == "lv" else entry[lang]
         translation = {
             "title": source["title"],
@@ -113,7 +113,7 @@ def build_source_groups():
         if (module.get("schema") != "question-module-bundle-v1" or section != expected_section
                 or module.get("count") != len(module.get("entries", []))):
             raise ValueError("Invalid source module: " + path.name)
-        for lang in LANGS:
+        for lang in SOURCE_LANGS:
             if module["published_status"].get(lang) not in ("v16", "draft-not-reviewed"):
                 raise ValueError("Unknown source language status: " + lang)
         for entry in module["entries"]:
@@ -123,7 +123,7 @@ def build_source_groups():
             ids.add(q["id"]);orders.add(q["order"])
             key = q["module"]
             if key not in groups:
-                group_titles = {lang: titles[lang][key] for lang in LANGS}
+                group_titles = {lang: titles[lang][key] for lang in SOURCE_LANGS}
                 groups[key] = {"id": key, "titles": group_titles, "concerns": group_titles,
                                "required": False, "questions": []}
             groups[key]["questions"].append(q)
@@ -229,13 +229,13 @@ def build_bundle(config_path=None):
         raise ValueError("Invalid questionnaire build configuration")
     packs = config.get("translationPacks", {})
     if not isinstance(packs, dict) or any(
-        locale in LANGS or not re.fullmatch(r"[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*", locale)
+        locale in SOURCE_LANGS or not re.fullmatch(r"[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*", locale)
         or not isinstance(name, str) or not name.strip()
         for locale, name in packs.items()
     ):
         raise ValueError("Invalid translationPacks language registry")
     ui = {}
-    for lang in LANGS:
+    for lang in SOURCE_LANGS:
         catalog = read_json(APP / "i18n" / ("ui." + lang + ".json"))
         if catalog.get("lang") != lang:
             raise ValueError("Wrong interface locale: " + lang)
@@ -263,7 +263,7 @@ def build_bundle(config_path=None):
         q = by_id[qid]
         if "allowAllChoices" in rule and (rule["allowAllChoices"] is not True or not q.get("maxChoices")):
             raise ValueError("Expected a capped question for allowAllChoices: " + qid)
-        if "labels" in rule and set(rule["labels"]) != set(LANGS):
+        if "labels" in rule and set(rule["labels"]) != set(SOURCE_LANGS):
             raise ValueError("Missing report label language: " + qid)
         if any(code not in q["choiceCodes"] or level not in ("support", "emergency")
                for code, level in rule.get("support", {}).items()):
@@ -287,7 +287,7 @@ def build_bundle(config_path=None):
         raise ValueError("Source-module order and user-section/report order must be complete and unique")
     source_to_section = {}
     for section_group in section_groups:
-        if set(section_group.get("title", {})) != set(LANGS):
+        if set(section_group.get("title", {})) != set(SOURCE_LANGS):
             raise ValueError("Each user-facing section requires a title in all languages")
         modules = section_group.get("source_modules")
         if not isinstance(modules, list) or not modules:
