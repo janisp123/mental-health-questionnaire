@@ -10,6 +10,13 @@
 
 ## To do
 
+- [ ] **Evaluate country-neutral guidance for finding mental-health helplines instead of a Latvia-only hotline number.**
+  - **Status:** Evaluation ONLY, queued for Codex. Do not change the questionnaire, safety notices, translations or release packages without a separate owner decision.
+  - **Owner's idea:** Instead of showing a helpline number that works only in Latvia, tell international users how to find support in their own country. Candidate plain-language wording: “Open your browser and search for ‘mental health helpline’ or ‘crisis help number’ plus your country or city.” Adapt appropriately for LV/EN/RU/UK and consider users who do not know the local language.
+  - **Assess usability and safety:** Check whether this is clearer and more useful globally, whether search results could be unreliable, and whether it adds harmful delay for someone in immediate danger, offline, distressed or without internet. Distinguish a non-emergency support helpline from immediate emergency assistance; assess retaining prominent, directly actionable emergency-service guidance (local emergency number where reliably known) instead of replacing all crisis information with a web search.
+  - **Deliverable:** Brief comparison of (A) current Latvia-specific wording, (B) search-instructions-only wording, and (C) combined or location-neutral emergency guidance plus helpline-search instructions. Recommend precise concise text in four languages, identify limitations, but **do not implement** until the owner approves.
+  - **Review context:** Coordinate with the queued pre-release safety/wording audits and avoid duplicating their work or silently weakening existing safety safeguards.
+
 - [ ] **Make the public questionnaire discoverable in Google Search through a minimal GitHub Pages landing page.**
   - **Status:** Queued for Codex; do not implement automatically. First inspect the current main branch, release policy, existing public download links and other TD tasks for conflicts. If the Pages approach conflicts with the owner's preference not to maintain a separate website, explain the trade-off and obtain approval before implementation.
   - **Goal:** Let Latvian, English, Russian and Ukrainian speakers find the free pre-appointment mental-health questionnaire through ordinary Google searches, without purchasing a domain, introducing a backend or changing the offline questionnaire itself.
