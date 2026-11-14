@@ -1,0 +1,70 @@
+{
+  "verified_at": "2026-11-14T21:41:59.307855+02:00",
+  "source_commit": "f77d91ce4a6fcdc9a8a2ba27b7f34bb312341efb",
+  "source_tree": "105a247e8a223904ad63f248106568debf246b16",
+  "source_dirty": false,
+  "version": "0.2.6-review+full-bank",
+  "checked_head": "bccc22536b85c0cb7dead6bb9121fbfcf56e0870",
+  "main_merge": "e46f025ae7a8e73dbae146d443386ae7358e80c9",
+  "merge_tree_matches_checked_head": true,
+  "files": [
+    {
+      "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.6_REVIEW_BUILD.html",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "bytes": 1542548,
+      "sha256": "896f60cf7d4c013bfdd76fdd215af47563595d6a5e6f73a980cfca48e122d453",
+      "verified_byte_identical": true
+    },
+    {
+      "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "name": "188_README_LV_EN_RU_UK_v0.2.6_REVIEW_BUILD.pdf",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "bytes": 49212,
+      "sha256": "b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9",
+      "verified_byte_identical": true
+    }
+  ],
+  "folder_id": "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+  "ids_folder_sharing_preserved": true,
+  "pdf_bytes_unchanged": true,
+  "local_checks": {
+    "passed": 34,
+    "failed": 0,
+    "load_mode": "memory"
+  },
+  "ci_runs": {
+    "full": 43633128671,
+    "app": 43633128667,
+    "discovery": 43633128651,
+    "conclusion": "success",
+    "offline_file_opening": true
+  },
+  "verified_locales": [
+    "lv",
+    "en",
+    "ru",
+    "uk"
+  ],
+  "downloaded_html_checks": [
+    "Country-neutral help/emergency instructions in every locale",
+    "M04_01 peak explanation present in every locale",
+    "Ten dated update entries per locale"
+  ],
+  "limitations": [
+    "Human language/clinical review pending",
+    "Physical-device compatibility pending",
+    "Locally executed browser checks use labelled memory mode"
+  ],
+  "folder_contains_exactly_current_html_and_pdf": true,
+  "snapshot": "review/v0.2.6",
+  "superseded_package_pr": 23
+}
