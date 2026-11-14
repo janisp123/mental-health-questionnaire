@@ -127,14 +127,14 @@ function renderResults(){
  v.completed=v.answered+v.skipped;
  const selected="";
  return window.QuestionnaireScreens.results({
-  label,btn,counts:v,selected,reportLanguageOptions:languageOptions(state.reportLang??state.lang),
+  label,btn,counts:v,selected,reportLanguageOptions:languageOptions(state.reportLang??state.lang),hasFeedback:Object.keys(state.feedback).length>0,
  });
 }
 function renderReport(){
  if(state.reportView==="feedback"){
   const feedbackEmail=data.presentation.feedbackContactEmail;
-  const text=report.projectFeedbackText(all,state.feedback,state.lang,data.ui,feedbackEmail,data.version);
-  return window.QuestionnaireScreens.reportPage({locale:state.lang,markup:'<pre>'+esc(text)+'</pre>',escape:esc,label,btn,feedbackEmail});
+  const delivery=window.QuestionnaireFeedbackDelivery.compose(all,state.feedback,state.lang,data.ui,feedbackEmail,data.version);
+  return window.QuestionnaireScreens.reportPage({locale:state.lang,markup:'<pre>'+esc(delivery.text)+'</pre>',escape:esc,label,btn,feedbackEmail,feedbackText:delivery.text,canSend:!!delivery.url});
  }
  const locale=state.reportLang??state.lang;
  const markup=report.doctorMarkup(reportQuestions(),state.answers,locale,data.ui[locale],data.presentation);
@@ -328,7 +328,23 @@ function action(key){
  if(key==="end"){skipRest();return;}
  if(key==="sections"){showSections();return;}
  if(key==="results"){state.screen="results";render();return;}
- if(key==="doctor"||(key==="feedbackReport"&&state.screen==="report"&&Object.keys(state.feedback).length)){
+ if((key==="sendFeedback"||key==="copyFeedback")&&state.screen==="report"&&state.reportView==="feedback"){
+  const delivery=window.QuestionnaireFeedbackDelivery.compose(all,state.feedback,state.lang,data.ui,data.presentation.feedbackContactEmail,data.version);
+  if(key==="sendFeedback"){
+   if(delivery.url&&window.confirm(u.feedbackDeliveryPrivacy)){
+    try{window.location.href=delivery.url;}catch(error){/* The manual fallback remains available. */}
+   }
+  }else{
+   const field=document.getElementById("feedback-copy");field.focus();field.select();
+   const status=document.createElement("p");status.setAttribute("role","status");status.className="report-actions";
+   field.insertAdjacentElement("afterend",status);
+   if(navigator.clipboard?.writeText){
+    navigator.clipboard.writeText(delivery.text).then(()=>{status.textContent=u.feedbackCopied;}).catch(()=>{status.textContent=u.feedbackCopyHelp;});
+   }else status.textContent=u.feedbackCopyHelp;
+  }
+  return;
+ }
+ if(key==="doctor"||(key==="feedbackReport"&&["report","results"].includes(state.screen)&&Object.keys(state.feedback).length)){
    state.reportView=key==="doctor"?"doctor":"feedback";
    state.screen="report";state.notice="";render();window.scrollTo(0,0);return;
  }

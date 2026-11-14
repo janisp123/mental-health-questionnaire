@@ -13,6 +13,7 @@
     "core/answer-flow.js",
     "core/events.js",
     "reports/reports.js",
+    "reports/feedback-delivery.js",
     "screens/start.js",
     "screens/section-selector.js",
     "screens/question.js",

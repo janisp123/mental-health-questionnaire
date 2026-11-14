@@ -24,8 +24,10 @@ Updated 9 November 2026. `main` is the sole active source. This file describes c
 - Local product checks used explicitly labelled memory loading. The PDF was rendered and visually inspected. Structural/automated checks do not establish translation accuracy, clinical validation or physical-device compatibility.
 - Standard verification/publication steps: [release policy](RELEASE_POLICY.md). Do not republish unchanged artifacts for repository-only edits.
 
-## Blocker and next action
+## Active development — 14 November 2026
 
-The sole pending approved [TD item](TD_LIST.md) is the repository About description/topics. Both authenticated settings edits still returned **HTTP 403: Resource not accessible by integration** on 9 November 2026; settings remain unchanged. Approved description/topics and manual steps are in TD. Completion needs owner action or an integration with settings access, followed by metadata readback.
+The main product/distribution above remains v0.2.4. Branch `feat/td-feedback-support` starts from main `763dcaa686f0235a342a4526fcc73b76b5db5ffd` and contains a v0.2.5 source candidate for the priority Send feedback / Copy feedback TD task. It does not publish to Drive. See the latest changelog entry and `docs/superpowers/plans/2026-11-14-feedback-sharing.md` for implementation and verification status. Keep the TD item until the verified integration is recorded.
 
-For the next task, start from current `main`, read `AGENTS.md` and the relevant feature/release instructions, and use a short-lived branch with checked PR integration. Do not repeat completed package or Drive work. Keep this checkpoint current; link earlier details instead of appending another release narrative.
+The TD list now contains six tasks; the former one-item checkpoint is historical. Read-only wording triage and effectiveness evaluation are reported to the owner without questionnaire edits. Discovery preparation is an unpublished static preview only. Worldwide support wording needs a conflict decision for the frozen M30_17 safety text before implementation. Repository About description/topics remain blocked: both authenticated settings edits returned HTTP 403 on 14 November; metadata readback confirms topics remain empty.
+
+Next action: finish the feedback source verification and checked PR; build/inspect a candidate package, retain the current Drive pair, and obtain the explicit release decision required by the priority TD task before replacing distribution files. Human language/clinical review, physical-phone file testing, wording decisions and discovery deployment remain separate gates.

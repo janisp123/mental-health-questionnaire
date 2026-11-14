@@ -47,7 +47,9 @@ const feedback = screens.reportPage({
   feedbackEmail:"review@example.test",
 });
 assert.match(feedback,/class="report-preview feedback-report" lang="en"/);
-assert.match(feedback,/href="mailto:review@example\.test"/);
+assert.match(feedback,/data-act="sendFeedback"/);
+assert.match(feedback,/data-act="copyFeedback"/);
+assert.match(feedback,/id="feedback-copy"/);
 assert.match(feedback,/data-act="print"/);
 assert.match(feedback,/data-act="doctor"/);
 

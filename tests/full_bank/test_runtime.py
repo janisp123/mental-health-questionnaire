@@ -236,7 +236,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     act(page, "previous")
     assert qid(page) == "M33_02"
     act(page, "results")
-    assert page.locator('[data-act="feedbackReport"]').count() == 0
+    assert page.locator('[data-act="feedbackReport"]').count() == 1
     report_language = page.get_by_role("combobox", name="Report language")
     assert report_language.input_value() == "en"
     report_language.select_option("lv")
