@@ -1,0 +1,52 @@
+{
+  "verified_at": "2026-11-14T13:41:19.612964+00:00",
+  "source_commit": "217a777ce874207d65b5a1022bf1d57aa3d37a99",
+  "source_tree": "5d004a35db03c8fee610bc696e9d6f7521c5c133",
+  "source_dirty": false,
+  "version": "0.2.5-review+full-bank",
+  "implementation_merge": "217a777ce874207d65b5a1022bf1d57aa3d37a99",
+  "checked_release_head": "63fb13e43d1067064abe9dd8723532215d1f367c",
+  "release_pr": 23,
+  "release_pr_status": "Open; automatic approval review requires explicit default-branch integration approval",
+  "files": [
+    {
+      "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.5_REVIEW_BUILD.html",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "permissions_preserved": true,
+      "parents_preserved": true,
+      "bytes": 1541258,
+      "sha256": "beb618b17b9d25c5080598aa38d0d8005dfd15fdf10a43f26026defd3232baf7",
+      "verified_byte_identical": true
+    },
+    {
+      "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "name": "188_README_LV_EN_RU_UK_v0.2.5_REVIEW_BUILD.pdf",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "permissions_preserved": true,
+      "parents_preserved": true,
+      "bytes": 49212,
+      "sha256": "b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9",
+      "verified_byte_identical": true
+    }
+  ],
+  "folder_id": "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+  "ids_folder_sharing_preserved": true,
+  "pdf_bytes_unchanged": true,
+  "ci_runs": {
+    "full": 43600760165,
+    "app": 43600760248,
+    "conclusion": "success"
+  },
+  "patch_notes_locales": [
+    "lv",
+    "en",
+    "ru",
+    "uk"
+  ],
+  "publication": "Drive updated and read back; repository package promotion awaits PR #23 integration"
+}
