@@ -1,0 +1,73 @@
+{
+  "verified_at": "2026-11-14T22:26:15.767327+02:00",
+  "source_commit": "e6771d25db407ec24e70df9dd8f79cb09d228122",
+  "source_tree": "e137d6f6f96607fa1955263e516f07a444216f6d",
+  "source_dirty": false,
+  "version": "0.2.7-review+full-bank",
+  "checked_head": "1a01922e30a02f008d7cc1807df2c10180c82322",
+  "main_merge": "454aae3987104633fbf3e0227087ee775911eff4",
+  "merge_tree_matches_checked_head": true,
+  "files": [
+    {
+      "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.7_REVIEW_BUILD.html",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "bytes": 1542547,
+      "sha256": "5e2082ab524cf2f5c947cfd7358e81669e671d2046f7b6859218948f1281a89e",
+      "verified_byte_identical": true
+    },
+    {
+      "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "name": "188_README_LV_EN_RU_UK_v0.2.7_REVIEW_BUILD.pdf",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "bytes": 49212,
+      "sha256": "b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9",
+      "verified_byte_identical": true
+    }
+  ],
+  "folder_id": "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+  "ids_folder_sharing_preserved": true,
+  "pdf_bytes_unchanged": true,
+  "local_checks": {
+    "passed": 34,
+    "failed": 0,
+    "load_mode": "memory"
+  },
+  "ci_runs": {
+    "full": 43637161224,
+    "app": 43637161170,
+    "discovery": 43637161166,
+    "conclusion": "success",
+    "offline_file_opening": true
+  },
+  "verified_locales": [
+    "lv",
+    "en",
+    "ru",
+    "uk"
+  ],
+  "packaged_html_browser_checks": [
+    "No displayed contact address or mailto in footer in all four locales",
+    "Creator GitHub link retained in all four locales",
+    "Dedicated feedback recipient and action retained",
+    "Ten dated update entries per locale"
+  ],
+  "downloaded_html_checks": [
+    "Exact bytes match browser-verified packaged HTML"
+  ],
+  "limitations": [
+    "Human language/clinical review pending",
+    "Physical-device compatibility pending",
+    "Local browser checks use labelled memory mode"
+  ],
+  "folder_contains_exactly_current_html_and_pdf": true,
+  "snapshot": "review/v0.2.7"
+}
