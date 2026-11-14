@@ -2,13 +2,13 @@
 
 [![Multilingual checks](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml/badge.svg?branch=main)](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml)
 
-**Current version: v0.2.4 · Latvian / English / Russian / Ukrainian · 712 questions · 15 optional sections.**
+**Current version: v0.2.6 · Latvian / English / Russian / Ukrainian · 712 questions · 15 optional sections.**
 
 Free offline questionnaire for adults preparing for a mental-health appointment. All four languages are included in one HTML file. Latvian is the reference and initial language. It does not diagnose or calculate a screening score.
 
 ## Download and open
 
-**[Download the questionnaire from Google Drive](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb)** · **[Download the PDF guide](https://raw.githubusercontent.com/janisp123/mental-health-questionnaire/refs/heads/main/MH_Public_version/188_README_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.pdf)**
+**[Download the questionnaire from Google Drive](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb)** · **[Download the PDF guide](https://raw.githubusercontent.com/janisp123/mental-health-questionnaire/refs/heads/main/MH_Public_version/188_README_LV_EN_RU_UK_v0.2.6_REVIEW_BUILD.pdf)**
 
 1. In the Drive folder, choose **Download** for the file ending in **`.html`**. The Drive preview and GitHub source viewer do not run the questionnaire.
 2. Open the downloaded HTML file in a browser. On a phone, find it in **Files → Downloads** and use **Open with → browser** if offered.
@@ -27,6 +27,8 @@ The questionnaire runs offline and sends no answers. Clinician reports and proje
 - One shared application with complete LV/EN/RU/UK question and interface packs.
 - Optional sections, medication details, and explicit progress-file download/import, including older three-language progress files.
 - A clinician report language chosen independently of the questionnaire language, plus a separate project-feedback report.
+- Country-neutral instructions for finding a local helpline, with local emergency guidance first.
+- A four-language explanation of the panic question’s “peak” timing, without changing its answers.
 - Phone layout fixes and preservation of unfinished feedback when switching languages.
 - Repeatable HTML/PDF/ZIP packaging, source/checksum records, main-based CI, and archived rollback packages.
 
@@ -58,9 +60,9 @@ This repository shows the specification, iteration and verification of an AI-ass
 
 ## Source and package records
 
-- [View the questionnaire HTML source](MH_Public_version/187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.4_REVIEW_BUILD.html)
+- [View the questionnaire HTML source](MH_Public_version/187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.6_REVIEW_BUILD.html)
 - [Current package files, source revision and checksums](MH_Public_version/manifest.json)
-- [Version snapshot](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.4-guide-medical-purpose)
+- [Version snapshot](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.6)
 
 ## Development
 

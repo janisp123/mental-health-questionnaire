@@ -41,10 +41,10 @@ assert all("chooseGuide" not in ui[lang] for lang in LOCALES)
 for lang in LOCALES:
     assert not set(("chooseAll", "chooseOwn", "confirmSections", "clearSections", "countSkip", "countOpen", "noAuto", "selected", "notSelected")) & set(ui[lang])
 support_phrases = {
-    "lv": ("sešciparu", "tikai 6 cipari", "anonimitātes", "darbavietai"),
-    "en": ("six-digit", "only six digits", "anonymity", "workplace"),
-    "uk": ("шестизначний", "лише 6 цифр", "анонімності", "роботодавцю"),
-    "ru": ("шестизначный", "всего 6 цифр", "анонимности", "работодателя"),
+    "lv": ("valsts", "pilsētas", "uzticamam vietējam"),
+    "en": ("country or city", "trusted local service"),
+    "uk": ("країни", "міста", "надійній місцевій"),
+    "ru": ("страны", "города", "надёжной местной"),
 }
 privacy_phrases = {
     "lv": ("nav šifrēts", "personas datus", "klīniski validēta"),
@@ -61,7 +61,7 @@ for lang in LOCALES:
     assert "share it only" in strings["legalBody"] if lang == "en" else True
     assert "social media" in strings["legalBody"] if lang == "en" else True
     assert "public" in strings["legalBody"] if lang == "en" else True
-    assert "116123" in strings["supportBody"]
+    assert not re.search(r"\b112\b|\b116\s?123\b", " ".join(strings[key] for key in ("help", "supportBody", "supportLink", "emergencyBody")))
     assert "116 123" not in strings["supportBody"]
     assert all(phrase in strings["supportBody"] for phrase in support_phrases[lang])
     assert all(phrase in strings["legalBody"] for phrase in privacy_phrases[lang])

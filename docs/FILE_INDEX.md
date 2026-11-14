@@ -92,3 +92,7 @@ Google Drive's [professional review folder](https://drive.google.com/drive/folde
 - `downloads/README.md`: legacy URLs retained for compatibility; not the active package.
 
 The manifest's review_distribution field records actual Drive synchronization separately from the repository package. Do not claim a local build has already reached Drive.
+
+- `src/questionnaire/local-emergency-notices.json`: country-neutral displayed safety notices for M15_19/M18_13/M30_17; frozen question sources are retained.
+
+- `src/questionnaire/panic-peak-clarification.json`: four-language explanation of M04_01 peak timing; question and answer identity preserved.

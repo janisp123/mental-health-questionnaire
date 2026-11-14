@@ -1,5 +1,15 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-14 · v0.2.6 package — awaiting checked integration and Drive sync
+
+Clean source `f77d91c` builds the v0.2.6 four-language package. HTML/PDF/ZIP current-source equivalence passes; HTML SHA256 `896f60cf7d4c013bfdd76fdd215af47563595d6a5e6f73a980cfca48e122d453`, unchanged guide PDF `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`. Exact prior repository v0.2.4 and distributed v0.2.5 packages are archived. Refreshed repository download pointers and README summary; the version-independent discovery page needs no copy change. Current Drive files are still v0.2.5 until checked integration and verified replacement. This release supersedes the older pending package PR #23; it must not be merged later over v0.2.6.
+
+### 2026-11-14 · Worldwide support and panic-peak explanation — source verification
+
+Replaced country-specific helpline/emergency numbers and local-service availability/anonymity assurances with four-language instructions for finding a trusted mental-health helpline in the user’s country or city. Footer and all support cards put immediate local emergency guidance before web-search instructions; no lookup, geolocation or network request is added. Preserved the short supportive introduction.
+
+Added a separate four-language help explanation for M04_01: peak means the strongest point in that episode, reached within minutes, rather than the worst imaginable anxiety. Original title, time and choices are preserved. A narrowly scoped build presentation file updates only the emergency-service reference in M15_19/M18_13/M30_17 time text after locale packs load. Frozen originals, question titles/choices, IDs, conditions, time windows and recovery format are unchanged. Source-index integrity and focused contract tests pass. The first complete 32-script run passed in labelled memory mode; independent review found the manual Support path omitted the urgent preface, reproduced by a failing browser regression and corrected. Independent review of the added M04_01 help found no Critical/Important issues. Exactly sixteen localized presentation fields differ: three emergency notices × four locales and one peak explanation × four locales. Final local verification passes all 34 maintained scripts in labelled memory mode, including manual/emergency help, four-language visible peak help, recovery, reports, layout sweep and packaging. Real-file PR CI remains pending. The previous distribution is preserved until clean-source packaging and byte-verified Drive replacement.
+
 ### 2026-11-14 · Stable discovery-page download wording
 
 Removed hard-coded package filenames, release numbers and a manual checked-on date from the public landing page. Download buttons now refer to the latest questionnaire (.html) and PDF guide; opening steps describe the file type. Stable Drive links are preserved. Version details link to the tags index, leaving exact versions/checksums in release records. Routine patches no longer require rewriting these public instructions. No app, question, answer format or Drive file changes.

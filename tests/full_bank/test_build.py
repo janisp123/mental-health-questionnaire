@@ -48,6 +48,17 @@ for question_id, source_question in source_by_id.items():
     grouped_question["translations"] = dict(grouped_question["translations"])
     ukrainian = grouped_question["translations"].pop("uk")
     assert ukrainian["title"]
+    if question_id in {"M15_19", "M18_13", "M30_17"}:
+        notices = build.read_json(build.QUESTIONNAIRE / "local-emergency-notices.json")["questions"][question_id]
+        grouped_question["translations"] = {lang: dict(t) for lang, t in grouped_question["translations"].items()}
+        for lang in build.SOURCE_LANGS:
+            assert grouped_question["translations"][lang]["time"] == notices[lang]
+            grouped_question["translations"][lang]["time"] = expected["translations"][lang]["time"]
+    if question_id == "M04_01":
+        grouped_question["translations"] = {lang: dict(t) for lang, t in grouped_question["translations"].items()}
+        helps = build.read_json(build.QUESTIONNAIRE / "panic-peak-clarification.json")["help"]
+        for lang in build.SOURCE_LANGS:
+            assert grouped_question["translations"][lang].pop("help") == helps[lang]
     assert grouped_question == expected
 positions = {question["id"]: index for index, question in enumerate(questions)}
 for question in questions:

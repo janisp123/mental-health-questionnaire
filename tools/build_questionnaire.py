@@ -347,7 +347,37 @@ def build_bundle(config_path=None):
     }
     if packs:
         apply_translation_packs(bundle, packs)
+    apply_local_emergency_notices(bundle)
+    apply_panic_peak_clarification(bundle)
     return bundle
+
+
+def apply_local_emergency_notices(bundle):
+    """Localize only three emergency-service notices; frozen clinical items stay intact."""
+    notices = read_json(QUESTIONNAIRE / "local-emergency-notices.json")
+    expected = {"M15_19", "M18_13", "M30_17"}
+    if notices.get("schema") != "local-emergency-notices-v1" or set(notices.get("questions", {})) != expected:
+        raise ValueError("Invalid local emergency notices")
+    by_id = {q["id"]: q for group in bundle["groups"] for q in group["questions"]}
+    for qid, localized in notices["questions"].items():
+        for locale in bundle["ui"]:
+            text = localized.get(locale)
+            if not isinstance(text, str) or not text.strip() or re.search(r"\b112\b|\b116\s?123\b", text):
+                raise ValueError("Missing country-neutral emergency notice: " + qid + "/" + locale)
+            by_id[qid]["translations"][locale]["time"] = text
+
+
+def apply_panic_peak_clarification(bundle):
+    """Explain peak timing for M04_01 without rewriting its frozen question or choices."""
+    data = read_json(QUESTIONNAIRE / "panic-peak-clarification.json")
+    if data.get("schema") != "panic-peak-clarification-v1":
+        raise ValueError("Invalid panic peak clarification")
+    question = next(q for group in bundle["groups"] for q in group["questions"] if q["id"] == "M04_01")
+    for locale in bundle["ui"]:
+        text = data.get("help", {}).get(locale)
+        if not isinstance(text, str) or not text.strip():
+            raise ValueError("Missing panic peak clarification: " + locale)
+        question["translations"][locale]["help"] = text
 
 
 def make_html(data=None):
