@@ -1,5 +1,9 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-14 · v0.2.6 package — awaiting checked integration and Drive sync
+
+Clean source `f77d91c` builds the v0.2.6 four-language package. HTML/PDF/ZIP current-source equivalence passes; HTML SHA256 `896f60cf7d4c013bfdd76fdd215af47563595d6a5e6f73a980cfca48e122d453`, unchanged guide PDF `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`. Exact prior repository v0.2.4 and distributed v0.2.5 packages are archived. Refreshed repository download pointers and README summary; the version-independent discovery page needs no copy change. Current Drive files are still v0.2.5 until checked integration and verified replacement. This release supersedes the older pending package PR #23; it must not be merged later over v0.2.6.
+
 ### 2026-11-14 · Worldwide support and panic-peak explanation — source verification
 
 Replaced country-specific helpline/emergency numbers and local-service availability/anonymity assurances with four-language instructions for finding a trusted mental-health helpline in the user’s country or city. Footer and all support cards put immediate local emergency guidance before web-search instructions; no lookup, geolocation or network request is added. Preserved the short supportive introduction.
