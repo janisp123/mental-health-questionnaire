@@ -67,6 +67,11 @@
   - Rechecked 9 November 2026 during repository documentation maintenance: both authenticated edits still return HTTP 403. Metadata readback must confirm completion; file/PR write access does not grant this integration settings access.
   - Manual completion: open the repository in a desktop browser (or use the phone browser's desktop-site mode), select the gear beside **About**, paste the description/topics above and save. Verify the public About panel before removing this task.
 
+- [ ] **Keep a single stable download link in the GitHub README's “Download and open” section.**
+  - **Owner request (14 November 2026):** The README currently shows two links side by side: “Download the questionnaire from Google Drive” and a direct, version-specific “Download the PDF guide” raw-GitHub URL. The PDF filename/version may change, making the second link stale.
+  - **Desired change:** In the README download section, show only **one download destination**: the existing stable public Google Drive folder, where readers can choose the current `.html` questionnaire and `.pdf` guide. Remove the separate raw-GitHub PDF download link from this section. Briefly clarify that both files are in the same Drive folder, and adjust nearby PDF-opening text so it does not reference a removed link.
+  - **Scope and safeguards:** This is a README documentation/link-maintenance task, not a request to delete the PDF, remove its source/archive links elsewhere, change the current files or their Drive IDs, or alter the discovery landing page. Preserve working existing distribution links and reconcile with any concurrent v0.2.5 package/README PR before editing; check the actual folder contents and links first. Use normal checked PR/verification workflow; update TD/changelog only after verified implementation.
+
 ## Already resolved during branch migration (not a pending task)
 
 The former TD request to bring `main` up to date for employers has already been substantially fulfilled by the verified v0.2.2 four-language promotion and updated main README. It was **not** carried over as unfinished work. Any further portfolio improvements should be raised as a new, specific TD request.
