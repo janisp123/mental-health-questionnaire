@@ -1,5 +1,9 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-14 · Stable discovery-page download wording
+
+Removed hard-coded package filenames, release numbers and a manual checked-on date from the public landing page. Download buttons now refer to the latest questionnaire (.html) and PDF guide; opening steps describe the file type. Stable Drive links are preserved. Version details link to the tags index, leaving exact versions/checksums in release records. Routine patches no longer require rewriting these public instructions. No app, question, answer format or Drive file changes.
+
 ### 2026-11-14 · Discovery page published
 
 PR #24 merged as `a37f254d17d63316e8f211005350645b8f1fe02c`, with the checked PR tree preserved. Owner enabled GitHub Pages after integration settings access was denied. Publishing workflow 43603795913 succeeded. Live URL: https://janisp123.github.io/mental-health-questionnaire/ . Page/sitemap HTTPS 200, correct canonical, no noindex and simulated crawler-user-agent responses 200; actual indexing/AI recommendations remain unverified. README now links the live page. A narrow-screen long-filename overflow found in live verification is corrected by wrapping; requires checked integration/redeployment and live readback. No questionnaire or Drive bytes changed.
