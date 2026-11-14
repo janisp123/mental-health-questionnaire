@@ -120,7 +120,6 @@ function renderQuestion(){
 }
 function renderResults(){
  const qs=reportQuestions(),v=report.counters(qs,state.answers);
- v.completed=v.answered+v.skipped;
  const selected="";
  return window.QuestionnaireScreens.results({
   label,btn,counts:v,selected,reportLanguageOptions:languageOptions(state.reportLang??state.lang),hasFeedback:Object.keys(state.feedback).length>0,

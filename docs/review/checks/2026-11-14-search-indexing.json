@@ -1,0 +1,71 @@
+{
+  "checked_at": "2026-11-14T23:53:17.043537+02:00",
+  "url": "https://janisp123.github.io/mental-health-questionnaire/",
+  "http_status": 200,
+  "canonical": "https://janisp123.github.io/mental-health-questionnaire/",
+  "meta_description": "Prepare for a mental-health appointment with a free offline questionnaire for adults: 712 questions, 15 optional sections, four languages and a PDF summary. Not clinically validated.",
+  "meta_robots": [],
+  "x_robots_tag": null,
+  "no_noindex_observed": true,
+  "sitemap": {
+    "url": "https://janisp123.github.io/mental-health-questionnaire/sitemap.xml",
+    "status": 200,
+    "urls": [
+      "https://janisp123.github.io/mental-health-questionnaire/"
+    ]
+  },
+  "origin_robots": {
+    "url": "https://janisp123.github.io/robots.txt",
+    "status": 404,
+    "meaning": "404 means no robots file at this origin; does not prove actual crawler visits."
+  },
+  "simulated_user_agents": {
+    "simulated_googlebot": {
+      "status": 200,
+      "x_robots_tag": null
+    },
+    "simulated_bingbot": {
+      "status": 200,
+      "x_robots_tag": null
+    },
+    "simulated_oai_searchbot": {
+      "status": 200,
+      "x_robots_tag": null
+    }
+  },
+  "limitations": [
+    "Simulated user agents are not verified real search crawlers.",
+    "Public eligibility checks do not confirm search indexing."
+  ],
+  "searches": [
+    {
+      "query": "site:janisp123.github.io/mental-health-questionnaire/",
+      "provider": "Firecrawl public web search",
+      "target_returned": false,
+      "result_count": 0,
+      "limitations": "Limited provider results do not establish Google/Bing indexing or universal absence."
+    },
+    {
+      "query": "free offline mental health questionnaire psychiatrist appointment PDF Latvian English Russian Ukrainian",
+      "provider": "Firecrawl public web search",
+      "target_returned": false,
+      "result_count": 5,
+      "limitations": "Limited provider results do not establish Google/Bing indexing or universal absence."
+    }
+  ],
+  "google": {
+    "status": "UNVERIFIED",
+    "reason": "Direct Google result retrieval failed (SCRAPE_ALL_ENGINES_FAILED)."
+  },
+  "bing": {
+    "status": "UNVERIFIED",
+    "reason": "Direct Bing retrieval returned unrelated results outside the requested site; response is not reliable indexing evidence."
+  },
+  "ownership": {
+    "google_search_console": "NOT_VERIFIED_WITH_AVAILABLE_TOOLS",
+    "bing_webmaster_tools": "NOT_VERIFIED_WITH_AVAILABLE_TOOLS"
+  },
+  "index_requests": "NOT_SUBMITTED",
+  "actual_crawler_visits": "UNVERIFIED",
+  "ai_recommendations": "UNVERIFIED"
+}

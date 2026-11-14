@@ -76,14 +76,14 @@ function countText(counts,ui) {
 function doctorText(questions,answers,locale,ui,presentation,identity={}) {
  const counts=counters(questions,answers);
  const responses=entries(questions,answers,locale,presentation,ui.medicine).map(e=>e.plain);
- return [identityText(ui,identity),"",ui.doctorHeading,ui.doctorDisclaimer,countText(counts,ui),"",...responses].join("\n");
+ return [identityText(ui,identity),"",ui.doctorHeading,ui.doctorDisclaimer,countText(counts,ui),ui.coverageNote,"",...responses].join("\n");
 }
 function doctorMarkup(questions,answers,locale,ui,presentation,identity={}) {
  const counts=counters(questions,answers);
  const name=[identity.name,identity.surname].map(value=>String(value||"").trim()).filter(Boolean).join(" ");
  const nameValue=name?esc(name):'<span class="write-in"></span>';
  const dateHtml='<p><strong>'+esc(ui.reportDate)+':</strong> <span class="write-in write-in-date"></span></p>';
- const summary="<p class=\"report-counts\">"+esc(countText(counts,ui))+"</p>";
+ const summary="<p class=\"report-counts\">"+esc(countText(counts,ui))+"</p><p>"+esc(ui.coverageNote)+"</p>";
  const responses=entries(questions,answers,locale,presentation,ui.medicine).map(e=>e.html.replace(/\n/g,"<br>")).join("");
  return '<div class="report-identity"><p><strong>'+esc(ui.reportName)+':</strong> '+nameValue+'</p>'+dateHtml+'</div><h1>'+esc(ui.doctorHeading)+'</h1><p>'+esc(ui.doctorDisclaimer)+'</p>'+summary+'<hr>'+responses;
 }
