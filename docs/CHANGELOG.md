@@ -1,5 +1,10 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-14 · v0.2.9 report-count package prepared
+
+Clean source `792b192cf0f993ef9e98ed46a5dbca411154442d` builds verified matching HTML/PDF/ZIP. HTML SHA256 `20628db35f523ef89881582c5a19ad183f42d40cc5ffa4867de2c52c7f20c01c`; guide PDF bytes remain unchanged. Archived exact v0.2.8, promoted repository pair and download pointers. Drive is still v0.2.8 until checked integration and exact-byte readback. Stable landing-page links need no version rewrite; search-account ownership/indexing remains unverified.
+
+
 ### 2026-11-14 · Report count consistency — source verified
 
 Corrected audit findings E2/E3: report coverage excludes untouched unselected questions while retaining applicable saved answers/skips from other sections. Existing conditional visibility is unchanged. Summary and clinician report now share covered/answered/skipped labels and a clear coverage explanation; section progress separates answers and skips and labels the full-bank total as a maximum. Four-language labels and latest-ten patient notes align. No question, answer-scale, recovery, feedback or clinical interpretation change; frequency wording stays deferred.

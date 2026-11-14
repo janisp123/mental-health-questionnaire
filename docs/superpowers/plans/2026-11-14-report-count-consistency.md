@@ -27,3 +27,5 @@
 - Verification: original model/results/selector regressions failed before production changes and pass afterward. All 35 maintained scripts passed in memory mode; focused browser cases additionally cover partial unanswered states and optional-parent boundaries. Independent review found no Critical/Important issues; its minor partial-state coverage suggestion was addressed with a browser case. Search eligibility passed; Google/Bing indexing remains unverified, with no index request submitted.
 
 - Full-bank visual evidence: each locale showed covered/answered/skipped = 63/2/1 for S11 plus one previously saved S12 response. Summary/selector width checks passed at 320/390px. Four generated clinician PDFs were rendered and inspected; no count/answer text clipping.
+
+- Package preparation: clean source `792b192cf0f993ef9e98ed46a5dbca411154442d`; HTML/PDF/ZIP verified. Packaged full-bank counts and print generation match source in all four locales. Unchanged guide rendered and inspected. Checked integration and Drive readback pending.
