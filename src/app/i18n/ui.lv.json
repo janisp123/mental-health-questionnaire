@@ -95,6 +95,7 @@
     "guideBody": "Atveriet lejupielādēto HTML failu pārlūkā. Priekšskatījumā tas nedarbojas. Vienas atbildes izvēle tiek saglabāta atvērtajā anketā. Vairākām atbildēm un teksta laukiem nospiediet “Saglabāt un tālāk”. Pirms pauzes saglabājiet progresu failā. Saglabāto failu varat turēt savā ierīcē. Tas nav šifrēts, tāpēc kopīgojiet to tikai ar uzticamiem cilvēkiem vai veselības aprūpes speciālistu. Neievietojiet to sociālajos tīklos vai citviet publiski. Jūs izvēlaties, ko pārrunāt ar speciālistu. Precizitātes pārskatīšanai izlaidiet jautājumus, kas šķiet atbilstoši. Kļūdainos vai neskaidros jautājumus atzīmējiet un izvēlieties iemeslu. Beigās izvēlieties “Sagatavot pārskatu”, lai apskatītu pārskatu speciālistam un saglabātu to PDF formātā. Datorā turiet nospiestu Ctrl taustiņu un ritiniet peles ritenīti uz augšu vai leju, lai palielinātu vai samazinātu teksta izmēru. Rezultātu ekrānā varat izvēlēties pārskata valodu neatkarīgi no anketas valodas. Ja atzīmējāt kādu problēmu, no speciālista pārskata ekrāna varat atvērt atsevišķu atsauksmju pārskatu un saglabāt to PDF formātā.",
     "notesTitle": "Pēdējās izmaiņas un turpmākie plāni",
     "notesHistory": [
+      "14.11.2026 22:17 Riga — Kontaktinformācija ir pieejama GitHub saitē blakus autora vārdam; atsevišķais atsauksmju nosūtīšanas rīks saglabāts.",
       "14.11.2026 17:02 Riga — atbalsta norādes skaidro, kā atrast palīdzības tālruni Jūsu valstī vai pilsētā; ārkārtas situācijās norādīts sazināties ar vietējiem neatliekamās palīdzības dienestiem. Precizēts, ka panikai līdzīgas epizodes maksimums ir sajūtu spēcīgākais brīdis konkrētajā epizodē.",
       "14.11.2026 15:18 Riga — pievienoti e-pasta melnraksti un kopēšana atsauksmēm par jautājumiem; anketas atbildes netiek iekļautas.",
       "09.11.2026. 12:08 — GitHub pirmkoda saite tagad ir novietota tieši pie autora norādes lapas apakšā.",
@@ -103,8 +104,7 @@
       "09.11.2026. 09:28 — Novērsta zāļu formas un garu jautājumu virsrakstu pārplūde tālruņos. Mainot valodu, iesāktās atsauksmes saglabājas. Pārskata virsraksts atbilst izvēlētajai pārskata valodai.",
       "08.11.2026 20:47 pēc Rīgas laika — pārskats speciālistam un atsauksmes tiek saglabāti atsevišķos PDF failos.",
       "08.11.2026 18:41 pēc Rīgas laika — uzlabojumu mērķu jautājumā var atlasīt visas atbilstošās atbildes.",
-      "08.11.2026 18:23 pēc Rīgas laika — sadaļu izvēles ekrānā pievienota atstarpe starp apakšējām pogām.",
-      "08.11.2026 14:01 pēc Rīgas laika — PDF pārskatos vairs netiek rādīts anketas faila ceļš."
+      "08.11.2026 18:23 pēc Rīgas laika — sadaļu izvēles ekrānā pievienota atstarpe starp apakšējām pogām."
     ],
     "coverageNote": "Skaits aptver piemērojamos jautājumus. Mainītu nosacījumu dēļ paslēptās atbildes paliek progresa failā, bet šeit nav iekļautas.",
     "autoHint": "Izvēlieties vienu atbildi, lai saglabātu to atvērtajā anketā un turpinātu.",

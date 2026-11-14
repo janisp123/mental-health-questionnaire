@@ -1,5 +1,9 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-14 · Footer contact cleanup — source verification
+
+Removed the duplicated contact email and the otherwise empty feedback/acknowledgements footer panel in the shared runtime, across all four locales. The creator credit and its GitHub link remain. Dedicated feedback composition retains its verified recipient and separate report; questionnaire IDs, answers and recovery are unchanged. Added four-language user notes and assigned source version v0.2.7. Focused regression was observed failing before the change and passes afterward. All 34 maintained scripts pass in labelled memory mode; independent review found no Important issues. Dedicated feedback, recovery and four-language footer checks pass. Real-file PR CI and verified distribution remain pending.
+
 ### 2026-11-14 · Helpline reassurance task queued
 
 Added a pending TD task to place brief reassuring guidance before the existing “I’m having a hard time” opening phrase, aligned across LV/EN/RU/UK. The task preserves local-help/emergency instructions and avoids universal confidentiality/referral guarantees. Proposed wording is a draft for later implementation; no app, package, Drive or website bytes changed.

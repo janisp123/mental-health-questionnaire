@@ -17,8 +17,6 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     page, errors, network = open_page(browser, html_path)
     ui = page.locator("#questionnaire-data").evaluate("el => JSON.parse(el.textContent).ui")
     notes = page.locator("#project-updates")
-    panel = page.locator("footer details").last
-    contact = panel.locator('a[href="mailto:test@example.invalid"]')
     for locale in LOCALES:
         page.select_option("#language", locale)
         notes.locator("summary").click()
@@ -27,16 +25,9 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
         assert notes.locator("ul li").all_inner_texts() == [
             ui[locale]["projectPlanReview"], ui[locale]["projectPlanLanguages"]
         ]
-        assert not panel.evaluate("(details) => details.open")
-        assert not page.locator('a[href="mailto:test@example.invalid"]').is_visible()
-        panel.locator("summary").click()
-        assert panel.locator("li").count() == 0
-        assert contact.is_visible()
-        assert contact.inner_text() == "test@example.invalid"
-        assert panel.locator("p").all_inner_texts() == [
-            ui[locale]["projectFeedbackInvitation"] + " test@example.invalid",
-            ui[locale]["projectContributors"],
-        ]
+        assert page.locator('footer a[href^="mailto:"]').count() == 0
+        assert "test@example.invalid" not in page.locator("footer").text_content()
+        assert page.locator('footer [data-project-source]').count() == 1
     page.select_option("#language", "en")
     page.locator('[data-act="start"]').click()
     page.locator('[data-module="S01"]').check()
@@ -65,9 +56,8 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert "SYN_01" not in removed["feedback"]
     assert removed["answers"]["SYN_01"]["codes"] == ["A"]
     act(page, "results")
-    assert not contact.is_visible()
-    panel.locator("summary").click()
-    assert contact.is_visible()
+    assert page.locator('footer a[href^="mailto:"]').count() == 0
+    assert "test@example.invalid" not in page.locator("footer").text_content()
     assert page.locator('[data-act="feedbackReport"]').count() == 0
     act(page, "doctor")
     preview = page.locator(".report-preview")
