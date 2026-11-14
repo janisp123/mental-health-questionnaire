@@ -1,5 +1,11 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-14 · AI-search discovery — prepared for deployment review
+
+Prepared an isolated static description page, updating the earlier unpublished preview for distributed v0.2.5. Added factual depression-related search copy and FAQ while retaining the appointment-preparation/non-diagnostic purpose and absent clinical validation. Existing Drive download links avoid dependence on the separately unmerged repository-package PR. Updated README with matching depression-preparation copy. No questionnaire, guide, question bank or Drive bytes changed.
+
+Added a manual-only Pages workflow, a page-only artifact builder using the actual configured canonical URL, and sitemap generation. No robots/training policy, Pages settings, deployment or indexing submission changed. A merged workflow does not auto-publish. Baseline: repository has_pages false, Pages GET 404, exact-name search returned no results (not proof of universal absence). Deployment and indexing require explicit owner approval and post-launch checks. Focused artifact tests pass; JavaScript-disabled 320/390/1280 browser layouts, fragment links and keyboard skip-link checks pass. Desktop screenshot inspected. Independent review found no Critical/Important issues; its invalid-URL test concern was corrected. Public Drive folder, stable PDF link and v0.2.5 snapshot resolve.
+
 **Active branch:** `develop`; `main` and the frozen v16 Git reference remain unchanged. The old Drive v16 copies were removed from the link-shared review folder; the current technical-review candidate is indexed in the manifest.
 **Current build:** one self-contained offline HTML with 48 unchanged source modules / 712 questions grouped into 15 user-facing sections. GitHub app and full-bank workflows passed; the current technical-review HTML and trilingual PDF are in the linked Drive folder. This is not a public release or clinical validation.
 **Outstanding external checks:** actual Android Chrome use; human review of LV interface wording and EN/RU translations; professional/clinical review. Do not mark those complete without evidence.
