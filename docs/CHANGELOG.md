@@ -1,5 +1,12 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-14 · Four-language helpline reassurance — DELIVERED
+
+PR #35 merged as `3c4d9833e42f83751f61b9e9f0598dea205094ac`, preserving checked head `81d0a4d1009a19384749d81a0559e445e3339a43` tree. All required CI checks passed, including real offline file opening (full 43643161675 / app 43643161619 / discovery 43643161661). v0.2.8 is current in the repository and Drive, built from clean source `7c961f6cfaf95e62c52aa70f852b759b35ea8a7c`. Both Drive files downloaded byte-identical: HTML `c2dbf5888b3e9523c124737b7e246efbcbe6af2f05301c79b02a58604c4aa638`, unchanged guide PDF `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`. Same IDs, folder and sharing preserved; folder contains exactly the current HTML/PDF pair. Snapshot `review/v0.2.8` and exact archived v0.2.7 preserve rollback.
+
+Shared support now includes the aligned reassurance before the existing opening phrase in LV/EN/RU/UK, retaining urgent guidance first and trusted-local-help search. Confidentiality is something to ask about, without absolute secrecy or referral guarantees. All 34 local checks passed in labelled memory mode; all four support panels and the guide were visually inspected; independent review found no material issues. Questions, answer scales and recovery remain unchanged. Removed only the completed helpline TD item; frequency wording remains deferred. Manifest/checkpoint updated after readback. Evidence: `docs/review/checks/2026-11-14-helpline-reassurance-drive-sync.json`. Old downloaded copies require a fresh HTML download; human language/clinical and physical-device review remain pending.
+
+
 ### 2026-11-14 · v0.2.8 helpline reassurance package prepared
 
 Built and verified HTML/PDF/ZIP from clean source `7c961f6cfaf95e62c52aa70f852b759b35ea8a7c`. HTML SHA256 `c2dbf5888b3e9523c124737b7e246efbcbe6af2f05301c79b02a58604c4aa638`; guide PDF remains byte-identical to the reviewed v0.2.7 guide. Current repository package/pointers updated and exact prior pair archived. Drive still holds v0.2.7 pending checked integration and readback-verified replacement. The landing page already uses stable links and needs no rewrite. No frequency-scale changes.

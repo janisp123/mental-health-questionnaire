@@ -1,0 +1,78 @@
+{
+  "verified_at": "2026-11-14T23:33:46.903013+02:00",
+  "source_commit": "7c961f6cfaf95e62c52aa70f852b759b35ea8a7c",
+  "source_tree": "20183d5ce3e8e03feaedf652cfbaba41df1c43ce",
+  "source_dirty": false,
+  "version": "0.2.8-review+full-bank",
+  "checked_head": "81d0a4d1009a19384749d81a0559e445e3339a43",
+  "main_merge": "3c4d9833e42f83751f61b9e9f0598dea205094ac",
+  "merge_tree_matches_checked_head": true,
+  "files": [
+    {
+      "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.8_REVIEW_BUILD.html",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "bytes": 1544787,
+      "sha256": "c2dbf5888b3e9523c124737b7e246efbcbe6af2f05301c79b02a58604c4aa638",
+      "verified_byte_identical": true
+    },
+    {
+      "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "name": "188_README_LV_EN_RU_UK_v0.2.8_REVIEW_BUILD.pdf",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "bytes": 49212,
+      "sha256": "b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9",
+      "verified_byte_identical": true
+    }
+  ],
+  "folder_id": "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+  "ids_folder_sharing_preserved": true,
+  "pdf_bytes_unchanged": true,
+  "guide_render_visually_inspected": true,
+  "local_checks": {
+    "passed": 34,
+    "failed": 0,
+    "load_mode": "memory"
+  },
+  "ci_runs": {
+    "app": 43643161619,
+    "discovery": 43643161661,
+    "full": 43643161675,
+    "conclusion": "success",
+    "offline_file_opening": true
+  },
+  "verified_locales": [
+    "lv",
+    "en",
+    "ru",
+    "uk"
+  ],
+  "packaged_html_browser_checks": [
+    "Complete shared support text, urgent paragraph first",
+    "320/390px without horizontal overflow",
+    "Ten dated update entries per locale",
+    "No page errors or network requests"
+  ],
+  "runtime_suite_checks": [
+    "Footer/manual/answer-triggered support in all four locales",
+    "Saved answers, recovery and reports preserved"
+  ],
+  "downloaded_html_checks": [
+    "Exact bytes match the browser-verified packaged HTML"
+  ],
+  "limitations": [
+    "Human language/clinical review pending",
+    "Physical-device compatibility pending",
+    "Local browser checks use labelled memory mode"
+  ],
+  "folder_contains_exactly_current_html_and_pdf": true,
+  "snapshot": "review/v0.2.8"
+}
