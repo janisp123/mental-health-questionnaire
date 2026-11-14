@@ -1,5 +1,11 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-14 · Worldwide help and panic-peak explanation — DELIVERED
+
+PR #28 merged as `e46f025ae7a8e73dbae146d443386ae7358e80c9`, tree equal to checked head `bccc22536b85c0cb7dead6bb9121fbfcf56e0870`. Full/app/discovery CI passed with real offline file opening (43633128671 / 43633128667 / 43633128651). Current repository package and Drive distribution are v0.2.6 in LV/EN/RU/UK. Both Drive files downloaded byte-identical: HTML `896f60cf7d4c013bfdd76fdd215af47563595d6a5e6f73a980cfca48e122d453`, unchanged guide PDF `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`. IDs, parents and permissions preserved. Downloaded HTML contains the local-help instructions, M04_01 help and dated patch notes in every locale. Prior pairs archived; legacy/current progress compatibility passed. Old offline copies must be downloaded again to receive updates.
+
+Evidence: `docs/review/checks/2026-11-14-support-peak-drive-sync.json`. Completed feedback/local-help TD entries removed and remaining wording/effectiveness proposals explicitly distinguished from delivered changes. Broader clinical wording, report/accessibility repairs and dependency-security updates were not silently added. Human language/clinical and physical-device review remain pending.
+
 ### 2026-11-14 · v0.2.6 package — awaiting checked integration and Drive sync
 
 Clean source `f77d91c` builds the v0.2.6 four-language package. HTML/PDF/ZIP current-source equivalence passes; HTML SHA256 `896f60cf7d4c013bfdd76fdd215af47563595d6a5e6f73a980cfca48e122d453`, unchanged guide PDF `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`. Exact prior repository v0.2.4 and distributed v0.2.5 packages are archived. Refreshed repository download pointers and README summary; the version-independent discovery page needs no copy change. Current Drive files are still v0.2.5 until checked integration and verified replacement. This release supersedes the older pending package PR #23; it must not be merged later over v0.2.6.

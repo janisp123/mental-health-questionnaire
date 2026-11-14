@@ -1,33 +1,23 @@
 # Current working checkpoint
 
-Updated 9 November 2026. `main` is the sole active source. This file describes current state; previous release narratives belong in [history](history/WORK_CHECKPOINT_2026-11-09_before-download-cleanup.md) and the [changelog](CHANGELOG.md).
+Updated 14 November 2026. Main is the sole active source.
 
-## Product and package
+## Current product and distribution
 
-- Application: **v0.2.4**, LV/EN/RU/UK, 712 questions, 48 immutable source modules and 15 optional sections. Latvian is the reference and initial language. This is a technical-review project; human language/clinical review and physical-phone downloaded-file testing remain pending.
-- Build configuration: `src/questionnaire/build.json`. Preserve question IDs/codes and the `mental-pilot-recovery-v1` saved-data contract; follow [feature/module contracts](FEATURE_DEVELOPMENT.md).
-- Current HTML/PDF files, hashes and clean build provenance: [package manifest](../MH_Public_version/manifest.json). Package source: `1c928a49c5f3475bcc04e9e5992b8bf2dd1185b2`.
-- Current snapshot: [`review/v0.2.4-guide-medical-purpose`](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.4-guide-medical-purpose). Earlier tags and [archived packages](../archive/four-language/) preserve rollback; older product branches are historical.
+- Source and current reviewer distribution: **v0.2.6**, LV/EN/RU/UK, 712 questions, 48 preserved source modules and 15 optional sections. Technical review only; human language/clinical review and physical-phone testing remain pending.
+- Worldwide local-help instructions and the M04_01 panic-peak explanation are implemented and distributed in all four languages. Titles, IDs, choices, conditions, time windows and recovery format remain intact. Frozen originals stay byte-verified; only scoped displayed notices/help differ.
+- PR #28 merged as `e46f025ae7a8e73dbae146d443386ae7358e80c9`; tree matches checked head `bccc22536b85c0cb7dead6bb9121fbfcf56e0870`. Clean package source: `f77d91c`. [Package manifest](../MH_Public_version/manifest.json).
+- Full/app/discovery CI passed with real offline file opening (43633128671 / 43633128667 / 43633128651); all 34 local scripts passed in explicitly labelled memory mode. New runtime checks verify four-language manual/emergency help, urgent guidance first, visible peak help and unchanged saved answers. Latvian packaged screens visually inspected.
+- Drive HTML/PDF downloaded byte-identical, with stable IDs, parent folder and sharing. PDF guide bytes unchanged. [Drive verification](review/checks/2026-11-14-support-peak-drive-sync.json). Prior v0.2.4 and v0.2.5 pairs are preserved in archive/four-language. Old downloaded files do not auto-update.
+- Four-language patch notes and README/package pointers are current. The feedback implementation already shipped in v0.2.5 and stays present; completed feedback/local-help tasks are removed from TD by the synchronization record.
 
-## Distribution and audience
+## Website and safeguards
 
-- Repository and [Drive review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb) contain the same verified HTML/PDF pair. Both were downloaded back byte-identical, with IDs, folder and sharing preserved. [Current readback record](review/checks/2026-11-09-medical-purpose-guide-drive-sync.json).
-- The one-page PDF contains opening instructions plus privacy, visit-preparation/non-diagnostic purpose and professional-interpretation notices in all four languages. It has no GitHub link, AI attribution or version-status prose.
-- The app footer links GitHub immediately after `made by Janis Paegle`. AI-assisted implementation attribution remains in repository documentation. Follow the [audience/privacy and attribution rules](../AGENTS.md).
-- README directs users to Drive for the HTML download, a direct PDF download, and explicit opening steps. GitHub HTML links are labelled as source; raw GitHub HTML is served as plain text. Phone-specific opening behavior remains unverified.
-- No app, guide, package or Drive bytes change during this repository documentation maintenance; no distribution update is pending.
+- Discovery page is live at https://janisp123.github.io/mental-health-questionnaire/ . It uses stable download labels/links and needs no version-specific text edits for this release. Actual indexing and AI suggestions remain unverified; see docs/discovery-preview/LAUNCH.md.
+- Protect main is active: PRs and three checks required, force pushes/deletion blocked, no bypass actors. Use checked short-lived PRs. About metadata still has integration settings-permission limits.
 
-## Verification evidence
+## Remaining work and next action
 
-- Current product/package PR #14: checked head `c534254a9d4448fcd9c379f104478df270ef54f6`, merge `6819c21b06c0c6307f9191b8f84a706aa6d05fc7`; trees matched.
-- Full CI [42602725439](https://github.com/janisp123/mental-health-questionnaire/actions/runs/42602725439) and app CI [42602725470](https://github.com/janisp123/mental-health-questionnaire/actions/runs/42602725470) passed with real offline file opening. The maintained suite includes 28 scripts, seven package tests and 5,696 question/locale/phone-width renders.
-- Local product checks used explicitly labelled memory loading. The PDF was rendered and visually inspected. Structural/automated checks do not establish translation accuracy, clinical validation or physical-device compatibility.
-- Standard verification/publication steps: [release policy](RELEASE_POLICY.md). Do not republish unchanged artifacts for repository-only edits.
+Read [TD](TD_LIST.md) before new work. Earlier wording/effectiveness audits were read-only; broader wording proposals and report-count/completion/focus/omission repairs are not implemented. The English clinical-coverage verification plan is separate from validation or diagnosis. Dependency-security findings also remain unimplemented recommendations.
 
-## Active development — 14 November 2026
-
-The main product/distribution above remains v0.2.4. Branch `feat/td-feedback-support` starts from main `763dcaa686f0235a342a4526fcc73b76b5db5ffd` and contains a v0.2.5 source candidate for the priority Send feedback / Copy feedback TD task. It does not publish to Drive. See the latest changelog entry and `docs/superpowers/plans/2026-11-14-feedback-sharing.md` for implementation and verification status. Keep the TD item until the verified integration is recorded.
-
-The TD list now contains six tasks; the former one-item checkpoint is historical. Read-only wording triage and effectiveness evaluation are reported to the owner without questionnaire edits. Discovery preparation is an unpublished static preview only. Worldwide support wording needs a conflict decision for the frozen M30_17 safety text before implementation. Repository About description/topics remain blocked: both authenticated settings edits returned HTTP 403 on 14 November; metadata readback confirms topics remain empty.
-
-Next action: finish the feedback source verification and checked PR; build/inspect a candidate package, retain the current Drive pair, and obtain the explicit release decision required by the priority TD task before replacing distribution files. Human language/clinical review, physical-phone file testing, wording decisions and discovery deployment remain separate gates.
+Next action: choose the next explicitly authorized task from TD. Do not rebuild or re-upload the already verified v0.2.6 pair. Obsolete package PR #23 is closed as superseded; snapshot review/v0.2.6 preserves this release. Keep unrelated queued README-link work separate.
