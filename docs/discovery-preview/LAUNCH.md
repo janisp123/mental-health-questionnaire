@@ -1,6 +1,6 @@
 # Discovery page preview and owner launch plan
 
-Status: **UNPUBLISHED — owner deployment approval required.** Prepared 14 November 2026. `index.html` is a reviewable static description page, not a newly released questionnaire. No hosting, indexing submission, bot-policy change, repository settings edit, Drive update or distribution change is authorized by this file.
+Status: **LIVE** at https://janisp123.github.io/mental-health-questionnaire/ — published 14 November 2026 after owner approval. `index.html` is a reviewable static description page, not a newly released questionnaire. The original preview remains the editable source. Indexing and actual AI-search suggestions are not yet verified; no bot-policy or Drive/questionnaire changes were made.
 
 ## Scope and maintenance choice
 
@@ -78,3 +78,9 @@ This is a local unpublished preview. Public HTTPS, canonical, host robots/header
 - Drive v0.2.5 is already verified from the earlier update. The PDF uses its stable Drive file link because repository-package PR #23 remains unmerged; this avoids publishing a broken v0.2.5 main/raw URL.
 - Observed baseline: repository API says `has_pages: false`; Pages configuration GET returns 404. Exact-name web search for the repository returned no results. This is not proof of universal deindexing, and broader depression rankings or AI suggestion inclusion were not measured.
 - Owner approval is still required for deployment. Main integration, actual public crawling, Search Console/Bing ownership/indexing and AI-search observation remain pending. No robots/training policy was changed.
+
+## Actual publication record
+
+PR #24 merged as `a37f254d17d63316e8f211005350645b8f1fe02c`, tree identical to checked head `961a4ee74d92612e0cc8a1c3a57bca95877d6339`. Owner enabled Pages with GitHub Actions after the integration received HTTP 403. Manual deployment run 43603795913 completed successfully. Actual Pages URL: https://janisp123.github.io/mental-health-questionnaire/ .
+
+HTTPS page and sitemap returned 200; correct self-canonical; no HTML/header noindex; origin robots.txt returned 404 (no robots file at that origin, not a disallow). Simulated Googlebot/bingbot/OAI-SearchBot user-agent requests returned 200; these are not actual crawler observations. Download URLs point to the verified current Drive files. Live browser inspection found a long filename overflowing on narrow screens; a wrapping correction is included in the publication-record PR and must be deployed/verified before claiming that correction live. Search Console/Bing ownership verification and index requests remain owner-account steps; actual indexing, crawler visits, ranking and AI suggestions remain unverified.

@@ -1,0 +1,41 @@
+{
+  "url": "https://janisp123.github.io/mental-health-questionnaire/",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "canonical": [
+    "https://janisp123.github.io/mental-health-questionnaire/"
+  ],
+  "robots_meta": [],
+  "x_robots_tag": null,
+  "sitemap_status": 200,
+  "origin_robots_status": 404,
+  "origin_robots_text": null,
+  "simulated_crawler_requests": [
+    {
+      "user_agent": "Googlebot",
+      "status": 200,
+      "simulated_only": true
+    },
+    {
+      "user_agent": "bingbot",
+      "status": 200,
+      "simulated_only": true
+    },
+    {
+      "user_agent": "OAI-SearchBot",
+      "status": 200,
+      "simulated_only": true
+    }
+  ],
+  "actual_crawler_visits_or_indexing": "Not verified",
+  "sha256": "699a01c7ef9ee3c9747c7702953cfb3dd64d0e1cff75dff934c5c3b4512f9c3d",
+  "download_links": [
+    "https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+    "https://drive.google.com/file/d/1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8/view"
+  ],
+  "deployment_run": 43603795913,
+  "source_commit": "a37f254d17d63316e8f211005350645b8f1fe02c",
+  "source_pr": 24,
+  "verification_scope": "HTTP/source readback. Live Chromium detected 390px long-filename overflow; local wrapping correction passes strict 320/390/1280 checks, pending integration/redeployment.",
+  "indexing_status": "Not verified; owner Search Console/Bing ownership and index requests remain pending"
+}
