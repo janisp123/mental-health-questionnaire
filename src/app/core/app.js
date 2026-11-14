@@ -55,13 +55,10 @@ function toolbar(){
  return '<nav class="toolbar" aria-label="'+label("tools")+'">'+btn("backup","saveBackup")+'<small class="backup-note">'+label("backupWarning")+'</small><label class="file-label">'+label("restoreBackup")+'<input id="restore" type="file" accept=".json,application/json" aria-label="'+label("restoreBackup")+'"></label>'+btn("results","results")+btn("sections","editSections")+'</nav>';
 }
 function footer(){
- const email=esc(data.presentation.feedbackContactEmail);
- const contact=email
-  ? '<p>'+label("projectFeedbackInvitation")+' <a href="mailto:'+email+'">'+email+'</a></p>' : "";
  const updates='<details id="project-updates"><summary>'+label("notesTitle")+'</summary><ol>'+
   ui().notesHistory.map(note=>'<li>'+esc(note)+'</li>').join("")+'</ol><h3>'+label("projectPlans")+'</h3><ul><li>'+
   label("projectPlanReview")+'</li><li>'+label("projectPlanLanguages")+'</li></ul></details>';
- return '<footer><details><summary>'+label("tools")+'</summary>'+toolbar()+'</details><details id="support-details"><summary>'+label("supportMenu")+'</summary>'+supportLinks(true)+'</details><details><summary>'+label("guideTitle")+'</summary><p>'+label("guideBody")+'</p></details>'+updates+'<details id="project-information"><summary>'+label("legal")+'</summary>'+ui().legalBody.split("\n\n").map(text=>'<p>'+esc(text)+'</p>').join("")+'</details><details><summary>'+label("helpers")+'</summary>'+contact+'<p><strong>'+label("projectContributors")+'</strong></p></details><p class="muted">'+label("statusNote")+' · '+label("footer")+' · <span class="creator-credit" lang="en">made by Janis Paegle <a data-project-source href="https://github.com/janisp123/mental-health-questionnaire" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" aria-label="'+label("projectSource")+'" lang="'+esc(state.lang)+'">GitHub</a> 2026</span> · '+label("freeUse")+'</p></footer>';
+ return '<footer><details><summary>'+label("tools")+'</summary>'+toolbar()+'</details><details id="support-details"><summary>'+label("supportMenu")+'</summary>'+supportLinks(true)+'</details><details><summary>'+label("guideTitle")+'</summary><p>'+label("guideBody")+'</p></details>'+updates+'<details id="project-information"><summary>'+label("legal")+'</summary>'+ui().legalBody.split("\n\n").map(text=>'<p>'+esc(text)+'</p>').join("")+'</details><p class="muted">'+label("statusNote")+' · '+label("footer")+' · <span class="creator-credit" lang="en">made by Janis Paegle <a data-project-source href="https://github.com/janisp123/mental-health-questionnaire" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" aria-label="'+label("projectSource")+'" lang="'+esc(state.lang)+'">GitHub</a> 2026</span> · '+label("freeUse")+'</p></footer>';
 }
 function renderStart(){
  return window.QuestionnaireScreens.start({label,btn});

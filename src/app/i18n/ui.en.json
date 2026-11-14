@@ -95,6 +95,7 @@
     "guideBody": "Open the downloaded HTML file in a browser; it will not work in preview mode. A single choice is saved in the open questionnaire; for multiple choices or text, press “Save & Next”. Save progress to a file before taking a break. You can keep the file on your phone or computer. It is not encrypted, so share it only with people you trust or healthcare professionals. Do not post it on social media or anywhere public. You decide what to discuss with a professional. For an accuracy review, skip questions that seem fine; flag questions that seem incorrect or unclear and choose a reason. At the end, select “Generate report” to preview and save the clinician PDF. On a PC, hold Ctrl and scroll the mouse wheel up or down to make the text larger or smaller. On the results screen, you can choose a report language separately from the questionnaire language. If you flagged an issue, you can open a separate feedback report from the clinician preview and save it as its own PDF.",
     "notesTitle": "Latest changes and future plans",
     "notesHistory": [
+      "14.11.2026 22:17 Riga — Contact details are available through the GitHub link beside the creator’s name; the separate Send feedback action remains available.",
       "14.11.2026 17:02 Riga — support instructions now explain how to find a local helpline in your country or city; urgent situations refer to local emergency services. Clarified that a panic-like episode’s peak is its strongest point within that episode.",
       "14.11.2026 15:18 Riga — added email drafts and copying for question feedback; answers are excluded.",
       "09.11.2026. 12:08 — The GitHub source link is now placed directly beside the creator credit at the bottom of the page.",
@@ -103,8 +104,7 @@
       "09.11.2026. 09:28 — Fixed phone layouts for the medication form and long question headings. Unsubmitted feedback survives language changes. The report heading follows the selected report language.",
       "08.11.2026 20:47 Riga time — clinician reports and project feedback are saved as separate PDFs.",
       "08.11.2026 18:41 Riga time — the improvement goals question now accepts all applicable choices.",
-      "08.11.2026 18:23 Riga time — added spacing between the bottom buttons on the section picker.",
-      "08.11.2026 14:01 Riga time — removed the local questionnaire file path from printed reports."
+      "08.11.2026 18:23 Riga time — added spacing between the bottom buttons on the section picker."
     ],
     "coverageNote": "Counts cover applicable questions. Answers hidden by changed conditions remain in the saved file but are not included here.",
     "autoHint": "Choose one answer to save it in the open questionnaire and continue.",
