@@ -1,5 +1,10 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-14 · v0.2.8 helpline reassurance package prepared
+
+Built and verified HTML/PDF/ZIP from clean source `7c961f6cfaf95e62c52aa70f852b759b35ea8a7c`. HTML SHA256 `c2dbf5888b3e9523c124737b7e246efbcbe6af2f05301c79b02a58604c4aa638`; guide PDF remains byte-identical to the reviewed v0.2.7 guide. Current repository package/pointers updated and exact prior pair archived. Drive still holds v0.2.7 pending checked integration and readback-verified replacement. The landing page already uses stable links and needs no rewrite. No frequency-scale changes.
+
+
 ### 2026-11-14 · Helpline reassurance — source verified
 
 Extended shared support text in LV/EN/RU/UK before the existing short opening phrase: no prepared speech, listening/help without judgment, possible specialist/local-support suggestions, and an invitation to ask about confidentiality before sharing personal details. No unconditional secrecy/anonymity/referral guarantee. Emergency guidance remains first; trusted-local-number search and the original opening phrase are preserved. Only support text, latest-ten patient notes and build version change; questions, answer scales, saved data, runtime and recovery remain intact. Frequency wording stays deferred.

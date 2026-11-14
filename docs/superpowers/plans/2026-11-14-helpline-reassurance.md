@@ -36,7 +36,7 @@
 - [x] Insert the aligned reassurance immediately before the opening phrase; prepend patient-relevant notes and set v0.2.8. This is a reversible prose change: use direct copy review and existing tests, without adding tests that duplicate the prose.
 - [x] Run existing support/source checks and `QUESTIONNAIRE_BROWSER=/usr/bin/chromium python tools/run_checks.py --load-mode memory --output-dir dist/checks-helpline-reassurance`. Expected: all maintained checks pass; record memory mode separately from CI file opening.
 - [x] Independently review the scoped diff; inspect all four rendered support paths and phone widths. Expected: no material issue, overlap, missing text, errors or network requests.
-- [ ] Record verified source in the changelog, archive exact v0.2.7 and commit clean source; build `dist/review-0.2.8` and run `python tools/verify_review_package.py dist/review-0.2.8 --with-zip`. Expected: clean provenance and exact current-source package equivalence. Inspect guide; unchanged bytes retain prior review evidence.
+- [x] Record verified source in the changelog, archive exact v0.2.7 and commit clean source; build `dist/review-0.2.8` and run `python tools/verify_review_package.py dist/review-0.2.8 --with-zip`. Expected: clean provenance and exact current-source package equivalence. Inspect guide; unchanged bytes retain prior review evidence.
 - [ ] Promote the verified pair and pointers through a PR with all required checks; verify merged tree equals checked head and tag `review/v0.2.8`.
 - [ ] Replace the same Drive IDs deliberately, preserving sharing/folder; download both and compare exact bytes. Expected: current HTML/PDF only and exact package hashes.
 - [ ] After delivery, remove the completed helpline TD task, record checksums/commits/CI in the changelog and manifest, and update the checkpoint through a checked docs PR. Keep the deferred frequency task intact.
@@ -46,3 +46,5 @@
 - Start: main `ffcd5e32cbc13279e96b0605fd5c00a0258e4e91`; deferred frequency wording saved by PR #34. Existing support paths share `supportBody`; no runtime edits needed.
 
 - Source verification: 34/34 maintained checks passed in labelled memory mode; existing support checks cover footer/manual/triggered paths. Four-language support panels visually inspected at 390px, overflow checked at 320/390px. Independent review found no Critical/Important or actionable minor concerns.
+
+- Package verification: clean source `7c961f6cfaf95e62c52aa70f852b759b35ea8a7c`; generated HTML/PDF/ZIP passed current-source equivalence. Packaged support panels match the preview in all four locales. Guide PDF is byte-identical to the prior version; its rendered page was inspected.
