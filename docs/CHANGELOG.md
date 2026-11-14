@@ -1,5 +1,9 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-14 · Helpline reassurance task queued
+
+Added a pending TD task to place brief reassuring guidance before the existing “I’m having a hard time” opening phrase, aligned across LV/EN/RU/UK. The task preserves local-help/emergency instructions and avoids universal confidentiality/referral guarantees. Proposed wording is a draft for later implementation; no app, package, Drive or website bytes changed.
+
 ### 2026-11-14 · Worldwide help and panic-peak explanation — DELIVERED
 
 PR #28 merged as `e46f025ae7a8e73dbae146d443386ae7358e80c9`, tree equal to checked head `bccc22536b85c0cb7dead6bb9121fbfcf56e0870`. Full/app/discovery CI passed with real offline file opening (43633128671 / 43633128667 / 43633128651). Current repository package and Drive distribution are v0.2.6 in LV/EN/RU/UK. Both Drive files downloaded byte-identical: HTML `896f60cf7d4c013bfdd76fdd215af47563595d6a5e6f73a980cfca48e122d453`, unchanged guide PDF `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`. IDs, parents and permissions preserved. Downloaded HTML contains the local-help instructions, M04_01 help and dated patch notes in every locale. Prior pairs archived; legacy/current progress compatibility passed. Old offline copies must be downloaded again to receive updates.
