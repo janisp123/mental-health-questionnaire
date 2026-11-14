@@ -1,5 +1,17 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-14 · v0.2.8 helpline reassurance package prepared
+
+Built and verified HTML/PDF/ZIP from clean source `7c961f6cfaf95e62c52aa70f852b759b35ea8a7c`. HTML SHA256 `c2dbf5888b3e9523c124737b7e246efbcbe6af2f05301c79b02a58604c4aa638`; guide PDF remains byte-identical to the reviewed v0.2.7 guide. Current repository package/pointers updated and exact prior pair archived. Drive still holds v0.2.7 pending checked integration and readback-verified replacement. The landing page already uses stable links and needs no rewrite. No frequency-scale changes.
+
+
+### 2026-11-14 · Helpline reassurance — source verified
+
+Extended shared support text in LV/EN/RU/UK before the existing short opening phrase: no prepared speech, listening/help without judgment, possible specialist/local-support suggestions, and an invitation to ask about confidentiality before sharing personal details. No unconditional secrecy/anonymity/referral guarantee. Emergency guidance remains first; trusted-local-number search and the original opening phrase are preserved. Only support text, latest-ten patient notes and build version change; questions, answer scales, saved data, runtime and recovery remain intact. Frequency wording stays deferred.
+
+All 34 maintained checks passed in labelled memory mode; existing four-language footer/manual/triggered support checks, recovery and reports passed. Full support panels visually inspected in all four locales; 320/390px overflow checks passed with no errors/network. Independent review found no Critical/Important or actionable minor concerns. Exact v0.2.7 pair archived. New source version is v0.2.8; clean packaging, real-file CI and verified Drive delivery remain pending.
+
+
 ### 2026-11-14 · Frequency wording review deferred in TD
 
 Recorded a deferred review of natural frequency labels, numerical guides, regular versus clustered patterns, clinical recall windows, four-language consistency and saved-answer compatibility. Neither new answer ranges nor implementation are approved; coordinate with the existing wording audit when resumed. This is a backlog/checkpoint update only. Current v0.2.7 questionnaire, package, Drive distribution and website are unchanged.
