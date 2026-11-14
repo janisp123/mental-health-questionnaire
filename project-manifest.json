@@ -592,21 +592,21 @@
     "folder_url": "https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
     "purpose": "PROFESSIONAL_TECHNICAL_REVIEW_CANDIDATE_NOT_PUBLIC_RELEASE",
     "reference_language": "lv",
-    "version": "0.2.7",
-    "source_commit": "e6771d25db407ec24e70df9dd8f79cb09d228122",
+    "version": "0.2.8",
+    "source_commit": "7c961f6cfaf95e62c52aa70f852b759b35ea8a7c",
     "verified_date": "2026-11-14",
     "auto_sync": false,
-    "synchronization": "VERIFIED: v0.2.7 footer contact cleanup HTML and matching unchanged guide PDF downloaded byte-identical; IDs, folder and sharing preserved.",
+    "synchronization": "VERIFIED: v0.2.8 four-language helpline reassurance HTML and matching unchanged guide PDF downloaded byte-identical; IDs, folder and sharing preserved.",
     "files": [
       {
         "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
-        "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.7_REVIEW_BUILD.html",
-        "bytes": 1542547,
-        "sha256": "5e2082ab524cf2f5c947cfd7358e81669e671d2046f7b6859218948f1281a89e"
+        "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.8_REVIEW_BUILD.html",
+        "bytes": 1544787,
+        "sha256": "c2dbf5888b3e9523c124737b7e246efbcbe6af2f05301c79b02a58604c4aa638"
       },
       {
         "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
-        "name": "188_README_LV_EN_RU_UK_v0.2.7_REVIEW_BUILD.pdf",
+        "name": "188_README_LV_EN_RU_UK_v0.2.8_REVIEW_BUILD.pdf",
         "bytes": 49212,
         "sha256": "b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9"
       }
@@ -621,7 +621,7 @@
       "uk"
     ],
     "source_readme": "docs/review/GUIDE_LV_EN_RU_UK.md",
-    "promotion_commit": "454aae3987104633fbf3e0227087ee775911eff4",
+    "promotion_commit": "3c4d9833e42f83751f61b9e9f0598dea205094ac",
     "last_built_date": "2026-11-14"
   }
 }

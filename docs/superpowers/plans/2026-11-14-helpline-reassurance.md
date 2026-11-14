@@ -37,9 +37,9 @@
 - [x] Run existing support/source checks and `QUESTIONNAIRE_BROWSER=/usr/bin/chromium python tools/run_checks.py --load-mode memory --output-dir dist/checks-helpline-reassurance`. Expected: all maintained checks pass; record memory mode separately from CI file opening.
 - [x] Independently review the scoped diff; inspect all four rendered support paths and phone widths. Expected: no material issue, overlap, missing text, errors or network requests.
 - [x] Record verified source in the changelog, archive exact v0.2.7 and commit clean source; build `dist/review-0.2.8` and run `python tools/verify_review_package.py dist/review-0.2.8 --with-zip`. Expected: clean provenance and exact current-source package equivalence. Inspect guide; unchanged bytes retain prior review evidence.
-- [ ] Promote the verified pair and pointers through a PR with all required checks; verify merged tree equals checked head and tag `review/v0.2.8`.
-- [ ] Replace the same Drive IDs deliberately, preserving sharing/folder; download both and compare exact bytes. Expected: current HTML/PDF only and exact package hashes.
-- [ ] After delivery, remove the completed helpline TD task, record checksums/commits/CI in the changelog and manifest, and update the checkpoint through a checked docs PR. Keep the deferred frequency task intact.
+- [x] Promote the verified pair and pointers through a PR with all required checks; verify merged tree equals checked head and tag `review/v0.2.8`.
+- [x] Replace the same Drive IDs deliberately, preserving sharing/folder; download both and compare exact bytes. Expected: current HTML/PDF only and exact package hashes.
+- [x] After delivery, remove the completed helpline TD task, record checksums/commits/CI in the changelog and manifest, and update the checkpoint through a checked docs PR. Keep the deferred frequency task intact.
 
 ## Execution record
 
@@ -48,3 +48,5 @@
 - Source verification: 34/34 maintained checks passed in labelled memory mode; existing support checks cover footer/manual/triggered paths. Four-language support panels visually inspected at 390px, overflow checked at 320/390px. Independent review found no Critical/Important or actionable minor concerns.
 
 - Package verification: clean source `7c961f6cfaf95e62c52aa70f852b759b35ea8a7c`; generated HTML/PDF/ZIP passed current-source equivalence. Packaged support panels match the preview in all four locales. Guide PDF is byte-identical to the prior version; its rendered page was inspected.
+
+- Delivery verified: PR #35 merge `3c4d9833e42f83751f61b9e9f0598dea205094ac`, checked head `81d0a4d1009a19384749d81a0559e445e3339a43`; both Drive files read back exactly, folder/sharing preserved. TD cleanup and final delivery records are integrated through the follow-up checked documentation PR.
