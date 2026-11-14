@@ -1,5 +1,12 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-14 · Footer email cleanup — DELIVERED
+
+PR #32 merged as `454aae3987104633fbf3e0227087ee775911eff4`, preserving checked head `1a01922e30a02f008d7cc1807df2c10180c82322` tree. All three required CI checks passed, including real offline file opening (full 43637161224 / app 43637161170 / discovery 43637161166). v0.2.7 is current in the repository and Drive, built from clean source `e6771d25db407ec24e70df9dd8f79cb09d228122`. Both Drive files downloaded byte-identical: HTML `5e2082ab524cf2f5c947cfd7358e81669e671d2046f7b6859218948f1281a89e`, unchanged guide PDF `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`. Same IDs, parents and sharing retained; folder contains only the current HTML/PDF pair. Snapshot `review/v0.2.7` and exact prior v0.2.6 archive preserve rollback.
+
+The displayed footer email and resulting empty panel are removed in LV/EN/RU/UK. The creator GitHub link and dedicated Send feedback action/recipient remain. All 34 local memory-mode checks, four-language packaged footer checks, package verification and independent review passed. Questions, saved answers and recovery remain intact. Evidence: `docs/review/checks/2026-11-14-footer-email-drive-sync.json`. Updated manifest and checkpoint after readback; unrelated TD tasks remain queued. Existing downloaded copies require a fresh HTML download. Human language/clinical and physical-device review remain pending.
+
+
 ### 2026-11-14 · v0.2.7 footer cleanup package prepared
 
 Built the clean v0.2.7 source and verified matching HTML/PDF/ZIP. Archived the exact v0.2.6 pair and updated repository download pointers. Guide PDF bytes remain unchanged. The public discovery page already uses stable labels/links and needs no release-specific rewrite. Current Drive still holds v0.2.6 until checked integration and verified in-place replacement. No question, saved-answer or feedback-recipient change.

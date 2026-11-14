@@ -4,12 +4,13 @@ Updated 14 November 2026. Main is the sole active source.
 
 ## Current product and distribution
 
-- Source and current reviewer distribution: **v0.2.6**, LV/EN/RU/UK, 712 questions, 48 preserved source modules and 15 optional sections. Technical review only; human language/clinical review and physical-phone testing remain pending.
+- Source and current reviewer distribution: **v0.2.7**, LV/EN/RU/UK, 712 questions, 48 preserved source modules and 15 optional sections. Technical review only; human language/clinical review and physical-phone testing remain pending.
 - Worldwide local-help instructions and the M04_01 panic-peak explanation are implemented and distributed in all four languages. Titles, IDs, choices, conditions, time windows and recovery format remain intact. Frozen originals stay byte-verified; only scoped displayed notices/help differ.
-- PR #28 merged as `e46f025ae7a8e73dbae146d443386ae7358e80c9`; tree matches checked head `bccc22536b85c0cb7dead6bb9121fbfcf56e0870`. Clean package source: `f77d91c`. [Package manifest](../MH_Public_version/manifest.json).
-- Full/app/discovery CI passed with real offline file opening (43633128671 / 43633128667 / 43633128651); all 34 local scripts passed in explicitly labelled memory mode. New runtime checks verify four-language manual/emergency help, urgent guidance first, visible peak help and unchanged saved answers. Latvian packaged screens visually inspected.
-- Drive HTML/PDF downloaded byte-identical, with stable IDs, parent folder and sharing. PDF guide bytes unchanged. [Drive verification](review/checks/2026-11-14-support-peak-drive-sync.json). Prior v0.2.4 and v0.2.5 pairs are preserved in archive/four-language. Old downloaded files do not auto-update.
-- Four-language patch notes and README/package pointers are current. The feedback implementation already shipped in v0.2.5 and stays present; completed feedback/local-help tasks are removed from TD by the synchronization record.
+- Footer contact email and its otherwise empty panel are removed in all four locales. The creator GitHub link and separate Send feedback action/recipient remain. Questions, saved answers and recovery format are unchanged.
+- PR #32 merged as `454aae3987104633fbf3e0227087ee775911eff4`; tree matches checked head `1a01922e30a02f008d7cc1807df2c10180c82322`. Clean package source: `e6771d25db407ec24e70df9dd8f79cb09d228122`. [Package manifest](../MH_Public_version/manifest.json).
+- Full/app/discovery CI passed, including real offline file opening (43637161224 / 43637161170 / 43637161166); all 34 local scripts passed in labelled memory mode. Four-language footer checks, dedicated feedback/recovery regressions, clean package verification and independent review passed. Latvian packaged phone layout visually inspected.
+- Drive HTML/PDF downloaded byte-identical with stable IDs, folder and sharing. Guide PDF bytes unchanged; prior v0.2.6 pair archived. [Drive verification](review/checks/2026-11-14-footer-email-drive-sync.json). Old downloaded files do not auto-update.
+- Four-language patch notes and README/package pointers are current. Helpline reassurance remains queued in TD, without implementation or distribution changes for that task.
 
 ## Website and safeguards
 
@@ -20,4 +21,4 @@ Updated 14 November 2026. Main is the sole active source.
 
 Read [TD](TD_LIST.md) before new work. Earlier wording/effectiveness audits were read-only; broader wording proposals and report-count/completion/focus/omission repairs are not implemented. The English clinical-coverage verification plan is separate from validation or diagnosis. Dependency-security findings also remain unimplemented recommendations.
 
-Next action: choose the next explicitly authorized task from TD. Do not rebuild or re-upload the already verified v0.2.6 pair. Obsolete package PR #23 is closed as superseded; snapshot review/v0.2.6 preserves this release. Keep unrelated queued README-link work separate.
+Next action: choose the next explicitly authorized task from TD. Do not rebuild or re-upload the already verified v0.2.7 pair. Obsolete package PR #23 is closed as superseded; snapshot review/v0.2.7 preserves this release. Keep unrelated queued README-link work separate.
