@@ -1,5 +1,9 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-14 · Project-state evaluation plan prepared
+
+Prepared `docs/superpowers/plans/2026-11-14-project-state-evaluation.md`, grounded in verified v0.2.6 delivery and current main/PR status. It reuses completed audits, separates confirmed defects from proposals/unverified claims, scopes clinical review to English, and ranks next actions before new translation work. Covers dependency security, core user/report journeys, accessibility, localization contracts, discovery and evidence of demand. This is a plan, not execution or authorization of repairs. No app, package, Drive, hosting or settings changes.
+
 ### 2026-11-14 · Worldwide help and panic-peak explanation — DELIVERED
 
 PR #28 merged as `e46f025ae7a8e73dbae146d443386ae7358e80c9`, tree equal to checked head `bccc22536b85c0cb7dead6bb9121fbfcf56e0870`. Full/app/discovery CI passed with real offline file opening (43633128671 / 43633128667 / 43633128651). Current repository package and Drive distribution are v0.2.6 in LV/EN/RU/UK. Both Drive files downloaded byte-identical: HTML `896f60cf7d4c013bfdd76fdd215af47563595d6a5e6f73a980cfca48e122d453`, unchanged guide PDF `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`. IDs, parents and permissions preserved. Downloaded HTML contains the local-help instructions, M04_01 help and dated patch notes in every locale. Prior pairs archived; legacy/current progress compatibility passed. Old offline copies must be downloaded again to receive updates.
