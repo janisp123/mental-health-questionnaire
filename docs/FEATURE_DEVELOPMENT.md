@@ -46,3 +46,9 @@ Commit source changes before producing a distribution package. The manifest reco
 ## Verification limits
 
 CI uses real offline file opening. If a managed browser blocks `file://`, run `python tools/run_checks.py --load-mode memory` and retain that mode in the evidence. Memory loading does not verify physical-device downloaded-file behavior. Human translation, clinical review and device checks retain their actual status independently of main adoption.
+
+## Country-neutral emergency notices
+
+`src/questionnaire/local-emergency-notices.json` supplies only the displayed `time` text for M15_19, M18_13 and M30_17 after locale packs load. It replaces country-specific emergency-number references while retaining time windows, symptoms and urgent-care instructions. Frozen source/translation packs, titles, IDs, choices and conditions remain unchanged. Every active locale must have a notice; missing/number-specific notices fail the build. `tests/full_bank/test_worldwide_support.py` checks this narrow difference and the answer contracts.
+
+`src/questionnaire/panic-peak-clarification.json` adds a localized help explanation to M04_01 after locale packs load. Its title, time window, choices and conditions remain frozen; every active locale must have an explanation.

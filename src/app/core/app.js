@@ -30,12 +30,11 @@ function header(){
  return '<header>'+(state.screen==="start"?'<h1>'+label("project")+'</h1>':"")+'<label class="lang">'+label("language")+' <select id="language">'+languageOptions(state.lang)+'</select></label></header>';
 }
 function supportLinks(includeEmergency){
- const line='<a href="tel:116123">'+label("supportLink")+'</a>';
- return line+(includeEmergency?'<p>'+label("emergencyBody")+' <a href="tel:112">112</a></p>':"");
+ return (includeEmergency?'<p>'+label("emergencyBody")+'</p>':"")+'<p>'+label("supportBody")+'</p>';
 }
 function supportCard(){
  if(!state.support)return "";
- return '<aside id="support-message" class="support-card" role="status" aria-live="polite" tabindex="-1"><h2>'+label("supportTitle")+'</h2>'+supportLinks(state.support==="emergency")+'<p>'+label("supportBody")+'</p>'+btn("dismissSupport","dismissSupport")+'</aside>';
+ return '<aside id="support-message" class="support-card" role="status" aria-live="polite" tabindex="-1"><h2>'+label("supportTitle")+'</h2>'+supportLinks(true)+btn("dismissSupport","dismissSupport")+'</aside>';
 }
 function offerSupport(q,codes){
  const rules=data.presentation.questions[q.id]?.support||{};
@@ -62,7 +61,7 @@ function footer(){
  const updates='<details id="project-updates"><summary>'+label("notesTitle")+'</summary><ol>'+
   ui().notesHistory.map(note=>'<li>'+esc(note)+'</li>').join("")+'</ol><h3>'+label("projectPlans")+'</h3><ul><li>'+
   label("projectPlanReview")+'</li><li>'+label("projectPlanLanguages")+'</li></ul></details>';
- return '<footer><details><summary>'+label("tools")+'</summary>'+toolbar()+'</details><details id="support-details"><summary>'+label("supportMenu")+'</summary><p>'+label("supportBody")+'</p>'+supportLinks()+'</details><details><summary>'+label("guideTitle")+'</summary><p>'+label("guideBody")+'</p></details>'+updates+'<details id="project-information"><summary>'+label("legal")+'</summary>'+ui().legalBody.split("\n\n").map(text=>'<p>'+esc(text)+'</p>').join("")+'</details><details><summary>'+label("helpers")+'</summary>'+contact+'<p><strong>'+label("projectContributors")+'</strong></p></details><p class="muted">'+label("statusNote")+' · '+label("footer")+' · <span class="creator-credit" lang="en">made by Janis Paegle <a data-project-source href="https://github.com/janisp123/mental-health-questionnaire" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" aria-label="'+label("projectSource")+'" lang="'+esc(state.lang)+'">GitHub</a> 2026</span> · '+label("freeUse")+'</p></footer>';
+ return '<footer><details><summary>'+label("tools")+'</summary>'+toolbar()+'</details><details id="support-details"><summary>'+label("supportMenu")+'</summary>'+supportLinks(true)+'</details><details><summary>'+label("guideTitle")+'</summary><p>'+label("guideBody")+'</p></details>'+updates+'<details id="project-information"><summary>'+label("legal")+'</summary>'+ui().legalBody.split("\n\n").map(text=>'<p>'+esc(text)+'</p>').join("")+'</details><details><summary>'+label("helpers")+'</summary>'+contact+'<p><strong>'+label("projectContributors")+'</strong></p></details><p class="muted">'+label("statusNote")+' · '+label("footer")+' · <span class="creator-credit" lang="en">made by Janis Paegle <a data-project-source href="https://github.com/janisp123/mental-health-questionnaire" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" aria-label="'+label("projectSource")+'" lang="'+esc(state.lang)+'">GitHub</a> 2026</span> · '+label("freeUse")+'</p></footer>';
 }
 function renderStart(){
  return window.QuestionnaireScreens.start({label,btn});

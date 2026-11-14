@@ -1,0 +1,9 @@
+{
+  "schema": "panic-peak-clarification-v1",
+  "help": {
+    "lv": "Ar maksimumu šeit domāts brīdis, kad sajūtas konkrētajā epizodē bija visspēcīgākās. Jautājums ir par to, vai tas notika dažu minūšu laikā pēc epizodes sākuma. Tas nenozīmē vissmagāko iespējamo trauksmi.",
+    "en": "Peak means the point when the feelings were strongest during that particular episode. The question asks whether this happened within a few minutes of the episode starting. It does not mean the worst anxiety imaginable.",
+    "ru": "Под пиком здесь понимается момент, когда ощущения в этом конкретном эпизоде были наиболее сильными. Вопрос о том, наступил ли этот момент в течение нескольких минут от начала эпизода. Это не означает самую сильную тревогу, какую только можно представить.",
+    "uk": "Пік тут означає момент, коли відчуття під час цього конкретного епізоду були найсильнішими. Запитання про те, чи настав цей момент протягом кількох хвилин від початку епізоду. Це не означає найсильнішу тривогу, яку можна уявити."
+  }
+}

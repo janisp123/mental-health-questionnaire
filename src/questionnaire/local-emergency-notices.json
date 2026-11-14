@@ -1,0 +1,23 @@
+{
+  "schema": "local-emergency-notices-v1",
+  "questions": {
+    "M30_17": {
+      "lv": "Pēdējās 28 dienās. Jaunas vai pieaugošas roku kustību grūtības jāizvērtē ārstam. Pēkšņa vājuma, runas vai redzes izmaiņu gadījumā meklējiet neatliekamo palīdzību (sazinieties ar vietējiem neatliekamās palīdzības dienestiem); negaidiet anketas pabeigšanu.",
+      "en": "The past 28 days. New or worsening difficulties with hand movements should be assessed by a doctor. Sudden weakness, speech or vision changes require emergency help (contact your local emergency services); do not wait to finish.",
+      "ru": "За последние 28 дней. Новые или нарастающие трудности с движениями рук требуют осмотра врача. При внезапной слабости, изменениях речи или зрения нужна экстренная помощь (обратитесь в местные экстренные службы); не ждите завершения анкеты.",
+      "uk": "За останні 28 днів. Нові або дедалі вираженіші труднощі з рухами рук має оцінити лікар. Якщо раптово виникла слабкість чи зміни мовлення або зору, зверніться по невідкладну допомогу (зверніться до місцевих екстрених служб). Не чекайте завершення анкети."
+    },
+    "M15_19": {
+      "lv": "Pašlaik. Šādu pašreizēju simptomu gadījumā meklējiet neatliekamo medicīnisko palīdzību (sazinieties ar vietējiem neatliekamās palīdzības dienestiem). Negaidiet anketas pabeigšanu.",
+      "en": "Right now. For these current symptoms, seek emergency medical help (contact your local emergency services). Do not wait to finish the questionnaire.",
+      "ru": "Прямо сейчас. При таких нынешних симптомах нужна экстренная медицинская помощь (обратитесь в местные экстренные службы). Не ждите завершения анкеты.",
+      "uk": "Зараз. Якщо ці симптоми є зараз, зверніться по невідкладну медичну допомогу (зверніться до місцевих екстрених служб). Не чекайте завершення анкети."
+    },
+    "M18_13": {
+      "lv": "Jebkurā dzīves laikā. Šī sadaļa apkopo pieredzi sarunai ar ārstu; tā nenosaka, vai cilvēks ir bīstams, un neparedz vardarbību. Pagātnes rīcība, emocionāls nejutīgums, ziņu interese vai nevēlamas domas nav pašreizēja nodoma pierādījums. Ņemiet vērā laiku, kontekstu, atkārtošanos un pašreizējās vajadzības. Ja baidāties, ka varat tūlīt kaitēt kādam vai dzīvniekam, pārtrauciet anketu, attālinieties no iespējamā cietušā un meklējiet tūlītēju palīdzību; ārkārtas situācijā sazinieties ar vietējiem neatliekamās palīdzības dienestiem.",
+      "en": "At any time in your life. This section gathers history for a clinician; it does not determine whether someone is dangerous or predict violence. Past acts, emotional numbness, interest in news or unwanted thoughts are not proof of current intent. Consider timing, context, repetition and current needs. If you fear you may imminently harm someone or an animal, stop the questionnaire, move away from the potential victim and seek immediate help; contact your local emergency services in an emergency.",
+      "ru": "За всю жизнь. Этот раздел собирает сведения для врача; он не определяет, опасен ли человек, и не предсказывает насилие. Прошлые поступки, эмоциональное онемение, интерес к новостям или нежелательные мысли не доказывают нынешнего намерения. Учитывайте время, контекст, повторение и текущие потребности. Если боитесь, что можете немедленно навредить человеку или животному, прекратите анкету, отойдите от потенциального пострадавшего и срочно обратитесь за помощью; в экстренной ситуации обратитесь в местные экстренные службы.",
+      "uk": "У будь-який період життя. Цей розділ допомагає зібрати відомості про Ваш досвід для розмови з лікарем. Він не визначає, чи є людина небезпечною, і не прогнозує насильства. Минулі вчинки, емоційне заціпеніння, інтерес до новин чи небажані думки не свідчать про теперішній намір. Враховуйте час, обставини, повторюваність і теперішні потреби. Якщо Ви боїтеся, що можете негайно завдати шкоди людині або тварині, припиніть заповнювати анкету, відійдіть від того, кому загрожує шкода, та негайно зверніться по допомогу. У надзвичайній ситуації зверніться до місцевих екстрених служб."
+    }
+  }
+}
