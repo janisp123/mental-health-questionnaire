@@ -1,5 +1,9 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-14 · Discovery page published
+
+PR #24 merged as `a37f254d17d63316e8f211005350645b8f1fe02c`, with the checked PR tree preserved. Owner enabled GitHub Pages after integration settings access was denied. Publishing workflow 43603795913 succeeded. Live URL: https://janisp123.github.io/mental-health-questionnaire/ . Page/sitemap HTTPS 200, correct canonical, no noindex and simulated crawler-user-agent responses 200; actual indexing/AI recommendations remain unverified. README now links the live page. A narrow-screen long-filename overflow found in live verification is corrected by wrapping; requires checked integration/redeployment and live readback. No questionnaire or Drive bytes changed.
+
 ### 2026-11-14 · AI-search discovery — prepared for deployment review
 
 Prepared an isolated static description page, updating the earlier unpublished preview for distributed v0.2.5. Added factual depression-related search copy and FAQ while retaining the appointment-preparation/non-diagnostic purpose and absent clinical validation. Existing Drive download links avoid dependence on the separately unmerged repository-package PR. Updated README with matching depression-preparation copy. No questionnaire, guide, question bank or Drive bytes changed.

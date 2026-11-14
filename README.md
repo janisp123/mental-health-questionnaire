@@ -36,7 +36,7 @@ If you are looking for a free offline questionnaire to help describe low mood be
 
 It is an appointment-preparation aid, **not a validated depression screening test**. It does not diagnose depression, calculate a depression score or rule out a condition. Its diagnostic accuracy has not been established. You can seek professional help without completing it.
 
-A [static description-page preview](docs/discovery-preview/index.html) and [publication/indexing instructions](docs/discovery-preview/LAUNCH.md) are prepared for review. They are not yet a live website.
+**[Read the public questionnaire overview](https://janisp123.github.io/mental-health-questionnaire/)** for depression-related appointment questions, download instructions and privacy details. [Publication/indexing instructions](docs/discovery-preview/LAUNCH.md) record the hosting and search-verification limits.
 
 ## Technical overview
 
