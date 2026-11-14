@@ -1,0 +1,22 @@
+name: Discovery Page Checks
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+    paths:
+      - 'docs/discovery-preview/**'
+      - 'tools/build_discovery.py'
+      - 'tests/discovery/**'
+      - '.github/workflows/discovery-*.yml'
+permissions:
+  contents: read
+jobs:
+  discovery-bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python tests/discovery/test_build.py

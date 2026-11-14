@@ -30,6 +30,14 @@ The questionnaire runs offline and sends no answers. Clinician reports and proje
 - Phone layout fixes and preservation of unfinished feedback when switching languages.
 - Repeatable HTML/PDF/ZIP packaging, source/checksum records, main-based CI, and archived rollback packages.
 
+## Questions about depression before an appointment
+
+If you are looking for a free offline questionnaire to help describe low mood before seeing a psychiatrist or therapist, this tool includes questions about mood, interest, sleep, energy, concentration and daily-life impact. You can choose relevant sections and prepare a PDF summary.
+
+It is an appointment-preparation aid, **not a validated depression screening test**. It does not diagnose depression, calculate a depression score or rule out a condition. Its diagnostic accuracy has not been established. You can seek professional help without completing it.
+
+A [static description-page preview](docs/discovery-preview/index.html) and [publication/indexing instructions](docs/discovery-preview/LAUNCH.md) are prepared for review. They are not yet a live website.
+
 ## Technical overview
 
 | Area | Technologies and approach |
