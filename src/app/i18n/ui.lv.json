@@ -85,7 +85,7 @@
     "incompatibleAnswers": "Šīs atbildes nevar izvēlēties kopā:",
     "omissionNote": "Izlaisti jautājumi nenozīmē noliedzošas atbildes.",
     "supportTitle": "Atbalsts ir pieejams.",
-    "supportBody": "Pat ja šobrīd šķiet, ka neviens Jūs nesaprot, ir cilvēki, kuri vēlas Jūs uzklausīt. Lai atrastu atbalstu Jūsu apkaimē, atveriet pārlūkprogrammu un meklējiet “psiholoģiskās palīdzības tālrunis” vai “krīzes palīdzības tālrunis”, pievienojot Jūsu valsts vai pilsētas nosaukumu. Pārbaudiet, vai numurs pieder uzticamam vietējam palīdzības dienestam. Varat vienkārši pateikt: “Man šobrīd ir grūti.”",
+    "supportBody": "Pat ja šobrīd šķiet, ka neviens Jūs nesaprot, ir cilvēki, kuri vēlas Jūs uzklausīt. Lai atrastu atbalstu Jūsu apkaimē, atveriet pārlūkprogrammu un meklējiet “psiholoģiskās palīdzības tālrunis” vai “krīzes palīdzības tālrunis”, pievienojot Jūsu valsts vai pilsētas nosaukumu. Pārbaudiet, vai numurs pieder uzticamam vietējam palīdzības dienestam. Jums nav jāsagatavo runa. Uzticama palīdzības dienesta uzdevums ir Jūs uzklausīt un palīdzēt bez nosodījuma; tā darbinieki var ieteikt piemērotu speciālistu vai citu vietējo atbalstu. Pirms dalāties ar personisku informāciju, varat pajautāt par konfidencialitāti. Varat vienkārši pateikt: “Man šobrīd ir grūti.”",
     "supportLink": "Vietējā atbalsta meklēšana",
     "supportMenu": "Atbalsts",
     "emergencyBody": "Ja Jūs vai kāds cits ir tūlītējās briesmās, sazinieties ar vietējiem neatliekamās palīdzības dienestiem. Negaidiet anketas pabeigšanu.",
@@ -95,6 +95,7 @@
     "guideBody": "Atveriet lejupielādēto HTML failu pārlūkā. Priekšskatījumā tas nedarbojas. Vienas atbildes izvēle tiek saglabāta atvērtajā anketā. Vairākām atbildēm un teksta laukiem nospiediet “Saglabāt un tālāk”. Pirms pauzes saglabājiet progresu failā. Saglabāto failu varat turēt savā ierīcē. Tas nav šifrēts, tāpēc kopīgojiet to tikai ar uzticamiem cilvēkiem vai veselības aprūpes speciālistu. Neievietojiet to sociālajos tīklos vai citviet publiski. Jūs izvēlaties, ko pārrunāt ar speciālistu. Precizitātes pārskatīšanai izlaidiet jautājumus, kas šķiet atbilstoši. Kļūdainos vai neskaidros jautājumus atzīmējiet un izvēlieties iemeslu. Beigās izvēlieties “Sagatavot pārskatu”, lai apskatītu pārskatu speciālistam un saglabātu to PDF formātā. Datorā turiet nospiestu Ctrl taustiņu un ritiniet peles ritenīti uz augšu vai leju, lai palielinātu vai samazinātu teksta izmēru. Rezultātu ekrānā varat izvēlēties pārskata valodu neatkarīgi no anketas valodas. Ja atzīmējāt kādu problēmu, no speciālista pārskata ekrāna varat atvērt atsevišķu atsauksmju pārskatu un saglabāt to PDF formātā.",
     "notesTitle": "Pēdējās izmaiņas un turpmākie plāni",
     "notesHistory": [
+      "14.11.2026 23:26 Riga — Atbalsta norādes tagad skaidro, ka nav jāsagatavo runa, palīdzības dienests ir paredzēts uzklausīšanai un palīdzībai un par konfidencialitāti var pajautāt pirms personiskas informācijas izpaušanas.",
       "14.11.2026 22:17 Riga — Kontaktinformācija ir pieejama GitHub saitē blakus autora vārdam; atsevišķais atsauksmju nosūtīšanas rīks saglabāts.",
       "14.11.2026 17:02 Riga — atbalsta norādes skaidro, kā atrast palīdzības tālruni Jūsu valstī vai pilsētā; ārkārtas situācijās norādīts sazināties ar vietējiem neatliekamās palīdzības dienestiem. Precizēts, ka panikai līdzīgas epizodes maksimums ir sajūtu spēcīgākais brīdis konkrētajā epizodē.",
       "14.11.2026 15:18 Riga — pievienoti e-pasta melnraksti un kopēšana atsauksmēm par jautājumiem; anketas atbildes netiek iekļautas.",
@@ -103,8 +104,7 @@
       "09.11.2026. 10:17 — Četru valodu anketa tagad ir projekta pamata versija. Iepriekšējās versijas ir saglabātas arhīvā; jautājumi un saglabāto atbilžu formāts nav mainīts.",
       "09.11.2026. 09:28 — Novērsta zāļu formas un garu jautājumu virsrakstu pārplūde tālruņos. Mainot valodu, iesāktās atsauksmes saglabājas. Pārskata virsraksts atbilst izvēlētajai pārskata valodai.",
       "08.11.2026 20:47 pēc Rīgas laika — pārskats speciālistam un atsauksmes tiek saglabāti atsevišķos PDF failos.",
-      "08.11.2026 18:41 pēc Rīgas laika — uzlabojumu mērķu jautājumā var atlasīt visas atbilstošās atbildes.",
-      "08.11.2026 18:23 pēc Rīgas laika — sadaļu izvēles ekrānā pievienota atstarpe starp apakšējām pogām."
+      "08.11.2026 18:41 pēc Rīgas laika — uzlabojumu mērķu jautājumā var atlasīt visas atbilstošās atbildes."
     ],
     "coverageNote": "Skaits aptver piemērojamos jautājumus. Mainītu nosacījumu dēļ paslēptās atbildes paliek progresa failā, bet šeit nav iekļautas.",
     "autoHint": "Izvēlieties vienu atbildi, lai saglabātu to atvērtajā anketā un turpinātu.",
