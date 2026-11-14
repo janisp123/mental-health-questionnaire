@@ -21,4 +21,6 @@ Updated 14 November 2026. Main is the sole active source.
 
 Read [TD](TD_LIST.md) before new work. Earlier wording/effectiveness audits were read-only; broader wording proposals and report-count/completion/focus/omission repairs are not implemented. The English clinical-coverage verification plan is separate from validation or diagnosis. Dependency-security findings also remain unimplemented recommendations.
 
+Frequency wording and numerical-guide proposals are deferred in TD. No scale redesign is approved; other tasks take priority. Current v0.2.7 app, package and Drive files remain unchanged.
+
 Next action: choose the next explicitly authorized task from TD. Do not rebuild or re-upload the already verified v0.2.7 pair. Obsolete package PR #23 is closed as superseded; snapshot review/v0.2.7 preserves this release. Keep unrelated queued README-link work separate.
