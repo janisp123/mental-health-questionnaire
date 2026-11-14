@@ -1,5 +1,9 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-14 · Frequency wording review deferred in TD
+
+Recorded a deferred review of natural frequency labels, numerical guides, regular versus clustered patterns, clinical recall windows, four-language consistency and saved-answer compatibility. Neither new answer ranges nor implementation are approved; coordinate with the existing wording audit when resumed. This is a backlog/checkpoint update only. Current v0.2.7 questionnaire, package, Drive distribution and website are unchanged.
+
 ### 2026-11-14 · Footer email cleanup — DELIVERED
 
 PR #32 merged as `454aae3987104633fbf3e0227087ee775911eff4`, preserving checked head `1a01922e30a02f008d7cc1807df2c10180c82322` tree. All three required CI checks passed, including real offline file opening (full 43637161224 / app 43637161170 / discovery 43637161166). v0.2.7 is current in the repository and Drive, built from clean source `e6771d25db407ec24e70df9dd8f79cb09d228122`. Both Drive files downloaded byte-identical: HTML `5e2082ab524cf2f5c947cfd7358e81669e671d2046f7b6859218948f1281a89e`, unchanged guide PDF `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`. Same IDs, parents and sharing retained; folder contains only the current HTML/PDF pair. Snapshot `review/v0.2.7` and exact prior v0.2.6 archive preserve rollback.
