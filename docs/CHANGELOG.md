@@ -1,5 +1,10 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · Final report-priority candidate prepared
+
+Clean source `2bb5f012ea6504427db1ffcc3c9c15cfa0599f89` includes the reviewed priority fixes and background placement for optional identifiers. Rebuilt/verified v0.2.13 package: HTML `bb125b991597d6af763501ed1bbc72452bb2f3c7c907c41fd385635590cf2fac`; guide unchanged `08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75`. This supersedes the earlier unreleased candidate package; v0.2.12 archive and current Drive pair remain unchanged. Focused regressions and packaged locale layout checks pass; final full-suite verification and updated-head CI are in progress before merge/distribution.
+
+
 ### 2026-11-15 · Report-priority identifier placement
 
 Packaged visual inspection identified that the two free-text source fields are optional name/surname, not symptom narratives. Kept both at background priority 1 instead of the generic text default; added a regression observed failing before this correction. No answer wording/content, source questions, recovery or clinical cue mapping changed. Shared release remains the unreleased v0.2.13 candidate; rebuild from the new clean source before distribution.
