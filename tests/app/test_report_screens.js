@@ -4,7 +4,7 @@ require("../../src/app/screens/results.js");
 require("../../src/app/screens/report-page.js");
 const screens = globalThis.QuestionnaireScreens;
 const labels = {
-  countDone:"Completed", results:"Finished", doctorDisclaimer:"Review with a professional",
+  countDone:"Answered", reportCountSelected:"Covered",reportCountDone:"Answered",reportCountSkip:"Skipped",coverageNote:"Selected questions plus earlier saved responses",results:"Finished", doctorDisclaimer:"Review with a professional",
   noneFlagged:"No feedback yet", specialist:"Generate report", feedbackProjectReport:"Prepare feedback report",
   back:"Back", editSections:"Edit sections", new:"Start over", print:"Print / save PDF", backToAnswers:"Back to answers",
 };
@@ -14,11 +14,14 @@ const btn = (action,key,cls="") =>
 const escape = value => String(value ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;");
 
 const results = screens.results({
-  label,btn,counts:{answered:2,skipped:1,unanswered:3,completed:3},
+  label,btn,counts:{selected:6,answered:2,skipped:1,unanswered:3,completed:3},
   selected:"",
   reportLanguageOptions:'<option value="lv">Latviešu</option>',
 });
-assert.match(results,/Completed <b>3<\/b>/);
+assert.match(results,/Covered <b>6<\/b>/);
+assert.match(results,/Answered <b>2<\/b>/);
+assert.match(results,/Skipped <b>1<\/b>/);
+assert.match(results,/Selected questions plus earlier saved responses/);
 assert.doesNotMatch(results,/Open|unanswered|Synthetic section|review@example\.test/);
 assert.doesNotMatch(results,/data-act="feedbackReport"/);
 assert.doesNotMatch(results,/copyFeedback|<textarea/);

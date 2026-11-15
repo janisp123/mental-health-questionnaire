@@ -1,5 +1,21 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-14 · v0.2.9 report-count package prepared
+
+Clean source `792b192cf0f993ef9e98ed46a5dbca411154442d` builds verified matching HTML/PDF/ZIP. HTML SHA256 `20628db35f523ef89881582c5a19ad183f42d40cc5ffa4867de2c52c7f20c01c`; guide PDF bytes remain unchanged. Archived exact v0.2.8, promoted repository pair and download pointers. Drive is still v0.2.8 until checked integration and exact-byte readback. Stable landing-page links need no version rewrite; search-account ownership/indexing remains unverified.
+
+
+### 2026-11-14 · Report count consistency — source verified
+
+Corrected audit findings E2/E3: report coverage excludes untouched unselected questions while retaining applicable saved answers/skips from other sections. Existing conditional visibility is unchanged. Summary and clinician report now share covered/answered/skipped labels and a clear coverage explanation; section progress separates answers and skips and labels the full-bank total as a maximum. Four-language labels and latest-ten patient notes align. No question, answer-scale, recovery, feedback or clinical interpretation change; frequency wording stays deferred.
+
+Model/results/selector regressions and the four-language browser regression reproduced the defects before production changes and pass afterward. All 35 maintained checks passed in labelled memory mode; additional partial-answer and optional-parent boundary cases passed. Independent review found no Critical/Important issues; its minor partial-state test gap was covered. Real full-bank summaries show 63 covered (62 selected applicable plus one previous saved answer), 2 answered and 1 skipped in all four locales; phone layouts and printed clinician PDFs visually inspected. Source version v0.2.9; clean package, real-file CI and verified Drive delivery pending.
+
+### 2026-11-14 · Search indexing follow-up checked
+
+Live page/sitemap HTTPS 200, correct canonical and no observed noindex; simulated Google/Bing/OAI search user agents returned 200. Two limited public-provider searches did not return the target. Direct Google retrieval failed; Bing retrieval was unrelated and not reliable indexing evidence. Google/Bing indexed status, actual crawler visits and AI recommendations remain unverified; no index request was submitted. Owner-account steps recorded in `docs/discovery-preview/INDEXING_STATUS.md`; evidence `docs/review/checks/2026-11-14-search-indexing.json`. No website, bot/training policy or questionnaire change for this research.
+
+
 ### 2026-11-14 · Four-language helpline reassurance — DELIVERED
 
 PR #35 merged as `3c4d9833e42f83751f61b9e9f0598dea205094ac`, preserving checked head `81d0a4d1009a19384749d81a0559e445e3339a43` tree. All required CI checks passed, including real offline file opening (full 43643161675 / app 43643161619 / discovery 43643161661). v0.2.8 is current in the repository and Drive, built from clean source `7c961f6cfaf95e62c52aa70f852b759b35ea8a7c`. Both Drive files downloaded byte-identical: HTML `c2dbf5888b3e9523c124737b7e246efbcbe6af2f05301c79b02a58604c4aa638`, unchanged guide PDF `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`. Same IDs, folder and sharing preserved; folder contains exactly the current HTML/PDF pair. Snapshot `review/v0.2.8` and exact archived v0.2.7 preserve rollback.

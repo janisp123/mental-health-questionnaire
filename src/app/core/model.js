@@ -29,12 +29,13 @@ root.QuestionnaireModel = {
   return {
    groups,optionalIds,byId,all,
    questionVisible,
-   reportQuestions:visibleQuestions,
+   reportQuestions(state){return visibleQuestions(state).filter(question=>
+    groups.get(question.module).required||state.selected.includes(question.module)||state.answers[question.id]);},
    active(state){return all.filter(question=>(groups.get(question.module).required||state.selected.includes(question.module))&&questionVisible(state,question));},
    current(state){return byId[state.currentId]||null;},
    countGroup(state,groupId){
     const questions=all.filter(question=>question.module===groupId&&questionVisible(state,question));
-    return {total:questions.length,done:questions.filter(question=>state.answers[question.id]).length,
+    return {total:questions.length,done:questions.filter(question=>state.answers[question.id]&&state.answers[question.id].kind!=="skip").length,
      skipped:questions.filter(question=>state.answers[question.id]?.kind==="skip").length};
    },
    isSafety(question){return !!question.safetyRequired;}

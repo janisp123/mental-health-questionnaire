@@ -1,0 +1,35 @@
+{
+  "schema": "questionnaire-review-package-v1",
+  "version": "0.2.8-review+full-bank",
+  "source_commit": "7c961f6cfaf95e62c52aa70f852b759b35ea8a7c",
+  "source_tree": "20183d5ce3e8e03feaedf652cfbaba41df1c43ce",
+  "source_dirty": false,
+  "build_epoch": 1794614400,
+  "pdf_timestamp_mode": "reportlab-invariant",
+  "languages": [
+    "lv",
+    "en",
+    "ru",
+    "uk"
+  ],
+  "question_count": 712,
+  "guide_source": "docs/review/GUIDE_LV_EN_RU_UK.md",
+  "files": [
+    {
+      "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.8_REVIEW_BUILD.html",
+      "bytes": 1544787,
+      "sha256": "c2dbf5888b3e9523c124737b7e246efbcbe6af2f05301c79b02a58604c4aa638"
+    },
+    {
+      "name": "188_README_LV_EN_RU_UK_v0.2.8_REVIEW_BUILD.pdf",
+      "bytes": 49212,
+      "sha256": "b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9"
+    }
+  ],
+  "zip": {
+    "name": "QUESTIONNAIRE_LV_EN_RU_UK_v0.2.8_REVIEW_BUILD.zip",
+    "bytes": 328257,
+    "sha256": "7c5c1cee6b9a7844a1fd9a08708d9a25a434e1f534e265fdf9ce174ae1f75715"
+  },
+  "status": "TECHNICAL_REVIEW_NOT_CLINICALLY_VALIDATED"
+}

@@ -7,7 +7,7 @@ const screens = globalThis.QuestionnaireScreens;
 const labels = {
   intro: "Synthetic introduction",
   selector: "Choose sections", selectIntro: "Select any sections",
-  sectionProgress: "{total} questions · completed: {completed}",
+  sectionProgress: "Up to {total} questions · answered: {completed} · skipped: {skipped}",
   chooseAllAndContinue: "Select all and continue", continueSelected: "Continue with selected sections",
   cancel: "Back", start: "Start", jump: "Go to section",
 };
@@ -30,12 +30,12 @@ const data = {groups:[
 const state = {screen:"selector", lang:"lv", sectionDraft:["S01"], selected:["S01"], answers:{}};
 const selector = screens.sectionSelector({
   state, data, groups, label, btn, escape:value=>String(value),
-  countGroup:()=>({done:2,total:1}), active:()=>[],
+  countGroup:()=>({done:1,skipped:1,total:2}), active:()=>[],
 });
 assert.match(selector, /data-act="all"/);
 assert.match(selector, /data-act="confirm"/);
 assert.match(selector, /data-module="S01"[^>]*checked/);
-assert.match(selector, /35 questions · completed: 2/);
+assert.match(selector, /Up to 35 questions · answered: 1 · skipped: 1/);
 assert.doesNotMatch(selector, /0\/1|notSelected|clearSections/);
 assert.match(selector, /data-act="jump"/);
 
