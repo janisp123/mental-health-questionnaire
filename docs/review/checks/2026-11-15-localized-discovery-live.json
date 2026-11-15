@@ -1,0 +1,180 @@
+{
+  "verified_at": "2026-11-15T13:02:56.330393+02:00",
+  "source_commit": "dc6b46d8ea5a0a68e181ff5aacf7777513300372",
+  "pages": {
+    "en": {
+      "url": "https://janisp123.github.io/mental-health-questionnaire/",
+      "status": 200,
+      "sha256": "f6a4b9599731463bf727324b84cbd47c1e8bc666bc5cf457669fece5c1c01f6e",
+      "bytes": 14990,
+      "byte_identical_to_builder": true,
+      "x_robots_tag": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    "lv": {
+      "url": "https://janisp123.github.io/mental-health-questionnaire/lv/",
+      "status": 200,
+      "sha256": "58515d843bd22b943e3e1302766b5c33069ac5ec6ab253d95295d849b6576222",
+      "bytes": 11456,
+      "byte_identical_to_builder": true,
+      "x_robots_tag": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    "ru": {
+      "url": "https://janisp123.github.io/mental-health-questionnaire/ru/",
+      "status": 200,
+      "sha256": "0e80c441276c9f92283242a42dfea00c6a6c730d298cb39b27216218cea35928",
+      "bytes": 16267,
+      "byte_identical_to_builder": true,
+      "x_robots_tag": null,
+      "content_type": "text/html; charset=utf-8"
+    },
+    "sitemap": {
+      "url": "https://janisp123.github.io/mental-health-questionnaire/sitemap.xml",
+      "status": 200,
+      "sha256": "8d6ddb614d56a2051b303ca7231ed96e290aca58cc990adf976159cc3538e2fd",
+      "bytes": 349,
+      "byte_identical_to_builder": true,
+      "x_robots_tag": null,
+      "content_type": "application/xml"
+    }
+  },
+  "sitemap_contains_all_localized_pages": true,
+  "origin_robots": {
+    "url": "https://janisp123.github.io/robots.txt",
+    "status": 404,
+    "effective_search_agent_access": {
+      "Googlebot": true,
+      "bingbot": true,
+      "OAI-SearchBot": true
+    }
+  },
+  "simulated_user_agent_requests": [
+    {
+      "locale": "en",
+      "agent": "Googlebot",
+      "status": 200,
+      "same_page_bytes": true
+    },
+    {
+      "locale": "en",
+      "agent": "bingbot",
+      "status": 200,
+      "same_page_bytes": true
+    },
+    {
+      "locale": "en",
+      "agent": "OAI-SearchBot",
+      "status": 200,
+      "same_page_bytes": true
+    },
+    {
+      "locale": "lv",
+      "agent": "Googlebot",
+      "status": 200,
+      "same_page_bytes": true
+    },
+    {
+      "locale": "lv",
+      "agent": "bingbot",
+      "status": 200,
+      "same_page_bytes": true
+    },
+    {
+      "locale": "lv",
+      "agent": "OAI-SearchBot",
+      "status": 200,
+      "same_page_bytes": true
+    },
+    {
+      "locale": "ru",
+      "agent": "Googlebot",
+      "status": 200,
+      "same_page_bytes": true
+    },
+    {
+      "locale": "ru",
+      "agent": "bingbot",
+      "status": 200,
+      "same_page_bytes": true
+    },
+    {
+      "locale": "ru",
+      "agent": "OAI-SearchBot",
+      "status": 200,
+      "same_page_bytes": true
+    }
+  ],
+  "actual_crawler_visits": "UNVERIFIED",
+  "indexing": "UNVERIFIED_OWNER_ACCOUNT_INSPECTION_PENDING",
+  "ai_recommendations": "UNVERIFIED",
+  "bot_training_policy_changed": false,
+  "checked_head": "a3e3ad1f023e9e1e146e8ffbc7bdca9db272cc3d",
+  "merge_tree_matches_checked_head": true,
+  "pr": 48,
+  "pages_deployment_run": 43706924365,
+  "pages_deployment_conclusion": "success",
+  "ci_runs": {
+    "app-components": 43706704763,
+    "discovery-bundle": 43706704773,
+    "full-questionnaire": 43706704797
+  },
+  "independent_review": "No findings",
+  "publication_files": [
+    "index.html",
+    "lv/index.html",
+    "ru/index.html",
+    "sitemap.xml"
+  ],
+  "localized_metadata": [
+    "lang",
+    "title",
+    "description",
+    "self-canonical",
+    "reciprocal en/lv/ru/x-default hreflang",
+    "visible language navigation",
+    "OpenGraph title/description/URL"
+  ],
+  "one_drive_folder_action_per_page": true,
+  "no_javascript_or_tracking": true,
+  "local_layouts": {
+    "widths": [
+      320,
+      390,
+      1280
+    ],
+    "javascript_enabled": false,
+    "keyboard_skip_link": true,
+    "language_navigation_round_trip": true
+  },
+  "external_retrieval_checks": [
+    {
+      "locale": "lv",
+      "url": "https://janisp123.github.io/mental-health-questionnaire/lv/",
+      "status": 200,
+      "title": "Bezmaksas psihiskās veselības anketa — depresija, trauksme un gatavošanās vizītei",
+      "language": "lv",
+      "description": "Bezmaksas daudzvalodu anketa pieaugušajiem, lai sagatavotos vizītei pie psihiatra vai psihoterapeita. Jautājumi par depresiju un trauksmi, bezsaistes lietošana un PDF pārskats. Nenosaka diagnozi.",
+      "body_retrieved": true,
+      "native_depression_word_present": true,
+      "reciprocal_language_tags_present": true
+    },
+    {
+      "locale": "ru",
+      "url": "https://janisp123.github.io/mental-health-questionnaire/ru/",
+      "status": 200,
+      "title": "Бесплатная анкета о психическом здоровье — депрессия, тревога и подготовка к приёму",
+      "language": "ru",
+      "description": "Бесплатная многоязычная анкета для взрослых перед приёмом у психиатра или психотерапевта. Вопросы о депрессии и тревоге, работа без интернета, отчёт PDF. Не ставит диагноз.",
+      "body_retrieved": true,
+      "native_depression_word_present": true,
+      "reciprocal_language_tags_present": true
+    }
+  ],
+  "official_guidance": [
+    "https://developers.google.com/search/docs/specialty/international/localized-versions",
+    "https://developers.google.com/search/docs/appearance/ai-features",
+    "https://developers.openai.com/api/docs/bots"
+  ],
+  "questionnaire_and_drive_files_changed": false
+}

@@ -13,9 +13,11 @@ Updated 15 November 2026. Main is the sole active source.
 
 ## Website and safeguards
 
-- README and live GitHub Pages now use exactly one “Download from Google Drive” folder link each, with no separate PDF/raw artifact link. Published source `8063c261f1b33a23f3b78ade95a48178601cb6bf` via Pages run 43682403681; live page/sitemap and main README verified against tested/merged source. [Download-link evidence](review/checks/2026-11-15-single-drive-download-links.json). Queued-only PR #27 is closed as fulfilled. Single-folder download routes remain unchanged; revised multilanguage wording awaits manual Pages publication.
-- Discovery page is live at https://janisp123.github.io/mental-health-questionnaire/ . It uses stable download labels/links and needs no version-specific text edits for this release. Public indexing checks did not confirm Google/Bing inclusion; no request was submitted. Owner-account inspection steps: [indexing status](discovery-preview/INDEXING_STATUS.md). Actual crawler visits and AI suggestions remain unverified.
-- Protect main is active: PRs and three checks required, force pushes/deletion blocked, no bypass actors. Use checked short-lived PRs. About metadata still has integration settings-permission limits.
+- Live discovery pages: [English](https://janisp123.github.io/mental-health-questionnaire/), [Latviešu](https://janisp123.github.io/mental-health-questionnaire/lv/), [Русский](https://janisp123.github.io/mental-health-questionnaire/ru/). Native visible appointment/depression/anxiety wording and metadata, language navigation, self-canonicals, reciprocal language alternatives, social metadata and a complete sitemap. No scripts/tracking, fixed language-count promise, diagnostic claim or bot/training policy change.
+- PR #48 merged as `dc6b46d8ea5a0a68e181ff5aacf7777513300372`, preserving checked head `a3e3ad1f023e9e1e146e8ffbc7bdca9db272cc3d` tree. All required CI passed. Manual Pages run 43706924365 succeeded for that exact source. Every live locale and sitemap returned HTTPS 200 and byte-identical builder output; one stable Drive folder download action per page. Root robots 404 and simulated search-agent requests allow access; actual crawler visits/indexing/AI suggestions remain unverified. [Deployment/readback evidence](review/checks/2026-11-15-localized-discovery-live.json).
+- JavaScript-disabled 320/390/1280 layouts, keyboard skip links, language navigation and native content retrieval passed; independent review found no issues. App/guide/Drive v0.2.12 bytes are unchanged by this website update.
+- Search Console/Bing owner verification, actual indexed status and index requests remain pending. [Current indexing status](discovery-preview/INDEXING_STATUS.md). Public reachability is not indexing or guaranteed AI recommendation.
+- Protect main remains active: PRs/three required checks, blocked force pushes/deletion, no bypass actors. About metadata retains its integration settings-permission limit.
 
 ## Remaining work and next action
 
@@ -23,4 +25,4 @@ Read [TD](TD_LIST.md) before new work. Earlier wording/effectiveness audits were
 
 Frequency wording and numerical-guide proposals are deferred in TD. No scale redesign is approved; other tasks take priority. Frequency scales remain unchanged in v0.2.12.
 
-Next action: implement and verify owner-requested English/Latvian/Russian discovery pages and publish through the Pages workflow, then verify live localized URLs/canonical/hreflang/sitemap and record actual deployment. App/Drive v0.2.12 is delivered; do not rebuild or upload it for website-only work. Search Console/Bing owner verification and unrelated TD remain pending.
+Next action: establish owner access to the landing-page URL-prefix property in Google Search Console and Bing Webmaster Tools; inspect each published locale, request indexing if appropriate and submit the sitemap. Record actual results. No sign-in secrets are needed for adding a public verification tag if provided. v0.2.12 GitHub/Drive and localized Pages tasks are delivered; do not repeat product uploads for documentation-only work. Other TD work remains pending.
