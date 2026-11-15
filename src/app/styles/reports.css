@@ -13,3 +13,5 @@
  }
 }
 @media print{.report-page{border:0;border-radius:0;padding:0;margin:0;background:#fff;color:#111}.report-page>h2,.report-actions{display:none!important}.report-preview{display:block;border:0;border-radius:0;padding:0}}
+
+#questionnaire-sharing textarea{width:100%;box-sizing:border-box;min-height:130px;resize:vertical;font:inherit;overflow-wrap:anywhere}

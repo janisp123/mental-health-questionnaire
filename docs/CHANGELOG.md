@@ -1,5 +1,12 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · Report actions, public sharing and contributions — source verified
+
+Starting from main `f6d19effe375a5241dae8eb9cefe3c4dbb5cbcc8`. Approved implementation plan: `docs/superpowers/plans/2026-11-15-report-sharing-contributions.md`. Add report reset/public-link sharing, restore empty Contributions, keep every provided answer including uncertainty/refusal, simplify clinician-only header and handle empty reports, use multilanguage public wording. Preserve original questions/recovery and deferred TD. Planned shared version v0.2.12; current Drive remains v0.2.11 until verified delivery.
+
+All 36 maintained checks passed in labelled memory mode (`dist/checks-report-sharing/results.json`). Focused report-action/header, missing Contributions and blank restored-text regressions failed before their fixes and pass afterward. Synthetic native-share/clipboard success, unavailable APIs, cancellation/rejection and manual selection are verified across active locales, without actual external sharing or HTTP requests. Confirmed reset clears session answers/feedback/selections while retaining language; cancellation preserves the session. Report keeps No/uncertain/refused answers, excludes skipped/missing/blank entries, and prints only provided-answer count plus omission explanation. Mobile report/share/empty layouts and PDF print isolation were checked. Complete question/presentation data matches v0.2.11; recovery unchanged. Independent review and clean-source packaging/CI/publication remain pending.
+
+
 ### 2026-11-15 · Faster single-answer advance v0.2.11 — DELIVERED
 
 PR #44 merged as `9bd0b3b19113d9b39a24a3349c956be0bb3c3ec8`, preserving checked head `66284ec410a875c8dfb9b45ed0236327b98d77a9` tree. Required full/app/discovery CI passed (43683758114 / 43683758095 / 43683758099) with real offline file opening. The automatic single-choice save/advance delay is halved from 1,300 to 650 ms across LV/EN/RU/UK. The selected choice remains highlighted, answers save before advancing, and navigation/Skip cancel pending saving. Multi-select, text, medication, question/answer/condition and recovery contracts remain unchanged.

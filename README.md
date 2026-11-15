@@ -1,10 +1,10 @@
-# Mental health questionnaire — four languages
+# Multilanguage mental health questionnaire
 
 [![Multilingual checks](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml/badge.svg?branch=main)](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml)
 
 **Current version: v0.2.11 · Latvian / English / Russian / Ukrainian · 712 questions · 15 optional sections.**
 
-Free offline questionnaire for adults preparing for a mental-health appointment. All four languages are included in one HTML file. Latvian is the reference and initial language. It does not diagnose or calculate a screening score.
+Free offline questionnaire for adults preparing for a mental-health appointment. All available languages are included in one HTML file. Latvian is the reference and initial language. It does not diagnose or calculate a screening score.
 
 ## Download and open
 
@@ -26,9 +26,11 @@ The questionnaire runs offline and sends no answers. Clinician reports and proje
 
 - One shared application with complete LV/EN/RU/UK question and interface packs.
 - Optional sections, medication details, and explicit progress-file download/import, including older three-language progress files.
-- A clinician report language chosen independently of the questionnaire language, plus a separate project-feedback report.
+- A clinician report language chosen independently of the questionnaire language, plus a separate project-feedback report. Provided answers, including negative, uncertain and declined responses, remain in the report.
+- Confirmed restart and public-link sharing from the clinician preview; sharing excludes answers, saved progress and feedback.
+- A Contributions section that remains visible while awaiting permission to list contributors.
 - Country-neutral instructions for finding a local helpline, with local emergency guidance first.
-- A four-language explanation of the panic question’s “peak” timing, without changing its answers.
+- A multilanguage explanation of the panic question’s “peak” timing, without changing its answers.
 - Phone layout fixes and preservation of unfinished feedback when switching languages.
 - Repeatable HTML/PDF/ZIP packaging, source/checksum records, main-based CI, and archived rollback packages.
 
@@ -77,7 +79,7 @@ python tools/build_review_package.py --output-dir dist/review-0.2.4
 python tools/verify_review_package.py dist/review-0.2.4 --with-zip
 ```
 
-The normal HTML output is `dist/QUESTIONNAIRE_LV_EN_RU_UK_NOT_RELEASED.html`. Package destinations are never overwritten. CI runs the same checks on PRs to main and on main, then uploads the matching four-language package.
+The normal HTML output is `dist/QUESTIONNAIRE_LV_EN_RU_UK_NOT_RELEASED.html`. Package destinations are never overwritten. CI runs the same checks on PRs to main and on main, then uploads the matching multilanguage package.
 
 Read [feature/module contracts](docs/FEATURE_DEVELOPMENT.md), [architecture](docs/QUESTIONNAIRE_ARCHITECTURE.md), [release policy](docs/RELEASE_POLICY.md) and [current checkpoint](docs/WORK_CHECKPOINT.md) before working. For a managed browser that blocks file navigation, explicitly use `--load-mode memory` and record that limitation.
 

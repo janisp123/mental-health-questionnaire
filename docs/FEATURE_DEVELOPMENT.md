@@ -29,6 +29,9 @@ Do not add a generic plugin framework or move all files in anticipation of unspe
 
 ## Data contracts
 
+- Public invitation sharing uses `QuestionnaireSharing` with localized interface text and a fixed project URL only. Never pass answers, report markup, recovery files, identity or saved feedback to sharing/clipboard payload creation. Device sharing/copying requires a deliberate action; manual selection stays available when APIs are unavailable or reject the request. Public sharing controls must remain outside printed clinician reports.
+- Clinician output includes every provided response, including negative, uncertain and refused choices. Only missing/skipped/blank records are omitted. Summary/section progress retains its own coverage counts; the clinician header reports only included entries and explains that omissions are not negative responses.
+
 - Question identity, answer codes, conditions and ordering come from `src/modules/` plus explicit presentation rules. Frozen LV/EN/RU source records stay byte-verified; added languages provide wording by ID/code.
 - Active UI/report languages come from the built bundle's `ui` registry. Avoid new hardcoded three-language loops in active-app code or tests.
 - Saved answer kinds are `choice`, `text`, `medicine` and `skip`; the recovery schema remains `mental-pilot-recovery-v1`. Clinical meaning is never inferred from a record kind or numeric score.

@@ -24,8 +24,9 @@ with tempfile.TemporaryDirectory() as tmp,sync_playwright() as pw:
   def clinician(expected,report_locale):
    page.select_option('#report-language',report_locale);act(page,'doctor')
    report=page.locator('.report-preview').inner_text();r=data['ui'][report_locale]
-   for label,value in zip(('reportCountSelected','reportCountDone','reportCountSkip'),expected):assert r[label]+': '+str(value) in report
-   assert r['coverageNote'] in report
+   assert r['reportCountIncluded']+': '+str(expected[1]) in report
+   assert r['reportCountSelected']+':' not in report and r['reportCountSkip']+':' not in report
+   assert r['omissionNote'] in report and r['coverageNote'] not in report
    return report
   complete_answers=dict(answers)
   del answers['SYN_03']

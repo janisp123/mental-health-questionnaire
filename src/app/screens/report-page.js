@@ -2,7 +2,7 @@
 (function (root) {
 "use strict";
 const screens = root.QuestionnaireScreens = root.QuestionnaireScreens || {};
-screens.reportPage = function ({heading,locale,markup,escape,btn,label,feedbackEmail,hasFeedback,feedbackText="",canSend=false}) {
+screens.reportPage = function ({heading,locale,markup,escape,btn,label,feedbackEmail,hasFeedback,hasAnswers=true,sharing="",feedbackText="",canSend=false}) {
  const preview='<div class="report-preview'+(feedbackEmail?' feedback-report':'')+'" lang="'+escape(locale)+'">'+markup+'</div>';
  const print=btn("print","print","primary-inline");
  if(feedbackEmail){
@@ -16,8 +16,9 @@ screens.reportPage = function ({heading,locale,markup,escape,btn,label,feedbackE
    preview+'</section>';
  }
  return '<section class="card report report-page"><h2>'+escape(heading)+'</h2>'+
- '<div class="actions report-actions">'+print+(hasFeedback?btn("feedbackReport","feedbackProjectReport"):"")+'</div>'+
+ '<div class="actions report-actions">'+(hasAnswers?print:"")+(hasFeedback?btn("feedbackReport","feedbackProjectReport"):"")+'</div>'+
  '<div class="actions report-actions">'+btn("resultScreen","results")+btn("back","backToAnswers")+btn("sections","editSections")+'</div>'+
+ '<div class="actions report-actions">'+btn("new","new")+btn("shareQuestionnaire","shareQuestionnaire")+'</div>'+sharing+
  preview+'</section>';
 };
 })(globalThis);

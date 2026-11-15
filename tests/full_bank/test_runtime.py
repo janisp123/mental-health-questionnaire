@@ -255,9 +255,9 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert data["ui"]["lv"]["doctorHeading"] in report
     assert question_by_id["M23_01"]["translations"]["lv"]["choices"]["B"] in report
     assert question_by_id["M23_01"]["translations"]["en"]["title"] not in report
-    assert data["ui"]["lv"]["reportCountSelected"] in report
-    assert data["ui"]["lv"]["reportCountDone"] in report
-    assert data["ui"]["lv"]["reportCountSkip"] in report
+    assert data["ui"]["lv"]["reportCountIncluded"] in report
+    assert data["ui"]["lv"]["omissionNote"] in report
+    assert data["ui"]["lv"]["coverageNote"] not in report
     assert "Synthetic question note" not in report
     assert page.locator("#reportText").count() == 0
     assert page.locator('[data-act="print"]').count() == 1

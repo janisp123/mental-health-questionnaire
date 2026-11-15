@@ -20,9 +20,16 @@ for(const lang of Object.keys(data.ui)){
  assert(!html.includes('Synthetic wording note'));
  assert(!/M06_02|\[B\]|\bweight\b|risk score/i.test(plain));
  assert(!/Unanswered|Nav atbildēts|Без ответа/i.test(plain));
- assert(plain.includes(data.ui[lang].reportCountSelected+': '+qs.length));
- assert(plain.includes(data.ui[lang].reportCountDone+': 5'));
- assert(plain.includes(data.ui[lang].reportCountSkip+': 1'));
+ assert(plain.includes(data.ui[lang].reportCountIncluded+': 5'));
+ assert(!plain.includes(data.ui[lang].reportCountSelected+':'));
+ assert(!plain.includes(data.ui[lang].reportCountSkip+':'));
+ assert(plain.includes(data.ui[lang].omissionNote));
+ assert(!plain.includes(data.ui[lang].coverageNote));
+ for(const code of ['A','C','D']){
+  const answer={M04_01:{kind:'choice',codes:[code],status:q('M04_01').answerStatus[code]}};
+  const text=r.doctorText(qs,answer,lang,data.ui[lang],data.presentation);
+  assert(text.includes(q('M04_01').translations[lang].choices[code]),'No, uncertain and refused choices stay in report');
+ }
  assert(plain.includes(data.ui[lang].reportName+': __________'));
  assert(plain.includes(data.ui[lang].reportDate+': ______'));
  assert(!plain.includes(q('M02_20').translations[lang].title));
@@ -51,3 +58,5 @@ assert(emptyFeedback.includes('janis.paegle.email@gmail.com'));
 const html=cp.execFileSync('python',['-c','import sys;sys.path.insert(0,"tools");from build_questionnaire import make_html;print(make_html())'],{encoding:'utf8',maxBuffer:8e6});
 for(const word of ['Prepare answers for AI','Copy coded answers for AI','DECODING KEY','aiInstruction','copyAI'])assert(!html.includes(word),word);
 console.log('PASS: clinician answers and project feedback stay separate; localized reports preserve order and explicit emphasis.');
+
+assert.equal(r.entries(qs,{M33_01:{kind:'text',value:'   '}},'en',data.presentation).length,0,'Blank restored text is omitted');

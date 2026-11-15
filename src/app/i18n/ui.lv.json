@@ -32,7 +32,7 @@
     "legal": "Par anketu un privātumu",
     "helpers": "Atsauksmes un pateicības",
     "projectFeedbackInvitation": "Jautājumus, atsauksmes un labojumu ierosinājumus sūtiet uz",
-    "projectContributors": "Personas un organizācijas, kuras palīdzēja ar izstrādi:",
+    "projectContributors": "Cilvēki un organizācijas, kas palīdzēja šī projekta tapšanā.",
     "projectPlans": "Turpmākie plāni",
     "projectPlanReview": "Nodot anketu izvērtēšanai psihiskās veselības speciālistiem un pēc viņu atsauksmju saņemšanas veikt nepieciešamos labojumus.",
     "projectPlanLanguages": "Pēc lietotāju pieprasījuma tulkot anketu arī citās valodās.",
@@ -53,7 +53,7 @@
     "continueWithoutSaving": "Turpināt nesaglabājot",
     "restoreOK": "Progress atjaunots. Varat turpināt.",
     "restoreError": "Nevar atvērt šo anketas progresa failu. Pārbaudiet, vai izvēlējāties pareizo failu.",
-    "newConfirm": "Sākt jaunu anketu? Nelejupielādētās atbildes tiks zaudētas.",
+    "newConfirm": "Sākt jaunu anketu? Pašreizējās atbildes un atsauksmes tiks dzēstas. Ja vēlaties tās paturēt, vispirms lejupielādējiet progresu.",
     "skipConfirm": "Izlaist atlikušos jautājumus šajā sadaļā?",
     "restConfirm": "Pabeigt pašlaik un atvērt nepabeigto rezultātu pārskatu?",
     "present": "Izvēlēta",
@@ -83,7 +83,7 @@
     "visitSummary": "Persona un vizītes iemesls",
     "safetySummary": "Pašreizējā drošība: saglabātās atbildes un to laiks",
     "incompatibleAnswers": "Šīs atbildes nevar izvēlēties kopā:",
-    "omissionNote": "Izlaisti jautājumi nenozīmē noliedzošas atbildes.",
+    "omissionNote": "Parādītas tikai sniegtās atbildes; izlaisti jautājumi nenozīmē atbildi “Nē”.",
     "supportTitle": "Atbalsts ir pieejams.",
     "supportBody": "Pat ja šobrīd šķiet, ka neviens Jūs nesaprot, ir cilvēki, kuri vēlas Jūs uzklausīt. Lai atrastu atbalstu Jūsu apkaimē, atveriet pārlūkprogrammu un meklējiet “psiholoģiskās palīdzības tālrunis” vai “krīzes palīdzības tālrunis”, pievienojot Jūsu valsts vai pilsētas nosaukumu. Pārbaudiet, vai numurs pieder uzticamam vietējam palīdzības dienestam. Jums nav jāsagatavo runa. Uzticama palīdzības dienesta uzdevums ir Jūs uzklausīt un palīdzēt bez nosodījuma; tā darbinieki var ieteikt piemērotu speciālistu vai citu vietējo atbalstu. Pirms dalāties ar personisku informāciju, varat pajautāt par konfidencialitāti. Varat vienkārši pateikt: “Man šobrīd ir grūti.”",
     "supportLink": "Vietējā atbalsta meklēšana",
@@ -95,6 +95,7 @@
     "guideBody": "Atveriet lejupielādēto HTML failu pārlūkā. Priekšskatījumā tas nedarbojas. Vienas atbildes izvēle tiek saglabāta atvērtajā anketā. Vairākām atbildēm un teksta laukiem nospiediet “Saglabāt un tālāk”. Pirms pauzes saglabājiet progresu failā. Saglabāto failu varat turēt savā ierīcē. Tas nav šifrēts, tāpēc kopīgojiet to tikai ar uzticamiem cilvēkiem vai veselības aprūpes speciālistu. Neievietojiet to sociālajos tīklos vai citviet publiski. Jūs izvēlaties, ko pārrunāt ar speciālistu. Precizitātes pārskatīšanai izlaidiet jautājumus, kas šķiet atbilstoši. Kļūdainos vai neskaidros jautājumus atzīmējiet un izvēlieties iemeslu. Beigās izvēlieties “Sagatavot pārskatu”, lai apskatītu pārskatu speciālistam un saglabātu to PDF formātā. Datorā turiet nospiestu Ctrl taustiņu un ritiniet peles ritenīti uz augšu vai leju, lai palielinātu vai samazinātu teksta izmēru. Rezultātu ekrānā varat izvēlēties pārskata valodu neatkarīgi no anketas valodas. Ja atzīmējāt kādu problēmu, no speciālista pārskata ekrāna varat atvērt atsevišķu atsauksmju pārskatu un saglabāt to PDF formātā.",
     "notesTitle": "Pēdējās izmaiņas un turpmākie plāni",
     "notesHistory": [
+      "15.11.2026 08:56 Riga — Pārskatā tagad var sākt jaunu anketu un kopīgot publisku uzaicinājumu. Tajā ir tikai sniegtās atbildes un īss skaidrojums par izlaisto. Ieguldījuma sadaļa ir redzama arī pirms vārdu pievienošanas.",
       "15.11.2026 08:00 Rīga — Pēc vienas atbildes izvēles pāreja uz nākamo jautājumu tagad notiek divreiz ātrāk.",
       "15.11.2026 07:20 Riga — Anketas un PDF ceļveža lejupielādes failiem tagad ir īsāki nosaukumi ar versijas numuru beigās.",
       "14.11.2026 23:49 Riga — Kopsavilkumā un pārskatā speciālistam tagad ir vienādi jautājumu skaiti; atbildētie un izlaistie jautājumi norādīti atsevišķi. Citās sadaļās saglabātās piemērojamās atbildes joprojām ir iekļautas.",
@@ -103,8 +104,7 @@
       "14.11.2026 17:02 Riga — atbalsta norādes skaidro, kā atrast palīdzības tālruni Jūsu valstī vai pilsētā; ārkārtas situācijās norādīts sazināties ar vietējiem neatliekamās palīdzības dienestiem. Precizēts, ka panikai līdzīgas epizodes maksimums ir sajūtu spēcīgākais brīdis konkrētajā epizodē.",
       "14.11.2026 15:18 Riga — pievienoti e-pasta melnraksti un kopēšana atsauksmēm par jautājumiem; anketas atbildes netiek iekļautas.",
       "09.11.2026. 12:08 — GitHub pirmkoda saite tagad ir novietota tieši pie autora norādes lapas apakšā.",
-      "09.11.2026. 11:53 — Pievienota apzināti atverama GitHub pirmkoda saite sadaļā par projektu un četru valodu lietošanas ceļvedī. Saite neietilpst atbilžu pārskatā.",
-      "09.11.2026. 10:17 — Četru valodu anketa tagad ir projekta pamata versija. Iepriekšējās versijas ir saglabātas arhīvā; jautājumi un saglabāto atbilžu formāts nav mainīts."
+      "09.11.2026. 11:53 — Pievienota apzināti atverama GitHub pirmkoda saite sadaļā par projektu un daudzvalodu lietošanas ceļvedī. Saite neietilpst atbilžu pārskatā."
     ],
     "coverageNote": "Skaits aptver piemērojamos jautājumus atlasītajās sadaļās un iepriekš atbildētos vai izlaistos jautājumus citās sadaļās. Mainītu nosacījumu dēļ paslēptās atbildes paliek progresa failā, bet šeit nav iekļautas.",
     "autoHint": "Izvēlieties vienu atbildi, lai saglabātu to atvērtajā anketā un turpinātu.",
@@ -145,6 +145,20 @@
     "feedbackDeliveryPrivacy": "Tiks atvērts melnraksts Jūsu e-pasta lietotnē. E-pasta lietotne vai pakalpojuma sniedzējs var saglabāt vai pārsūtīt melnrakstu; e-pasts nav anonīms. Pirms nosūtīšanas pārskatiet atsauksmes un izdzēsiet ierakstīto sensitīvo informāciju. Iekļauti tikai atzīmētie jautājumi, atsauksmju kategorijas un komentāri, nevis Jūsu atbildes anketā. E-pasta lietotnē Jums pašam jānospiež Nosūtīt.",
     "feedbackCopyHelp": "Ja e-pasts neatveras vai kopēšana neizdodas, atlasiet zemāk redzamo tekstu un manuāli iekopējiet to e-pastā.",
     "feedbackLongHelp": "Šīm atsauksmēm nevar izmantot e-pasta saiti (teksts var būt pārāk garš). Iekopējiet visu zemāk redzamo tekstu e-pastā; nekas nav saīsināts.",
-    "feedbackCopied": "Atsauksmes nokopētas. Pirms nosūtīšanas pārskatiet tās."
+    "feedbackCopied": "Atsauksmes nokopētas. Pirms nosūtīšanas pārskatiet tās.",
+    "contributionsTitle": "Ieguldījums projektā",
+    "contributionsInvitation": "Ja vēlaties palīdzēt vai saņemt pateicību par savu ieguldījumu, izmantojiet zemāk esošo GitHub saiti. Vārdus pievieno tikai ar piekrišanu.",
+    "shareQuestionnaire": "Dalīties ar anketu",
+    "shareTitle": "Anketa vizītei pie psihiskās veselības speciālista",
+    "shareMessage": "Bezmaksas daudzvalodu anketa, kas palīdz sagatavoties vizītei pie psihiskās veselības speciālista. Lejupielādējiet to un izmantojiet bezsaistē, lai apkopotu, ko vēlaties pārrunāt ar speciālistu.",
+    "sharePrivacy": "Tiek kopīgots tikai publisks uzaicinājums iepazīties ar projektu. Jūsu atbildes, vārds, atsauksmes un saglabātais progress netiek iekļauts.",
+    "shareCopyHelp": "Nokopējiet ziņojumu vai atlasiet tekstu un nokopējiet to manuāli, lai ielīmētu izvēlētajā lietotnē.",
+    "shareOnDevice": "Kopīgot ierīcē",
+    "copyShareMessage": "Kopēt ziņojumu",
+    "shareCopied": "Ziņojums nokopēts.",
+    "shareCancelled": "Kopīgošana atcelta. Jūs joprojām varat nokopēt ziņojumu.",
+    "shareReady": "Varat arī nokopēt zemāk esošo ziņojumu.",
+    "reportCountIncluded": "Sniegtās atbildes",
+    "reportEmpty": "Nav atbilžu, ko iekļaut. Atgriezieties anketā, lai pievienotu atbildes."
   }
 }
