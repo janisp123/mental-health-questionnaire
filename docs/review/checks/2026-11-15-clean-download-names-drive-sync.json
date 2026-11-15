@@ -1,0 +1,84 @@
+{
+  "verified_at": "2026-11-15T07:27:44.842205+02:00",
+  "source_commit": "538427b6eb0a3dfa65be50a5b830194605a5d69e",
+  "source_tree": "d117fa0fc9ac660e02424162d7e301a69d8410fc",
+  "source_dirty": false,
+  "version": "0.2.10-review+full-bank",
+  "checked_head": "9a277bc846e17dec90ca691f4b7b49764b813683",
+  "main_merge": "d89cb1848df11223c0e571111bb689155a7156e3",
+  "merge_tree_matches_checked_head": true,
+  "files": [
+    {
+      "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "name": "Mental_Health_Questionnaire_v0.2.10.html",
+      "previous_name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.9_REVIEW_BUILD.html",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "bytes": 1546659,
+      "sha256": "e82d10c93be6b85b96672f53ba1651dabc53f0b5b35500fce91fea1e83482e93",
+      "verified_byte_identical": true
+    },
+    {
+      "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "name": "Mental_Health_Questionnaire_Guide_v0.2.10.pdf",
+      "previous_name": "188_README_LV_EN_RU_UK_v0.2.9_REVIEW_BUILD.pdf",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "bytes": 49212,
+      "sha256": "b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9",
+      "verified_byte_identical": true
+    }
+  ],
+  "folder_id": "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+  "folder_title": "Mental health questionnaire — current review files",
+  "ids_folder_sharing_preserved": true,
+  "public_naming_convention_verified": true,
+  "pdf_bytes_unchanged": true,
+  "guide_render_visually_inspected": true,
+  "local_checks": {
+    "passed": 35,
+    "failed": 0,
+    "load_mode": "memory"
+  },
+  "package_tests": {
+    "passed": 8,
+    "failed": 0,
+    "negative_cases": [
+      "Prefixed HTML rejected despite valid bytes/checksum",
+      "Prefixed ZIP name rejected"
+    ]
+  },
+  "ci_runs": {
+    "app": 43680973918,
+    "discovery": 43680973893,
+    "full": 43680973892,
+    "conclusion": "success",
+    "offline_file_opening": true
+  },
+  "verified_locales": [
+    "lv",
+    "en",
+    "ru",
+    "uk"
+  ],
+  "html_comparison_to_previous": [
+    "Only embedded release version and four latest-ten note lists differ",
+    "All other embedded questionnaire data and runtime outside the JSON are unchanged"
+  ],
+  "downloaded_html_checks": [
+    "Exact bytes match the clean-source verified package"
+  ],
+  "limitations": [
+    "Human language/clinical review pending",
+    "Physical-device compatibility pending",
+    "Local browser checks use labelled memory mode"
+  ],
+  "folder_contains_exactly_current_html_and_pdf": true,
+  "snapshot": "review/v0.2.10"
+}
