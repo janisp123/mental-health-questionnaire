@@ -1,5 +1,10 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · Report actions v0.2.12 package prepared
+
+Clean source `2e152a732b7077e9d35d5154b8c2828fdc13b4d6` produced verified HTML/PDF/ZIP with `source_dirty: false`. HTML SHA256 `bab9d2dcacb8949fa03242817b4144d60e2b650ecebb9c25b67941a413032332`; PDF `08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75`. Guide instructions remain unchanged; PDF title metadata now uses Multilanguage. Previous v0.2.11 archived exactly; repository package/README point to v0.2.12. All 36 local checks passed in labelled memory mode; independent review found no issues. Localized screen/clinician PDF and companion guide render inspection completed. Required real-file CI, checked integration, Pages wording publication and exact same-ID Drive readback remain pending; current Drive is still v0.2.11.
+
+
 ### 2026-11-15 · Report actions, public sharing and contributions — source verified
 
 Starting from main `f6d19effe375a5241dae8eb9cefe3c4dbb5cbcc8`. Approved implementation plan: `docs/superpowers/plans/2026-11-15-report-sharing-contributions.md`. Add report reset/public-link sharing, restore empty Contributions, keep every provided answer including uncertainty/refusal, simplify clinician-only header and handle empty reports, use multilanguage public wording. Preserve original questions/recovery and deferred TD. Planned shared version v0.2.12; current Drive remains v0.2.11 until verified delivery.

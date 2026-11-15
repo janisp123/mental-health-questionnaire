@@ -2,7 +2,7 @@
 
 [![Multilingual checks](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml/badge.svg?branch=main)](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml)
 
-**Current version: v0.2.11 · Latvian / English / Russian / Ukrainian · 712 questions · 15 optional sections.**
+**Current version: v0.2.12 · Latvian / English / Russian / Ukrainian · 712 questions · 15 optional sections.**
 
 Free offline questionnaire for adults preparing for a mental-health appointment. All available languages are included in one HTML file. Latvian is the reference and initial language. It does not diagnose or calculate a screening score.
 
@@ -25,7 +25,7 @@ The questionnaire runs offline and sends no answers. Clinician reports and proje
 ## What the current version includes
 
 - One shared application with complete LV/EN/RU/UK question and interface packs.
-- Optional sections, medication details, and explicit progress-file download/import, including older three-language progress files.
+- Optional sections, medication details, and explicit progress-file download/import, including older progress files.
 - A clinician report language chosen independently of the questionnaire language, plus a separate project-feedback report. Provided answers, including negative, uncertain and declined responses, remain in the report.
 - Confirmed restart and public-link sharing from the clinician preview; sharing excludes answers, saved progress and feedback.
 - A Contributions section that remains visible while awaiting permission to list contributors.
@@ -64,7 +64,7 @@ This repository shows the specification, iteration and verification of an AI-ass
 
 - [Browse the application source](src/app/)
 - [Current package files, source revision and checksums](MH_Public_version/manifest.json)
-- [Version snapshot](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.11)
+- [Version snapshot](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.12)
 
 ## Development
 
