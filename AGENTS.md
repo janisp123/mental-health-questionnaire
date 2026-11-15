@@ -55,6 +55,7 @@ These rules apply to future development work in this repository, particularly lo
 
 ## Review package and document output
 
+- The public README and GitHub Pages download action must link only to the stable Google Drive review folder, which contains both HTML and PDF. Use one download link per page; no separate PDF button, raw GitHub artifact download or individual Drive-file download link. Keep opening instructions aligned and version independent. Technical source/provenance links are not download actions.
 - Public download names are `Mental_Health_Questionnaire_v<version>.html` and `Mental_Health_Questionnaire_Guide_v<version>.pdf`, with the version immediately before the extension. The optional ZIP is `Mental_Health_Questionnaire_Package_v<version>.zip`. Do not add internal numeric prefixes, question counts, language lists or build-status suffixes to these public filenames; retain accurate technical-review status in the manifest/docs.
 - Every delivered change to the app, guide or download package gets a new shared release version, reflected in both filenames, the manifest, changelog and current checkpoint. Internal work steps and documentation-only updates use exact Git commit checkpoints in the changelog; do not repeatedly republish identical downloads for those records. Preserve original names in historical archives.
 - Choose document formats for the intended reader and delivery channel; do not assume a file called `README` should be Markdown.
