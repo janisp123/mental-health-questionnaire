@@ -1,0 +1,86 @@
+{
+  "verified_at": "2026-11-15T06:31:34.139829+02:00",
+  "source_commit": "792b192cf0f993ef9e98ed46a5dbca411154442d",
+  "source_tree": "86f081f97f20336e3b3f2590b04abdfa276a7260",
+  "source_dirty": false,
+  "version": "0.2.9-review+full-bank",
+  "checked_head": "be485f1bd6399b31c5294084588bf9aec5b8cd77",
+  "main_merge": "3b96647acf662276830e43a4f868af984bf4000d",
+  "merge_tree_matches_checked_head": true,
+  "files": [
+    {
+      "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "name": "187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.9_REVIEW_BUILD.html",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "bytes": 1546602,
+      "sha256": "20628db35f523ef89881582c5a19ad183f42d40cc5ffa4867de2c52c7f20c01c",
+      "verified_byte_identical": true
+    },
+    {
+      "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "name": "188_README_LV_EN_RU_UK_v0.2.9_REVIEW_BUILD.pdf",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "bytes": 49212,
+      "sha256": "b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9",
+      "verified_byte_identical": true
+    }
+  ],
+  "folder_id": "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+  "ids_folder_sharing_preserved": true,
+  "pdf_bytes_unchanged": true,
+  "guide_render_visually_inspected": true,
+  "local_checks": {
+    "passed": 35,
+    "failed": 0,
+    "load_mode": "memory"
+  },
+  "ci_runs": {
+    "app": 43645566062,
+    "discovery": 43645566075,
+    "full": 43645566104,
+    "conclusion": "success",
+    "offline_file_opening": true
+  },
+  "verified_locales": [
+    "lv",
+    "en",
+    "ru",
+    "uk"
+  ],
+  "regressions": [
+    "Model/results/selector and browser tests failed before production fixes and passed afterward",
+    "Unselected untouched questions excluded from report coverage",
+    "Applicable saved answers and skips outside selection retained",
+    "Conditional-hidden answers excluded without deleting recovery records",
+    "Answered/skipped counts agree between results, selector and clinician report",
+    "Partially unanswered selected questions included in coverage",
+    "Independent report-language selection and complete old-format progress round trips",
+    "Required, uncertain/refused and optional-parent boundaries checked"
+  ],
+  "packaged_html_browser_checks": [
+    "Full-bank example: S11 has 62 applicable questions plus one saved S12 response; covered/answered/skipped=63/2/1 in every locale",
+    "Summary and selector at 320/390px without horizontal overflow",
+    "Four clinician PDFs generated, rendered and visually inspected",
+    "No page errors or network requests"
+  ],
+  "downloaded_html_checks": [
+    "Exact bytes match the browser-verified packaged HTML"
+  ],
+  "limitations": [
+    "Human language/clinical review pending",
+    "Physical-device compatibility pending",
+    "Local browser checks use labelled memory mode"
+  ],
+  "folder_contains_exactly_current_html_and_pdf": true,
+  "snapshot": "review/v0.2.9",
+  "search_indexing_evidence": "docs/review/checks/2026-11-14-search-indexing.json",
+  "search_indexing_status": "UNVERIFIED_OWNER_ACCOUNT_INSPECTION_PENDING"
+}
