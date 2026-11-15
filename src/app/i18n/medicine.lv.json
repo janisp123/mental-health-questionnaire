@@ -2,7 +2,7 @@
   "schema": "medicine-list-ui-v1",
   "lang": "lv",
   "strings": {
-    "help": "Katrām zālēm pievienojiet atsevišķu ierakstu. Iekļaujiet būtiskas agrāk lietotas zāles arī tad, ja pašlaik nelietojat nevienas. Pārrakstiet informāciju no iepakojuma vai rakstiet “nezinu”; neminiet. Uztura bagātinātāji šeit nav jāuzskaita. Pārmaiņas saglabājas tikai pēc “Saglabāt un tālāk”. Ja nav pievienojamu detaļu, izlaidiet jautājumu.",
+    "help": "Katrām zālēm pievienojiet atsevišķu ierakstu. Iekļaujiet būtiskas agrāk lietotas zāles arī tad, ja pašlaik nelietojat nevienas. Ja iespējams, pārrakstiet informāciju no iepakojuma. Ja neesat pārliecināts/-a, rakstiet “nezinu”, nevis miniet. Uztura bagātinātāji šeit nav jāuzskaita. Pārmaiņas saglabājas tikai pēc “Saglabāt un tālāk”. Ja nav pievienojamu detaļu, izlaidiet jautājumu.",
     "add": "Pievienot citas zāles",
     "remove": "Noņemt šo ierakstu",
     "discussion": "Ko vēlaties pajautāt psihiatram par zālēm? (nav obligāti)",
@@ -14,14 +14,14 @@
     "fields": {
       "name": "Precīzs zāļu nosaukums",
       "status": "Pašlaik lietotas vai agrāk lietotas zāles",
-      "strength": "Stiprums / forma, ja zināms",
+      "strength": "Zāļu stiprums un forma, ja zināms",
       "dose": "Faktiski lietotais daudzums vienā reizē",
       "schedule": "Cik bieži un kad lietojat (arī pēc vajadzības)",
       "duration": "Cik ilgi lietojat / aptuvenais sākuma datums",
       "doseDuration": "Cik ilgi lietojat šo devu",
       "reason": "Kādam nolūkam lietojat",
       "benefit": "Vai šīs zāles palīdzēja?",
-      "effects": "Kas uzlabojās, pasliktinājās vai radīja blakusparādības?",
+      "effects": "Kas uzlabojās, kas joprojām sagādā grūtības vai kas mainījās, tostarp iespējamās blakusparādības?",
       "changes": "Simptomi vai pārmaiņas pēc zāļu sākšanas, devas maiņas, izlaišanas vai pārtraukšanas; laiks, ja zināms",
       "stoppedWhen": "Kad un kā pārtraucāt (uzreiz / pakāpeniski), ja attiecas",
       "stopReason": "Kāpēc pārtraucāt, ja attiecas"

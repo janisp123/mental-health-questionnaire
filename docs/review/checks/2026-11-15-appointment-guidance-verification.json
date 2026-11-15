@@ -1,0 +1,66 @@
+{
+  "source_commit": "8e63aefa0c53a505af0867db964e7848f1ad7215",
+  "version": "0.2.14-review+full-bank",
+  "source_dirty": false,
+  "focused_regression_observed_failing_then_passing": true,
+  "legacy_disabled_pack_regression_observed_failing_then_passing": true,
+  "full_checks": {
+    "passed": 40,
+    "failed": 0,
+    "load_mode": "memory",
+    "results": "dist/checks-appointment-guidance-final/results.json"
+  },
+  "package_current_source_equivalence": true,
+  "question_count": 712,
+  "frozen_sources_verified": true,
+  "help_targets": [
+    "M14_02",
+    "M02_09"
+  ],
+  "guidance_phone_widths": [
+    320,
+    390
+  ],
+  "packaged_clinician_pdf": {
+    "loadMode": "memory",
+    "results": [
+      {
+        "locale": "lv",
+        "rows": 18,
+        "pages": 1,
+        "matched": "every preview row and full PDF response payload/order",
+        "networkRequests": 0,
+        "browserErrors": 0
+      },
+      {
+        "locale": "en",
+        "rows": 18,
+        "pages": 1,
+        "matched": "every preview row and full PDF response payload/order",
+        "networkRequests": 0,
+        "browserErrors": 0
+      },
+      {
+        "locale": "ru",
+        "rows": 18,
+        "pages": 1,
+        "matched": "every preview row and full PDF response payload/order",
+        "networkRequests": 0,
+        "browserErrors": 0
+      },
+      {
+        "locale": "uk",
+        "rows": 18,
+        "pages": 1,
+        "matched": "every preview row and full PDF response payload/order",
+        "networkRequests": 0,
+        "browserErrors": 0
+      }
+    ]
+  },
+  "guide_visually_inspected": true,
+  "guide_bytes_unchanged": true,
+  "independent_review": "No additional actionable findings; diagnosed compatibility and test-selector corrections passed afterward.",
+  "physical_device_and_human_language_clinical_review": "pending",
+  "drive_update": "pending exact-head CI and checked merge"
+}

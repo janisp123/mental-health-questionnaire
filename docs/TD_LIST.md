@@ -10,6 +10,8 @@
 
 ## To do
 
+- [ ] **Deferred: optional general-context question.** Consider one optional prompt for experiences or circumstances that existing choices do not let a person explain. No implementation is authorized yet. Assess duplication with existing medicine notes and functional questions, added report length, stable ID/text limits, all active translations, recovery compatibility and blank/skip handling before any later change. The targeted medicine/safety guidance update does not add this question.
+
 - [ ] **Deferred: make frequency wording more natural while retaining clear numerical meaning.**
   - **Status:** Parked for later review; no questionnaire rewrite, answer-scale redesign or distribution update is authorized by this entry. Other tasks take priority. Coordinate with the existing wording audit rather than repeat it.
   - **Goal:** Let respondents estimate without counting exact days: consider natural frequency labels with short numerical guides, consistent within each kind of scale, and a brief best-estimate reassurance. Preserve a clear place for “once a week, every week”; distinguish regular patterns from symptoms clustered into an episode where clinically relevant.

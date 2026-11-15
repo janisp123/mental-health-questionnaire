@@ -349,6 +349,7 @@ def build_bundle(config_path=None):
         apply_translation_packs(bundle, packs)
     apply_local_emergency_notices(bundle)
     apply_panic_peak_clarification(bundle)
+    apply_appointment_guidance(bundle)
     priority = read_json(QUESTIONNAIRE / "report-priority.json")
     validate_report_priority(priority, [q for group in bundle["groups"] for q in group["questions"]])
     bundle["presentation"]["reportPriority"] = priority
@@ -408,6 +409,29 @@ def apply_panic_peak_clarification(bundle):
         if not isinstance(text, str) or not text.strip():
             raise ValueError("Missing panic peak clarification: " + locale)
         question["translations"][locale]["help"] = text
+
+
+def apply_appointment_guidance(bundle):
+    """Add two optional explanations without changing frozen questions or answer paths."""
+    data = read_json(QUESTIONNAIRE / "appointment-guidance.json")
+    questions = data.get("questions") if isinstance(data, dict) else None
+    if (not isinstance(data, dict) or data.get("schema") != "questionnaire-appointment-guidance-v1"
+            or not isinstance(questions, dict) or set(questions) != {"M14_02", "M02_09"}):
+        raise ValueError("Invalid appointment guidance")
+    by_id = {q["id"]: q for group in bundle["groups"] for q in group["questions"]}
+    # A legacy build may deliberately disable a configured translation pack.
+    # Validate the complete catalog, but apply only its active locales.
+    configured = set(SOURCE_LANGS) | set(read_json(QUESTIONNAIRE / "build.json").get("translationPacks", {}))
+    required_locales = configured | set(bundle["ui"])
+    for qid, translations in questions.items():
+        if (qid not in by_id or not isinstance(translations, dict)
+                or set(translations) != required_locales):
+            raise ValueError("Missing appointment guidance language or question: " + qid)
+        for locale, text in translations.items():
+            if not isinstance(text, str) or not text.strip():
+                raise ValueError("Missing appointment guidance: " + qid + "/" + locale)
+            if locale in bundle["ui"]:
+                by_id[qid]["translations"][locale]["help"] = text
 
 
 def make_html(data=None):

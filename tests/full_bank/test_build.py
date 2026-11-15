@@ -59,6 +59,11 @@ for question_id, source_question in source_by_id.items():
         helps = build.read_json(build.QUESTIONNAIRE / "panic-peak-clarification.json")["help"]
         for lang in build.SOURCE_LANGS:
             assert grouped_question["translations"][lang].pop("help") == helps[lang]
+    if question_id in {"M14_02", "M02_09"}:
+        grouped_question["translations"] = {lang: dict(t) for lang, t in grouped_question["translations"].items()}
+        helps = build.read_json(build.QUESTIONNAIRE / "appointment-guidance.json")["questions"][question_id]
+        for lang in build.SOURCE_LANGS:
+            assert grouped_question["translations"][lang].pop("help") == helps[lang]
     assert grouped_question == expected
 positions = {question["id"]: index for index, question in enumerate(questions)}
 for question in questions:

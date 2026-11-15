@@ -1,5 +1,38 @@
 # Active development changelog — mental-health-questionnaire
 
+
+### 2026-11-15 · Guidance v0.2.14 — LOCAL VERIFICATION COMPLETE
+
+All 40 maintained checks pass (`dist/checks-appointment-guidance-final/results.json`, memory mode). Both previously observed failures now pass; legacy disabled-language builds and every guidance locale at 320/390px are covered. One independent review found no additional actionable issues. Clean source `8e63aef` and package/checksums remain unchanged; current package equivalence and source index pass. Evidence: `docs/review/checks/2026-11-15-appointment-guidance-verification.json`.
+
+Resume: finish PR #52 using the final pushed head, require all relevant exact-head CI before merge, confirm merge tree matches, tag `review/v0.2.14`, replace the existing Drive HTML/PDF IDs, verify metadata plus byte-identical downloads, then update delivery evidence/checkpoint. Drive remains v0.2.13 until then. Optional general-context question and frequency redesign remain deferred; no further app changes are pending for this update.
+
+
+### 2026-11-15 · Guidance v0.2.14 — PACKAGE PREPARED
+
+Clean source `8e63aef` builds verified v0.2.14 HTML/PDF/ZIP with `source_dirty: false`. HTML SHA256 `7400e18606e857b8782fa12079dba9cdb794895a4207533414fddaedd630dbf2`; guide bytes remain `08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75`. Guide rendered and visually inspected. Actual packaged synthetic older-progress import and all 18 clinician preview/PDF response rows/order pass in every active locale, without page errors or network requests; memory mode is explicit. The corrected help test passes at 320/390px; legacy translation-pack regressions pass. Independent source review found no additional actionable findings.
+
+Preserved exact v0.2.13 pair/manifest under `archive/four-language/v0.2.13/`; current repository pair/README now point to v0.2.14. Drive still holds verified v0.2.13, unchanged. Final full checks are running at `dist/checks-appointment-guidance-final/results.json`; after PASS push/ready PR #52, wait for exact-head CI, merge, replace same Drive IDs and verify both downloaded bytes. No new question, clinical score or frequency change.
+
+
+### 2026-11-15 · Guidance compatibility corrections — VERIFIED
+
+Source checkpoint `7ee542ec30830467ea7518782fd53767e9408c15` is pushed in PR #52. Initial full run: 38 passed, 2 failed. Root causes: exact active-locale equality rejected the maintained legacy build with Ukrainian disabled; the expanded browser assertion matched both new guidance and existing medicine instructions. Validate the complete configured guidance catalog but apply active locales only; locate the expected rendered helper exactly. Translation-pack and focused guidance checks now pass; the browser correction is being verified. One independent whole-branch review found no additional actionable issues; readiness depends on these regressions and final suite. Drive access is resolved; current pair still v0.2.13. Next: final full suite, clean source commit/package, exact-head CI, merge and verified Drive update.
+
+
+### 2026-11-15 · Medication and safety guidance — SOURCE IMPLEMENTED
+
+Checkpoint: `a2035ac` plan/start record is pushed; draft PR #52 tracks `fix/medication-safety-guidance-20261115`. Added optional localized help to existing M14_02/M02_09 via a strictly validated overlay; corrected medicine instructions/strength labels and clarified observations/dose timing in LV/EN/RU/UK. Original questions/choices/conditions/support triggers/recovery/report priority remain unchanged. General-context question stays deferred. Source is now v0.2.14; current repository package and Drive remain v0.2.13 until reviewed delivery.
+
+Focused regression was observed failing for missing M14_02 help before implementation, then passing; malformed schema/IDs/locales/blank text are rejected, original question text is preserved and helpers do not become clinician answers. Existing build/source-safety checks pass. Full maintained suite is running in labelled memory mode at `dist/checks-appointment-guidance/results.json`. Next: read results, one independent branch review, clean-source package, exact-head CI/merge and same-ID Drive readback.
+
+
+### 2026-11-15 · Medication and safety guidance v0.2.14 — STARTED
+
+Base main `6032f999587532e1e709cda85a4b5b8a04d7b437`; branch `fix/medication-safety-guidance-20261115`. Scope: clarify medicine-entry instructions/strength labels and optional examples; add M02_09 guidance locating the existing separate safety questions in LV/EN/RU/UK. Preserve 712 questions, original IDs/titles/choices/conditions, report priority, support triggers, recovery format and frequency scales. Optional general-context question remains deferred. Plan/resume checklist: `docs/superpowers/plans/2026-11-15-medication-safety-guidance.md`.
+
+Checkpoint: planning recorded before product edits; current GitHub/Drive distribution remains verified v0.2.13. Next: focused builder/preservation regression, localized guidance implementation, maintained suite and one branch review; then clean v0.2.14 package, checked PR, same-ID Drive replacement and byte readback. Do not claim a candidate is distributed until readback evidence is recorded.
+
 ### 2026-11-15 · Report review-priority v0.2.13 — DELIVERED
 
 PR #50 merged as `0f2f0b62cb1584bc39e751ed4d732ed8c66464d3`, preserving checked head `63fd436c02552ba28a3b99029ff4f02c26e6090d` tree. Required full/app/discovery CI passed (43716679186 / 43716679194 / 43716679044) with real offline file opening. Clean source `2bb5f012ea6504427db1ffcc3c9c15cfa0599f89` builds verified v0.2.13 HTML/PDF/ZIP. Report-only 1–5 editorial priorities now place explicit review cues first while preserving condition/named context and stable ties. All coded responses in every active locale preserve exactly the same ID/plain/HTML payload; original questionnaires/answers/navigation/recovery/feedback and 650 ms timing remain intact. Preview, PDF, HTML and text share the order; no summed/displayed clinical score or triage is produced.

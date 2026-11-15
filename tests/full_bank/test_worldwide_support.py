@@ -17,7 +17,7 @@ for group in bundle['groups']:
    if lang in build.SOURCE_LANGS:
     old=source[q['id']]['translations'][lang]
     if old['time']!=t['time']:changed.append((q['id'],lang))
-    ignored={'time','help'} if q['id']=='M04_01' else {'time'}
+    ignored={'time','help'} if q['id'] in {'M04_01','M14_02','M02_09'} else {'time'}
     assert {k:v for k,v in t.items() if k not in ignored}=={k:v for k,v in old.items() if k not in ignored}
   for key in ('id','order','profile','multi','context','choiceCodes','exclusive','incompatible','answerStatus','type'):
    assert q[key]==source[q['id']][key],(q['id'],key)
