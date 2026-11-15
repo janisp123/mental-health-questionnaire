@@ -95,6 +95,7 @@
     "guideBody": "Atveriet lejupielādēto HTML failu pārlūkā. Priekšskatījumā tas nedarbojas. Vienas atbildes izvēle tiek saglabāta atvērtajā anketā. Vairākām atbildēm un teksta laukiem nospiediet “Saglabāt un tālāk”. Pirms pauzes saglabājiet progresu failā. Saglabāto failu varat turēt savā ierīcē. Tas nav šifrēts, tāpēc kopīgojiet to tikai ar uzticamiem cilvēkiem vai veselības aprūpes speciālistu. Neievietojiet to sociālajos tīklos vai citviet publiski. Jūs izvēlaties, ko pārrunāt ar speciālistu. Precizitātes pārskatīšanai izlaidiet jautājumus, kas šķiet atbilstoši. Kļūdainos vai neskaidros jautājumus atzīmējiet un izvēlieties iemeslu. Beigās izvēlieties “Sagatavot pārskatu”, lai apskatītu pārskatu speciālistam un saglabātu to PDF formātā. Datorā turiet nospiestu Ctrl taustiņu un ritiniet peles ritenīti uz augšu vai leju, lai palielinātu vai samazinātu teksta izmēru. Rezultātu ekrānā varat izvēlēties pārskata valodu neatkarīgi no anketas valodas. Ja atzīmējāt kādu problēmu, no speciālista pārskata ekrāna varat atvērt atsevišķu atsauksmju pārskatu un saglabāt to PDF formātā.",
     "notesTitle": "Pēdējās izmaiņas un turpmākie plāni",
     "notesHistory": [
+      "15.11.2026 08:00 Rīga — Pēc vienas atbildes izvēles pāreja uz nākamo jautājumu tagad notiek divreiz ātrāk.",
       "15.11.2026 07:20 Riga — Anketas un PDF ceļveža lejupielādes failiem tagad ir īsāki nosaukumi ar versijas numuru beigās.",
       "14.11.2026 23:49 Riga — Kopsavilkumā un pārskatā speciālistam tagad ir vienādi jautājumu skaiti; atbildētie un izlaistie jautājumi norādīti atsevišķi. Citās sadaļās saglabātās piemērojamās atbildes joprojām ir iekļautas.",
       "14.11.2026 23:26 Riga — Atbalsta norādes tagad skaidro, ka nav jāsagatavo runa, palīdzības dienests ir paredzēts uzklausīšanai un palīdzībai un par konfidencialitāti var pajautāt pirms personiskas informācijas izpaušanas.",
@@ -103,8 +104,7 @@
       "14.11.2026 15:18 Riga — pievienoti e-pasta melnraksti un kopēšana atsauksmēm par jautājumiem; anketas atbildes netiek iekļautas.",
       "09.11.2026. 12:08 — GitHub pirmkoda saite tagad ir novietota tieši pie autora norādes lapas apakšā.",
       "09.11.2026. 11:53 — Pievienota apzināti atverama GitHub pirmkoda saite sadaļā par projektu un četru valodu lietošanas ceļvedī. Saite neietilpst atbilžu pārskatā.",
-      "09.11.2026. 10:17 — Četru valodu anketa tagad ir projekta pamata versija. Iepriekšējās versijas ir saglabātas arhīvā; jautājumi un saglabāto atbilžu formāts nav mainīts.",
-      "09.11.2026. 09:28 — Novērsta zāļu formas un garu jautājumu virsrakstu pārplūde tālruņos. Mainot valodu, iesāktās atsauksmes saglabājas. Pārskata virsraksts atbilst izvēlētajai pārskata valodai."
+      "09.11.2026. 10:17 — Četru valodu anketa tagad ir projekta pamata versija. Iepriekšējās versijas ir saglabātas arhīvā; jautājumi un saglabāto atbilžu formāts nav mainīts."
     ],
     "coverageNote": "Skaits aptver piemērojamos jautājumus atlasītajās sadaļās un iepriekš atbildētos vai izlaistos jautājumus citās sadaļās. Mainītu nosacījumu dēļ paslēptās atbildes paliek progresa failā, bet šeit nav iekļautas.",
     "autoHint": "Izvēlieties vienu atbildi, lai saglabātu to atvērtajā anketā un turpinātu.",

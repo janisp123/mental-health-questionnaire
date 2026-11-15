@@ -31,11 +31,9 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     selected_color = single_choice.locator("..").evaluate("el => getComputedStyle(el).backgroundColor")
     assert selected_color != "rgb(27, 44, 58)", f"Selected choice is not visually highlighted: {selected_color}"
     assert page.locator('.question').get_attribute("data-question") == "SYN_01"
-    page.wait_for_timeout(500)
+    page.wait_for_timeout(300)
     assert page.locator('.question').get_attribute("data-question") == "SYN_01"
-    page.wait_for_timeout(500)
-    assert page.locator('.question').get_attribute("data-question") == "SYN_01"
-    page.wait_for_timeout(400)
+    page.wait_for_timeout(450)
     assert page.locator('.question').get_attribute("data-question") == "SYN_02"
     assert downloads == [], "Answering a question must not trigger a download"
     saved = backup(page)

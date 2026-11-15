@@ -370,7 +370,7 @@ function singleAnswer(code){
   if(pendingSingleAnswer!==pending||current()?.id!==pending.id)return;
   pendingSingleAnswer=null;
   save();
- },1300);
+ },650);
 }
 window.QuestionnaireEvents.bind(app,{
  singleAnswer,action,
