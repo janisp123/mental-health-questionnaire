@@ -10,6 +10,20 @@
 
 ## To do
 
+- [ ] **Focused audit: depressive and stress-related symptom coverage in the existing questionnaire.**
+  - **Status:** Queued for owner to start when usage resets. Read-only audit ONLY; do not edit questionnaire, changelog, translations, release files, or distribution as part of this audit. This TD entry does not authorize implementation.
+  - **Goal:** Check whether the present 712-question, four-language, offline adult pre-appointment questionnaire lets respondents describe the following experiences to a clinician, *without presenting the questionnaire as a validated diagnostic screen*:
+    1. **Depressive symptoms and anhedonia:** Loss of enjoyment/interest (including previously liked hobbies), low initiative, withdrawal, tearfulness/emotional pressure, fatigue, and being able to fulfill obligations while not enjoying leisure; preserve the possibility of pleasure from occasional meaningful activities.
+    2. **Long-duration depressive symptoms:** Whether low mood and diminished interest have lasted for months or years, with attention to course and persistence (relevant to possible persistent depressive disorder, without diagnosing it).
+    3. **Anxiety/internal tension:** Persistent worry, rumination, inability to relax, somatic tension, feeling emotionally overwhelmed.
+    4. **Caregiver strain and chronic stress:** Family obligations, limited privacy, frequent criticism/conflict, feeling trapped; distinguish situational strain from mental disorder.
+    5. **Medication effects versus residual illness:** Emotional blunting, sedation/fatigue, symptom changes after medication starts or dose changes, timing between prescribed doses, and adherence. Do not assume causation or advise dose changes.
+    6. **Relevant differentiators:** Sleep disruption, chronic pain, passive thoughts about death versus self-harm intent, if current wording/branching could obscure important context; avoid alarmist or leading questions.
+  - **Review procedure:** First read `AGENTS.md`, `docs/WORK_CHECKPOINT.md`, current `main`, prior six-area effectiveness audit and wording-review results. Check for overlap and do not repeat completed work. Inspect existing section/question IDs, answer choices, recall periods, conditional triggers, selection and skip logic, LV/EN/RU/UK meaning, and whether answers reach the clinician PDF.
+  - **Output:** A concise table for each symptom group: **Direct / Partial / Indirect / Missing** coverage, exact question IDs and evidence, reachable answer paths, important omissions, and severity/practical significance. Separate verified coverage from interpretations; this is a content audit, not an assessment of an individual.
+  - **Proposals only:** If a real gap matters for preparing for a professional appointment, propose the *fewest* useful new or clarified questions in English with rationale, priority, duplication risk, and impacts on branching, translations and clinician report. Do not add diagnostic scores, unnecessary questions or broad redesigns. Respect non-diagnostic scope, offline privacy, existing IDs and gentle language.
+  - **Approval gate:** Present findings and suggested wording to the owner; make **no questionnaire edits or implementation commits** until the owner authorizes specific changes. The task stays pending until the audit is reviewed.
+
 - [ ] **Deferred: make frequency wording more natural while retaining clear numerical meaning.**
   - **Status:** Parked for later review; no questionnaire rewrite, answer-scale redesign or distribution update is authorized by this entry. Other tasks take priority. Coordinate with the existing wording audit rather than repeat it.
   - **Goal:** Let respondents estimate without counting exact days: consider natural frequency labels with short numerical guides, consistent within each kind of scale, and a brief best-estimate reassurance. Preserve a clear place for “once a week, every week”; distinguish regular patterns from symptoms clustered into an episode where clinically relevant.
