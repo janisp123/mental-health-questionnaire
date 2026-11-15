@@ -2,6 +2,7 @@
 import hashlib
 import io
 import json
+import re
 import subprocess
 import sys
 import tempfile
@@ -55,6 +56,12 @@ class ReviewPackageTests(unittest.TestCase):
             self.assertEqual(manifest["question_count"], 712)
             self.assertEqual(len(manifest["files"]), 2)
             self.assertEqual(len(manifest["source_commit"]), 40)
+            version = re.match(r"\d+\.\d+\.\d+", manifest["version"]).group()
+            self.assertEqual({record["name"] for record in manifest["files"]}, {
+                f"Mental_Health_Questionnaire_v{version}.html",
+                f"Mental_Health_Questionnaire_Guide_v{version}.pdf",
+            })
+            self.assertEqual(manifest["zip"]["name"], f"Mental_Health_Questionnaire_Package_v{version}.zip")
             for record in manifest["files"]:
                 content = (folder / record["name"]).read_bytes()
                 self.assertEqual(hashlib.sha256(content).hexdigest(), record["sha256"])
@@ -78,6 +85,26 @@ class ReviewPackageTests(unittest.TestCase):
             self.assertEqual(sorted(p.name for p in a.iterdir()), sorted(p.name for p in b.iterdir()))
             for p in a.iterdir():
                 self.assertEqual(p.read_bytes(), (b / p.name).read_bytes(), p.name)
+
+    def test_verifier_rejects_internal_prefixes_even_with_valid_bytes_and_checksum(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp) / "review"
+            self.assertEqual(self.run_builder(folder).returncode, 0)
+            manifest = json.loads((folder / "manifest.json").read_text())
+            manifest["source_dirty"] = False
+            record = next(item for item in manifest["files"] if item["name"].endswith(".html"))
+            old_name = record["name"]
+            record["name"] = "187_" + old_name
+            (folder / old_name).rename(folder / record["name"])
+            (folder / "manifest.json").write_text(json.dumps(manifest))
+            with self.assertRaisesRegex(AssertionError, "Clean versioned filenames"):
+                verify(folder)
+            (folder / record["name"]).rename(folder / old_name)
+            record["name"] = old_name
+            manifest["zip"]["name"] = "187_" + manifest["zip"]["name"]
+            (folder / "manifest.json").write_text(json.dumps(manifest))
+            with self.assertRaisesRegex(AssertionError, "Clean versioned filenames required for ZIP"):
+                verify(folder)
 
     def test_existing_package_is_never_overwritten(self):
         with tempfile.TemporaryDirectory() as tmp:

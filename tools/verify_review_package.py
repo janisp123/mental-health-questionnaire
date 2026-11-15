@@ -7,7 +7,7 @@ import re
 import zipfile
 from pathlib import Path
 import build_questionnaire as build
-from build_review_package import guide_pdf
+from build_review_package import guide_pdf, package_filenames
 
 
 def verify(folder, with_zip=False):
@@ -19,6 +19,10 @@ def verify(folder, with_zip=False):
     bundle = build.build_bundle()
     config = build.read_json(build.QUESTIONNAIRE / "build.json")
     assert manifest["version"] == bundle["version"] and manifest["languages"] == list(bundle["ui"])
+    version = re.match(r"\d+\.\d+\.\d+", bundle["version"]).group()
+    names = package_filenames(version)
+    assert {record["name"] for record in manifest["files"]} == {names["html"], names["pdf"]}, "Clean versioned filenames required"
+    assert manifest["zip"]["name"] == names["zip"], "Clean versioned filenames required for ZIP"
     for record in manifest["files"]:
         assert Path(record["name"]).name == record["name"], "Invalid package filename"
         content = (folder / record["name"]).read_bytes()
