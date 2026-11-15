@@ -1,6 +1,6 @@
 # Release and technical-review policy
 
-Updated 9 November 2026. `main` contains the sole active LV/EN/RU/UK application. The current distributed package is **v0.2.4, for technical review**. It is not a clinically validated release.
+Updated 15 November 2026. `main` contains the sole active LV/EN/RU/UK application. The [current package manifest](../MH_Public_version/manifest.json) identifies the distributed technical-review version. It is not a clinically validated release.
 
 ## What is implemented
 
@@ -44,7 +44,7 @@ For managed Chromium that blocks `file://`, `--load-mode memory` is an explicitl
 
 ## Before distributing a reviewer update
 
-1. Commit the relevant source and assign a new build identifier for changed distributed bytes. Update the README version, download links and feature summary alongside the package pointers; refresh its screenshot when the visible UI changes. Build using `python tools/build_review_package.py --output-dir dist/review-<version>`; existing destinations must not be overwritten accidentally.
+1. Commit the relevant source and increment the shared release version for every delivered app, guide or package change, including download-name changes. Public filenames are `Mental_Health_Questionnaire_v<version>.html`, `Mental_Health_Questionnaire_Guide_v<version>.pdf` and optional `Mental_Health_Questionnaire_Package_v<version>.zip`; the version is immediately before the extension, with no internal sequence prefix or build-detail suffix. Update the changelog, README, manifest and current checkpoint so their versions agree; internal work steps use exact Git commits as checkpoints. Refresh the README screenshot when its visible UI changes. Build using `python tools/build_review_package.py --output-dir dist/review-<version>`; existing destinations must not be overwritten accidentally.
 2. Run `python tools/verify_review_package.py <folder> --with-zip`. Require `source_dirty: false`, complete current-source equivalence and matching file/ZIP hashes.
 3. Extract/compare guide text and render every PDF page for visual inspection. Check relevant clinician/feedback print behavior; never include real patient data in evidence.
 4. Record source commit/tree, tested revision, actual artifact hashes and test mode/results. If the promotion merge has a different SHA, record it separately rather than relabelling source provenance.
@@ -53,11 +53,11 @@ For managed Chromium that blocks `file://`, `--load-mode memory` is an explicitl
 
 Ordinary source commits do not publish to Drive automatically. Documentation-only changes that do not change the app or guide do not require rebuilding or republishing an identical reviewer package.
 
-For a guide-only revision, retain the unchanged application version and HTML bytes. Identify the revised package by its new source commit and file checksums; archive the prior pair before replacing the PDF in place. The downloadable guide contains opening instructions and a concise privacy/medical-purpose notice; technical-review status remains accurately recorded in this repository and the package manifest. Read back both files to verify the revised pair.
+For a guide-only revision, increment the shared package version and build the matching named pair, while preserving questionnaire behavior and question content. Archive the prior pair before replacing the current files in place. The downloadable guide contains opening instructions and a concise privacy/medical-purpose notice; technical-review status remains accurately recorded in this repository and the package manifest. Read back both files to verify the revised pair.
 
 ## Evidence and historical material
 
-Current package/provenance: [repository manifest](../MH_Public_version/manifest.json). Latest verified reviewer synchronization: [Drive readback record](review/checks/2026-11-09-medical-purpose-guide-drive-sync.json). Ongoing status: [working checkpoint](WORK_CHECKPOINT.md). Rollback provenance: [three-language archive](../archive/three-language/v0.2.0/README.md) and [four-language v0.2.1 snapshot](../archive/four-language/v0.2.1/manifest.json).
+Current package/provenance: [repository manifest](../MH_Public_version/manifest.json). Latest verified reviewer synchronization and ongoing status: [working checkpoint](WORK_CHECKPOINT.md), with its current Drive readback record. Rollback provenance: [three-language archive](../archive/three-language/v0.2.0/README.md) and [four-language v0.2.1 snapshot](../archive/four-language/v0.2.1/manifest.json).
 
 `docs/drive-original/`, historical checkpoints and `tools/186_RELEASE_GATE_CHECK_v1.py` preserve earlier policy/evidence formats. They do not override this current workflow or replace actual current test runs. No import/reconciliation task remains pending merely because an archived document describes one.
 

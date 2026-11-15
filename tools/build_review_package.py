@@ -70,6 +70,15 @@ def guide_pdf(source):
     return stream.getvalue()
 
 
+def package_filenames(version):
+    """Public downloads use descriptive names ending in the shared release version."""
+    return {
+        "html": f"Mental_Health_Questionnaire_v{version}.html",
+        "pdf": f"Mental_Health_Questionnaire_Guide_v{version}.pdf",
+        "zip": f"Mental_Health_Questionnaire_Package_v{version}.zip",
+    }
+
+
 def build_package(destination):
     if destination.exists():
         raise ValueError("Output directory already exists; choose a new versioned destination")
@@ -81,9 +90,10 @@ def build_package(destination):
     if timestamp.year < 1980:
         raise ValueError("buildEpoch must be a ZIP-compatible timestamp")
     # ReportLab invariant mode fixes PDF internal timestamps/IDs; ZIP uses the pinned epoch.
+    names = package_filenames(version)
     files = {
-        f"187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v{version}_REVIEW_BUILD.html": build.make_html(bundle).encode("utf-8"),
-        f"188_README_LV_EN_RU_UK_v{version}_REVIEW_BUILD.pdf": guide_pdf((ROOT / config["reviewGuide"]).read_text(encoding="utf-8")),
+        names["html"]: build.make_html(bundle).encode("utf-8"),
+        names["pdf"]: guide_pdf((ROOT / config["reviewGuide"]).read_text(encoding="utf-8")),
     }
     archive_stream = io.BytesIO()
     with zipfile.ZipFile(archive_stream, "w", compression=zipfile.ZIP_DEFLATED) as archive:
@@ -93,7 +103,7 @@ def build_package(destination):
             info.create_system = 3
             info.external_attr = 0o100644 << 16
             archive.writestr(info, content)
-    zip_name = f"QUESTIONNAIRE_LV_EN_RU_UK_v{version}_REVIEW_BUILD.zip"
+    zip_name = names["zip"]
     zip_bytes = archive_stream.getvalue()
     record = lambda name, content: {"name": name, "bytes": len(content), "sha256": hashlib.sha256(content).hexdigest()}
     manifest = {

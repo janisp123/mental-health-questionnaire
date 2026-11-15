@@ -1,5 +1,17 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · v0.2.10 clean-name package prepared
+
+Clean source `538427b6eb0a3dfa65be50a5b830194605a5d69e` builds verified HTML/PDF/ZIP with the new descriptive version-ending names. HTML SHA256 `e82d10c93be6b85b96672f53ba1651dabc53f0b5b35500fce91fea1e83482e93`; guide PDF remains byte-identical. Promoted current repository pair, README links and development manifest; exact v0.2.9 archived under original names. Drive still holds v0.2.9 until checked integration and exact-byte readback. Folder/landing-page links remain stable and need no rewrite.
+
+
+### 2026-11-15 · Clean versioned download names — source verified
+
+Assigned v0.2.10 and replaced public package-name templates with `Mental_Health_Questionnaire_v<version>.html`, `Mental_Health_Questionnaire_Guide_v<version>.pdf` and optional `Mental_Health_Questionnaire_Package_v<version>.zip`. Versions end each basename immediately before its extension; internal sequence IDs, question/language counts and build-detail suffixes are removed from new public downloads. One builder helper supplies all names; the verifier rejects mismatched/prefixed names. Historical archives preserve their original names.
+
+Recorded the shared release-version rule in AGENTS/release policy: each delivered app/guide/package change increments its version and updates changelog/manifest/checkpoint; internal work steps use exact Git commit checkpoints. Four-language latest-ten user notes explain the shorter downloads. No question, answer, runtime or guide content changed. Two naming regressions failed before implementation; eight package tests and all 35 maintained checks pass (local browser mode: memory). Independent review found no Critical/Important issue; direct negative ZIP-name coverage was added for its minor test suggestion. Clean-source packaging, required real-file CI and verified same-ID Drive replacement remain pending.
+
+
 ### 2026-11-15 · Drive folder label corrected
 
 Verified that both current Drive filenames already identify v0.2.9 and match the release manifest. The enclosing folder still carried its historical v0.2.0/three-language label; renamed it to “Mental health questionnaire — current review files”. Readback confirms the new label, the same two versioned files, and unchanged folder ID, parents and sharing. This folder label needs no version rewrite after future patches. No app, guide, file bytes or download URLs changed; no package rebuild or new app patch note is needed. Evidence: `docs/review/checks/2026-11-15-drive-naming.json`.
