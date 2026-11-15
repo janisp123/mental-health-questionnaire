@@ -1,5 +1,10 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · Faster single-answer v0.2.11 package prepared
+
+Clean source `a80a4e1278eca9ca53c3798ba66b7b95556fe2da` produced verified HTML/PDF/ZIP with `source_dirty: false`. HTML SHA256 `e07141d4f8198a479dca66352b51c9a6617a479020e912d09c066f9f99d399ae`; guide PDF remains byte-identical. Original v0.2.10 archived; current repository package/README updated to v0.2.11. All 35 local checks passed in labelled memory mode; independent review found no issues. Guide render inspection completed. Drive remains v0.2.10 pending required real-file CI, checked integration and same-ID replacement/readback. Download routes remain one stable Drive folder link per README/landing page.
+
+
 ### 2026-11-15 · Faster single-answer advance — source verified
 
 Starting from main `a51f5dc5b08b3db386ee7335ab7cf893d63b35f1`: reduce the existing single-choice selection delay from 1,300 to 650 milliseconds. Preserve answer saving, cancellation on navigation, other answer kinds and all question/recovery contracts. Planned product version v0.2.11 with aligned four-language notes, checked integration and same-ID Drive replacement/readback. Current reviewer distribution remains verified v0.2.10 until delivery.
