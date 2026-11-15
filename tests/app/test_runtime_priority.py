@@ -14,7 +14,7 @@ with tempfile.TemporaryDirectory() as tmp,sync_playwright() as pw:
   page,errors,network=open_page(browser,path)
   codes={'M06_01':'B','M06_02':'B','M06_02P':'A','M06_03':'A','M06_06':'B','M06_07':'A','M15_19':'B','M14_01':'B','M14_09':'B','M05_13':'B','M05_14':'E','M31_09':'C','M31_10':'D','M43_01':'E'}
   answers={qid:{'kind':'choice','codes':[code],'status':by_id[qid]['answerStatus'][code],'savedAt':'2026-11-15T12:00:00Z'} for qid,code in codes.items()}
-  answers['M33_01']={'kind':'text','value':'Synthetic concern for review','status':'answered','savedAt':'2026-11-15T12:00:00Z'}
+  answers['M33_01']={'kind':'text','value':'Synthetic name','status':'answered','savedAt':'2026-11-15T12:00:00Z'}
   payload={'schema':'mental-pilot-recovery-v1','version':'0.2.12-review+full-bank','layoutVersion':data['layout_version'],'lang':locale,'selected':[g['id'] for g in data['groups']],'sectionConfirmed':True,'currentId':'M06_01','answers':answers,'feedback':{}}
   restore(page,payload);assert backup(page)['answers']==answers
   expected=page.evaluate('''payload=>{const d=JSON.parse(document.getElementById('questionnaire-data').textContent),m=QuestionnaireModel.create(d),qs=m.reportQuestions(payload);return QuestionnaireReports.entries(qs,payload.answers,payload.lang,d.presentation,d.ui[payload.lang].medicine).map(e=>({id:e.id,plain:e.plain}));}''',payload)

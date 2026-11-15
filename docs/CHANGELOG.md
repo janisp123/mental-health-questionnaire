@@ -1,5 +1,10 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · Report-priority identifier placement
+
+Packaged visual inspection identified that the two free-text source fields are optional name/surname, not symptom narratives. Kept both at background priority 1 instead of the generic text default; added a regression observed failing before this correction. No answer wording/content, source questions, recovery or clinical cue mapping changed. Shared release remains the unreleased v0.2.13 candidate; rebuild from the new clean source before distribution.
+
+
 ### 2026-11-15 · Report-priority v0.2.13 package prepared
 
 Clean source `188574dd048cab90883f91000c3342e896776893` builds verified HTML/PDF/ZIP with `source_dirty: false`. HTML SHA256 `c496144ec577aee9d45bd3833105cec99e98a09b6f8bbaca32a9b01b63f358aa`; guide PDF remains `08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75`. Original v0.2.12 archived exactly; current repository package/README point to v0.2.13. All 39 local checks pass after reviewed direction fixes; packaged locale layouts/PDF and unchanged guide inspected. Required real-file CI, checked merge, version snapshot and same-ID Drive readback remain pending. Drive still holds verified v0.2.12. No Pages update is needed; priority values remain internal editorial draft, not clinically validated scores.

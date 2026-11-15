@@ -6,7 +6,7 @@ if(fs.existsSync('src/app/reports/review-priority.js'))vm.runInNewContext(fs.rea
 vm.runInNewContext(fs.readFileSync('src/app/reports/reports.js','utf8'),context);
 const r=context.window.QuestionnaireReports,qs=data.groups.flatMap(g=>g.questions),policy=data.presentation.reportPriority;
 const q=id=>qs.find(item=>item.id===id);
-const answers={M33_01:{kind:'text',value:'SYNTHETIC MAIN CONCERN'},M14_09:{kind:'choice',codes:['B'],status:'answered'},M15_19:{kind:'choice',codes:['B'],status:'answered'},M06_02:{kind:'choice',codes:['B'],status:'answered'},M06_03:{kind:'choice',codes:['A'],status:'answered'},M06_07:{kind:'choice',codes:['A'],status:'answered'},M05_14:{kind:'choice',codes:['E'],status:'answered'},M02_01:{kind:'choice',codes:['A'],status:'answered'},M23_07:{kind:'choice',codes:['A'],status:'answered'},M43_01:{kind:'choice',codes:['E'],status:'answered'},M14_01:{kind:'choice',codes:['A'],status:'answered'},M31_09:{kind:'choice',codes:['C'],status:'uncertain'},M31_10:{kind:'choice',codes:['D'],status:'refused'},M23_11:{kind:'skip',status:'skipped'}};
+const answers={M33_01:{kind:'text',value:'SYNTHETIC NAME'},M14_09:{kind:'choice',codes:['B'],status:'answered'},M15_19:{kind:'choice',codes:['B'],status:'answered'},M06_02:{kind:'choice',codes:['B'],status:'answered'},M06_03:{kind:'choice',codes:['A'],status:'answered'},M06_07:{kind:'choice',codes:['A'],status:'answered'},M05_14:{kind:'choice',codes:['E'],status:'answered'},M02_01:{kind:'choice',codes:['A'],status:'answered'},M23_07:{kind:'choice',codes:['A'],status:'answered'},M43_01:{kind:'choice',codes:['E'],status:'answered'},M14_01:{kind:'choice',codes:['A'],status:'answered'},M31_09:{kind:'choice',codes:['C'],status:'uncertain'},M31_10:{kind:'choice',codes:['D'],status:'refused'},M23_11:{kind:'skip',status:'skipped'}};
 const snapshot=JSON.stringify({qs,answers,presentation:data.presentation});
 const legacy={...data.presentation};delete legacy.reportPriority;
 let expectedIds;
@@ -76,3 +76,4 @@ for(const id of ['M23_24','M13_19','M02_15','M22_13']){
  assert(values.every((v,i)=>i===0||v>=values[i-1]),id+' must not move later for greater stated impact/dependence');
 }
 console.log('PASS: reviewed protective, functional-impact, dependence and supporting-context directions.');
+for(const id of ['M33_01','M33_02'])assert.equal(priority.responsePriority(q(id),{kind:'text',value:'Synthetic identifier'},policy),1,'Optional identifying fields remain background context');

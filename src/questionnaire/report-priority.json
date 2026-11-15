@@ -600,7 +600,7 @@
       }
     },
     "M33_01": {
-      "default": 3,
+      "default": 1,
       "answers": {
         "A": 1,
         "B": 3,
@@ -609,7 +609,7 @@
       }
     },
     "M33_02": {
-      "default": 3,
+      "default": 1,
       "answers": {
         "A": 1,
         "B": 3,
