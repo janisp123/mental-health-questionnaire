@@ -36,7 +36,7 @@
 - [x] Add/run focused failing regression for guidance presence and original answer/report contracts.
 - [x] Add strict narrow help overlay; edit locale catalogs one language at a time; bump source to 0.2.14 and add aligned change notes.
 - [x] Verify focused builder/report checks and commit/push checkpoint; full-suite runtime/recovery checks are retained.
-- [ ] Run full maintained checks once after focused checks; obtain one fresh branch review; fix material findings with regressions.
+- [x] Run full maintained checks; one fresh branch review completed; diagnosed failures passed after correction. Final suite 40/40, memory mode.
 
 ### Task 2: Reviewed package and delivery
 
@@ -44,7 +44,7 @@
 
 **Interfaces:** Consume clean verified source commit; output checked v0.2.14 pair and actual Drive readback record.
 
-- [ ] Commit clean source; build/verify unique `dist/review-0.2.14` and inspect guide/clinician output.
+- [x] Commit clean source; build/verify unique `dist/review-0.2.14` and inspect guide/clinician output.
 - [ ] Preserve v0.2.13, stage current pair/README/manifest and push checked PR; wait for exact-head CI and merge authorized update.
 - [ ] Replace same Drive IDs, preserving folder/sharing; read back both files and compare bytes; create version snapshot.
 - [ ] Record exact commits/hashes/CI/readback, reconcile active TD only where warranted, and leave one precise next action.
@@ -55,3 +55,5 @@
 - Execution: use current clean checkout on a dedicated short-lived branch; avoid an unnecessary second checkout. Changelog and this checklist are the durable ledger; push checkpoints so recovery does not depend on the current machine/chat.
 
 - Task 1 checkpoint: `7ee542ec30830467ea7518782fd53767e9408c15` pushed as PR #52. First full suite 38/40; both diagnosed corrections verified with focused checks before final suite. Independent review: no additional findings. Full final suite and distribution remain pending.
+
+- Task 1 complete: source `8e63aef`; final 40/40 checks plus packaged synthetic PDF/recovery pass. Evidence: `docs/review/checks/2026-11-15-appointment-guidance-verification.json`. Remaining Task 2: exact-head CI, merge/tag, same-ID Drive replacement and byte readback.

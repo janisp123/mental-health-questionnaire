@@ -1,6 +1,13 @@
 # Active development changelog — mental-health-questionnaire
 
 
+### 2026-11-15 · Guidance v0.2.14 — LOCAL VERIFICATION COMPLETE
+
+All 40 maintained checks pass (`dist/checks-appointment-guidance-final/results.json`, memory mode). Both previously observed failures now pass; legacy disabled-language builds and every guidance locale at 320/390px are covered. One independent review found no additional actionable issues. Clean source `8e63aef` and package/checksums remain unchanged; current package equivalence and source index pass. Evidence: `docs/review/checks/2026-11-15-appointment-guidance-verification.json`.
+
+Resume: finish PR #52 using the final pushed head, require all relevant exact-head CI before merge, confirm merge tree matches, tag `review/v0.2.14`, replace the existing Drive HTML/PDF IDs, verify metadata plus byte-identical downloads, then update delivery evidence/checkpoint. Drive remains v0.2.13 until then. Optional general-context question and frequency redesign remain deferred; no further app changes are pending for this update.
+
+
 ### 2026-11-15 · Guidance v0.2.14 — PACKAGE PREPARED
 
 Clean source `8e63aef` builds verified v0.2.14 HTML/PDF/ZIP with `source_dirty: false`. HTML SHA256 `7400e18606e857b8782fa12079dba9cdb794895a4207533414fddaedd630dbf2`; guide bytes remain `08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75`. Guide rendered and visually inspected. Actual packaged synthetic older-progress import and all 18 clinician preview/PDF response rows/order pass in every active locale, without page errors or network requests; memory mode is explicit. The corrected help test passes at 320/390px; legacy translation-pack regressions pass. Independent source review found no additional actionable findings.
