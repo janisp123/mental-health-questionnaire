@@ -11,6 +11,7 @@ Updated 15 November 2026. Main is the sole active source.
 - All 35 local scripts passed in labelled memory mode; added count regressions failed before the fix and pass after it. Partial progress, hidden follow-ups, deselection, independent report language and saved-record round trips verified. Independent review found no blocking issue; its minor partial-state coverage suggestion was addressed.
 - Required full/app/discovery CI passed with real offline file opening (43645566104 / 43645566062 / 43645566075). Four-language summaries, selector widths and generated clinician PDFs visually checked; unchanged guide rendered and inspected.
 - Both Drive downloads match the verified package exactly. Stable IDs, folder and sharing preserved; previous v0.2.8 archived, snapshot review/v0.2.9 retained. [Delivery evidence](review/checks/2026-11-15-report-counts-drive-sync.json). Existing downloaded copies require a fresh HTML download.
+- Drive folder label is “Mental health questionnaire — current review files”; the historical v0.2.0 label is removed. The HTML/PDF filenames both identify v0.2.9. Folder naming stays version independent; deliverable filenames continue to track the distributed package. [Naming readback](review/checks/2026-11-15-drive-naming.json).
 - Four-language notes, README, distribution manifest and TD statuses agree with the delivered work. Frequency wording remains deferred; focus management and the separate omission-note proposal remain pending.
 
 ## Website and safeguards

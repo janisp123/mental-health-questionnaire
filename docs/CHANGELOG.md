@@ -1,5 +1,9 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · Drive folder label corrected
+
+Verified that both current Drive filenames already identify v0.2.9 and match the release manifest. The enclosing folder still carried its historical v0.2.0/three-language label; renamed it to “Mental health questionnaire — current review files”. Readback confirms the new label, the same two versioned files, and unchanged folder ID, parents and sharing. This folder label needs no version rewrite after future patches. No app, guide, file bytes or download URLs changed; no package rebuild or new app patch note is needed. Evidence: `docs/review/checks/2026-11-15-drive-naming.json`.
+
 ### 2026-11-15 · Report counts and completion labels — DELIVERED
 
 PR #37 merged as `3b96647acf662276830e43a4f868af984bf4000d`, preserving checked head `be485f1bd6399b31c5294084588bf9aec5b8cd77` tree. Required full/app/discovery CI passed with real offline file opening (43645566104 / 43645566062 / 43645566075). v0.2.9 is current in the repository and Drive from clean source `792b192cf0f993ef9e98ed46a5dbca411154442d`. HTML `20628db35f523ef89881582c5a19ad183f42d40cc5ffa4867de2c52c7f20c01c` and unchanged guide PDF `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9` downloaded byte-identical; same IDs, parents and permissions; exactly the current pair in the folder. Snapshot `review/v0.2.9` and archived v0.2.8 preserve rollback.
