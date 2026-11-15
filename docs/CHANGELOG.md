@@ -1,5 +1,12 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · Localized landing-page discovery — source verified
+
+After verified GitHub/Drive v0.2.12 delivery, add English/Latvian/Russian static discovery URLs with localized metadata and useful visible content, reciprocal language alternatives, self-canonicals, language navigation and a complete sitemap. Plan: `docs/superpowers/plans/2026-11-15-localized-discovery.md`. Keep the root URL and one Drive-folder download per page; preserve offline app bytes, non-diagnostic scope and existing bot/training policy. Real indexing/AI suggestions are not claimed.
+
+The publication regression failed before localized output existed and now passes. Artifact contains only English root, Latvian/Russian index pages and sitemap. Verified locale-specific titles/descriptions, single self-canonical, reciprocal absolute en/lv/ru/x-default links, visible language navigation, social metadata, no scripts/noindex and one stable Drive folder action per page. JavaScript-disabled 320/390/1280 layouts, keyboard skip links and actual language navigation round trip passed; localized copy visually inspected. Google/OpenAI official guidance reviewed and linked from launch notes. Current app package equivalence still passes; no app/Drive bytes changed. Independent review, required CI, manual deployment and live readback remain pending.
+
+
 ### 2026-11-15 · Report actions, sharing and contributions v0.2.12 — DELIVERED
 
 PR #46 merged as `282a8dcd62beb427ea70bdc51164c67e097af25a`, preserving checked head `80466c571c4a8dd82cb91879d85e5e7978c4186d` tree; required full/app/discovery CI passed (43688233639 / 43688233520 / 43688233475) with real offline file opening. Source `2e152a732b7077e9d35d5154b8c2828fdc13b4d6` produces verified v0.2.12. Report preview adds confirmed restart and static public-invitation sharing/copying, never session/health/feedback payloads. Provided negative, uncertain and refused choices remain. Only missing/skipped/blank entries are omitted; clinician header is simplified, omission meaning stated, empty printing action removed. Contributions remains visible even without names; consent required. Current public wording uses multilanguage. Original questions, recovery and 650 ms delay remain intact.

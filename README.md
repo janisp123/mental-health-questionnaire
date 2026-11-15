@@ -34,6 +34,8 @@ The questionnaire runs offline and sends no answers. Clinician reports and proje
 - Phone layout fixes and preservation of unfinished feedback when switching languages.
 - Repeatable HTML/PDF/ZIP packaging, source/checksum records, main-based CI, and archived rollback packages.
 
+Landing page languages: [English](https://janisp123.github.io/mental-health-questionnaire/) · [Latviešu](https://janisp123.github.io/mental-health-questionnaire/lv/) · [Русский](https://janisp123.github.io/mental-health-questionnaire/ru/).
+
 ## Questions about depression before an appointment
 
 If you are looking for a free offline questionnaire to help describe low mood before seeing a psychiatrist or therapist, this tool includes questions about mood, interest, sleep, energy, concentration and daily-life impact. You can choose relevant sections and prepare a PDF summary.
