@@ -7,6 +7,7 @@ on:
     paths:
       - 'docs/discovery-preview/**'
       - 'tools/build_discovery.py'
+      - 'MH_Public_version/**'
       - 'tests/discovery/**'
       - '.github/workflows/discovery-*.yml'
 permissions:

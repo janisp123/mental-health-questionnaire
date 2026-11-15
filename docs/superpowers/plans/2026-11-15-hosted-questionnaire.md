@@ -33,9 +33,9 @@
 
 **Interfaces:** Existing `build(base_url, output)` remains valid; optional publication guard verifies current `MH_Public_version/manifest.json` against project manifest Drive records. Reuse current app exactly.
 
-- [ ] Add failing tests for five-file staging, identical app bytes, localized links and invalid/stale/unsafe package rejection.
-- [ ] Implement narrow artifact copy/guard and localized two-mode actions/instructions/privacy.
-- [ ] Add HTTP-hosted synthetic flow covering actual start/answer, locales, recoveries between modes, report/PDF, share payload and no answer requests.
+- [x] Add failing tests for five-file staging, identical app bytes, localized links and invalid/stale/unsafe package rejection.
+- [x] Implement narrow artifact copy/guard and localized two-mode actions/instructions/privacy.
+- [x] Add HTTPS-hosted synthetic flow covering actual start/answer, locales, recoveries between modes, report/PDF, share payload and no answer requests.
 - [ ] Run focused publication/browser checks and existing package/source integrity; record/push checkpoint; one independent review and fixes as needed.
 
 ### Task 2: Checked launch and durable evidence
@@ -52,3 +52,5 @@
 
 - Start: clean main `65454bf`; no product edits yet. TD/changelog/planning checkpoint will be pushed before implementation. Live landing pages still download-only, v0.2.14 downloadable pair is unchanged.
 - Execution: dedicated branch in the current checkout; do the small tasks inline and request one independent review. Use this checklist plus changelog and pushed commits to resume; do not restart completed work.
+
+- Source checkpoint: publication regressions pass (5 tests), package/source integrity passes, and real local HTTPS + offline-memory integration passes. Initial browser harness import confirmation corrected; app bytes remain identical. Review and live deployment remain pending.

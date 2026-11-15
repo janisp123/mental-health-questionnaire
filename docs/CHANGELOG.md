@@ -1,6 +1,13 @@
 # Active development changelog — mental-health-questionnaire
 
 
+### 2026-11-15 · Hosted questionnaire — SOURCE CHECKPOINT
+
+Planning/TD checkpoint `3087dc3` is pushed. Implemented localized open/download actions and instructions, exact package-byte staging at `/questionnaire/`, and deployment guards requiring matching recorded Drive distribution. Website publication will run after verified Drive-sync evidence or approved website edits, while package/source commits alone do not publish a newer app ahead of Drive. Current downloadable v0.2.14 HTML/PDF and all app sources remain unchanged; no new package or Drive upload is needed.
+
+The publication regression failed before implementation (hosted artifact absent) and now passes with five-file allowlisting, metadata/canonical preservation, checksum/unsafe-name/dirty-package rejection and preview-versus-publication guards. Current review package equivalence and original source index pass. Added a real local HTTPS hosted/offline integration check; its initial round-trip failure was a missing test dialog handler for the existing replace-session confirmation, now aligned with established helpers. Real HTTPS launch from every landing locale, 320/390/1280px layouts, all app languages, hosted/offline progress transfer, clinician report/PDF, private invitation and absence of answer-related network requests now pass. Offline loading is explicitly memory mode locally; physical-device testing is not claimed. Next: one independent review, exact-head CI and checked deployment/live readback.
+
+
 ### 2026-11-15 · Hosted questionnaire option — STARTED
 
 Base main `65454bf06301d775b6383f026d09c1f8b1a62940`; branch `feat/host-questionnaire-20261115`. Implement an online launch action on the English/Latvian/Russian landing pages, retaining the stable Drive-folder offline download. Pages will publish the exact already-verified v0.2.14 HTML at `/questionnaire/`; no app/source question, release version or Drive-byte change is planned. Keep a single artifact and add a publication guard/trigger so later hosted updates follow verified Drive delivery.

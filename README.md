@@ -4,6 +4,8 @@
 
 **Current version: v0.2.14 · Latvian / English / Russian / Ukrainian · 712 questions · 15 optional sections.**
 
+[Open questionnaire in your browser](https://janisp123.github.io/mental-health-questionnaire/questionnaire/) — no installation or manual download. You can also use the Drive download below for offline use. Both options use the same questionnaire; save a progress file manually before closing or reloading to continue later.
+
 Free offline questionnaire for adults preparing for a mental-health appointment. All available languages are included in one HTML file. Latvian is the reference and initial language. It does not diagnose or calculate a screening score.
 
 ## Download and open

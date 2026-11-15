@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Free mental-health questionnaire: depression, anxiety and appointment preparation</title>
-  <meta name="description" content="Prepare for a mental-health appointment with a free offline questionnaire for adults: 712 questions, 15 optional sections, multilanguage support, depression and anxiety questions, and a PDF summary. Not clinically validated.">
+  <meta name="description" content="Prepare for a mental-health appointment with a free offline questionnaire for adults: 712 questions, 15 optional sections, multilanguage support, depression and anxiety questions, and a PDF summary. Use online or download for offline use. Not clinically validated.">
   <!-- Unpublished preview. Add a canonical only after the owner approves the actual publication URL. -->
   <style>
     :root { color-scheme: light; font-family: system-ui, sans-serif; color: #20343b; background: #f6f8f7; line-height: 1.65; }
@@ -24,6 +24,7 @@
     .preview { padding: .75rem 1rem; background: #fff1d4; border-left: 4px solid #855800; }
     .lead { font-size: 1.2rem; }
     .actions { display: flex; flex-wrap: wrap; gap: .8rem 1.2rem; align-items: center; }
+    .secondary { display: inline-block; padding: .7rem 1rem; border: 2px solid #155c63; border-radius: .4rem; background: #fff; font-weight: 650; }
     .primary { display: inline-block; padding: .7rem 1rem; border-radius: .4rem; background: #155c63; color: #fff; font-weight: 650; }
     nav ul { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; padding: 0; list-style: none; }
     li + li { margin-top: .35rem; }
@@ -40,15 +41,16 @@
     <p class="preview"><strong>Unpublished preview for owner review.</strong> This description page has not been deployed.</p>
     <p>Mental health questionnaire · technical review</p>
     <h1>Questions to prepare for a mental-health appointment</h1>
-    <p class="lead">A free, private, offline, multilanguage, non-diagnostic questionnaire for adults preparing to speak with a psychiatrist, therapist or another mental-health professional.</p>
+    <p class="lead">A free, private, multilanguage, non-diagnostic questionnaire for adults preparing to speak with a psychiatrist, therapist or another mental-health professional.</p>
     <p>Choose from <strong>712 questions in 15 optional sections</strong>, save progress manually, and prepare a PDF summary to discuss with a professional. Available in Latvian, English, Russian and Ukrainian.</p>
     <p><strong>Technical-review project:</strong> it has not been clinically validated and does not replace medical assessment.</p>
     <div class="actions">
-      <a class="primary" href="https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb">Download from Google Drive</a>
+      <a class="primary" data-open-questionnaire href="__QUESTIONNAIRE_URL__">Open questionnaire</a>
+      <a class="secondary" href="https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb">Download questionnaire</a>
     </div>
     <nav aria-label="On this page"><ul>
       <li><a href="#purpose">Who it is for</a></li>
-      <li><a href="#open">Download and open</a></li>
+      <li><a href="#open">How to use it</a></li>
       <li><a href="#depression">Depression questions</a></li>
       <li><a href="#languages">Languages</a></li>
       <li><a href="#privacy">Privacy</a></li>
@@ -62,15 +64,17 @@
       <p>It does not diagnose, calculate a clinical screening score, interpret your answers, recommend treatment or decide whether you need care. It is not a symptom checker, therapy chatbot or professional endorsement.</p>
     </section>
     <section id="open" aria-labelledby="open-title">
-      <h2 id="open-title">How to download and open the offline questionnaire</h2>
+      <h2 id="open-title">Two ways to use the questionnaire</h2>
+      <h3>Use it in your browser</h3>
+      <p>Choose <strong>Open questionnaire</strong> above to start here. No installation or manual download is needed. Select your language inside the questionnaire.</p>
+      <h3>Download for offline use</h3>
       <ol>
-        <li>Open the linked download folder and choose <strong>Download</strong> for the questionnaire file ending in <strong>.html</strong>. The Drive preview and GitHub source viewer do not run the app.</li>
-        <li>Open the downloaded <strong>.html</strong> file in a browser. On a phone, look in <strong>Files → Downloads</strong> and choose <strong>Open with → browser</strong> if offered.</li>
-        <li>Select your language and the sections you want to use. The downloaded questionnaire runs offline.</li>
-        <li>To continue later, use the app's manual progress-file download, keep the file safely, and import it when you return.</li>
+        <li>Choose <strong>Download questionnaire</strong> above and download the file ending in <strong>.html</strong> from the Google Drive folder. The Drive preview does not run the app.</li>
+        <li>Open the downloaded HTML file in a browser. On a phone, look in <strong>Files → Downloads</strong> and choose <strong>Open with → browser</strong> if offered.</li>
+        <li>Select your language and sections. The downloaded questionnaire works without internet or installation.</li>
       </ol>
-      <p>If the HTML appears as code, choose a browser instead of a text/source viewer. If your phone offers no browser for local HTML, use a desktop browser. Physical-phone downloaded-file testing remains pending.</p>
-      <p>The same Drive folder contains the PDF guide. Download it there and open it in a PDF viewer.</p>
+      <p>Both options use the same questionnaire. In either mode, download a progress file manually before closing or reloading the page if you want to continue later. Import that file when you return; it can be used with either option.</p>
+      <p>The same Drive folder contains the PDF guide. If your phone cannot open a downloaded HTML file, use the online option or a desktop browser. Testing on physical phones remains pending.</p>
     </section>
     <section id="depression" aria-labelledby="depression-title">
       <h2 id="depression-title">Looking for a depression test?</h2>
@@ -97,7 +101,7 @@
     </section>
     <section id="privacy" aria-labelledby="privacy-title">
       <h2 id="privacy-title">Privacy and your PDF summary</h2>
-      <p>The downloaded questionnaire runs on your device and sends no answers. It does not require an account or upload a completed form. This description page has no analytics, forms, scripts or external font requests; visiting hosting and download services still involves those services.</p>
+      <p>Whether opened online or downloaded, the questionnaire processes answers in your browser and does not send them to the project. It does not require an account or upload a completed form. This description page has no analytics, forms, scripts or external font requests; visiting hosting and download services still involves those services.</p>
       <p>The report includes provided responses, including “No”, “I don’t know” and “I don’t want to answer”. Only missing, blank and skipped entries are omitted; omissions do not mean “No”. If there are no answers to include, return to the questionnaire rather than printing an empty report.</p>
       <p>From the clinician preview you can start a new questionnaire after confirmation, or share a public invitation and project link. Sharing the questionnaire excludes your answers, name, feedback and progress. Device sharing depends on your browser; copying and manual text selection remain available.</p>
       <p>You choose whether to create and share a clinician PDF summary. The project-feedback report is separate. Sending feedback opens your own email app; only saved feedback is included, and you decide whether to send it. Your email service can retain what you send. Progress files, reports and printed copies may contain sensitive information: store them carefully and review them before sharing. Your browser, device, backups or chosen sharing service can retain copies.</p>
@@ -105,7 +109,7 @@
     <section id="faq" aria-labelledby="faq-title">
       <h2 id="faq-title">Common questions before an appointment</h2>
       <h3>Where can I find questions to prepare for a psychiatrist appointment?</h3>
-      <p>You can download this questionnaire and use whichever sections help you organise what you want to discuss. Bring a summary or your own notes if useful; completing a questionnaire is not a requirement for seeking help.</p>
+      <p>You can open this questionnaire in your browser or download it and use whichever sections help you organise what you want to discuss. Bring a summary or your own notes if useful; completing a questionnaire is not a requirement for seeking help.</p>
       <h3>Is this a good test to find out whether I have depression?</h3>
       <p>It is designed to organise experiences for an appointment. Its diagnostic accuracy has not been established, so it cannot reliably tell you whether you have depression. The number of questions and a technically working app do not establish clinical accuracy.</p>
       <h3>Can I use it before seeing a therapist?</h3>
@@ -113,7 +117,7 @@
       <h3>Can I save a PDF for my doctor without completing everything?</h3>
       <p>Yes. You can skip questions and prepare a report from the answers you choose to provide. The summary records your responses; it does not provide a diagnosis or interpretation.</p>
       <h3>Do I need to stay online or save an account?</h3>
-      <p>No account is needed. Internet access is needed to obtain the file; the downloaded HTML then runs offline. Download a progress file manually if you want to resume later.</p>
+      <p>No account is needed. Internet access is needed to open the online questionnaire or download the file. For use without internet, keep the downloaded HTML. In either mode, download a progress file manually before closing or reloading the page if you want to resume later.</p>
       <h3>Is it clinically validated or ready for every phone?</h3>
       <p>No clinical validation is claimed. Human language and clinical review, and testing of downloaded files on physical phones, remain pending. Automated technical checks do not establish those results.</p>
       <h3>Is there a charge?</h3>

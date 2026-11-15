@@ -1,5 +1,7 @@
 # Current working checkpoint
 
+**Active work:** hosted questionnaire on `feat/host-questionnaire-20261115`; pushed planning/TD checkpoint `3087dc3`. Resume from [plan](superpowers/plans/2026-11-15-hosted-questionnaire.md) and latest changelog. Local publication and HTTPS/browser tests pass; review, checked merge/deployment and live readback remain pending. The downloadable v0.2.14 pair is unchanged; the current live landing pages still offer download only.
+
 Updated 15 November 2026. Main is the sole active source.
 
 ## Current product and distribution
