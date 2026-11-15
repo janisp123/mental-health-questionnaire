@@ -1,6 +1,13 @@
 # Active development changelog — mental-health-questionnaire
 
 
+### 2026-11-15 · Hosted questionnaire option — STARTED
+
+Base main `65454bf06301d775b6383f026d09c1f8b1a62940`; branch `feat/host-questionnaire-20261115`. Implement an online launch action on the English/Latvian/Russian landing pages, retaining the stable Drive-folder offline download. Pages will publish the exact already-verified v0.2.14 HTML at `/questionnaire/`; no app/source question, release version or Drive-byte change is planned. Keep a single artifact and add a publication guard/trigger so later hosted updates follow verified Drive delivery.
+
+Task is now recorded in TD with verified Codex attribution; plan/resume checklist: `docs/superpowers/plans/2026-11-15-hosted-questionnaire.md`. Current live site still offers download only. Next: failing publication regressions, builder/landing/workflow implementation, hosted/offline synthetic tests and one review; then checked PR, deploy, exact live-byte/readback evidence and final TD/changelog cleanup.
+
+
 ### 2026-11-15 · Completed TD entries removed
 
 Documentation-only cleanup from main `ddf3238ed0a727f460c400ce1ca35aab86dbb51b`. Removed the fulfilled About-description/topics task after public metadata readback confirmed both are populated, the completed branch-migration section, the delivered panic-peak task details and six-area audit instructions/history. Retained only their genuine follow-ups: remaining wording/answer-choice proposals and question-focus accessibility proposal E4. Search-index verification remains pending; both optional-context and frequency-wording tasks remain deferred. Five pending/deferred entries remain, with existing content-approval gates intact.
