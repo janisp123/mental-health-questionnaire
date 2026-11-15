@@ -7,6 +7,7 @@
 - If a task is already completed or outdated, do not repeat it; report evidence and clarify whether it should be removed.
 - For non-conflicting, authorized work: use a short-lived branch from current `main`, verify changes, and follow the project PR/release workflow. After a task is implemented and verified, remove it from TD and record the result in `docs/CHANGELOG.md`.
 - Unapproved possibilities belong only in `docs/FUTURE_IDEAS.md`. TD edits do not by themselves start Codex.
+- **Task attribution:** Every newly added TD item must include `Added by: ChatGPT` or `Added by: Codex`, based on who actually saved the entry to the repository. Record `Implemented by: Not yet` until implementation is verified; then use `Implemented by: ChatGPT` or `Implemented by: Codex` only with evidence (such as a commit/PR). If another agent edits or completes a task, preserve its original `Added by` value. Do not retroactively guess attribution for existing items. These fields track verified actions, not intentions or chat-only claims.
 
 ## To do
 
