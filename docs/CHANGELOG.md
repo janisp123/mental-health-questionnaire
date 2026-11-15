@@ -1,5 +1,11 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · Faster single-answer advance — source verified
+
+Starting from main `a51f5dc5b08b3db386ee7335ab7cf893d63b35f1`: reduce the existing single-choice selection delay from 1,300 to 650 milliseconds. Preserve answer saving, cancellation on navigation, other answer kinds and all question/recovery contracts. Planned product version v0.2.11 with aligned four-language notes, checked integration and same-ID Drive replacement/readback. Current reviewer distribution remains verified v0.2.10 until delivery.
+
+The existing browser regression failed with the original 1,300 ms delay and passes with 650 ms: the selected choice stays visible initially, advances by 750 ms, saves its answer, and a later Skip cancels pending saving. All 35 maintained checks pass in labelled memory mode (`dist/checks-faster-single-answer/results.json`). Direct file opening awaits required CI. Compared complete bundles: only release version and four latest-ten note lists differ; runtime differs only in the timer literal. Frozen questions, answer choices/conditions, other UI text, saved-data schema and guide remain unchanged. Clean-source packaging, independent review, checked integration and verified Drive replacement are next.
+
 ### 2026-11-15 · One Google Drive folder download link — PUBLISHED
 
 PR #42 merged as `8063c261f1b33a23f3b78ade95a48178601cb6bf`, preserving checked head `d4192daa760b707889d14a5493b2bc52eea1b761` tree; all required CI checks passed. Manual Pages deployment 43682403681 succeeded for that exact merge. Live page and sitemap downloaded byte-identical to the tested page-only artifact; main README bytes/blob match the merged source. Both pages have exactly one “Download from Google Drive” link to the same stable folder, with no separate PDF button, individual Drive-file link or raw GitHub artifact download link. Opening instructions consistently say the guide is in the same folder. Canonical and sitemap are correct. Evidence: `docs/review/checks/2026-11-15-single-drive-download-links.json`.
