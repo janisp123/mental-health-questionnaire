@@ -7,7 +7,7 @@ Implementation decisions: complete 712-question coverage with base priorities fo
 - [x] Write and observe failing priority/configuration and report regressions.
 - [x] Add validated locale-independent metadata and pure report-only ordering module; align explanatory note/latest-ten notes in active locales and v0.2.13.
 - [x] Verify response conservation, stable/contextual order, all locales, nonmutation, old progress, PDF/preview consistency; full checks and independent review.
-- [ ] Commit clean source, build/archive/check v0.2.13, checked PR merge and same-ID Drive update/readback.
+- [x] Commit clean source, build/archive/check v0.2.13, checked PR merge and same-ID Drive update/readback.
 - [ ] Merge exact delivery/checkpoint records. No landing-page changes or unrelated TD execution.
 
 Review focus: inverted/protective questions; explicit No vs Yes; uncertainty/refusal; recent vs past events; sensitive histories/identity not automatically urgent; context-family precedence; free-text limits; no automatic clinical interpretation or aggregate score; unchanged report payloads and saved records. Values remain editorial draft, not clinically validated.
@@ -15,3 +15,5 @@ Review focus: inverted/protective questions; explicit No vs Yes; uncertainty/ref
 Independent review fix pass: corrected protective/safe-care direction, graded dependence, extreme-vs-severe impact and supporting-context absence inversions. The supporting-context finding was treated as the same priority-direction defect class and included in the consolidated fix. New explicit ID/code regressions were observed failing before corrections; full verification follows. Professional clinical validation remains pending.
 
 Reviewed fixes: all focused regressions and the complete 39-check suite pass in memory mode after the consolidated correction. No second clinical-validation claim is made.
+
+Delivery: PR #50 and exact Drive readback verified; final record integration proceeds through the protected checked-documentation PR. Priorities remain explicitly unvalidated editorial choices requiring professional clinical review.

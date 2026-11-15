@@ -1,0 +1,77 @@
+{
+  "verified_at": "2026-11-15T15:07:54.630066+02:00",
+  "version": "0.2.13-review+full-bank",
+  "source_commit": "2bb5f012ea6504427db1ffcc3c9c15cfa0599f89",
+  "source_tree": "aab2edbf81d7c7f3d2bd4f7369728dd7483e4456",
+  "source_dirty": false,
+  "checked_head": "63fd436c02552ba28a3b99029ff4f02c26e6090d",
+  "main_merge": "0f2f0b62cb1584bc39e751ed4d732ed8c66464d3",
+  "merge_tree_matches_checked_head": true,
+  "files": [
+    {
+      "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "name": "Mental_Health_Questionnaire_v0.2.13.html",
+      "bytes": 1610402,
+      "sha256": "bb125b991597d6af763501ed1bbc72452bb2f3c7c907c41fd385635590cf2fac",
+      "previous_name": "Mental_Health_Questionnaire_v0.2.12.html",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "verified_byte_identical": true
+    },
+    {
+      "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "name": "Mental_Health_Questionnaire_Guide_v0.2.13.pdf",
+      "bytes": 49212,
+      "sha256": "08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75",
+      "previous_name": "Mental_Health_Questionnaire_Guide_v0.2.12.pdf",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "verified_byte_identical": true
+    }
+  ],
+  "folder_id": "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+  "folder_title": "Mental health questionnaire — current review files",
+  "folder_contains_exactly_current_html_and_pdf": true,
+  "ids_folder_sharing_preserved": true,
+  "pdf_bytes_unchanged": true,
+  "guide_render_visually_inspected": true,
+  "local_checks": {
+    "passed": 39,
+    "failed": 0,
+    "load_mode": "memory"
+  },
+  "ci_runs": {
+    "app-components": 43716679194,
+    "discovery-bundle": 43716679044,
+    "full-questionnaire": 43716679186
+  },
+  "ci_offline_file_opening": true,
+  "priority_scope": "Report ordering only; draft editorial 1–5 metadata, no summed/displayed clinical score or triage assessment",
+  "priority_question_count": 712,
+  "all_coded_choices_preserved_in_all_locales": true,
+  "related_context_and_stable_ties": true,
+  "preview_pdf_html_text_order_consistent": true,
+  "questionnaire_navigation_original_answers_recovery_feedback_preserved": true,
+  "old_current_progress_round_trips": true,
+  "review_fixes": [
+    "Protective/safe-care question directions",
+    "Dependence and extreme-impact ordering",
+    "Supporting context versus absence",
+    "Optional name/surname at background priority",
+    "Missing PDF-reader dependency in app CI setup"
+  ],
+  "policy_status": "EDITORIAL_DRAFT_NOT_CLINICALLY_VALIDATED",
+  "clinical_calibration": "PROFESSIONAL_REVIEW_PENDING",
+  "snapshot": "review/v0.2.13",
+  "limitations": [
+    "Local browser checks use memory loading",
+    "Physical-device compatibility and human language/clinical review pending",
+    "Priority is not a validated severity or risk assessment"
+  ]
+}
