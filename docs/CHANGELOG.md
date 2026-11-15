@@ -1,5 +1,12 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · Report review-priority v0.2.13 — DELIVERED
+
+PR #50 merged as `0f2f0b62cb1584bc39e751ed4d732ed8c66464d3`, preserving checked head `63fd436c02552ba28a3b99029ff4f02c26e6090d` tree. Required full/app/discovery CI passed (43716679186 / 43716679194 / 43716679044) with real offline file opening. Clean source `2bb5f012ea6504427db1ffcc3c9c15cfa0599f89` builds verified v0.2.13 HTML/PDF/ZIP. Report-only 1–5 editorial priorities now place explicit review cues first while preserving condition/named context and stable ties. All coded responses in every active locale preserve exactly the same ID/plain/HTML payload; original questionnaires/answers/navigation/recovery/feedback and 650 ms timing remain intact. Preview, PDF, HTML and text share the order; no summed/displayed clinical score or triage is produced.
+
+Independent-review direction fixes and identifier placement were covered by regressions observed failing before and passing after corrections; all 39 final local checks pass in labelled memory mode. Real preview/PDF and old/current progress round trips, packaged phone widths and guide/clinician PDF inspected. Corrected app CI's missing pinned PDF-reader dependency; fresh exact-head checks passed. Drive downloads match byte-for-byte: HTML `bb125b991597d6af763501ed1bbc72452bb2f3c7c907c41fd385635590cf2fac`, unchanged PDF `08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75`. Clean names, stable IDs/folder/sharing and exactly current pair. Archived v0.2.12 and snapshot `review/v0.2.13` preserve rollback. Evidence: `docs/review/checks/2026-11-15-report-priority-drive-sync.json`. Professional clinical calibration of priorities, human language/clinical and physical-device review remain pending. Localized Pages and unrelated TD are unchanged; checkpoint/manifest updated after readback.
+
+
 ### 2026-11-15 · App CI PDF dependency corrected
 
 The new runtime priority check reads generated PDFs with the existing pinned pypdf dependency. App-component CI previously installed only Playwright and failed with ModuleNotFoundError, while the full local 39-check suite passed with review dependencies installed. Aligned app CI with `tools/review-requirements.txt` plus Playwright, as used by the full workflow. This changes test setup only; application/guide/package bytes and source provenance remain unchanged. Require fresh exact-head CI before merge.
