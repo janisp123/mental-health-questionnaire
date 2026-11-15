@@ -16,8 +16,8 @@
 - [x] Add failing model/screen regressions and a four-language browser scenario for selected-only counts, skips, hidden follow-ups, preserved answers from deselected sections, independent report language and backup round trips.
 - [x] Apply the smallest shared fixes; align LV/EN/RU/UK labels, coverage explanation and latest-ten patient notes; assign v0.2.9.
 - [x] Run focused checks, all maintained checks in labelled local memory mode, and independent review. Inspect summary, selector and clinician output at phone widths; verify PDF print output.
-- [ ] Commit clean source, archive v0.2.8, build/verify matching HTML/PDF/ZIP, integrate exact checked PR head, preserve a version tag, replace the same Drive IDs and compare exact downloaded bytes.
-- [ ] Record delivery, current checkpoint and narrowly completed audit findings. Keep other audit proposals pending.
+- [x] Commit clean source, archive v0.2.8, build/verify matching HTML/PDF/ZIP, integrate exact checked PR head, preserve a version tag, replace the same Drive IDs and compare exact downloaded bytes.
+- [x] Record delivery, current checkpoint and narrowly completed audit findings. Keep other audit proposals pending.
 - [x] Check live landing page/sitemap and public search observations; distinguish crawl eligibility from confirmed indexing. Record owner-account steps if Search Console/Bing verification is unavailable; do not claim an index request or AI recommendation occurred without evidence.
 
 ## Record
@@ -29,3 +29,5 @@
 - Full-bank visual evidence: each locale showed covered/answered/skipped = 63/2/1 for S11 plus one previously saved S12 response. Summary/selector width checks passed at 320/390px. Four generated clinician PDFs were rendered and inspected; no count/answer text clipping.
 
 - Package preparation: clean source `792b192cf0f993ef9e98ed46a5dbca411154442d`; HTML/PDF/ZIP verified. Packaged full-bank counts and print generation match source in all four locales. Unchanged guide rendered and inspected. Checked integration and Drive readback pending.
+
+- Delivery: `3b96647acf662276830e43a4f868af984bf4000d` preserves checked `be485f1bd6399b31c5294084588bf9aec5b8cd77` tree. Drive pair matched exact bytes, sharing/folder preserved; delivery records and narrowed TD statuses are integrated through the checked follow-up docs PR. Search setup remains owner-account dependent.

@@ -1,5 +1,14 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · Report counts and completion labels — DELIVERED
+
+PR #37 merged as `3b96647acf662276830e43a4f868af984bf4000d`, preserving checked head `be485f1bd6399b31c5294084588bf9aec5b8cd77` tree. Required full/app/discovery CI passed with real offline file opening (43645566104 / 43645566062 / 43645566075). v0.2.9 is current in the repository and Drive from clean source `792b192cf0f993ef9e98ed46a5dbca411154442d`. HTML `20628db35f523ef89881582c5a19ad183f42d40cc5ffa4867de2c52c7f20c01c` and unchanged guide PDF `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9` downloaded byte-identical; same IDs, parents and permissions; exactly the current pair in the folder. Snapshot `review/v0.2.9` and archived v0.2.8 preserve rollback.
+
+Audit E2/E3 are completed: correct selected/saved applicable coverage, preserved previous answers, and consistent covered/answered/skipped labels in all four locales. All 35 local checks passed in labelled memory mode; focused regressions observed failing before fixes and passing afterward. Partial progress, restored records and conditional visibility verified; summaries and generated clinician PDFs visually inspected. Independent review found no blocking issue; a minor partial-state test gap was addressed. Questions, scales and recovery remain unchanged; frequency wording stays deferred. Evidence: `docs/review/checks/2026-11-15-report-counts-drive-sync.json`. TD/checkpoint/manifest updated after verified delivery. Human language/clinical and physical-device checks remain pending.
+
+Search follow-up is recorded in `docs/discovery-preview/INDEXING_STATUS.md`: public eligibility checks passed, but actual Google/Bing indexing and AI recommendations remain unverified. No index request or website change occurred; owner-account inspection is the next step.
+
+
 ### 2026-11-14 · v0.2.9 report-count package prepared
 
 Clean source `792b192cf0f993ef9e98ed46a5dbca411154442d` builds verified matching HTML/PDF/ZIP. HTML SHA256 `20628db35f523ef89881582c5a19ad183f42d40cc5ffa4867de2c52c7f20c01c`; guide PDF bytes remain unchanged. Archived exact v0.2.8, promoted repository pair and download pointers. Drive is still v0.2.8 until checked integration and exact-byte readback. Stable landing-page links need no version rewrite; search-account ownership/indexing remains unverified.
