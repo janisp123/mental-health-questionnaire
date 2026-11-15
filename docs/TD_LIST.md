@@ -33,3 +33,5 @@
 - [ ] **Review question-focus accessibility proposal (E4).**
   - **Work:** Evaluate moving keyboard/screen-reader focus to the heading when a new question is displayed, preserving sensible navigation and existing support-message focus. Return a small, concrete proposal with expected benefit and relevant keyboard, screen-reader and phone checks.
   - **Approval gate:** This remains an unimplemented proposal. No runtime change is authorized by this TD entry; preserve answer saving, auto-advance, medication/feedback controls and saved-progress behavior if later approved.
+
+<!-- Temporary connector update-file verification on test branch; not a project task. -->
