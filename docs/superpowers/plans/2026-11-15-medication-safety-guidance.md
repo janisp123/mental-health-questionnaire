@@ -45,9 +45,9 @@
 **Interfaces:** Consume clean verified source commit; output checked v0.2.14 pair and actual Drive readback record.
 
 - [x] Commit clean source; build/verify unique `dist/review-0.2.14` and inspect guide/clinician output.
-- [ ] Preserve v0.2.13, stage current pair/README/manifest and push checked PR; wait for exact-head CI and merge authorized update.
-- [ ] Replace same Drive IDs, preserving folder/sharing; read back both files and compare bytes; create version snapshot.
-- [ ] Record exact commits/hashes/CI/readback, reconcile active TD only where warranted, and leave one precise next action.
+- [x] Preserve v0.2.13, stage current pair/README/manifest and push checked PR; exact-head CI passed and PR #52 merged.
+- [x] Replace same Drive IDs, preserve folder/sharing; both byte readbacks pass; version snapshot pushed.
+- [x] Record exact commits/hashes/CI/readback; optional prompt deferred in TD; checkpoint gives the next action.
 
 ## Resume ledger
 
@@ -57,3 +57,5 @@
 - Task 1 checkpoint: `7ee542ec30830467ea7518782fd53767e9408c15` pushed as PR #52. First full suite 38/40; both diagnosed corrections verified with focused checks before final suite. Independent review: no additional findings. Full final suite and distribution remain pending.
 
 - Task 1 complete: source `8e63aef`; final 40/40 checks plus packaged synthetic PDF/recovery pass. Evidence: `docs/review/checks/2026-11-15-appointment-guidance-verification.json`. Remaining Task 2: exact-head CI, merge/tag, same-ID Drive replacement and byte readback.
+
+- Task 2 complete: PR #52 and exact-head CI verified; v0.2.14 Drive pair downloaded byte-identical, stable IDs/sharing preserved. Delivery evidence and final changelog/checkpoint are recorded in the documentation follow-up.

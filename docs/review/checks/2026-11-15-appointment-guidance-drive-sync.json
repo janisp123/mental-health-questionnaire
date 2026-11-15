@@ -1,0 +1,58 @@
+{
+  "verified_at": "2026-11-15T18:07:17.346799+02:00",
+  "version": "0.2.14-review+full-bank",
+  "source_commit": "8e63aefa0c53a505af0867db964e7848f1ad7215",
+  "source_tree": "dd36023d84fec192d58653aa0243a9bc9946496e",
+  "source_dirty": false,
+  "checked_head": "633c9c0ab15833b9b78acfec260afceacfab6d81",
+  "main_merge": "7c755fa0325ed20dd3a77874770cff531cc999f6",
+  "merge_tree_matches_checked_head": true,
+  "files": [
+    {
+      "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "name": "Mental_Health_Questionnaire_v0.2.14.html",
+      "bytes": 1614492,
+      "sha256": "7400e18606e857b8782fa12079dba9cdb794895a4207533414fddaedd630dbf2",
+      "previous_name": "Mental_Health_Questionnaire_v0.2.13.html",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "verified_byte_identical": true
+    },
+    {
+      "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "name": "Mental_Health_Questionnaire_Guide_v0.2.14.pdf",
+      "bytes": 49212,
+      "sha256": "08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75",
+      "previous_name": "Mental_Health_Questionnaire_Guide_v0.2.13.pdf",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "verified_byte_identical": true
+    }
+  ],
+  "folder_id": "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+  "folder_contains_exactly_current_html_and_pdf": true,
+  "ids_folder_sharing_preserved": true,
+  "pdf_bytes_unchanged": true,
+  "guide_render_visually_inspected": true,
+  "local_checks": {
+    "passed": 40,
+    "failed": 0,
+    "load_mode": "memory"
+  },
+  "ci_runs": {
+    "app-components": 43733188539,
+    "discovery-bundle": 43733188532,
+    "full-questionnaire": 43733188566
+  },
+  "ci_offline_file_opening": true,
+  "frozen_questions_and_answer_contracts_preserved": true,
+  "optional_context_question": "deferred",
+  "frequency_scales": "unchanged",
+  "human_language_clinical_and_physical_device_review": "pending"
+}

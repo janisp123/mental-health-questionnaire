@@ -1,6 +1,15 @@
 # Active development changelog — mental-health-questionnaire
 
 
+### 2026-11-15 · Medication and safety guidance v0.2.14 — DELIVERED
+
+PR #52 merged as `7c755fa0325ed20dd3a77874770cff531cc999f6`, preserving checked head `633c9c0ab15833b9b78acfec260afceacfab6d81` tree. Required app/discovery/full CI passed (43733188539 / 43733188532 / 43733188566) with real offline file opening. Clean source `8e63aefa0c53a505af0867db964e7848f1ad7215` builds the matching verified v0.2.14 pair/ZIP. Optional M14_02 observation examples and M02_09 safety-section guidance plus clearer medicine instructions/labels are present in all active locales. Original 712 questions, answer codes/conditions/support, progress format, reports and frequency scales remain unchanged; optional general-context question is deferred in TD.
+
+All 40 local checks pass in labelled memory mode; focused failing-then-passing regressions, independent source review, 320/390px guidance, packaged older progress and clinician preview/PDF preservation are recorded. Guide rendered/inspected and unchanged. Both same-ID Drive downloads match exactly: HTML `7400e18606e857b8782fa12079dba9cdb794895a4207533414fddaedd630dbf2`; PDF `08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75`. Clean version-ending names, folder/sharing and exactly the current pair are preserved. Previous v0.2.13 pair and snapshot `review/v0.2.14` retain rollback. Evidence: `docs/review/checks/2026-11-15-appointment-guidance-drive-sync.json`. Manifest/checkpoint now reflect actual readback; localized landing pages and stable Drive-folder download links remain valid without edits.
+
+Next: human language/clinical review, professional report-priority calibration and outstanding TD/device/indexing work. No further app or Drive change is pending for this update.
+
+
 ### 2026-11-15 · Guidance v0.2.14 — LOCAL VERIFICATION COMPLETE
 
 All 40 maintained checks pass (`dist/checks-appointment-guidance-final/results.json`, memory mode). Both previously observed failures now pass; legacy disabled-language builds and every guidance locale at 320/390px are covered. One independent review found no additional actionable issues. Clean source `8e63aef` and package/checksums remain unchanged; current package equivalence and source index pass. Evidence: `docs/review/checks/2026-11-15-appointment-guidance-verification.json`.
