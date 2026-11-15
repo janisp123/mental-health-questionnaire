@@ -33,9 +33,9 @@
 
 **Interfaces:** Input existing normalized bundle; output only two added translation `help` fields. Reuse existing `QuestionnaireScreens.question` and shared report/recovery interfaces unchanged.
 
-- [ ] Add/run focused failing regression for guidance presence and original answer/report contracts.
-- [ ] Add strict narrow help overlay; edit locale catalogs one language at a time; bump source to 0.2.14 and add aligned change notes.
-- [ ] Verify focused tests plus synthetic runtime/print/save compatibility; record evidence in changelog and commit/push checkpoint.
+- [x] Add/run focused failing regression for guidance presence and original answer/report contracts.
+- [x] Add strict narrow help overlay; edit locale catalogs one language at a time; bump source to 0.2.14 and add aligned change notes.
+- [x] Verify focused builder/report checks and commit/push checkpoint; full-suite runtime/recovery checks are retained.
 - [ ] Run full maintained checks once after focused checks; obtain one fresh branch review; fix material findings with regressions.
 
 ### Task 2: Reviewed package and delivery
@@ -53,3 +53,5 @@
 
 - Start: base `6032f999587532e1e709cda85a4b5b8a04d7b437`; no product edits yet. Current distribution remains v0.2.13. Execute Task 1 first.
 - Execution: use current clean checkout on a dedicated short-lived branch; avoid an unnecessary second checkout. Changelog and this checklist are the durable ledger; push checkpoints so recovery does not depend on the current machine/chat.
+
+- Task 1 checkpoint: `7ee542ec30830467ea7518782fd53767e9408c15` pushed as PR #52. First full suite 38/40; both diagnosed corrections verified with focused checks before final suite. Independent review: no additional findings. Full final suite and distribution remain pending.

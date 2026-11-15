@@ -419,14 +419,19 @@ def apply_appointment_guidance(bundle):
             or not isinstance(questions, dict) or set(questions) != {"M14_02", "M02_09"}):
         raise ValueError("Invalid appointment guidance")
     by_id = {q["id"]: q for group in bundle["groups"] for q in group["questions"]}
+    # A legacy build may deliberately disable a configured translation pack.
+    # Validate the complete catalog, but apply only its active locales.
+    configured = set(SOURCE_LANGS) | set(read_json(QUESTIONNAIRE / "build.json").get("translationPacks", {}))
+    required_locales = configured | set(bundle["ui"])
     for qid, translations in questions.items():
         if (qid not in by_id or not isinstance(translations, dict)
-                or set(translations) != set(bundle["ui"])):
+                or set(translations) != required_locales):
             raise ValueError("Missing appointment guidance language or question: " + qid)
         for locale, text in translations.items():
             if not isinstance(text, str) or not text.strip():
                 raise ValueError("Missing appointment guidance: " + qid + "/" + locale)
-            by_id[qid]["translations"][locale]["help"] = text
+            if locale in bundle["ui"]:
+                by_id[qid]["translations"][locale]["help"] = text
 
 
 def make_html(data=None):

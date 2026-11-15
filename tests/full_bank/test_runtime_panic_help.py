@@ -12,7 +12,7 @@ with tempfile.TemporaryDirectory() as tmp,sync_playwright() as pw:
   for locale in bundle['ui']:
    page,errors,network=open_page(browser,path)
    restore(page,{'schema':'mental-pilot-recovery-v1','version':bundle['version'],'layoutVersion':bundle['layout_version'],'lang':locale,'selected':[question['module']],'sectionConfirmed':True,'currentId':question['id'],'answers':{},'feedback':{}})
-   help=page.locator('.question p.help');assert help.is_visible()
+   help=page.get_by_text(question['translations'][locale]['help'],exact=True);assert help.is_visible()
    assert help.inner_text()==question['translations'][locale]['help']
    assert page.locator('#question-heading').inner_text()==question['translations'][locale]['title']
    for width in (320,390):

@@ -1,6 +1,11 @@
 # Active development changelog — mental-health-questionnaire
 
 
+### 2026-11-15 · Guidance compatibility corrections — VERIFIED
+
+Source checkpoint `7ee542ec30830467ea7518782fd53767e9408c15` is pushed in PR #52. Initial full run: 38 passed, 2 failed. Root causes: exact active-locale equality rejected the maintained legacy build with Ukrainian disabled; the expanded browser assertion matched both new guidance and existing medicine instructions. Validate the complete configured guidance catalog but apply active locales only; locate the expected rendered helper exactly. Translation-pack and focused guidance checks now pass; the browser correction is being verified. One independent whole-branch review found no additional actionable issues; readiness depends on these regressions and final suite. Drive access is resolved; current pair still v0.2.13. Next: final full suite, clean source commit/package, exact-head CI, merge and verified Drive update.
+
+
 ### 2026-11-15 · Medication and safety guidance — SOURCE IMPLEMENTED
 
 Checkpoint: `a2035ac` plan/start record is pushed; draft PR #52 tracks `fix/medication-safety-guidance-20261115`. Added optional localized help to existing M14_02/M02_09 via a strictly validated overlay; corrected medicine instructions/strength labels and clarified observations/dose timing in LV/EN/RU/UK. Original questions/choices/conditions/support triggers/recovery/report priority remain unchanged. General-context question stays deferred. Source is now v0.2.14; current repository package and Drive remain v0.2.13 until reviewed delivery.
