@@ -1,5 +1,39 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · App CI PDF dependency corrected
+
+The new runtime priority check reads generated PDFs with the existing pinned pypdf dependency. App-component CI previously installed only Playwright and failed with ModuleNotFoundError, while the full local 39-check suite passed with review dependencies installed. Aligned app CI with `tools/review-requirements.txt` plus Playwright, as used by the full workflow. This changes test setup only; application/guide/package bytes and source provenance remain unchanged. Require fresh exact-head CI before merge.
+
+
+### 2026-11-15 · Final report-priority candidate prepared
+
+Clean source `2bb5f012ea6504427db1ffcc3c9c15cfa0599f89` includes the reviewed priority fixes and background placement for optional identifiers. Rebuilt/verified v0.2.13 package: HTML `bb125b991597d6af763501ed1bbc72452bb2f3c7c907c41fd385635590cf2fac`; guide unchanged `08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75`. This supersedes the earlier unreleased candidate package; v0.2.12 archive and current Drive pair remain unchanged. Focused regressions and packaged locale layout checks pass; final full-suite verification and updated-head CI are in progress before merge/distribution.
+
+
+### 2026-11-15 · Report-priority identifier placement
+
+Packaged visual inspection identified that the two free-text source fields are optional name/surname, not symptom narratives. Kept both at background priority 1 instead of the generic text default; added a regression observed failing before this correction. No answer wording/content, source questions, recovery or clinical cue mapping changed. Shared release remains the unreleased v0.2.13 candidate; rebuild from the new clean source before distribution.
+
+
+### 2026-11-15 · Report-priority v0.2.13 package prepared
+
+Clean source `188574dd048cab90883f91000c3342e896776893` builds verified HTML/PDF/ZIP with `source_dirty: false`. HTML SHA256 `c496144ec577aee9d45bd3833105cec99e98a09b6f8bbaca32a9b01b63f358aa`; guide PDF remains `08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75`. Original v0.2.12 archived exactly; current repository package/README point to v0.2.13. All 39 local checks pass after reviewed direction fixes; packaged locale layouts/PDF and unchanged guide inspected. Required real-file CI, checked merge, version snapshot and same-ID Drive readback remain pending. Drive still holds verified v0.2.12. No Pages update is needed; priority values remain internal editorial draft, not clinically validated scores.
+
+
+### 2026-11-15 · Report review priority — source verified
+
+Implemented report-only internal 1–5 editorial ordering with complete explicit ID/code metadata, context-family preservation and stable original-order ties. All clinician renderers share the same entry order; existing callers without policy retain legacy order. Every coded choice in every active locale retains exactly the same ID/plain/HTML payload; no question/answer/policy object mutation. Original question/choice/condition/navigation data, progress schema, feedback, existing help triggers and 650 ms timing remain unchanged. Uncertainty/refusal remain explicit neutral entries; values are never summed/displayed as a clinical score.
+
+Independent review identified protective/safe-care inversions, graded dependence and extreme-vs-severe impact direction errors, plus supporting-context negatives treated as absence. All were corrected in one covered fix pass: new ID/code regressions were observed failing then passing. Complete metadata validation, stable/context edge cases, runtime preview/PDF ordering, old/current progress round trips, offline phone widths and all 39 maintained checks pass (`dist/checks-report-priority-reviewed/results.json`, explicitly labelled memory mode). No unaddressed implementation findings remain from that review. The table remains editorial draft with professional clinical calibration pending. Clean packaging, real-file CI, checked merge and Drive readback are next.
+
+
+### 2026-11-15 · Report review priority — IN PROGRESS
+
+Start from main `39eab2399a118e761e219c6add3537fddbc4d8fb`. Implement approved report-only 1–5 editorial priority ordering with explicit answer-code rules, linked context and stable ties. Keep every previously included response and original text, questionnaire navigation, frozen data, recovery and feedback unchanged. Plan: `docs/superpowers/plans/2026-11-15-report-review-priority.md`. Planned shared release v0.2.13; Drive remains verified v0.2.12 until delivery. No validated clinical severity/risk score or triage claim is introduced.
+
+Focused regressions pass: complete 712-ID/code metadata validation, all coded choices preserved verbatim across every active locale, stable descending/contextual ordering, protective inversions, current/history distinctions, neutral uncertainty/refusal, and no mutation. Runtime preview/PDF order, old/current progress round trips, offline phone widths passed. Context-parent absence and neutral-status/weight guards failed before fixes and pass afterward. Complete bundle comparison confirms frozen questionnaire/navigation/choice/condition/presentation data unchanged except the separate reportPriority field, version and UI notes. Full maintained checks are running; independent review, packaging, checked integration and Drive delivery remain pending.
+
+
 ### 2026-11-15 · Localized discovery pages — PUBLISHED
 
 PR #48 merged as `dc6b46d8ea5a0a68e181ff5aacf7777513300372`, preserving checked head `a3e3ad1f023e9e1e146e8ffbc7bdca9db272cc3d` tree. Required full/app/discovery CI passed (43706704797 / 43706704763 / 43706704773); manual Pages deployment 43706924365 succeeded for the exact merge. English root, Latvian `/lv/`, Russian `/ru/` and sitemap returned HTTPS 200 and match the tested builder byte-for-byte. Every page has native visible copy/title/description, a single self-canonical, reciprocal absolute language alternatives, visible language navigation, social preview metadata and one stable Drive-folder download action. No script/tracking or bot/training-policy change; artifact contains only localized HTML and sitemap.
