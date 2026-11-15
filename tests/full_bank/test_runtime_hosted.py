@@ -45,7 +45,12 @@ with tempfile.TemporaryDirectory() as tmp,origin(tmp) as base,sync_playwright() 
   page.on('dialog',lambda d:d.accept())
   response=page.goto(base+path);assert response.status==200
   for width in (320,390,1280):
-   page.set_viewport_size({'width':width,'height':844});assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
+   page.set_viewport_size({'width':width,'height':844});assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'),(landing_locale,width,page.evaluate('({scroll:document.documentElement.scrollWidth,width:innerWidth,overflow:[...document.querySelectorAll("h1,h2,h3,a")].filter(e=>e.scrollWidth>e.clientWidth+1).map(e=>({text:e.innerText,client:e.clientWidth,scroll:e.scrollWidth}))})'))
+  # A wider system-font fallback must not push translated headings outside their cards.
+  page.set_viewport_size({'width':320,'height':844})
+  fallback=page.add_style_tag(content=':root { font-family: "DejaVu Sans", sans-serif !important; }')
+  assert page.evaluate('document.documentElement.scrollWidth <= innerWidth && [...document.querySelectorAll("h1,h2,h3")].every(e=>e.scrollWidth<=e.clientWidth+1)'),('fallback font heading overflow',landing_locale)
+  fallback.evaluate('node=>node.remove()')
   folder='https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb'
   assert page.locator(f'a[href="{folder}"]').count()==1
   page.locator('[data-open-questionnaire]').click();page.wait_for_selector('[data-act="start"]')
@@ -77,7 +82,7 @@ with tempfile.TemporaryDirectory() as tmp,origin(tmp) as base,sync_playwright() 
   restore(page,saved)
   act(page,'results');act(page,'doctor')
   for width in (320,390,1280):
-   page.set_viewport_size({'width':width,'height':844});assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
+   page.set_viewport_size({'width':width,'height':844});assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'),(landing_locale,width,page.evaluate('({scroll:document.documentElement.scrollWidth,width:innerWidth,overflow:[...document.querySelectorAll("h1,h2,h3,a")].filter(e=>e.scrollWidth>e.clientWidth+1).map(e=>({text:e.innerText,client:e.clientWidth,scroll:e.scrollWidth}))})'))
   report=page.locator('.report-preview').inner_text();assert 'SYNTHETIC_HOSTED_MEDICINE' in report
   for question_id,code in [('M06_01','A'),('M06_02','C'),('M06_23','D')]:
    assert by_id[question_id]['translations']['en']['choices'][code] in report

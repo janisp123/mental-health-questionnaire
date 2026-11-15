@@ -56,3 +56,5 @@
 - Source checkpoint: publication regressions pass (5 tests), package/source integrity passes, and real local HTTPS + offline-memory integration passes. Initial browser harness import confirmation corrected; app bytes remain identical. Review and live deployment remain pending.
 
 - Review correction: ordinary CI must support unshipped packages; positive parity fixture is synthetic, preview staging does not enable deployment-only verification. Reproduced RED fixture and GREEN publication suite. Actual current Drive HTML downloaded equal to package. Final exact-head CI and deployment remain pending; PR #56.
+
+- CI correction: initial final-head full suite had 40 pass/1 fail for RU 320px heading overflow. Reproduced using wider system font; font regression RED then GREEN after heading wrapping. Focused HTTPS/offline flow and publication tests pass. Require fresh final-head CI before publication.
