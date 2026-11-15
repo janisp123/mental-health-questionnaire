@@ -1,5 +1,12 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · Localized discovery pages — PUBLISHED
+
+PR #48 merged as `dc6b46d8ea5a0a68e181ff5aacf7777513300372`, preserving checked head `a3e3ad1f023e9e1e146e8ffbc7bdca9db272cc3d` tree. Required full/app/discovery CI passed (43706704797 / 43706704763 / 43706704773); manual Pages deployment 43706924365 succeeded for the exact merge. English root, Latvian `/lv/`, Russian `/ru/` and sitemap returned HTTPS 200 and match the tested builder byte-for-byte. Every page has native visible copy/title/description, a single self-canonical, reciprocal absolute language alternatives, visible language navigation, social preview metadata and one stable Drive-folder download action. No script/tracking or bot/training-policy change; artifact contains only localized HTML and sitemap.
+
+Artifact regression failed before implementation and passes afterward. No-JS 320/390/1280 layouts, keyboard skip links and language navigation passed. Independent review found no issues. Root robots returned 404 (default access); simulated Googlebot/bingbot/OAI-SearchBot requests to every locale returned the same page bytes. Firecrawl retrieved the live Latvian/Russian native content and metadata. These checks establish public content availability, not actual crawler visits, indexing or AI recommendations; Search Console/Bing owner verification and index requests remain pending. Evidence: `docs/review/checks/2026-11-15-localized-discovery-live.json`. App/guide/Drive stay verified v0.2.12; no repeat release/upload. Current checkpoint/TD/indexing notes reflect delivery and remaining indexing work.
+
+
 ### 2026-11-15 · Localized landing-page discovery — source verified
 
 After verified GitHub/Drive v0.2.12 delivery, add English/Latvian/Russian static discovery URLs with localized metadata and useful visible content, reciprocal language alternatives, self-canonicals, language navigation and a complete sitemap. Plan: `docs/superpowers/plans/2026-11-15-localized-discovery.md`. Keep the root URL and one Drive-folder download per page; preserve offline app bytes, non-diagnostic scope and existing bot/training policy. Real indexing/AI suggestions are not claimed.
