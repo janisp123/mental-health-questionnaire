@@ -36,7 +36,7 @@
 - [x] Add failing tests for five-file staging, identical app bytes, localized links and invalid/stale/unsafe package rejection.
 - [x] Implement narrow artifact copy/guard and localized two-mode actions/instructions/privacy.
 - [x] Add HTTPS-hosted synthetic flow covering actual start/answer, locales, recoveries between modes, report/PDF, share payload and no answer requests.
-- [ ] Run focused publication/browser checks and existing package/source integrity; record/push checkpoint; one independent review and fixes as needed.
+- [x] Run focused publication/browser checks and existing package/source integrity; record/push checkpoint; one independent review and fixes as needed.
 
 ### Task 2: Checked launch and durable evidence
 
@@ -44,9 +44,9 @@
 
 **Interfaces:** Consume checked main and already verified Drive package; publish stable `/questionnaire/` and byte-readback of every locale/app/sitemap.
 
-- [ ] Push checked PR; require exact-head CI and merge without changing the product tree.
-- [ ] Run/observe Pages deployment from checked main; verify actual HTTPS content type, links and identical app bytes; smoke-test live flow and compare Drive readback.
-- [ ] Record exact commits/run IDs/hashes and test limits, preserve old checkpoint, remove completed task after verification and merge final docs.
+- [x] Push checked PR; require exact-head CI and merge without changing the product tree.
+- [x] Run/observe Pages deployment from checked main; verify actual HTTPS content type, links and identical app bytes; smoke-test live flow and compare Drive readback.
+- [x] Record exact commits/run IDs/hashes and test limits, preserve old checkpoint, remove completed task after verification and merge final docs.
 
 ## Resume ledger
 
@@ -58,3 +58,5 @@
 - Review correction: ordinary CI must support unshipped packages; positive parity fixture is synthetic, preview staging does not enable deployment-only verification. Reproduced RED fixture and GREEN publication suite. Actual current Drive HTML downloaded equal to package. Final exact-head CI and deployment remain pending; PR #56.
 
 - CI correction: initial final-head full suite had 40 pass/1 fail for RU 320px heading overflow. Reproduced using wider system font; font regression RED then GREEN after heading wrapping. Focused HTTPS/offline flow and publication tests pass. Require fresh final-head CI before publication.
+
+- Complete: PR #56, exact-head CI and automatic Pages run 43749133437 succeeded. Every live artifact equals checked bytes; app equals actual Drive download. Live browser/offline transfer/report/privacy checks pass. Final delivery evidence/checkpoint/changelog recorded; completed task removed from TD. No app/Drive changes.

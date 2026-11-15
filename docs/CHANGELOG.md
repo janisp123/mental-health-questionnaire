@@ -1,6 +1,17 @@
 # Active development changelog — mental-health-questionnaire
 
 
+### 2026-11-15 · Open questionnaire from landing pages — LIVE
+
+Added by: Codex. Implemented by: Codex, verified through PR #56 and live readback. PR #56 merged as `6206bab5bf6a2887ea3a611c5e395a4f2deed686`, preserving checked head `675dd99c5a90a46ffa2fa6eee29766cf61878d46` tree. All three required checks passed (app 43748773348, discovery 43748773277, full 43748773297), including all 41 maintained checks with real offline file opening. Automatic Pages publication **43749133437** succeeded for that merge.
+
+English/Latvian/Russian landing pages now provide online-open and existing Drive-folder download actions. Hosted `/questionnaire/` is exact v0.2.14 package HTML, also compared with an actual Drive download: SHA256 `7400e18606e857b8782fa12079dba9cdb794895a4207533414fddaedd630dbf2`. Every live landing page, sitemap and app returned HTTPS 200 and byte-identical checked output. No separate app source, changed questionnaire/guide/translation, version bump or Drive upload. Future hosted refresh follows verified Drive-sync records; strict version/source/pair/hash checks prevent publishing a newer package ahead of Drive. Preview CI remains compatible with unshipped packages.
+
+Local HTTPS and live browser flows passed from all landing locales: 320/390/1280px layouts, fallback-font headings, app languages, hosted/offline progress transfer, clinician PDF with negative/uncertain/refused/medicine responses, private invitation and no answer-related requests. Local offline loading was labelled memory mode; CI used real file opening. One independent review identified future-release test coupling, corrected with regression evidence. CI also exposed Russian narrow-heading overflow, reproduced and fixed with heading wrapping. The live verifier now reads the actual browser navigation response rather than issuing a duplicate API-client request. Desktop actions and narrow translated heading visually inspected.
+
+Evidence: `docs/review/checks/2026-11-15-hosted-questionnaire-live.json`. Removed the completed online/offline task from TD; existing attribution rule and five unrelated pending/deferred items remain. Checkpoint records current live state. Human clinical/language and physical-device review, search indexing and other TD remain pending. Next: review those outstanding items separately; no further hosting or download change is pending for this task.
+
+
 ### 2026-11-15 · Hosted landing-page font fallback — VERIFIED
 
 Exact-head CI for `3601a8d7f473ebdfa00961877a743425eb268dc0` passed 40 checks but exposed a Russian landing-page heading overflow in the new hosted test. Reproduced at 320px with a wider system-font fallback: the privacy heading exceeded its card and page width. The new font regression was observed failing; shared heading `overflow-wrap: anywhere` now keeps it within the card and the full focused HTTPS/offline flow passes. Added locale/width/overflow diagnostics to avoid opaque future layout failures. All five publication tests also pass.

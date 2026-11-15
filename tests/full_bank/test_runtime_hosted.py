@@ -53,10 +53,12 @@ with tempfile.TemporaryDirectory() as tmp,origin(tmp) as base,sync_playwright() 
   fallback.evaluate('node=>node.remove()')
   folder='https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb'
   assert page.locator(f'a[href="{folder}"]').count()==1
-  page.locator('[data-open-questionnaire]').click();page.wait_for_selector('[data-act="start"]')
+  with page.expect_response(lambda r:r.url==base+'questionnaire/' and r.request.is_navigation_request()) as loaded:
+   page.locator('[data-open-questionnaire]').click()
+  page.wait_for_selector('[data-act="start"]')
   assert page.url==base+'questionnaire/'
-  # Check actual HTTP response bytes and MIME, not a source viewer or rewritten app.
-  response=context.request.get(page.url);assert response.status==200
+  # Inspect the response that actually launched the app; do not make a second client request.
+  response=loaded.value;assert response.status==200
   assert response.headers['content-type'].startswith('text/html')
   assert response.body()==artifact.read_bytes()
   baseline_requests=len(requests)

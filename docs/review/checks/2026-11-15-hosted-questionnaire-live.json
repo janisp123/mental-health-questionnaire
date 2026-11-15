@@ -1,0 +1,90 @@
+{
+  "verified_at": "2026-11-15T20:57:10.706225+02:00",
+  "source_merge": "6206bab5bf6a2887ea3a611c5e395a4f2deed686",
+  "checked_head": "675dd99c5a90a46ffa2fa6eee29766cf61878d46",
+  "merge_tree_matches_checked_head": true,
+  "pages_run": 43749133437,
+  "pages_event": "push",
+  "pages_result": "success",
+  "ci_runs": {
+    "discovery": 43748773277,
+    "app_components": 43748773348,
+    "full_questionnaire": 43748773297
+  },
+  "ci_offline_file_opening": true,
+  "maintained_checks": 41,
+  "publication_tests": 5,
+  "urls": [
+    {
+      "url": "https://janisp123.github.io/mental-health-questionnaire/",
+      "status": 200,
+      "mime_type": "text/html",
+      "bytes": 15746,
+      "sha256": "fef1117d0efc6d5d43f17e801fe1fb0f169440bf42e99644ce4c1e9478e510e9",
+      "matches_checked_output": true
+    },
+    {
+      "url": "https://janisp123.github.io/mental-health-questionnaire/lv/",
+      "status": 200,
+      "mime_type": "text/html",
+      "bytes": 12207,
+      "sha256": "527593655002850bb87b944c9aec2726905546fda8ab525bfc4380890c77d1a7",
+      "matches_checked_output": true
+    },
+    {
+      "url": "https://janisp123.github.io/mental-health-questionnaire/ru/",
+      "status": 200,
+      "mime_type": "text/html",
+      "bytes": 17190,
+      "sha256": "290e113ae33c85198b0744d6ce5a2c077fd7d85d9db9ab94c1ce7267be7c03e5",
+      "matches_checked_output": true
+    },
+    {
+      "url": "https://janisp123.github.io/mental-health-questionnaire/sitemap.xml",
+      "status": 200,
+      "mime_type": "application/xml",
+      "bytes": 349,
+      "sha256": "8d6ddb614d56a2051b303ca7231ed96e290aca58cc990adf976159cc3538e2fd",
+      "matches_checked_output": true
+    },
+    {
+      "url": "https://janisp123.github.io/mental-health-questionnaire/questionnaire/",
+      "status": 200,
+      "mime_type": "text/html",
+      "bytes": 1614492,
+      "sha256": "7400e18606e857b8782fa12079dba9cdb794895a4207533414fddaedd630dbf2",
+      "matches_checked_output": true
+    }
+  ],
+  "hosted_package_and_actual_drive_bytes_equal": true,
+  "package_version": "0.2.14",
+  "download_changed": false,
+  "live_browser": {
+    "passed": true,
+    "landing_locales": [
+      "en",
+      "lv",
+      "ru"
+    ],
+    "widths": [
+      320,
+      390,
+      1280
+    ],
+    "wide_font_heading_regression": true,
+    "questionnaire_language_switching": true,
+    "online_to_offline_and_back_recovery": true,
+    "clinician_pdf_and_provided_answer_preservation": true,
+    "public_invitation_excludes_answers": true,
+    "no_answer_related_requests": true,
+    "actual_navigation_response_bytes_checked": true,
+    "local_offline_load_mode": "memory"
+  },
+  "independent_review": "One future-release test-order blocker corrected with reproduced failing fixture and passing regression; no other actionable findings.",
+  "landing_visual_inspection": "Desktop English actions and narrow Russian privacy heading inspected.",
+  "publication_rule": "Exact package HTML, with verified Drive version/source/pair metadata; refresh after Drive-sync evidence or approved website changes.",
+  "added_by": "Codex",
+  "implemented_by": "Codex",
+  "human_language_clinical_and_physical_device_review": "pending",
+  "indexing_or_ai_recommendation": "unverified"
+}
