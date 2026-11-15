@@ -1,5 +1,12 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · Faster single-answer advance v0.2.11 — DELIVERED
+
+PR #44 merged as `9bd0b3b19113d9b39a24a3349c956be0bb3c3ec8`, preserving checked head `66284ec410a875c8dfb9b45ed0236327b98d77a9` tree. Required full/app/discovery CI passed (43683758114 / 43683758095 / 43683758099) with real offline file opening. The automatic single-choice save/advance delay is halved from 1,300 to 650 ms across LV/EN/RU/UK. The selected choice remains highlighted, answers save before advancing, and navigation/Skip cancel pending saving. Multi-select, text, medication, question/answer/condition and recovery contracts remain unchanged.
+
+All 35 local checks passed in labelled memory mode; existing timing regression failed before and passes after. Actual package verified in every locale at virtual 649/650 ms, including saved-answer backup, no errors/network calls. Independent review found no issues. Clean source `a80a4e1278eca9ca53c3798ba66b7b95556fe2da` builds verified v0.2.11 HTML/PDF/ZIP. Guide bytes unchanged and render inspected. Drive readback matches exactly: HTML `e07141d4f8198a479dca66352b51c9a6617a479020e912d09c066f9f99d399ae`, PDF `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`; clean version-ending filenames, same IDs/folder/sharing and exactly two current files. Previous v0.2.10 preserved; snapshot `review/v0.2.11`. Evidence: `docs/review/checks/2026-11-15-faster-single-answer-drive-sync.json`. Changelog/checkpoint/manifest updated after readback; unrelated/deferred TD work stays pending. Download the new HTML to use the faster timing.
+
+
 ### 2026-11-15 · Faster single-answer v0.2.11 package prepared
 
 Clean source `a80a4e1278eca9ca53c3798ba66b7b95556fe2da` produced verified HTML/PDF/ZIP with `source_dirty: false`. HTML SHA256 `e07141d4f8198a479dca66352b51c9a6617a479020e912d09c066f9f99d399ae`; guide PDF remains byte-identical. Original v0.2.10 archived; current repository package/README updated to v0.2.11. All 35 local checks passed in labelled memory mode; independent review found no issues. Guide render inspection completed. Drive remains v0.2.10 pending required real-file CI, checked integration and same-ID replacement/readback. Download routes remain one stable Drive folder link per README/landing page.

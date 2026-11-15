@@ -1,0 +1,78 @@
+{
+  "verified_at": "2026-11-15T08:08:03.797232+02:00",
+  "version": "0.2.11-review+full-bank",
+  "source_commit": "a80a4e1278eca9ca53c3798ba66b7b95556fe2da",
+  "source_tree": "17ee6f93dbf109f47fc2aed90ace7f3a361b563a",
+  "source_dirty": false,
+  "checked_head": "66284ec410a875c8dfb9b45ed0236327b98d77a9",
+  "main_merge": "9bd0b3b19113d9b39a24a3349c956be0bb3c3ec8",
+  "merge_tree_matches_checked_head": true,
+  "files": [
+    {
+      "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "name": "Mental_Health_Questionnaire_v0.2.11.html",
+      "bytes": 1546075,
+      "sha256": "e07141d4f8198a479dca66352b51c9a6617a479020e912d09c066f9f99d399ae",
+      "previous_name": "Mental_Health_Questionnaire_v0.2.10.html",
+      "verified_byte_identical": true,
+      "parents_preserved": true,
+      "permissions_preserved": true
+    },
+    {
+      "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "name": "Mental_Health_Questionnaire_Guide_v0.2.11.pdf",
+      "bytes": 49212,
+      "sha256": "b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9",
+      "previous_name": "Mental_Health_Questionnaire_Guide_v0.2.10.pdf",
+      "verified_byte_identical": true,
+      "parents_preserved": true,
+      "permissions_preserved": true
+    }
+  ],
+  "folder_id": "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+  "folder_title": "Mental health questionnaire — current review files",
+  "folder_contains_exactly_current_html_and_pdf": true,
+  "ids_folder_sharing_preserved": true,
+  "pdf_bytes_unchanged": true,
+  "guide_render_visually_inspected": true,
+  "local_checks": {
+    "passed": 35,
+    "failed": 0,
+    "load_mode": "memory"
+  },
+  "ci_runs": {
+    "app-components": 43683758095,
+    "discovery-bundle": 43683758099,
+    "full-questionnaire": 43683758114
+  },
+  "ci_conclusion": "success",
+  "ci_offline_file_opening": true,
+  "verified_locales": [
+    "lv",
+    "en",
+    "ru",
+    "uk"
+  ],
+  "packaged_browser_checks": [
+    "All four locales retain visibly selected answer at virtual 649 ms",
+    "All four locales save selected answer and advance at virtual 650 ms",
+    "Downloaded progress contains the selected answer",
+    "No network requests or browser errors"
+  ],
+  "runtime_suite_checks": [
+    "Single-choice visible selection and faster automatic advance",
+    "Deferred multiple-choice saving remains unchanged",
+    "Skip cancels pending single-answer saving"
+  ],
+  "comparison_to_previous": [
+    "Only runtime timer changes from 1300 to 650 milliseconds",
+    "Only embedded version and four latest-ten notes change in questionnaire data",
+    "Guide PDF bytes unchanged"
+  ],
+  "snapshot": "review/v0.2.11",
+  "limitations": [
+    "Local browser checks use memory loading",
+    "Human language/clinical review pending",
+    "Physical-device compatibility pending"
+  ]
+}
