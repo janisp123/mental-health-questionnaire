@@ -61,3 +61,18 @@ for(const locale of Object.keys(data.ui)){
  }
 }
 console.log('PASS: every coded choice is preserved verbatim in every active language.');
+// Directional regressions from independent policy review: protective and graded choices.
+for(const [id,codes,expected] of [
+ ['M19_10',['A'],3],['M19_10',['B'],1],['M19_15',['A'],1],['M19_15',['B'],3],
+ ['M27_16',['A'],1],['M27_16',['B'],5],
+ ['M11_15',['A'],3],['M11_15',['B'],1],['M12_09',['A'],3],['M12_09',['B'],1],['M22_09',['A'],3],['M22_09',['B'],1],
+ ['M23_24',['A'],1],['M23_24',['B'],3],['M23_24',['C'],4],['M23_24',['D'],4],
+ ['M13_19',['E'],4],['M02_15',['E'],4],['M22_13',['E'],4],
+ ['M01_05',['A'],2],['M01_05',['B'],2],['M14_04',['A'],2],['M14_04',['C'],2],['M14_04',['D'],1]
+])assert.equal(priority.responsePriority(q(id),{kind:'choice',codes},policy),expected,id+': '+codes);
+for(const id of ['M23_24','M13_19','M02_15','M22_13']){
+ const codes=id==='M23_24'?['A','B','C','D']:['A','B','C','D','E'];
+ const values=codes.map(code=>priority.responsePriority(q(id),{kind:'choice',codes:[code]},policy));
+ assert(values.every((v,i)=>i===0||v>=values[i-1]),id+' must not move later for greater stated impact/dependence');
+}
+console.log('PASS: reviewed protective, functional-impact, dependence and supporting-context directions.');

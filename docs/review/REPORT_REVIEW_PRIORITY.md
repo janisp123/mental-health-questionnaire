@@ -14,7 +14,7 @@ The internal 1–5 values are draft editorial ordering priorities, not validated
 | 2 | Supporting history and context |
 | 1 | Background, explicit absence or reassuring response |
 
-Supporting medical/developmental/family/context questions generally start at 2; current concern topics at 3; basic background at 1. Free-text reasons and medicine records stay at 3 without interpreting their contents. Exact ID/code exceptions govern safety, medication difficulties, severe reported impact and temporal distinctions. Positive wellbeing and protective questions have explicit inverse handling. Uncertain/refused codes are kept at neutral review priority 3, not treated as affirmative danger or reassurance. A lower position does not establish safety, irrelevance or absence of illness. No clinical cut-off or total exists.
+Supporting medical/developmental/family/context questions generally start at 2; current concern topics at 3; basic background at 1. Free-text reasons and medicine records stay at 3 without interpreting their contents. Exact ID/code exceptions govern safety, medication difficulties, severe reported impact and temporal distinctions. Positive wellbeing, safe self/child care, support access, restorative sleep and rest questions have explicit inverse handling. Graded impact/dependence scales do not decrease at their highest option; unresolved improvement/deficiency context is retained as supporting context rather than treated as reassuring absence. Uncertain/refused codes are kept at neutral review priority 3, not treated as affirmative danger or reassurance. A lower position does not establish safety, irrelevance or absence of illness. No clinical cut-off or total exists.
 
 ## Context and stable ordering
 
@@ -22,7 +22,7 @@ Only the previously included report entries are sorted. Existing condition-paren
 
 ## Important explicit distinctions
 
-- Current suicidal intent/plan, inability to stay safe, current intent/preparation to harm others, immediate help and current safeguarding cues reuse existing explicit safety-prompt mappings for priority 5. Current thoughts/urges mapped to support are at 4; uncertainty is 3 and explicit denial 1. Protective-question No/Yes meaning is reversed where appropriate.
+- Current suicidal intent/plan, inability to stay safe, current intent/preparation to harm others, immediate help and current safeguarding cues reuse existing explicit safety-prompt mappings for priority 5. Current thoughts/urges mapped to support are at 4; uncertainty is 3 and explicit denial 1. Protective-question No/Yes meaning is reversed where appropriate. Current inability to care safely for self/a child (M27_16 B) is explicitly placed for review first; a positive safe-care answer is not elevated.
 - Current severe alcohol-withdrawal symptoms (M15_19 B) precede historical severe withdrawal (M15_18 B). Acute neurological/current-help cues M30_13/M30_24/M30_25 B are explicitly prioritized. Substance-use categories, diagnosis histories, identity and unwanted intrusive thoughts are not automatically assigned priority 5.
 - A suicide attempt within the past 24 hours (M06_09 A) has priority 5; other recent and remote options have separate explicit review values. Self-harm recency and past-month episodes are explicit context for review, not predicted suicide risk.
 - Severe/very severe reported functional impact and selected medication difficulties have explicit code priorities. Positive wellbeing frequency is handled in its own direction, avoiding the assumption that every higher response code means worse health.

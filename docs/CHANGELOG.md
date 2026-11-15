@@ -1,5 +1,12 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · Report review priority — source verified
+
+Implemented report-only internal 1–5 editorial ordering with complete explicit ID/code metadata, context-family preservation and stable original-order ties. All clinician renderers share the same entry order; existing callers without policy retain legacy order. Every coded choice in every active locale retains exactly the same ID/plain/HTML payload; no question/answer/policy object mutation. Original question/choice/condition/navigation data, progress schema, feedback, existing help triggers and 650 ms timing remain unchanged. Uncertainty/refusal remain explicit neutral entries; values are never summed/displayed as a clinical score.
+
+Independent review identified protective/safe-care inversions, graded dependence and extreme-vs-severe impact direction errors, plus supporting-context negatives treated as absence. All were corrected in one covered fix pass: new ID/code regressions were observed failing then passing. Complete metadata validation, stable/context edge cases, runtime preview/PDF ordering, old/current progress round trips, offline phone widths and all 39 maintained checks pass (`dist/checks-report-priority-reviewed/results.json`, explicitly labelled memory mode). No unaddressed implementation findings remain from that review. The table remains editorial draft with professional clinical calibration pending. Clean packaging, real-file CI, checked merge and Drive readback are next.
+
+
 ### 2026-11-15 · Report review priority — IN PROGRESS
 
 Start from main `39eab2399a118e761e219c6add3537fddbc4d8fb`. Implement approved report-only 1–5 editorial priority ordering with explicit answer-code rules, linked context and stable ties. Keep every previously included response and original text, questionnaire navigation, frozen data, recovery and feedback unchanged. Plan: `docs/superpowers/plans/2026-11-15-report-review-priority.md`. Planned shared release v0.2.13; Drive remains verified v0.2.12 until delivery. No validated clinical severity/risk score or triage claim is introduced.
