@@ -1,5 +1,12 @@
 # Active development changelog — mental-health-questionnaire
 
+
+### 2026-11-15 · Medication and safety guidance v0.2.14 — STARTED
+
+Base main `6032f999587532e1e709cda85a4b5b8a04d7b437`; branch `fix/medication-safety-guidance-20261115`. Scope: clarify medicine-entry instructions/strength labels and optional examples; add M02_09 guidance locating the existing separate safety questions in LV/EN/RU/UK. Preserve 712 questions, original IDs/titles/choices/conditions, report priority, support triggers, recovery format and frequency scales. Optional general-context question remains deferred. Plan/resume checklist: `docs/superpowers/plans/2026-11-15-medication-safety-guidance.md`.
+
+Checkpoint: planning recorded before product edits; current GitHub/Drive distribution remains verified v0.2.13. Next: focused builder/preservation regression, localized guidance implementation, maintained suite and one branch review; then clean v0.2.14 package, checked PR, same-ID Drive replacement and byte readback. Do not claim a candidate is distributed until readback evidence is recorded.
+
 ### 2026-11-15 · Report review-priority v0.2.13 — DELIVERED
 
 PR #50 merged as `0f2f0b62cb1584bc39e751ed4d732ed8c66464d3`, preserving checked head `63fd436c02552ba28a3b99029ff4f02c26e6090d` tree. Required full/app/discovery CI passed (43716679186 / 43716679194 / 43716679044) with real offline file opening. Clean source `2bb5f012ea6504427db1ffcc3c9c15cfa0599f89` builds verified v0.2.13 HTML/PDF/ZIP. Report-only 1–5 editorial priorities now place explicit review cues first while preserving condition/named context and stable ties. All coded responses in every active locale preserve exactly the same ID/plain/HTML payload; original questionnaires/answers/navigation/recovery/feedback and 650 ms timing remain intact. Preview, PDF, HTML and text share the order; no summed/displayed clinical score or triage is produced.
