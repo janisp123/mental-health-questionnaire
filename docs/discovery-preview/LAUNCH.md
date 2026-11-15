@@ -1,5 +1,12 @@
 # Discovery page preview and owner launch plan
 
+
+## Current publication — 15 November 2026
+
+The localized landing pages now provide online launch at https://janisp123.github.io/mental-health-questionnaire/questionnaire/ and one stable Drive-folder download for offline use. The hosted file is byte-identical to the verified downloadable questionnaire; there is no separate app source or maintenance stream. Publication is automatic after approved website edits or verified Drive delivery evidence, with package/distribution parity enforced before deployment. Both local HTTPS and actual live browser flows, progress transfer and clinician PDF were checked. [Current evidence](../review/checks/2026-11-15-hosted-questionnaire-live.json).
+
+Earlier sections below are historical deployment records. Their page-only/manual-only limitations describe previous snapshots; use this current section, `tools/build_discovery.py` and the active checkpoint for current behavior.
+
 Status: **LIVE** at https://janisp123.github.io/mental-health-questionnaire/ — published 14 November 2026 after owner approval. `index.html` is a reviewable static description page, not a newly released questionnaire. The original preview remains the editable source. Indexing and actual AI-search suggestions are not yet verified; no bot-policy or Drive/questionnaire changes were made.
 
 ## Scope and maintenance choice
