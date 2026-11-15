@@ -1,5 +1,12 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · Clean versioned downloads v0.2.10 — DELIVERED
+
+PR #40 merged as `d89cb1848df11223c0e571111bb689155a7156e3`, preserving checked head `9a277bc846e17dec90ca691f4b7b49764b813683` tree. Required full/app/discovery CI passed with real offline file opening (43680973892 / 43680973918 / 43680973893). Current repository and Drive use `Mental_Health_Questionnaire_v0.2.10.html` and `Mental_Health_Questionnaire_Guide_v0.2.10.pdf`, built from clean source `538427b6eb0a3dfa65be50a5b830194605a5d69e`. Both Drive files read back byte-identical: HTML `e82d10c93be6b85b96672f53ba1651dabc53f0b5b35500fce91fea1e83482e93`, unchanged guide PDF `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`. Same IDs, parents, sharing and stable folder label; exactly the current pair in the folder. Snapshot `review/v0.2.10` and original-named v0.2.9 archive preserve rollback.
+
+New public names contain only the descriptive name and shared version before the extension. Builder/verifier and policy enforce the convention; delivered app/guide/package changes receive a new version reflected in release records, while exact Git commits track internal steps. All 35 maintained checks and eight package tests passed; negative HTML/ZIP prefix checks protect the rule. Independent review found no blocking issue; its minor ZIP-coverage suggestion was addressed. Four-language notes align; only embedded version/notes differ from v0.2.9, with all other questionnaire/runtime and guide content preserved. Manifest/checkpoint updated after verified delivery. Evidence: `docs/review/checks/2026-11-15-clean-download-names-drive-sync.json`. Unrelated TD and deferred frequency wording remain unchanged; human language/clinical and physical-device checks remain pending.
+
+
 ### 2026-11-15 · v0.2.10 clean-name package prepared
 
 Clean source `538427b6eb0a3dfa65be50a5b830194605a5d69e` builds verified HTML/PDF/ZIP with the new descriptive version-ending names. HTML SHA256 `e82d10c93be6b85b96672f53ba1651dabc53f0b5b35500fce91fea1e83482e93`; guide PDF remains byte-identical. Promoted current repository pair, README links and development manifest; exact v0.2.9 archived under original names. Drive still holds v0.2.9 until checked integration and exact-byte readback. Folder/landing-page links remain stable and need no rewrite.
