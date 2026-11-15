@@ -1,5 +1,12 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · Report review priority — IN PROGRESS
+
+Start from main `39eab2399a118e761e219c6add3537fddbc4d8fb`. Implement approved report-only 1–5 editorial priority ordering with explicit answer-code rules, linked context and stable ties. Keep every previously included response and original text, questionnaire navigation, frozen data, recovery and feedback unchanged. Plan: `docs/superpowers/plans/2026-11-15-report-review-priority.md`. Planned shared release v0.2.13; Drive remains verified v0.2.12 until delivery. No validated clinical severity/risk score or triage claim is introduced.
+
+Focused regressions pass: complete 712-ID/code metadata validation, all coded choices preserved verbatim across every active locale, stable descending/contextual ordering, protective inversions, current/history distinctions, neutral uncertainty/refusal, and no mutation. Runtime preview/PDF order, old/current progress round trips, offline phone widths passed. Context-parent absence and neutral-status/weight guards failed before fixes and pass afterward. Complete bundle comparison confirms frozen questionnaire/navigation/choice/condition/presentation data unchanged except the separate reportPriority field, version and UI notes. Full maintained checks are running; independent review, packaging, checked integration and Drive delivery remain pending.
+
+
 ### 2026-11-15 · Localized discovery pages — PUBLISHED
 
 PR #48 merged as `dc6b46d8ea5a0a68e181ff5aacf7777513300372`, preserving checked head `a3e3ad1f023e9e1e146e8ffbc7bdca9db272cc3d` tree. Required full/app/discovery CI passed (43706704797 / 43706704763 / 43706704773); manual Pages deployment 43706924365 succeeded for the exact merge. English root, Latvian `/lv/`, Russian `/ru/` and sitemap returned HTTPS 200 and match the tested builder byte-for-byte. Every page has native visible copy/title/description, a single self-canonical, reciprocal absolute language alternatives, visible language navigation, social preview metadata and one stable Drive-folder download action. No script/tracking or bot/training-policy change; artifact contains only localized HTML and sitemap.

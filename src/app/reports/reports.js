@@ -29,7 +29,7 @@ function medicineValues(rec,medicine) {
 }
 function entries(questions,answers,locale,presentation,medicine) {
  const order=presentation.topicOrder||[];
- return questions.filter(q=>answers[q.id]&&answers[q.id].kind!=="skip").map((q,index)=>{
+ const ordered=questions.filter(q=>answers[q.id]&&answers[q.id].kind!=="skip").map((q,index)=>{
   const rec=answers[q.id],t=q.translations[locale],rule=presentation.questions?.[q.id]||{};
   const title=rule.labels?.[locale]||t.title;
   const medicineText=rec.kind==="medicine"?medicineValues(rec,medicine||{}):"";
@@ -40,6 +40,7 @@ function entries(questions,answers,locale,presentation,medicine) {
   const response=choices.map(c=>c.bold?"<strong>"+esc(c.text)+"</strong>":esc(c.text)).join("; ");
   return {id:q.id,index,topic:Math.max(0,order.indexOf(q.module)),plain:prefix+value,html:"<p>"+esc(prefix)+response+"</p>"};
  }).filter(Boolean).sort((a,b)=>a.topic-b.topic||a.index-b.index);
+ return window.QuestionnaireReviewPriority?window.QuestionnaireReviewPriority.sortEntries(ordered,questions,answers,presentation.reportPriority):ordered;
 }
 function feedbackEntries(questions,feedback,catalogs) {
  const byId=new Map(questions.map(q=>[q.id,q]));
@@ -77,7 +78,7 @@ function countText(counts,ui) {
 function doctorText(questions,answers,locale,ui,presentation,identity={}) {
  const responses=entries(questions,answers,locale,presentation,ui.medicine).map(e=>e.plain);
  if(!responses.length)return ui.reportEmpty;
- return [identityText(ui,identity),"",ui.doctorHeading,ui.doctorDisclaimer,countText(responses.length,ui),ui.omissionNote,"",...responses].join("\n");
+ return [identityText(ui,identity),"",ui.doctorHeading,ui.doctorDisclaimer,countText(responses.length,ui),ui.omissionNote,...(presentation.reportPriority?[ui.reportOrderNote]:[]),"",...responses].join("\n");
 }
 function doctorMarkup(questions,answers,locale,ui,presentation,identity={}) {
  const items=entries(questions,answers,locale,presentation,ui.medicine);
@@ -85,7 +86,7 @@ function doctorMarkup(questions,answers,locale,ui,presentation,identity={}) {
  const name=[identity.name,identity.surname].map(value=>String(value||"").trim()).filter(Boolean).join(" ");
  const nameValue=name?esc(name):'<span class="write-in"></span>';
  const dateHtml='<p><strong>'+esc(ui.reportDate)+':</strong> <span class="write-in write-in-date"></span></p>';
- const summary="<p class=\"report-counts\">"+esc(countText(items.length,ui))+"</p><p>"+esc(ui.omissionNote)+"</p>";
+ const summary="<p class=\"report-counts\">"+esc(countText(items.length,ui))+"</p><p>"+esc(ui.omissionNote)+"</p>"+(presentation.reportPriority?"<p>"+esc(ui.reportOrderNote)+"</p>":"");
  const responses=items.map(e=>e.html.replace(/\n/g,"<br>")).join("");
  return '<div class="report-identity"><p><strong>'+esc(ui.reportName)+':</strong> '+nameValue+'</p>'+dateHtml+'</div><h1>'+esc(ui.doctorHeading)+'</h1><p>'+esc(ui.doctorDisclaimer)+'</p>'+summary+'<hr>'+responses;
 }

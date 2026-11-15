@@ -27,6 +27,7 @@ The questionnaire runs offline and sends no answers. Clinician reports and proje
 - One shared application with complete LV/EN/RU/UK question and interface packs.
 - Optional sections, medication details, and explicit progress-file download/import, including older progress files.
 - A clinician report language chosen independently of the questionnaire language, plus a separate project-feedback report. Provided answers, including negative, uncertain and declined responses, remain in the report.
+- Clinician responses ordered by draft review priority, keeping related context together; this is not a clinical risk score.
 - Confirmed restart and public-link sharing from the clinician preview; sharing excludes answers, saved progress and feedback.
 - A Contributions section that remains visible while awaiting permission to list contributors.
 - Country-neutral instructions for finding a local helpline, with local emergency guidance first.

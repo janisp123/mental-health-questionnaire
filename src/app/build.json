@@ -12,6 +12,7 @@
     "core/recovery.js",
     "core/answer-flow.js",
     "core/events.js",
+    "reports/review-priority.js",
     "reports/reports.js",
     "reports/feedback-delivery.js",
     "core/sharing.js",

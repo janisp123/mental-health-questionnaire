@@ -349,7 +349,37 @@ def build_bundle(config_path=None):
         apply_translation_packs(bundle, packs)
     apply_local_emergency_notices(bundle)
     apply_panic_peak_clarification(bundle)
+    priority = read_json(QUESTIONNAIRE / "report-priority.json")
+    validate_report_priority(priority, [q for group in bundle["groups"] for q in group["questions"]])
+    bundle["presentation"]["reportPriority"] = priority
     return bundle
+
+
+def validate_report_priority(policy, questions):
+    """Validate report-only editorial metadata without changing clinical/source records."""
+    by_id = {q["id"]: q for q in questions}
+    if (policy.get("schema") != "report-review-priority-v1"
+            or policy.get("status") != "EDITORIAL_DRAFT_NOT_CLINICALLY_VALIDATED"
+            or contains_weight_key(policy)
+            or set(policy.get("questions", {})) != set(by_id)):
+        raise ValueError("Report priority must cover every question exactly")
+    def valid(value):
+        return type(value) is int and 1 <= value <= 5
+    for qid, rule in policy["questions"].items():
+        if (not valid(rule.get("default"))
+                or set(rule.get("answers", {})) != set(by_id[qid]["choiceCodes"])
+                or not all(valid(value) for value in rule["answers"].values())):
+            raise ValueError("Invalid report-priority ID/code rule: " + qid)
+        if any(rule["answers"][code] != 3 for code, status in by_id[qid].get("answerStatus", {}).items()
+               if status in ("uncertain", "refused")):
+            raise ValueError("Uncertain/refused responses must keep neutral review priority: " + qid)
+    seen = set()
+    for group, ids in policy.get("relatedGroups", {}).items():
+        if (not isinstance(group, str) or not group or not isinstance(ids, list)
+                or len(ids) < 2 or len(ids) != len(set(ids))
+                or any(qid not in by_id or qid in seen for qid in ids)):
+            raise ValueError("Invalid/overlapping report context group")
+        seen.update(ids)
 
 
 def apply_local_emergency_notices(bundle):

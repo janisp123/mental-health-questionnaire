@@ -8,7 +8,7 @@ const answers={'M14_02':{kind:'medicine',status:'answered',discussion:'Ask about
  name:'Example medicine',status:'past',strength:'20 mg',dose:'one tablet',schedule:'once daily',duration:'3 months',doseDuration:'2 months',
  reason:'Sleep',benefit:'B',effects:'<script>synthetic</script>',changes:'Worse after stopping',stoppedWhen:'May',stopReason:'No longer needed'
 }]}};
-const context={window:{}};vm.runInNewContext(fs.readFileSync('src/app/reports/reports.js','utf8'),context);
+const context={window:{}};vm.runInNewContext(fs.readFileSync('src/app/reports/review-priority.js','utf8'),context);vm.runInNewContext(fs.readFileSync('src/app/reports/reports.js','utf8'),context);
 const r=context.window.QuestionnaireReports;
 for(const lang of Object.keys(data.ui)){
  const entries=r.entries([q],answers,lang,data.presentation,data.ui[lang].medicine);
