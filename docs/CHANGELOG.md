@@ -1,6 +1,34 @@
 # Active development changelog — mental-health-questionnaire
 
 
+### 2026-11-15 · Hosted landing-page font fallback — VERIFIED
+
+Exact-head CI for `3601a8d7f473ebdfa00961877a743425eb268dc0` passed 40 checks but exposed a Russian landing-page heading overflow in the new hosted test. Reproduced at 320px with a wider system-font fallback: the privacy heading exceeded its card and page width. The new font regression was observed failing; shared heading `overflow-wrap: anywhere` now keeps it within the card and the full focused HTTPS/offline flow passes. Added locale/width/overflow diagnostics to avoid opaque future layout failures. All five publication tests also pass.
+
+No app/package/guide/Drive bytes changed. Next: push this corrected final head to PR #56, require fresh exact-head CI, merge and observe Pages publication, then verify actual live bytes and hosted/offline behavior before completing TD.
+
+
+### 2026-11-15 · Hosted questionnaire — REVIEW CORRECTION VERIFIED
+
+Source checkpoint `88023e3ed4e51b55c611df97552f1a84d2d4b2de` is pushed in draft PR #56. One independent review found a future-release deadlock in test callers: the positive guard fixture assumed real repository Drive parity, and ordinary HTTPS CI staging enabled the deployment-only guard. A synthetic unshipped-package fixture reproduced the failure. Corrected tests synthesize matching metadata only for the positive guard case, prove ordinary previews work before Drive upload and publication rejects mismatches before staging, and keep CI hosted staging in preview mode. Deployment retains strict verified parity. No other actionable findings were reported.
+
+All five publication tests pass after the correction. The actual current Drive HTML was downloaded and matches repository v0.2.14 byte-for-byte (`7400e18606e857b8782fa12079dba9cdb794895a4207533414fddaedd630dbf2`); no upload occurred. Hosted/offline integration is rerunning after this test-only correction. Next: final exact-head CI, ready/merge PR #56, observe automatic Pages deployment, live HTTPS/byte/browser readback, then finish TD/checkpoint documentation.
+
+
+### 2026-11-15 · Hosted questionnaire — SOURCE CHECKPOINT
+
+Planning/TD checkpoint `3087dc3` is pushed. Implemented localized open/download actions and instructions, exact package-byte staging at `/questionnaire/`, and deployment guards requiring matching recorded Drive distribution. Website publication will run after verified Drive-sync evidence or approved website edits, while package/source commits alone do not publish a newer app ahead of Drive. Current downloadable v0.2.14 HTML/PDF and all app sources remain unchanged; no new package or Drive upload is needed.
+
+The publication regression failed before implementation (hosted artifact absent) and now passes with five-file allowlisting, metadata/canonical preservation, checksum/unsafe-name/dirty-package rejection and preview-versus-publication guards. Current review package equivalence and original source index pass. Added a real local HTTPS hosted/offline integration check; its initial round-trip failure was a missing test dialog handler for the existing replace-session confirmation, now aligned with established helpers. Real HTTPS launch from every landing locale, 320/390/1280px layouts, all app languages, hosted/offline progress transfer, clinician report/PDF, private invitation and absence of answer-related network requests now pass. Offline loading is explicitly memory mode locally; physical-device testing is not claimed. Next: one independent review, exact-head CI and checked deployment/live readback.
+
+
+### 2026-11-15 · Hosted questionnaire option — STARTED
+
+Base main `65454bf06301d775b6383f026d09c1f8b1a62940`; branch `feat/host-questionnaire-20261115`. Implement an online launch action on the English/Latvian/Russian landing pages, retaining the stable Drive-folder offline download. Pages will publish the exact already-verified v0.2.14 HTML at `/questionnaire/`; no app/source question, release version or Drive-byte change is planned. Keep a single artifact and add a publication guard/trigger so later hosted updates follow verified Drive delivery.
+
+Task is now recorded in TD with verified Codex attribution; plan/resume checklist: `docs/superpowers/plans/2026-11-15-hosted-questionnaire.md`. Current live site still offers download only. Next: failing publication regressions, builder/landing/workflow implementation, hosted/offline synthetic tests and one review; then checked PR, deploy, exact live-byte/readback evidence and final TD/changelog cleanup.
+
+
 ### 2026-11-15 · Completed TD entries removed
 
 Documentation-only cleanup from main `ddf3238ed0a727f460c400ce1ca35aab86dbb51b`. Removed the fulfilled About-description/topics task after public metadata readback confirmed both are populated, the completed branch-migration section, the delivered panic-peak task details and six-area audit instructions/history. Retained only their genuine follow-ups: remaining wording/answer-choice proposals and question-focus accessibility proposal E4. Search-index verification remains pending; both optional-context and frequency-wording tasks remain deferred. Five pending/deferred entries remain, with existing content-approval gates intact.

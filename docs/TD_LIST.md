@@ -11,6 +11,11 @@
 
 ## To do
 
+- [ ] **High priority: open the questionnaire directly from the landing page.**
+  - **Added by:** Codex. **Implemented by:** Not yet.
+  - **Work:** Provide an online “Open questionnaire” / “Atvērt anketu” option on the localized landing pages, while retaining one Google Drive folder download for offline use. Publish the exact current questionnaire HTML rather than maintain another app. Preserve browser-local answers, report/progress behavior and the existing downloadable version.
+  - **Verification:** Test both hosted and downloaded modes, language switching, phone/desktop layouts, progress import/export, clinician report/PDF and absence of answer transmission before further specialist outreach. Confirm hosted bytes match the verified downloadable package.
+
 - [ ] **Deferred: optional general-context question.** Consider one optional prompt for experiences or circumstances that existing choices do not let a person explain. No implementation is authorized yet. Assess duplication with existing medicine notes and functional questions, added report length, stable ID/text limits, all active translations, recovery compatibility and blank/skip handling before any later change.
 
 - [ ] **Deferred: make frequency wording more natural while retaining clear numerical meaning.**

@@ -53,6 +53,8 @@ For managed Chromium that blocks `file://`, `--load-mode memory` is an explicitl
 
 Ordinary source commits do not publish to Drive automatically. Documentation-only changes that do not change the app or guide do not require rebuilding or republishing an identical reviewer package.
 
+The hosted questionnaire is the exact package HTML, copied by `tools/build_discovery.py` to the stable Pages `/questionnaire/` route. It has no separate source or release version. After Drive readback, commit the updated project distribution metadata and `docs/review/checks/*-drive-sync.json` delivery evidence together. This triggers the website workflow; its `--require-verified-distribution` guard checks version, source commit and pair metadata before publishing. Package/source commits alone do not refresh Pages ahead of Drive verification. Observe the deployment and compare the hosted HTML bytes with the matching Drive/package artifact before handing off. Website-only changes using an unchanged verified pair do not increment the questionnaire version or require another Drive upload.
+
 For a guide-only revision, increment the shared package version and build the matching named pair, while preserving questionnaire behavior and question content. Archive the prior pair before replacing the current files in place. The downloadable guide contains opening instructions and a concise privacy/medical-purpose notice; technical-review status remains accurately recorded in this repository and the package manifest. Read back both files to verify the revised pair.
 
 ## Evidence and historical material

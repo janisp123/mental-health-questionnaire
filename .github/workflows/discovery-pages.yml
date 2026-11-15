@@ -1,7 +1,14 @@
-name: Publish approved discovery page
-# Manual only: merging this workflow does not publish the site.
+name: Publish questionnaire website
+# Package/source commits alone do not publish ahead of verified Drive delivery.
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/discovery-preview/*.html'
+      - 'tools/build_discovery.py'
+      - '.github/workflows/discovery-pages.yml'
+      - 'docs/review/checks/*-drive-sync.json'
 permissions:
   contents: read
 concurrency:
@@ -26,10 +33,10 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           enablement: false
-      - name: Build only the discovery page and sitemap
+      - name: Stage landing pages and the verified questionnaire
         env:
           PAGES_BASE_URL: ${{ steps.pages.outputs.base_url }}
-        run: python tools/build_discovery.py --base-url "$PAGES_BASE_URL" --output dist/discovery-site
+        run: python tools/build_discovery.py --base-url "$PAGES_BASE_URL" --output dist/discovery-site --require-verified-distribution
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/discovery-site
@@ -43,6 +50,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy approved page
+      - name: Deploy verified website
         id: deployment
         uses: actions/deploy-pages@v4
