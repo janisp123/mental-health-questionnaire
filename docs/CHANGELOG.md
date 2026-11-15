@@ -1,5 +1,10 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · Report-priority v0.2.13 package prepared
+
+Clean source `188574dd048cab90883f91000c3342e896776893` builds verified HTML/PDF/ZIP with `source_dirty: false`. HTML SHA256 `c496144ec577aee9d45bd3833105cec99e98a09b6f8bbaca32a9b01b63f358aa`; guide PDF remains `08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75`. Original v0.2.12 archived exactly; current repository package/README point to v0.2.13. All 39 local checks pass after reviewed direction fixes; packaged locale layouts/PDF and unchanged guide inspected. Required real-file CI, checked merge, version snapshot and same-ID Drive readback remain pending. Drive still holds verified v0.2.12. No Pages update is needed; priority values remain internal editorial draft, not clinically validated scores.
+
+
 ### 2026-11-15 · Report review priority — source verified
 
 Implemented report-only internal 1–5 editorial ordering with complete explicit ID/code metadata, context-family preservation and stable original-order ties. All clinician renderers share the same entry order; existing callers without policy retain legacy order. Every coded choice in every active locale retains exactly the same ID/plain/HTML payload; no question/answer/policy object mutation. Original question/choice/condition/navigation data, progress schema, feedback, existing help triggers and 650 ms timing remain unchanged. Uncertainty/refusal remain explicit neutral entries; values are never summed/displayed as a clinical score.

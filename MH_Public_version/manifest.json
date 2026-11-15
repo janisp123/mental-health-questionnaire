@@ -1,8 +1,8 @@
 {
   "schema": "questionnaire-review-package-v1",
-  "version": "0.2.12-review+full-bank",
-  "source_commit": "2e152a732b7077e9d35d5154b8c2828fdc13b4d6",
-  "source_tree": "75d72545065127c8f066e2474a0ec364e2e6c406",
+  "version": "0.2.13-review+full-bank",
+  "source_commit": "188574dd048cab90883f91000c3342e896776893",
+  "source_tree": "59e6a0b848859b3ac707758ad6dbf4d12e92e676",
   "source_dirty": false,
   "build_epoch": 1794614400,
   "pdf_timestamp_mode": "reportlab-invariant",
@@ -16,20 +16,20 @@
   "guide_source": "docs/review/GUIDE_LV_EN_RU_UK.md",
   "files": [
     {
-      "name": "Mental_Health_Questionnaire_v0.2.12.html",
-      "bytes": 1556483,
-      "sha256": "bab9d2dcacb8949fa03242817b4144d60e2b650ecebb9c25b67941a413032332"
+      "name": "Mental_Health_Questionnaire_v0.2.13.html",
+      "bytes": 1610402,
+      "sha256": "c496144ec577aee9d45bd3833105cec99e98a09b6f8bbaca32a9b01b63f358aa"
     },
     {
-      "name": "Mental_Health_Questionnaire_Guide_v0.2.12.pdf",
+      "name": "Mental_Health_Questionnaire_Guide_v0.2.13.pdf",
       "bytes": 49212,
       "sha256": "08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75"
     }
   ],
   "zip": {
-    "name": "Mental_Health_Questionnaire_Package_v0.2.12.zip",
-    "bytes": 330912,
-    "sha256": "a5f1a20d0b2287918712b7e9e805bdc6c96f30d4f3e1a631637b6f28bb1f44d7"
+    "name": "Mental_Health_Questionnaire_Package_v0.2.13.zip",
+    "bytes": 336265,
+    "sha256": "2913d47c00247fe03181214869d5e05cccb486b1585e577571bdc8c718d9eeb1"
   },
   "status": "TECHNICAL_REVIEW_NOT_CLINICALLY_VALIDATED"
 }
