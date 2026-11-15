@@ -1,6 +1,13 @@
 # Active development changelog — mental-health-questionnaire
 
 
+### 2026-11-15 · Completed TD entries removed
+
+Documentation-only cleanup from main `ddf3238ed0a727f460c400ce1ca35aab86dbb51b`. Removed the fulfilled About-description/topics task after public metadata readback confirmed both are populated, the completed branch-migration section, the delivered panic-peak task details and six-area audit instructions/history. Retained only their genuine follow-ups: remaining wording/answer-choice proposals and question-focus accessibility proposal E4. Search-index verification remains pending; both optional-context and frequency-wording tasks remain deferred. Five pending/deferred entries remain, with existing content-approval gates intact.
+
+Scope is only TD and this changelog. Questionnaire, package, translations, website, Drive distribution and v0.2.14 are unchanged. Next: review the remaining pending proposals separately; this cleanup does not authorize their implementation. No app build or Drive upload is needed.
+
+
 ### 2026-11-15 · Medication and safety guidance v0.2.14 — DELIVERED
 
 PR #52 merged as `7c755fa0325ed20dd3a77874770cff531cc999f6`, preserving checked head `633c9c0ab15833b9b78acfec260afceacfab6d81` tree. Required app/discovery/full CI passed (43733188539 / 43733188532 / 43733188566) with real offline file opening. Clean source `8e63aefa0c53a505af0867db964e7848f1ad7215` builds the matching verified v0.2.14 pair/ZIP. Optional M14_02 observation examples and M02_09 safety-section guidance plus clearer medicine instructions/labels are present in all active locales. Original 712 questions, answer codes/conditions/support, progress format, reports and frequency scales remain unchanged; optional general-context question is deferred in TD.
