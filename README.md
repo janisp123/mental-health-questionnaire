@@ -2,13 +2,13 @@
 
 [![Multilingual checks](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml/badge.svg?branch=main)](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml)
 
-**Current version: v0.2.9 · Latvian / English / Russian / Ukrainian · 712 questions · 15 optional sections.**
+**Current version: v0.2.10 · Latvian / English / Russian / Ukrainian · 712 questions · 15 optional sections.**
 
 Free offline questionnaire for adults preparing for a mental-health appointment. All four languages are included in one HTML file. Latvian is the reference and initial language. It does not diagnose or calculate a screening score.
 
 ## Download and open
 
-**[Download the questionnaire from Google Drive](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb)** · **[Download the PDF guide](https://raw.githubusercontent.com/janisp123/mental-health-questionnaire/refs/heads/main/MH_Public_version/188_README_LV_EN_RU_UK_v0.2.9_REVIEW_BUILD.pdf)**
+**[Download the questionnaire from Google Drive](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb)** · **[Download the PDF guide](https://raw.githubusercontent.com/janisp123/mental-health-questionnaire/refs/heads/main/MH_Public_version/Mental_Health_Questionnaire_Guide_v0.2.10.pdf)**
 
 1. In the Drive folder, choose **Download** for the file ending in **`.html`**. The Drive preview and GitHub source viewer do not run the questionnaire.
 2. Open the downloaded HTML file in a browser. On a phone, find it in **Files → Downloads** and use **Open with → browser** if offered.
@@ -60,9 +60,9 @@ This repository shows the specification, iteration and verification of an AI-ass
 
 ## Source and package records
 
-- [View the questionnaire HTML source](MH_Public_version/187_Questionnaire_FULL_712Q_LV_EN_RU_UK_v0.2.9_REVIEW_BUILD.html)
+- [View the questionnaire HTML source](MH_Public_version/Mental_Health_Questionnaire_v0.2.10.html)
 - [Current package files, source revision and checksums](MH_Public_version/manifest.json)
-- [Version snapshot](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.9)
+- [Version snapshot](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.10)
 
 ## Development
 
