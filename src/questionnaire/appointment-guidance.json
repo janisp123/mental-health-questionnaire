@@ -1,0 +1,17 @@
+{
+  "schema": "questionnaire-appointment-guidance-v1",
+  "questions": {
+    "M14_02": {
+      "lv": "Kas uzlabojās, kas joprojām sagādā grūtības vai kas mainījās? Ja tas attiecas uz Jums, varat minēt mazāk izteiktas emocijas, miegainību vai nogurumu. Norādiet, kad pamanījāt pārmaiņas, piemēram, pēc zāļu lietošanas sākšanas, devas maiņas vai pirms nākamās paredzētās devas. Jums nav jāzina pārmaiņu cēlonis.",
+      "en": "What improved, stayed difficult, or changed? If relevant, include feeling less emotion, sleepiness, or fatigue. Note when you noticed changes—for example after starting a medicine, changing the dose, or before the next scheduled dose. You do not need to know the cause.",
+      "ru": "Что улучшилось, что по-прежнему вызывает трудности или что изменилось? Если это относится к Вам, можно упомянуть менее выраженные эмоции, сонливость или усталость. Укажите, когда Вы заметили изменения, например после начала приёма лекарства, изменения дозы или перед очередным запланированным приёмом. Вам не нужно знать причину изменений.",
+      "uk": "Що поліпшилося, що досі спричиняє труднощі або що змінилося? Якщо це стосується Вас, можна зазначити менш виражені емоції, сонливість або втому. Вкажіть, коли Ви помітили зміни, наприклад після початку приймання ліків, зміни дози або перед наступною запланованою дозою. Вам не потрібно знати причину змін."
+    },
+    "M02_09": {
+      "lv": "Šīs domas var nozīmēt dažādas lietas. Ja vēlaties tās aprakstīt sīkāk, sadaļā “Pašsajūta, drošība un neparastas pieredzes” ir atsevišķi jautājumi par vēlmi būt mirušam, paškaitējumu un nodomu izdarīt pašnāvību.",
+      "en": "These thoughts can mean different things. If you want to describe them in more detail, the “Wellbeing, safety and unusual experiences” section asks separately about wishing to be dead, self-harm and suicidal intent.",
+      "ru": "Такие мысли могут означать разное. Если Вы хотите описать их подробнее, в разделе «Самочувствие, безопасность и необычные переживания» есть отдельные вопросы о желании умереть, самоповреждении и намерении совершить самоубийство.",
+      "uk": "Ці думки можуть означати різне. Якщо Ви хочете описати їх докладніше, у розділі «Самопочуття, безпека й незвичні переживання» є окремі запитання про бажання померти, самоушкодження та намір вчинити самогубство."
+    }
+  }
+}

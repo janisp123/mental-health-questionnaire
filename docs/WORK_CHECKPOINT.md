@@ -1,5 +1,7 @@
 # Current working checkpoint
 
+**Active work:** v0.2.14 medication/safety guidance on `fix/medication-safety-guidance-20261115`; start checkpoint `a2035ac` is pushed. Resume from [plan](superpowers/plans/2026-11-15-medication-safety-guidance.md) and latest changelog entry. Candidate is not distributed; current Drive remains v0.2.13.
+
 Updated 15 November 2026. Main is the sole active source.
 
 ## Current product and distribution

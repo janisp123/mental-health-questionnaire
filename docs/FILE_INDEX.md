@@ -97,3 +97,5 @@ The manifest's review_distribution field records actual Drive synchronization se
 - `src/questionnaire/local-emergency-notices.json`: country-neutral displayed safety notices for M15_19/M18_13/M30_17; frozen question sources are retained.
 
 - `src/questionnaire/panic-peak-clarification.json`: four-language explanation of M04_01 peak timing; question and answer identity preserved.
+
+- `src/questionnaire/appointment-guidance.json`: localized M14_02/M02_09 help; existing questions and saved answers remain unchanged.

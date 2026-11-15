@@ -1,6 +1,13 @@
 # Active development changelog — mental-health-questionnaire
 
 
+### 2026-11-15 · Medication and safety guidance — SOURCE IMPLEMENTED
+
+Checkpoint: `a2035ac` plan/start record is pushed; draft PR #52 tracks `fix/medication-safety-guidance-20261115`. Added optional localized help to existing M14_02/M02_09 via a strictly validated overlay; corrected medicine instructions/strength labels and clarified observations/dose timing in LV/EN/RU/UK. Original questions/choices/conditions/support triggers/recovery/report priority remain unchanged. General-context question stays deferred. Source is now v0.2.14; current repository package and Drive remain v0.2.13 until reviewed delivery.
+
+Focused regression was observed failing for missing M14_02 help before implementation, then passing; malformed schema/IDs/locales/blank text are rejected, original question text is preserved and helpers do not become clinician answers. Existing build/source-safety checks pass. Full maintained suite is running in labelled memory mode at `dist/checks-appointment-guidance/results.json`. Next: read results, one independent branch review, clean-source package, exact-head CI/merge and same-ID Drive readback.
+
+
 ### 2026-11-15 · Medication and safety guidance v0.2.14 — STARTED
 
 Base main `6032f999587532e1e709cda85a4b5b8a04d7b437`; branch `fix/medication-safety-guidance-20261115`. Scope: clarify medicine-entry instructions/strength labels and optional examples; add M02_09 guidance locating the existing separate safety questions in LV/EN/RU/UK. Preserve 712 questions, original IDs/titles/choices/conditions, report priority, support triggers, recovery format and frequency scales. Optional general-context question remains deferred. Plan/resume checklist: `docs/superpowers/plans/2026-11-15-medication-safety-guidance.md`.

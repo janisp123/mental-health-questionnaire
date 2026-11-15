@@ -59,3 +59,5 @@ CI uses real offline file opening. If a managed browser blocks `file://`, run `p
 ## Clinician report review priority
 
 `src/questionnaire/report-priority.json` supplies complete ID/code editorial order metadata validated by the builder. `reports/review-priority.js` sorts newly constructed report entries without mutating question/answer/progress objects. All clinician renderers share it; feedback keeps its original order. Related condition/named context stays together and original order breaks ties. Values are internal 1–5 review positions, not a clinical score or triage tool; clinical review remains pending. See [policy and limits](review/REPORT_REVIEW_PRIORITY.md).
+
+`src/questionnaire/appointment-guidance.json` adds localized optional help to M14_02 (medicine observations/timing) and M02_09 (finding separate safety questions) after language packs load. Existing question titles, answer codes, conditions, support triggers and reports retain their original contracts.
