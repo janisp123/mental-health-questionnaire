@@ -1,6 +1,13 @@
 # Active development changelog — mental-health-questionnaire
 
 
+### 2026-11-15 · Hosted questionnaire — REVIEW CORRECTION VERIFIED
+
+Source checkpoint `88023e3ed4e51b55c611df97552f1a84d2d4b2de` is pushed in draft PR #56. One independent review found a future-release deadlock in test callers: the positive guard fixture assumed real repository Drive parity, and ordinary HTTPS CI staging enabled the deployment-only guard. A synthetic unshipped-package fixture reproduced the failure. Corrected tests synthesize matching metadata only for the positive guard case, prove ordinary previews work before Drive upload and publication rejects mismatches before staging, and keep CI hosted staging in preview mode. Deployment retains strict verified parity. No other actionable findings were reported.
+
+All five publication tests pass after the correction. The actual current Drive HTML was downloaded and matches repository v0.2.14 byte-for-byte (`7400e18606e857b8782fa12079dba9cdb794895a4207533414fddaedd630dbf2`); no upload occurred. Hosted/offline integration is rerunning after this test-only correction. Next: final exact-head CI, ready/merge PR #56, observe automatic Pages deployment, live HTTPS/byte/browser readback, then finish TD/checkpoint documentation.
+
+
 ### 2026-11-15 · Hosted questionnaire — SOURCE CHECKPOINT
 
 Planning/TD checkpoint `3087dc3` is pushed. Implemented localized open/download actions and instructions, exact package-byte staging at `/questionnaire/`, and deployment guards requiring matching recorded Drive distribution. Website publication will run after verified Drive-sync evidence or approved website edits, while package/source commits alone do not publish a newer app ahead of Drive. Current downloadable v0.2.14 HTML/PDF and all app sources remain unchanged; no new package or Drive upload is needed.

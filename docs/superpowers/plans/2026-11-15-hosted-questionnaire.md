@@ -54,3 +54,5 @@
 - Execution: dedicated branch in the current checkout; do the small tasks inline and request one independent review. Use this checklist plus changelog and pushed commits to resume; do not restart completed work.
 
 - Source checkpoint: publication regressions pass (5 tests), package/source integrity passes, and real local HTTPS + offline-memory integration passes. Initial browser harness import confirmation corrected; app bytes remain identical. Review and live deployment remain pending.
+
+- Review correction: ordinary CI must support unshipped packages; positive parity fixture is synthetic, preview staging does not enable deployment-only verification. Reproduced RED fixture and GREEN publication suite. Actual current Drive HTML downloaded equal to package. Final exact-head CI and deployment remain pending; PR #56.

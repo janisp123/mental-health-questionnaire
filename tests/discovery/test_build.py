@@ -46,6 +46,10 @@ class BuildDiscovery(unittest.TestCase):
   root=Path(folder)
   shutil.copytree(ROOT/'MH_Public_version',root/'MH_Public_version')
   shutil.copy2(ROOT/'project-manifest.json',root/'project-manifest.json')
+  shutil.copytree(ROOT/'docs/discovery-preview',root/'docs/discovery-preview')
+  # A new release can legitimately precede Drive verification.
+  p=root/'project-manifest.json';doc=json.loads(p.read_text())
+  doc['review_distribution']['version']='0.0.0';p.write_text(json.dumps(doc))
   return root
  def test_reject_tampered_or_unsafe_package(self):
   mutations=[lambda x:x['files'][0].update(sha256='0'*64),
@@ -61,11 +65,21 @@ class BuildDiscovery(unittest.TestCase):
  def test_publication_requires_verified_matching_drive_distribution(self):
   with tempfile.TemporaryDirectory() as tmp:
    root=self.package_fixture(tmp);p=root/'project-manifest.json';doc=json.loads(p.read_text())
+   package=json.loads((root/'MH_Public_version/manifest.json').read_text())
+   doc['review_distribution'].update(version=package['version'].split('-')[0],source_commit=package['source_commit'],synchronization='VERIFIED: synthetic test fixture',files=package['files'])
+   p.write_text(json.dumps(doc));verified=copy.deepcopy(doc)
    with patch.object(site,'ROOT',root):self.assertTrue(site.questionnaire_bytes(require_verified_distribution=True))
-   doc['review_distribution']['version']='0.0.0';p.write_text(json.dumps(doc))
+   for key,value in [('version','0.0.0'),('source_commit','unshipped-source'),('synchronization','PENDING')]:
+    doc=copy.deepcopy(verified);doc['review_distribution'][key]=value;p.write_text(json.dumps(doc))
+    with patch.object(site,'ROOT',root):
+     self.assertTrue(site.questionnaire_bytes())
+     with self.assertRaises(ValueError):site.questionnaire_bytes(require_verified_distribution=True)
+   # Ordinary future-release CI must work before the new Drive upload; deployment must not.
    with patch.object(site,'ROOT',root):
-    self.assertTrue(site.questionnaire_bytes())  # An unshipped package can still be previewed/tested.
-    with self.assertRaises(ValueError):site.questionnaire_bytes(require_verified_distribution=True)
+    site.build('https://example.github.io/project/',root/'preview')
+    self.assertEqual((root/'preview/questionnaire/index.html').read_bytes(),site.questionnaire_bytes())
+    with self.assertRaises(ValueError):site.build('https://example.github.io/project/',root/'blocked',require_verified_distribution=True)
+    self.assertFalse((root/'blocked').exists())
  def test_reject_overwrite(self):
   with tempfile.TemporaryDirectory() as tmp:
    out=Path(tmp)/'site';out.mkdir();(out/'keep.txt').write_text('keep')

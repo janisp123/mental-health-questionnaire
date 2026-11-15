@@ -29,7 +29,8 @@ def origin(tmp):
  secure=ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER);secure.load_cert_chain(cert,key)
  server.socket=secure.wrap_socket(server.socket,server_side=True)
  base=f'https://127.0.0.1:{server.server_port}/project/'
- site.build(base,webroot/'project',require_verified_distribution=True)
+ # CI stages previews before Drive delivery; only the deployment workflow enables its guard.
+ site.build(base,webroot/'project')
  thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
  try:yield base
  finally:server.shutdown();server.server_close();thread.join()
