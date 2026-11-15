@@ -1,5 +1,12 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · One Google Drive folder download link — PUBLISHED
+
+PR #42 merged as `8063c261f1b33a23f3b78ade95a48178601cb6bf`, preserving checked head `d4192daa760b707889d14a5493b2bc52eea1b761` tree; all required CI checks passed. Manual Pages deployment 43682403681 succeeded for that exact merge. Live page and sitemap downloaded byte-identical to the tested page-only artifact; main README bytes/blob match the merged source. Both pages have exactly one “Download from Google Drive” link to the same stable folder, with no separate PDF button, individual Drive-file link or raw GitHub artifact download link. Opening instructions consistently say the guide is in the same folder. Canonical and sitemap are correct. Evidence: `docs/review/checks/2026-11-15-single-drive-download-links.json`.
+
+Source/layout checks and independent review passed; actual publication/readback is verified. Closed queued-only PR #27 as fulfilled without merging a completed TD entry. Current app/guide/Drive package remains v0.2.10; no questionnaire, guide bytes, Drive IDs/sharing, in-app notes or bot/training policy changed. Website/documentation work is recorded by these commits and deployment, with no repeat product build/upload. Actual search indexing and AI suggestions remain unverified.
+
+
 ### 2026-11-15 · One Google Drive download destination — prepared
 
 README and discovery-page source now each offer one “Download from Google Drive” link to the stable review folder. Removed the separate raw-GitHub PDF link and individual Drive PDF button; aligned instructions say the guide is in the same folder. README technical source browsing points to `src/app/` instead of a packaged HTML file. Recorded the single-folder preference in AGENTS.md. Current app/guide/Drive files stay v0.2.10; no package rebuild or in-app note is needed for this website/documentation update.
