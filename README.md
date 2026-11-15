@@ -2,7 +2,7 @@
 
 [![Multilingual checks](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml/badge.svg?branch=main)](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml)
 
-**Current version: v0.2.13 · Latvian / English / Russian / Ukrainian · 712 questions · 15 optional sections.**
+**Current version: v0.2.14 · Latvian / English / Russian / Ukrainian · 712 questions · 15 optional sections.**
 
 Free offline questionnaire for adults preparing for a mental-health appointment. All available languages are included in one HTML file. Latvian is the reference and initial language. It does not diagnose or calculate a screening score.
 
@@ -67,7 +67,7 @@ This repository shows the specification, iteration and verification of an AI-ass
 
 - [Browse the application source](src/app/)
 - [Current package files, source revision and checksums](MH_Public_version/manifest.json)
-- [Version snapshot](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.13)
+- [Version snapshot](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.14)
 
 ## Development
 

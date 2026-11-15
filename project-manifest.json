@@ -54,7 +54,7 @@
       "pilot_prototype": "archive/pilot/",
       "three_language_review": "archive/three-language/v0.2.0/manifest.json",
       "four_language_baseline": "archive/four-language/v0.2.1/manifest.json",
-      "previous_four_language_package": "archive/four-language/v0.2.12/manifest.json"
+      "previous_four_language_package": "archive/four-language/v0.2.13/manifest.json"
     },
     "development_build": {
       "status": "TECHNICAL_REVIEW_BUILD_NOT_RELEASED",
