@@ -592,21 +592,21 @@
     "folder_url": "https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
     "purpose": "PROFESSIONAL_TECHNICAL_REVIEW_CANDIDATE_NOT_PUBLIC_RELEASE",
     "reference_language": "lv",
-    "version": "0.2.13",
-    "source_commit": "2bb5f012ea6504427db1ffcc3c9c15cfa0599f89",
+    "version": "0.2.14",
+    "source_commit": "8e63aefa0c53a505af0867db964e7848f1ad7215",
     "verified_date": "2026-11-15",
     "auto_sync": false,
-    "synchronization": "VERIFIED: v0.2.13 report-only review-priority ordering HTML/PDF downloaded byte-identical; clean version-ending names and stable IDs/folder/sharing; priorities remain editorial draft.",
+    "synchronization": "VERIFIED: v0.2.14 medicine-entry and safety-section guidance HTML/PDF downloaded byte-identical; stable file IDs/folder/sharing and version-ending names preserved.",
     "files": [
       {
         "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
-        "name": "Mental_Health_Questionnaire_v0.2.13.html",
-        "bytes": 1610402,
-        "sha256": "bb125b991597d6af763501ed1bbc72452bb2f3c7c907c41fd385635590cf2fac"
+        "name": "Mental_Health_Questionnaire_v0.2.14.html",
+        "bytes": 1614492,
+        "sha256": "7400e18606e857b8782fa12079dba9cdb794895a4207533414fddaedd630dbf2"
       },
       {
         "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
-        "name": "Mental_Health_Questionnaire_Guide_v0.2.13.pdf",
+        "name": "Mental_Health_Questionnaire_Guide_v0.2.14.pdf",
         "bytes": 49212,
         "sha256": "08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75"
       }
