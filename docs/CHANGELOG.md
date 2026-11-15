@@ -1,5 +1,12 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-15 · One Google Drive download destination — prepared
+
+README and discovery-page source now each offer one “Download from Google Drive” link to the stable review folder. Removed the separate raw-GitHub PDF link and individual Drive PDF button; aligned instructions say the guide is in the same folder. README technical source browsing points to `src/app/` instead of a packaged HTML file. Recorded the single-folder preference in AGENTS.md. Current app/guide/Drive files stay v0.2.10; no package rebuild or in-app note is needed for this website/documentation update.
+
+Two existing isolated artifact checks passed. Direct link checks confirm exactly one matching folder destination per page and no individual HTML/PDF download link; JavaScript-disabled 320/390/1280 layouts, keyboard skip link and phone screenshots passed inspection. Independent review found no material issue. Checked integration, manual Pages deployment and live README/site readback remain pending. Queued-only PR #27 covers the same README request and will be closed as fulfilled after delivery, without adding a completed TD entry.
+
+
 ### 2026-11-15 · Clean versioned downloads v0.2.10 — DELIVERED
 
 PR #40 merged as `d89cb1848df11223c0e571111bb689155a7156e3`, preserving checked head `9a277bc846e17dec90ca691f4b7b49764b813683` tree. Required full/app/discovery CI passed with real offline file opening (43680973892 / 43680973918 / 43680973893). Current repository and Drive use `Mental_Health_Questionnaire_v0.2.10.html` and `Mental_Health_Questionnaire_Guide_v0.2.10.pdf`, built from clean source `538427b6eb0a3dfa65be50a5b830194605a5d69e`. Both Drive files read back byte-identical: HTML `e82d10c93be6b85b96672f53ba1651dabc53f0b5b35500fce91fea1e83482e93`, unchanged guide PDF `b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9`. Same IDs, parents, sharing and stable folder label; exactly the current pair in the folder. Snapshot `review/v0.2.10` and original-named v0.2.9 archive preserve rollback.
