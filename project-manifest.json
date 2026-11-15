@@ -592,21 +592,21 @@
     "folder_url": "https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
     "purpose": "PROFESSIONAL_TECHNICAL_REVIEW_CANDIDATE_NOT_PUBLIC_RELEASE",
     "reference_language": "lv",
-    "version": "0.2.10",
-    "source_commit": "538427b6eb0a3dfa65be50a5b830194605a5d69e",
+    "version": "0.2.11",
+    "source_commit": "a80a4e1278eca9ca53c3798ba66b7b95556fe2da",
     "verified_date": "2026-11-15",
     "auto_sync": false,
-    "synchronization": "VERIFIED: clean-named v0.2.10 HTML/PDF downloaded byte-identical; shared version at the end, stable IDs, folder and sharing preserved.",
+    "synchronization": "VERIFIED: v0.2.11 single-answer delay halved to 650 ms; HTML/PDF downloaded byte-identical under version-ending names; stable IDs, folder and sharing preserved.",
     "files": [
       {
         "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
-        "name": "Mental_Health_Questionnaire_v0.2.10.html",
-        "bytes": 1546659,
-        "sha256": "e82d10c93be6b85b96672f53ba1651dabc53f0b5b35500fce91fea1e83482e93"
+        "name": "Mental_Health_Questionnaire_v0.2.11.html",
+        "bytes": 1546075,
+        "sha256": "e07141d4f8198a479dca66352b51c9a6617a479020e912d09c066f9f99d399ae"
       },
       {
         "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
-        "name": "Mental_Health_Questionnaire_Guide_v0.2.10.pdf",
+        "name": "Mental_Health_Questionnaire_Guide_v0.2.11.pdf",
         "bytes": 49212,
         "sha256": "b479f037a089360370aa08544ba35141dd0e39ab2ae1a39e5d8fe43c306a1ec9"
       }
@@ -621,7 +621,7 @@
       "uk"
     ],
     "source_readme": "docs/review/GUIDE_LV_EN_RU_UK.md",
-    "promotion_commit": "d89cb1848df11223c0e571111bb689155a7156e3",
+    "promotion_commit": "9bd0b3b19113d9b39a24a3349c956be0bb3c3ec8",
     "last_built_date": "2026-11-15"
   }
 }
