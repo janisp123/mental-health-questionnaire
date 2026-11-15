@@ -14,6 +14,7 @@
     "core/events.js",
     "reports/reports.js",
     "reports/feedback-delivery.js",
+    "core/sharing.js",
     "screens/start.js",
     "screens/section-selector.js",
     "screens/question.js",
@@ -21,6 +22,7 @@
     "screens/feedback.js",
     "screens/results.js",
     "screens/report-page.js",
+    "screens/sharing.js",
     "core/app.js"
   ]
 }

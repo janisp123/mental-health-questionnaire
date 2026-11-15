@@ -63,7 +63,7 @@ def guide_pdf(source):
     stream = io.BytesIO()
     document = SimpleDocTemplate(stream, pagesize=A4, leftMargin=48, rightMargin=48,
                                  topMargin=42, bottomMargin=42, invariant=1,
-                                 title="Four-language questionnaire guide", author="Mental health questionnaire project")
+                                 title="Multilanguage questionnaire guide", author="Mental health questionnaire project")
     document.build(story)
     if document.page != 1:
         raise ValueError("The short reviewer guide must fit on one A4 page")

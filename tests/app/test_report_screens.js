@@ -29,11 +29,13 @@ assert.match(results,/data-act="doctor"[^>]*>Generate report<\/button>/);
 assert.match(results,/<select id="report-language"><option value="lv">Latviešu<\/option><\/select>/);
 
 const report = screens.reportPage({
-  heading:"Doctor report",locale:"lv",markup:"<p>Synthetic report</p>",btn,escape,
+  heading:"Doctor report",locale:"lv",markup:"<p>Synthetic report</p>",btn,escape,label,
 });
 assert.match(report,/Synthetic report/);
 assert.match(report,/class="report-preview" lang="lv"/);
 assert.match(report,/data-act="print"/);
+assert.match(report,/data-act="new"/);
+assert.match(report,/data-act="shareQuestionnaire"/);
 assert.match(report,/data-act="back"/);
 assert.match(report,/data-act="sections"/);
 assert.match(report,/data-act="resultScreen"/);
@@ -41,7 +43,7 @@ assert.doesNotMatch(report,/data-act="feedbackReport"/);
 assert.doesNotMatch(report,/data-act="copyDoctor"|data-act="downloadReport"|<textarea/);
 
 const flaggedReport = screens.reportPage({
-  heading:"Doctor report",locale:"lv",markup:"<p>Synthetic report</p>",btn,escape,hasFeedback:true,
+  heading:"Doctor report",locale:"lv",markup:"<p>Synthetic report</p>",btn,escape,label,hasFeedback:true,
 });
 assert.match(flaggedReport,/data-act="feedbackReport"/);
 
@@ -57,3 +59,8 @@ assert.match(feedback,/data-act="print"/);
 assert.match(feedback,/data-act="doctor"/);
 
 console.log("PASS: one Generate report action; only flagged clinician reports offer project feedback.");
+
+const empty=screens.reportPage({heading:"Doctor report",locale:"en",markup:"No answers",btn,escape,label,hasAnswers:false});
+assert.doesNotMatch(empty,/data-act="print"/);
+assert.match(empty,/data-act="back"/);
+assert.match(empty,/data-act="new"/);

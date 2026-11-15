@@ -41,6 +41,8 @@ These rules apply to future development work in this repository, particularly lo
 
 ## Audience and privacy in update notes
 
+- Use “multilanguage” or its localized equivalent in current public-facing descriptions, sharing text, README and landing page instead of a fixed language count. Language selectors and technical inventories may list the actual supported locales. Historical archives retain their original text.
+
 - The application's `notesHistory` is for patients and doctors. Include only concise descriptions of changes relevant to using the questionnaire, guide or reports.
 - Keep employer/portfolio/career goals, repository presentation or settings, branch/CI logistics, AI development workflow and private project coordination out of the application's update list and downloadable guide.
 - Repository-only maintenance does not require an in-app update entry or a new reviewer package. Do not add an app entry announcing this rule or a cleanup of private information.

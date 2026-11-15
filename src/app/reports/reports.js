@@ -33,12 +33,13 @@ function entries(questions,answers,locale,presentation,medicine) {
   const rec=answers[q.id],t=q.translations[locale],rule=presentation.questions?.[q.id]||{};
   const title=rule.labels?.[locale]||t.title;
   const medicineText=rec.kind==="medicine"?medicineValues(rec,medicine||{}):"";
-  const choices=rec.kind==="text"?[{text:rec.value||"—",bold:false}]:rec.kind==="medicine"?[{text:medicineText,bold:false}]:(rec.codes||[]).map(code=>({text:t.choices[code]||code,bold:(presentation.boldAnswers?.[q.id]||[]).includes(code)}));
+  const choices=rec.kind==="text"?[{text:rec.value||"",bold:false}]:rec.kind==="medicine"?[{text:medicineText,bold:false}]:(rec.codes||[]).map(code=>({text:t.choices[code]||code,bold:(presentation.boldAnswers?.[q.id]||[]).includes(code)}));
   const prefix=title+(t.time?" ("+t.time+")":"")+": ";
   const value=choices.map(c=>c.text).join("; ");
+  if(!value.trim())return null;
   const response=choices.map(c=>c.bold?"<strong>"+esc(c.text)+"</strong>":esc(c.text)).join("; ");
   return {id:q.id,index,topic:Math.max(0,order.indexOf(q.module)),plain:prefix+value,html:"<p>"+esc(prefix)+response+"</p>"};
- }).sort((a,b)=>a.topic-b.topic||a.index-b.index);
+ }).filter(Boolean).sort((a,b)=>a.topic-b.topic||a.index-b.index);
 }
 function feedbackEntries(questions,feedback,catalogs) {
  const byId=new Map(questions.map(q=>[q.id,q]));
@@ -71,20 +72,21 @@ function identityText(ui,identity={}) {
  return ui.reportName+": "+(name||"____________________________")+"\n"+ui.reportDate+": ____________________";
 }
 function countText(counts,ui) {
- return [ui.reportCountSelected+": "+counts.selected,ui.reportCountDone+": "+counts.answered,ui.reportCountSkip+": "+counts.skipped].join(" · ");
+ return ui.reportCountIncluded+": "+counts;
 }
 function doctorText(questions,answers,locale,ui,presentation,identity={}) {
- const counts=counters(questions,answers);
  const responses=entries(questions,answers,locale,presentation,ui.medicine).map(e=>e.plain);
- return [identityText(ui,identity),"",ui.doctorHeading,ui.doctorDisclaimer,countText(counts,ui),ui.coverageNote,"",...responses].join("\n");
+ if(!responses.length)return ui.reportEmpty;
+ return [identityText(ui,identity),"",ui.doctorHeading,ui.doctorDisclaimer,countText(responses.length,ui),ui.omissionNote,"",...responses].join("\n");
 }
 function doctorMarkup(questions,answers,locale,ui,presentation,identity={}) {
- const counts=counters(questions,answers);
+ const items=entries(questions,answers,locale,presentation,ui.medicine);
+ if(!items.length)return '<p class="report-empty">'+esc(ui.reportEmpty)+'</p>';
  const name=[identity.name,identity.surname].map(value=>String(value||"").trim()).filter(Boolean).join(" ");
  const nameValue=name?esc(name):'<span class="write-in"></span>';
  const dateHtml='<p><strong>'+esc(ui.reportDate)+':</strong> <span class="write-in write-in-date"></span></p>';
- const summary="<p class=\"report-counts\">"+esc(countText(counts,ui))+"</p><p>"+esc(ui.coverageNote)+"</p>";
- const responses=entries(questions,answers,locale,presentation,ui.medicine).map(e=>e.html.replace(/\n/g,"<br>")).join("");
+ const summary="<p class=\"report-counts\">"+esc(countText(items.length,ui))+"</p><p>"+esc(ui.omissionNote)+"</p>";
+ const responses=items.map(e=>e.html.replace(/\n/g,"<br>")).join("");
  return '<div class="report-identity"><p><strong>'+esc(ui.reportName)+':</strong> '+nameValue+'</p>'+dateHtml+'</div><h1>'+esc(ui.doctorHeading)+'</h1><p>'+esc(ui.doctorDisclaimer)+'</p>'+summary+'<hr>'+responses;
 }
 function doctorHtml(questions,answers,locale,ui,presentation,identity={}) {

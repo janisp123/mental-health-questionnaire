@@ -58,7 +58,7 @@ function footer(){
  const updates='<details id="project-updates"><summary>'+label("notesTitle")+'</summary><ol>'+
   ui().notesHistory.map(note=>'<li>'+esc(note)+'</li>').join("")+'</ol><h3>'+label("projectPlans")+'</h3><ul><li>'+
   label("projectPlanReview")+'</li><li>'+label("projectPlanLanguages")+'</li></ul></details>';
- return '<footer><details><summary>'+label("tools")+'</summary>'+toolbar()+'</details><details id="support-details"><summary>'+label("supportMenu")+'</summary>'+supportLinks(true)+'</details><details><summary>'+label("guideTitle")+'</summary><p>'+label("guideBody")+'</p></details>'+updates+'<details id="project-information"><summary>'+label("legal")+'</summary>'+ui().legalBody.split("\n\n").map(text=>'<p>'+esc(text)+'</p>').join("")+'</details><p class="muted">'+label("statusNote")+' · '+label("footer")+' · <span class="creator-credit" lang="en">made by Janis Paegle <a data-project-source href="https://github.com/janisp123/mental-health-questionnaire" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" aria-label="'+label("projectSource")+'" lang="'+esc(state.lang)+'">GitHub</a> 2026</span> · '+label("freeUse")+'</p></footer>';
+ return '<footer><details><summary>'+label("tools")+'</summary>'+toolbar()+'</details><details id="support-details"><summary>'+label("supportMenu")+'</summary>'+supportLinks(true)+'</details><details><summary>'+label("guideTitle")+'</summary><p>'+label("guideBody")+'</p></details>'+updates+'<details id="project-information"><summary>'+label("legal")+'</summary>'+ui().legalBody.split("\n\n").map(text=>'<p>'+esc(text)+'</p>').join("")+'</details><details id="project-contributions"><summary>'+label("contributionsTitle")+'</summary><p>'+label("projectContributors")+'</p><p>'+label("contributionsInvitation")+'</p></details><p class="muted">'+label("statusNote")+' · '+label("footer")+' · <span class="creator-credit" lang="en">made by Janis Paegle <a data-project-source href="https://github.com/janisp123/mental-health-questionnaire" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" aria-label="'+label("projectSource")+'" lang="'+esc(state.lang)+'">GitHub</a> 2026</span> · '+label("freeUse")+'</p></footer>';
 }
 function renderStart(){
  return window.QuestionnaireScreens.start({label,btn});
@@ -134,7 +134,9 @@ function renderReport(){
  const locale=state.reportLang??state.lang;
  const markup=report.doctorMarkup(reportQuestions(),state.answers,locale,data.ui[locale],data.presentation);
  return window.QuestionnaireScreens.reportPage({heading:data.ui[locale].doctorHeading,locale,markup,escape:esc,label,btn,
-  hasFeedback:Object.keys(state.feedback).length>0});
+  hasFeedback:Object.keys(state.feedback).length>0,
+  hasAnswers:report.entries(reportQuestions(),state.answers,locale,data.presentation,data.ui[locale].medicine).length>0,
+  sharing:state.shareOpen?window.QuestionnaireScreens.sharing({text:window.QuestionnaireSharing.copyText(ui()),canShare:typeof navigator.share==="function",label,btn,escape:esc}):""});
 }
 function renderSectionComplete(){
  return '<section class="card"><h2>'+label("sectionCompleteTitle")+'</h2><p>'+label("sectionCompleteBody")+'</p>'+btn("saveAndContinue","saveAndContinue","primary")+btn("continueWithoutSaving","continueWithoutSaving")+'</section>';
@@ -293,6 +295,14 @@ function restore(file){
 function action(key){
  if(["skip","previous","skipSection","end","sections","results","doctor","feedbackReport","resultScreen","back","reviewSafety","new","feedbackContinue"].includes(key))clearPendingSingleAnswer();
  const q=reportQuestions(),u=ui();
+ if(key==="shareQuestionnaire"&&state.screen==="report"&&state.reportView!=="feedback"){
+  state.shareOpen=!state.shareOpen;render();return;
+ }
+ if((key==="nativeShare"||key==="copyQuestionnaire")&&state.screen==="report"&&state.reportView!=="feedback"){
+  const field=document.getElementById("questionnaire-share-copy"),status=document.getElementById("questionnaire-share-status");
+  if(field&&status)window.QuestionnaireSharing.deliver(key==="nativeShare"?"share":"copy",u,{field,status});
+  return;
+ }
  if(key==="support"){state.support="support";state.focusSupport=true;render();window.scrollTo(0,0);return;}
  if(key==="dismissSupport"){state.support=null;render();return;}
  if(key==="start"){start();return;}
@@ -352,11 +362,14 @@ function action(key){
   }return;}
  if(key==="new"){
    if(window.confirm(u.newConfirm)){
-     const lang=state.lang;state={lang,screen:"start",currentId:null,answers:{},feedback:{},feedbackOpen:false,selected:[],sectionDraft:[],sectionConfirmed:false,notice:"",draft:null};render();
+     const lang=state.lang;state={lang,screen:"start",currentId:null,answers:{},feedback:{},feedbackOpen:false,selected:[],sectionDraft:[],sectionConfirmed:false,notice:"",draft:null};render();window.scrollTo(0,0);
    }return;
  }
  if(key==="backup"){downloadBackup();state.notice=u.backupSaved;render();return;}
- if(key==="print"&&state.screen==="report")window.print();
+ if(key==="print"&&state.screen==="report"){
+  const locale=state.reportLang??state.lang;
+  if(state.reportView==="feedback"||report.entries(q,state.answers,locale,data.presentation,data.ui[locale].medicine).length)window.print();
+ }
 }
 function singleAnswer(code){
  const q=current();if(!q||q.multi||q.type==="shortText")return;
