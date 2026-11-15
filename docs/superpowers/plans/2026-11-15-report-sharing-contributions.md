@@ -7,7 +7,8 @@ Execution: inline using existing runtime/screens and a focused public-only shari
 - [x] Add focused report/screen/runtime regressions and observe relevant failures.
 - [x] Implement provided-answer report, reset/share controls, public-only delivery and contributions; align locales/current public copy and release notes.
 - [x] Run focused and full checks, inspect report/share/empty/first-page layouts and PDF, obtain independent review.
-- [ ] Commit clean source, build/archive/version v0.2.12, merge required checked PR, publish Pages wording and replace same Drive IDs; verify readback.
+- [x] Commit clean source, build/archive/version v0.2.12, merge required checked PR and replace same Drive IDs; verify readback.
+- Pages wording publication is carried into the separately authorized localized discovery task to avoid an intermediate deployment.
 - [ ] Merge delivery records with actual source, CI, deployment and Drive hashes.
 
 Keep existing summary/section progress counts unchanged. Frequency wording and unrelated TD remain deferred. Existing saved progress retains every record. Native device share-sheet behavior on physical phones remains unverified unless actually tested; synthetic API checks must be labelled.

@@ -4,11 +4,12 @@ Updated 15 November 2026. Main is the sole active source.
 
 ## Current product and distribution
 
-- New source/package candidate: **v0.2.12**, LV/EN/RU/UK, 712 questions, 48 source modules and 15 sections. Current verified Drive distribution remains v0.2.11 pending checked integration and byte readback.
-- Clinician preview adds confirmed New questionnaire and public-only sharing/copy controls. Every provided answer, including No/uncertain/refusal, remains; only skipped/missing/blank entries are omitted. Header reports provided-entry count and a brief omission explanation; empty reports offer return/reset/share without printing an empty PDF.
-- Contributions is visible in the first-page footer even without names, with consent-based invitation. Current public wording uses multilanguage rather than a fixed count. Questions, answer codes/scales/conditions, 650 ms auto-advance and recovery remain unchanged.
-- All 36 maintained checks passed in labelled memory mode (`dist/checks-report-sharing/results.json`); focused regressions failed before fixes and pass after. Native share/clipboard success, missing/rejected APIs and cancellation use synthetic browser APIs; no external sharing took place. Mobile screen/PDF print isolation and the guide were inspected. Independent review found no issues.
-- Clean source `2e152a732b7077e9d35d5154b8c2828fdc13b4d6` produced verified HTML/PDF/ZIP (`source_dirty: false`). Public filenames end in v0.2.12. Guide instructions are unchanged; PDF title metadata now says Multilanguage, producing a new PDF hash. Previous v0.2.11 archived exactly. Physical-device/native OS sharing and human language/clinical reviews remain pending.
+- Source and current verified Drive distribution: **v0.2.12**, LV/EN/RU/UK, 712 questions, 48 preserved source modules and 15 optional sections. Technical review only; human language/clinical and physical-device review remain pending.
+- Clinician preview has confirmed New questionnaire and public-only sharing/copy controls. Every provided answer, including No/uncertain/refused choices, remains; only skipped/missing/blank entries are omitted. Header shows provided-entry count plus brief omission explanation; no empty PDF action. Sharing/reset controls are excluded from print.
+- Contributions stays visible in the first-page footer even without names; names require permission. Current public wording uses multilanguage rather than a fixed count. Original questions/scales/conditions, recovery and 650 ms auto-advance remain unchanged.
+- PR #46 merged as `282a8dcd62beb427ea70bdc51164c67e097af25a`, preserving checked head `80466c571c4a8dd82cb91879d85e5e7978c4186d` tree. Clean package source `2e152a732b7077e9d35d5154b8c2828fdc13b4d6`; HTML/PDF/ZIP verified. Guide instructions unchanged; PDF title metadata uses Multilanguage. [Package manifest](../MH_Public_version/manifest.json).
+- All 36 maintained local checks passed in labelled memory mode; independent review found no issues. Required full/app/discovery CI passed with real offline file opening (43688233639 / 43688233520 / 43688233475). Localized mobile layouts, clinician PDF isolation and companion guide inspected. Native sharing/clipboard scenarios use controlled synthetic APIs; physical-device OS sharing remains unverified.
+- Current Drive filenames: `Mental_Health_Questionnaire_v0.2.12.html` and `Mental_Health_Questionnaire_Guide_v0.2.12.pdf`. Both downloads match exactly, with same IDs/folder and verified baseline sharing; exactly the current pair. Previous v0.2.11 archived; snapshot `review/v0.2.12` preserves rollback. [Delivery evidence](review/checks/2026-11-15-report-sharing-drive-sync.json). Existing downloads require a fresh HTML file.
 
 ## Website and safeguards
 
@@ -18,8 +19,8 @@ Updated 15 November 2026. Main is the sole active source.
 
 ## Remaining work and next action
 
-Read [TD](TD_LIST.md) before new work. Earlier wording/effectiveness audits were read-only; broader wording proposals, focus management and the separate omission-note repair are not implemented. Report counts/completion labels are delivered in v0.2.9. The English clinical-coverage verification plan is separate from validation or diagnosis. Dependency-security findings also remain unimplemented recommendations.
+Read [TD](TD_LIST.md) before new work. Earlier wording/effectiveness audits were read-only; broader wording proposals and focus management remain unimplemented. The clinician omission explanation is delivered in v0.2.12. Report counts/completion labels are delivered in v0.2.9. The English clinical-coverage verification plan is separate from validation or diagnosis. Dependency-security findings also remain unimplemented recommendations.
 
 Frequency wording and numerical-guide proposals are deferred in TD. No scale redesign is approved; other tasks take priority. Frequency scales remain unchanged in v0.2.12.
 
-Next action: complete required checked-PR integration for v0.2.12, publish the approved landing-page wording, replace the same Drive HTML/PDF IDs and verify bytes/names/folder/sharing. Record delivery and mark the omission explanation delivered; unrelated TD and Search Console/Bing owner verification stay pending.
+Next action: implement and verify owner-requested English/Latvian/Russian discovery pages and publish through the Pages workflow, then verify live localized URLs/canonical/hreflang/sitemap and record actual deployment. App/Drive v0.2.12 is delivered; do not rebuild or upload it for website-only work. Search Console/Bing owner verification and unrelated TD remain pending.

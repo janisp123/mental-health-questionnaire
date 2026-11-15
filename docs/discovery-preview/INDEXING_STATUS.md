@@ -28,3 +28,8 @@ The page is accessible and has no observed indexing block, but Google/Bing index
 5. Recheck realistic preparation-related searches after indexing is confirmed. Record observed links/citations without treating one result as a stable ranking or provider endorsement.
 
 Ownership verification and requests help search engines discover a page; they do not guarantee indexing, ranking or AI recommendations. No site, bot/training policy or questionnaire change was made during this check. Earlier deployment history remains in [LAUNCH.md](LAUNCH.md); this file is the current indexing follow-up.
+
+
+## Localized update — 15 November 2026
+
+English root plus Latvian `/lv/` and Russian `/ru/` pages are prepared for reviewed publication, with native visible content/metadata, reciprocal language alternatives and a complete sitemap. Live localized URLs and indexing are not claimed until deployment/readback. After publication inspect each URL in Search Console/Bing, rather than only the English root. No owner-account verification or index request was performed.
