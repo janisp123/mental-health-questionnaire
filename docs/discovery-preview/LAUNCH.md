@@ -87,4 +87,9 @@ HTTPS page and sitemap returned 200; correct self-canonical; no HTML/header noin
 
 ## Stable public wording
 
-Public download buttons and opening instructions deliberately omit release numbers, exact package filenames and a manual checked-on date. The questionnaire folder and PDF file keep stable Drive URLs; the version-information link points to the tags index rather than a specific snapshot. New release artifacts still need the normal verified distribution update, but routine patches need no landing-page copy rewrite. Product facts such as supported languages and question coverage should be reviewed only when those facts change.
+The public download button and opening instructions deliberately omit release numbers, exact package filenames and a manual checked-on date. One stable Google Drive folder link provides both the questionnaire and PDF guide; there is no separate PDF or individual-file download action. The version-information link points to the tags index rather than a specific snapshot. New release artifacts still need the normal verified distribution update, but routine patches need no landing-page copy rewrite. Product facts such as supported languages and question coverage should be reviewed only when those facts change.
+
+
+## Single-folder download delivery — 15 November 2026
+
+README and the live page each use one “Download from Google Drive” link to the same folder. Removed separate raw-GitHub/individual-Drive PDF download links and aligned guide instructions. Source PR #42 merge `8063c261f1b33a23f3b78ade95a48178601cb6bf`; Pages run 43682403681 succeeded. Live index/sitemap bytes match the tested artifact, and main README bytes match the merged source. No product/guide/Drive-file update; v0.2.10 remains current. Current evidence: [download-link readback](../review/checks/2026-11-15-single-drive-download-links.json).

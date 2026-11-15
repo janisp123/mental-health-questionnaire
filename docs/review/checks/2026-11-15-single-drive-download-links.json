@@ -1,0 +1,70 @@
+{
+  "verified_at": "2026-11-15T07:46:42.091223+02:00",
+  "source_pr": 42,
+  "checked_head": "d4192daa760b707889d14a5493b2bc52eea1b761",
+  "main_merge": "8063c261f1b33a23f3b78ade95a48178601cb6bf",
+  "merge_tree_matches_checked_head": true,
+  "ci_runs": {
+    "app": 43682231805,
+    "discovery": 43682231808,
+    "full": 43682231798
+  },
+  "deployment": {
+    "conclusion": "success",
+    "createdAt": "2026-11-15T05:45:04Z",
+    "databaseId": 43682403681,
+    "headSha": "8063c261f1b33a23f3b78ade95a48178601cb6bf",
+    "status": "completed",
+    "updatedAt": "2026-11-15T05:45:41Z",
+    "url": "https://github.com/janisp123/mental-health-questionnaire/actions/runs/43682403681"
+  },
+  "previous_deployment": {
+    "conclusion": "success",
+    "createdAt": "2026-11-14T14:54:07Z",
+    "databaseId": 43607264240,
+    "headSha": "bee1b93cb0d72043b12b678c62210fb4b15a060f"
+  },
+  "page_url": "https://janisp123.github.io/mental-health-questionnaire/",
+  "http_status": 200,
+  "page_sha256": "6113ffaaa98d5a0fcd83e9cfba41d908362fc2c608a7cff9e70c61d5754224dd",
+  "live_bytes_match_tested_artifact": true,
+  "page_download_links": [
+    {
+      "href": "https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+      "label": "Download from Google Drive"
+    }
+  ],
+  "readme_blob_sha": "58f9bbf3de2ab5fc911ce7aa42bd30df01ed5fba",
+  "readme_bytes_match_merged_source": true,
+  "readme_download_links": [
+    {
+      "href": "https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+      "label": "Download from Google Drive"
+    }
+  ],
+  "sitemap": {
+    "url": "https://janisp123.github.io/mental-health-questionnaire/sitemap.xml",
+    "status": 200,
+    "sha256": "a55478fe283d7d2d901832b874af48cc7cc3bf6ed3c706ca013e13793da30266"
+  },
+  "canonical": "https://janisp123.github.io/mental-health-questionnaire/",
+  "no_individual_html_pdf_links": true,
+  "local_checks": [
+    "Two existing isolated publication tests passed",
+    "Direct HTML/Markdown link checks passed",
+    "JavaScript-disabled 320/390/1280 browser layout and keyboard skip-link checks passed (memory mode)",
+    "Phone CTA and opening instructions visually inspected",
+    "Independent review found no Critical/Important or minor concerns"
+  ],
+  "app_package_version": "0.2.10",
+  "app_guide_drive_bytes_unchanged": true,
+  "indexing_status": "UNVERIFIED; no indexing request submitted",
+  "fulfilled_queue_pr": {
+    "number": 27,
+    "headRefOid": "1d96a11ae78c0fc3db3971a5866f594535a777ff",
+    "mergedAt": null,
+    "state": "CLOSED",
+    "url": "https://github.com/janisp123/mental-health-questionnaire/pull/27"
+  },
+  "existing_download_package_evidence": "2026-11-15-clean-download-names-drive-sync.json"
+}
