@@ -3,7 +3,7 @@
 
 ## Current publication — 16 November 2026
 
-The English/Latvian/Russian landing pages describe the verified **v0.2.15** distribution: 715 active questions, coordination/speech/rare-stuttering coverage and question-only immediate/copy/save-later feedback. Both online and downloaded modes use the same byte-verified HTML. PR #62 and Pages run **43836481721** published the description correction; all live page bytes, 320/390/1280px layouts, one stable Drive-folder download per page and questionnaire-open actions passed readback. README and existing Drive HTML/PDF are current. [Public-page evidence](../review/checks/2026-11-16-public-overview-live.json); [app/Drive evidence](../review/checks/2026-11-16-feedback-m46-live.json).
+The English/Latvian/Russian landing pages describe verified **v0.2.16**, 716 active questions. The current app includes optional M06_25 in its existing safety section; its 1–5 metadata orders clinician review only and is not a clinical score. Existing feedback, coordination/speech questions and privacy contracts are retained. Online and downloaded modes use identical verified HTML. PR #65 and Pages run **43843288872** published the matching app/count update after Drive readback; live pages, open/download actions, layouts, all active app locales, old/current progress and clinician PDFs passed. [Current live evidence](../review/checks/2026-11-16-m06-context-live.json); [Drive readback](../review/checks/2026-11-16-m06-context-drive-sync.json). Human review and actual search indexing remain pending.
 
 Earlier sections below are historical deployment records. Their page-only/manual-only limitations describe previous snapshots; use this current section, `tools/build_discovery.py` and the active checkpoint for current behavior.
 

@@ -1,0 +1,73 @@
+{
+  "verified_at": "2026-11-16T09:52:46.257443+00:00",
+  "version": "0.2.16-review+full-bank",
+  "questionnaire_url": "https://janisp123.github.io/mental-health-questionnaire/questionnaire/",
+  "sha256": "6eccfdbedb9e1cd2bf33ff2b4cbf501ec3babf777e8e652e4db8914ab6c46495",
+  "bytes": 1632471,
+  "https_status": 200,
+  "byte_identical_to_package": true,
+  "landings": [
+    {
+      "locale": "en",
+      "status": 200,
+      "sha256": "e049d6afafbf72291ba2330ca1416f99d45622fbc68947401537b7d5226839e3",
+      "count": 716
+    },
+    {
+      "locale": "lv",
+      "status": 200,
+      "sha256": "d86b3046c1ca8c5a8d3f122a5c34085a68eced6938442549f942f4127057d1be",
+      "count": 716
+    },
+    {
+      "locale": "ru",
+      "status": 200,
+      "sha256": "6c8f59ac328639b349db5de5ec044389ccf6fe376567dd9ca6581b412e0761af",
+      "count": 716
+    }
+  ],
+  "tested_locales": [
+    "lv",
+    "en",
+    "ru",
+    "uk"
+  ],
+  "new_id": "M06_25",
+  "report_priority": {
+    "default": 3,
+    "answers": {
+      "A": 4,
+      "B": 3,
+      "C": 3,
+      "D": 3,
+      "E": 3,
+      "F": 3
+    }
+  },
+  "old_progress_negative_current_thoughts_reachability": true,
+  "all_locale_affirmative_and_uncertain_roundtrips_and_pdf": true,
+  "hosted_offline_progress_transfer": true,
+  "offline_local_load_mode": "memory",
+  "viewport_widths": [
+    320,
+    390,
+    1280
+  ],
+  "no_hypothetical_emergency_inference": true,
+  "answer_related_requests": 0,
+  "browser_errors": [],
+  "clinical_language_physical_device_review": "pending",
+  "pages_run": 43843288872,
+  "delivery_pr": 65,
+  "delivery_checked_head": "6fcdc43c28ed1290c3a615e119cdc1e125552085",
+  "delivery_merge": "ee8060222e3b4ebdc18903e78f0227b8aee497bb",
+  "delivery_merge_tree_matches_checked_head": true,
+  "delivery_ci": {
+    "app-components": 43842642981,
+    "discovery-bundle": 43842642732,
+    "full-questionnaire": 43842642747
+  },
+  "old_progress_fixture_header": "version=0.2.15-review+full-bank",
+  "all_24_response_locale_combinations_in_pdf_and_progress": "Focused local test passed with canonical prior-version field; CI required on final record commit.",
+  "drive_sync": "docs/review/checks/2026-11-16-m06-context-drive-sync.json"
+}
