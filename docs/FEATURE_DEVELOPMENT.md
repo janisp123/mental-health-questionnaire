@@ -65,3 +65,7 @@ CI uses real offline file opening. If a managed browser blocks `file://`, run `p
 ## Hosted and downloaded questionnaire
 
 The Pages builder copies the current `MH_Public_version/` HTML verbatim to `questionnaire/index.html`; the app retains its existing language selector, progress format and browser-local processing. Landing pages expose separate online-open and stable Drive-folder download actions. `--require-verified-distribution` gates publication on the matching project-manifest Drive record. Release delivery evidence named `docs/review/checks/*-drive-sync.json` triggers automatic website refresh after verified Drive updates. Local previews can build without that publication gate; they are not delivery evidence.
+
+`src/questionnaire/m46-additions.json` adds three independent M46 items after M46_03 without altering the 712 frozen source records. The builder validates unique IDs/orders, complete active-language wording and answer contracts before applying neutral draft report priorities. Current active total: 715 questions.
+
+`QuestionnaireFeedbackDelivery.composeQuestion` reads one current feedback draft and its question only; immediate email/copy actions do not enqueue feedback or change medical answers/navigation. Opening the flag pauses any pending single-choice timer while retaining the choice. Save-for-later retains its established save/advance behavior.

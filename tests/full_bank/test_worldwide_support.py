@@ -14,11 +14,12 @@ for group in bundle['groups']:
  for q in group['questions']:
   for lang,t in q['translations'].items():
    assert not countries.search(json.dumps(t,ensure_ascii=False)),(q['id'],lang)
-   if lang in build.SOURCE_LANGS:
+   if lang in build.SOURCE_LANGS and q['id'] in source:
     old=source[q['id']]['translations'][lang]
     if old['time']!=t['time']:changed.append((q['id'],lang))
     ignored={'time','help'} if q['id'] in {'M04_01','M14_02','M02_09'} else {'time'}
     assert {k:v for k,v in t.items() if k not in ignored}=={k:v for k,v in old.items() if k not in ignored}
+  if q['id'] not in source:continue
   for key in ('id','order','profile','multi','context','choiceCodes','exclusive','incompatible','answerStatus','type'):
    assert q[key]==source[q['id']][key],(q['id'],key)
 assert {qid for qid,lang in changed}=={'M15_19','M18_13','M30_17'}

@@ -31,5 +31,5 @@ for path in source_files:
 assert count==712
 assert all(q['context'] is None or q['context']['id'] in adapted for q in adapted.values())
 assert all(q['context'] is None or adapted[q['context']['id']]['order']<q['order'] for q in adapted.values())
-assert sum(len(g['questions']) for g in build.build_bundle()['groups'])==712
+assert sum(len(g['questions']) for g in build.build_bundle()['groups'])==715
 print(f'PASS: read-only adapter preserves all {count} questions in all 48 modules and the default build.')

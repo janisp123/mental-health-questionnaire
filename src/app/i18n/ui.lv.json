@@ -95,6 +95,7 @@
     "guideBody": "Atveriet lejupielādēto HTML failu pārlūkā. Priekšskatījumā tas nedarbojas. Vienas atbildes izvēle tiek saglabāta atvērtajā anketā. Vairākām atbildēm un teksta laukiem nospiediet “Saglabāt un tālāk”. Pirms pauzes saglabājiet progresu failā. Saglabāto failu varat turēt savā ierīcē. Tas nav šifrēts, tāpēc kopīgojiet to tikai ar uzticamiem cilvēkiem vai veselības aprūpes speciālistu. Neievietojiet to sociālajos tīklos vai citviet publiski. Jūs izvēlaties, ko pārrunāt ar speciālistu. Precizitātes pārskatīšanai izlaidiet jautājumus, kas šķiet atbilstoši. Kļūdainos vai neskaidros jautājumus atzīmējiet un izvēlieties iemeslu. Beigās izvēlieties “Sagatavot pārskatu”, lai apskatītu pārskatu speciālistam un saglabātu to PDF formātā. Datorā turiet nospiestu Ctrl taustiņu un ritiniet peles ritenīti uz augšu vai leju, lai palielinātu vai samazinātu teksta izmēru. Rezultātu ekrānā varat izvēlēties pārskata valodu neatkarīgi no anketas valodas. Ja atzīmējāt kādu problēmu, no speciālista pārskata ekrāna varat atvērt atsevišķu atsauksmju pārskatu un saglabāt to PDF formātā.",
     "notesTitle": "Pēdējās izmaiņas un turpmākie plāni",
     "notesHistory": [
+      "2026. gada 16. novembris · Varat sagatavot e-pastu vai nokopēt atsauksmi par vienu jautājumu, neiekļaujot medicīniskās atbildes, vai saglabāt atsauksmi nosūtīšanai vēlāk. Pievienoti jautājumi par ikdienas kustību koordināciju, runas skaidrību un retu stostīšanos.",
       "15.11.2026 15:45 Riga — Precizēti norādījumi zāļu informācijas ievadīšanai. Pievienoti piemēri pašsajūtas pārmaiņu aprakstīšanai un norāde uz atsevišķajiem drošības jautājumiem.",
       "15.11.2026 14:35 Riga — Pārskatā saistītās atbildes tiek saglabātas kopā un sakārtotas pēc pārskatīšanas prioritātes. Atbilžu teksts un saglabātais progress nav mainīts.",
       "15.11.2026 08:56 Riga — Pārskatā tagad var sākt jaunu anketu un kopīgot publisku uzaicinājumu. Tajā ir tikai sniegtās atbildes un īss skaidrojums par izlaisto. Ieguldījuma sadaļa ir redzama arī pirms vārdu pievienošanas.",
@@ -103,8 +104,7 @@
       "14.11.2026 23:49 Riga — Kopsavilkumā un pārskatā speciālistam tagad ir vienādi jautājumu skaiti; atbildētie un izlaistie jautājumi norādīti atsevišķi. Citās sadaļās saglabātās piemērojamās atbildes joprojām ir iekļautas.",
       "14.11.2026 23:26 Riga — Atbalsta norādes tagad skaidro, ka nav jāsagatavo runa, palīdzības dienests ir paredzēts uzklausīšanai un palīdzībai un par konfidencialitāti var pajautāt pirms personiskas informācijas izpaušanas.",
       "14.11.2026 22:17 Riga — Kontaktinformācija ir pieejama GitHub saitē blakus autora vārdam; atsevišķais atsauksmju nosūtīšanas rīks saglabāts.",
-      "14.11.2026 17:02 Riga — atbalsta norādes skaidro, kā atrast palīdzības tālruni Jūsu valstī vai pilsētā; ārkārtas situācijās norādīts sazināties ar vietējiem neatliekamās palīdzības dienestiem. Precizēts, ka panikai līdzīgas epizodes maksimums ir sajūtu spēcīgākais brīdis konkrētajā epizodē.",
-      "14.11.2026 15:18 Riga — pievienoti e-pasta melnraksti un kopēšana atsauksmēm par jautājumiem; anketas atbildes netiek iekļautas."
+      "14.11.2026 17:02 Riga — atbalsta norādes skaidro, kā atrast palīdzības tālruni Jūsu valstī vai pilsētā; ārkārtas situācijās norādīts sazināties ar vietējiem neatliekamās palīdzības dienestiem. Precizēts, ka panikai līdzīgas epizodes maksimums ir sajūtu spēcīgākais brīdis konkrētajā epizodē."
     ],
     "coverageNote": "Skaits aptver piemērojamos jautājumus atlasītajās sadaļās un iepriekš atbildētos vai izlaistos jautājumus citās sadaļās. Mainītu nosacījumu dēļ paslēptās atbildes paliek progresa failā, bet šeit nav iekļautas.",
     "autoHint": "Izvēlieties vienu atbildi, lai saglabātu to atvērtajā anketā un turpinātu.",
@@ -116,7 +116,7 @@
     "feedbackAnswerPrefix": "Nepareiza atbilde",
     "feedbackOther": "Cits iemesls",
     "feedbackComment": "Piezīme (nav obligāti)",
-    "feedbackContinue": "Saglabāt un turpināt",
+    "feedbackContinue": "Saglabāt un nosūtīt vēlāk",
     "removeFeedback": "Noņemt atzīmi",
     "feedbackChooseReason": "Izvēlieties vismaz vienu iemeslu.",
     "feedbackPrivacy": "Norādiet tikai jautājuma labojumu. Neiekļaujiet savu vārdu, personas datus vai atbildes.",
@@ -141,7 +141,7 @@
     "projectSource": "Pirmkods un izstrāde (GitHub)",
     "sendFeedback": "Nosūtīt atsauksmes",
     "copyFeedback": "Kopēt atsauksmes",
-    "feedbackLocalOnly": "Atzīmes un komentāri paliek šajā atvērtajā anketā. Tie netiek automātiski nosūtīti izstrādātājam. Lai dalītos saglabātajās atsauksmēs, atveriet atsauksmju pārskatu sadaļā Rezultāti.",
+    "feedbackLocalOnly": "Izvēlieties iemeslu un, ja vēlaties, pievienojiet komentāru. Varat sagatavot e-pastu tagad vai saglabāt atsauksmi nosūtīšanai vēlāk.",
     "feedbackDeliveryPrivacy": "Tiks atvērts melnraksts Jūsu e-pasta lietotnē. E-pasta lietotne vai pakalpojuma sniedzējs var saglabāt vai pārsūtīt melnrakstu; e-pasts nav anonīms. Pirms nosūtīšanas pārskatiet atsauksmes un izdzēsiet ierakstīto sensitīvo informāciju. Iekļauti tikai atzīmētie jautājumi, atsauksmju kategorijas un komentāri, nevis Jūsu atbildes anketā. E-pasta lietotnē Jums pašam jānospiež Nosūtīt.",
     "feedbackCopyHelp": "Ja e-pasts neatveras vai kopēšana neizdodas, atlasiet zemāk redzamo tekstu un manuāli iekopējiet to e-pastā.",
     "feedbackLongHelp": "Šīm atsauksmēm nevar izmantot e-pasta saiti (teksts var būt pārāk garš). Iekopējiet visu zemāk redzamo tekstu e-pastā; nekas nav saīsināts.",
@@ -160,6 +160,10 @@
     "shareReady": "Varat arī nokopēt zemāk esošo ziņojumu.",
     "reportCountIncluded": "Sniegtās atbildes",
     "reportEmpty": "Nav atbilžu, ko iekļaut. Atgriezieties anketā, lai pievienotu atbildes.",
-    "reportOrderNote": "Atbildes sakārtotas pēc pārskatīšanas prioritātes, saglabājot saistīto kontekstu kopā. Tas nav klīniskā riska izvērtējums."
+    "reportOrderNote": "Atbildes sakārtotas pēc pārskatīšanas prioritātes, saglabājot saistīto kontekstu kopā. Tas nav klīniskā riska izvērtējums.",
+    "feedbackSendNow": "Atvērt e-pastu, lai nosūtītu tagad",
+    "feedbackEmailSubject": "Atsauksme par jautājumu",
+    "feedbackNowPrivacy": "E-pastam tiek sagatavots tikai šis jautājums un Jūsu atsauksme. Jūsu medicīniskās atbildes netiek iekļautas. Nosūtot e-pastu, saņēmējs redzēs Jūsu e-pasta adresi un tekstu, kuru izvēlēsieties nosūtīt. Pārskatiet melnrakstu un paši nospiediet Nosūtīt savā e-pasta lietotnē.",
+    "feedbackDraftReady": "Atsauksme ir sagatavota; piegāde nav apstiprināta. Ja e-pasta lietotne neatveras, nokopējiet atsauksmi un nosūtiet to manuāli vai saglabājiet vēlākam laikam."
   }
 }

@@ -28,8 +28,8 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert "пропускайте подходящие вопросы" in data["ui"]["ru"]["guideBody"].lower()
     assert len(data["groups"]) == 15
     questions = [q for group in data["groups"] for q in group["questions"]]
-    assert len(questions) == 712
-    assert len({q["id"] for q in questions}) == 712
+    assert len(questions) == 715
+    assert len({q["id"] for q in questions}) == 715
     question_by_id = {q["id"]: q for q in questions}
     assert question_by_id["M23_21"]["translations"]["en"]["choices"]["A"] == "A conversation and assessment"
     assert question_by_id["M23_21"]["translations"]["ru"]["choices"]["A"] == "Беседа и оценка состояния"
@@ -96,7 +96,7 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert question_by_id["M13_10"]["translations"]["ru"]["time"] == "Когда-либо в жизни."
     assert question_by_id["M13_10"]["translations"]["ru"]["choices"]["C"] == "Не знаю / трудно сказать."
     s06_questions = [q for q in questions if q["module"] == "S06"]
-    assert len(s06_questions) == 43
+    assert len(s06_questions) == 46
     assert question_by_id["M25_03"]["translations"]["ru"]["title"] == "Было ли вам значительно труднее выполнять математические вычисления, чем вашим сверстникам?"
     assert question_by_id["M46_01"]["translations"]["en"]["title"] == "Have you had difficulties with speech or language, motor coordination, or independent daily activities, either in childhood or currently?"
     assert question_by_id["M46_02"]["translations"]["ru"]["choices"]["C"] == "Координация движений и практические действия"

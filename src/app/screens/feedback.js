@@ -2,7 +2,7 @@
 (function (root) {
 "use strict";
 const screens = root.QuestionnaireScreens = root.QuestionnaireScreens || {};
-screens.feedback = function ({q,t,state,ui,label,escape,btn}) {
+screens.feedback = function ({q,t,state,ui,label,escape,btn,delivery,email}) {
  if(!state.feedbackOpen)return "";
  const saved=(state.feedbackDraft?.forId===q.id?state.feedbackDraft:state.feedback[q.id])||{reasons:[],comment:""},selected=new Set(saved.reasons||[]);
  const choices=[["question",label("feedbackQuestion")],["language",label("feedbackLanguage")],
@@ -10,6 +10,6 @@ screens.feedback = function ({q,t,state,ui,label,escape,btn}) {
   ["other",label("feedbackOther")]];
  return '<fieldset id="question-feedback" class="feedback-panel"><legend>'+label("feedbackTitle")+'</legend><p class="muted">'+label("feedbackLocalOnly")+'</p>'+choices.map(([key,text])=>
   '<label class="choice feedback-choice"><input type="checkbox" data-feedback-reason="'+escape(key)+'"'+(selected.has(key)?' checked':'')+'> <span>'+text+'</span></label>'
- ).join("")+'<label class="field-label">'+label("feedbackComment")+' <textarea id="feedback-comment" aria-describedby="feedback-privacy" maxlength="500">'+escape(saved.comment||"")+'</textarea></label><p class="muted">'+label("optionalText")+'</p><p id="feedback-privacy" class="muted">'+label("feedbackPrivacy")+'</p>'+btn("feedbackContinue","feedbackContinue","primary-inline")+(state.feedback[q.id]?btn("removeFeedback","removeFeedback"):"")+'</fieldset>';
+ ).join("")+'<label class="field-label">'+label("feedbackComment")+' <textarea id="feedback-comment" aria-describedby="feedback-privacy" maxlength="500">'+escape(saved.comment||"")+'</textarea></label><p class="muted">'+label("optionalText")+'</p><p id="feedback-privacy" class="muted">'+label("feedbackPrivacy")+'</p>'+'<p class="muted">'+label("feedbackNowPrivacy")+'</p><div class="actions">'+btn("emailQuestionFeedback","feedbackSendNow","primary-inline")+btn("copyQuestionFeedback","copyFeedback")+btn("feedbackContinue","feedbackContinue")+'</div>'+(delivery?'<div id="question-feedback-delivery"><p class="muted">'+label(delivery.url?"feedbackDraftReady":"feedbackLongHelp")+'</p><p class="muted">'+label("feedbackContactLabel")+': '+escape(email)+'</p><label for="question-feedback-copy">'+label("feedbackCopyHelp")+'</label><textarea id="question-feedback-copy" readonly rows="6">'+escape(delivery.text)+'</textarea><p id="question-feedback-status" role="status"></p></div>':"")+(state.feedback[q.id]?btn("removeFeedback","removeFeedback"):"")+'</fieldset>';
 };
 })(globalThis);

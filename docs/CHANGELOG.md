@@ -1,5 +1,17 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · v0.2.15 package — CLEAN SOURCE CHECKPOINT
+
+Source `2b81137` contains both additions and the independent-review stale-copy fix. The new regression observed the stale preview before the fix and now passes with all focused feedback checks. Built v0.2.15 from clean source (`source_dirty: false`); current-source HTML/PDF/ZIP verification passed. HTML SHA256 `71c9036ed014b2e7d2a91b37cd1c431ec7c829fe17dad0cf6738218e07ad242e`; guide remains byte-identical and its rendered page was visually inspected. Archived the v0.2.14 repository pair intact. Final full suite is running in labelled memory mode; real offline CI, PR merge and Drive/hosted readback remain pending. Existing public distribution remains v0.2.14 until deliberate verified delivery.
+
+### 2026-11-16 · Immediate feedback and M46 additions — LOCAL SOURCE CHECKPOINT
+
+Added by: ChatGPT (TD entries preserved). Implemented by: Codex (local source; release pending). Added explicit single-question email preparation/copy/manual fallback without sending, queuing, medical data or navigation changes. Existing save-for-later retained. Added independent M46_07/08/09 after M46_03 in a validated supplemental catalog; all 712 frozen source records unchanged, 715 active items. LV/EN/RU/UK and patient-facing notes aligned; shared target v0.2.15.
+
+Node feedback regression and M46 builder checks observed failing before implementation, then passing. Focused browser feedback and M46 old/current recovery, all-locale clinician PDF and negative-broad-screen navigation passed in labelled memory mode. Initial browser/file-mode attempts were blocked by managed environment; no device/file-opening claim. First full run: 43 passes, one new test failure due to a Playwright stub returning/invoking an assigned arrow; corrected and focused test passed. Independent source review found stale manual-copy feedback after edits; reproduced with a failing regression and corrected by invalidating the preview. Phone-width layout checks passed at 320/390px in all locales. No actual email was sent.
+
+Synchronization: changes are local only; main, hosted app and Drive remain v0.2.14. Next: finish review-fix regression/full checks, clean-source package, checked PR and verified distribution. Human clinical/language and physical-phone reviews remain pending.
+
 
 ### 2026-11-15 · Open questionnaire from landing pages — LIVE
 
