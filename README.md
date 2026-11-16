@@ -2,7 +2,7 @@
 
 [![Multilingual checks](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml/badge.svg?branch=main)](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml)
 
-**Current version: v0.2.18 · Latvian / English / Russian / Ukrainian · Over 700 questions in more than 10 sections.**
+**Current version: v0.2.19 · Latvian / English / Russian / Ukrainian · Over 700 questions in more than 10 sections.**
 
 [Open questionnaire in your browser](https://janisp123.github.io/mental-health-questionnaire/questionnaire/) — no installation or manual download. You can also use the Drive download below for offline use. Both options use the same questionnaire; save a progress file manually before closing or reloading to continue later.
 
@@ -73,7 +73,7 @@ This repository shows the specification, iteration and verification of an AI-ass
 
 - [Browse the application source](src/app/)
 - [Current package files, source revision and checksums](MH_Public_version/manifest.json)
-- [Version snapshot](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.18)
+- [Version snapshot](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.19)
 
 ## Development
 

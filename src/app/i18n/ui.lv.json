@@ -33,9 +33,6 @@
     "helpers": "Atsauksmes un pateicības",
     "projectFeedbackInvitation": "Jautājumus, atsauksmes un labojumu ierosinājumus sūtiet uz",
     "projectContributors": "Cilvēki un organizācijas, kas palīdzēja šī projekta tapšanā.",
-    "projectPlans": "Turpmākie plāni",
-    "projectPlanReview": "Nodot anketu izvērtēšanai psihiskās veselības speciālistiem un pēc viņu atsauksmju saņemšanas veikt nepieciešamos labojumus.",
-    "projectPlanLanguages": "Pēc lietotāju pieprasījuma tulkot anketu arī citās valodās.",
     "help": "Ja pastāv tūlītēji draudi drošībai, sazinieties ar vietējiem neatliekamās palīdzības dienestiem.",
     "saveWarning": "Izvēle vēl nav saglabāta. Nospiediet «Saglabāt un tālāk».",
     "chooseAnswer": "Izvēlieties atbildi, pirms turpināt.",
@@ -92,9 +89,10 @@
     "dismissSupport": "Aizvērt ziņu",
     "tools": "Faila un anketas darbības",
     "guideTitle": "Kā lietot anketu",
-    "guideBody": "Atveriet lejupielādēto HTML failu pārlūkā. Priekšskatījumā tas nedarbojas. Vienas atbildes izvēle tiek saglabāta atvērtajā anketā. Vairākām atbildēm un teksta laukiem nospiediet “Saglabāt un tālāk”. Pirms pauzes saglabājiet progresu failā. Saglabāto failu varat turēt savā ierīcē. Tas nav šifrēts, tāpēc kopīgojiet to tikai ar uzticamiem cilvēkiem vai veselības aprūpes speciālistu. Neievietojiet to sociālajos tīklos vai citviet publiski. Jūs izvēlaties, ko pārrunāt ar speciālistu. Precizitātes pārskatīšanai izlaidiet jautājumus, kas šķiet atbilstoši. Kļūdainos vai neskaidros jautājumus atzīmējiet un izvēlieties iemeslu. Beigās izvēlieties “Sagatavot pārskatu”, lai apskatītu pārskatu speciālistam un saglabātu to PDF formātā. Datorā turiet nospiestu Ctrl taustiņu un ritiniet peles ritenīti uz augšu vai leju, lai palielinātu vai samazinātu teksta izmēru. Rezultātu ekrānā varat izvēlēties pārskata valodu neatkarīgi no anketas valodas. Ja atzīmējāt kādu problēmu, no speciālista pārskata ekrāna varat atvērt atsevišķu atsauksmju pārskatu un saglabāt to PDF formātā.",
-    "notesTitle": "Pēdējās izmaiņas un turpmākie plāni",
+    "guideBody": "Atveriet un aizpildiet anketu tiešsaistē, vietnē izvēloties “Atvērt anketu”, vai lejupielādējiet HTML failu un atveriet to pārlūkā lietošanai bez interneta. Faila priekšskatījumā, arī Google Drive priekšskatījumā, anketa nedarbojas. Vienas atbildes izvēle tiek saglabāta atvērtajā anketā. Vairākām atbildēm un teksta laukiem nospiediet “Saglabāt un tālāk”. Pirms pauzes saglabājiet progresu failā. Saglabāto failu varat turēt savā ierīcē. Tas nav šifrēts, tāpēc kopīgojiet to tikai ar uzticamiem cilvēkiem vai veselības aprūpes speciālistu. Neievietojiet to sociālajos tīklos vai citviet publiski. Jūs izvēlaties, ko pārrunāt ar speciālistu. Precizitātes pārskatīšanai izlaidiet jautājumus, kas šķiet atbilstoši. Kļūdainos vai neskaidros jautājumus atzīmējiet un izvēlieties iemeslu. Beigās izvēlieties “Sagatavot pārskatu”, lai apskatītu pārskatu speciālistam un saglabātu to PDF formātā. Datorā turiet nospiestu Ctrl taustiņu un ritiniet peles ritenīti uz augšu vai leju, lai palielinātu vai samazinātu teksta izmēru. Rezultātu ekrānā varat izvēlēties pārskata valodu neatkarīgi no anketas valodas. Ja atzīmējāt kādu problēmu, no speciālista pārskata ekrāna varat atvērt atsevišķu atsauksmju pārskatu un saglabāt to PDF formātā. Pirms aiziešanas vai pārejas starp tiešsaistes un bezsaistes lietošanu saglabājiet progresu failā; atbildes netiek pārsūtītas automātiski.",
+    "notesTitle": "Pēdējās 10 izmaiņas",
     "notesHistory": [
+      "16.11.2026 — Precizēti anketas atvēršanas norādījumi un saīsināts izmaiņu saraksts. No anketas noņemti turpmākie plāni.",
       "2026. gada 16. novembris · Vispārīgajos aprakstos tagad izmantots aptuvens jautājumu un sadaļu skaits. Jūsu atbildes un progress nav mainīti.",
       "2026. gada 16. novembris · Pievienots izvēles jautājums par rīcību, zinot, ka tā var izraisīt Jūsu nāvi, ar atsevišķām atbildēm par izjūtām tajā brīdī un jautājumu par notikuma laiku.",
       "2026. gada 16. novembris · Pievienots izvēles jautājums par to, kā pienākumi un cilvēki, kuri ir no Jums atkarīgi, varētu ietekmēt domas par savas dzīves izbeigšanu.",
@@ -103,8 +101,7 @@
       "15.11.2026 14:35 Riga — Pārskatā saistītās atbildes tiek saglabātas kopā un sakārtotas pēc pārskatīšanas prioritātes. Atbilžu teksts un saglabātais progress nav mainīts.",
       "15.11.2026 08:56 Riga — Pārskatā tagad var sākt jaunu anketu un kopīgot publisku uzaicinājumu. Tajā ir tikai sniegtās atbildes un īss skaidrojums par izlaisto. Ieguldījuma sadaļa ir redzama arī pirms vārdu pievienošanas.",
       "15.11.2026 08:00 Rīga — Pēc vienas atbildes izvēles pāreja uz nākamo jautājumu tagad notiek divreiz ātrāk.",
-      "15.11.2026 07:20 Riga — Anketas un PDF ceļveža lejupielādes failiem tagad ir īsāki nosaukumi ar versijas numuru beigās.",
-      "14.11.2026 23:49 Riga — Kopsavilkumā un pārskatā speciālistam tagad ir vienādi jautājumu skaiti; atbildētie un izlaistie jautājumi norādīti atsevišķi. Citās sadaļās saglabātās piemērojamās atbildes joprojām ir iekļautas."
+      "15.11.2026 07:20 Riga — Anketas un PDF ceļveža lejupielādes failiem tagad ir īsāki nosaukumi ar versijas numuru beigās."
     ],
     "coverageNote": "Skaits aptver piemērojamos jautājumus atlasītajās sadaļās un iepriekš atbildētos vai izlaistos jautājumus citās sadaļās. Mainītu nosacījumu dēļ paslēptās atbildes paliek progresa failā, bet šeit nav iekļautas.",
     "autoHint": "Izvēlieties vienu atbildi, lai saglabātu to atvērtajā anketā un turpinātu.",
@@ -164,6 +161,20 @@
     "feedbackSendNow": "Atvērt e-pastu, lai nosūtītu tagad",
     "feedbackEmailSubject": "Atsauksme par jautājumu",
     "feedbackNowPrivacy": "E-pastam tiek sagatavots tikai šis jautājums un Jūsu atsauksme. Jūsu medicīniskās atbildes netiek iekļautas. Nosūtot e-pastu, saņēmējs redzēs Jūsu e-pasta adresi un tekstu, kuru izvēlēsieties nosūtīt. Pārskatiet melnrakstu un paši nospiediet Nosūtīt savā e-pasta lietotnē.",
-    "feedbackDraftReady": "Atsauksme ir sagatavota; piegāde nav apstiprināta. Ja e-pasta lietotne neatveras, nokopējiet atsauksmi un nosūtiet to manuāli vai saglabājiet vēlākam laikam."
+    "feedbackDraftReady": "Atsauksme ir sagatavota; piegāde nav apstiprināta. Ja e-pasta lietotne neatveras, nokopējiet atsauksmi un nosūtiet to manuāli vai saglabājiet vēlākam laikam.",
+    "notesBriefHistory": [
+      "16.11.2026 — Precizēti norādījumi un izmaiņu saraksts",
+      "16.11.2026 — Atjaunoti apraksti",
+      "16.11.2026 — Papildināti jautājumi",
+      "16.11.2026 — Papildināti jautājumi",
+      "16.11.2026 — Papildināti jautājumi un atsauksmju iespējas",
+      "15.11.2026 — Precizēti norādījumi",
+      "15.11.2026 — Uzlaboti pārskati",
+      "15.11.2026 — Uzlaboti pārskati",
+      "15.11.2026 — Ātrāka pāreja starp jautājumiem",
+      "15.11.2026 — Vienkāršoti lejupielādes failu nosaukumi"
+    ],
+    "guideOnline": "Atvērt anketu",
+    "guideDownload": "Lejupielādēt lietošanai bez interneta"
   }
 }

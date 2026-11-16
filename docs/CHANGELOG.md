@@ -1,5 +1,13 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · Usage/update-information v0.2.19 — PACKAGE STAGED
+
+Clean-source4960c24 HTML/PDF/ZIP built and verified against current source. Previous18 pair archived intact. Focused catalog/browser checks, all-language keyboard disclosures/compact-history/date correspondence, three widths and no-request checks passed; independent review found no issues. Full suite remains running; original TD retained pending final verification. Guide rendering/visual inspection and source PR checks precede deliberate Drive/hosted delivery. Verified distribution remains18.
+
+### 2026-11-16 · Usage/update-information task — SOURCE CHECKPOINT
+
+Existing task Added by ChatGPT at107d0b5 fetched from its specified branch, including latest-ten correction; checked PR73 merged47ff67d. Main-based implementation by Codex adds both opening modes and deliberate links, separate compact dated summaries aligned to retained detailed records, removes patient-facing plans labels/markup and aligns guide opening instructions. No duplicate TD task, bank/answer/recovery changes or new distribution. Catalog regression failed first then passed. Target19; focused/full checks, review and package/delivery pending. See current checkpoint and plan.
+
 ### 2026-11-16 · Durable descriptions v0.2.18 — LIVE VERIFIED
 
 Implemented by Codex through PR70; all required source/delivery CI and local48/48 passed. Delivery PR71 merged 907a236, Pages 43880298345 succeeded. Live HTML equals package/Drive SHA256207a7eb5d7ae57361a4d5d94a6e7a9f31776fedf53a781c7f984118c85276d97. Stable Drive IDs/folder/sharing preserved; old17 archived. Landing body/meta/embedded summaries, README and all-language footer use broad truthful totals; exact technical counts remain. GitHub About has no exact totals. Existing release description stale totals corrected in EN/RU/LV and read back; historical tag/title/target/assets preserved. Independent review, browser layouts and no-error/no-answer-network checks passed. Rule/regressions guard future descriptions. No question/runtime/branching/recovery changes. Evidence: review/checks/2026-11-16-durable-descriptions-live.json. Nothing partially implemented; five unrelated TD items and human reviews/indexing remain pending.

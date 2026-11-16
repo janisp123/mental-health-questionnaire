@@ -36,7 +36,7 @@ These rules apply to future development work in this repository, particularly lo
 - Never publish questionnaire responses or identifiable patient information to this public repository.
 - EN, RU and UK translations remain drafts until human review and release-gate requirements are satisfied.
 - Do not claim an untested feature, translation or release passed verification.
-- When user-facing questionnaire text or behavior changes, prepend a dated entry to the in-app notesHistory list in all active locales (currently LV/EN/RU/UK) together and retain the latest ten entries. Use Riga local time and verify the visible text and all active catalogs before committing.
+- When user-facing questionnaire text or behavior changes, prepend a dated entry to notesHistory and an aligned, very brief plain-language entry to notesBriefHistory in all active locales (currently LV/EN/RU/UK) together and retain the latest ten entries. The displayed brief entries use actual DD.MM.YYYY dates; retain truthful detailed records in source history. Use Riga local time and verify the visible text and all active catalogs before committing.
 - Before editing user-facing wording or translations, read `docs/LANGUAGE_STYLE_GUIDE.md` and apply its LV/RU/EN/UK address and tone conventions. Preserve frozen source question content unless explicitly asked to edit the question bank.
 
 ## Durable public descriptions
