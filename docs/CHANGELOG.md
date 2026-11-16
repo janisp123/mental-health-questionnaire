@@ -1,5 +1,11 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · v0.2.16 package and release-preview correction — VERIFIED
+
+Clean package source `d981f1f` includes M06_25 and its modular editorial rule. HTML/PDF/ZIP current-source verification passed; HTML SHA256 `6eccfdbedb9e1cd2bf33ff2b4cbf501ec3babf777e8e652e4db8914ab6c46495`. Guide bytes unchanged and rendered page inspected. Previous v0.2.15 pair archived intact. Full maintained checks are running.
+
+Release staging exposed a publication-test coupling: checking landing counts against a newly staged package would force advertising v0.2.16 before Drive verification, triggering the publication guard on the source merge. Reproduced with staged716/verified715; count regression now follows the verified distribution count, while upcoming landing716 changes are deferred to the delivery-record commit. All five publication tests pass after the correction. App/package bytes and strict version/source/hash deployment guard remain unchanged. Next: required exact-head CI/merge, intentional Drive readback, then update distribution and landing counts together.
+
 ### 2026-11-16 · M06 responsibilities context — LOCAL SOURCE CHECKPOINT
 
 Added by: Codex. Implemented by: Codex (local source; release pending). Added one optional M06_25 after M06_24 in existing M06/current section, isolated in `src/questionnaire/m06-responsibility-context.json` with LV/EN/RU/UK text and code-specific editorial metadata. More likely=4; less likely/no change/nonapplicable/uncertainty/refusal=3. No clinical score, automatic emergency inference or changed current-intent/safety questions. Existing 712 frozen records, M46 items and recovery schema remain unchanged.

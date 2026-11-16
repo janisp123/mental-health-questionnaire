@@ -36,3 +36,5 @@ Files: version config/manifest, README/landing/active docs, checkpoint/changelog
 - [ ] Build from clean source, verify HTML/PDF/ZIP, render PDF and archive v0.2.15. Require three exact-head CI checks and checked PR merge.
 - [ ] Replace same Drive IDs, download both and verify exact bytes/permissions/folder. Merge distribution metadata, observe Pages and verify live bytes, M06 question, priorities/progress/report flows.
 - [ ] Record final live evidence/checkpoint and ensure README/landing/Drive all current. Keep human reviews pending.
+
+Release ruling: keep landing counts aligned with verified Drive distribution while package16 is staged. Move716 public counts into the delivery commit alongside verified distribution metadata. Regression observed staged716/verified715 failure before fixing its expectation; deployment guard remains strict.
