@@ -3,6 +3,7 @@
 **Single source of truth:** `docs/TD_LIST.md` on `main`. Add approved tasks here when the project owner asks; Codex may implement them when explicitly instructed. The list is **not** a changelog or a record of completed work.
 
 - Before acting on a task, read `AGENTS.md`, `docs/WORK_CHECKPOINT.md` and relevant project/release rules, and check whether the task is still necessary.
+- **Shared-agent handoff:** ChatGPT and Codex must follow the read/PR/merge/readback procedure in `AGENTS.md` → “Shared TD-list handoff.” An unmerged PR is **PENDING PR**, not a completed addition to this list; always verify an update by fetching remote `main` after merge.
 - **Conflict check:** Compare each TD request against the current `main` product, active work, other queued tasks, existing changes, safety/privacy rules and release gates. If anything conflicts or could overwrite existing work, **explain the conflict, consequences and safe options to the owner *before implementation***. Do not choose a resolution silently. Leave that task pending until the owner decides.
 - If a task is already completed or outdated, do not repeat it; report evidence and clarify whether it should be removed.
 - For non-conflicting, authorized work: use a short-lived branch from current `main`, verify changes, and follow the project PR/release workflow. After a task is implemented and verified, remove it from TD and record the result in `docs/CHANGELOG.md`.
