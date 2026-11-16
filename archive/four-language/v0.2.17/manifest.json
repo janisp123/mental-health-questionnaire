@@ -1,0 +1,35 @@
+{
+  "schema": "questionnaire-review-package-v1",
+  "version": "0.2.17-review+full-bank",
+  "source_commit": "c98fac6c9e7e4af4eb2ff4c2677339c4f286e24e",
+  "source_tree": "c8e96a0cdd9922d5dcc8838b4e0f4366c94e35ca",
+  "source_dirty": false,
+  "build_epoch": 1794787200,
+  "pdf_timestamp_mode": "reportlab-invariant",
+  "languages": [
+    "lv",
+    "en",
+    "ru",
+    "uk"
+  ],
+  "question_count": 718,
+  "guide_source": "docs/review/GUIDE_LV_EN_RU_UK.md",
+  "files": [
+    {
+      "name": "Mental_Health_Questionnaire_v0.2.17.html",
+      "bytes": 1639882,
+      "sha256": "6df6f99569de95371037d653d3072ecef7d8aea8ad1c17e50a648ba6ef421e31"
+    },
+    {
+      "name": "Mental_Health_Questionnaire_Guide_v0.2.17.pdf",
+      "bytes": 49212,
+      "sha256": "08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75"
+    }
+  ],
+  "zip": {
+    "name": "Mental_Health_Questionnaire_Package_v0.2.17.zip",
+    "bytes": 343335,
+    "sha256": "07fd265c231e2fd4ff1cc46d6cc7756c55829863b20902547d42a0f663a30269"
+  },
+  "status": "TECHNICAL_REVIEW_NOT_CLINICALLY_VALIDATED"
+}

@@ -1,5 +1,9 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · Durable-description package — STAGED
+
+Clean-source18 HTML/PDF/ZIP built and verified; previous17 pair archived. Source changes only public wording/notes/instructions and tests, not question data/runtime. Source publication guard must retain17 until verified18 Drive metadata lands; a rejected early publication cannot alter the live site. Next: full/exact-head CI, verified distribution and final live readback.
+
 ### 2026-11-16 · Durable public descriptions — SOURCE CHECKPOINT
 
 Public README, three landing locales/English metadata/embedded summaries and all active app footer catalogs now use over700 questions in more than10 sections or localized equivalents. Removed stale footer712/15/48 wording. Exact technical counts/progress/archives retained. GitHub About has no exact totals and remains accurate; “git devotions” interpreted as repository descriptions/metadata. Added repository instruction and threshold/copy regressions; old footer-expectation test failed then updated to the approved public contract. Target18 due app text/package change; no clinical/runtime/question changes. Next: full checks, clean-source package, checked delivery and live readback.
