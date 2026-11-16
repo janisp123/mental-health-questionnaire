@@ -1,5 +1,9 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · Usage/update-information v0.2.19 — PACKAGE STAGED
+
+Clean-source4960c24 HTML/PDF/ZIP built and verified against current source. Previous18 pair archived intact. Focused catalog/browser checks, all-language keyboard disclosures/compact-history/date correspondence, three widths and no-request checks passed; independent review found no issues. Full suite remains running; original TD retained pending final verification. Guide rendering/visual inspection and source PR checks precede deliberate Drive/hosted delivery. Verified distribution remains18.
+
 ### 2026-11-16 · Usage/update-information task — SOURCE CHECKPOINT
 
 Existing task Added by ChatGPT at107d0b5 fetched from its specified branch, including latest-ten correction; checked PR73 merged47ff67d. Main-based implementation by Codex adds both opening modes and deliberate links, separate compact dated summaries aligned to retained detailed records, removes patient-facing plans labels/markup and aligns guide opening instructions. No duplicate TD task, bank/answer/recovery changes or new distribution. Catalog regression failed first then passed. Target19; focused/full checks, review and package/delivery pending. See current checkpoint and plan.
