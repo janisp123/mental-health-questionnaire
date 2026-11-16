@@ -45,7 +45,7 @@ class TranslationPackTests(unittest.TestCase):
         for rule in enabled["presentation"]["questions"].values():
             if "labels" in rule:
                 self.assertTrue(rule["labels"].pop("uk"))
-        self.assertEqual(count, 716)
+        self.assertEqual(count, 718)
         self.assertEqual(enabled, default)
 
     def test_stale_pack_is_rejected(self):

@@ -28,8 +28,8 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
     assert "пропускайте подходящие вопросы" in data["ui"]["ru"]["guideBody"].lower()
     assert len(data["groups"]) == 15
     questions = [q for group in data["groups"] for q in group["questions"]]
-    assert len(questions) == 716
-    assert len({q["id"] for q in questions}) == 716
+    assert len(questions) == 718
+    assert len({q["id"] for q in questions}) == 718
     question_by_id = {q["id"]: q for q in questions}
     assert question_by_id["M23_21"]["translations"]["en"]["choices"]["A"] == "A conversation and assessment"
     assert question_by_id["M23_21"]["translations"]["ru"]["choices"]["A"] == "Беседа и оценка состояния"

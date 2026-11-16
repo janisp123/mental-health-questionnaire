@@ -9,7 +9,7 @@ assert 'M06_25' in by_id,'Missing responsibilities context in existing M06'
 q=by_id['M06_25'];assert q['sourceModule']=='06' and q['module']==by_id['M06_24']['module']
 assert q['context'] is None and q['type']=='choice' and q['multi'] is False
 assert q['choiceCodes']==list('ABCDEF') and set(q['translations'])==set(bundle['ui'])
-assert len(questions)==716 and len({x['order'] for x in questions})==716
+assert len(questions)==718 and len({x['order'] for x in questions})==718
 assert questions.index(q)==questions.index(by_id['M06_24'])+1
 for locale,t in q['translations'].items():
  assert t['title'] and t['time'] and t['help'] and list(t['choices'])==q['choiceCodes']

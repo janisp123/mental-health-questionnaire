@@ -88,3 +88,16 @@ for(const locale of Object.keys(data.ui)){
  }
 }
 console.log('PASS: every M06_25 choice keeps its exact wording and explicit editorial priority across locales.');
+
+for(const locale of Object.keys(data.ui)){
+ for(const id of ['M06_26','M06_27']){
+  for(const code of q(id).choiceCodes){
+   const answer={kind:'choice',codes:[code],status:q(id).answerStatus[code]};
+   const expected=id==='M06_26'?(code==='E'?1:3):('AB'.includes(code)?4:code==='F'?1:3);
+   assert.equal(priority.responsePriority(q(id),answer,policy),expected);
+   const rows=r.entries(qs,{[id]:answer},locale,data.presentation,data.ui[locale].medicine);
+   assert.equal(rows.length,1);assert(rows[0].plain.includes(q(id).translations[locale].choices[code]));
+  }
+ }
+}
+console.log('PASS: independent life-endangering history and recency retain exact labels and conservative editorial priorities.');

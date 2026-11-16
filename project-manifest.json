@@ -58,9 +58,9 @@
     },
     "development_build": {
       "status": "TECHNICAL_REVIEW_BUILD_NOT_RELEASED",
-      "version": "0.2.16-review+full-bank",
+      "version": "0.2.17-review+full-bank",
       "sections": 15,
-      "questions": 716,
+      "questions": 718,
       "reference_language": "lv",
       "translation_status": {
         "en": "DRAFT_NOT_REVIEWED",
@@ -86,7 +86,7 @@
       "artifact": "dist/QUESTIONNAIRE_LV_EN_RU_UK_NOT_RELEASED.html",
       "recovery_schema": "mental-pilot-recovery-v1 (retained for compatibility)",
       "source_modules": 48,
-      "note": "712 frozen questions plus three M46 and one M06 additive items; 15 optional sections and unchanged recovery schema.",
+      "note": "712 frozen questions, three additive M46 and three additive M06 questions;15 optional sections and unchanged recovery schema.",
       "languages": [
         "lv",
         "en",
@@ -101,7 +101,8 @@
       "feature_contracts": "docs/FEATURE_DEVELOPMENT.md",
       "supplemental_questions": [
         "src/questionnaire/m46-additions.json",
-        "src/questionnaire/m06-responsibility-context.json"
+        "src/questionnaire/m06-responsibility-context.json",
+        "src/questionnaire/m06-action-history.json"
       ]
     }
   },

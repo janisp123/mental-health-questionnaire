@@ -1,0 +1,226 @@
+{
+  "schema": "questionnaire-m06-action-history-v1",
+  "status": "DRAFT_NOT_CLINICALLY_REVIEWED",
+  "insertAfter": "M06_09",
+  "questions": [
+    {
+      "id": "M06_26",
+      "order": 716,
+      "sourceModule": "06",
+      "originModule": 6,
+      "section": 6,
+      "profile": "CUSTOM12",
+      "type": "choice",
+      "multi": false,
+      "context": null,
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "exclusive": "",
+      "incompatible": [],
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "answered",
+        "D": "answered",
+        "E": "answered",
+        "F": "uncertain",
+        "G": "refused"
+      },
+      "translations": {
+        "en": {
+          "title": "Have you ever taken an action knowing it could end your life?",
+          "time": "At any time in your life. If this happened more than once, answer about the most recent occasion. Think about actions connected with harming yourself or not caring whether you lived.",
+          "help": "You do not need to describe what you did.",
+          "choices": {
+            "A": "Yes, and I wanted to die.",
+            "B": "Yes, and my feelings about dying were mixed or unclear.",
+            "C": "Yes, and I did not care whether I lived or died.",
+            "D": "Yes, but I did not want to die.",
+            "E": "No.",
+            "F": "I’m unsure.",
+            "G": "Prefer not to answer."
+          },
+          "scope": "Think about actions connected with harming yourself or not caring whether you lived."
+        },
+        "lv": {
+          "title": "Vai esat kādreiz veicis/-usi kādu darbību, zinot, ka tā var izraisīt Jūsu nāvi?",
+          "time": "Jebkurā dzīves laikā. Ja tas noticis vairākas reizes, atbildiet par pēdējo reizi. Domājiet par rīcību, kas saistīta ar kaitējumu sev vai vienaldzību pret to, vai turpināsiet dzīvot.",
+          "help": "Jums nav jāapraksta, ko darījāt.",
+          "choices": {
+            "A": "Jā, un es vēlējos nomirt.",
+            "B": "Jā, un manas izjūtas par vēlmi nomirt bija pretrunīgas vai neskaidras.",
+            "C": "Jā, un man bija vienalga, vai turpināšu dzīvot vai nomiršu.",
+            "D": "Jā, bet es nevēlējos nomirt.",
+            "E": "Nē.",
+            "F": "Grūti pateikt.",
+            "G": "Nevēlos atbildēt."
+          },
+          "scope": "Domājiet par rīcību, kas saistīta ar kaitējumu sev vai vienaldzību pret to, vai turpināsiet dzīvot."
+        },
+        "ru": {
+          "title": "Делали ли Вы когда-нибудь что-либо, зная, что это может привести к Вашей смерти?",
+          "time": "В любой момент жизни. Если это случалось несколько раз, ответьте о самом последнем случае. Подумайте о действиях, связанных с причинением себе вреда или безразличием к тому, останетесь ли Вы в живых.",
+          "help": "Не нужно описывать, что именно Вы делали.",
+          "choices": {
+            "A": "Да, и у меня было желание умереть.",
+            "B": "Да, и мои чувства по поводу смерти были противоречивыми или неясными.",
+            "C": "Да, и мне было всё равно, останусь ли я в живых или умру.",
+            "D": "Да, но у меня не было желания умереть.",
+            "E": "Нет.",
+            "F": "Мне трудно сказать.",
+            "G": "Не хочу отвечать."
+          },
+          "scope": "Подумайте о действиях, связанных с причинением себе вреда или безразличием к тому, останетесь ли Вы в живых."
+        },
+        "uk": {
+          "title": "Чи робили Ви коли-небудь щось, знаючи, що це може призвести до Вашої смерті?",
+          "time": "У будь-який період життя. Якщо це траплялося кілька разів, дайте відповідь про останній випадок. Подумайте про дії, пов’язані із заподіянням собі шкоди або байдужістю до того, чи залишитеся Ви живими.",
+          "help": "Не потрібно описувати, що саме Ви робили.",
+          "choices": {
+            "A": "Так, і в мене було бажання померти.",
+            "B": "Так, і мої почуття щодо смерті були суперечливими або неясними.",
+            "C": "Так, і мені було байдуже, житиму я чи помру.",
+            "D": "Так, але в мене не було бажання померти.",
+            "E": "Ні.",
+            "F": "Важко сказати.",
+            "G": "Не хочу відповідати."
+          },
+          "scope": "Подумайте про дії, пов’язані із заподіянням собі шкоди або байдужістю до того, чи залишитеся Ви живими."
+        }
+      }
+    },
+    {
+      "id": "M06_27",
+      "order": 717,
+      "sourceModule": "06",
+      "originModule": 6,
+      "section": 6,
+      "profile": "CUSTOM12",
+      "type": "choice",
+      "multi": false,
+      "context": {
+        "id": "M06_26",
+        "showValues": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "exclusive": "",
+      "incompatible": [],
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "answered",
+        "D": "answered",
+        "E": "answered",
+        "F": "answered",
+        "G": "uncertain",
+        "H": "refused"
+      },
+      "translations": {
+        "en": {
+          "title": "When did this most recently happen?",
+          "time": "Time since the most recent action described above.",
+          "choices": {
+            "A": "Within the past 24 hours",
+            "B": "More than 24 hours ago, but no more than 1 month ago",
+            "C": "More than 1 month but not more than 1 year ago",
+            "D": "More than 1 year ago, but no more than 5 years ago",
+            "E": "More than 5 years ago",
+            "F": "This has not happened",
+            "G": "I don't remember / I don't know",
+            "H": "Prefer not to answer."
+          }
+        },
+        "lv": {
+          "title": "Kad tas notika pēdējo reizi?",
+          "time": "Laiks kopš iepriekš aprakstītās pēdējās rīcības.",
+          "choices": {
+            "A": "Pēdējo 24 stundu laikā",
+            "B": "Pirms vairāk nekā 24 stundām, bet ne vairāk kā 1 mēneša",
+            "C": "Pirms vairāk nekā 1 mēneša, bet ne vairāk kā 1 gada",
+            "D": "Pirms vairāk nekā 1 gada, bet ne vairāk kā 5 gadiem",
+            "E": "Pirms vairāk nekā 5 gadiem",
+            "F": "Tas nav noticis",
+            "G": "Neatceros / nezinu",
+            "H": "Nevēlos atbildēt."
+          }
+        },
+        "ru": {
+          "title": "Когда это произошло в последний раз?",
+          "time": "Время с последнего действия, описанного выше.",
+          "choices": {
+            "A": "В течение последних 24 часов",
+            "B": "Более 24 часов назад, но не более 1 месяца назад",
+            "C": "Более 1 месяца назад, но не более 1 года назад",
+            "D": "Более года назад, но не более 5 лет назад",
+            "E": "Более 5 лет назад",
+            "F": "Такого не было",
+            "G": "Я не помню / Я не знаю",
+            "H": "Не хочу отвечать."
+          }
+        },
+        "uk": {
+          "title": "Коли це сталося востаннє?",
+          "time": "Час від останньої дії, описаної вище.",
+          "choices": {
+            "A": "За останні 24 години",
+            "B": "Понад 24 години тому, але не більше ніж місяць тому",
+            "C": "Понад місяць тому, але не більше ніж рік тому",
+            "D": "Понад рік тому, але не більше ніж 5 років тому",
+            "E": "Понад 5 років тому",
+            "F": "Такого не було",
+            "G": "Не пам’ятаю / не знаю",
+            "H": "Не хочу відповідати"
+          }
+        }
+      }
+    }
+  ],
+  "reportPriorities": {
+    "M06_26": {
+      "default": 3,
+      "answers": {
+        "A": 3,
+        "B": 3,
+        "C": 3,
+        "D": 3,
+        "E": 1,
+        "F": 3,
+        "G": 3
+      }
+    },
+    "M06_27": {
+      "default": 3,
+      "answers": {
+        "A": 4,
+        "B": 4,
+        "C": 3,
+        "D": 3,
+        "E": 3,
+        "F": 1,
+        "G": 3,
+        "H": 3
+      }
+    }
+  }
+}

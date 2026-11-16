@@ -24,9 +24,9 @@ assert len(bundle["groups"]) == 15
 assert all(group["questionCount"] == len(group["questions"]) and 36 <= group["questionCount"] <= 70 for group in bundle["groups"])
 questions = [question for group in bundle["groups"] for question in group["questions"]]
 assert len(bundle["groups"]) == 15
-assert len(questions) == 716
-assert len({question["id"] for question in questions}) == 716
-assert len({question["order"] for question in questions}) == 716
+assert len(questions) == 718
+assert len({question["id"] for question in questions}) == 718
+assert len({question["order"] for question in questions}) == 718
 assert all(set(question["translations"]) == {"lv", "en", "ru", "uk"} for question in questions)
 by_id = {question["id"]: question for question in questions}
 source_by_id = {
@@ -34,7 +34,7 @@ source_by_id = {
     for group in build.build_source_groups()
     for question in group["questions"]
 }
-assert set(by_id) == set(source_by_id) | {"M46_07", "M46_08", "M46_09", "M06_25"}
+assert set(by_id) == set(source_by_id) | {"M46_07", "M46_08", "M46_09", "M06_25", "M06_26", "M06_27"}
 assert source_by_id["M23_11"]["maxChoices"] == 3
 assert "maxChoices" not in by_id["M23_11"]
 for question_id, source_question in source_by_id.items():
@@ -113,4 +113,4 @@ with tempfile.TemporaryDirectory() as temp_dir:
     )
     assert cli_data and json.loads(cli_data.group(1)) == bundle
 
-print("PASS: default CLI creates one offline HTML with all 716 questions in 15 optional sections; original 48-module source mapping is retained.")
+print("PASS: default CLI creates one offline HTML with all 718 questions in 15 optional sections; original 48-module source mapping is retained.")
