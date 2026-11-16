@@ -39,6 +39,10 @@ These rules apply to future development work in this repository, particularly lo
 - When user-facing questionnaire text or behavior changes, prepend a dated entry to the in-app notesHistory list in all active locales (currently LV/EN/RU/UK) together and retain the latest ten entries. Use Riga local time and verify the visible text and all active catalogs before committing.
 - Before editing user-facing wording or translations, read `docs/LANGUAGE_STYLE_GUIDE.md` and apply its LV/RU/EN/UK address and tone conventions. Preserve frozen source question content unless explicitly asked to edit the question bank.
 
+## Durable public descriptions
+
+- Public app descriptions, footer, README, landing-page body/metadata and repository summaries use “over 700 questions in more than 10 sections” or its localized equivalent. Avoid exact question/section totals in promotional prose. Keep exact counts in technical manifests, tests, release evidence and actual progress indicators. Recheck that the broad thresholds remain true when changing the bank/layout.
+
 ## Audience and privacy in update notes
 
 - Use “multilanguage” or its localized equivalent in current public-facing descriptions, sharing text, README and landing page instead of a fixed language count. Language selectors and technical inventories may list the actual supported locales. Historical archives retain their original text.
