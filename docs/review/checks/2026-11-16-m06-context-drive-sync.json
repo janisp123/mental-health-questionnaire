@@ -1,0 +1,67 @@
+{
+  "verified_at": "2026-11-16T09:44:26.067650+00:00",
+  "version": "0.2.16-review+full-bank",
+  "source_commit": "d981f1f3a1c575f1f6f0ca998dd3501c66800d30",
+  "source_tree": "ed11b0cad4b1d633a2ef635640eff2615334658d",
+  "source_dirty": false,
+  "checked_head": "5d1d4c75c727ebac7d224842ed91b88166de40d7",
+  "main_merge": "f5ba8acd326cbb89d202c2597636253765c80737",
+  "merge_tree_matches_checked_head": true,
+  "files": [
+    {
+      "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "name": "Mental_Health_Questionnaire_v0.2.16.html",
+      "bytes": 1632471,
+      "sha256": "6eccfdbedb9e1cd2bf33ff2b4cbf501ec3babf777e8e652e4db8914ab6c46495",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "verified_byte_identical": true
+    },
+    {
+      "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "name": "Mental_Health_Questionnaire_Guide_v0.2.16.pdf",
+      "bytes": 49212,
+      "sha256": "08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "verified_byte_identical": true
+    }
+  ],
+  "folder_id": "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+  "folder_contains_exactly_current_html_and_pdf": true,
+  "ids_folder_sharing_preserved": true,
+  "pdf_bytes_unchanged": true,
+  "guide_render_visually_inspected": true,
+  "local_checks": {
+    "passed": 46,
+    "failed": 0,
+    "load_mode": "memory"
+  },
+  "ci_runs": {
+    "app-components": 43841399631,
+    "discovery-bundle": 43841399706,
+    "full-questionnaire": 43841399665
+  },
+  "ci_offline_file_opening": true,
+  "new_question_id": "M06_25",
+  "priority": {
+    "default": 3,
+    "answers": {
+      "A": 4,
+      "B": 3,
+      "C": 3,
+      "D": 3,
+      "E": 3,
+      "F": 3
+    }
+  },
+  "no_new_score_or_emergency_trigger": true,
+  "frozen_question_contracts_preserved": true,
+  "human_language_clinical_physical_device_review": "pending"
+}

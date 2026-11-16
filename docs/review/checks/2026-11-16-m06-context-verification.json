@@ -1,0 +1,307 @@
+{
+  "source_commit": "d981f1f3a1c575f1f6f0ca998dd3501c66800d30",
+  "checked_head": "5d1d4c75c727ebac7d224842ed91b88166de40d7",
+  "main_merge": "f5ba8acd326cbb89d202c2597636253765c80737",
+  "local_checks": {
+    "load_mode": "memory",
+    "suite": "all",
+    "results": [
+      {
+        "test": "tools/verify_project_index.py",
+        "exit": 0,
+        "seconds": 0.1,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_answer_flow.js",
+        "exit": 0,
+        "seconds": 0.08,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_build_manifest.py",
+        "exit": 0,
+        "seconds": 0.07,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_events.js",
+        "exit": 0,
+        "seconds": 0.05,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_feedback_delivery.js",
+        "exit": 0,
+        "seconds": 0.06,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_model.js",
+        "exit": 0,
+        "seconds": 0.06,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_question_screens.js",
+        "exit": 0,
+        "seconds": 0.13,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_recovery.js",
+        "exit": 0,
+        "seconds": 0.06,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_report_screens.js",
+        "exit": 0,
+        "seconds": 0.05,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_runtime_answers.py",
+        "exit": 0,
+        "seconds": 5.68,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/app/test_runtime_counts.py",
+        "exit": 0,
+        "seconds": 11.65,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/app/test_runtime_feedback.py",
+        "exit": 0,
+        "seconds": 5.44,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/app/test_runtime_feedback_delivery.py",
+        "exit": 0,
+        "seconds": 3.92,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/app/test_runtime_layout.py",
+        "exit": 0,
+        "seconds": 3.09,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/app/test_runtime_priority.py",
+        "exit": 0,
+        "seconds": 9.14,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/app/test_runtime_question_feedback.py",
+        "exit": 0,
+        "seconds": 7.04,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/app/test_runtime_recovery.py",
+        "exit": 0,
+        "seconds": 5.31,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/app/test_runtime_sharing.py",
+        "exit": 0,
+        "seconds": 9.58,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/app/test_runtime_support.py",
+        "exit": 0,
+        "seconds": 11.61,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/app/test_screens.js",
+        "exit": 0,
+        "seconds": 0.05,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/app/test_ui_catalogs.py",
+        "exit": 0,
+        "seconds": 0.05,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_appointment_guidance.py",
+        "exit": 0,
+        "seconds": 0.82,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_build.py",
+        "exit": 0,
+        "seconds": 0.62,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_full_groups.py",
+        "exit": 0,
+        "seconds": 0.16,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_layout.py",
+        "exit": 0,
+        "seconds": 0.14,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_layout_sweep.py",
+        "exit": 0,
+        "seconds": 9.63,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/full_bank/test_m06_responsibility_context.py",
+        "exit": 0,
+        "seconds": 0.91,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_m46_additions.py",
+        "exit": 0,
+        "seconds": 0.16,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_medicine_report.js",
+        "exit": 0,
+        "seconds": 0.33,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_module_titles.py",
+        "exit": 0,
+        "seconds": 0.05,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_multilingual_qa.py",
+        "exit": 0,
+        "seconds": 13.85,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/full_bank/test_panic_peak_help.py",
+        "exit": 0,
+        "seconds": 0.22,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_report_priority.js",
+        "exit": 0,
+        "seconds": 0.75,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_report_priority_config.py",
+        "exit": 0,
+        "seconds": 0.28,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_reports.js",
+        "exit": 0,
+        "seconds": 0.43,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_runtime.py",
+        "exit": 0,
+        "seconds": 33.97,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/full_bank/test_runtime_hosted.py",
+        "exit": 0,
+        "seconds": 24.08,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/full_bank/test_runtime_m06_context.py",
+        "exit": 0,
+        "seconds": 64.17,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/full_bank/test_runtime_m46.py",
+        "exit": 0,
+        "seconds": 35.39,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/full_bank/test_runtime_panic_help.py",
+        "exit": 0,
+        "seconds": 15.65,
+        "browser_load_mode": "memory"
+      },
+      {
+        "test": "tests/full_bank/test_source_adapter.py",
+        "exit": 0,
+        "seconds": 0.15,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_source_audit.py",
+        "exit": 0,
+        "seconds": 0.09,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_translation_packs.py",
+        "exit": 0,
+        "seconds": 0.66,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/full_bank/test_worldwide_support.py",
+        "exit": 0,
+        "seconds": 0.23,
+        "browser_load_mode": null
+      },
+      {
+        "test": "tests/package/test_review_package.py",
+        "exit": 0,
+        "seconds": 4.79,
+        "browser_load_mode": null
+      },
+      {
+        "test": "translations/test_workspace.py",
+        "exit": 0,
+        "seconds": 0.1,
+        "browser_load_mode": null
+      }
+    ],
+    "passed": 46,
+    "failed": 0
+  },
+  "focused_checks": [
+    "tests/full_bank/test_m06_responsibility_context.py",
+    "tests/full_bank/test_runtime_m06_context.py",
+    "tests/full_bank/test_report_priority.js"
+  ],
+  "independent_review": "No actionable issue.",
+  "all_response_locale_preview_pdf_recovery": true,
+  "phone_render_inspected": [
+    320,
+    390
+  ],
+  "ci_runs": {
+    "app-components": 43841399631,
+    "discovery-bundle": 43841399706,
+    "full-questionnaire": 43841399665
+  },
+  "human_reviews": "pending",
+  "rollback": "Single hook disabled reproduces previous question/priority bundle; newer progress ID requires retained reader or explicit migration on rollback."
+}
