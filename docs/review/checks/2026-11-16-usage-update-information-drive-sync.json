@@ -1,0 +1,53 @@
+{
+  "verified_at": "2026-11-16T18:32:10.604809+00:00",
+  "version": "0.2.19-review+full-bank",
+  "source_commit": "4960c24cd6c60175124f353ae04cd0cfc3b81f2b",
+  "source_tree": "473506479fb9128e425dac1dfc09fb2c843aa89c",
+  "source_dirty": false,
+  "checked_head": "f30c63d99b632c014545e1159bc06d36eb4aa8c7",
+  "main_merge": "75f8a43399579e313f9c0a1e0b885f3caee69db7",
+  "merge_tree_matches_checked_head": true,
+  "task_location": {
+    "branch": "chatgpt/td-usage-update-20261116",
+    "commit": "107d0b50f821ec6501b086e50fa75b1679915e60",
+    "pr": 73,
+    "added_by": "ChatGPT",
+    "implemented_by": "Codex"
+  },
+  "implementation_pr": 74,
+  "files": [
+    {
+      "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "name": "Mental_Health_Questionnaire_v0.2.19.html",
+      "bytes": 1641866,
+      "sha256": "7da39069910957d64cfee923ac18c6eb940ea09d3d510c40bb91140e2c306ce3",
+      "verified_byte_identical": true,
+      "parents_preserved": true,
+      "permissions_preserved": true
+    },
+    {
+      "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "name": "Mental_Health_Questionnaire_Guide_v0.2.19.pdf",
+      "bytes": 50225,
+      "sha256": "bd61c8e96638553fb02119047e8d973f373c86f37d624dbca0309af59693f354",
+      "verified_byte_identical": true,
+      "parents_preserved": true,
+      "permissions_preserved": true
+    }
+  ],
+  "local_checks": {
+    "passed": 48,
+    "failed": 0,
+    "load_mode": "memory"
+  },
+  "ci_runs": {
+    "app": 43927704762,
+    "full": 43927704772,
+    "discovery": 43927704839
+  },
+  "ci_offline_file_opening": true,
+  "guide_render_visually_inspected": true,
+  "all_language_keyboard_and_widths_verified": true,
+  "independent_review": "No actionable issues found",
+  "human_reviews": "pending"
+}
