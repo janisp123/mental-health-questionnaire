@@ -1,0 +1,33 @@
+{
+  "verified_at": "2026-11-16T13:55:16.612149+00:00",
+  "version": "0.2.18-review+full-bank",
+  "sha256": "207a7eb5d7ae57361a4d5d94a6e7a9f31776fedf53a781c7f984118c85276d97",
+  "byte_identical_to_package": true,
+  "locales": [
+    "lv",
+    "en",
+    "ru",
+    "uk"
+  ],
+  "landing_body_and_metadata_broad_totals": true,
+  "stable_download_links": true,
+  "footer_broad_totals": true,
+  "widths": [
+    320,
+    390,
+    1280
+  ],
+  "browser_errors": [],
+  "answer_related_requests": 0,
+  "human_reviews": "pending",
+  "github_release_description": "v1.0.0 promotional totals updated in EN/RU/LV and read back; tag/title/target/assets preserved",
+  "pages_run": 43880298345,
+  "delivery_merge": "907a236cbce8eceee5829b4134d6dfd3cd775adc",
+  "implementation_pr": 70,
+  "delivery_pr": 71,
+  "delivery_ci": {
+    "app": 43879182915,
+    "discovery": 43879182970,
+    "full": 43879182741
+  }
+}

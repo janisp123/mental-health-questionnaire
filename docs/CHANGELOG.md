@@ -1,5 +1,9 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · Durable descriptions v0.2.18 — LIVE VERIFIED
+
+Implemented by Codex through PR70; all required source/delivery CI and local48/48 passed. Delivery PR71 merged 907a236, Pages 43880298345 succeeded. Live HTML equals package/Drive SHA256207a7eb5d7ae57361a4d5d94a6e7a9f31776fedf53a781c7f984118c85276d97. Stable Drive IDs/folder/sharing preserved; old17 archived. Landing body/meta/embedded summaries, README and all-language footer use broad truthful totals; exact technical counts remain. GitHub About has no exact totals. Existing release description stale totals corrected in EN/RU/LV and read back; historical tag/title/target/assets preserved. Independent review, browser layouts and no-error/no-answer-network checks passed. Rule/regressions guard future descriptions. No question/runtime/branching/recovery changes. Evidence: review/checks/2026-11-16-durable-descriptions-live.json. Nothing partially implemented; five unrelated TD items and human reviews/indexing remain pending.
+
 ### 2026-11-16 · Durable descriptions v0.2.18 — DRIVE VERIFIED
 
 Source PR70 merged after local48/48 and all three required CI checks, identical checked/merged tree. Independent review found no issues. All-language footer and phone/desktop widths passed. HTML/PDF read back byte-identical from existing Drive IDs; parents/sharing preserved. Clean-source18 package, guide rendering and previous17 archive verified. GitHub About already uses durable copy. Exact technical counts remain718/15; no question/runtime changes. Evidence: review/checks/2026-11-16-durable-descriptions-drive-sync.json. Next: checked delivery merge, guarded Pages publication and live readback. Human reviews remain pending.

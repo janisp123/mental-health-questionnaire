@@ -6,9 +6,9 @@ Search observations checked 15 November 2026; publication parity refreshed 16 No
 - [Latviešu](https://janisp123.github.io/mental-health-questionnaire/lv/)
 - [Русский](https://janisp123.github.io/mental-health-questionnaire/ru/)
 
-The same verified downloadable questionnaire is also available at [Open questionnaire](https://janisp123.github.io/mental-health-questionnaire/questionnaire/); current website readback is recorded in [v0.2.17 hosted delivery evidence](../review/checks/2026-11-16-action-history-live.json). This publication does not establish indexing.
+The same verified downloadable questionnaire is also available at [Open questionnaire](https://janisp123.github.io/mental-health-questionnaire/questionnaire/); current website readback is recorded in [v0.2.18 hosted delivery evidence](../review/checks/2026-11-16-durable-descriptions-live.json). This publication does not establish indexing.
 
-All are publicly reachable with no observed indexing block. Google/Bing indexed status, selected canonicals, actual crawler visits and AI-search recommendations remain **unverified**. No ownership verification or indexing request was submitted. [Current deployment/readback evidence](../review/checks/2026-11-16-action-history-live.json).
+All are publicly reachable with no observed indexing block. Google/Bing indexed status, selected canonicals, actual crawler visits and AI-search recommendations remain **unverified**. No ownership verification or indexing request was submitted. [Current deployment/readback evidence](../review/checks/2026-11-16-durable-descriptions-live.json).
 
 ## Verified publicly
 
