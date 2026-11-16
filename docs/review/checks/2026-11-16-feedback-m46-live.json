@@ -1,0 +1,40 @@
+{
+  "verified_at": "2026-11-16T08:52:08.005348+00:00",
+  "url": "https://janisp123.github.io/mental-health-questionnaire/questionnaire/",
+  "version": "0.2.15-review+full-bank",
+  "sha256": "71c9036ed014b2e7d2a91b37cd1c431ec7c829fe17dad0cf6738218e07ad242e",
+  "bytes": 1629495,
+  "https_status": 200,
+  "content_type_html": true,
+  "byte_identical_to_package": true,
+  "tested_locales": [
+    "lv",
+    "en",
+    "ru",
+    "uk"
+  ],
+  "viewport_widths": [
+    320,
+    390,
+    1280
+  ],
+  "immediate_feedback_privacy_draft_edit_copy": true,
+  "immediate_attempt_not_queued": true,
+  "negative_screen_new_m46_navigation": true,
+  "rare_stuttering_choice": true,
+  "old_current_progress_and_clinician_pdf": true,
+  "answer_related_http_requests": 0,
+  "browser_errors": [],
+  "physical_device_testing": "pending",
+  "pages_run": 43834305197,
+  "pages_commit": "fb680457a81ef9a6d0d8ee3ac798fdd9bd6ca1d2",
+  "delivery_pr": 60,
+  "delivery_checked_head": "8d94f409bebae35abaec44d22e3997a8d96ccd76",
+  "delivery_merge_tree_matches_checked_head": true,
+  "delivery_ci": {
+    "app-components": 43833883839,
+    "discovery-bundle": 43833883898,
+    "full-questionnaire": 43833883910
+  },
+  "drive_sync": "docs/review/checks/2026-11-16-feedback-m46-drive-sync.json"
+}

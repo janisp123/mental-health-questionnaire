@@ -1,5 +1,13 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · v0.2.15 feedback/M46 release — LIVE VERIFIED
+
+Both completed tasks: Added by ChatGPT, implemented by Codex through PR #59. Final delivery records merged through PR #60 as `fb680457a81ef9a6d0d8ee3ac798fdd9bd6ca1d2`, identical to checked head `8d94f409bebae35abaec44d22e3997a8d96ccd76` tree. All three required delivery CI runs passed (43833883839 / 43833883898 / 43833883910). Automatic Pages run **43834305197** succeeded.
+
+Live questionnaire returned HTTPS 200 with HTML content type and exact v0.2.15 package/Drive bytes: SHA256 `71c9036ed014b2e7d2a91b37cd1c431ec7c829fe17dad0cf6738218e07ad242e`. Actual live browser flows passed in LV/EN/RU/UK at 320/390/1280px: question-only feedback/copy, edited-draft invalidation, immediate attempts excluded from queue, M46 additions after negative broad screen, rare-stuttering choice, old/current progress and all three new question texts in clinician PDFs. No browser errors or answer-related HTTP requests. Initial live test left its cancellation stub active for later progress imports; corrected test setup and complete live rerun passed. No real email sent. [Live evidence](review/checks/2026-11-16-feedback-m46-live.json).
+
+GitHub, existing Drive files and hosted questionnaire now agree on v0.2.15. Five unrelated TD items remain. Nothing is partially implemented. Human clinical/translation, draft-priority calibration and physical-phone checks remain pending. Next: those reviews or a separately authorized remaining TD task; no further hosting/package change is needed.
+
 ### 2026-11-16 · v0.2.15 implementation and Drive delivery — VERIFIED
 
 Added by: ChatGPT (both original TD items). Implemented by: Codex, verified through PR #59. Merge `45c4c8cfc1db56ed2f58b8b8caa7602216781198` equals checked head `ffea6336a5231c9204d5661cf838649593d82ade` tree. Final local suite: 44/44 in labelled memory mode. All required exact-head CI passed (43832907609 / 43832907547 / 43832907669), including real offline opening. Both changes are implemented in all active locales; no new diagnostic score, old-answer reinterpretation or recovery migration. Independent-review stale-copy fix passed its observed-failing regression and full suite. Phone-width controls and guide visually inspected. No real email sent.
