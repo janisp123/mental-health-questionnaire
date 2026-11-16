@@ -34,3 +34,7 @@ Focused regressions cover all coded choices in all active locales, exact respons
 ## Supplemental M06_25 responsibilities context
 
 The optional hypothetical question keeps its priority metadata in its own supplemental catalog, merged and validated by the builder. “More likely” is 4 for early editorial review; less likely, no change, nonapplicable, uncertainty and refusal remain 3. None is a measurement of current suicidal intent, proof of safety, or a new emergency trigger. The item stays with current-safety context in every clinician renderer. Human clinical calibration remains pending.
+
+## Supplemental M06_26/27 action history
+
+These two items retain their own draft editorial metadata in the supplemental catalog. M06_26 affirmative histories A–D are3, explicit No(E) is1 and uncertainty/refusal F/G remain3. M06_27 recent timings A/B are4, C/D/E are3, explicit nonoccurrence F is1 and uncertainty/refusal G/H remain3. The parent/child context pair stays together, independently of the named suicide-attempt family. Timing orders review, does not establish current intent or automatically classify an action as an attempt, and creates no new emergency trigger. Existing current-safety questions and human clinical interpretation remain necessary.

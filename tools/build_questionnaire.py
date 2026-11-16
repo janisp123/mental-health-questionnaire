@@ -353,6 +353,7 @@ def build_bundle(config_path=None):
     apply_m46_additions(bundle)
     priority = read_json(QUESTIONNAIRE / "report-priority.json")
     apply_m06_responsibility_context(bundle, priority)
+    apply_m06_action_history(bundle, priority)
     validate_report_priority(priority, [q for group in bundle["groups"] for q in group["questions"]])
     bundle["presentation"]["reportPriority"] = priority
     return bundle
@@ -431,6 +432,54 @@ def apply_m06_responsibility_context(bundle, priority):
     group["questionCount"] = len(group["questions"])
     priority["questions"][question["id"]] = rule
     priority["relatedGroups"][data["relatedGroup"]].append(question["id"])
+
+
+def apply_m06_action_history(bundle, priority):
+    """Insert independently scoped action/intent history and same-occasion timing."""
+    data = read_json(QUESTIONNAIRE / "m06-action-history.json")
+    items, rules = data.get("questions", []), data.get("reportPriorities", {})
+    expected = {"M06_26": {"default": 3, "answers": dict(A=3, B=3, C=3, D=3, E=1, F=3, G=3)},
+                "M06_27": {"default": 3, "answers": dict(A=4, B=4, C=3, D=3, E=3, F=1, G=3, H=3)}}
+    if (data.get("schema") != "questionnaire-m06-action-history-v1"
+            or data.get("insertAfter") != "M06_09" or len(items) != 2
+            or [q.get("id") for q in items] != list(expected) or rules != expected):
+        raise ValueError("Invalid M06 action-history catalog")
+    existing = [q for group in bundle["groups"] for q in group["questions"]]
+    by_id = {q["id"]: q for q in existing}
+    ids, orders = set(by_id), {q["order"] for q in existing}
+    locales = set(SOURCE_LANGS) | set(read_json(QUESTIONNAIRE / "build.json").get("translationPacks", {})) | set(bundle["ui"])
+    for index, q in enumerate(items):
+        codes = list("ABCDEFG" if index == 0 else "ABCDEFGH")
+        context = None if index == 0 else {"id": "M06_26", "showValues": list("ABCD")}
+        statuses = {code: "uncertain" if code == codes[-2] else "refused" if code == codes[-1] else "answered" for code in codes}
+        if (q["id"] in ids or q["id"] in priority["questions"]
+                or type(q.get("order")) is not int or q["order"] in orders
+                or q.get("sourceModule") != "06" or q.get("originModule") != 6 or q.get("section") != 6
+                or q.get("type") != "choice" or q.get("multi") is not False
+                or q.get("context") != context or q.get("choiceCodes") != codes
+                or q.get("answerStatus") != statuses or q.get("exclusive") != "" or q.get("incompatible") != []
+                or set(q.get("translations", {})) != locales):
+            raise ValueError("Invalid M06 action-history question: " + q["id"])
+        for locale, t in q["translations"].items():
+            if (not all(isinstance(t.get(key), str) and t[key].strip() for key in ("title", "time"))
+                    or list(t.get("choices", {})) != codes
+                    or not all(isinstance(v, str) and v.strip() for v in t["choices"].values())
+                    or (index == 0 and (not isinstance(t.get("help"), str) or not t["help"].strip()
+                        or not isinstance(t.get("scope"), str) or not t["scope"].strip() or t["scope"] not in t["time"]))):
+                raise ValueError("Incomplete M06 action-history wording: " + q["id"] + "/" + locale)
+            # Active recency labels remain authoritative; all configured wording is structurally validated.
+            if index == 1 and locale in bundle["ui"] and t["choices"] != by_id["M06_09"]["translations"][locale]["choices"]:
+                raise ValueError("M06 action-history timing must retain existing recency meanings")
+        ids.add(q["id"]); orders.add(q["order"])
+    section = bundle["source_module_to_section"]["06"]
+    group = next(g for g in bundle["groups"] if g["id"] == section)
+    position = next(i for i, q in enumerate(group["questions"]) if q["id"] == data["insertAfter"]) + 1
+    for q in items:
+        q["module"] = section
+        q["translations"] = {lang: t for lang, t in q["translations"].items() if lang in bundle["ui"]}
+        priority["questions"][q["id"]] = rules[q["id"]]
+    group["questions"][position:position] = items
+    group["questionCount"] = len(group["questions"])
 
 
 def validate_report_priority(policy, questions):

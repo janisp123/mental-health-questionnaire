@@ -22,6 +22,6 @@ assert odd['originModule']==33 and odd['module']=='33'
 assert odd in next(group for group in groups if group['id']=='33')['questions']
 bundle=build.build_bundle()
 assert len(bundle['groups'])==15 and all(36<=g['questionCount']<=70 for g in bundle['groups'])
-assert sum(len(g['questions']) for g in bundle['groups'])==716
+assert sum(len(g['questions']) for g in bundle['groups'])==718
 assert next(q for g in bundle['groups'] for q in g['questions'] if q['id']=='M32_02')['module']=='S11'
 print('PASS: 48 immutable source modules map to 15 optional groups/712 questions; exact source titles and earlier conditions remain available.')
