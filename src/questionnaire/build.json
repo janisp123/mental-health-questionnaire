@@ -1,10 +1,10 @@
 {
   "schema": "questionnaire-build-v1",
-  "version": "0.2.14-review+full-bank",
+  "version": "0.2.15-review+full-bank",
   "baseline": "LV-v16",
   "translationPacks": {
     "uk": "Українська"
   },
-  "buildEpoch": 1794614400,
+  "buildEpoch": 1794787200,
   "reviewGuide": "docs/review/GUIDE_LV_EN_RU_UK.md"
 }

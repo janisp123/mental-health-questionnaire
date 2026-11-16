@@ -7,7 +7,7 @@ bundle=build.build_bundle();questions=[q for group in bundle['groups'] for q in 
 policy=bundle['presentation'].get('reportPriority')
 assert policy, 'Report-only priority policy is missing'
 build.validate_report_priority(policy,questions)
-assert len(policy['questions'])==len(questions)==712
+assert len(policy['questions'])==len(questions)==715
 for question in questions:
  rule=policy['questions'][question['id']]
  assert type(rule['default']) is int and 1<=rule['default']<=5
@@ -29,4 +29,4 @@ for change in ('missing','unknown','invalid_code','zero','float','boolean','grou
  try:build.validate_report_priority(bad,questions)
  except ValueError:pass
  else:raise AssertionError('Accepted invalid report priority: '+change)
-print('PASS: complete 712-ID/code editorial ordering table; bounded values and valid unique context families.')
+print('PASS: complete 715-ID/code editorial ordering table; bounded values and valid unique context families.')

@@ -95,6 +95,7 @@
     "guideBody": "Open the downloaded HTML file in a browser; it will not work in preview mode. A single choice is saved in the open questionnaire; for multiple choices or text, press “Save & Next”. Save progress to a file before taking a break. You can keep the file on your phone or computer. It is not encrypted, so share it only with people you trust or healthcare professionals. Do not post it on social media or anywhere public. You decide what to discuss with a professional. For an accuracy review, skip questions that seem fine; flag questions that seem incorrect or unclear and choose a reason. At the end, select “Generate report” to preview and save the clinician PDF. On a PC, hold Ctrl and scroll the mouse wheel up or down to make the text larger or smaller. On the results screen, you can choose a report language separately from the questionnaire language. If you flagged an issue, you can open a separate feedback report from the clinician preview and save it as its own PDF.",
     "notesTitle": "Latest changes and future plans",
     "notesHistory": [
+      "16 November 2026 · You can prepare an email or copy feedback about one question without including your medical answers, or save feedback to send later. Added questions about everyday coordination, speech clarity and rare stuttering.",
       "15.11.2026 15:45 Riga — Clarified medicine-entry instructions. Added examples for describing changes in wellbeing and guidance locating the separate safety questions.",
       "15.11.2026 14:35 Riga — Reports keep related answers together in review-priority order. Answer wording and saved progress are unchanged.",
       "15.11.2026 08:56 Riga — The report now has new-questionnaire and public sharing actions, includes only provided answers, and explains omissions briefly. The Contributions section is visible even before names are added.",
@@ -103,8 +104,7 @@
       "14.11.2026 23:49 Riga — The summary and clinician report now use matching question counts and show answered and skipped questions separately. Applicable answers saved in other sections remain included.",
       "14.11.2026 23:26 Riga — Support guidance now explains that no prepared speech is needed, a helpline is there to listen and help, and you can ask about confidentiality before sharing personal details.",
       "14.11.2026 22:17 Riga — Contact details are available through the GitHub link beside the creator’s name; the separate Send feedback action remains available.",
-      "14.11.2026 17:02 Riga — support instructions now explain how to find a local helpline in your country or city; urgent situations refer to local emergency services. Clarified that a panic-like episode’s peak is its strongest point within that episode.",
-      "14.11.2026 15:18 Riga — added email drafts and copying for question feedback; answers are excluded."
+      "14.11.2026 17:02 Riga — support instructions now explain how to find a local helpline in your country or city; urgent situations refer to local emergency services. Clarified that a panic-like episode’s peak is its strongest point within that episode."
     ],
     "coverageNote": "Counts cover applicable questions in the selected sections and previously answered or skipped questions from other sections. Answers hidden by changed conditions remain in the progress file and are excluded here.",
     "autoHint": "Choose one answer to save it in the open questionnaire and continue.",
@@ -116,7 +116,7 @@
     "feedbackAnswerPrefix": "Incorrect answer",
     "feedbackOther": "Something else",
     "feedbackComment": "Comment (optional)",
-    "feedbackContinue": "Save & Continue",
+    "feedbackContinue": "Save and send later",
     "removeFeedback": "Remove flag",
     "feedbackChooseReason": "Choose at least one reason.",
     "feedbackPrivacy": "Only report an issue with the question here. Do not include your name, personal details, or answers.",
@@ -141,7 +141,7 @@
     "projectSource": "Source code and development (GitHub)",
     "sendFeedback": "Send feedback",
     "copyFeedback": "Copy feedback",
-    "feedbackLocalOnly": "Flags and comments stay in this open questionnaire. They are not delivered to the developer automatically. To share saved feedback, open the feedback report from Results.",
+    "feedbackLocalOnly": "Choose a reason and optionally add a comment. You can prepare an email now or save the feedback to send later.",
     "feedbackDeliveryPrivacy": "This opens a draft in your email app. Your email app/provider may save or transmit the draft; email is not anonymous. Review the feedback and remove sensitive details you typed before sending. Only flagged questions, feedback categories and comments are included, not your questionnaire answers. You must press Send in your email app.",
     "feedbackCopyHelp": "If email does not open or copying fails, select the text below and copy it manually into an email.",
     "feedbackLongHelp": "This feedback cannot use the email link (it may be too long). Copy the complete text below into an email; nothing has been shortened.",
@@ -160,6 +160,10 @@
     "shareReady": "You can also copy the message below.",
     "reportCountIncluded": "Provided answers",
     "reportEmpty": "No answers to include. Return to the questionnaire to add answers.",
-    "reportOrderNote": "Answers are ordered by review priority, keeping related context together. This is not a clinical risk assessment."
+    "reportOrderNote": "Answers are ordered by review priority, keeping related context together. This is not a clinical risk assessment.",
+    "feedbackSendNow": "Open email to send now",
+    "feedbackEmailSubject": "Question feedback",
+    "feedbackNowPrivacy": "Only this question and your feedback are prepared for email. Your medical answers are not included. Sending an email exposes your email address and any text you choose to send. Review the draft and press Send in your email app yourself.",
+    "feedbackDraftReady": "Feedback is ready; delivery is not confirmed. If no email app opens, copy the feedback and email it manually, or save it for later."
   }
 }

@@ -27,7 +27,7 @@ assert presentation["topicOrder"][0] == "S11" and presentation["topicOrder"][-1]
 questions = [question for group in bundle["groups"] for question in group["questions"]]
 positions = {question["id"]: index for index, question in enumerate(questions)}
 by_id = {question["id"]: question for question in questions}
-assert len(positions) == 712
+assert len(positions) == 715
 assert all(
     not question.get("context") or positions[question["context"]["id"]] < positions[question["id"]]
     for question in questions
@@ -38,4 +38,4 @@ assert {q["sourceModule"] for q in questions} == {f"{n:02d}" for n in range(1,49
 
 report_position = {key: index for index, key in enumerate(presentation["topicOrder"])}
 assert presentation["topicOrder"][-4:] == ["S02", "S03", "S04", "S05"]
-print("PASS: all 712 IDs occur once; 15 user sections each contain 36–70 questions; report order is independently complete.")
+print("PASS: all 715 IDs occur once; 15 user sections each contain 36–70 questions; report order is independently complete.")

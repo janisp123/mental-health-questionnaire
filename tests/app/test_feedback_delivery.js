@@ -25,3 +25,17 @@ const broken = delivery.compose(questions,{Q1:{...feedback.Q1,comment:"emoji cut
 assert.ok(broken.url);
 assert.ok(new URLSearchParams(broken.url.split("?")[1]).get("body").includes("emoji cut \ufffd"));
 console.log("PASS: feedback delivery encodes Unicode, excludes non-feedback fields and preserves oversized text.");
+
+catalogs.en.feedbackEmailSubject='Question feedback';
+const singleQuestion={...questions[0],choiceCodes:['A','B'],translations:{en:{title:'Current question',time:'Now',choices:{A:'Problem label A',B:'Problem label B'}}}};
+const singleDraft={reasons:['question','answer:B','other'],comment:'Test ā ё ї\nline',answers:'PRIVATE_ANSWER',identity:'PRIVATE_NAME'};
+const single=delivery.composeQuestion(singleQuestion,singleDraft,'en',catalogs,'review@example.test','test');
+assert.ok(single.url);
+assert.equal(new URLSearchParams(single.url.split('?')[1]).get('subject'),'Question feedback — Q1');
+assert.ok(single.text.includes('Current question')&&single.text.includes('Problem label B'));
+assert.ok(!/PRIVATE_ANSWER|PRIVATE_NAME|Problem label A/.test(single.text));
+assert.equal(delivery.composeQuestion(singleQuestion,{reasons:[],comment:'Only comment'},'en',catalogs,'review@example.test','test').url,null);
+assert.equal(delivery.composeQuestion(singleQuestion,{reasons:['bogus','answer:Z']},'en',catalogs,'review@example.test','test').url,null);
+assert.equal(delivery.composeQuestion(singleQuestion,{reasons:['other'],comment:'ї'.repeat(500)},'en',catalogs,'review@example.test','test').url,null);
+assert.ok(delivery.composeQuestion(singleQuestion,{reasons:['other'],comment:'cut \ud83d'},'en',catalogs,'review@example.test','test').url);
+console.log('PASS: single-question feedback isolates draft fields and localizes subject.');

@@ -1,0 +1,262 @@
+{
+  "schema": "questionnaire-m46-additions-v1",
+  "status": "DRAFT_NOT_CLINICALLY_REVIEWED",
+  "insertAfter": "M46_03",
+  "questions": [
+    {
+      "id": "M46_07",
+      "order": 712,
+      "sourceModule": "46",
+      "originModule": 46,
+      "section": 46,
+      "profile": "CUSTOM12",
+      "multi": false,
+      "context": null,
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "exclusive": "",
+      "incompatible": [],
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "answered",
+        "D": "answered",
+        "E": "answered",
+        "F": "uncertain",
+        "G": "refused"
+      },
+      "type": "choice",
+      "translations": {
+        "lv": {
+          "title": "Cik bieži Jūs uzskrienat sienām, durvju ailēm, mēbelēm vai citiem priekšmetiem vai saskaraties ar grūtībām saskaņot kustības ikdienas darbībās?",
+          "time": "Pēdējās 28 dienas.",
+          "help": "Ieskaitiet arī vieglas grūtības. Novērtējiet, cik dienās tas ir noticis; nav jāskaita precīzi.",
+          "choices": {
+            "A": "Nevienā dienā",
+            "B": "1–3 dienās",
+            "C": "4–10 dienās",
+            "D": "11–20 dienās",
+            "E": "21–28 dienās",
+            "F": "Nezinu / grūti pateikt",
+            "G": "Nevēlos atbildēt"
+          }
+        },
+        "en": {
+          "title": "How often do you bump into walls, doorways, furniture or other objects, or have difficulty coordinating your movements in everyday activities?",
+          "time": "The past 28 days.",
+          "help": "Include mild difficulties too. Estimate the number of days this happened; you do not need an exact count.",
+          "choices": {
+            "A": "No days",
+            "B": "On 1–3 days",
+            "C": "On 4–10 days",
+            "D": "On 11–20 days",
+            "E": "On 21–28 days",
+            "F": "I do not know / difficult to say",
+            "G": "I don't want to answer."
+          }
+        },
+        "ru": {
+          "title": "Как часто Вы натыкаетесь на стены, дверные проёмы, мебель или другие предметы либо испытываете трудности с координацией движений в повседневных делах?",
+          "time": "Последние 28 дней.",
+          "help": "Учитывайте и лёгкие трудности. Примерно оцените число дней, когда это происходило; точный подсчёт не нужен.",
+          "choices": {
+            "A": "Ни одного дня",
+            "B": "1–3 дня",
+            "C": "4–10 дней",
+            "D": "11–20 дней",
+            "E": "21–28 дней",
+            "F": "Не знаю / трудно сказать",
+            "G": "Я не хочу отвечать."
+          }
+        },
+        "uk": {
+          "title": "Як часто Ви наштовхуєтеся на стіни, дверні отвори, меблі чи інші предмети або маєте труднощі з координацією рухів у повсякденних справах?",
+          "time": "За останні 28 днів.",
+          "help": "Враховуйте й легкі труднощі. Приблизно оцініть кількість днів, коли це траплялося; точний підрахунок не потрібен.",
+          "choices": {
+            "A": "Жодного дня",
+            "B": "1–3 дні",
+            "C": "4–10 днів",
+            "D": "11–20 днів",
+            "E": "21–28 днів",
+            "F": "Не знаю / важко сказати",
+            "G": "Не хочу відповідати"
+          }
+        }
+      }
+    },
+    {
+      "id": "M46_08",
+      "order": 713,
+      "sourceModule": "46",
+      "originModule": 46,
+      "section": 46,
+      "profile": "CUSTOM12",
+      "multi": false,
+      "context": null,
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "exclusive": "",
+      "incompatible": [],
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "answered",
+        "D": "answered",
+        "E": "answered",
+        "F": "uncertain",
+        "G": "refused"
+      },
+      "type": "choice",
+      "translations": {
+        "lv": {
+          "title": "Cik bieži citiem ir grūti saprast Jūsu izrunātos vārdus, jo Jūs runājat pārāk ātri, murmināt vai izrunājat vārdus neskaidri?",
+          "time": "Pēdējās 28 dienas.",
+          "help": "Šeit domāta runas skaidrība un ātrums, nevis domas pazaudēšana sarunas laikā.",
+          "choices": {
+            "A": "Nevienā dienā",
+            "B": "1–3 dienās",
+            "C": "4–10 dienās",
+            "D": "11–20 dienās",
+            "E": "21–28 dienās",
+            "F": "Nezinu / grūti pateikt",
+            "G": "Nevēlos atbildēt"
+          }
+        },
+        "en": {
+          "title": "How often do other people have difficulty understanding your spoken words because you speak too fast, mumble or pronounce words unclearly?",
+          "time": "The past 28 days.",
+          "help": "This asks about speech clarity and speed, rather than losing your train of thought while speaking.",
+          "choices": {
+            "A": "No days",
+            "B": "On 1–3 days",
+            "C": "On 4–10 days",
+            "D": "On 11–20 days",
+            "E": "On 21–28 days",
+            "F": "I do not know / difficult to say",
+            "G": "I don't want to answer."
+          }
+        },
+        "ru": {
+          "title": "Как часто другим трудно понять произносимые Вами слова, потому что Вы говорите слишком быстро, бормочете или произносите слова нечётко?",
+          "time": "Последние 28 дней.",
+          "help": "Речь идёт о чёткости и скорости речи, а не о потере мысли во время разговора.",
+          "choices": {
+            "A": "Ни одного дня",
+            "B": "1–3 дня",
+            "C": "4–10 дней",
+            "D": "11–20 дней",
+            "E": "21–28 дней",
+            "F": "Не знаю / трудно сказать",
+            "G": "Я не хочу отвечать."
+          }
+        },
+        "uk": {
+          "title": "Як часто іншим важко зрозуміти вимовлені Вами слова, тому що Ви говорите надто швидко, бурмочете або вимовляєте слова нечітко?",
+          "time": "За останні 28 днів.",
+          "help": "Ідеться про чіткість і швидкість мовлення, а не про втрату думки під час розмови.",
+          "choices": {
+            "A": "Жодного дня",
+            "B": "1–3 дні",
+            "C": "4–10 днів",
+            "D": "11–20 днів",
+            "E": "21–28 днів",
+            "F": "Не знаю / важко сказати",
+            "G": "Не хочу відповідати"
+          }
+        }
+      }
+    },
+    {
+      "id": "M46_09",
+      "order": 714,
+      "sourceModule": "46",
+      "originModule": 46,
+      "section": 46,
+      "profile": "CUSTOM12",
+      "multi": false,
+      "context": null,
+      "choiceCodes": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "exclusive": "",
+      "incompatible": [],
+      "answerStatus": {
+        "A": "answered",
+        "B": "answered",
+        "C": "answered",
+        "D": "uncertain",
+        "E": "refused"
+      },
+      "type": "choice",
+      "translations": {
+        "lv": {
+          "title": "Vai Jūs kādreiz stostāties, atkārtojat skaņas vai zilbes vai uz brīdi iestrēgstat pie kāda vārda, arī ja tas notiek ļoti reti?",
+          "time": "Jebkurā dzīves laikā, arī pašlaik.",
+          "help": "Ieskaitiet arī ļoti retas epizodes un pieredzi agrāk dzīvē. Pozitīva atbilde pati par sevi nenozīmē traucējumu.",
+          "choices": {
+            "A": "Nē, nekad",
+            "B": "Jā, bet ļoti reti",
+            "C": "Jā, biežāk nekā ļoti reti",
+            "D": "Nezinu / grūti pateikt",
+            "E": "Nevēlos atbildēt"
+          }
+        },
+        "en": {
+          "title": "Do you ever stutter, repeat sounds or syllables, or briefly get stuck on a word, even if this happens very rarely?",
+          "time": "At any time in your life, including now.",
+          "help": "Include very rare episodes and experiences earlier in life. A positive answer alone does not mean you have a disorder.",
+          "choices": {
+            "A": "No, never",
+            "B": "Yes, but very rarely",
+            "C": "Yes, more often than very rarely",
+            "D": "I do not know / difficult to say",
+            "E": "I don't want to answer."
+          }
+        },
+        "ru": {
+          "title": "Бывает ли, что Вы заикаетесь, повторяете звуки или слоги либо ненадолго запинаетесь на слове, даже если это происходит очень редко?",
+          "time": "Когда-либо в жизни, включая настоящее время.",
+          "help": "Учитывайте очень редкие эпизоды и случаи в прошлом. Положительный ответ сам по себе не означает наличие расстройства.",
+          "choices": {
+            "A": "Нет, никогда",
+            "B": "Да, но очень редко",
+            "C": "Да, чаще, чем очень редко",
+            "D": "Не знаю / трудно сказать",
+            "E": "Я не хочу отвечать."
+          }
+        },
+        "uk": {
+          "title": "Чи буває, що Ви заїкаєтеся, повторюєте звуки або склади чи на мить затинаєтеся на слові, навіть якщо це трапляється дуже рідко?",
+          "time": "Будь-коли в житті, зокрема зараз.",
+          "help": "Враховуйте дуже рідкісні епізоди й випадки раніше в житті. Позитивна відповідь сама по собі не означає наявність розладу.",
+          "choices": {
+            "A": "Ні, ніколи",
+            "B": "Так, але дуже рідко",
+            "C": "Так, частіше, ніж дуже рідко",
+            "D": "Не знаю / важко сказати",
+            "E": "Не хочу відповідати."
+          }
+        }
+      }
+    }
+  ]
+}

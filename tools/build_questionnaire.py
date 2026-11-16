@@ -350,10 +350,47 @@ def build_bundle(config_path=None):
     apply_local_emergency_notices(bundle)
     apply_panic_peak_clarification(bundle)
     apply_appointment_guidance(bundle)
+    apply_m46_additions(bundle)
     priority = read_json(QUESTIONNAIRE / "report-priority.json")
     validate_report_priority(priority, [q for group in bundle["groups"] for q in group["questions"]])
     bundle["presentation"]["reportPriority"] = priority
     return bundle
+
+
+def apply_m46_additions(bundle):
+    """Add explicitly separate questions; never alter the immutable v16 source bank."""
+    data = read_json(QUESTIONNAIRE / "m46-additions.json")
+    expected = {"M46_07", "M46_08", "M46_09"}
+    items = data.get("questions", [])
+    if (data.get("schema") != "questionnaire-m46-additions-v1"
+            or data.get("insertAfter") != "M46_03" or len(items) != 3
+            or {q.get("id") for q in items} != expected):
+        raise ValueError("Invalid M46 additions")
+    existing = [q for group in bundle["groups"] for q in group["questions"]]
+    ids, orders = {q["id"] for q in existing}, {q["order"] for q in existing}
+    locales = set(SOURCE_LANGS) | set(read_json(QUESTIONNAIRE / "build.json").get("translationPacks", {})) | set(bundle["ui"])
+    section = bundle["source_module_to_section"]["46"]
+    for q in items:
+        codes = q.get("choiceCodes")
+        if (q["id"] in ids or type(q.get("order")) is not int or q["order"] in orders
+                or q.get("sourceModule") != "46" or q.get("originModule") != 46
+                or q.get("context") is not None or q.get("type") != "choice" or q.get("multi") is not False
+                or not isinstance(codes, list) or len(codes) < 3 or len(codes) != len(set(codes))
+                or set(q.get("answerStatus", {})) != set(codes)
+                or set(q.get("translations", {})) != locales):
+            raise ValueError("Invalid supplemental M46 contract: " + q["id"])
+        for locale, text in q["translations"].items():
+            if (not all(isinstance(text.get(key), str) and text[key].strip() for key in ("title", "time", "help"))
+                    or set(text.get("choices", {})) != set(codes)
+                    or not all(isinstance(value, str) and value.strip() for value in text["choices"].values())):
+                raise ValueError("Incomplete M46 wording: " + q["id"] + "/" + locale)
+        q["translations"] = {locale: text for locale, text in q["translations"].items() if locale in bundle["ui"]}
+        q["module"] = section
+        ids.add(q["id"]); orders.add(q["order"])
+    group = next(group for group in bundle["groups"] if group["id"] == section)
+    position = next(i for i, q in enumerate(group["questions"]) if q["id"] == data["insertAfter"]) + 1
+    group["questions"][position:position] = items
+    group["questionCount"] = len(group["questions"])
 
 
 def validate_report_priority(policy, questions):

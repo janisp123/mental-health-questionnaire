@@ -105,7 +105,7 @@ function cleanMedicineDraft(){
  return {records,discussion,valid:records.length>0||!!discussion};
 }
 function renderFeedback(q,t){
- return window.QuestionnaireScreens.feedback({q,t,state,ui:ui(),label,escape:esc,btn});
+ return window.QuestionnaireScreens.feedback({q,t,state,ui:ui(),label,escape:esc,btn,delivery:state.feedbackDeliveryOpen?questionFeedbackDelivery():null,email:data.presentation.feedbackContactEmail});
 }
 function renderQuestion(){
  const q=current(),u=ui();
@@ -152,7 +152,7 @@ function render(){
  if(state.focusSupport||keepSupportFocus){document.getElementById('support-message')?.focus({preventScroll:true});state.focusSupport=false;}
 }
 function clearPendingSingleAnswer(){if(pendingSingleAnswer)clearTimeout(pendingSingleAnswer.timer);pendingSingleAnswer=null;}
-function setQuestion(id){clearPendingSingleAnswer();state.currentId=id;state.pendingSectionEnd=null;state.draft=null;state.feedbackDraft=null;state.feedbackOpen=false;state.screen="question";state.notice="";render();window.scrollTo(0,0);}
+function setQuestion(id){clearPendingSingleAnswer();state.currentId=id;state.pendingSectionEnd=null;state.draft=null;state.feedbackDraft=null;state.feedbackDeliveryOpen=false;state.feedbackOpen=false;state.screen="question";state.notice="";render();window.scrollTo(0,0);}
 function advance(){
  const destination=flow.next(state,active());
  if(destination.id){setQuestion(destination.id);return;}
@@ -292,8 +292,12 @@ function restore(file){
  reader.onerror=function(){state.notice=ui().restoreError;render();};
  reader.readAsText(file,"utf-8");
 }
+function questionFeedbackDelivery(){
+ const q=current();
+ return window.QuestionnaireFeedbackDelivery.composeQuestion(q,state.feedbackDraft?.forId===q.id?state.feedbackDraft:state.feedback[q.id],state.lang,data.ui,data.presentation.feedbackContactEmail,data.version);
+}
 function action(key){
- if(["skip","previous","skipSection","end","sections","results","doctor","feedbackReport","resultScreen","back","reviewSafety","new","feedbackContinue"].includes(key))clearPendingSingleAnswer();
+ if(["skip","previous","skipSection","end","sections","results","doctor","feedbackReport","resultScreen","back","reviewSafety","new","feedback","feedbackContinue","emailQuestionFeedback","copyQuestionFeedback"].includes(key))clearPendingSingleAnswer();
  const q=reportQuestions(),u=ui();
  if(key==="shareQuestionnaire"&&state.screen==="report"&&state.reportView!=="feedback"){
   state.shareOpen=!state.shareOpen;render();return;
@@ -313,6 +317,23 @@ function action(key){
  if(key==="saveAndContinue"){continueAfterSection(true);return;}
  if(key==="continueWithoutSaving"){continueAfterSection(false);return;}
  if(key==="feedback"){state.feedbackOpen=!state.feedbackOpen;state.notice="";render();return;}
+ if((key==="emailQuestionFeedback"||key==="copyQuestionFeedback")&&state.screen==="question"&&state.feedbackOpen){
+  const delivery=questionFeedbackDelivery();
+  if(!delivery.hasFeedback){state.notice=u.feedbackChooseReason;render();return;}
+  state.feedbackDeliveryOpen=true;state.notice="";render();
+  if(key==="emailQuestionFeedback"){
+   if(delivery.url&&window.confirm(u.feedbackNowPrivacy)){
+    try{window.QuestionnaireFeedbackDelivery.open(delivery.url);}catch(error){/* Keep complete manual fallback and draft. */}
+   }
+  }else{
+   const field=document.getElementById("question-feedback-copy"),status=document.getElementById("question-feedback-status");
+   field.focus();field.select();
+   if(navigator.clipboard?.writeText){
+    navigator.clipboard.writeText(delivery.text).then(()=>{status.textContent=u.feedbackCopied;}).catch(()=>{status.textContent=u.feedbackCopyHelp;});
+   }else status.textContent=u.feedbackCopyHelp;
+  }
+  return;
+ }
  if(key==="feedbackContinue"){
   const currentQuestion=current();if(!currentQuestion)return;
   const reasons=Array.from(app.querySelectorAll('[data-feedback-reason]:checked'),el=>el.dataset.feedbackReason);
@@ -392,9 +413,11 @@ window.QuestionnaireEvents.bind(app,{
   const choices=active().filter(q=>q.module===moduleId),next=choices.find(q=>!state.answers[q.id])||choices[0];
   if(next)setQuestion(next.id);
  },
- language:value=>{if(Object.hasOwn(languageNames,value)){state.lang=value;state.notice="";render();}},
+ language:value=>{if(Object.hasOwn(languageNames,value)){state.feedbackDeliveryOpen=false;state.lang=value;state.notice="";render();}},
  reportLanguage:value=>{if(Object.hasOwn(languageNames,value))state.reportLang=value;},
  feedbackChange:()=>{
+  state.feedbackDeliveryOpen=false;
+  document.getElementById("question-feedback-delivery")?.remove();
   state.feedbackDraft={forId:state.currentId,
    reasons:Array.from(app.querySelectorAll('[data-feedback-reason]:checked'),el=>el.dataset.feedbackReason),
    comment:document.getElementById("feedback-comment")?.value||""};
