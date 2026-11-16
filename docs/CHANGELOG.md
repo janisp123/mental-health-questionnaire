@@ -1,5 +1,13 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · Usage/update-information v0.2.19 — DRIVE VERIFIED
+
+Existing task Added by ChatGPT at107d0b5/PR73; Implemented by Codex through PR74, checked/merged tree identical. Local48/48 and all source CI passed, including real offline opening in CI. Both opening modes, dated latest10 short summaries with retained truthful detailed records, and complete patient-facing plans removal verified across LV/EN/RU/UK. Keyboard/three-width/feedback/progress/report checks and independent review passed. Clean-source4960c24 package and one-page guide rendering inspected;18 archived. Stable Drive pair read back byte-identical, IDs/folder/sharing preserved. Original TD entry removed only after verification; five unrelated tasks remain. No question/answer/recovery changes. Evidence: review/checks/2026-11-16-usage-update-information-drive-sync.json. Next: checked delivery and hosted verification.
+
+### 2026-11-16 · v0.2.19 source and Drive — VERIFIED CHECKPOINT
+
+PR74 merged75f8a43, identical checkedf30c63d tree. Source app43927704762/discovery43927704839/full43927704772 passed, including real offline opening. Drive19 HTML/PDF replaced in original IDs and downloaded byte-identical; folder/permissions preserved and exactly two current files. Hosted remains18 pending checked delivery metadata. Local full suite still finishing with no failures so far; do not claim its final result yet. Source/Drive evidence is verified independently of that pending local run. Next: complete verification record, TD completion and hosted delivery.
+
 ### 2026-11-16 · Usage/update-information v0.2.19 — PACKAGE STAGED
 
 Clean-source4960c24 HTML/PDF/ZIP built and verified against current source. Previous18 pair archived intact. Focused catalog/browser checks, all-language keyboard disclosures/compact-history/date correspondence, three widths and no-request checks passed; independent review found no issues. Full suite remains running; original TD retained pending final verification. Guide rendering/visual inspection and source PR checks precede deliberate Drive/hosted delivery. Verified distribution remains18.
