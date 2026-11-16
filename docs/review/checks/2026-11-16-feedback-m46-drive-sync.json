@@ -1,0 +1,57 @@
+{
+  "verified_at": "2026-11-16T08:44:33.368332+00:00",
+  "version": "0.2.15-review+full-bank",
+  "source_commit": "2b81137751b57f196862ccba468073fa8b54c7ea",
+  "source_tree": "d606ccda8cf3b145465a552663d49b76113f91e0",
+  "source_dirty": false,
+  "checked_head": "ffea6336a5231c9204d5661cf838649593d82ade",
+  "main_merge": "45c4c8cfc1db56ed2f58b8b8caa7602216781198",
+  "merge_tree_matches_checked_head": true,
+  "files": [
+    {
+      "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
+      "name": "Mental_Health_Questionnaire_v0.2.15.html",
+      "bytes": 1629495,
+      "sha256": "71c9036ed014b2e7d2a91b37cd1c431ec7c829fe17dad0cf6738218e07ad242e",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "verified_byte_identical": true
+    },
+    {
+      "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
+      "name": "Mental_Health_Questionnaire_Guide_v0.2.15.pdf",
+      "bytes": 49212,
+      "sha256": "08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75",
+      "parents": [
+        "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb"
+      ],
+      "parents_preserved": true,
+      "permissions_preserved": true,
+      "verified_byte_identical": true
+    }
+  ],
+  "folder_id": "1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
+  "folder_contains_exactly_current_html_and_pdf": true,
+  "ids_folder_sharing_preserved": true,
+  "pdf_bytes_unchanged": true,
+  "guide_render_visually_inspected": true,
+  "local_checks": {
+    "passed": 44,
+    "failed": 0,
+    "load_mode": "memory"
+  },
+  "ci_runs": {
+    "app-components": 43832907609,
+    "discovery-bundle": 43832907547,
+    "full-questionnaire": 43832907669
+  },
+  "ci_offline_file_opening": true,
+  "frozen_questions_and_answer_contracts_preserved": true,
+  "source_questions": 712,
+  "supplemental_questions": 3,
+  "active_questions": 715,
+  "human_language_clinical_and_physical_device_review": "pending"
+}

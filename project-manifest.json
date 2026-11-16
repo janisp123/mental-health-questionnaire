@@ -593,28 +593,28 @@
     "folder_url": "https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb",
     "purpose": "PROFESSIONAL_TECHNICAL_REVIEW_CANDIDATE_NOT_PUBLIC_RELEASE",
     "reference_language": "lv",
-    "version": "0.2.14",
-    "source_commit": "8e63aefa0c53a505af0867db964e7848f1ad7215",
-    "verified_date": "2026-11-15",
+    "version": "0.2.15",
+    "source_commit": "2b81137751b57f196862ccba468073fa8b54c7ea",
+    "verified_date": "2026-11-16",
     "auto_sync": false,
-    "synchronization": "VERIFIED: v0.2.14 medicine-entry and safety-section guidance HTML/PDF downloaded byte-identical; stable file IDs/folder/sharing and version-ending names preserved.",
+    "synchronization": "VERIFIED: v0.2.15 question-only feedback and M46 additions HTML/PDF downloaded byte-identical; stable IDs/folder/sharing preserved.",
     "files": [
       {
         "id": "1l7d0SQef5RneOCMeXfcsA0czmGzxBlb9",
-        "name": "Mental_Health_Questionnaire_v0.2.14.html",
-        "bytes": 1614492,
-        "sha256": "7400e18606e857b8782fa12079dba9cdb794895a4207533414fddaedd630dbf2"
+        "name": "Mental_Health_Questionnaire_v0.2.15.html",
+        "bytes": 1629495,
+        "sha256": "71c9036ed014b2e7d2a91b37cd1c431ec7c829fe17dad0cf6738218e07ad242e"
       },
       {
         "id": "1JIpyYvgB5pAJSYc5cHQJa9lDEDlNU3g8",
-        "name": "Mental_Health_Questionnaire_Guide_v0.2.14.pdf",
+        "name": "Mental_Health_Questionnaire_Guide_v0.2.15.pdf",
         "bytes": 49212,
         "sha256": "08b7a8b4042b7530453c1b65d3533a9e1023022c73085518d44cdb551ee61f75"
       }
     ],
     "source_modules": 48,
     "sections": 15,
-    "questions": 712,
+    "questions": 715,
     "languages": [
       "lv",
       "en",
@@ -622,7 +622,7 @@
       "uk"
     ],
     "source_readme": "docs/review/GUIDE_LV_EN_RU_UK.md",
-    "promotion_commit": "0f2f0b62cb1584bc39e751ed4d732ed8c66464d3",
-    "last_built_date": "2026-11-15"
+    "promotion_commit": "45c4c8cfc1db56ed2f58b8b8caa7602216781198",
+    "last_built_date": "2026-11-16"
   }
 }
