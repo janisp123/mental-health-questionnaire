@@ -1,5 +1,11 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · Usage/update-information v0.2.19 — LIVE VERIFIED
+
+Existing task located on specified branch at107d0b5, latest-ten correction read; checked PR73 merged47ff67d before main-based implementation. Added by ChatGPT; Implemented by Codex through PR74 (clean source4960c24). Local48/48 and all source/delivery CI passed; independent review clean. Delivery PR76 merged f9d3416, Pages 43931263739 succeeded. Hosted/package/Drive HTML SHA2567da39069910957d64cfee923ac18c6eb940ea09d3d510c40bb91140e2c306ce3 matches exactly. Stable Drive pair/sharing preserved,18 archived, one-page guide inspected, README screenshot current.
+
+Live all-language guide/links/keyboard, ten truthful dated compact entries, absence of plans/empty sections, three widths, old/current progress and clinician PDF checks passed with no browser errors or answer requests. Detailed source history retained; five unrelated TD items unchanged, completed existing task removed after verification. No bank/answer/recovery/report changes. Evidence: review/checks/2026-11-16-usage-update-information-live.json. Nothing partially implemented; human reviews/device tests and indexing remain pending.
+
 ### 2026-11-16 · Usage/update-information v0.2.19 — DRIVE VERIFIED
 
 Existing task Added by ChatGPT at107d0b5/PR73; Implemented by Codex through PR74, checked/merged tree identical. Local48/48 and all source CI passed, including real offline opening in CI. Both opening modes, dated latest10 short summaries with retained truthful detailed records, and complete patient-facing plans removal verified across LV/EN/RU/UK. Keyboard/three-width/feedback/progress/report checks and independent review passed. Clean-source4960c24 package and one-page guide rendering inspected;18 archived. Stable Drive pair read back byte-identical, IDs/folder/sharing preserved. Original TD entry removed only after verification; five unrelated tasks remain. No question/answer/recovery changes. Evidence: review/checks/2026-11-16-usage-update-information-drive-sync.json. Next: checked delivery and hosted verification.

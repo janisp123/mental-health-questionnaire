@@ -3,7 +3,7 @@
 
 ## Current publication — 16 November2026
 
-Verified v0.2.18 is live through PR71 and Pages 43880298345. Public descriptions use “over 700 questions in more than 10 sections” or localized equivalents across landing body/metadata, embedded summaries, README and app footers. Hosted/package/Drive HTML parity, all-language footers, phone/desktop widths and stable download links passed. Exact technical totals remain in manifests and progress displays. [Current evidence](../review/checks/2026-11-16-durable-descriptions-live.json). Human reviews and actual search indexing remain pending.
+Verified v0.2.19 is live through PR76 and Pages 43931263739. The questionnaire guide explains online/offline access and manual progress transfer; the compact history shows ten actual dated updates, with patient-facing plans removed in all active languages. Hosted/package/Drive HTML parity, guide/links/keyboard/phone checks and old/current progress/report checks passed. Durable public descriptions and stable download links retained. [Current evidence](../review/checks/2026-11-16-usage-update-information-live.json). Human reviews and actual search indexing remain pending.
 
 Earlier sections below are historical deployment records. Their page-only/manual-only limitations describe previous snapshots; use this current section, `tools/build_discovery.py` and the active checkpoint for current behavior.
 

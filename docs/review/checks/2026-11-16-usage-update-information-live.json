@@ -1,0 +1,44 @@
+{
+  "verified_at": "2026-11-16T18:42:38.118229+00:00",
+  "version": "0.2.19-review+full-bank",
+  "sha256": "7da39069910957d64cfee923ac18c6eb940ea09d3d510c40bb91140e2c306ce3",
+  "byte_identical_to_package": true,
+  "locales": [
+    "lv",
+    "en",
+    "ru",
+    "uk"
+  ],
+  "ten_actual_brief_dated_updates": true,
+  "no_patient_plans_section": true,
+  "guide_online_offline_links_and_keyboard": true,
+  "old_current_progress_and_clinician_pdf": true,
+  "widths": [
+    320,
+    390,
+    1280
+  ],
+  "browser_errors": [],
+  "answer_related_requests": 0,
+  "human_reviews": "pending",
+  "pages_run": 43931263739,
+  "delivery_merge": "f9d3416507f57090c04aa2635fa89f27fc56e7de",
+  "implementation_pr": 74,
+  "delivery_pr": 76,
+  "task_pr": 73,
+  "task_commit": "107d0b50f821ec6501b086e50fa75b1679915e60",
+  "added_by": "ChatGPT",
+  "implemented_by": "Codex",
+  "delivery_ci": {
+    "app": 43930116643,
+    "full": 43930116618,
+    "discovery": 43930116826
+  },
+  "remote_main_td_readback": {
+    "commit": "f9d3416507f57090c04aa2635fa89f27fc56e7de",
+    "sha256": "ee3af4638999941191cff8022897757bec3fca010e3cfff6d39b4f15ef472506",
+    "completed_task_absent": true,
+    "remaining_tasks": 5,
+    "shared_handoff_rules_preserved": true
+  }
+}
