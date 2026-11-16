@@ -1,5 +1,9 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · Action history v0.2.17 source/Drive — VERIFIED
+
+PR67 merged as2dad8c3, checked25c6bcc tree preserved. Source c98fac6. Local48/48 memory; app43873327127/discovery43873327541/full43873327055 passed, including real offline opening. Independent review report-scope issue reproduced then fixed and verified in all locales/PDFs; all history/timing choices, old/current recovery, stale-hidden-child, existing urgent prompts and rollback comparison passed. Drive17 pair downloaded byte-identical, IDs/folder/sharing preserved; guide rendered/inspected,16archived. Landing718 and distribution metadata travel together. Evidence: review/checks/2026-11-16-action-history-drive-sync.json. Next: checked delivery merge and live verification. Human reviews pending; no clinical score or automatic attempt classification.
+
 ### 2026-11-16 · v0.2.17 package — SOURCE CHECKPOINT
 
 Source `c98fac6` clean build, current-source HTML/PDF/ZIP verification passed. HTML SHA256 `6df6f99569de95371037d653d3072ecef7d8aea8ad1c17e50a648ba6ef421e31`; guide unchanged, rendered and inspected. Archived v0.2.16 pair intact. Final full checks are running; no new Drive/hosted delivery yet. Next: checked source PR, deliberate Drive readback and matching landing718 publication.
