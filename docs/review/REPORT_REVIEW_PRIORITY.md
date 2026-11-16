@@ -30,3 +30,7 @@ Only the previously included report entries are sorted. Existing condition-paren
 ## Verification
 
 Focused regressions cover all coded choices in all active locales, exact response-payload conservation, no mutation, descending priorities, stable/contextual order (including absent parent entries), protective inversions, history/recency, uncertainty/refusal and invalid metadata. Runtime checks exercise real preview/PDF order, old/current progress round trips, offline behavior and phone widths. Automated verification establishes implementation behavior; it cannot validate clinical usefulness or calibrate these draft editorial choices.
+
+## Supplemental M06_25 responsibilities context
+
+The optional hypothetical question keeps its priority metadata in its own supplemental catalog, merged and validated by the builder. “More likely” is 4 for early editorial review; less likely, no change, nonapplicable, uncertainty and refusal remain 3. None is a measurement of current suicidal intent, proof of safety, or a new emergency trigger. The item stays with current-safety context in every clinician renderer. Human clinical calibration remains pending.

@@ -2,7 +2,7 @@
 
 [![Multilingual checks](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml/badge.svg?branch=main)](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml)
 
-**Current version: v0.2.15 · Latvian / English / Russian / Ukrainian · 715 questions · 15 optional sections.**
+**Current version: v0.2.16 · Latvian / English / Russian / Ukrainian · 716 questions · 15 optional sections.**
 
 [Open questionnaire in your browser](https://janisp123.github.io/mental-health-questionnaire/questionnaire/) — no installation or manual download. You can also use the Drive download below for offline use. Both options use the same questionnaire; save a progress file manually before closing or reloading to continue later.
 
@@ -29,6 +29,7 @@ The questionnaire runs offline and sends no answers. Clinician reports and proje
 - One shared application with complete LV/EN/RU/UK question and interface packs.
 - Per-question email preparation/copy and save-for-later feedback; medical answers are excluded and email sending stays under your control.
 - Focused questions about everyday coordination, speech clarity and rare stuttering, alongside the preserved original question bank.
+- An optional safety-section question about how responsibilities and people depending on you might affect thoughts of ending your life.
 - Optional sections, medication details, and explicit progress-file download/import, including older progress files.
 - A clinician report language chosen independently of the questionnaire language, plus a separate project-feedback report. Provided answers, including negative, uncertain and declined responses, remain in the report.
 - Clinician responses ordered by draft review priority, keeping related context together; this is not a clinical risk score.
@@ -71,7 +72,7 @@ This repository shows the specification, iteration and verification of an AI-ass
 
 - [Browse the application source](src/app/)
 - [Current package files, source revision and checksums](MH_Public_version/manifest.json)
-- [Version snapshot](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.15)
+- [Version snapshot](https://github.com/janisp123/mental-health-questionnaire/tree/review/v0.2.16)
 
 ## Development
 

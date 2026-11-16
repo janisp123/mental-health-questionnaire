@@ -352,6 +352,7 @@ def build_bundle(config_path=None):
     apply_appointment_guidance(bundle)
     apply_m46_additions(bundle)
     priority = read_json(QUESTIONNAIRE / "report-priority.json")
+    apply_m06_responsibility_context(bundle, priority)
     validate_report_priority(priority, [q for group in bundle["groups"] for q in group["questions"]])
     bundle["presentation"]["reportPriority"] = priority
     return bundle
@@ -391,6 +392,45 @@ def apply_m46_additions(bundle):
     position = next(i for i, q in enumerate(group["questions"]) if q["id"] == data["insertAfter"]) + 1
     group["questions"][position:position] = items
     group["questionCount"] = len(group["questions"])
+
+
+def apply_m06_responsibility_context(bundle, priority):
+    """Insert one independently removable M06 item and its editorial metadata."""
+    data = read_json(QUESTIONNAIRE / "m06-responsibility-context.json")
+    question = data.get("question", {})
+    rule = data.get("reportPriority")
+    locales = set(SOURCE_LANGS) | set(read_json(QUESTIONNAIRE / "build.json").get("translationPacks", {})) | set(bundle["ui"])
+    existing = [q for group in bundle["groups"] for q in group["questions"]]
+    expected_status = dict(A="answered", B="answered", C="answered", D="answered", E="uncertain", F="refused")
+    expected_priority = {"default": 3, "answers": dict(A=4, B=3, C=3, D=3, E=3, F=3)}
+    if (data.get("schema") != "questionnaire-m06-responsibility-context-v1"
+            or data.get("insertAfter") != "M06_24" or data.get("relatedGroup") != "current_safety"
+            or question.get("id") != "M06_25" or question.get("sourceModule") != "06"
+            or question.get("originModule") != 6 or question.get("section") != 6
+            or type(question.get("order")) is not int
+            or question["order"] in {q["order"] for q in existing}
+            or question["id"] in {q["id"] for q in existing}
+            or question.get("context") is not None or question.get("multi") is not False
+            or question.get("type") != "choice" or question.get("choiceCodes") != list("ABCDEF")
+            or question.get("answerStatus") != expected_status or rule != expected_priority
+            or set(question.get("translations", {})) != locales
+            or question["id"] in priority["questions"]
+            or data["relatedGroup"] not in priority["relatedGroups"]):
+        raise ValueError("Invalid M06 responsibility-context contract")
+    for locale, text in question["translations"].items():
+        if (not all(isinstance(text.get(key), str) and text[key].strip() for key in ("title", "time", "help"))
+                or list(text.get("choices", {})) != list("ABCDEF")
+                or not all(isinstance(value, str) and value.strip() for value in text["choices"].values())):
+            raise ValueError("Incomplete M06 responsibility-context wording: " + locale)
+    section = bundle["source_module_to_section"]["06"]
+    group = next(group for group in bundle["groups"] if group["id"] == section)
+    position = next(i for i, q in enumerate(group["questions"]) if q["id"] == data["insertAfter"]) + 1
+    question["module"] = section
+    question["translations"] = {locale: text for locale, text in question["translations"].items() if locale in bundle["ui"]}
+    group["questions"].insert(position, question)
+    group["questionCount"] = len(group["questions"])
+    priority["questions"][question["id"]] = rule
+    priority["relatedGroups"][data["relatedGroup"]].append(question["id"])
 
 
 def validate_report_priority(policy, questions):

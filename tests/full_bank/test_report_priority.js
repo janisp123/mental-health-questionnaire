@@ -77,3 +77,14 @@ for(const id of ['M23_24','M13_19','M02_15','M22_13']){
 }
 console.log('PASS: reviewed protective, functional-impact, dependence and supporting-context directions.');
 for(const id of ['M33_01','M33_02'])assert.equal(priority.responsePriority(q(id),{kind:'text',value:'Synthetic identifier'},policy),1,'Optional identifying fields remain background context');
+
+// Hypothetical responsibilities response is editorial context, never current-risk scoring.
+for(const locale of Object.keys(data.ui)){
+ for(const code of 'ABCDEF'){
+  const answer={kind:'choice',codes:[code],status:q('M06_25').answerStatus[code]};
+  assert.equal(priority.responsePriority(q('M06_25'),answer,policy),code==='A'?4:3);
+  const entries=r.entries(qs,{M06_25:answer},locale,data.presentation,data.ui[locale].medicine);
+  assert.equal(entries.length,1);assert(entries[0].plain.includes(q('M06_25').translations[locale].choices[code]));
+ }
+}
+console.log('PASS: every M06_25 choice keeps its exact wording and explicit editorial priority across locales.');

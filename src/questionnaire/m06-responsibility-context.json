@@ -1,0 +1,100 @@
+{
+  "schema": "questionnaire-m06-responsibility-context-v1",
+  "status": "DRAFT_NOT_CLINICALLY_REVIEWED",
+  "insertAfter": "M06_24",
+  "question": {
+    "id": "M06_25",
+    "order": 715,
+    "sourceModule": "06",
+    "originModule": 6,
+    "section": 6,
+    "profile": "CUSTOM12",
+    "type": "choice",
+    "multi": false,
+    "context": null,
+    "choiceCodes": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "exclusive": "",
+    "incompatible": [],
+    "answerStatus": {
+      "A": "answered",
+      "B": "answered",
+      "C": "answered",
+      "D": "answered",
+      "E": "uncertain",
+      "F": "refused"
+    },
+    "translations": {
+      "en": {
+        "title": "If nobody depended on you and you had no family or other responsibilities, how would that affect the likelihood of you considering ending your life?",
+        "time": "Thinking about how you feel now.",
+        "help": "This is a hypothetical question; it does not mean your circumstances will change. You can skip it. Your answer does not replace the questions about your current thoughts and safety.",
+        "choices": {
+          "A": "More likely",
+          "B": "Less likely",
+          "C": "No change",
+          "D": "Does not apply to me",
+          "E": "I do not know / difficult to say",
+          "F": "I prefer not to answer"
+        }
+      },
+      "lv": {
+        "title": "Ja neviens nebūtu no Jums atkarīgs un Jums nebūtu ģimenes vai citu pienākumu, kā tas ietekmētu iespējamību, ka Jūs apsvērtu savas dzīves izbeigšanu?",
+        "time": "Domājot par to, kā Jūs jūtaties pašlaik.",
+        "help": "Šis ir hipotētisks jautājums; tas nenozīmē, ka Jūsu apstākļi mainīsies. Varat to izlaist. Jūsu atbilde neaizstāj jautājumus par pašreizējām domām un drošību.",
+        "choices": {
+          "A": "Iespējamība palielinātos",
+          "B": "Iespējamība samazinātos",
+          "C": "Nekas nemainītos",
+          "D": "Neattiecas uz mani",
+          "E": "Nezinu / grūti pateikt",
+          "F": "Nevēlos atbildēt"
+        }
+      },
+      "ru": {
+        "title": "Если бы никто от Вас не зависел и у Вас не было семейных или других обязанностей, как это повлияло бы на вероятность того, что Вы стали бы думать о самоубийстве?",
+        "time": "Подумайте о том, как Вы чувствуете себя сейчас.",
+        "help": "Это гипотетический вопрос; он не означает, что Ваши обстоятельства изменятся. Его можно пропустить. Ваш ответ не заменяет вопросы о нынешних мыслях и безопасности.",
+        "choices": {
+          "A": "Вероятность увеличилась бы",
+          "B": "Вероятность уменьшилась бы",
+          "C": "Ничего не изменилось бы",
+          "D": "Ко мне это не относится",
+          "E": "Не знаю / трудно сказать",
+          "F": "Не хочу отвечать"
+        }
+      },
+      "uk": {
+        "title": "Якби ніхто від Вас не залежав і Ви не мали сімейних чи інших обов’язків, як би це вплинуло на ймовірність того, що Ви почали б думати про самогубство?",
+        "time": "Подумайте про те, як Ви почуваєтеся зараз.",
+        "help": "Це гіпотетичне запитання; воно не означає, що Ваші обставини зміняться. Його можна пропустити. Ваша відповідь не замінює запитань про нинішні думки та безпеку.",
+        "choices": {
+          "A": "Імовірність збільшилася б",
+          "B": "Імовірність зменшилася б",
+          "C": "Нічого не змінилося б",
+          "D": "Це мене не стосується",
+          "E": "Не знаю / важко сказати",
+          "F": "Не хочу відповідати"
+        }
+      }
+    }
+  },
+  "reportPriority": {
+    "default": 3,
+    "answers": {
+      "A": 4,
+      "B": 3,
+      "C": 3,
+      "D": 3,
+      "E": 3,
+      "F": 3
+    }
+  },
+  "relatedGroup": "current_safety"
+}
