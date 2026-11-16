@@ -1,5 +1,11 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · Public overview parity correction — SOURCE VERIFIED
+
+Follow-up audit found stale public landing descriptions after the v0.2.15 app delivery: published count still said 712 and the English feedback description mentioned saved feedback only. Corrected all three landing locales (including embedded language summaries and English metadata) to 715 active questions, focused coordination/speech/rare-stuttering coverage, immediate/copy/save-later feedback and deliberate email privacy. Updated two active documentation count descriptions and clarified release-policy baseline versus active count. README already correctly records v0.2.15, 715 questions and both additions. Drive metadata confirms the same byte-verified v0.2.15 pair and unchanged IDs/modified times.
+
+Dynamic publication-count regression failed on 712 versus delivered 715, then all five discovery tests passed. Real local HTTPS landing/open/offline/progress/report/phone-width checks passed (offline component labelled memory mode). Independent review found no actionable issue. App/package/source-question bytes remain unchanged; no new version or duplicate Drive upload is needed. Next: checked PR, Pages deployment and actual live landing-byte readback.
+
 ### 2026-11-16 · v0.2.15 feedback/M46 release — LIVE VERIFIED
 
 Both completed tasks: Added by ChatGPT, implemented by Codex through PR #59. Final delivery records merged through PR #60 as `fb680457a81ef9a6d0d8ee3ac798fdd9bd6ca1d2`, identical to checked head `8d94f409bebae35abaec44d22e3997a8d96ccd76` tree. All three required delivery CI runs passed (43833883839 / 43833883898 / 43833883910). Automatic Pages run **43834305197** succeeded.

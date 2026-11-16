@@ -66,7 +66,7 @@ Optional long-term possibilities are parked in [`docs/FUTURE_IDEAS.md`](FUTURE_I
 
 ## Distribution — separate from development
 
-Google Drive's [professional review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb) contains the current 712-question, 15-section technical-review candidate. The four-language HTML and PDF were rebuilt from Git sources and replaced in place; their Drive IDs and links are preserved. SHA-256 values and source commit are recorded in `project-manifest.json`. The older Drive v16 copies were removed; frozen v16 references remain under `reference/baseline/`. Human language review is pending.
+Google Drive's [professional review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb) contains the current 715-question, 15-section technical-review candidate (712 frozen questions plus three supplemental M46 items). The four-language HTML and PDF were rebuilt from Git sources and replaced in place; their Drive IDs and links are preserved. SHA-256 values and source commit are recorded in `project-manifest.json`. The older Drive v16 copies were removed; frozen v16 references remain under `reference/baseline/`. Human language review is pending.
 
 ## Rules for identifying the latest version
 

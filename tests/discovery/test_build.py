@@ -1,5 +1,5 @@
 """Publication exposes only landing pages, sitemap and the verified questionnaire artifact."""
-import copy,hashlib,json,shutil,subprocess,sys,tempfile,unittest
+import copy,hashlib,json,re,shutil,subprocess,sys,tempfile,unittest
 from unittest.mock import patch
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
@@ -24,6 +24,10 @@ class BuildDiscovery(unittest.TestCase):
    for locale,url in urls.items():
     page=(out/({'en':'index.html','lv':'lv/index.html','ru':'ru/index.html'}[locale])).read_text()
     self.assertIn('<html lang="'+locale+'">',page)
+    active_count=json.loads((ROOT/'MH_Public_version/manifest.json').read_text())['question_count']
+    described_counts=re.findall(r'\b(\d+) (?:questions?|jautājumi(?:em)?|вопрос(?:ов|а)?|запитань)\b',page)
+    self.assertTrue(described_counts,locale+' needs its questionnaire size description')
+    self.assertEqual(set(map(int,described_counts)),{active_count},locale+' published count must match the delivered app')
     self.assertEqual(page.count('<link rel="canonical"'),1)
     self.assertIn('<link rel="canonical" href="'+url+'">',page)
     for alt,target in urls.items():
