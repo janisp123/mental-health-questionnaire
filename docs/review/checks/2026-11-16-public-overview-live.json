@@ -1,0 +1,83 @@
+{
+  "verified_at": "2026-11-16T09:05:35.017252+00:00",
+  "package_version": "0.2.15-review+full-bank",
+  "questionnaire_sha256": "71c9036ed014b2e7d2a91b37cd1c431ec7c829fe17dad0cf6738218e07ad242e",
+  "pages": [
+    {
+      "locale": "en",
+      "url": "https://janisp123.github.io/mental-health-questionnaire/",
+      "status": 200,
+      "sha256": "29db8f9e311f81b9a1b52763493efa739f88b0b33452e8634ad8f9b645baa313",
+      "bytes": 16033,
+      "matches_checked_output": true,
+      "count": 715,
+      "one_stable_download_link": true,
+      "open_questionnaire_byte_identical": true,
+      "viewport_widths": [
+        320,
+        390,
+        1280
+      ],
+      "browser_errors": []
+    },
+    {
+      "locale": "lv",
+      "url": "https://janisp123.github.io/mental-health-questionnaire/lv/",
+      "status": 200,
+      "sha256": "71f4f730b584558233fa5882b43e3fb95ca5a617a76f3aa64a4f14e596d34f44",
+      "bytes": 12575,
+      "matches_checked_output": true,
+      "count": 715,
+      "one_stable_download_link": true,
+      "open_questionnaire_byte_identical": true,
+      "viewport_widths": [
+        320,
+        390,
+        1280
+      ],
+      "browser_errors": []
+    },
+    {
+      "locale": "ru",
+      "url": "https://janisp123.github.io/mental-health-questionnaire/ru/",
+      "status": 200,
+      "sha256": "69d0383960dddfd61aad44515b15b1f24ce9a3035f1b0e8e46d95a8def9a8ada",
+      "bytes": 17806,
+      "matches_checked_output": true,
+      "count": 715,
+      "one_stable_download_link": true,
+      "open_questionnaire_byte_identical": true,
+      "viewport_widths": [
+        320,
+        390,
+        1280
+      ],
+      "browser_errors": []
+    }
+  ],
+  "app_and_drive_bytes_unchanged": true,
+  "readme_version_and_count": "v0.2.15 / 715",
+  "human_language_clinical_physical_device_review": "pending",
+  "source_pr": 62,
+  "checked_head": "a2fc14808f4470ee8da51e2669451fbe826d40d8",
+  "main_merge": "07fca71975418337dedbd594eb82cf7ad61b247a",
+  "merge_tree_matches_checked_head": true,
+  "pages_run": 43836481721,
+  "ci_runs": {
+    "app-components": 43835941086,
+    "discovery-bundle": 43835940991,
+    "full-questionnaire": 43835941043
+  },
+  "independent_review": "No actionable findings.",
+  "drive_recheck": {
+    "names_sizes_parents_and_modified_times_match_prior_byte_verified_delivery": true,
+    "prior_readback": "2026-11-16-feedback-m46-drive-sync.json",
+    "new_upload_required": false
+  },
+  "github_about": {
+    "description_current_and_accurate": true,
+    "homepage_current": true,
+    "optional_multilanguage_wording_update": "HTTP 403: metadata edit unavailable; existing multilingual wording preserved"
+  },
+  "screenshots_visually_inspected": true
+}

@@ -1,5 +1,11 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · Public surfaces synchronized — LIVE VERIFIED
+
+PR #62 merged as `07fca71975418337dedbd594eb82cf7ad61b247a`, tree identical to checked `a2fc14808f4470ee8da51e2669451fbe826d40d8`. Three required CI checks passed (43835941086 / 43835940991 / 43835941043); automatic Pages **43836481721** succeeded. All English/Latvian/Russian landing responses match checked output byte-for-byte and describe 715 questions, added coordination/speech/rare-stuttering coverage and immediate/copy/save-later feedback privacy. Open actions return exact v0.2.15 package HTML, each page retains one stable Drive-folder download link, and 320/390/1280px checks pass without browser errors. Screenshots visually inspected. [Readback evidence](review/checks/2026-11-16-public-overview-live.json).
+
+README already describes v0.2.15/715 and both additions. Drive names/sizes/parents/modification times still match the byte-verified pair; no identical upload or version bump was made. Architecture, file index, release-policy distinction and current publication pointers are aligned. Existing GitHub About description/homepage remain accurate; an optional wording change was denied HTTP 403 by the integration and did not change repository settings. No app/question/guide/package bytes changed. Search indexing, clinical/language review and physical-device testing retain their pending status. Next: those reviews or separately authorized TD work; no required release or public-page update remains.
+
 ### 2026-11-16 · Public overview parity correction — SOURCE VERIFIED
 
 Follow-up audit found stale public landing descriptions after the v0.2.15 app delivery: published count still said 712 and the English feedback description mentioned saved feedback only. Corrected all three landing locales (including embedded language summaries and English metadata) to 715 active questions, focused coordination/speech/rare-stuttering coverage, immediate/copy/save-later feedback and deliberate email privacy. Updated two active documentation count descriptions and clarified release-policy baseline versus active count. README already correctly records v0.2.15, 715 questions and both additions. Drive metadata confirms the same byte-verified v0.2.15 pair and unchanged IDs/modified times.
