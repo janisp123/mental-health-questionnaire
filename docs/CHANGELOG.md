@@ -1,5 +1,13 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · M06_25 v0.2.16 — LIVE VERIFIED
+
+Optional M06_25 is implemented by Codex through PR #64 in the existing M06/current section, with a separately removable catalog and explicit editorial priority (more likely4, every other choice3). No clinical score, current-risk inference or new emergency trigger. Delivery PR #65 merged as `ee8060222e3b4ebdc18903e78f0227b8aee497bb`, tree equal to checked `6fcdc43c28ed1290c3a615e119cdc1e125552085`. All required delivery checks passed (43842642981 / 43842642732 / 43842642747). Automatic Pages **43843288872** succeeded.
+
+Actual live v0.2.16 response is byte-identical to verified Drive/package HTML, SHA256 `6eccfdbedb9e1cd2bf33ff2b4cbf501ec3babf777e8e652e4db8914ab6c46495`. All native landing pages match checked bytes, show716, retain one stable Drive-folder download and open exact current HTML. Live LV/EN/RU/UK question wording, metadata priorities, negative-current-thought reachability, affirmative/uncertain progress, clinician PDF text, phone/desktop layouts and hosted/offline recovery transfer passed. Zero browser errors or answer-related requests. During final audit, corrected the synthetic prior-release fixture from an ignored appVersion field to the real version field; repeated all24 response/locale PDF/recovery combinations and live prior-version imports passed. No app/package bytes changed for that test correction. [Live evidence](review/checks/2026-11-16-m06-context-live.json).
+
+GitHub source/package, stable Drive pair, README and hosted/landing descriptions are current at v0.2.16/716 items. Five unrelated TD items remain. Nothing is partially implemented. Human clinical/translation and physical-device testing, and calibration of draft editorial priorities remain pending. Next: those reviews or separately authorized TD work.
+
 ### 2026-11-16 · M06_25 v0.2.16 implementation and Drive — VERIFIED
 
 Implemented by Codex through PR #64, merge `f5ba8acd326cbb89d202c2597636253765c80737` matching checked head `5d1d4c75c727ebac7d224842ed91b88166de40d7` tree. Local suite46/46 in memory mode; all three required CI checks passed (43841399631 / 43841399706 / 43841399665), including real offline opening. All choices/locales, progress, PDF, skip/back, independent additive rollback, old-source parity, current urgent prompts and phone renders passed. Independent review found no actionable issue. New hypothetical question uses editorial review priority4 for more likely and3 for all other codes, without a clinical score or new emergency trigger.

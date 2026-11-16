@@ -34,7 +34,7 @@ Files: tests/full_bank/test_runtime_m06_context.py; tests/full_bank/test_report_
 Files: version config/manifest, README/landing/active docs, checkpoint/changelog, current package and delivery evidence.
 - [x] Bump to v0.2.16 and716 active questions; align user notes/counts, leave frozen count712 intact. Commit tested source with checkpoint.
 - [x] Build from clean source, verify HTML/PDF/ZIP, render PDF and archive v0.2.15. Require three exact-head CI checks and checked PR merge.
-- [ ] Finish hosted delivery: Drive replacement/readback verified; merge delivery metadata, observe Pages and verify live bytes/M06/priorities/progress/PDF.
-- [ ] Record final live evidence/checkpoint and ensure README/landing/Drive all current. Keep human reviews pending.
+- [x] Verified Drive delivery, checked metadata merge, Pages publication and live M06/priorities/progress/PDF/bytes.
+- [x] Final live evidence/checkpoint, README/landing/Drive current; human reviews retained as pending.
 
 Release ruling: keep landing counts aligned with verified Drive distribution while package16 is staged. Move716 public counts into the delivery commit alongside verified distribution metadata. Regression observed staged716/verified715 failure before fixing its expectation; deployment guard remains strict.

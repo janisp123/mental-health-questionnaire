@@ -11,7 +11,7 @@ with tempfile.TemporaryDirectory() as tmp,sync_playwright() as pw:
  path=Path(tmp)/'questionnaire.html';path.write_text(build.make_html(data),encoding='utf-8')
  browser=launch(pw);page,errors,network=open_page(browser,path)
  act(page,'start');page.locator(f'[data-module="{data["source_module_to_section"]["06"]}"]').check();act(page,'confirm')
- old=backup(page);old['appVersion']='0.2.15-review+full-bank';old['currentId']='M06_24'
+ old=backup(page);old['version']='0.2.15-review+full-bank';old['currentId']='M06_24'
  old['answers']={'M06_01':{'kind':'choice','codes':['A'],'status':'answered','savedAt':'2026-11-15T00:00:00Z'}}
  for locale in data['ui']:
   restore(page,{**old,'lang':locale});assert qid(page)=='M06_24'
