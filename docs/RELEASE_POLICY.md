@@ -8,7 +8,7 @@ Automated CI is active on pull requests targeting main and on main. The [full qu
 
 | Gate | Current verification |
 |---|---|
-| Source integrity | 79 imported files; 48 module hashes; 712 unique question IDs/orders, preserved answer codes/conditions and 15 current user sections. |
+| Source integrity | 79 imported files; 48 module hashes; 712 frozen question IDs/orders and preserved answer codes/conditions; three independently validated supplemental M46 items, 715 active questions and 15 current user sections. |
 | Four-language consistency | UI/medicine catalogs, question packs, placeholders, source hashes and report labels. Structural coverage does not establish translation accuracy. |
 | Critical runtime behavior | Section choice, conditions, answer handling, skip/back, medication entries, support prompts, language switching, recovery and separate reports. |
 | Saved-data compatibility | Synthetic older-three-language progress import and current Ukrainian answer/feedback round trips. Unsupported answer/feedback records are rejected rather than silently discarded. |
