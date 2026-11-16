@@ -8,6 +8,14 @@ These rules apply to future development work in this repository, particularly lo
 - A local checkpoint does not imply that changes reached GitHub or Drive. State the actual synchronization status, and never restart completed sections solely because the chat history is missing.
 - Keep `docs/WORK_CHECKPOINT.md` limited to current product/package pointers, applicable verification, actual synchronization, blockers and one next action. Put earlier completion narratives in the changelog/history and link them; do not append successive release summaries to the active checkpoint. Preserve an exact historical copy before a substantial checkpoint rewrite.
 
+## Shared TD-list handoff (ChatGPT and Codex)
+
+- **One canonical list:** Both agents read and write only `docs/TD_LIST.md` in this repository, with the latest remote `main` as the source of truth. Always fetch/refresh `main` before reading or modifying it; do not rely on a local checkout, cached response, historic `develop`, other project, or an unmerged feature branch as the current TD list.
+- **Before adding or changing a task:** Read current `main`, check whether the request is already present/completed, and inspect any open TD-related pull requests that could carry a pending change. Avoid duplicates or overwriting concurrent updates; coordinate with an existing PR when applicable.
+- **Write path:** Do not push directly to protected `main`. Create or update a short-lived branch based on fresh `main`, change the canonical TD file there, open a PR targeting `main`, wait for required checks, then merge through the allowed PR workflow. Never bypass branch protection or silently choose a conflicting resolution.
+- **Publication proof:** A TD edit is **DONE** only after the PR is merged **and** the exact requested text is fetched back from `docs/TD_LIST.md` on remote `main`. Report the verified path and merge PR/commit. Until then say **PENDING PR** (and give its URL/branch), not “saved to the TD list.” If checks or permissions block merging, report **BLOCKED**, with the precise blocker.
+- **Cross-agent read:** Codex should fetch latest remote `main` at the beginning of a TD session. If an owner-mentioned task is absent, check open TD PRs before declaring it missing. A pending PR is a proposed change, not an official task on `main`; do not independently implement it unless the owner has explicitly authorized that work and all project gates allow it.
+
 ## Pending TD work and conflicts
 
 - `docs/TD_LIST.md` on **main** is the sole active backlog of owner-approved tasks for later Codex implementation. `docs/FUTURE_IDEAS.md` is not a task list and `docs/CHANGELOG.md` records completed work. Do not add new tasks to historical `develop`.
