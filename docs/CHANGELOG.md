@@ -1,5 +1,9 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · Durable public descriptions — SOURCE CHECKPOINT
+
+Public README, three landing locales/English metadata/embedded summaries and all active app footer catalogs now use over700 questions in more than10 sections or localized equivalents. Removed stale footer712/15/48 wording. Exact technical counts/progress/archives retained. GitHub About has no exact totals and remains accurate; “git devotions” interpreted as repository descriptions/metadata. Added repository instruction and threshold/copy regressions; old footer-expectation test failed then updated to the approved public contract. Target18 due app text/package change; no clinical/runtime/question changes. Next: full checks, clean-source package, checked delivery and live readback.
+
 ### 2026-11-16 · M06 action/intent history v0.2.17 — LIVE VERIFIED
 
 Implemented by Codex through PR67 (2dad8c3, checked25c6bcc tree preserved); local48/48 memory and all required real-file CI passed. Scope-loss review regression reproduced then fixed: essential context survives clinician PDFs. Delivery PR68 merged0132859, identical checked tree, app43874698978/discovery43874698947/full43874698903 passed. Pages43875827407 succeeded.

@@ -58,7 +58,7 @@
     },
     "development_build": {
       "status": "TECHNICAL_REVIEW_BUILD_NOT_RELEASED",
-      "version": "0.2.17-review+full-bank",
+      "version": "0.2.18-review+full-bank",
       "sections": 15,
       "questions": 718,
       "reference_language": "lv",

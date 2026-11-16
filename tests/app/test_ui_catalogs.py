@@ -70,7 +70,8 @@ for lang in LOCALES:
     assert "Nesteidzies" not in strings["intro"]
     assert "Take your time" not in strings["intro"]
     assert "Не спешите" not in strings["intro"]
-    assert "48 source modules" in strings["statusNote"] if lang == "en" else True
+    assert "700" in strings["statusNote"] and "10" in strings["statusNote"]
+    assert not any(value in strings["statusNote"] for value in ("712", "718", "48"))
     if lang == "lv":
         assert "tikai ar cilvēkiem, kuriem uzticaties" in strings["legalBody"]
         assert "sociālajos tīklos" in strings["legalBody"]

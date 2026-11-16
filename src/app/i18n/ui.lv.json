@@ -3,7 +3,7 @@
   "lang": "lv",
   "strings": {
     "project": "Sagatavošanās vizītei pie psihiskās veselības speciālista",
-    "statusNote": "15 sadaļas, apvienojot 48 avota moduļus · 712 jautājumi",
+    "statusNote": "Vairāk nekā 700 jautājumu vairāk nekā 10 sadaļās",
     "intro": "Laipni lūdzam! Šī bezmaksas anketa var palīdzēt Jums sagatavoties sarunai ar psihiskās veselības speciālistu. Atbildiet tikai uz jautājumiem, uz kuriem vēlaties atbildēt. Jebkuru jautājumu varat izlaist. Anketa nenosaka diagnozi.",
     "privacy": "Atbildes ir pieejamas atvērtajā anketā. Lai turpinātu vēlāk, saglabājiet progresu failā.",
     "start": "Sākt",
@@ -95,6 +95,7 @@
     "guideBody": "Atveriet lejupielādēto HTML failu pārlūkā. Priekšskatījumā tas nedarbojas. Vienas atbildes izvēle tiek saglabāta atvērtajā anketā. Vairākām atbildēm un teksta laukiem nospiediet “Saglabāt un tālāk”. Pirms pauzes saglabājiet progresu failā. Saglabāto failu varat turēt savā ierīcē. Tas nav šifrēts, tāpēc kopīgojiet to tikai ar uzticamiem cilvēkiem vai veselības aprūpes speciālistu. Neievietojiet to sociālajos tīklos vai citviet publiski. Jūs izvēlaties, ko pārrunāt ar speciālistu. Precizitātes pārskatīšanai izlaidiet jautājumus, kas šķiet atbilstoši. Kļūdainos vai neskaidros jautājumus atzīmējiet un izvēlieties iemeslu. Beigās izvēlieties “Sagatavot pārskatu”, lai apskatītu pārskatu speciālistam un saglabātu to PDF formātā. Datorā turiet nospiestu Ctrl taustiņu un ritiniet peles ritenīti uz augšu vai leju, lai palielinātu vai samazinātu teksta izmēru. Rezultātu ekrānā varat izvēlēties pārskata valodu neatkarīgi no anketas valodas. Ja atzīmējāt kādu problēmu, no speciālista pārskata ekrāna varat atvērt atsevišķu atsauksmju pārskatu un saglabāt to PDF formātā.",
     "notesTitle": "Pēdējās izmaiņas un turpmākie plāni",
     "notesHistory": [
+      "2026. gada 16. novembris · Vispārīgajos aprakstos tagad izmantots aptuvens jautājumu un sadaļu skaits. Jūsu atbildes un progress nav mainīti.",
       "2026. gada 16. novembris · Pievienots izvēles jautājums par rīcību, zinot, ka tā var izraisīt Jūsu nāvi, ar atsevišķām atbildēm par izjūtām tajā brīdī un jautājumu par notikuma laiku.",
       "2026. gada 16. novembris · Pievienots izvēles jautājums par to, kā pienākumi un cilvēki, kuri ir no Jums atkarīgi, varētu ietekmēt domas par savas dzīves izbeigšanu.",
       "2026. gada 16. novembris · Varat sagatavot e-pastu vai nokopēt atsauksmi par vienu jautājumu, neiekļaujot medicīniskās atbildes, vai saglabāt atsauksmi nosūtīšanai vēlāk. Pievienoti jautājumi par ikdienas kustību koordināciju, runas skaidrību un retu stostīšanos.",
@@ -103,8 +104,7 @@
       "15.11.2026 08:56 Riga — Pārskatā tagad var sākt jaunu anketu un kopīgot publisku uzaicinājumu. Tajā ir tikai sniegtās atbildes un īss skaidrojums par izlaisto. Ieguldījuma sadaļa ir redzama arī pirms vārdu pievienošanas.",
       "15.11.2026 08:00 Rīga — Pēc vienas atbildes izvēles pāreja uz nākamo jautājumu tagad notiek divreiz ātrāk.",
       "15.11.2026 07:20 Riga — Anketas un PDF ceļveža lejupielādes failiem tagad ir īsāki nosaukumi ar versijas numuru beigās.",
-      "14.11.2026 23:49 Riga — Kopsavilkumā un pārskatā speciālistam tagad ir vienādi jautājumu skaiti; atbildētie un izlaistie jautājumi norādīti atsevišķi. Citās sadaļās saglabātās piemērojamās atbildes joprojām ir iekļautas.",
-      "14.11.2026 23:26 Riga — Atbalsta norādes tagad skaidro, ka nav jāsagatavo runa, palīdzības dienests ir paredzēts uzklausīšanai un palīdzībai un par konfidencialitāti var pajautāt pirms personiskas informācijas izpaušanas."
+      "14.11.2026 23:49 Riga — Kopsavilkumā un pārskatā speciālistam tagad ir vienādi jautājumu skaiti; atbildētie un izlaistie jautājumi norādīti atsevišķi. Citās sadaļās saglabātās piemērojamās atbildes joprojām ir iekļautas."
     ],
     "coverageNote": "Skaits aptver piemērojamos jautājumus atlasītajās sadaļās un iepriekš atbildētos vai izlaistos jautājumus citās sadaļās. Mainītu nosacījumu dēļ paslēptās atbildes paliek progresa failā, bet šeit nav iekļautas.",
     "autoHint": "Izvēlieties vienu atbildi, lai saglabātu to atvērtajā anketā un turpinātu.",

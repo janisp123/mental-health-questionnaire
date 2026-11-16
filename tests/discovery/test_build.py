@@ -24,11 +24,12 @@ class BuildDiscovery(unittest.TestCase):
    for locale,url in urls.items():
     page=(out/({'en':'index.html','lv':'lv/index.html','ru':'ru/index.html'}[locale])).read_text()
     self.assertIn('<html lang="'+locale+'">',page)
-    # Landing descriptions follow the verified Drive release while a newer package may be staged.
-    active_count=json.loads((ROOT/'project-manifest.json').read_text())['review_distribution']['questions']
-    described_counts=re.findall(r'\b(\d+) (?:questions?|jautājumi(?:em)?|вопрос(?:ов|а)?|запитань)\b',page)
-    self.assertTrue(described_counts,locale+' needs its questionnaire size description')
-    self.assertEqual(set(map(int,described_counts)),{active_count},locale+' published count must match the delivered app')
+    distribution=json.loads((ROOT/'project-manifest.json').read_text())['review_distribution']
+    self.assertGreater(distribution['questions'],700)
+    self.assertGreater(distribution['sections'],10)
+    phrases={'en':'over 700 questions in more than 10 sections','lv':'vairāk nekā 700 jautājumiem vairāk nekā 10 sadaļās','ru':'более 700 вопросов в более чем 10 разделах'}
+    self.assertIn(phrases[locale],page.lower())
+    self.assertNotRegex(page,r'\b(?:718|716|715|712) (?:questions|jautājumi|вопросов|запитань)')
     self.assertEqual(page.count('<link rel="canonical"'),1)
     self.assertIn('<link rel="canonical" href="'+url+'">',page)
     for alt,target in urls.items():
