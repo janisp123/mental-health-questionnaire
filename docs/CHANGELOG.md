@@ -1,5 +1,13 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · M06_25 v0.2.16 implementation and Drive — VERIFIED
+
+Implemented by Codex through PR #64, merge `f5ba8acd326cbb89d202c2597636253765c80737` matching checked head `5d1d4c75c727ebac7d224842ed91b88166de40d7` tree. Local suite46/46 in memory mode; all three required CI checks passed (43841399631 / 43841399706 / 43841399665), including real offline opening. All choices/locales, progress, PDF, skip/back, independent additive rollback, old-source parity, current urgent prompts and phone renders passed. Independent review found no actionable issue. New hypothetical question uses editorial review priority4 for more likely and3 for all other codes, without a clinical score or new emergency trigger.
+
+Replaced existing Drive HTML/PDF in place with v0.2.16 and downloaded both byte-identical; IDs/folder/permissions preserved and folder contains exactly the pair. HTML SHA256 `6eccfdbedb9e1cd2bf33ff2b4cbf501ec3babf777e8e652e4db8914ab6c46495`. Guide bytes unchanged/rendered inspected; v0.2.15 archived and review/v0.2.16 tagged. Delivery evidence: `docs/review/checks/2026-11-16-m06-context-drive-sync.json`; source/runtime evidence in corresponding verification JSON. README/current docs are updated; landing716 is committed with verified distribution metadata to avoid publication ahead of Drive. Five unrelated TD items unchanged.
+
+Next: checked delivery merge, Pages deployment and live byte/M06/progress/report verification. Existing hosted copy remains15 until that deployment. Human clinical/translation/physical-device review and editorial calibration remain pending.
+
 ### 2026-11-16 · v0.2.16 package and release-preview correction — VERIFIED
 
 Clean package source `d981f1f` includes M06_25 and its modular editorial rule. HTML/PDF/ZIP current-source verification passed; HTML SHA256 `6eccfdbedb9e1cd2bf33ff2b4cbf501ec3babf777e8e652e4db8914ab6c46495`. Guide bytes unchanged and rendered page inspected. Previous v0.2.15 pair archived intact. Full maintained checks are running.
