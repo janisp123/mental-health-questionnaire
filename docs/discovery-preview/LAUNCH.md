@@ -1,9 +1,9 @@
 # Discovery page preview and owner launch plan
 
 
-## Current publication — 16 November 2026
+## Current publication — 16 November2026
 
-The English/Latvian/Russian landing pages describe verified **v0.2.16**, 716 active questions. The current app includes optional M06_25 in its existing safety section; its 1–5 metadata orders clinician review only and is not a clinical score. Existing feedback, coordination/speech questions and privacy contracts are retained. Online and downloaded modes use identical verified HTML. PR #65 and Pages run **43843288872** published the matching app/count update after Drive readback; live pages, open/download actions, layouts, all active app locales, old/current progress and clinician PDFs passed. [Current live evidence](../review/checks/2026-11-16-m06-context-live.json); [Drive readback](../review/checks/2026-11-16-m06-context-drive-sync.json). Human review and actual search indexing remain pending.
+Verified v0.2.17/718 questions is live through PR68 and Pages43875827407. Independent M06 action/intent history and conditional timing join the existing questionnaire without changing old question meanings. Live routing/progress/PDF scope and exact Drive/package parity passed in all active languages. Native landing counts/open/download links are current. [Current evidence](../review/checks/2026-11-16-action-history-live.json). Human reviews and actual search indexing remain pending.
 
 Earlier sections below are historical deployment records. Their page-only/manual-only limitations describe previous snapshots; use this current section, `tools/build_discovery.py` and the active checkpoint for current behavior.
 

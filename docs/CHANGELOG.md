@@ -1,5 +1,11 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · M06 action/intent history v0.2.17 — LIVE VERIFIED
+
+Implemented by Codex through PR67 (2dad8c3, checked25c6bcc tree preserved); local48/48 memory and all required real-file CI passed. Scope-loss review regression reproduced then fixed: essential context survives clinician PDFs. Delivery PR68 merged0132859, identical checked tree, app43874698978/discovery43874698947/full43874698903 passed. Pages43875827407 succeeded.
+
+Drive/hosted/package17 HTML is byte-identical, SHA256 `6df6f99569de95371037d653d3072ecef7d8aea8ad1c17e50a648ba6ef421e31`. Stable Drive pair read back; folder/permissions preserved. Live all-language M06_26/27 routing, old/current progress, PDF scope, hidden stale timing, phone/desktop widths and zero browser errors/answer requests passed. Landing counts718/links and README current. Evidence: review/checks/2026-11-16-action-history-live.json. Nothing partially implemented; human clinical/translation/device review and editorial calibration remain pending, five unrelated TD items unchanged. Next: those reviews or separately authorized work.
+
 ### 2026-11-16 · Action history v0.2.17 source/Drive — VERIFIED
 
 PR67 merged as2dad8c3, checked25c6bcc tree preserved. Source c98fac6. Local48/48 memory; app43873327127/discovery43873327541/full43873327055 passed, including real offline opening. Independent review report-scope issue reproduced then fixed and verified in all locales/PDFs; all history/timing choices, old/current recovery, stale-hidden-child, existing urgent prompts and rollback comparison passed. Drive17 pair downloaded byte-identical, IDs/folder/sharing preserved; guide rendered/inspected,16archived. Landing718 and distribution metadata travel together. Evidence: review/checks/2026-11-16-action-history-drive-sync.json. Next: checked delivery merge and live verification. Human reviews pending; no clinical score or automatic attempt classification.
