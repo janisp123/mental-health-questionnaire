@@ -1,5 +1,13 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · v0.2.15 implementation and Drive delivery — VERIFIED
+
+Added by: ChatGPT (both original TD items). Implemented by: Codex, verified through PR #59. Merge `45c4c8cfc1db56ed2f58b8b8caa7602216781198` equals checked head `ffea6336a5231c9204d5661cf838649593d82ade` tree. Final local suite: 44/44 in labelled memory mode. All required exact-head CI passed (43832907609 / 43832907547 / 43832907669), including real offline opening. Both changes are implemented in all active locales; no new diagnostic score, old-answer reinterpretation or recovery migration. Independent-review stale-copy fix passed its observed-failing regression and full suite. Phone-width controls and guide visually inspected. No real email sent.
+
+Existing Drive HTML/PDF replaced in place, renamed to v0.2.15 and downloaded byte-identical; IDs, folder and permissions preserved. Folder contains exactly the current pair. HTML SHA256 `71c9036ed014b2e7d2a91b37cd1c431ec7c829fe17dad0cf6738218e07ad242e`; PDF hash unchanged. Archived v0.2.14 and retained review/v0.2.15 snapshot. Delivery evidence: `docs/review/checks/2026-11-16-feedback-m46-drive-sync.json`; technical evidence: corresponding verification JSON. Removed only these two completed TD items; five unrelated tasks remain.
+
+Next: merge checked delivery metadata, observe Pages refresh and verify actual live bytes/feedback/M46/progress/PDF behavior before final handoff. Current hosted copy remains v0.2.14 until that deployment. Human clinical/translation and physical-phone review remain pending.
+
 ### 2026-11-16 · v0.2.15 package — CLEAN SOURCE CHECKPOINT
 
 Source `2b81137` contains both additions and the independent-review stale-copy fix. The new regression observed the stale preview before the fix and now passes with all focused feedback checks. Built v0.2.15 from clean source (`source_dirty: false`); current-source HTML/PDF/ZIP verification passed. HTML SHA256 `71c9036ed014b2e7d2a91b37cd1c431ec7c829fe17dad0cf6738218e07ad242e`; guide remains byte-identical and its rendered page was visually inspected. Archived the v0.2.14 repository pair intact. Final full suite is running in labelled memory mode; real offline CI, PR merge and Drive/hosted readback remain pending. Existing public distribution remains v0.2.14 until deliberate verified delivery.
