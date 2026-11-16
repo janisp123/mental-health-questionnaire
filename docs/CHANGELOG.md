@@ -1,5 +1,9 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · Durable descriptions v0.2.18 — DRIVE VERIFIED
+
+Source PR70 merged after local48/48 and all three required CI checks, identical checked/merged tree. Independent review found no issues. All-language footer and phone/desktop widths passed. HTML/PDF read back byte-identical from existing Drive IDs; parents/sharing preserved. Clean-source18 package, guide rendering and previous17 archive verified. GitHub About already uses durable copy. Exact technical counts remain718/15; no question/runtime changes. Evidence: review/checks/2026-11-16-durable-descriptions-drive-sync.json. Next: checked delivery merge, guarded Pages publication and live readback. Human reviews remain pending.
+
 ### 2026-11-16 · Durable-description package — STAGED
 
 Clean-source18 HTML/PDF/ZIP built and verified; previous17 pair archived. Source changes only public wording/notes/instructions and tests, not question data/runtime. Source publication guard must retain17 until verified18 Drive metadata lands; a rejected early publication cannot alter the live site. Next: full/exact-head CI, verified distribution and final live readback.
