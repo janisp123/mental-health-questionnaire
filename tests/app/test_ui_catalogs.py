@@ -57,6 +57,16 @@ for lang in LOCALES:
     assert "legalBody" in strings
     assert len(strings["notesHistory"]) == 10
     assert all(isinstance(note, str) and note for note in strings["notesHistory"])
+    previous = json.loads((ROOT / "tests/fixtures/update-history-0.2.18.json").read_text())[lang]
+    brief = strings["notesBriefHistory"]
+    assert len(brief) == 10
+    known_dates = {note: ("16.11.2026" if i < 4 else "15.11.2026" if i < 9 else "14.11.2026") for i, note in enumerate(previous)}
+    for detail, short in zip(strings["notesHistory"], brief):
+        date = re.match(r"\d{2}\.\d{2}\.\d{4}", detail)
+        expected_date = date.group() if date else known_dates[detail]
+        assert short[:10] == expected_date, "Brief summaries must keep actual record dates"
+    assert all(re.fullmatch(r"\d{2}\.\d{2}\.\d{4} — .{1,65}", note) for note in brief)
+    assert not any(key in strings for key in ("projectPlans", "projectPlanReview", "projectPlanLanguages"))
     assert "backupWarning" in strings and "sectionProgress" in strings
     assert "share it only" in strings["legalBody"] if lang == "en" else True
     assert "social media" in strings["legalBody"] if lang == "en" else True

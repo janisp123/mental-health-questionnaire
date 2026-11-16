@@ -33,9 +33,6 @@
     "helpers": "Feedback and acknowledgements",
     "projectFeedbackInvitation": "Send questions, feedback or requests for changes to",
     "projectContributors": "People and organisations that helped with this project.",
-    "projectPlans": "Future plans",
-    "projectPlanReview": "Have mental health professionals review the questionnaire and make any needed changes based on their feedback.",
-    "projectPlanLanguages": "Translate the questionnaire into more languages based on user requests.",
     "help": "If someone’s safety is in immediate danger, contact your local emergency services.",
     "saveWarning": "Selection is not saved until you press Save & Next.",
     "chooseAnswer": "Choose an answer before continuing.",
@@ -92,9 +89,10 @@
     "dismissSupport": "Close message",
     "tools": "File and questionnaire actions",
     "guideTitle": "How to use this questionnaire",
-    "guideBody": "Open the downloaded HTML file in a browser; it will not work in preview mode. A single choice is saved in the open questionnaire; for multiple choices or text, press “Save & Next”. Save progress to a file before taking a break. You can keep the file on your phone or computer. It is not encrypted, so share it only with people you trust or healthcare professionals. Do not post it on social media or anywhere public. You decide what to discuss with a professional. For an accuracy review, skip questions that seem fine; flag questions that seem incorrect or unclear and choose a reason. At the end, select “Generate report” to preview and save the clinician PDF. On a PC, hold Ctrl and scroll the mouse wheel up or down to make the text larger or smaller. On the results screen, you can choose a report language separately from the questionnaire language. If you flagged an issue, you can open a separate feedback report from the clinician preview and save it as its own PDF.",
-    "notesTitle": "Latest changes and future plans",
+    "guideBody": "Open and fill in the questionnaire online using “Open questionnaire” on the website, or download the HTML file and open it in a browser for offline use. A generic file preview, including Google Drive preview, does not run the questionnaire. A single choice is saved in the open questionnaire; for multiple choices or text, press “Save & Next”. Save progress to a file before taking a break. You can keep the file on your phone or computer. It is not encrypted, so share it only with people you trust or healthcare professionals. Do not post it on social media or anywhere public. You decide what to discuss with a professional. For an accuracy review, skip questions that seem fine; flag questions that seem incorrect or unclear and choose a reason. At the end, select “Generate report” to preview and save the clinician PDF. On a PC, hold Ctrl and scroll the mouse wheel up or down to make the text larger or smaller. On the results screen, you can choose a report language separately from the questionnaire language. If you flagged an issue, you can open a separate feedback report from the clinician preview and save it as its own PDF. Save progress to a file before leaving or switching between online and offline use; answers do not transfer automatically.",
+    "notesTitle": "Last 10 updates",
     "notesHistory": [
+      "16.11.2026 — Clarified opening instructions and shortened the update list. Removed future plans from the questionnaire.",
       "16 November 2026 · General descriptions now use approximate question and section totals. Your answers and progress are unchanged.",
       "16 November 2026 · Added an optional question about actions you knew could end your life, with distinct answers about your feelings at the time and a follow-up about when it happened.",
       "16 November 2026 · Added an optional question about how responsibilities and people depending on you might affect thoughts of ending your life.",
@@ -103,8 +101,7 @@
       "15.11.2026 14:35 Riga — Reports keep related answers together in review-priority order. Answer wording and saved progress are unchanged.",
       "15.11.2026 08:56 Riga — The report now has new-questionnaire and public sharing actions, includes only provided answers, and explains omissions briefly. The Contributions section is visible even before names are added.",
       "15.11.2026 08:00 Riga — After selecting a single answer, moving to the next question now takes half as long.",
-      "15.11.2026 07:20 Riga — The questionnaire and PDF guide downloads now have shorter filenames with the version number at the end.",
-      "14.11.2026 23:49 Riga — The summary and clinician report now use matching question counts and show answered and skipped questions separately. Applicable answers saved in other sections remain included."
+      "15.11.2026 07:20 Riga — The questionnaire and PDF guide downloads now have shorter filenames with the version number at the end."
     ],
     "coverageNote": "Counts cover applicable questions in the selected sections and previously answered or skipped questions from other sections. Answers hidden by changed conditions remain in the progress file and are excluded here.",
     "autoHint": "Choose one answer to save it in the open questionnaire and continue.",
@@ -164,6 +161,20 @@
     "feedbackSendNow": "Open email to send now",
     "feedbackEmailSubject": "Question feedback",
     "feedbackNowPrivacy": "Only this question and your feedback are prepared for email. Your medical answers are not included. Sending an email exposes your email address and any text you choose to send. Review the draft and press Send in your email app yourself.",
-    "feedbackDraftReady": "Feedback is ready; delivery is not confirmed. If no email app opens, copy the feedback and email it manually, or save it for later."
+    "feedbackDraftReady": "Feedback is ready; delivery is not confirmed. If no email app opens, copy the feedback and email it manually, or save it for later.",
+    "notesBriefHistory": [
+      "16.11.2026 — Clarified instructions and updates",
+      "16.11.2026 — Updated descriptions",
+      "16.11.2026 — Updated questions",
+      "16.11.2026 — Updated questions",
+      "16.11.2026 — Updated questions and feedback",
+      "15.11.2026 — Clarified instructions",
+      "15.11.2026 — Improved reports",
+      "15.11.2026 — Improved reports",
+      "15.11.2026 — Faster question navigation",
+      "15.11.2026 — Simplified download filenames"
+    ],
+    "guideOnline": "Open questionnaire",
+    "guideDownload": "Download for offline use"
   }
 }

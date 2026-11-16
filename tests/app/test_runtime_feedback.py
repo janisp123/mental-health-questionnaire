@@ -21,10 +21,17 @@ with tempfile.TemporaryDirectory() as tmp, sync_playwright() as pw:
         page.select_option("#language", locale)
         notes.locator("summary").click()
         assert notes.locator("ol li").count() == 10
-        assert notes.locator("ol li").all_inner_texts() == ui[locale]["notesHistory"]
-        assert notes.locator("ul li").all_inner_texts() == [
-            ui[locale]["projectPlanReview"], ui[locale]["projectPlanLanguages"]
-        ]
+        assert notes.locator("ol li").all_inner_texts() == ui[locale]["notesBriefHistory"]
+        assert notes.locator("ul, h3").count() == 0
+        assert page.locator('footer details').count() == 6
+        guide = page.locator('#questionnaire-guide')
+        guide.locator('summary').click()
+        assert guide.locator('a').count() == 2
+        assert guide.locator('a').nth(0).get_attribute('href') == 'https://janisp123.github.io/mental-health-questionnaire/questionnaire/'
+        assert guide.locator('a').nth(1).get_attribute('href') == 'https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb'
+        for width in (320, 390, 1280):
+            page.set_viewport_size({'width':width,'height':844})
+            assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
         assert page.locator('footer a[href^="mailto:"]').count() == 0
         assert "test@example.invalid" not in page.locator("footer").text_content()
         assert page.locator('footer [data-project-source]').count() == 1
