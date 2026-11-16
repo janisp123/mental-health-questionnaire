@@ -7,7 +7,7 @@ bundle=build.build_bundle()
 questions=[q for g in bundle['groups'] for q in g['questions']]
 by_id={q['id']:q for q in questions}
 assert {'M46_07','M46_08','M46_09'}<=set(by_id),'Missing focused M46 coverage'
-assert len(questions)==715 and len({q['order'] for q in questions})==715
+assert len(questions)==716 and len({q['order'] for q in questions})==716
 for qid in ('M46_07','M46_08','M46_09'):
  q=by_id[qid]
  assert q['context'] is None and not q['multi'] and q['type']=='choice'

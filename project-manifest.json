@@ -54,13 +54,13 @@
       "pilot_prototype": "archive/pilot/",
       "three_language_review": "archive/three-language/v0.2.0/manifest.json",
       "four_language_baseline": "archive/four-language/v0.2.1/manifest.json",
-      "previous_four_language_package": "archive/four-language/v0.2.14/manifest.json"
+      "previous_four_language_package": "archive/four-language/v0.2.15/manifest.json"
     },
     "development_build": {
       "status": "TECHNICAL_REVIEW_BUILD_NOT_RELEASED",
-      "version": "0.2.15-review+full-bank",
+      "version": "0.2.16-review+full-bank",
       "sections": 15,
-      "questions": 715,
+      "questions": 716,
       "reference_language": "lv",
       "translation_status": {
         "en": "DRAFT_NOT_REVIEWED",
@@ -86,7 +86,7 @@
       "artifact": "dist/QUESTIONNAIRE_LV_EN_RU_UK_NOT_RELEASED.html",
       "recovery_schema": "mental-pilot-recovery-v1 (retained for compatibility)",
       "source_modules": 48,
-      "note": "712 frozen questions plus three additive M46 items; 15 optional user sections and unchanged recovery schema.",
+      "note": "712 frozen questions plus three M46 and one M06 additive items; 15 optional sections and unchanged recovery schema.",
       "languages": [
         "lv",
         "en",
@@ -99,7 +99,10 @@
       "check_runner": "tools/run_checks.py",
       "review_package": "MH_Public_version/manifest.json",
       "feature_contracts": "docs/FEATURE_DEVELOPMENT.md",
-      "supplemental_questions": "src/questionnaire/m46-additions.json"
+      "supplemental_questions": [
+        "src/questionnaire/m46-additions.json",
+        "src/questionnaire/m06-responsibility-context.json"
+      ]
     }
   },
   "import_validation": {

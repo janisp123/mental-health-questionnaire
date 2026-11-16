@@ -18,6 +18,7 @@ For interrupted work, start with [`docs/WORK_CHECKPOINT.md`](WORK_CHECKPOINT.md)
 | Questions in LV/EN/RU | `src/modules/182_MODULE_01_LV_EN_RU_v16.json` through `182_MODULE_48_LV_EN_RU_v16.json` | 48 frozen source modules, 712 questions; grouped into 15 user-facing sections (36–70 source questions each); LV reference and EN/RU translations |
 | Module source index | `tests/fixtures/181_MODULE_INDEX_v16.json` | Frozen initial module SHA256, count and order; do not confuse with the current overall manifest |
 | Supplemental questions | `src/questionnaire/m46-additions.json` | Three additive M46 coordination/speech items in all active locales; frozen 712-item baseline remains unchanged. |
+| Supplemental M06 context | `src/questionnaire/m06-responsibility-context.json` | One optional responsibilities question and its editorial report priority, inserted into existing M06; independently removable. |
 | Full question bank | `src/modules/182_MODULE_01_LV_EN_RU_v16.json` through `182_MODULE_48_LV_EN_RU_v16.json` | Canonical question/answer content and translations, separate from application design and runtime. |
 | Application screens and design | `src/app/screens/`, `src/app/styles/`, `src/app/i18n/` | Small independent page templates, role-based styles and interface labels. Edit these without opening question files. |
 | Report review-priority configuration | `src/questionnaire/report-priority.json`, `src/app/reports/review-priority.js` | Complete ID/code editorial ordering, linked context and stable ties; no clinical score or saved-data change. |
@@ -25,7 +26,7 @@ For interrupted work, start with [`docs/WORK_CHECKPOINT.md`](WORK_CHECKPOINT.md)
 | App source order | `src/app/build.json` | Explicit ordered list of stylesheet and script inputs assembled into the single offline HTML. |
 | Questionnaire presentation config | `src/questionnaire/layout.json`, `src/questionnaire/presentation.json`, `src/questionnaire/i18n/` | User-facing section grouping and navigation/report order, answer-specific report rules and frozen module titles; separate from design and original question content. |
 | Language and tone rules | `docs/LANGUAGE_STYLE_GUIDE.md` | Read before editing user-facing wording or translations. |
-| Full offline application build | `tools/build_questionnaire.py`, `src/app/`, `src/questionnaire/` | `python tools/build_questionnaire.py` builds the complete 715-question questionnaire as one offline HTML file. See [architecture](QUESTIONNAIRE_ARCHITECTURE.md). |
+| Full offline application build | `tools/build_questionnaire.py`, `src/app/`, `src/questionnaire/` | `python tools/build_questionnaire.py` builds the complete 716-question questionnaire as one offline HTML file. See [architecture](QUESTIONNAIRE_ARCHITECTURE.md). |
 | Existing working application | `reference/baseline/html/162_Sagatavosanas_vizitei_LV_v16.html` | Exact frozen LV v16 single-file reference for behavior and source text |
 | English app snapshot | `reference/baseline/html/172_Questionnaire_EN_v16_DRAFT_NOT_RELEASED.html` | Reference draft only, **not a release** |
 | Russian app snapshot | `reference/baseline/html/172_Questionnaire_RU_v16_DRAFT_NOT_RELEASED.html` | Reference draft only, **not a release** |
@@ -66,7 +67,7 @@ Optional long-term possibilities are parked in [`docs/FUTURE_IDEAS.md`](FUTURE_I
 
 ## Distribution — separate from development
 
-Google Drive's [professional review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb) contains the current 715-question, 15-section technical-review candidate (712 frozen questions plus three supplemental M46 items). The four-language HTML and PDF were rebuilt from Git sources and replaced in place; their Drive IDs and links are preserved. SHA-256 values and source commit are recorded in `project-manifest.json`. The older Drive v16 copies were removed; frozen v16 references remain under `reference/baseline/`. Human language review is pending.
+Google Drive's [professional review folder](https://drive.google.com/drive/folders/1BUlc5W7tRw06JOUE250wCuTe-1ick9xb) contains the current 716-question, 15-section technical-review candidate (712 frozen questions plus three supplemental M46 items and one supplemental M06 item). The four-language HTML and PDF were rebuilt from Git sources and replaced in place; their Drive IDs and links are preserved. SHA-256 values and source commit are recorded in `project-manifest.json`. The older Drive v16 copies were removed; frozen v16 references remain under `reference/baseline/`. Human language review is pending.
 
 ## Rules for identifying the latest version
 

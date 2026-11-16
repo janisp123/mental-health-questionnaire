@@ -95,6 +95,7 @@
     "guideBody": "Open the downloaded HTML file in a browser; it will not work in preview mode. A single choice is saved in the open questionnaire; for multiple choices or text, press “Save & Next”. Save progress to a file before taking a break. You can keep the file on your phone or computer. It is not encrypted, so share it only with people you trust or healthcare professionals. Do not post it on social media or anywhere public. You decide what to discuss with a professional. For an accuracy review, skip questions that seem fine; flag questions that seem incorrect or unclear and choose a reason. At the end, select “Generate report” to preview and save the clinician PDF. On a PC, hold Ctrl and scroll the mouse wheel up or down to make the text larger or smaller. On the results screen, you can choose a report language separately from the questionnaire language. If you flagged an issue, you can open a separate feedback report from the clinician preview and save it as its own PDF.",
     "notesTitle": "Latest changes and future plans",
     "notesHistory": [
+      "16 November 2026 · Added an optional question about how responsibilities and people depending on you might affect thoughts of ending your life.",
       "16 November 2026 · You can prepare an email or copy feedback about one question without including your medical answers, or save feedback to send later. Added questions about everyday coordination, speech clarity and rare stuttering.",
       "15.11.2026 15:45 Riga — Clarified medicine-entry instructions. Added examples for describing changes in wellbeing and guidance locating the separate safety questions.",
       "15.11.2026 14:35 Riga — Reports keep related answers together in review-priority order. Answer wording and saved progress are unchanged.",
@@ -103,8 +104,7 @@
       "15.11.2026 07:20 Riga — The questionnaire and PDF guide downloads now have shorter filenames with the version number at the end.",
       "14.11.2026 23:49 Riga — The summary and clinician report now use matching question counts and show answered and skipped questions separately. Applicable answers saved in other sections remain included.",
       "14.11.2026 23:26 Riga — Support guidance now explains that no prepared speech is needed, a helpline is there to listen and help, and you can ask about confidentiality before sharing personal details.",
-      "14.11.2026 22:17 Riga — Contact details are available through the GitHub link beside the creator’s name; the separate Send feedback action remains available.",
-      "14.11.2026 17:02 Riga — support instructions now explain how to find a local helpline in your country or city; urgent situations refer to local emergency services. Clarified that a panic-like episode’s peak is its strongest point within that episode."
+      "14.11.2026 22:17 Riga — Contact details are available through the GitHub link beside the creator’s name; the separate Send feedback action remains available."
     ],
     "coverageNote": "Counts cover applicable questions in the selected sections and previously answered or skipped questions from other sections. Answers hidden by changed conditions remain in the progress file and are excluded here.",
     "autoHint": "Choose one answer to save it in the open questionnaire and continue.",

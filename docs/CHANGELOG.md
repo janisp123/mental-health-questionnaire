@@ -1,5 +1,17 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-16 · v0.2.16 package and release-preview correction — VERIFIED
+
+Clean package source `d981f1f` includes M06_25 and its modular editorial rule. HTML/PDF/ZIP current-source verification passed; HTML SHA256 `6eccfdbedb9e1cd2bf33ff2b4cbf501ec3babf777e8e652e4db8914ab6c46495`. Guide bytes unchanged and rendered page inspected. Previous v0.2.15 pair archived intact. Full maintained checks are running.
+
+Release staging exposed a publication-test coupling: checking landing counts against a newly staged package would force advertising v0.2.16 before Drive verification, triggering the publication guard on the source merge. Reproduced with staged716/verified715; count regression now follows the verified distribution count, while upcoming landing716 changes are deferred to the delivery-record commit. All five publication tests pass after the correction. App/package bytes and strict version/source/hash deployment guard remain unchanged. Next: required exact-head CI/merge, intentional Drive readback, then update distribution and landing counts together.
+
+### 2026-11-16 · M06 responsibilities context — LOCAL SOURCE CHECKPOINT
+
+Added by: Codex. Implemented by: Codex (local source; release pending). Added one optional M06_25 after M06_24 in existing M06/current section, isolated in `src/questionnaire/m06-responsibility-context.json` with LV/EN/RU/UK text and code-specific editorial metadata. More likely=4; less likely/no change/nonapplicable/uncertainty/refusal=3. No clinical score, automatic emergency inference or changed current-intent/safety questions. Existing 712 frozen records, M46 items and recovery schema remain unchanged.
+
+Build regression observed missing-item failure before implementation then passed; malformed metadata rejected and disabling only this hook reproduces the prior bundle exactly. Report-priority/source/translation/catalog checks pass. Runtime test against the old bundle failed on absent M06_25; the implementation run exposed a test expecting Previous on the end-of-section Results screen, corrected to the existing Back path. All-response/locales/progress/PDF run now passed, including skip/back and existing current-intent emergency prompts; no requests or browser errors. Phone renders inspected. Independent review found no actionable issue. Full maintained suite is running. Target v0.2.16/716; no new Drive/hosted version yet. Next: finish review/tests, clean-source package and verified publication. Newer progress containing the new ID needs a retained reader or explicit migration when rolling back; never silently discard its response.
+
 ### 2026-11-16 · Public surfaces synchronized — LIVE VERIFIED
 
 PR #62 merged as `07fca71975418337dedbd594eb82cf7ad61b247a`, tree identical to checked `a2fc14808f4470ee8da51e2669451fbe826d40d8`. Three required CI checks passed (43835941086 / 43835940991 / 43835941043); automatic Pages **43836481721** succeeded. All English/Latvian/Russian landing responses match checked output byte-for-byte and describe 715 questions, added coordination/speech/rare-stuttering coverage and immediate/copy/save-later feedback privacy. Open actions return exact v0.2.15 package HTML, each page retains one stable Drive-folder download link, and 320/390/1280px checks pass without browser errors. Screenshots visually inspected. [Readback evidence](review/checks/2026-11-16-public-overview-live.json).

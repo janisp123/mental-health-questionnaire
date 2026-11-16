@@ -1,6 +1,6 @@
 # Current questionnaire architecture
 
-One four-language offline application is maintained on main. The normal build assembles 715 questions into 15 optional sections: 712 frozen questions from 48 unchanged source modules plus three supplemental M46 questions. Latvian is the reference and initial interface language.
+One four-language offline application is maintained on main. The normal build assembles 716 questions into 15 optional sections: 712 frozen questions from 48 unchanged source modules plus three supplemental M46 questions and one supplemental M06 question. Latvian is the reference and initial interface language.
 
 | Area | Responsibility |
 |---|---|

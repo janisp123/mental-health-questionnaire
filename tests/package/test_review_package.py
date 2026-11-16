@@ -53,7 +53,7 @@ class ReviewPackageTests(unittest.TestCase):
             self.assertEqual(result.returncode, 0, result.stderr)
             manifest = json.loads((folder / "manifest.json").read_text())
             self.assertEqual(manifest["languages"], ["lv", "en", "ru", "uk"])
-            self.assertEqual(manifest["question_count"], 715)
+            self.assertEqual(manifest["question_count"], 716)
             self.assertEqual(len(manifest["files"]), 2)
             self.assertEqual(len(manifest["source_commit"]), 40)
             version = re.match(r"\d+\.\d+\.\d+", manifest["version"]).group()
