@@ -3,7 +3,7 @@
 
 ## Current publication — 16 November2026
 
-Verified v0.2.17/718 questions is live through PR68 and Pages43875827407. Independent M06 action/intent history and conditional timing join the existing questionnaire without changing old question meanings. Live routing/progress/PDF scope and exact Drive/package parity passed in all active languages. Native landing counts/open/download links are current. [Current evidence](../review/checks/2026-11-16-action-history-live.json). Human reviews and actual search indexing remain pending.
+Verified v0.2.18 is live through PR71 and Pages 43880298345. Public descriptions use “over 700 questions in more than 10 sections” or localized equivalents across landing body/metadata, embedded summaries, README and app footers. Hosted/package/Drive HTML parity, all-language footers, phone/desktop widths and stable download links passed. Exact technical totals remain in manifests and progress displays. [Current evidence](../review/checks/2026-11-16-durable-descriptions-live.json). Human reviews and actual search indexing remain pending.
 
 Earlier sections below are historical deployment records. Their page-only/manual-only limitations describe previous snapshots; use this current section, `tools/build_discovery.py` and the active checkpoint for current behavior.
 
