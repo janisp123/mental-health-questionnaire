@@ -20,17 +20,17 @@ No changes to 712 frozen records, earlier additions, old codes/conditions, recov
 ### Task 1: Modular catalog and builder
 Files: src/questionnaire/m06-action-history.json, tools/build_questionnaire.py, tests/full_bank/test_m06_action_history.py.
 Interface: apply_m06_action_history(bundle, priority) inserts M06_26/27 after M06_09 and their explicit editorial rules without changing old data.
-- [ ] Write missing-item/locale/code/priority/condition/rollback regression and observe RED.
-- [ ] Implement fixed IDs/orders716/717, context, all locales, reused timing choices and independent report family via parent context.
-- [ ] Run build/translation/source/priority checks; expect PASS.
+- [x] Write missing-item/locale/code/priority/condition/rollback regression and observe RED.
+- [x] Implement fixed IDs/orders716/717, context, all locales, reused timing choices and independent report family via parent context.
+- [x] Run build/translation/source/priority checks; expect PASS.
 
 ### Task 2: Runtime and release source
 Files: tests/full_bank/test_runtime_m06_action_history.py; existing count tests; UI notes/version/public docs.
-- [ ] Verify RED with hook disabled; then all7 answers/all locales, each timing code, No gate, skip/back, current prompts, old/current progress and PDF/hidden-timing behavior.
-- [ ] Render 320/390px and inspect all languages; fresh independent review; fix important findings with regressions.
-- [ ] Bump v0.2.17/718, align README/active docs and all notes. Keep public landing count at verified716 until delivery. Commit source/checkpoint; full suite must pass.
+- [x] Verify RED with hook disabled; then all7 answers/all locales, each timing code, No gate, skip/back, current prompts, old/current progress and PDF/hidden-timing behavior.
+- [x] Render 320/390px and inspect all languages; fresh independent review; fix important findings with regressions.
+- [x] Bump v0.2.17/718, align README/active docs and all notes. Keep public landing count at verified716 until delivery. Commit source/checkpoint; full suite must pass.
 
 ### Task 3: Checked publication
-- [ ] Build clean-source HTML/PDF/ZIP, verify and visually inspect guide, archive16. Checked PR and three exact-head CI checks before merge.
-- [ ] Update same Drive IDs, read back exact bytes/metadata; merge distribution + landing718 together, observe Pages and live question/routing/report/progress/hash tests.
-- [ ] Save final evidence/checkpoint and current pointers; retain five unrelated TD items and actual human-review limitations.
+- [x] Build clean-source HTML/PDF/ZIP, verify and visually inspect guide, archive16. Checked PR and three exact-head CI checks before merge.
+- [x] Update same Drive IDs, read back exact bytes/metadata; merge distribution + landing718 together, observe Pages and live question/routing/report/progress/hash tests.
+- [x] Save final evidence/checkpoint and current pointers; retain five unrelated TD items and actual human-review limitations.
