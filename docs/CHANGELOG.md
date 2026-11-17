@@ -1,5 +1,11 @@
 # Active development changelog — mental-health-questionnaire
 
+### 2026-11-17 · README presentation — LOCAL VERIFIED
+
+README now puts the browser action first, describes the hobby project and ChatGPT/Codex assistance plainly, and summarizes the main user features. Opening/privacy instructions, technical guidance, source/package/history links and clinical/translation/device/reuse limitations are preserved. Build-command example now uses v0.2.19. File checkpoint: `README.md`, based on main `4f974b19306ff477ba0da7fd9ff3d7adff155386`.
+
+Local README links, one stable Drive-folder download action, broad-count thresholds and whitespace checks pass. Hosted browser HTML was read back byte-identical to the existing v0.2.19 package (SHA256 `7da39069910957d64cfee923ac18c6eb940ea09d3d510c40bb91140e2c306ce3`). Current screenshot is unchanged. Documentation only; app, guide, packages, distribution metadata, TD list and active delivery checkpoint are unchanged. No new runtime or device verification is claimed. Remote publication pending checked PR; no Drive update or release required.
+
 ### 2026-11-16 · Usage/update-information v0.2.19 — LIVE VERIFIED
 
 Existing task located on specified branch at107d0b5, latest-ten correction read; checked PR73 merged47ff67d before main-based implementation. Added by ChatGPT; Implemented by Codex through PR74 (clean source4960c24). Local48/48 and all source/delivery CI passed; independent review clean. Delivery PR76 merged f9d3416, Pages 43931263739 succeeded. Hosted/package/Drive HTML SHA2567da39069910957d64cfee923ac18c6eb940ea09d3d510c40bb91140e2c306ce3 matches exactly. Stable Drive pair/sharing preserved,18 archived, one-page guide inspected, README screenshot current.

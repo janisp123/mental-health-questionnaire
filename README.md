@@ -1,12 +1,14 @@
 # Multilanguage mental health questionnaire
 
-[![Multilingual checks](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml/badge.svg?branch=main)](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml)
+**[Open questionnaire in your browser](https://janisp123.github.io/mental-health-questionnaire/questionnaire/)**
 
-**Current version: v0.2.19 · Latvian / English / Russian / Ukrainian · Over 700 questions in more than 10 sections.**
+A free, multilanguage questionnaire for adults preparing for a mental-health appointment, with **over 700 questions in more than 10 sections**. It helps you organize what you want to discuss with a healthcare professional. **It is not a diagnostic or validated screening tool.** It does not calculate a screening score.
 
-[Open questionnaire in your browser](https://janisp123.github.io/mental-health-questionnaire/questionnaire/) — no installation or manual download. You can also use the Drive download below for offline use. Both options use the same questionnaire; save a progress file manually before closing or reloading to continue later.
+This is a hobby project by Janis Paegle, developed with ChatGPT and Codex assistance while exploring what AI can help build. It is available to try, with its review limitations described below.
 
-Free offline questionnaire for adults preparing for a mental-health appointment. All available languages are included in one HTML file. Latvian is the reference and initial language. It does not diagnose or calculate a screening score.
+**Current version: v0.2.19.** The browser version and offline download use the same questionnaire. Save a progress file manually before closing or reloading if you want to continue later.
+
+[![Multilanguage checks](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml/badge.svg?branch=main)](https://github.com/janisp123/mental-health-questionnaire/actions/workflows/questionnaire-checks.yml)
 
 ## Download and open
 
@@ -24,22 +26,15 @@ The questionnaire runs offline and sends no answers. Clinician reports and proje
 
 ![Current questionnaire in English, showing its offline introduction and language selector](docs/images/questionnaire-current.png)
 
-## What the current version includes
+## What you can do
 
-- One shared application with complete LV/EN/RU/UK question and interface packs.
-- Per-question email preparation/copy and save-for-later feedback; medical answers are excluded and email sending stays under your control.
-- Focused questions about everyday coordination, speech clarity and rare stuttering, alongside the preserved original question bank.
-- An optional safety-section question about how responsibilities and people depending on you might affect thoughts of ending your life.
-- Independent action-history and timing questions distinguish wanting to die, mixed feelings, indifference to survival and not wanting to die, without automatically labelling an experience a suicide attempt.
-- Optional sections, medication details, and explicit progress-file download/import, including older progress files.
-- A clinician report language chosen independently of the questionnaire language, plus a separate project-feedback report. Provided answers, including negative, uncertain and declined responses, remain in the report.
-- Clinician responses ordered by draft review priority, keeping related context together; this is not a clinical risk score.
-- Confirmed restart and public-link sharing from the clinician preview; sharing excludes answers, saved progress and feedback.
-- A Contributions section that remains visible while awaiting permission to list contributors.
-- Country-neutral instructions for finding a local helpline, with local emergency guidance first.
-- A multilanguage explanation of the panic question’s “peak” timing, without changing its answers.
-- Phone layout fixes and preservation of unfinished feedback when switching languages.
-- Repeatable HTML/PDF/ZIP packaging, source/checksum records, main-based CI, and archived rollback packages.
+- Choose relevant sections, skip questions and add context in your own words.
+- Switch languages within one application. Latvian is the reference and initial language; English, Russian and Ukrainian are also included.
+- Download a progress file and import it later, including supported older progress files.
+- Prepare a clinician PDF report in a language chosen independently of the questionnaire language. Provided negative, uncertain and declined responses remain in the report.
+- Keep project feedback separate from medical answers. Feedback email drafts, copying and sending remain under your control.
+
+Clinician reports use a draft review order, which is not a clinical risk score. See the [change history](docs/CHANGELOG.md) for individual updates and [release policy](docs/RELEASE_POLICY.md) for verification limits.
 
 Landing page languages: [English](https://janisp123.github.io/mental-health-questionnaire/) · [Latviešu](https://janisp123.github.io/mental-health-questionnaire/lv/) · [Русский](https://janisp123.github.io/mental-health-questionnaire/ru/).
 
@@ -63,11 +58,13 @@ It is an appointment-preparation aid, **not a validated depression screening tes
 
 The technical work addresses three practical problems: keeping sensitive answers on the user's device, maintaining consistent question/answer identity across languages, and preserving older progress files while the interface evolves. Separate answer and feedback reports help keep reviewer comments out of the clinician document. Repeatable packaging and current-source verification help prevent distributing stale files.
 
-## Project ownership and AI-assisted implementation
+## About this project
 
-Janis Paegle leads the product concept, requirements, prioritization, review of generated outputs, QA decisions and project coordination. Application code, tooling, tests and documentation have been generated and revised with AI/Codex assistance under that direction.
+I'm [Janis](https://github.com/janisp123), and I'm curious about AI and what I can make with it. I shape the idea, decide what to work on, review generated results and test changes. ChatGPT and Codex help generate and revise the code, tooling, tests and documentation.
 
-This repository shows the specification, iteration and verification of an AI-assisted software product. The source history and [module contracts](docs/FEATURE_DEVELOPMENT.md) make the implementation and its boundaries inspectable. Human language/clinical review and physical-device verification remain separate requirements.
+The [source history](https://github.com/janisp123/mental-health-questionnaire/commits/main/) and [module contracts](docs/FEATURE_DEVELOPMENT.md) show how the project has developed. Automated checks help catch technical problems; human language and clinical review and physical-device testing remain separate requirements.
+
+Another experiment: [Language Learning App](https://github.com/janisp123/language-learning-app), a separate project for everyday vocabulary and pronunciation.
 
 ## Source and package records
 
@@ -84,8 +81,8 @@ python -m pip install -r tools/review-requirements.txt playwright
 python -m playwright install chromium
 python tools/run_checks.py
 python tools/build_questionnaire.py
-python tools/build_review_package.py --output-dir dist/review-0.2.4
-python tools/verify_review_package.py dist/review-0.2.4 --with-zip
+python tools/build_review_package.py --output-dir dist/review-0.2.19
+python tools/verify_review_package.py dist/review-0.2.19 --with-zip
 ```
 
 The normal HTML output is `dist/QUESTIONNAIRE_LV_EN_RU_UK_NOT_RELEASED.html`. Package destinations are never overwritten. CI runs the same checks on PRs to main and on main, then uploads the matching multilanguage package.
