@@ -94,3 +94,7 @@ Read [feature/module contracts](docs/FEATURE_DEVELOPMENT.md), [architecture](doc
 This is a technical-review project. Human language review, clinical review and physical-device verification remain separate requirements. Main adoption does not establish clinical validation. Anyone may use the questionnaire for free, including clinicians during appointments. Source/content reuse terms are separate: no general license has been granted.
 
 Use synthetic data in public issues/tests; never post patient answers or recovery files. Project feedback: janis.paegle.email@gmail.com. See [contribution guidance](CONTRIBUTING.md) and the [future-ideas parking lot](docs/FUTURE_IDEAS.md), which is not an approved feature roadmap.
+
+## Developer coordination
+
+Agent entrypoint: [AGENTS.md](AGENTS.md). Active tasks: [TD list](docs/TD_LIST.md). See the [shared agent protocol](docs/AGENT_PROTOCOL.md), [current checkpoint](docs/WORK_CHECKPOINT.md), [decision log](docs/DECISIONS.md) and [new-project setup](docs/NEW_PROJECT_SETUP.md). These files describe development, not the questionnaire's medical purpose.

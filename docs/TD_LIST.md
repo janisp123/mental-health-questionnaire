@@ -1,5 +1,7 @@
 # TD list — pending tasks for Codex
 
+**Project protocol v1.0 (2026-11-18):** This file remains the sole active backlog on `main`. Every project-specific agent (`chat`, `cw`, `codex`) checks it first, then `AGENTS.md` and the checkpoint. New `Added by` labels use these exact actor names; historical attributions stay unchanged. Task presence does not authorize implementation.
+
 **Single source of truth:** `docs/TD_LIST.md` on `main`. Add approved tasks here when the project owner asks; Codex may implement them when explicitly instructed. The list is **not** a changelog or a record of completed work.
 
 - Before acting on a task, read `AGENTS.md`, `docs/WORK_CHECKPOINT.md` and relevant project/release rules, and check whether the task is still necessary.
