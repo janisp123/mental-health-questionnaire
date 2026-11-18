@@ -4,6 +4,15 @@
 
 For every project-specific request **fetch the current remote `main:docs/TD_LIST.md` first**. Then read this file, `docs/WORK_CHECKPOINT.md`, applicable `docs/DECISIONS.md`, latest `main` and overlapping open PRs before acting. Labels: **chat** = regular ChatGPT, **cw** = ChatGPT Work, **codex** = Codex; **Owner** approves scope. Follow the shared convention in `docs/AGENT_PROTOCOL.md` and run `python tools/check_project_protocol.py`. Existing medical/privacy/release safeguards below take precedence for this questionnaire.
 
+## Owner command convention — "continue" (2026-11-18)
+
+This applies to project work by **chat**, **cw** and **codex**, including after a tool or usage-limit interruption. The phrase is not automatic authorization to code:
+
+- **"Continue" (alone): READ-ONLY preflight.** Fetch current remote `main:docs/TD_LIST.md` first, read this file, checkpoint, decisions, relevant evidence and open PRs; identify the last verified state and any conflicts. Reply with the specific task/ID, what was completed, what remains, the smallest next change, tests/risks and **"Should I proceed?"** Do **not** modify files, create branches/PRs, commit, merge, publish or perform external actions until the Owner answers.
+- **"Continue and implement":** The Owner explicitly authorizes execution of an already-approved, clearly identified scope. Still do the full preflight, check conflicts and proceed only with previously approved decisions; stop to request approval for new choices, changed scope, ambiguous repository/task, destructive actions, merges or releases requiring separate approval.
+- **"Check status":** Read-only status report; no implementation and no approval question required unless an ambiguity prevents a meaningful answer.
+- If the project or task is ambiguous, ask which one; do not invent a handoff. Usage limits resetting never trigger automatic work.
+
 These rules apply to future development work in this repository, particularly long or multi-file tasks.
 
 ## Resume before starting
