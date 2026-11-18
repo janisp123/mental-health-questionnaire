@@ -24,6 +24,18 @@ Before **any project-specific action**, including reading task status, modifying
 
 For read-only requests, do not open unnecessary branches. If an action is unavailable, state so; never assume another agent executed it.
 
+## Owner command semantics — "continue" (approved 2026-11-18)
+
+These commands apply to project work across **chat**, **cw** and **codex**. A lone "continue" does not override preflight, approvals, or product/release safeguards.
+
+| Owner message | Required behavior |
+| --- | --- |
+| **Continue** | **READ ONLY.** Fetch current remote `main:docs/TD_LIST.md` first; read `AGENTS.md`, checkpoint, decisions, latest code/commits and relevant open PRs. State the exact last verified task/ID, completed versus pending work, planned smallest next change, tests, risks and blockers. Ask **"Should I proceed?"**. Do not edit any files, create branches/PRs, commit, push, merge, deploy, publish or take external actions before a reply. |
+| **Continue and implement** | After the same preflight, proceed within the owner's **previously approved scope** only; stop for new decisions, uncertainty, scope changes, risky/destructive action, merges or releases that separately require permission. |
+| **Check status** | Read-only facts; do not implement or prompt for execution approval unless clarification is needed to identify the project. |
+
+If multiple repositories/tasks could match, identify the ambiguity instead of guessing. A usage-limit reset does not create a background job or authorize an agent to resume automatically. These meanings apply to project coordination; ordinary requests to continue writing non-project text are unaffected.
+
 ## Vocabulary and attribution
 
 - **Owner** = human project owner and final approver.

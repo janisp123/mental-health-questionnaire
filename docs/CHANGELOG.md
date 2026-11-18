@@ -1,3 +1,7 @@
+## 2026-11-18 — Owner command convention for cross-agent resumes (chat; documentation only)
+
+Defined read-only **continue** (inspect, plan and ask), bounded **continue and implement**, and read-only **check status** across chat/cw/codex. Recorded PRO-004. No task content, questionnaire code, clinical text, translations, reports, assets or release was changed. Verification/integration tracked through the PR.
+
 ## 2026-11-18 — Shared AI project protocol v1.0 (chat; documentation/CI only)
 
 Owner-requested canonical TD preflight, chat/cw/codex vocabulary, separate decision/playbook files, PR checklist, automated structural check and future-project setup guidance. Preserved all pending TD items and questionnaire-specific privacy/clinical/release gates. This update does not modify questionnaire code, medical text, translations, reports, review package or public release. GitHub PR and CI determine integration status; no publication claimed.
