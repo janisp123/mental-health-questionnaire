@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: '22'
       - name: Install pinned review dependencies and browser tooling
-        run: python -m pip install -r tools/review-requirements.txt playwright
+        run: python -m pip install -r tools/review-requirements.txt playwright==1.65.2
       - name: Prepare desktop Chromium
         run: |
           if command -v google-chrome >/dev/null; then

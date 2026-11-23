@@ -32,7 +32,7 @@ jobs:
           node-version: '22'
       - name: Prepare browser tooling
         run: |
-          python -m pip install -r tools/review-requirements.txt playwright
+          python -m pip install -r tools/review-requirements.txt playwright==1.65.2
           if command -v google-chrome >/dev/null; then
             echo "QUESTIONNAIRE_BROWSER=$(command -v google-chrome)" >> "$GITHUB_ENV"
           else
